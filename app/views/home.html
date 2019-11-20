@@ -1,7 +1,3 @@
-<!-- Use this page as the index for your project -->
-
-<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
-
 <!-- Extends the layout from /views/layout.html -->
 {% extends 'layout.html' %}
 <!-- 
@@ -12,44 +8,37 @@
 
 <!-- Set the page title inside the pageTitle block -->
 {% block pageTitle %}
-  NHS.UK information architecture prototype kit
+  NHS.UK home
 {% endblock %}
 
 <!-- Breadcrumb goes inside the beforeContent block -->
+<!-- More info and code for the breadcrumb can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/breadcrumbs -->
 {% block beforeContent %}
+  {{ breadcrumb({
+    href: "/",
+    text: "Home"
+  }) }}
 {% endblock %}
 
 <!-- Your page content goes inside the content block -->
 <!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
 {% block content %}
+
   <div class="nhsuk-grid-row">
+
     <div class="nhsuk-grid-column-two-thirds">
 
       <!-- Change the page title here -->
       <h1>
-        NHS.UK information architecture prototype kit
+        Title
       </h1>
 
       <!-- Add your content here -->
-      <!-- Styles and components can be found at https://beta.nhs.uk/service-manual/styles-components-patterns -->
-
-
-      <hr>
-
-      <h2>
-        Lab 2 prototypes
-      </h2>
-
-      <p>
-        Use this page as the index for your project.
-      </p>
-
-
-
 
 
       <!-- End of content -->
 
-    </div>
+    </div>  
+
   </div>
 {% endblock %}
