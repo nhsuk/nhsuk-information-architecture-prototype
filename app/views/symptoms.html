@@ -8,7 +8,7 @@
 
 <!-- Set the page title inside the pageTitle block -->
 {% block pageTitle %}
-  NHS.UK home
+  NHS.UK Check a symptom
 {% endblock %}
 
 <!-- Breadcrumb goes inside the beforeContent block -->
@@ -25,25 +25,25 @@
 {% block content %}
 
   <div class="nhsuk-grid-row">
-
-    <div class="nhsuk-grid-column-two-halfs">
+    <div class="nhsuk-grid-column-full">
 
       <!-- Change the page title here -->
       <h1>
         Check a symptom
       </h1>
-      <p class="nhsuk-lede-text">
-            Intro text for this page goes here.
-      </p>
+        <p class="nhsuk-lede-text">
+              Intro text for this page goes here.
+        </p>
 
       <!-- Add your content here -->
 
       <section>
-        <h2>Check a symptom</h2>
-        <p>Gen text...</p>
-        <form>
-          searchbox goes here
-        </form>
+        <div class="nhsuk-grid-column-full">
+          <h2>Check a symptom</h2>
+          <p>Gen text...</p>
+           <p> [searchbox goes here]</p>
+ 
+        </div>
       </section>
 
       <section>
@@ -143,8 +143,10 @@
       </section>
 
       <section>
-        <h2>Emergency???</h2>
-        <p>Gen text... what goes here?</p>
+        <div class="nhsuk-grid-column-full">
+          <h2>Emergency???</h2>
+          <p>Gen text... what goes here?</p>
+        </div>
       </section>
       <!-- End of content -->
 
