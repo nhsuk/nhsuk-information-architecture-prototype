@@ -26,7 +26,7 @@
 
   <div class="nhsuk-grid-row">
 
-    <div class="nhsuk-grid-column-two-thirds">
+
 
       <!-- Change the page title here -->
       <h1>
@@ -36,7 +36,7 @@
       <!-- Add your content here -->
       <!-- Styles and components can be found at https://beta.nhs.uk/service-manual/styles-components-patterns -->
       <p class="nhsuk-lede-text">
-        This page example includes a selection of styles and components available to the prototype kit.
+            Includes conditions, medicines, procedures and symptoms.
       </p>
       
       {% from 'nav-a-z/macro.njk' import azNav %}
@@ -124,9 +124,94 @@
           }
         ]
       }) }}
+
+
+
+      {% from 'list-panel/macro.njk' import listPanel %}
+
+      {{ listPanel({
+        "label": "A",
+        "id": "A",
+        "backToTop": "true",
+        "backToTopLink": "#nhsuk-nav-a-z",
+        "items": [
+          {
+            "URL": "#",
+            "link": "AAA"
+          },
+          {
+            "URL": "#",
+            "link": "Abdominal aortic aneurysm"
+          },
+          {
+            "URL": "#",
+            "link": "Abdominal aortic aneurysm screening"
+          },
+          {
+            "URL": "#",
+            "link": "Abortion"
+          },
+          {
+            "URL": "#",
+            "link": "Abscess"
+          },
+          {
+            "URL": "#",
+            "link": "Acanthosis nigricans"
+          }
+        ]
+      }) }}
+      
+      {{ listPanel({
+        "label": "B",
+        "id": "B",
+        "disable": "true",
+        "backToTop": "true",
+        "backToTopLink": "#nhsuk-nav-a-z",
+        "message": "There are currently no conditions listed"
+      }) }}
+      
+      {{ listPanel({
+        "label": "C",
+        "id": "C",
+        "backToTop": "true",
+        "backToTopLink": "#nhsuk-nav-a-z",
+        "items": [
+          {
+            "URL": "/conditions/chest-pain/",
+            "link": "Chest pain"
+          },
+          {
+            "URL": "/conditions/cold-sores/",
+            "link": "Cold sore"
+          }
+        ]
+      }) }}
+      
+      {{ listPanel({
+        "label": "D",
+        "id": "D",
+        "backToTop": "true",
+        "backToTopLink": "#nhsuk-nav-a-z",
+        "items": [
+          {
+            "URL": "/conditions/dandruff/",
+            "link": "Dandruff"
+          },
+          {
+            "URL": "/conditions/dementia/",
+            "link": "Dementia"
+          },
+          {
+            "URL": "/conditions/toothache/",
+            "link": "Dental pain"
+          }
+        ]
+      }) }}
+
       <!-- End of content -->
 
-    </div>  
+
 
   </div>
 {% endblock %}
