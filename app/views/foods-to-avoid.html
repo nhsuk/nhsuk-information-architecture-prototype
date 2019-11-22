@@ -5,9 +5,22 @@
 {% endblock %}
 
 {% block beforeContent %}
+
+
+
   {{ breadcrumb({
-    href: "/",
-    text: "Pregnancy"
+    items: [
+    {
+      href: "/pregnancy",
+      text: "Pregnancy"
+    },
+    {
+      href: "/im-pregnant",
+      text: "I'm pregnant"
+    }
+  ],
+    href: "/foods-to-avoid",
+    text: "Foods to avoid in pregnancy"
   }) }}
 {% endblock %}
 
