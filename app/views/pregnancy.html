@@ -15,8 +15,14 @@
 <!-- More info and code for the breadcrumb can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/breadcrumbs -->
 {% block beforeContent %}
   {{ breadcrumb({
-    href: "/",
-    text: "Home"
+    items: [
+    {
+      href: "/home",
+      text: "Home"
+    }
+  ],
+    href: "/a-to-z",
+    text: "Health A to Z"
   }) }}
 {% endblock %}
 
