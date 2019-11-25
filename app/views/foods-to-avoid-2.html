@@ -1,0 +1,119 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  NHS - Pregnancy - I'm pregnant - Foods to avoid in pregnancy - Dairy
+{% endblock %}
+
+{% block beforeContent %}
+  {{ breadcrumb({
+    href: "/",
+    text: "Pregnancy"
+  }) }}
+{% endblock %}
+
+{% block content %}
+
+  <div class="nhsuk-grid-row">
+    <section>
+      <div class="nhsuk-grid-column-two-thirds">
+        <h1>
+          <span role="text">
+            Foods to avoid in pregnancy
+            <span class="nhsuk-caption-xl nhsuk-caption--bottom">
+              <span class="nhsuk-u-visually-hidden">
+                -
+              </span>
+              I'm pregnant
+            </span>
+          </span>
+        </h1>   
+        
+         {{ contentsList({
+            items: [
+              {
+                href: "foods-to-avoid",
+                text: "Meat and fish"
+              },
+              {
+                href: "foods-to-avoid-2",
+                text: "Dairy",
+                current: "true"
+              },
+              {
+                href: "foods-to-avoid-3",
+                text: "Eggs, nuts and others"
+              },
+              {
+                href: "foods-to-avoid-4",
+                text: "Drinks and alcohol"
+              }
+            ]
+          }) }}
+      </div>
+    </section>
+
+    <section>
+      <div class="nhsuk-grid-column-two-thirds">
+        <article class="dairy">
+            <h2>Dairy</h2>
+            <h3>Milk and yoghurt in pregnancy</h3>
+
+            <p>Stick to pasteurised or ultra-heat treated (UHT) milk, which is sometimes called long-life milk.</p>
+
+            <p>If only raw (unpasteurised) milk is available, boil it first. Don't drink unpasteurised goats' or sheep's milk, or eat foods made from them, such as soft goats' cheese.</p>
+
+            <p>All types of yoghurt, including bio, live and low fat, are fine. Just check that any homemade yoghurt is made with pasteurised milk, and, if not, avoid it.</p>
+
+            <h3>Ice cream in pregnancy</h3>
+
+            <p>Soft ice creams should be fine to eat when you're pregnant, as they are processed products made with pasteurised milk and eggs, so any risk of salmonella food poisoning has been eliminated.</p>
+
+            <p>For homemade ice cream, use a pasteurised egg substitute or follow an egg-free recipe.</p>
+
+            <h3>Cheeses to avoid in pregnancy</h3>
+            <h4>Soft cheeses with white rinds</h4>
+            <p>Don't eat mould-ripened soft cheese (cheeses with a white rind) such as brie and camembert. This includes mould-ripened soft goats' cheese, such as chèvre. These cheeses are only safe to eat in pregnancy if they've been cooked.</p>
+            
+            <h4>Soft blue cheeses</h4>
+            <p>You should also avoid soft blue-veined cheeses such as danish blue, gorgonzola and roquefort. Soft blue cheeses are only safe to eat in pregnancy if they've been cooked.</p>
+            <p>It's advised pregnant women avoid some soft cheeses because they're less acidic than hard cheeses and contain more moisture, which means they can be an ideal environment for harmful bacteria, such as listeria, to grow in.</p>
+            <p>Although infection with listeria (listeriosis) is rare, it's important to take special precautions in pregnancy – even a mild form of the illness in a pregnant woman can lead to miscarriage, stillbirth or severe illness in a newborn baby.</p>
+            <p>Find out about the symptoms of listeria. If you're pregnant and showing signs of listeria infection, seek medical help straight away.</p>
+            <h3>Cheeses that are safe to eat in pregnancy</h3>
+            <h4>All hard cheeses are safe in pregnancy</h4>
+            <p>You can eat hard cheeses, such as cheddar, parmesan and stilton, even if they're made with unpasteurised milk. Hard cheeses don't contain as much water as soft cheeses, so bacteria are less likely to grow in them. It's possible for hard cheese to contain listeria, but the risk is considered to be low.</p>
+            <h4>Soft cheeses that are safe to eat in pregnancy</h4>
+            <p>Other than mould-ripened soft cheeses, all other soft types of cheese are OK to eat, provided they're made from pasteurised milk.</p>
+            <p>These include:</p>
+            <ul>
+              <li>cottage cheese</li>
+              <li>mozzarella</li>
+              <li>feta</li>
+              <li>cream cheese</li>
+              <li>paneer</li>
+              <li>ricotta</li> 
+              <li>halloumi</li>
+              <li>goats' cheese</li>
+              <li>processed cheeses, such as cheese spreads</li>
+            </ul>
+            <h4>Cooked soft cheeses that are safe to eat in pregnancy</h4>
+            <p>Thorough cooking should kill any bacteria in cheese, so it should be safe to eat cooked mould-ripened soft cheese, such as brie, camembert and chèvre, and cooked soft blue cheese, such as roquefort or gorgonzola, or dishes that contain them.</p>
+            <p>It's important to make sure the cheese is thoroughly cooked until it's steaming hot all the way through.</p> 
+            <p>Read more about cheese and pregnancy:</p>
+            <ul>
+              <li>Are hard cheeses safe to eat in pregnancy?</li>
+              <li>Are cooked brie and blue cheeses safe to eat in pregnancy?</li>
+              <li>Is it safe to eat goats' cheese in pregnancy?</li>
+            </ul>
+
+          </article>
+          {{ pagination({
+            "previousUrl": "foods-to-avoid",
+            "previousPage": "Meat and fish",
+            "nextUrl": "foods-to-avoid-3",
+            "nextPage": "Eggs, nuts and others"
+          }) }}
+        </div>
+      </section>
+    </div>
+{% endblock %}
