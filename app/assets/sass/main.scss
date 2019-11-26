@@ -84,10 +84,22 @@
   line-height: 1.3;
   padding: 12px 5px;
   text-decoration: none;
+  height: 100%;
 }
 
 .ia-new-nav__link--break {
   display: block;
+}
+
+.ia-new-nav__link:focus {
+  background-color: transparent;
+  box-shadow: none;
+  color: white;
+  outline: none;
+}
+
+.ia-new-nav__link:focus:visited {
+  color: #fff;
 }
 
 ////////////////////////////////////////////////
