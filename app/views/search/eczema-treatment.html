@@ -1,0 +1,380 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends './layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Atopic eczema treatments - NHS.UK 
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+<!-- More info and code for the breadcrumb can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/breadcrumbs -->
+{% block beforeContent %}
+  {{ breadcrumb({
+    items: [
+    {
+      href: "/search/home",
+      text: "Home"
+    }
+  ],
+    href: "/search/a-to-z",
+    text: "Health A to Z"
+  }) }}
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+
+
+        
+        <div class="nhsuk-grid-row">
+          <div class="nhsuk-grid-column-two-thirds">
+      
+            
+        
+          <h1>
+            <span role="text">Treatment
+              <span class="nhsuk-caption-xl nhsuk-caption--bottom">
+                <span class="nhsuk-u-visually-hidden"> - </span>
+                Atopic eczema
+              </span>
+            </span>
+          </h1>
+      
+          <ol class="nhsuk-contents-list__list">
+        
+          
+                <li class="nhsuk-contents-list__item">
+                  <a class="nhsuk-contents-list__link" href="/eczema">
+                    
+                      Overview
+                    
+                  </a>
+                </li>
+              
+            
+              
+                <li class="nhsuk-contents-list__item">
+                  <a class="nhsuk-contents-list__link" href="/eczema-symptoms">
+                    
+                      Symptoms
+                    
+                  </a>
+                </li>
+              
+            
+              
+                <li class="nhsuk-contents-list__item">
+                  <a class="nhsuk-contents-list__link" href="/eczema-causes">
+                    
+                      Causes
+                    
+                  </a>
+                </li>
+              
+            
+              
+                <li class="nhsuk-contents-list__item" aria-current="page">
+                  <span class="nhsuk-contents-list__current" href="/eczema-treament">
+                    
+                      Treatment
+                    
+                  </span>
+                </li>
+              
+            
+              
+                <li class="nhsuk-contents-list__item">
+                  <a class="nhsuk-contents-list__link" href="eczema-complications">
+                    
+                      Complications
+                    
+                  </a>
+                </li>
+              
+            
+          </ol>
+      
+          </div>
+        </div>
+      
+        <article>
+          <div class="nhsuk-grid-row">
+            <div class="nhsuk-grid-column-two-thirds">
+      
+              
+        
+        
+          
+      
+      
+        <section>
+            <a id="overview"></a>
+              <p><strong>Treatments for atopic eczema can help to ease the symptoms. There's no cure, but many children find their symptoms naturally improve as they get older.</strong></p>
+                <p>The main treatments for atopic eczema are:</p>
+                    <ul>
+                        <li>
+                            <a href="/conditions/emollients/">emollients</a> (moisturisers) – used every day to stop the skin becoming dry
+                        </li>
+                        <li>
+                            <a href="conditions/topical-steroids/">topical corticosteriods</a> – creams and ointments used to reduce swelling and redness during flare-ups
+                        </li>
+                    </ul>
+                        <p>Other treatments include:</p>
+                            <ul>
+                                <li>topical pimecrolimus or tacrolimus for eczema in sensitive sites not responding to simpler treatment</li>
+                                <li>
+                                    <a href="/conditions/antihistamines/">antihistamines</a> for severe itching
+                                </li>
+                                <li>bandages or special body suits to allow the body to heal underneath</li>
+                                <li>more powerful treatments offered by a dermatologist (skin specialist)</li>
+                                    <p>The various treatments for atopic eczema are outlined on this page.</p>
+                            </ul>
+            </section>
+      
+      
+        
+          
+      
+      
+        <section>
+          <a id="self-care"></a>
+            <h2>Self care</h2>
+                <p>As well as the treatments mentioned above, there are things you can do yourself to help ease your symptoms and prevent further problems.</p>
+            <h3>Try to reduce the damage from scratching</h3>
+                <p>Eczema is often itchy, and it can be very tempting to scratch the affected areas of skin.</p>
+                <p>But scratching usually damages the skin, which can itself cause more eczema to occur.</p>
+                <p>The skin eventually thickens into leathery areas as a result of chronic scratching.</p>
+                <p>Deep scratching also causes bleeding and increases the risk of your skin becoming infected or scarred.</p>
+                <p>Try to reduce scratching whenever possible. You could try gently rubbing your skin with your fingers instead.</p>
+                <p>If your baby has atopic eczema, anti-scratch mittens may stop them scratching their skin.</p>
+                <p>Keep your nails short and clean to minimise damage to the skin from unintentional scratching.</p>
+                <p>Keep your skin covered with light clothing to reduce damage from habitual scratching.</p>
+            <h3>Avoid triggers</h3>
+                <p>Your GP will work with you to establish what might trigger the eczema flare-ups, although it may get better or worse for no obvious reason.</p>
+                <p>Once you know your triggers, you can try to avoid them.</p>
+                <p>For example:</p>
+                    <ul>
+                        <li>if certain fabrics irritate your skin, avoid wearing these and stick to soft, fine-weave clothing or natural materials such as cotton</li>
+                        <li>if heat aggravates your eczema, keep the rooms in your home cool, especially the bedroom</li>
+                        <li>avoid using soaps or detergents that may affect your skin – use soap substitutes instead</li>
+                    </ul>
+                        <p>Although some people with eczema are allergic to house dust mites, trying to rid your home of them isn't recommended as it can be difficult and there's no clear evidence that it helps.</p>
+                        <p>Read more about
+                            <a href="/conditions/preventing-allergies">preventing allergies</a>
+                        </p>
+            <h3>Dietary changes</h3>
+                <p>Some foods, such as eggs and cows' milk, can trigger eczema symptoms.</p>
+                <p>But you shouldn't make significant changes to your diet without first speaking to your GP.</p>
+                <p>It may not be healthy to cut these foods from your diet, especially in young children who need the calcium, calories and protein from these foods.</p>
+                <p>If your GP suspects a
+                    <a href="/conditions/food-allergy/">food allergy</a>, you may be referred to a dietitian (a specialist in diet and nutrition).</p>
+                <p>They can help to work out a way to avoid the food you're allergic to while ensuring you still get all the nutrition you need.</p>
+                <p>Alternatively, you may be referred to a hospital specialist, such as an immunologist, dermatologist or paediatrician.</p>
+                <p>If you're breastfeeding a baby with atopic eczema, get medical advice before making any changes to your regular diet.</p>
+        </section>
+      
+        <section>
+          <a id="emollients"></a>
+            <h2>Emollients</h2>
+                <p>Emollients are moisturising treatments applied directly to the skin to reduce water loss and cover it with a protective film.</p>
+                <p>They're often used to help manage dry or scaly skin conditions, such as atopic eczema.</p>
+                <p>In addition to making the skin feel less dry, they may also have a mild anti-inflammatory role and can help reduce the number of flare-ups you have.</p>
+                <p>If you have mild eczema, talk to a pharmacist for advice on emollients. If you have moderate or severe eczema, talk to a GP.</p>
+            <h3>Choosing an emollient</h3>
+                <p>Several different emollients are available. Talk to a pharmacist for advice on which emollient to use. You may need to try a few to find one that works for you.</p>
+                <p>You may also be advised to use a mix of emollients, such as:</p>
+                    <ul>
+                        <li>an ointment for very dry skin</li>
+                        <li>a cream or lotion for less dry skin</li>
+                        <li>an emollient to use instead of soap</li>
+                        <li>one emollient to use on your face and hands, and a different one to use on your body</li>
+                    </ul>
+                        <p>The difference between lotions, creams and ointments is the amount of oil they contain.</p>
+                        <p>Ointments contain the most oil so they can be quite greasy, but are the most effective at keeping moisture in the skin.</p>
+                        <p>Lotions contain the least amount of oil so aren't greasy, but can be less effective. Creams are somewhere in between.</p>
+                        <p>If you have been using a particular emollient for some time, it may eventually become less effective or may start to irritate your skin.</p>
+                        <p>If this is the case, you may find another product suits you better. You can speak to a pharmacist about other options.</p>
+                        <p>The best emollient is one you feel happy using everyday.</p>
+            <h3>How to use emollients</h3>
+                    <p>Use your emollient all the time, even if you're not experiencing symptoms.</p>
+                    <p>Many people find it helpful to keep separate supplies of emollients at work or school, or a tub in the bathroom and one in a living area.</p>
+                    <p>To apply the emollient:</p>
+                        <ul>
+                            <li>use a large amount</li>
+                            <li>don't rub it in – smooth it into the skin in the same direction the hair grows</li>
+                            <li>after a bath or shower, gently pat the skin dry and apply the emollient while the skin is still moist to keep the moisture in</li>
+                        </ul>
+                            <p>You should use an emollient at least twice a day if you can, or more often if you have very dry skin.</p>
+                            <p>During a flare-up, apply generous amounts of emollient more frequently, but remember to treat inflamed skin with a topical corticosteroid as emollients used on their own aren't enough to control it.</p>
+                            <p>Don't put your fingers into an emollient pot – use a spoon or pump dispenser instead, as this reduces the risk of infection. And never share your emollient with other people.</p>
+    </section>
+      
+    <section>
+        <a id="topical-corticosteroids"></a>
+            <h2>Topical corticosteroids</h2>
+                <p>If your skin is sore and inflamed, your GP may prescribe a topical corticosteroid (applied directly to your skin), which can reduce the inflammation within a few days.</p>
+                <p>Topical corticosteroids can be prescribed in different strengths, depending on the severity of your atopic eczema and the areas of skin affected.</p>
+                <p>They can be:</p>
+                    <ul>
+                        <li>very mild (such as hydrocortisone)</li>
+                        <li>moderate (such as clobetasone butyrate</li>
+                        <li>even stronger (such as mometasone)</li>
+                    </ul>
+                <p>If you need to use corticosteroids frequently, see your GP regularly so they can check the treatment is working effectively and you're using the right amount.</p>
+            <h3>How to use topical corticosteroids</h3>
+                    <p>Don't be afraid to apply the treatment to affected areas to control your eczema.</p>
+                    <p>Unless instructed otherwise by your doctor, follow the directions on the patient information leaflet that comes with your medication.</p>
+                    <p>This will give details of how much to apply.</p>
+                    <p>Most people only have to apply it once a day as there's no evidence there's any benefit to applying it more often.</p>
+                    <p>When using a topical corticosteroid:</p>
+                        <ul>
+                            <li>apply your emollient first and ideally wait around 30 minutes until the emollient has soaked into your skin, or apply the corticosteroid at a different time of day (such as at night)</li>
+                            <li>apply the recommended amount of the topical corticosteroid to the affected area</li>
+                            <li>continue to use it until 48 hours after the flare-up has cleared so the inflammation under the skin surface is treated</li>
+                        </ul>
+                            <p>Occasionally, your doctor may suggest using a topical corticosteroid less frequently, but over a longer period of time. This is designed to help prevent flare-ups.</p>
+                            <p>This is sometimes called weekend treatment, where a person who has already gained control of their eczema uses the topical corticosteroid every weekend on the trouble sites to prevent them becoming active again.</p>
+            <h3>Side effects</h3>
+                        <p>Topical corticosteroids may cause a mild stinging sensation for less than a minute as you apply them.</p>
+                        <p>In rare cases, they may also cause:</p>
+                            <ul>
+                                <li>thinning of the skin – especially if the strong steroids are used in the wrong places, such as the face, for too long (for example, several weeks)</li>
+                                <li>changes in skin colour – usually, skin lightening after many months of using very strong steroids, but most lightening after eczema is a "footprint" of old inflammation and nothing to do with treatments</li>
+                                <li>
+                                    <a href="/conditions/acne/">acne</a> (spots) - especially when used on the face in teenagers</li>
+                                <li>increased hair growth</li>
+                            </ul>
+                                <p>Most of these side effects will improve once treatment stops.</p>
+                                <p>Your risk of side effects may be increased if you use a strong topical corticosteroid:</p>
+                                    <ul>
+                                        <li>for many months</li>
+                                        <li>in sensitive areas such as the face, armpits or groin</li>
+                                        <li>in large amounts</li>
+                                    </ul>
+                                        <p>You should be prescribed the weakest effective treatment to control your symptoms.</p>
+    </section>
+
+    <section>
+        <a id="antihistamines"></a>
+            <h2>Antihistamines</h2>
+                <p>Antihistamines are a type of medicine that block the effects of a substance in the blood called histamine.</p>
+                <p>They can help relieve the itching associated with atopic eczema.</p>
+                <p>They can either be sedating, which cause drowsiness, or non-sedating.</p>
+                <p>If you have severe itching, your GP may suggest trying a non-sedating antihistamine.</p>
+                <p>If itching during a flare-up affects your sleep, your GP may suggest taking a sedating antihistamine.</p>
+                <p>Sedating antihistamines can cause drowsiness into the following day, so it may be helpful to let your child's school know they may not be as alert as normal.</p>
+    </section>
+      
+    <section>
+        <a id="bandages-and-wet-wraps"></a>
+            <h2>Bandages and wet wraps</h2>
+                <p>In some cases, your GP may prescribe special medicated bandages, clothing or wet wraps to wear over areas of skin affected by eczema.</p>
+                <p>These can either be used over emollients or with topical corticosteroids to prevent scratching, allow the skin underneath to heal, and stop the skin drying out.</p>
+    </section>
+
+    <section>
+        <a id="corticosteroid-tablets"></a>
+            <h2>Corticosteroid tablets</h2>
+                <p>
+                    <a href="/conditions/steroids/">Corticosteroid tablets</a>are rarely used to treat atopic eczema nowadays, but may occasionally be prescribed for short periods of 5 to 7 days to help bring particularly severe flare-ups under control.</p>
+                <p>Longer courses of treatment are generally avoided because of the risk of potentially serious side effects.</p>
+                <p>If your GP thinks your condition may be severe enough to benefit from repeated or prolonged treatment with corticosteroid tablets, they'll probably refer you to a specialist.</p>
+    </section>
+
+    <section>
+        <a id="Seeing-a-specialist"></a>
+            <h2>Seeing a specialist</h2>
+                <p>In some cases, your GP may refer you to a specialist in treating skin conditions (dermatologist).</p>
+                <p>You may be referred if:</p>
+                    <ul>
+                        <li>your GP isn't sure what type of eczema you have</li>
+                        <li>normal treatment isn't controlling your eczema</li>
+                        <li>your eczema is affecting your daily life</li>
+                        <li>it's not clear what's causing it</li>
+                    </ul>
+                        <p>A dermatologist may be able to offer the following:</p>
+                            <ul>
+                                <li>
+                                    <a href="/conditions/allergy-testing/">allergy testing</a>
+                                </li>
+                                <li>a thorough review of your existing treatment – to make sure you're using enough of the right things at the right times</li>
+                                <li>topical calcineurin inhibitors – creams and ointments that suppress your immune system, such as pimecrolimus and tacrolimus</li>
+                                <li>very strong topical corticosteroids</li>
+                                <li>bandages or wet wraps</li>
+                                <li>phototherapy – ultraviolet (UV) light that reduces inflammation</li>
+                                <li>immunosuppressant tablets – to suppress your immune system, such as azathioprine, ciclosporin and methotrexate</li>
+                                <li>alitretinoin – medicine to treat severe eczema affecting the hands in adults</li>
+                                <li>dupilumab – a medicine for adults with moderate to severe eczema that may be tried when other treatments haven't worked</li>
+                            </ul>
+                                <p>A dermatologist may also offer additional support to help you use your treatments correctly, such as demonstrations from specialist nurses, and they may be able to refer you for psychological support if you feel you need it.</p>
+    </section>
+
+    <section>
+        <a id="complementary-therapies"></a>
+            <h2>Complementary therapies</h2>
+                <p>Some people may find complementary therapies such as herbal remedies helpful in treating their eczema, but there's little evidence to show these remedies are effective.</p>
+                <p>If you're thinking about using a complementary therapy, speak to your GP first to ensure the therapy is safe for you to use.</p>
+                <p>Make sure you continue to use other treatments your GP has prescribed.</p>
+    </section>
+      
+      
+        
+      
+        <div class="nhsuk-review-date">
+          <p class="nhsuk-body-s">
+            Page last reviewed: 2 December 2016<br>
+            Next review due: 2 December 2019
+          </p>
+        </div>
+      
+        <nav class="nhsuk-pagination" role="navigation" aria-label="Pagination">
+                <ul class="nhsuk-list nhsuk-pagination__list">
+                  <li class="nhsuk-pagination-item--previous">
+                    <a class="nhsuk-pagination__link nhsuk-pagination__link--prev" href="eczema-causes">
+                      <span class="nhsuk-pagination__title">Previous</span>
+                      <span class="nhsuk-u-visually-hidden">:</span>
+                      <span class="nhsuk-pagination__page">Causes</span>
+                      <svg class="nhsuk-icon nhsuk-icon__arrow-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M4.1 12.3l2.7 3c.2.2.5.2.7 0 .1-.1.1-.2.1-.3v-2h11c.6 0 1-.4 1-1s-.4-1-1-1h-11V9c0-.2-.1-.4-.3-.5h-.2c-.1 0-.3.1-.4.2l-2.7 3c0 .2 0 .4.1.6z"></path>
+                      </svg>
+                    </a>
+                  </li>       
+          
+      
+      <nav class="nhsuk-pagination" role="navigation" aria-label="Pagination">
+        <ul class="nhsuk-list nhsuk-pagination__list">
+        
+        
+          <li class="nhsuk-pagination-item--next">
+            <a class="nhsuk-pagination__link nhsuk-pagination__link--next" href="/eczema-complications">
+              <span class="nhsuk-pagination__title">Next</span>
+              <span class="nhsuk-u-visually-hidden">:</span>
+              <span class="nhsuk-pagination__page">Complications</span>
+              <svg class="nhsuk-icon nhsuk-icon__arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M19.6 11.66l-2.73-3A.51.51 0 0 0 16 9v2H5a1 1 0 0 0 0 2h11v2a.5.5 0 0 0 .32.46.39.39 0 0 0 .18 0 .52.52 0 0 0 .37-.16l2.73-3a.5.5 0 0 0 0-.64z"></path>
+              </svg>
+            </a>
+          </li>
+        
+        </ul>
+      </nav>
+      
+        
+      
+      
+            </div>
+      
+            
+      
+          </div>
+        </article>
+      
+  
+
+{% endblock %}
