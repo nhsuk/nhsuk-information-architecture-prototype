@@ -1,5 +1,5 @@
 <!-- Extends the layout from /views/layout.html -->
-{% extends 'layout.html' %}
+{% extends './layout.html' %}
 <!-- 
   In /views/layout.html you can:
     - change the header and footer 
@@ -17,11 +17,11 @@
   {{ breadcrumb({
     items: [
     {
-      href: "/home",
+      href: "/search/home",
       text: "Home"
     }
   ],
-    href: "/a-to-z",
+    href: "/search/a-to-z",
     text: "Health A to Z"
   }) }}
 {% endblock %}
@@ -207,7 +207,7 @@
                             </ul>
                                 <p>See your doctor as soon as possible if you think your or your child's skin may have become infected.</p>
                                 <p>Read more about infections and other
-                                    <a href="javascript:void(0);" title="">complications of atopic eczema</a>
+                                    <a href="/conditions/complications-of-atopic-eczema/">complications of atopic eczema</a>
                                 </p>
             </section>
       

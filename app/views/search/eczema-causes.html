@@ -1,5 +1,5 @@
 <!-- Extends the layout from /views/layout.html -->
-{% extends 'layout.html' %}
+{% extends './layout.html' %}
 <!-- 
   In /views/layout.html you can:
     - change the header and footer 
@@ -17,11 +17,11 @@
   {{ breadcrumb({
     items: [
     {
-      href: "/home",
+      href: "/search/home",
       text: "Home"
     }
   ],
-    href: "/a-to-z",
+    href: "/search/a-to-z",
     text: "Health A to Z"
   }) }}
 {% endblock %}
@@ -121,14 +121,14 @@
                         <ul>
                             <li>irritants – such as soaps and detergents, including shampoo, washing up liquid and bubble bath</li>
                             <li>environmental factors or
-                                <a href="javascript:void(0);" title="">allergens</a> – such as cold and dry weather, dampness, and more specific things such as house dust mites, pet fur, pollen and moulds
+                                <a href="/conditions/allergents/">allergens</a> – such as cold and dry weather, dampness, and more specific things such as house dust mites, pet fur, pollen and moulds
                             </li>
                             <li>
-                                <a href="javascript:void(0);" title="">food allergies</a>– such as allergies to cows' milk, eggs, peanuts, soya or wheat
+                                <a href="conditions/food-allergies/">food allergies</a>– such as allergies to cows' milk, eggs, peanuts, soya or wheat
                             </li>
                             <li>certain materials worn next to the skin – such as wool and synthetic fabrics</li>
                             <li>hormonal changes – women may find their symptoms get worse in the days before their
-                                <a href="javascript:void(0);" title="">period</a> or during pregnancy
+                                <a href="/conditions/periods">period</a> or during pregnancy
                             </li>
                             <li>skin infections</li>
                         </ul>

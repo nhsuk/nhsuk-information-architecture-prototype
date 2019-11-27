@@ -1,0 +1,137 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends './layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  NHS.UK Check a symptom
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+<!-- More info and code for the breadcrumb can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/breadcrumbs -->
+{% block beforeContent %}
+  {{ breadcrumb({
+    href: "/search/",
+    text: "Home"
+  }) }}
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-full">
+
+      <!-- Change the page title here -->
+      <h1>
+        Check a symptom
+      </h1>
+        <p class="nhsuk-lede-text">
+              Intro text for this page goes here.
+        </p>
+
+      <!-- Add your content here -->
+      <section>
+          <h2>Emergency title</h2>
+          <p>Gen text... what goes here?</p>
+        
+      </section>
+      <section>  
+          <h2>Check a symptom</h2>
+          <p>Gen text...</p>
+           <p>My symptom is ____________________ [typeahead goes here]</p>
+      </section>
+      <section>
+        
+          <h2>Browse by body part???</h2>
+          <p>Gen text...</p>
+          <div class="nhsuk-grid-row">
+
+            <div class="nhsuk-grid-column-one-half">
+              {{ promo({
+                "href": "/xx",
+                "heading": "Head",
+                "headingLevel": 1,
+                "description": "xxxxxxxxx."
+              }) }}
+            </div>
+
+            <div class="nhsuk-grid-column-one-half">
+              {{ promo({
+                "href": "/xx",
+                "heading": "Shoulders",
+                "headingLevel": 1,
+                "description": "xxxxxxxxx."
+              }) }}
+            </div>
+
+            <div class="nhsuk-grid-column-one-half">
+              {{ promo({
+                "href": "/xx",
+                "heading": "Knees",
+                "headingLevel": 1,
+                "description": "xxxxxxxxx."
+              }) }}
+            </div>
+
+            <div class="nhsuk-grid-column-one-half">
+              {{ promo({
+                "href": "/xx",
+                "heading": "Toes",
+                "headingLevel": 1,
+                "description": "xxxxxxxxx."
+              }) }}
+            </div>
+
+            <div class="nhsuk-grid-column-one-half">
+              {{ promo({
+                "href": "/xx",
+                "heading": "Eyes",
+                "headingLevel": 1,
+                "description": "xxxxxxxxx."
+              }) }}
+            </div>
+
+            <div class="nhsuk-grid-column-one-half">
+              {{ promo({
+                "href": "/xx",
+                "heading": "Ears",
+                "headingLevel": 1,
+                "description": "xxxxxxxxx."
+              }) }}
+            </div>
+
+            <div class="nhsuk-grid-column-one-half">
+              {{ promo({
+                "href": "/xx",
+                "heading": "Mouth",
+                "headingLevel": 1,
+                "description": "xxxxxxxxx."
+              }) }}
+            </div>
+
+            <div class="nhsuk-grid-column-one-half">
+              {{ promo({
+                "href": "/xx",
+                "heading": "Nose",
+                "headingLevel": 1,
+                "description": "xxxxxxxxx."
+              }) }}
+            </div>
+
+          </div>
+        
+      </section>
+
+      
+      <!-- End of content -->
+
+    </div>  
+
+  </div>
+{% endblock %}

@@ -1,0 +1,391 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends './layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  NHS.UK home
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+<!-- More info and code for the breadcrumb can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/breadcrumbs -->
+{% block beforeContent %}
+  {{ breadcrumb({
+    items: [
+    {
+      href: "/search/home",
+      text: "Home"
+    }
+  ],
+    href: "/search/a-to-z",
+    text: "Health A to Z"
+  }) }}
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+
+
+        
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-full">
+    
+        <div class="nhsuk-u-reading-width">
+    
+          
+      <h1>Mental health and wellbeing</h1>
+      
+        <div class="nhsuk-lede-text">
+          <p>If you're feeling stressed, anxious or depressed, or just want to feel happier, we're here to help.</p>
+    
+    <p>There's separate information on <a href="/using-the-nhs/nhs-services/mental-health-services/dealing-with-a-mental-health-crisis-or-emergency/">dealing with a mental health crisis or emergency</a>.</p>
+    
+        </div>
+      
+    
+    
+        </div>
+    
+        <article>
+    
+          
+      
+        
+          
+            
+            
+              <div class="nhsuk-grid-row nhsuk-promo-group">
+            
+                <div class="nhsuk-grid-column-one-half nhsuk-promo-group__item">
+                  <div class="nhsuk-promo">
+                    <a class="nhsuk-promo__link-wrapper" href="/conditions/stress-anxiety-depression/mood-self-assessment/">
+                      <div class="nhsuk-promo__content">
+                        <h3 class="nhsuk-promo__heading">Mood self-assessment</h3>
+                        
+                        <p class="nhsuk-promo__description">Our mood self-assessment quiz can help you understand how you've been feeling recently and what you can do</p>
+                        
+                      </div>
+                    </a>
+                  </div>
+                </div>
+            
+          
+            
+            
+                <div class="nhsuk-grid-column-one-half nhsuk-promo-group__item">
+                  <div class="nhsuk-promo">
+                    <a class="nhsuk-promo__link-wrapper" href="/conditions/stress-anxiety-depression/moodzone-mental-wellbeing-audio-guides/">
+                      <div class="nhsuk-promo__content">
+                        <h3 class="nhsuk-promo__heading">Mental wellbeing audio guides</h3>
+                        
+                        <p class="nhsuk-promo__description">These audio guides can help with low mood, anxiety, problems sleeping, low confidence and unhelpful thinking</p>
+                        
+                      </div>
+                    </a>
+                  </div>
+                </div>
+            
+              </div>
+            
+          
+        
+      
+        
+          
+    
+    <hr class="nhsuk-hr">
+    
+      <h2>How are you feeling?</h2>
+    
+    
+    
+      <div class="nhsuk-grid-row">
+        
+          
+    
+    <div class="nhsuk-grid-column-one-third">
+        <h3 class="nhsuk-heading-s nhsuk-list-links-heading">Help with stress, anxiety or depression</h3>
+        <ul class="nhsuk-list nhsuk-list-links">
+            
+                <li><a href="/conditions/stress-anxiety-depression/understanding-stress/">Stress</a></li>
+            
+                <li><a href="/conditions/stress-anxiety-depression/understanding-panic/">Anxiety, fear and panic</a></li>
+            
+                <li><a href="/conditions/stress-anxiety-depression/low-mood-and-depression/">Low mood, sadness and depression</a></li>
+            
+        </ul>
+    </div>
+    
+        
+          
+    
+    <div class="nhsuk-grid-column-one-third">
+        <h3 class="nhsuk-heading-s nhsuk-list-links-heading">Help with other common feelings</h3>
+        <ul class="nhsuk-list nhsuk-list-links">
+            
+                <li><a href="/conditions/stress-anxiety-depression/feeling-lonely/">Feeling lonely</a></li>
+            
+                <li><a href="/conditions/stress-anxiety-depression/coping-with-bereavement/">Grief after bereavement or loss</a></li>
+            
+                <li><a href="/conditions/stress-anxiety-depression/controlling-anger/">Anger</a></li>
+            
+        </ul>
+    </div>
+    
+        
+          
+    
+    <div class="nhsuk-grid-column-one-third">
+        <h3 class="nhsuk-heading-s nhsuk-list-links-heading">I'm not sure how I feel</h3>
+        <ul class="nhsuk-list nhsuk-list-links">
+            
+                <li><a href="/conditions/stress-anxiety-depression/mood-self-assessment/">Mood self-assessment</a></li>
+            
+        </ul>
+    </div>
+    
+        
+      </div>
+    
+    
+        
+      
+        
+          
+    
+    <hr class="nhsuk-hr">
+    
+      <h2>More self-help and support</h2>
+    
+    
+    
+      <div class="nhsuk-grid-row">
+        
+          
+    
+    <div class="nhsuk-grid-column-one-third">
+        <h3 class="nhsuk-heading-s nhsuk-list-links-heading">Your mental wellbeing</h3>
+        <ul class="nhsuk-list nhsuk-list-links">
+            
+                <li><a href="/conditions/stress-anxiety-depression/improve-mental-wellbeing/">5 steps to mental wellbeing</a></li>
+            
+                <li><a href="/conditions/stress-anxiety-depression/mindfulness/">Mindfulness</a></li>
+            
+                <li><a href="/conditions/stress-anxiety-depression/moodzone-mental-wellbeing-audio-guides/">Mental wellbeing audio guides</a></li>
+            
+        </ul>
+    </div>
+    
+        
+          
+    
+    <div class="nhsuk-grid-column-one-third">
+        <h3 class="nhsuk-heading-s nhsuk-list-links-heading">Improve low mood</h3>
+        <ul class="nhsuk-list nhsuk-list-links">
+            
+                <li><a href="/conditions/stress-anxiety-depression/feel-better-and-happy/">How to be happier</a></li>
+            
+                <li><a href="/conditions/stress-anxiety-depression/raising-low-self-esteem/">Raising low self-esteem</a></li>
+            
+        </ul>
+    </div>
+    
+        
+          
+    
+    <div class="nhsuk-grid-column-one-third">
+        <h3 class="nhsuk-heading-s nhsuk-list-links-heading">Reduce stress</h3>
+        <ul class="nhsuk-list nhsuk-list-links">
+            
+                <li><a href="/conditions/stress-anxiety-depression/reduce-stress/">10 stress busters</a></li>
+            
+                <li><a href="/conditions/stress-anxiety-depression/ways-relieve-stress/">Breathing exercise for stress</a></li>
+            
+                <li><a href="/conditions/stress-anxiety-depression/time-management-tips/">Easy time-management tips</a></li>
+            
+                <li><a href="/conditions/stress-anxiety-depression/coping-with-financial-worries/">How to cope with money worries</a></li>
+            
+        </ul>
+    </div>
+    
+        
+      </div>
+    
+      <div class="nhsuk-grid-row">
+        
+          
+    
+    <div class="nhsuk-grid-column-one-third">
+        <h3 class="nhsuk-heading-s nhsuk-list-links-heading">Depression support</h3>
+        <ul class="nhsuk-list nhsuk-list-links">
+            
+                <li><a href="/conditions/stress-anxiety-depression/dealing-with-depression/">Tips for coping with depression</a></li>
+            
+                <li><a href="/conditions/stress-anxiety-depression/signs-someone-is-depressed/">How to help someone with depression</a></li>
+            
+                <li><a href="/conditions/stress-anxiety-depression/exercise-for-depression/">Exercise for depression</a></li>
+            
+        </ul>
+    </div>
+    
+        
+          
+    
+    <div class="nhsuk-grid-column-one-third">
+        <h3 class="nhsuk-heading-s nhsuk-list-links-heading">Mental health at work</h3>
+        <ul class="nhsuk-list nhsuk-list-links">
+            
+                <li><a href="/conditions/stress-anxiety-depression/bullying-at-work/">Bullying at work</a></li>
+            
+                <li><a href="/conditions/stress-anxiety-depression/returning-to-work-after-mental-health-issues/">Going to work after mental health issues</a></li>
+            
+        </ul>
+    </div>
+    
+        
+      </div>
+    
+    
+        
+      
+        
+          
+    
+    <hr class="nhsuk-hr">
+    
+      <h2>Therapy and counselling</h2>
+    
+    
+    
+      <div class="nhsuk-grid-row">
+        
+          
+    
+    <div class="nhsuk-grid-column-one-third">
+        <h3 class="nhsuk-heading-s nhsuk-list-links-heading">Talking therapies and counselling</h3>
+        <ul class="nhsuk-list nhsuk-list-links">
+            
+                <li><a href="/conditions/stress-anxiety-depression/types-of-therapy/">Types of talking therapies</a></li>
+            
+                <li><a href="/conditions/stress-anxiety-depression/benefits-of-talking-therapy/">Benefits of talking therapy</a></li>
+            
+                <li><a href="/conditions/stress-anxiety-depression/self-help-therapies/">Self-help therapies</a></li>
+            
+                <li><a href="/conditions/stress-anxiety-depression/free-therapy-or-counselling/">Can I get free therapy or counselling?</a></li>
+            
+        </ul>
+    </div>
+    
+        
+          
+    
+    <div class="nhsuk-grid-column-one-third">
+        <h3 class="nhsuk-heading-s nhsuk-list-links-heading">Helplines and support groups</h3>
+        <ul class="nhsuk-list nhsuk-list-links">
+            
+                <li><a href="/conditions/stress-anxiety-depression/mental-health-helplines/">Mental health helplines</a></li>
+            
+                <li><a href="/conditions/stress-anxiety-depression/depression-help-groups/">Depression support groups</a></li>
+            
+                <li><a href="/conditions/stress-anxiety-depression/mental-health-issues-if-you-are-gay-lesbian-or-bisexual/">Mental health issues if you're gay, lesbian, bisexual or trans</a></li>
+            
+                <li><a href="/conditions/stress-anxiety-depression/loneliness-in-older-people/">Loneliness in older people</a></li>
+            
+                <li><a href="/conditions/stress-anxiety-depression/loneliness-in-the-elderly-how-to-help/">Loneliness in the elderly: how to help</a></li>
+            
+        </ul>
+    </div>
+    
+        
+      </div>
+    
+    
+        
+      
+        
+          
+    
+    <hr class="nhsuk-hr">
+    
+      <h2>Support for children and young people</h2>
+    
+    
+    
+      <div class="nhsuk-grid-row">
+        
+          
+    
+    <div class="nhsuk-grid-column-one-third">
+        <h3 class="nhsuk-heading-s nhsuk-list-links-heading">Children's mental health</h3>
+        <ul class="nhsuk-list nhsuk-list-links">
+            
+                <li><a href="/conditions/stress-anxiety-depression/talking-to-children-about-feelings/">Talking to children about feelings</a></li>
+            
+                <li><a href="/conditions/stress-anxiety-depression/children-depressed-signs/">Depression in children and teenagers</a></li>
+            
+                <li><a href="/conditions/stress-anxiety-depression/anxiety-in-children/">Anxiety in children</a></li>
+            
+                <li><a href="/conditions/stress-anxiety-depression/dealing-with-angry-child/">Dealing with child anger</a></li>
+            
+                <li><a href="/conditions/stress-anxiety-depression/children-and-bereavement/">Children and bereavement</a></li>
+            
+        </ul>
+    </div>
+    
+        
+          
+    
+    <div class="nhsuk-grid-column-one-third">
+        <h3 class="nhsuk-heading-s nhsuk-list-links-heading">Teen mental health</h3>
+        <ul class="nhsuk-list nhsuk-list-links">
+            
+                <li><a href="/conditions/stress-anxiety-depression/worried-about-your-teenager/">Worried about your teenager?</a></li>
+            
+                <li><a href="/conditions/stress-anxiety-depression/talking-to-your-teenager/">Talking to your teenager</a></li>
+            
+                <li><a href="/conditions/stress-anxiety-depression/teen-aggression-and-arguments/">Teen aggression and arguments</a></li>
+            
+                <li><a href="/conditions/stress-anxiety-depression/coping-with-your-teenager/">Coping with your teenager</a></li>
+            
+                <li><a href="/conditions/stress-anxiety-depression/bereavement-and-young-people/">Bereavement and young people</a></li>
+            
+        </ul>
+    </div>
+    
+        
+          
+    
+    <div class="nhsuk-grid-column-one-third">
+        <h3 class="nhsuk-heading-s nhsuk-list-links-heading">Student mental health</h3>
+        <ul class="nhsuk-list nhsuk-list-links">
+            
+                <li><a href="/conditions/stress-anxiety-depression/student-mental-health/">Student mental health</a></li>
+            
+                <li><a href="/conditions/stress-anxiety-depression/student-stress/">Student stress: self-help tips</a></li>
+            
+                <li><a href="/conditions/stress-anxiety-depression/tips-on-surviving-exams/">Tips on surviving exams</a></li>
+            
+                <li><a href="/conditions/stress-anxiety-depression/coping-with-exam-stress/">Help your child beat exam stress</a></li>
+            
+        </ul>
+    </div>
+    
+        
+      </div>
+    
+    
+        
+      
+    
+    
+        </article>
+    
+      </div>
+    </div>
+
+{% endblock %}

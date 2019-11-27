@@ -1,5 +1,5 @@
 <!-- Extends the layout from /views/layout.html -->
-{% extends 'layout.html' %}
+{% extends './layout.html' %}
 <!-- 
   In /views/layout.html you can:
     - change the header and footer 
@@ -17,11 +17,11 @@
   {{ breadcrumb({
     items: [
     {
-      href: "/home",
+      href: "/search/home",
       text: "Home"
     }
   ],
-    href: "/a-to-z",
+    href: "/search/a-to-z",
     text: "Health A to Z"
   }) }}
 {% endblock %}
@@ -133,7 +133,7 @@
             <a id="viral-skin-infections"></a>
                 <h2>Viral skin infections</h2>
                     <p>It's also possible for eczema to become infected with the herpes simplex virus, which normally cause
-                        <a href="javascript:void(0);" title="">cold sores.</a>This can develop into a serious condition called eczema herpeticum.
+                        <a href="conditions/cold-sores/">cold sores.</a>This can develop into a serious condition called eczema herpeticum.
                     </p>
                     <p>Symptoms of eczema herpeticum include:</p>
                     <ul>
@@ -158,13 +158,17 @@
                                   https://assets.nhs.uk/prod/images/M1500041.2e16d0ba.fill-1840x1226.jpg 1840w,
                                 
                               ">  
-
+                            
+                            <div class="app-image__credit">
+                              Credit: <p>JOHN RADCLIFFE HOSPITAL/SCIENCE PHOTO LIBRARY</p>
+                        
+                            </div>
                             
                             
                           </figure>
 
                           <p>Contact your doctor immediately if you suspect eczema herpeticum. If you can't contact your GP, call
-                              <a href="javascript:void(0);" title="">NHS 111</a> or go to your nearest hospital.
+                              <a href="using-the-nhs/nhs-services/urgent-and-emergency-care/nhs-111/">NHS 111</a> or go to your nearest hospital.
                           </p>
                           <p>If you're diagnosed with eczema herpeticum, you'll be given an antiviral medication called aciclovir.</p>
 
@@ -180,7 +184,7 @@
                                 <p>Your child may become quiet and withdrawn. Explain the situation to your child's teacher and encourage your child to tell you how they're feeling.</p>
                                 <p>The National Eczema Society provides information about <a href="http://www.eczema.org/support-groups" title="External website">regional support groups</a>, where you may be able to meet other people living with atopic eczema.</p>
                                 <p>You can also read more about
-                                    <a href="javascript:void(0);" title="">bullying</a>
+                                    <a href="/conditions/stress-anxiety-depression/bullying-at-work/">bullying</a>
                                 </p>
                         <h3>Problems sleeping</h3>
                             <p>Sleep-related problems are common among people with eczema.</p>

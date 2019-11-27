@@ -1,5 +1,5 @@
 <!-- Extends the layout from /views/layout.html -->
-{% extends 'layout.html' %}
+{% extends './layout.html' %}
 <!-- 
   In /views/layout.html you can:
     - change the header and footer 
@@ -17,11 +17,11 @@
   {{ breadcrumb({
     items: [
     {
-      href: "/home",
+      href: "/search/home",
       text: "Home"
     }
   ],
-    href: "/a-to-z",
+    href: "/search/a-to-z",
     text: "Health A to Z"
   }) }}
 {% endblock %}
@@ -184,16 +184,26 @@
           
             
             <a id="when-to-seek-medical-advice"></a>
+          
+      
+          
+      
+          
+      
+            
+            
               <h2>When to seek medical advice</h2>
-                <p>See a GP if you have symptoms of atopic eczema. They'll usually be able to diagnose atopic eczema by looking at your skin and asking questions, such as:</p>
-                  <ul>
-                    <li>whether the rash is itchy and where it appears </li>
-                    <li>when the symptoms first began </li>
-                    <li>whether it comes and goes over time </li>
-                    <li>whether there's a history of atopic eczema in your family </li>
-                    <li>whether you have any other conditions, such as <a href="javascript:void(0);" title="">allergies</a> or&nbsp;<a href="javascript:void(0);" title="">asthma</a></li>
-                    <li>whether something in your diet or lifestyle may be contributing to your symptoms </li>
-                  </ul>
+      
+      <p>See a GP if you have symptoms of atopic eczema. They'll usually be able to diagnose atopic eczema by looking at your skin and asking questions, such as:</p>
+      
+      <ul>
+      <li>whether the rash is itchy and where it appears </li>
+      <li>when the symptoms first began </li>
+      <li>whether it comes and goes over time </li>
+      <li>whether there's a history of atopic eczema in your family </li>
+      <li>whether you have any other conditions, such as <a href="/conditions/allergies/">allergies</a> or&nbsp;<a href="/conditions/asthma/">asthma</a></li>
+      <li>whether something in your diet or lifestyle may be contributing to your symptoms </li>
+      </ul>
       
       <p>Typically, to be diagnosed with atopic eczema you should have had an itchy skin condition in the last 12 months and 3 or more of the following:</p>
       
@@ -201,7 +211,7 @@
       <li>visibly irritated red skin in the creases of your skin&nbsp;– such as the insides of your elbows or behind your knees (or on the cheeks, outsides of elbows, or fronts of the knees in children aged 18 months or under) at the time of examination by a health professional </li>
       <li>a history of skin irritation occurring in the same areas mentioned above </li>
       <li>generally dry skin in the last 12 months </li>
-      <li>a history of asthma or&nbsp;<a href="javascript:void(0);" title="">hay fever</a> – children under 4 must have an immediate relative, such as a parent, brother or sister, who has 1 of these conditions </li>
+      <li>a history of asthma or&nbsp;<a href="/conditions/hay-fever/">hay fever</a> – children under 4 must have an immediate relative, such as a parent, brother or sister, who has 1 of these conditions </li>
       <li>the condition started before the age of&nbsp;2 (this does not apply to children under the age of&nbsp;4)</li>
       </ul>
       
@@ -215,19 +225,53 @@
       
       
         <section>
-          <a id="causes-of-atopic-eczema"></a>
+          
+            
+            <a id="causes-of-atopic-eczema"></a>
+          
+      
+          
+            
             <a id="causes"></a>
-              <h2>Causes of atopic eczema</h2>
-                <p>The exact cause of atopic eczema is unknown, but it's clear it is not down to 1 single thing.</p>
-                <p>Atopic eczema often occurs in people who get <a href="javascript:void(0);" title="">allergies</a>. "Atopic" means sensitivity to allergens.</p>
-                <p>It&nbsp;can run in families, and often&nbsp;develops alongside other conditions, such as&nbsp;<a href="javascript:void(0);" title="">asthma</a> and <a href="javascript:void(0);" title="">hay fever</a>.</p>
-                <p>The symptoms of atopic eczema&nbsp;often have certain&nbsp;triggers, such as soaps, detergents, stress and the weather.&nbsp;</p>
-                <p>Sometimes&nbsp;<a href="javascript:void(0);" title="">food allergies</a> can play a part, especially in young children with severe eczema.</p>
-                <p>You may be asked to keep a food diary&nbsp;to try to determine whether a specific food makes your symptoms worse. </p>
-                <p><a href="javascript:void(0);" title="">Allergy tests</a>&nbsp;are not usually needed, although they're sometimes helpful in identifying&nbsp;whether a food allergy may be triggering symptoms.</p>
-                <p><a href="javascript:void(0);" title="">Find out&nbsp;about the&nbsp;causes of atopic eczema</a></p>
+          
+      
+          
+            
+            <h2>Causes of atopic eczema</h2>
+          
+      
+            
+            
+              <p>The exact cause of atopic eczema is unknown, but it's clear it is not down to 1 single thing.</p>
+      
+      <p>Atopic eczema often occurs in people who get <a href="/conditions/allergies/">allergies</a>. "Atopic" means sensitivity to allergens.</p>
+      
+      <p>It&nbsp;can run in families, and often&nbsp;develops alongside other conditions, such as&nbsp;<a href="/conditions/asthma/">asthma</a> and <a href="/conditions/hay-fever/">hay fever</a>.</p>
+      
+      <p>The symptoms of atopic eczema&nbsp;often have certain&nbsp;triggers, such as soaps, detergents, stress and the weather.&nbsp;</p>
+      
+      <p>Sometimes&nbsp;<a href="/conditions/food-allergy/">food allergies</a> can play a part, especially in young children with severe eczema.</p>
+      
+      <p>You may be asked to keep a food diary&nbsp;to try to determine whether a specific food makes your symptoms worse. </p>
+      
+      <p><a href="/conditions/allergies/">Allergy tests</a>&nbsp;are not usually needed, although they're sometimes helpful in identifying&nbsp;whether a food allergy may be triggering symptoms.</p>
+      
+      <p><a href="/conditions/atopic-eczema/causes/">Find out&nbsp;about the&nbsp;causes of atopic eczema</a></p>
+      
+            
+          
         </section>
-
+      
+      
+        
+          
+      
+      
+      
+        
+          
+      
+      
         <section>
           
             
@@ -256,8 +300,8 @@
       
       <ul>
       <li>self care techniques,&nbsp;such as reducing scratching and avoiding triggers </li>
-      <li><a href="javascript:void(0);" title="">emollients</a>&nbsp;(moisturising treatments)&nbsp;–&nbsp;used on a daily basis for dry skin&nbsp; </li>
-      <li><a href="javascript:void(0);" title="">topical corticosteroids</a>&nbsp;–&nbsp;used to reduce swelling, redness and itching during flare-ups</li>
+      <li><a href="/conditions/emollients/">emollients</a>&nbsp;(moisturising treatments)&nbsp;–&nbsp;used on a daily basis for dry skin&nbsp; </li>
+      <li><a href="/conditions/steroids/">topical corticosteroids</a>&nbsp;–&nbsp;used to reduce swelling, redness and itching during flare-ups</li>
       </ul>
       
             
@@ -288,11 +332,11 @@
       <p>Other types of eczema include: </p>
       
       <ul>
-      <li><a href="javascript:void(0);" title="">discoid eczema</a> – a type of eczema that occurs in circular or oval patches on the skin </li>
-      <li><a href="javascript:void(0);" title="">contact dermatitis</a> – a type of eczema that occurs when the body comes into contact with a particular substance </li>
-      <li><a href="javascript:void(0);" title="">varicose eczema</a> – a type of eczema that most often affects the lower legs and is caused by problems with the flow of blood through the leg veins </li>
-      <li><a href="javascript:void(0);" title="">seborrhoeic eczema</a>&nbsp;– a type of eczema where&nbsp;red, scaly patches&nbsp;develop on the sides of the nose, eyebrows, ears and scalp </li>
-      <li><a href="javascript:void(0);" title="">dyshidrotic eczema</a>&nbsp;(pompholyx)&nbsp;– a type of&nbsp;eczema that causes tiny blisters to erupt across the palms of the hands</li>
+      <li><a href="/conditions/discoid-eczema/">discoid eczema</a> – a type of eczema that occurs in circular or oval patches on the skin </li>
+      <li><a href="/conditions/contact-dermatitis/">contact dermatitis</a> – a type of eczema that occurs when the body comes into contact with a particular substance </li>
+      <li><a href="/conditions/varicose-eczema/">varicose eczema</a> – a type of eczema that most often affects the lower legs and is caused by problems with the flow of blood through the leg veins </li>
+      <li><a href="/conditions/dandruff/">seborrhoeic eczema</a>&nbsp;– a type of eczema where&nbsp;red, scaly patches&nbsp;develop on the sides of the nose, eyebrows, ears and scalp </li>
+      <li><a href="/conditions/pompholyx/">dyshidrotic eczema</a>&nbsp;(pompholyx)&nbsp;– a type of&nbsp;eczema that causes tiny blisters to erupt across the palms of the hands</li>
       </ul>
       
             
