@@ -2,27 +2,12 @@
 // ES6 or Vanilla JavaScript
 
 const healthAz = [];
-let results = document.querySelector('.nhsuk-list-panel__list--results');
-const reusltsWrapper = document.querySelector('.nhsuk-list-panel__list--wrapper');
+let results = document.querySelector('.new-search-results');
+const reusltsWrapper = document.querySelector('.new-search-results-wrapper');
 reusltsWrapper.style.display = "none";
-let filteredTotal = document.querySelector('.filtered-total');
+// let filteredTotal = document.querySelector('.filtered-total');
 
-function showForm() {
-    searchClear.style.display = "block";
-}
 
-// // Clear search
-const searchClear = document.querySelector('.search-clear');
-// searchClear.style.display = "none";
-function searchClearInput() {
-    showForm();
-    // console.log("clear");
-    searchConditions.value = "";
-    reusltsWrapper.style.display = "none";
-    filteredTotal.style.display = "none";
-    
-}
-searchClear.addEventListener('click', searchClearInput);
 
 fetch("/javascript/conditions.json")
     .then(response => response.json())
@@ -32,7 +17,7 @@ fetch("/javascript/conditions.json")
 function findMatches(searchTerm, healthAz) {
     return healthAz.filter(condition => {
         const regex = new RegExp(searchTerm, 'gi');
-        console.log(regex);
+        // console.log(regex);
         return condition.title.match(regex) || condition.synonyms.match(regex) || condition.misspelling.match(regex) || condition.tag.match(regex);
         // return condition.synonyms.match(regex);
     })    
@@ -54,7 +39,7 @@ function showMatches() {
             <li class='nhsuk-list-panel__item'>
                 <a class="nhsuk-list-panel__link">
                     ${conditionTitle} 
-                    <em>${conditionSynonyms ? `${conditionSynonyms} hello` : ``} </em>
+                    <em>${conditionSynonyms ? `${conditionSynonyms}` : ``} </em>
                     <em>${conditionMisspelling ? `${conditionMisspelling}` : ``}</em>
                 </a>
             </li>            
@@ -64,15 +49,15 @@ function showMatches() {
     if (checkLength.length >= 1) {
         results.innerHTML = html;
         reusltsWrapper.style.display = "block";
-        filteredTotal.style.display = "inlineBlock";
-        searchClear.style.display = "block";
-        filteredTotal.innerHTML = `
-            <strong><span style="color: #000;">${matchArray.length}</span></strong> matches
-        `;     
+        // filteredTotal.style.display = "inlineBlock";
+        // searchClear.style.display = "block";
+        // filteredTotal.innerHTML = `
+        //     <strong><span style="color: #000;">${matchArray.length}</span></strong> matches
+        // `;     
         results.style.display = "block";
     } else {
         reusltsWrapper.style.display = "none";
-        filteredTotal.innerHTML = " ";
+        // filteredTotal.innerHTML = " ";
     }
     
     if ((checkLength.length >= 1) && (matchArray.length === 0)) {
@@ -84,10 +69,10 @@ function showMatches() {
         </li>
     `;
     }
-    
+
 }
 
-const searchConditions = document.querySelector('.search-conditions');
+const searchConditions = document.querySelector('.new-search__input');
 searchConditions.addEventListener('change', showMatches);
 searchConditions.addEventListener('keyup', showMatches);
 
