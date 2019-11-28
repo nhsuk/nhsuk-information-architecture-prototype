@@ -32,19 +32,21 @@
       </a>
     </div>
     <div class="nhsuk-header__content">
-        <div class="nhsuk-header__search" href="/search">  
-              <form class="nhsuk-header__search-form" id="search" role="search">
-                <label class="nhsuk-u-visually-hidden" for="search-field">Search the NHS website</label>
-                <div class="autocomplete-container" id="autocomplete-container"></div>
-                <input class="nhsuk-search__input" id="search-field" name="q" type="search" placeholder="Search" autocomplete="off">
-                <button class="nhsuk-search__submit" >
-                  <svg class="nhsuk-icon nhsuk-icon__search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                    <path d="M19.71 18.29l-4.11-4.1a7 7 0 1 0-1.41 1.41l4.1 4.11a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42zM5 10a5 5 0 1 1 5 5 5 5 0 0 1-5-5z"></path>
-                  </svg>
-                  <span class="nhsuk-u-visually-hidden">Search</span>
-                </button>
-              </form>
-          </div>
+      <div class="nhsuk-header__search">  
+
+        <form class="new-search" role="search">
+          <label class="nhsuk-u-visually-hidden" for="search-field">Search the NHS website</label>
+          <div class="autocomplete-container" id="autocomplete-container"></div>
+          <input class="new-search__input" name="q" type="search" placeholder="Search" autocomplete="off">
+          <button class="nhsuk-search__submit" >
+            <svg class="nhsuk-icon nhsuk-icon__search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M19.71 18.29l-4.11-4.1a7 7 0 1 0-1.41 1.41l4.1 4.11a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42zM5 10a5 5 0 1 1 5 5 5 5 0 0 1-5-5z"></path>
+            </svg>
+            <span class="nhsuk-u-visually-hidden">Search</span>
+          </button>
+        </form>
+
+      </div>
     </div>
   </div>
   <nav>
@@ -57,9 +59,9 @@
           </a>
         </li>
         <li class="ia-new-nav__item">
-          <a class="ia-new-nav__link" href="">
-            Healthy 
-            <span class="ia-new-nav__link--break">living</span>
+          <a class="ia-new-nav__link" href="/symptoms">
+            Check a 
+            <span class="ia-new-nav__link--break">symptom</span>
           </a>
         </li>
         <li class="ia-new-nav__item">
@@ -69,21 +71,20 @@
           </a>
         </li>
         <li class="ia-new-nav__item">
+          <a class="ia-new-nav__link" href="">
+            Healthy 
+            <span class="ia-new-nav__link--break">living</span>
+          </a>
+        </li>
+        <li class="ia-new-nav__item">
           <a class="ia-new-nav__link" href="/mental-health">
             Mental 
             <span class="ia-new-nav__link--break">health</span>
           </a>
         </li>
         <li class="ia-new-nav__item">
-          <a class="ia-new-nav__link" href="/symptoms">
-            Check a 
-            <span class="ia-new-nav__link--break">symptom</span>
-          </a>
-        </li>
-        <li class="ia-new-nav__item">
           <a class="ia-new-nav__link" href="/pregnancy">
             Pregnancy 
-            
           </a>
         </li>
       </ul>
@@ -103,8 +104,8 @@
         "label": "Home"
       },
       {
-        "URL": "/page-example",
-        "label": "Example page"
+        "URL": "https://www.nhsinform.scot/",
+        "label": "NHS Scotland"
       }
     ]
   })}}

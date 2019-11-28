@@ -8,15 +8,21 @@
 
 <!-- Set the page title inside the pageTitle block -->
 {% block pageTitle %}
-  NHS.UK Check a symptom
+  Check a symptom - NHS.UK 
 {% endblock %}
 
 <!-- Breadcrumb goes inside the beforeContent block -->
 <!-- More info and code for the breadcrumb can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/breadcrumbs -->
 {% block beforeContent %}
   {{ breadcrumb({
-    href: "/",
-    text: "Home"
+    items: [
+    {
+      href: "/home",
+      text: "Home"
+    }
+  ],
+    href: "/a-to-z",
+    text: "Health A to Z"
   }) }}
 {% endblock %}
 
@@ -24,630 +30,608 @@
 <!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
 {% block content %}
 
-  <div class="nhsuk-grid-row">
-    <div class="nhsuk-grid-column-full">
-
+<div class="nhsuk-grid-row">
+  <section>
+    <div class="nhsuk-grid-column-full nhsuk-u-margin-bottom-8">
       <!-- Change the page title here -->
       <h1>
         Check a symptom
       </h1>
-        <p class="nhsuk-lede-text">
-              Check by emergency, A to Z, or body part.
-        </p>
 
       <!-- Add your content here -->
       <h2>If you think there's an emergency</h2>
           {{ actionLink({
         "text": "Get medical help ",
-        "href": "/"
+        "href": "#/stuff"
       }) }}
-        
-      </section>
     </div>
+  </section>
+
+  <section>
+    <div class="nhsuk-grid-column-full nhsuk-u-margin-bottom-8">
+    
+      <h2>Body parts</h2>
+      <!--<p>Gen text...</p>-->
+      <div class="nhsuk-grid-row">
+
+        <div class="nhsuk-grid-column-one-half">
+          {{ promo({
+            "href": "#/stuff",
+            "heading": "Bones",
+            "headingLevel": 3
+          }) }}
+        </div>
+
+        <div class="nhsuk-grid-column-one-half">
+          {{ promo({
+            "href": "#/stuff",
+            "heading": "Chest",
+            "headingLevel": 3
+          }) }}
+        </div>
+
+        <div class="nhsuk-grid-column-one-half">
+          {{ promo({
+            "href": "/foot-pain",
+            "heading": "Feet and legs",
+            "headingLevel": 3
+          }) }}
+        </div>
+
+        <div class="nhsuk-grid-column-one-half">
+          {{ promo({
+            "href": "#/stuff",
+            "heading": "Hands and arms",
+            "headingLevel": 3
+          }) }}
+        </div>
+
+        <div class="nhsuk-grid-column-one-half">
+          {{ promo({
+            "href": "#/stuff",
+            "heading": "Heart",
+            "headingLevel": 3
+          }) }}
+        </div> 
+
+         <div class="nhsuk-grid-column-one-half">
+          {{ promo({
+            "href": "#/stuff",
+            "heading": "Penis, vagina and bottom",
+            "headingLevel": 3
+          }) }}
+        </div>
+
+         <div class="nhsuk-grid-column-one-half">
+          {{ promo({
+            "href": "#/stuff",
+            "heading": "Skin",
+            "headingLevel": 3
+          }) }}
+        </div>
+          <div class="nhsuk-grid-column-one-half">
+          {{ promo({
+            "href": "#/stuff",
+            "heading": "Whole body",
+            "headingLevel": 3
+          }) }}
+        </div>
+
+      </div>
+    </div>  
+  </section> 
+  <section>
     <div class="nhsuk-grid-column-full">
-      <section>
-          <h2>Browse by body part</h2>
-          <!--<p>Gen text...</p>-->
-          <div class="nhsuk-grid-row">
+   
+      <h2>Symptoms A to Z</h2>
 
-          
+      <details class="nhsuk-details nhsuk-expander">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text nhsuk-heading-l">
+              A
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+          <ul class="nhsuk-list-panel__list nhsuk-list-panel__list--with-label">   
+            <li class="nhsuk-list-panel__item">
+              <a class="nhsuk-list-panel__link" href="javascript:void(0);">Anal pain</a>
+            </li>
+            <li class="nhsuk-list-panel__item">
+                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Amnesia</a>
+            </li>    
+            <li class="nhsuk-list-panel__item">
+                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Arrhythmia</a>
+            </li>
+          </ul>
+        </div>
+      </details>
+      
+      <details class="nhsuk-details nhsuk-expander">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text nhsuk-heading-l">
+              B
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+          <ul class="nhsuk-list-panel__list nhsuk-list-panel__list--with-label">   
+            <li class="nhsuk-list-panel__item">
+              <a class="nhsuk-list-panel__link" href="javascript:void(0);">Bad breath</a>
+            </li>
+            <li class="nhsuk-list-panel__item">
+                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Bleeding from the bottom (rectal bleeding)</a>
+            </li>
+             <li class="nhsuk-list-panel__item">
+                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Blood in phlegm</a>
+            </li>
+            <li class="nhsuk-list-panel__item">
+                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Blood in semen</a>
+            </li>
+            <li class="nhsuk-list-panel__item">
+                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Blood in urine</a>
+            </li>
+            <li class="nhsuk-list-panel__item">
+                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Blue skin or lips</a>
+            </li>
+            <li class="nhsuk-list-panel__item">
+                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Blushing</a>
+            </li>
+            <li class="nhsuk-list-panel__item">
+                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Breast lumps</a>
+            </li>
+            <li class="nhsuk-list-panel__item">
+                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Breast pain</a>
+            </li>
+            <li class="nhsuk-list-panel__item">
+                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Bulging eyes</a>
+            </li>
+          </ul>
+        </div>
+      </details>
 
-            <div class="nhsuk-grid-column-one-half">
-              {{ promo({
-                "href": "#/stuff",
-                "heading": "Bones",
-                "headingLevel": 3
-              }) }}
-            </div>
+      <details class="nhsuk-details nhsuk-expander">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text nhsuk-heading-l">
+              C
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+          <ul class="nhsuk-list-panel__list nhsuk-list-panel__list--with-label">   
+            <li class="nhsuk-list-panel__item">
+              <a class="nhsuk-list-panel__link" href="javascript:void(0);">Chest pain</a>
+            </li>
+            <li class="nhsuk-list-panel__item">
+                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Confusion, sudden</a>
+            </li>
+            <li class="nhsuk-list-panel__item">
+                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Coughing up blood</a>
+            </li>
+          </ul>
+        </div>
+      </details>
 
-            <div class="nhsuk-grid-column-one-half">
-              {{ promo({
-                "href": "#/stuff",
-                "heading": "Chest",
-                "headingLevel": 3
-              }) }}
-            </div>
-            <div class="nhsuk-grid-column-one-half">
-              {{ promo({
-                "href": "#/stuff",
-                "heading": "Feet and legs",
-                "headingLevel": 3
-              }) }}
-            </div>
-            <div class="nhsuk-grid-column-one-half">
-              {{ promo({
-                "href": "#/stuff",
-                "heading": "Hands and arms",
-                "headingLevel": 3
-              }) }}
-            </div>
+      <details class="nhsuk-details nhsuk-expander">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text nhsuk-heading-l">
+              D
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+          <ul class="nhsuk-list-panel__list nhsuk-list-panel__list--with-label">   
+            <li class="nhsuk-list-panel__item">
+              <a class="nhsuk-list-panel__link" href="javascript:void(0);">Delirium</a>
+            </li>
+            <li class="nhsuk-list-panel__item">
+              <a class="nhsuk-list-panel__link" href="javascript:void(0);">Dizziness</a>
+            </li>
+            <li class="nhsuk-list-panel__item">
+                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Double vision</a>
+            </li>
+            <li class="nhsuk-list-panel__item">
+                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Dry eyes</a>
+            </li>
+            <li class="nhsuk-list-panel__item">
+                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Dry mouth</a>
+            </li>
+          </ul>
+        </div>
+      </details>
 
-            <div class="nhsuk-grid-column-one-half">
-              {{ promo({
-                "href": "#/stuff",
-                "heading": "Heart",
-                "headingLevel": 3
-              }) }}
-            </div>
+      <details class="nhsuk-details nhsuk-expander">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text nhsuk-heading-l">
+              E
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+          <ul class="nhsuk-list-panel__list nhsuk-list-panel__list--with-label">   
+            <li class="nhsuk-list-panel__item">
+              <a class="nhsuk-list-panel__link" href="javascript:void(0);">Ejaculation problems</a>
+            </li>
+            <li class="nhsuk-list-panel__item">
+                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Elbow and arm pain</a>
+            </li>
+            <li class="nhsuk-list-panel__item">
+                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Excessive daytime sleepiness</a>
+            </li>
+            <li class="nhsuk-list-panel__item">
+                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Eyelid problems</a>
+            </li>
+            <li class="nhsuk-list-panel__item">
+                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Excessive thirst</a>
+            </li>
+          </ul>
+        </div>
+      </details>
 
-           
+      <details class="nhsuk-details nhsuk-expander">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text nhsuk-heading-l">
+              F
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+          <ul class="nhsuk-list-panel__list nhsuk-list-panel__list--with-label">   
+            <li class="nhsuk-list-panel__item">
+              <a class="nhsuk-list-panel__link" href="javascript:void(0);">Fainting</a>
+            </li>
+            <li class="nhsuk-list-panel__item">
+                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Febrile seizures</a>
+            </li>
+            <li class="nhsuk-list-panel__item">
+                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Flatulence</a>
+            </li>
+            <li class="nhsuk-list-panel__item">
+                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Floaters and flashes in the eyes</a>
+            </li>
+            <li class="nhsuk-list-panel__item">
+                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Foot drop</a>
+            </li>
+            <li class="nhsuk-list-panel__item">
+                <a class="nhsuk-list-panel__link" href="/foot-pain">Foot pain</a>
+            </li>
+          </ul>
+        </div>
+      </details>
 
-            <div class="nhsuk-grid-column-one-half">
-              {{ promo({
-                "href": "#/stuff",
-                "heading": "Liver",
-                "headingLevel": 3
-              }) }}
-            </div>
+      <details class="nhsuk-details nhsuk-expander">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text nhsuk-heading-l">
+              H
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+          <ul class="nhsuk-list-panel__list nhsuk-list-panel__list--with-label">   
+            <li class="nhsuk-list-panel__item">
+              <a class="nhsuk-list-panel__link" href="javascript:void(0);">Hallucinations and hearing voices</a>
+            </li>
+            <li class="nhsuk-list-panel__item">
+                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Hand pain</a>
+            </li>
+            <li class="nhsuk-list-panel__item">
+                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Headaches</a>
+            </li>
+            <li class="nhsuk-list-panel__item">
+                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Headaches in children</a>
+            </li> 
+            <li class="nhsuk-list-panel__item">
+                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Heart palpitations and ectopic beats</a>
+            </li>
+            <li class="nhsuk-list-panel__item">
+                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Hiccups</a>
+            </li>
+            <li class="nhsuk-list-panel__item">
+                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Hip pain in adults</a>
+            </li>
+            <li class="nhsuk-list-panel__item">
+                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Hives</a>
+            </li>
+          </ul>
+        </div>
+      </details>
 
-            <div class="nhsuk-grid-column-one-half">
-              {{ promo({
-                "href": "#/stuff",
-                "heading": "Poo and pee",
-                "headingLevel": 3
-              }) }}
-            </div>
+      <details class="nhsuk-details nhsuk-expander">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text nhsuk-heading-l">
+              I
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+          <ul class="nhsuk-list-panel__list nhsuk-list-panel__list--with-label">   
+            <li class="nhsuk-list-panel__item">
+              <a class="nhsuk-list-panel__link" href="javascript:void(0);">Itchy bottom</a>
+            </li>
+            <li class="nhsuk-list-panel__item">
+                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Itchy skin</a>
+            </li>
+          </ul>
+        </div>
+      </details>
 
-             <div class="nhsuk-grid-column-one-half">
-              {{ promo({
-                "href": "#/stuff",
-                "heading": "Sexual and privates",
-                "headingLevel": 3
-              }) }}
-            </div>
+      <details class="nhsuk-details nhsuk-expander">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text nhsuk-heading-l">
+              J
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+          <ul class="nhsuk-list-panel__list nhsuk-list-panel__list--with-label">   
+            <li class="nhsuk-list-panel__item">
+              <a class="nhsuk-list-panel__link" href="javascript:void(0);">Jaundice</a>
+            </li>
+            <li class="nhsuk-list-panel__item">
+                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Joint pain</a>
+            </li>
+          </ul>
+        </div>
+      </details>
 
-             <div class="nhsuk-grid-column-one-half">
-              {{ promo({
-                "href": "#/stuff",
-                "heading": "Skin",
-                "headingLevel": 3
-              }) }}
-            </div>
-              <div class="nhsuk-grid-column-one-half">
-              {{ promo({
-                "href": "#/stuff",
-                "heading": "Whole body",
-                "headingLevel": 3
-              }) }}
-            </div>
+      <details class="nhsuk-details nhsuk-expander">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text nhsuk-heading-l">
+              K
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+          <ul class="nhsuk-list-panel__list nhsuk-list-panel__list--with-label">   
+            <li class="nhsuk-list-panel__item">
+              <a class="nhsuk-list-panel__link" href="javascript:void(0);">Knee pain</a>
+            </li>
+          </ul>
+        </div>
+      </details>
 
-          </div>
-        
-      </section>
-    </div>
-    <div class="nhsuk-grid-column-full">
-      <section>
-        <h2>Can’t find what you’re looking for?</h2>
+      <details class="nhsuk-details nhsuk-expander">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text nhsuk-heading-l">
+              L
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+          <ul class="nhsuk-list-panel__list nhsuk-list-panel__list--with-label">   
+            <li class="nhsuk-list-panel__item">
+              <a class="nhsuk-list-panel__link" href="javascript:void(0);">Limping in children</a>
+            </li>
+            <li class="nhsuk-list-panel__item">
+                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Loss of libido</a>
+            </li>
+            <li class="nhsuk-list-panel__item">
+                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Lost or changed sense of smell</a>
+            </li>
+          </ul>
+        </div>
+      </details>
 
-        <details class="nhsuk-details nhsuk-expander">
-          <summary class="nhsuk-details__summary">
-            <span class="nhsuk-details__summary-text nhsuk-heading-l">
-                A
-            </span>
-          </summary>
-          <div class="nhsuk-details__text">
-            <ul class="nhsuk-list-panel__list nhsuk-list-panel__list--with-label">   
-              <li class="nhsuk-list-panel__item">
-                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Anal pain</a>
-              </li>
-              <li class="nhsuk-list-panel__item">
-                  <a class="nhsuk-list-panel__link" href="javascript:void(0);">Amnesia</a>
-              </li>    
-              <li class="nhsuk-list-panel__item">
-                  <a class="nhsuk-list-panel__link" href="javascript:void(0);">Arrhythmia</a>
-              </li>
-            </ul>
-          </div>
-        </details>
-        
-        <details class="nhsuk-details nhsuk-expander">
-          <summary class="nhsuk-details__summary">
-            <span class="nhsuk-details__summary-text nhsuk-heading-l">
-                B
-            </span>
-          </summary>
-          <div class="nhsuk-details__text">
-            <ul class="nhsuk-list-panel__list nhsuk-list-panel__list--with-label">   
-              <li class="nhsuk-list-panel__item">
-                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Bad breath</a>
-              </li>
-              <li class="nhsuk-list-panel__item">
-                  <a class="nhsuk-list-panel__link" href="javascript:void(0);">Bleeding from the bottom (rectal bleeding)</a>
-              </li>
-               <li class="nhsuk-list-panel__item">
-                  <a class="nhsuk-list-panel__link" href="javascript:void(0);">Blood in phlegm</a>
-              </li>
-              <li class="nhsuk-list-panel__item">
-                  <a class="nhsuk-list-panel__link" href="javascript:void(0);">Blood in semen</a>
-              </li>
-              <li class="nhsuk-list-panel__item">
-                  <a class="nhsuk-list-panel__link" href="javascript:void(0);">Blood in urine</a>
-              </li>
-              <li class="nhsuk-list-panel__item">
-                  <a class="nhsuk-list-panel__link" href="javascript:void(0);">Blue skin or lips</a>
-              </li>
-              <li class="nhsuk-list-panel__item">
-                  <a class="nhsuk-list-panel__link" href="javascript:void(0);">Blushing</a>
-              </li>
-              <li class="nhsuk-list-panel__item">
-                  <a class="nhsuk-list-panel__link" href="javascript:void(0);">Breast lumps</a>
-              </li>
-              <li class="nhsuk-list-panel__item">
-                  <a class="nhsuk-list-panel__link" href="javascript:void(0);">Breast pain</a>
-              </li>
-              <li class="nhsuk-list-panel__item">
-                  <a class="nhsuk-list-panel__link" href="javascript:void(0);">Bulging eyes</a>
-              </li>
-            </ul>
-          </div>
-        </details>
+      <details class="nhsuk-details nhsuk-expander">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text nhsuk-heading-l">
+              M
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+          <ul class="nhsuk-list-panel__list nhsuk-list-panel__list--with-label">   
+            <li class="nhsuk-list-panel__item">
+              <a class="nhsuk-list-panel__link" href="javascript:void(0);">Memory loss</a>
+            </li>
+            <li class="nhsuk-list-panel__item">
+                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Metallic taste</a>
+            </li>          
+          </ul>
+        </div>
+      </details>
 
-        <details class="nhsuk-details nhsuk-expander">
-          <summary class="nhsuk-details__summary">
-            <span class="nhsuk-details__summary-text nhsuk-heading-l">
-                C
-            </span>
-          </summary>
-          <div class="nhsuk-details__text">
-            <ul class="nhsuk-list-panel__list nhsuk-list-panel__list--with-label">   
-              <li class="nhsuk-list-panel__item">
-                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Chest pain</a>
-              </li>
-              <li class="nhsuk-list-panel__item">
-                  <a class="nhsuk-list-panel__link" href="javascript:void(0);">Confusion, sudden</a>
-              </li>
-              <li class="nhsuk-list-panel__item">
-                  <a class="nhsuk-list-panel__link" href="javascript:void(0);">Coughing up blood</a>
-              </li>
-            </ul>
-          </div>
-        </details>
+      <details class="nhsuk-details nhsuk-expander">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text nhsuk-heading-l">
+              N
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+          <ul class="nhsuk-list-panel__list nhsuk-list-panel__list--with-label">   
+            <li class="nhsuk-list-panel__item">
+              <a class="nhsuk-list-panel__link" href="javascript:void(0);">Nail problems</a>
+            </li>
+            <li class="nhsuk-list-panel__item">
+              <a class="nhsuk-list-panel__link" href="javascript:void(0);">Neck pain</a>
+            </li>
+            <li class="nhsuk-list-panel__item">
+              <a class="nhsuk-list-panel__link" href="javascript:void(0);">Night sweats</a>
+            </li> 
+            <li class="nhsuk-list-panel__item">
+              <a class="nhsuk-list-panel__link" href="javascript:void(0);">Nipple discharge</a>
+            </li>
+            <li class="nhsuk-list-panel__item">
+              <a class="nhsuk-list-panel__link" href="javascript:void(0);">Nose bleed</a>
+            </li>          
+          </ul>
+        </div>
+      </details>
 
-        <details class="nhsuk-details nhsuk-expander">
-          <summary class="nhsuk-details__summary">
-            <span class="nhsuk-details__summary-text nhsuk-heading-l">
-                D
-            </span>
-          </summary>
-          <div class="nhsuk-details__text">
-            <ul class="nhsuk-list-panel__list nhsuk-list-panel__list--with-label">   
-              <li class="nhsuk-list-panel__item">
-                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Delirium</a>
-              </li>
-              <li class="nhsuk-list-panel__item">
-                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Dizziness</a>
-              </li>
-              <li class="nhsuk-list-panel__item">
-                  <a class="nhsuk-list-panel__link" href="javascript:void(0);">Double vision</a>
-              </li>
-              <li class="nhsuk-list-panel__item">
-                  <a class="nhsuk-list-panel__link" href="javascript:void(0);">Dry eyes</a>
-              </li>
-              <li class="nhsuk-list-panel__item">
-                  <a class="nhsuk-list-panel__link" href="javascript:void(0);">Dry mouth</a>
-              </li>
-            </ul>
-          </div>
-        </details>
+      <details class="nhsuk-details nhsuk-expander">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text nhsuk-heading-l">
+              O
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+          <ul class="nhsuk-list-panel__list nhsuk-list-panel__list--with-label">   
+            <li class="nhsuk-list-panel__item">
+              <a class="nhsuk-list-panel__link" href="javascript:void(0);">Ovulation pains</a>
+            </li>          
+          </ul>
+        </div>
+      </details>
 
-        <details class="nhsuk-details nhsuk-expander">
-          <summary class="nhsuk-details__summary">
-            <span class="nhsuk-details__summary-text nhsuk-heading-l">
-                E
-            </span>
-          </summary>
-          <div class="nhsuk-details__text">
-            <ul class="nhsuk-list-panel__list nhsuk-list-panel__list--with-label">   
-              <li class="nhsuk-list-panel__item">
-                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Ejaculation problems</a>
-              </li>
-              <li class="nhsuk-list-panel__item">
-                  <a class="nhsuk-list-panel__link" href="javascript:void(0);">Elbow and arm pain</a>
-              </li>
-              <li class="nhsuk-list-panel__item">
-                  <a class="nhsuk-list-panel__link" href="javascript:void(0);">Excessive daytime sleepiness</a>
-              </li>
-              <li class="nhsuk-list-panel__item">
-                  <a class="nhsuk-list-panel__link" href="javascript:void(0);">Eyelid problems</a>
-              </li>
-              <li class="nhsuk-list-panel__item">
-                  <a class="nhsuk-list-panel__link" href="javascript:void(0);">Excessive thirst</a>
-              </li>
-            </ul>
-          </div>
-        </details>
-
-        <details class="nhsuk-details nhsuk-expander">
-          <summary class="nhsuk-details__summary">
-            <span class="nhsuk-details__summary-text nhsuk-heading-l">
-                F
-            </span>
-          </summary>
-          <div class="nhsuk-details__text">
-            <ul class="nhsuk-list-panel__list nhsuk-list-panel__list--with-label">   
-              <li class="nhsuk-list-panel__item">
-                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Fainting</a>
-              </li>
-              <li class="nhsuk-list-panel__item">
-                  <a class="nhsuk-list-panel__link" href="javascript:void(0);">Febrile seizures</a>
-              </li>
-              <li class="nhsuk-list-panel__item">
-                  <a class="nhsuk-list-panel__link" href="javascript:void(0);">Flatulence</a>
-              </li>
-              <li class="nhsuk-list-panel__item">
-                  <a class="nhsuk-list-panel__link" href="javascript:void(0);">Floaters and flashes in the eyes</a>
-              </li>
-              <li class="nhsuk-list-panel__item">
-                  <a class="nhsuk-list-panel__link" href="javascript:void(0);">Foot drop</a>
-              </li>
-              <li class="nhsuk-list-panel__item">
-                  <a class="nhsuk-list-panel__link" href="/foot-pain">Foot pain</a>
-              </li>
-            </ul>
-          </div>
-        </details>
-
-         <details class="nhsuk-details nhsuk-expander">
-          <summary class="nhsuk-details__summary">
-            <span class="nhsuk-details__summary-text nhsuk-heading-l">
-                H
-            </span>
-          </summary>
-          <div class="nhsuk-details__text">
-            <ul class="nhsuk-list-panel__list nhsuk-list-panel__list--with-label">   
-              <li class="nhsuk-list-panel__item">
-                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Hallucinations and hearing voices</a>
-              </li>
-              <li class="nhsuk-list-panel__item">
-                  <a class="nhsuk-list-panel__link" href="javascript:void(0);">Hand pain</a>
-              </li>
-              <li class="nhsuk-list-panel__item">
-                  <a class="nhsuk-list-panel__link" href="javascript:void(0);">Headaches</a>
-              </li>
-              <li class="nhsuk-list-panel__item">
-                  <a class="nhsuk-list-panel__link" href="javascript:void(0);">Headaches in children</a>
-              </li> 
-              <li class="nhsuk-list-panel__item">
-                  <a class="nhsuk-list-panel__link" href="javascript:void(0);">Heart palpitations and ectopic beats</a>
-              </li>
-              <li class="nhsuk-list-panel__item">
-                  <a class="nhsuk-list-panel__link" href="javascript:void(0);">Hiccups</a>
-              </li>
-              <li class="nhsuk-list-panel__item">
-                  <a class="nhsuk-list-panel__link" href="javascript:void(0);">Hip pain in adults</a>
-              </li>
-              <li class="nhsuk-list-panel__item">
-                  <a class="nhsuk-list-panel__link" href="javascript:void(0);">Hives</a>
-              </li>
-            </ul>
-          </div>
-        </details>
-
-        <details class="nhsuk-details nhsuk-expander">
-          <summary class="nhsuk-details__summary">
-            <span class="nhsuk-details__summary-text nhsuk-heading-l">
-                I
-            </span>
-          </summary>
-          <div class="nhsuk-details__text">
-            <ul class="nhsuk-list-panel__list nhsuk-list-panel__list--with-label">   
-              <li class="nhsuk-list-panel__item">
-                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Itchy bottom</a>
-              </li>
-              <li class="nhsuk-list-panel__item">
-                  <a class="nhsuk-list-panel__link" href="javascript:void(0);">Itchy skin</a>
-              </li>
-            </ul>
-          </div>
-        </details>
-
-        <details class="nhsuk-details nhsuk-expander">
-          <summary class="nhsuk-details__summary">
-            <span class="nhsuk-details__summary-text nhsuk-heading-l">
-                J
-            </span>
-          </summary>
-          <div class="nhsuk-details__text">
-            <ul class="nhsuk-list-panel__list nhsuk-list-panel__list--with-label">   
-              <li class="nhsuk-list-panel__item">
-                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Jaundice</a>
-              </li>
-              <li class="nhsuk-list-panel__item">
-                  <a class="nhsuk-list-panel__link" href="javascript:void(0);">Joint pain</a>
-              </li>
-            </ul>
-          </div>
-        </details>
-
-        <details class="nhsuk-details nhsuk-expander">
-          <summary class="nhsuk-details__summary">
-            <span class="nhsuk-details__summary-text nhsuk-heading-l">
-                K
-            </span>
-          </summary>
-          <div class="nhsuk-details__text">
-            <ul class="nhsuk-list-panel__list nhsuk-list-panel__list--with-label">   
-              <li class="nhsuk-list-panel__item">
-                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Knee pain</a>
-              </li>
-            </ul>
-          </div>
-        </details>
-
-        <details class="nhsuk-details nhsuk-expander">
-          <summary class="nhsuk-details__summary">
-            <span class="nhsuk-details__summary-text nhsuk-heading-l">
-                L
-            </span>
-          </summary>
-          <div class="nhsuk-details__text">
-            <ul class="nhsuk-list-panel__list nhsuk-list-panel__list--with-label">   
-              <li class="nhsuk-list-panel__item">
-                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Limping in children</a>
-              </li>
-              <li class="nhsuk-list-panel__item">
-                  <a class="nhsuk-list-panel__link" href="javascript:void(0);">Loss of libido</a>
-              </li>
-              <li class="nhsuk-list-panel__item">
-                  <a class="nhsuk-list-panel__link" href="javascript:void(0);">Lost or changed sense of smell</a>
-              </li>
-            </ul>
-          </div>
-        </details>
-
-        <details class="nhsuk-details nhsuk-expander">
-          <summary class="nhsuk-details__summary">
-            <span class="nhsuk-details__summary-text nhsuk-heading-l">
-                M
-            </span>
-          </summary>
-          <div class="nhsuk-details__text">
-            <ul class="nhsuk-list-panel__list nhsuk-list-panel__list--with-label">   
-              <li class="nhsuk-list-panel__item">
-                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Memory loss</a>
-              </li>
-              <li class="nhsuk-list-panel__item">
-                  <a class="nhsuk-list-panel__link" href="javascript:void(0);">Metallic taste</a>
-              </li>          
-            </ul>
-          </div>
-        </details>
-
-        <details class="nhsuk-details nhsuk-expander">
-          <summary class="nhsuk-details__summary">
-            <span class="nhsuk-details__summary-text nhsuk-heading-l">
-                N
-            </span>
-          </summary>
-          <div class="nhsuk-details__text">
-            <ul class="nhsuk-list-panel__list nhsuk-list-panel__list--with-label">   
-              <li class="nhsuk-list-panel__item">
-                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Nail problems</a>
-              </li>
-              <li class="nhsuk-list-panel__item">
-                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Neck pain</a>
-              </li>
-              <li class="nhsuk-list-panel__item">
-                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Night sweats</a>
-              </li> 
-              <li class="nhsuk-list-panel__item">
-                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Nipple discharge</a>
-              </li>
-              <li class="nhsuk-list-panel__item">
-                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Nose bleed</a>
-              </li>          
-            </ul>
-          </div>
-        </details>
-
-        <details class="nhsuk-details nhsuk-expander">
-          <summary class="nhsuk-details__summary">
-            <span class="nhsuk-details__summary-text nhsuk-heading-l">
-                O
-            </span>
-          </summary>
-          <div class="nhsuk-details__text">
-            <ul class="nhsuk-list-panel__list nhsuk-list-panel__list--with-label">   
-              <li class="nhsuk-list-panel__item">
-                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Ovulation pains</a>
-              </li>          
-            </ul>
-          </div>
-        </details>
-
-        <details class="nhsuk-details nhsuk-expander">
-          <summary class="nhsuk-details__summary">
-            <span class="nhsuk-details__summary-text nhsuk-heading-l">
-                P
-            </span>
-          </summary>
-          <div class="nhsuk-details__text">
-            <ul class="nhsuk-list-panel__list nhsuk-list-panel__list--with-label">   
-              <li class="nhsuk-list-panel__item">
-                <a class="nhsuk-list-panel__link" href="/foot-pain">Pain in foot</a>
-              </li>
-              <li class="nhsuk-list-panel__item">
-                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Paralysis</a>
-              </li>
-              <li class="nhsuk-list-panel__item">
-                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Pelvic pain</a>
-              </li>
-              <li class="nhsuk-list-panel__item">
-                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Period pain</a>
-              </li> 
-              <li class="nhsuk-list-panel__item">
-                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Pins and needles</a>
-              </li>
-              <li class="nhsuk-list-panel__item">
-                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Postmenopausal bleeding</a>
-              </li>          
-            </ul>
-          </div>
-        </details>
+      <details class="nhsuk-details nhsuk-expander">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text nhsuk-heading-l">
+              P
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+          <ul class="nhsuk-list-panel__list nhsuk-list-panel__list--with-label">   
+            <li class="nhsuk-list-panel__item">
+              <a class="nhsuk-list-panel__link" href="/foot-pain">Pain in foot</a>
+            </li>
+            <li class="nhsuk-list-panel__item">
+              <a class="nhsuk-list-panel__link" href="javascript:void(0);">Paralysis</a>
+            </li>
+            <li class="nhsuk-list-panel__item">
+              <a class="nhsuk-list-panel__link" href="javascript:void(0);">Pelvic pain</a>
+            </li>
+            <li class="nhsuk-list-panel__item">
+              <a class="nhsuk-list-panel__link" href="javascript:void(0);">Period pain</a>
+            </li> 
+            <li class="nhsuk-list-panel__item">
+              <a class="nhsuk-list-panel__link" href="javascript:void(0);">Pins and needles</a>
+            </li>
+            <li class="nhsuk-list-panel__item">
+              <a class="nhsuk-list-panel__link" href="javascript:void(0);">Postmenopausal bleeding</a>
+            </li>          
+          </ul>
+        </div>
+      </details>
 
 
-        <details class="nhsuk-details nhsuk-expander">
-          <summary class="nhsuk-details__summary">
-            <span class="nhsuk-details__summary-text nhsuk-heading-l">
-                R
-            </span>
-          </summary>
-          <div class="nhsuk-details__text">
-            <ul class="nhsuk-list-panel__list nhsuk-list-panel__list--with-label">   
-              <li class="nhsuk-list-panel__item">
-                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Rashes in babies and children</a>
-              </li>
-              <li class="nhsuk-list-panel__item">
-                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Red eye</a>
-              </li>
-              <li class="nhsuk-list-panel__item">
-                  <a class="nhsuk-list-panel__link" href="javascript:void(0);">Reduced sex drive</a>
-              </li>         
-            </ul>
-          </div>
-        </details>
+      <details class="nhsuk-details nhsuk-expander">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text nhsuk-heading-l">
+              R
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+          <ul class="nhsuk-list-panel__list nhsuk-list-panel__list--with-label">   
+            <li class="nhsuk-list-panel__item">
+              <a class="nhsuk-list-panel__link" href="javascript:void(0);">Rashes in babies and children</a>
+            </li>
+            <li class="nhsuk-list-panel__item">
+              <a class="nhsuk-list-panel__link" href="javascript:void(0);">Red eye</a>
+            </li>
+            <li class="nhsuk-list-panel__item">
+                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Reduced sex drive</a>
+            </li>         
+          </ul>
+        </div>
+      </details>
 
-        <details class="nhsuk-details nhsuk-expander">
-          <summary class="nhsuk-details__summary">
-            <span class="nhsuk-details__summary-text nhsuk-heading-l">
-                S
-            </span>
-          </summary>
-          <div class="nhsuk-details__text">
-            <ul class="nhsuk-list-panel__list nhsuk-list-panel__list--with-label">   
-              <li class="nhsuk-list-panel__item">
-                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Shortness of breath</a>
-              </li>
-              <li class="nhsuk-list-panel__item">
-                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Shoulder pain</a>
-              </li>
-              <li class="nhsuk-list-panel__item">
-                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Smelly urine</a>
-              </li> 
-              <li class="nhsuk-list-panel__item">
-                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Snoring</a>
-              </li>
-              <li class="nhsuk-list-panel__item">
-                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Soiling (child pooing their pants)</a>
-              </li>
-              <li class="nhsuk-list-panel__item">
-                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Sore or white tongue</a>
-              </li> 
-              <li class="nhsuk-list-panel__item">
-                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Stomach ache</a>
-              </li> 
-              <li class="nhsuk-list-panel__item">
-                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Stopped or missed periods</a>
-              </li> 
-              <li class="nhsuk-list-panel__item">
-                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Swollen glands</a>
-              </li>          
-            </ul>
-          </div>
-        </details>
+      <details class="nhsuk-details nhsuk-expander">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text nhsuk-heading-l">
+              S
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+          <ul class="nhsuk-list-panel__list nhsuk-list-panel__list--with-label">   
+            <li class="nhsuk-list-panel__item">
+              <a class="nhsuk-list-panel__link" href="javascript:void(0);">Shortness of breath</a>
+            </li>
+            <li class="nhsuk-list-panel__item">
+              <a class="nhsuk-list-panel__link" href="javascript:void(0);">Shoulder pain</a>
+            </li>
+            <li class="nhsuk-list-panel__item">
+              <a class="nhsuk-list-panel__link" href="javascript:void(0);">Smelly urine</a>
+            </li> 
+            <li class="nhsuk-list-panel__item">
+              <a class="nhsuk-list-panel__link" href="javascript:void(0);">Snoring</a>
+            </li>
+            <li class="nhsuk-list-panel__item">
+              <a class="nhsuk-list-panel__link" href="javascript:void(0);">Soiling (child pooing their pants)</a>
+            </li>
+            <li class="nhsuk-list-panel__item">
+              <a class="nhsuk-list-panel__link" href="javascript:void(0);">Sore or white tongue</a>
+            </li> 
+            <li class="nhsuk-list-panel__item">
+              <a class="nhsuk-list-panel__link" href="javascript:void(0);">Stomach ache</a>
+            </li> 
+            <li class="nhsuk-list-panel__item">
+              <a class="nhsuk-list-panel__link" href="javascript:void(0);">Stopped or missed periods</a>
+            </li> 
+            <li class="nhsuk-list-panel__item">
+              <a class="nhsuk-list-panel__link" href="javascript:void(0);">Swollen glands</a>
+            </li>          
+          </ul>
+        </div>
+      </details>
 
-        <details class="nhsuk-details nhsuk-expander">
-          <summary class="nhsuk-details__summary">
-            <span class="nhsuk-details__summary-text nhsuk-heading-l">
-                T
-            </span>
-          </summary>
-          <div class="nhsuk-details__text">
-            <ul class="nhsuk-list-panel__list nhsuk-list-panel__list--with-label">   
-              <li class="nhsuk-list-panel__item">
-                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Testicle lumps and swellings</a>
-              </li>
-              <li class="nhsuk-list-panel__item">
-                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Thirst, excessive</a>
-              </li>
-              <li class="nhsuk-list-panel__item">
-                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Toothache</a>
-              </li> 
-              <li class="nhsuk-list-panel__item">
-                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Tremor or shaking hands</a>
-              </li>
-              <li class="nhsuk-list-panel__item">
-                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Twitching eyes and muscles</a>
-              </li>          
-            </ul>
-          </div>
-        </details>
+      <details class="nhsuk-details nhsuk-expander">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text nhsuk-heading-l">
+              T
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+          <ul class="nhsuk-list-panel__list nhsuk-list-panel__list--with-label">   
+            <li class="nhsuk-list-panel__item">
+              <a class="nhsuk-list-panel__link" href="javascript:void(0);">Testicle lumps and swellings</a>
+            </li>
+            <li class="nhsuk-list-panel__item">
+              <a class="nhsuk-list-panel__link" href="javascript:void(0);">Thirst, excessive</a>
+            </li>
+            <li class="nhsuk-list-panel__item">
+              <a class="nhsuk-list-panel__link" href="javascript:void(0);">Toothache</a>
+            </li> 
+            <li class="nhsuk-list-panel__item">
+              <a class="nhsuk-list-panel__link" href="javascript:void(0);">Tremor or shaking hands</a>
+            </li>
+            <li class="nhsuk-list-panel__item">
+              <a class="nhsuk-list-panel__link" href="javascript:void(0);">Twitching eyes and muscles</a>
+            </li>          
+          </ul>
+        </div>
+      </details>
 
-        <details class="nhsuk-details nhsuk-expander">
-          <summary class="nhsuk-details__summary">
-            <span class="nhsuk-details__summary-text nhsuk-heading-l">
-                U
-            </span>
-          </summary>
-          <div class="nhsuk-details__text">
-            <ul class="nhsuk-list-panel__list nhsuk-list-panel__list--with-label">   
-              <li class="nhsuk-list-panel__item">
-                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Unintentional weight loss</a>
-              </li>         
-            </ul>
-          </div>
-        </details>
+      <details class="nhsuk-details nhsuk-expander">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text nhsuk-heading-l">
+              U
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+          <ul class="nhsuk-list-panel__list nhsuk-list-panel__list--with-label">   
+            <li class="nhsuk-list-panel__item">
+              <a class="nhsuk-list-panel__link" href="javascript:void(0);">Unintentional weight loss</a>
+            </li>         
+          </ul>
+        </div>
+      </details>
 
-        <details class="nhsuk-details nhsuk-expander">
-          <summary class="nhsuk-details__summary">
-            <span class="nhsuk-details__summary-text nhsuk-heading-l">
-                V
-            </span>
-          </summary>
-          <div class="nhsuk-details__text">
-            <ul class="nhsuk-list-panel__list nhsuk-list-panel__list--with-label">   
-              <li class="nhsuk-list-panel__item">
-                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Vaginal discharge</a>
-              </li>
-              <li class="nhsuk-list-panel__item">
-                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Vaginal dryness</a>
-              </li>
-              <li class="nhsuk-list-panel__item">
-                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Vomiting blood</a>
-              </li>           
-            </ul>
-          </div>
-        </details>
+      <details class="nhsuk-details nhsuk-expander">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text nhsuk-heading-l">
+              V
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+          <ul class="nhsuk-list-panel__list nhsuk-list-panel__list--with-label">   
+            <li class="nhsuk-list-panel__item">
+              <a class="nhsuk-list-panel__link" href="javascript:void(0);">Vaginal discharge</a>
+            </li>
+            <li class="nhsuk-list-panel__item">
+              <a class="nhsuk-list-panel__link" href="javascript:void(0);">Vaginal dryness</a>
+            </li>
+            <li class="nhsuk-list-panel__item">
+              <a class="nhsuk-list-panel__link" href="javascript:void(0);">Vomiting blood</a>
+            </li>           
+          </ul>
+        </div>
+      </details>
 
-        <details class="nhsuk-details nhsuk-expander">
-          <summary class="nhsuk-details__summary">
-            <span class="nhsuk-details__summary-text nhsuk-heading-l">
-                W
-            </span>
-          </summary>
-          <div class="nhsuk-details__text">
-            <ul class="nhsuk-list-panel__list nhsuk-list-panel__list--with-label">   
-              <li class="nhsuk-list-panel__item">
-                <a class="nhsuk-list-panel__link" href="javascript:void(0);">Watering eyes</a>
-              </li>         
-            </ul>
-          </div>
-        </details>
-
-      </section>
-      <!-- End of content -->
+      <details class="nhsuk-details nhsuk-expander">
+        <summary class="nhsuk-details__summary">
+          <span class="nhsuk-details__summary-text nhsuk-heading-l">
+              W
+          </span>
+        </summary>
+        <div class="nhsuk-details__text">
+          <ul class="nhsuk-list-panel__list nhsuk-list-panel__list--with-label">   
+            <li class="nhsuk-list-panel__item">
+              <a class="nhsuk-list-panel__link" href="javascript:void(0);">Watering eyes</a>
+            </li>         
+          </ul>
+        </div>
+      </details>
 
     </div>  
-
-  </div>
+  </section>
+<!-- End of content -->
+</div>
 {% endblock %}

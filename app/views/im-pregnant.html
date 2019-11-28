@@ -8,7 +8,7 @@
 
 <!-- Set the page title inside the pageTitle block -->
 {% block pageTitle %}
-  NHS.UK Pregnancy - I'm pregnant
+  I'm pregnant - NHS.UK 
 {% endblock %}
 
 <!-- Breadcrumb goes inside the beforeContent block -->
@@ -16,13 +16,17 @@
 {% block beforeContent %}
   {{ breadcrumb({
     items: [
-    {
-      href: "/pregnancy",
-      text: "Pregnancy"
-    }
-  ],
-    href: "/im-pregnant",
-    text: "I'm pregnant"
+       {
+        href: "/home",
+        text: "Home"
+      },
+     {
+        href: "/a-to-z",
+        text: "Health A to Z"
+      }
+    ],
+    href: "/pregnancy",
+    text: "Pregnancy"
   }) }}
 {% endblock %}
 
@@ -57,11 +61,11 @@
         <div class="nhsuk-o-grid__item nhsuk-o-grid__item--two-thirds nhsuk-grid-column-one-half">
           <h3>Antenatal care</h3>
             <ul class="nhsuk-list nhsuk-list-links">
+              <li><a href="/pregnancy-to-do-list">Your pregnancy to-do list</a></li> 
               <li><a href="javascript:void(0);">What is antenatal care?</a></li>
               <li><a href="javascript:void(0);">Antenatal checks and tests</a></li>
               <li><a href="javascript:void(0);">Your antenatal appointments</a></li>
-              <li><a href="javascript:void(0);">Antenatal support: meet the team</a></li>
-              <li><a href="/pregnancy-to-do-list">Your pregnancy to-do list</a></li>          
+              <li><a href="javascript:void(0);">Antenatal support: meet the team</a></li>        
             </ul>
         </div>
         <div class="nhsuk-o-grid__item nhsuk-o-grid__item--two-thirds nhsuk-grid-column-one-half">

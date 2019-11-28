@@ -8,7 +8,7 @@
 
 <!-- Set the page title inside the pageTitle block -->
 {% block pageTitle %}
-  NHS.UK Pregnancy
+  Pregnancy - NHS.UK 
 {% endblock %}
 
 <!-- Breadcrumb goes inside the beforeContent block -->
@@ -16,6 +16,10 @@
 {% block beforeContent %}
   {{ breadcrumb({
     items: [
+    {
+      href: "/home",
+      text: "Home"
+    },
     {
       href: "/a-to-z",
       text: "Heath A to Z"
