@@ -1,6 +1,4 @@
 
-// ES6 or Vanilla JavaScript
-
 const healthAz = [];
 const searchWrapper = document.querySelector('.nhsuk-header__search');
 const reusltsWrapper = document.querySelector('.new-search-results-wrapper');
@@ -23,7 +21,7 @@ function findMatches(searchTerm, healthAz) {
     //     return (item.synonyms.indexOf(searchTerm) >= 0);
     // });
 
-    console.log(filteredResult);
+    // console.log(filteredResult);
 
 }
 

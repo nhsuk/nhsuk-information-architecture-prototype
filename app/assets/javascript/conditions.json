@@ -2642,29 +2642,29 @@
         "title": "Eczema (atopic)",
         "link": "/conditions/atopic-eczema/",
         "tag": "",
-        "synonyms": "",
-        "misspelling": ""
+        "synonyms": "dry skin, cracked skin, itchy skin, red skin, flaky skin, sore skin, crusty skin, irritated skin; skin, dry; skin, cracked; skin, itchy; skin, red; skin, flaky; skin, sore; skin, crusty; skin, irritation; skin, irritated",
+        "misspelling": "eczma, exzema, exzma, ezma, excma, exema, excema, ecxema, ecxma, ecema, ecsma, ecsema, ecksma, ecksema, exsma, exsema, eggsma, egsma, eggsema, egsema, egxema, egxma, egcema, egcma, egzma, egzema"
     },
     {
         "title": "Eczema (contact dermatitis)",
         "link": "/conditions/contact-dermatitis/",
         "tag": "",
-        "synonyms": "",
-        "misspelling": ""
+        "synonyms": "dry skin, cracked skin, itchy skin, red skin, flaky skin, sore skin, crusty skin, irritated skin; skin, dry; skin, cracked; skin, itchy; skin, red; skin, flaky; skin, sore; skin, crusty; skin, irritation; skin, irritated",
+        "misspelling": "eczma, exzema, exzma, ezma, excma, exema, excema, ecxema, ecxma, ecema, ecsma, ecsema, ecksma, ecksema, exsma, exsema, eggsma, egsma, eggsema, egsema, egxema, egxma, egcema, egcma, egzma, egzema"
     },
     {
         "title": "Eczema (discoid)",
         "link": "/conditions/discoid-eczema/",
         "tag": "",
-        "synonyms": "",
-        "misspelling": ""
+        "synonyms": "dry skin, cracked skin, itchy skin, red skin, flaky skin, sore skin, crusty skin, irritated skin; skin, dry; skin, cracked; skin, itchy; skin, red; skin, flaky; skin, sore; skin, crusty; skin, irritation; skin, irritated",
+        "misspelling": "eczma, exzema, exzma, ezma, excma, exema, excema, ecxema, ecxma, ecema, ecsma, ecsema, ecksma, ecksema, exsma, exsema, eggsma, egsma, eggsema, egsema, egxema, egxma, egcema, egcma, egzma, egzema"
     },
     {
         "title": "Eczema (varicose)",
         "link": "/conditions/varicose-eczema/",
         "tag": "",
-        "synonyms": "",
-        "misspelling": ""
+        "synonyms": "dry skin, cracked skin, itchy skin, red skin, flaky skin, sore skin, crusty skin, irritated skin; skin, dry; skin, cracked; skin, itchy; skin, red; skin, flaky; skin, sore; skin, crusty; skin, irritation; skin, irritated",
+        "misspelling": "eczma, exzema, exzma, ezma, excma, exema, excema, ecxema, ecxma, ecema, ecsma, ecsema, ecksma, ecksema, exsma, exsema, eggsma, egsma, eggsema, egsema, egxema, egxma, egcema, egcma, egzma, egzema"
     },
     {
         "title": "Edwards' syndrome (trisomy 18)",
@@ -4003,6 +4003,13 @@
         "synonyms": "",
         "misspelling": ""
     },
+    {
+        "title": "Hydrocortisone",
+        "link": "/conditions/hydrocortisone/",
+        "tag": "",
+        "synonyms": "steroid, steroids",
+        "misspelling": "skin problems, prickly heat rash, nappy rash, piles, itchy bottom, ulcers, mouth ulcers, ulcerative colitis, sore bowel, painful joints, pain, joints, swollen joints, joints, swollen, painful tendons, tendons, pain, bursitis, addison’s disease, adrenal gland disorders, asthma, allergies, allergic reaction"
+    },    
     {
         "title": "Hydronephrosis",
         "link": "/conditions/hydronephrosis/",
@@ -5904,8 +5911,8 @@
         "title": "Physiotherapy",
         "link": "/conditions/physiotherapy/",
         "tag": "",
-        "synonyms": "",
-        "misspelling": ""
+        "synonyms": "physio, improving movement, physical activity, physical exercise, aerobic exercise, movement techniques, better movement, sport rehab",
+        "misspelling": "pyhsiotherapy, phisiotherapy, phisiotherapie, physiotherapie, fysiotherapy, fysiotherapie, pyhsio"
     },
     {
         "title": "Piles",
@@ -5995,8 +6002,8 @@
         "title": "Pneumonia",
         "link": "/conditions/pneumonia/",
         "tag": "",
-        "synonyms": "",
-        "misspelling": "newmonia"
+        "synonyms": "chest infection, lung infection, infection, chest, infection, lung",
+        "misspelling": "pnumonia, pnewmonia, neumonia, numonia, newmonia"
     },
     {
         "title": "Poisoning",
