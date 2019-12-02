@@ -286,3 +286,11 @@
   // background: #ffcd60ad;
 }
 
+.nhsuk-list-signage a {
+  color: white!important;
+ 
+  &:visited {
+    color: white!important;
+  }
+
+}
