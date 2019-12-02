@@ -189,6 +189,9 @@
   position: absolute;
   z-index: 999;
   top: 50px;
+  height: 204px;
+  overflow: hidden;
+  width: 300px;
 }
 
 
@@ -218,7 +221,7 @@
   margin: 0;
   outline: none;
   flex-grow: 2;
-  min-width: 145px;
+  min-width: 135px;
 }
 
 .new-search__button {
@@ -256,8 +259,16 @@
 .nhsuk-main-wrapper  {
   a:visited {
     color: #005eb8!important;
-}
+  }
 }
 
+.search--active {
+  float: none;
+  background: red;
+  width: calc(100% - 40px);
+  position: absolute;
+  left: 20px;
+  right: 20px;
+}
 
 
