@@ -2639,8 +2639,15 @@
         "misspelling": ""
     },
     {
+        "title": "Eczema",
+        "link": "eczema",
+        "tag": "",
+        "synonyms": "dry skin, cracked skin, itchy skin, red skin, flaky skin, sore skin, crusty skin, irritated skin; skin, dry; skin, cracked; skin, itchy; skin, red; skin, flaky; skin, sore; skin, crusty; skin, irritation; skin, irritated",
+        "misspelling": "eczma, exzema, exzma, ezma, excma, exema, excema, ecxema, ecxma, ecema, ecsma, ecsema, ecksma, ecksema, exsma, exsema, eggsma, egsma, eggsema, egsema, egxema, egxma, egcema, egcma, egzma, egzema"
+    },    
+    {
         "title": "Eczema (atopic)",
-        "link": "/conditions/atopic-eczema/",
+        "link": "/conditions/atopic-eczema",
         "tag": "",
         "synonyms": "dry skin, cracked skin, itchy skin, red skin, flaky skin, sore skin, crusty skin, irritated skin; skin, dry; skin, cracked; skin, itchy; skin, red; skin, flaky; skin, sore; skin, crusty; skin, irritation; skin, irritated",
         "misspelling": "eczma, exzema, exzma, ezma, excma, exema, excema, ecxema, ecxma, ecema, ecsma, ecsema, ecksma, ecksema, exsma, exsema, eggsma, egsma, eggsema, egsema, egxema, egxma, egcema, egcma, egzma, egzema"
@@ -5909,7 +5916,7 @@
     },
     {
         "title": "Physiotherapy",
-        "link": "/physiotherapy/",
+        "link": "/physiotherapy",
         "tag": "",
         "synonyms": "physio, improving movement, physical activity, physical exercise, aerobic exercise, movement techniques, better movement, sport rehab",
         "misspelling": "pyhsiotherapy, phisiotherapy, phisiotherapie, physiotherapie, fysiotherapy, fysiotherapie, pyhsio"

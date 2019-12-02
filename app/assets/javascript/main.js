@@ -55,7 +55,7 @@ function showMatches() {
   }).join("");
 
 
-  if (checkLength.length >= 1) {
+  if (checkLength.length >= 2) {
     results.innerHTML = html;
     reusltsWrapper.style.display = "block";
     results.style.display = "block";
