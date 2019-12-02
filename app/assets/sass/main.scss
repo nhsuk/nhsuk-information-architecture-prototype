@@ -183,7 +183,10 @@
   width: 27px;
 }
 
-
+.new-search-results {
+  list-style-type: disc;
+  padding-left: 0;
+}
 
 .new-search-results-wrapper {
   position: absolute;
@@ -192,8 +195,10 @@
   height: 204px;
   overflow: hidden;
   width: 300px;
+  background-color: #fff;
+  z-index: 99;
+  right: 10px;
 }
-
 
 
 .new-search {
@@ -208,6 +213,8 @@
 
 
 .new-search__input {
+  border-radius: 0;
+  -webkit-appearance: none;
   border: 1px solid #fff;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 0;

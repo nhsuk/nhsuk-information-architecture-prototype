@@ -38,15 +38,16 @@ function showMatches() {
 
         return `
         ${(() => {
-          if (regex.test(condition.title)) {
+          if (regex.test(condition.synonyms)) {
             return `
               <li class='nhsuk-list-panel__item'>
                   <a class="nhsuk-list-panel__link">
                     ${conditionTitle} 
+                    - <span class="search_highlight">${this.value}</span>
                   </a>
               </li>
             `
-          } else if (regex.test(condition.synonyms)) {
+          } else {
 
             // console.log(condition.synonyms);
             // let toArray = condition.synonyms.split(", ");
@@ -57,7 +58,7 @@ function showMatches() {
               <li class='nhsuk-list-panel__item'>
                   <a class="nhsuk-list-panel__link">
                     ${conditionTitle} 
-                    - <span class="search_highlight">${this.value}</span>
+                    
                   </a>
               </li>
             `
