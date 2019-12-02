@@ -18,7 +18,11 @@ function findMatches(searchTerm, healthAz) {
 
 function showMatches() {
   const matchArray = findMatches(this.value, healthAz);
-  const checkLength = searchConditions.value;
+  const checkLength = searchConditions.value;  
+
+
+
+
   const html = matchArray.map(condition => {
     const regex = new RegExp(this.value, 'gi');
     const conditionTitle = condition.title.replace(regex, `<span class="search_highlight">${this.value}</span>`);

@@ -186,6 +186,8 @@
 .new-search-results {
   list-style-type: disc;
   padding-left: 0;
+  margin: 0;
+  text-transform: capitalize;
 }
 
 .new-search-results-wrapper {
@@ -198,8 +200,12 @@
   background-color: #fff;
   z-index: 99;
   right: 0;
-}
+  @include mq($until: desktop) {
+    top: 47px;
+    right: 10px;
+  }
 
+}
 
 .new-search {
   background-color: transparent;
