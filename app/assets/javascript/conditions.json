@@ -134,13 +134,6 @@
         "misspelling": ""
     },
     {
-        "title": "Cystoscopy",
-        "link": "/conditions/cystoscopy/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
         "title": "Dandruff",
         "link": "/conditions/dandruff/",
         "tag": "",
@@ -218,13 +211,6 @@
         "misspelling": ""
     },
     {
-        "title": "Developmental co-ordination disorder (dyspraxia) in children",
-        "link": "/conditions/developmental-coordination-disorder-dyspraxia/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
         "title": "Diabetes",
         "link": "/conditions/diabetes/",
         "tag": "",
@@ -248,7 +234,7 @@
     },
     {
         "title": "Diarrhoea and vomiting",
-        "link": "/conditions/diarrhoea-and-vomiting/",
+        "link": "/diarrhoea",
         "tag": "",
         "synonyms": "",
         "misspelling": ""
@@ -263,34 +249,6 @@
     {
         "title": "Discoid eczema",
         "link": "/conditions/discoid-eczema/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
-        "title": "Dislocated shoulder",
-        "link": "/conditions/dislocated-shoulder/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
-        "title": "Disorders of consciousness",
-        "link": "/conditions/disorders-of-consciousness/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
-        "title": "Dissociative disorders",
-        "link": "/conditions/dissociative-disorders/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
-        "title": "Diverticular disease and diverticulitis",
-        "link": "/conditions/diverticular-disease-and-diverticulitis/",
         "tag": "",
         "synonyms": "",
         "misspelling": ""
@@ -359,36 +317,8 @@
         "misspelling": ""
     },
     {
-        "title": "Dwarfism",
-        "link": "/conditions/restricted-growth/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
-        "title": "Dysarthria (difficulty speaking)",
-        "link": "/conditions/dysarthria/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
         "title": "Dysentery",
         "link": "/conditions/dysentery/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
-        "title": "Dyspraxia (developmental co-ordination disorder) in adults",
-        "link": "/conditions/developmental-coordination-disorder-dyspraxia-in-adults/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
-        "title": "Dyspraxia in children",
-        "link": "/conditions/developmental-coordination-disorder-dyspraxia/",
         "tag": "",
         "synonyms": "",
         "misspelling": ""
@@ -436,20 +366,6 @@
         "misspelling": ""
     },
     {
-        "title": "Eating disorders",
-        "link": "/conditions/eating-disorders/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
-        "title": "Ebola virus disease",
-        "link": "/conditions/ebola/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
         "title": "Eczema",
         "link": "eczema",
         "tag": "",
@@ -485,20 +401,6 @@
         "misspelling": ""
     },
     {
-        "title": "Electrocardiogram (ECG)",
-        "link": "/conditions/electrocardiogram/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
-        "title": "Electrolyte test",
-        "link": "/conditions/electrolyte-test/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
         "title": "Embolism",
         "link": "/conditions/embolism/",
         "tag": "",
@@ -508,20 +410,6 @@
     {
         "title": "Emollients",
         "link": "/conditions/emollients/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
-        "title": "Empyema",
-        "link": "/conditions/empyema/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
-        "title": "Endocarditis",
-        "link": "/conditions/endocarditis/",
         "tag": "",
         "synonyms": "",
         "misspelling": ""
@@ -541,29 +429,8 @@
         "misspelling": ""
     },
     {
-        "title": "Endoscopy",
-        "link": "/conditions/endoscopy/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
-        "title": "Enhanced recovery",
-        "link": "/conditions/enhanced-recovery/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
         "title": "Epidermolysis bullosa",
         "link": "/conditions/epidermolysis-bullosa/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
-        "title": "Epididymitis",
-        "link": "/conditions/epididymitis/",
         "tag": "",
         "synonyms": "",
         "misspelling": ""
@@ -585,13 +452,6 @@
     {
         "title": "Epilepsy",
         "link": "/conditions/epilepsy/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
-        "title": "Erectile dysfunction (impotence)",
-        "link": "/conditions/erection-problems-erectile-dysfunction/",
         "tag": "",
         "synonyms": "",
         "misspelling": ""
@@ -655,13 +515,6 @@
     {
         "title": "Eye floaters",
         "link": "/conditions/floaters-and-flashes-in-the-eyes/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
-        "title": "Eye infection (herpes)",
-        "link": "/conditions/herpes-simplex-eye-infections/",
         "tag": "",
         "synonyms": "",
         "misspelling": ""
@@ -765,13 +618,6 @@
         "misspelling": ""
     },
     {
-        "title": "Heart disease (coronary)",
-        "link": "/conditions/coronary-heart-disease/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
         "title": "Heart failure",
         "link": "/conditions/heart-failure/",
         "tag": "",
@@ -781,13 +627,6 @@
     {
         "title": "Heart pain",
         "link": "/conditions/chest-pain/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
-        "title": "Heart palpitations and ectopic beats",
-        "link": "/conditions/heart-palpitations/",
         "tag": "",
         "synonyms": "",
         "misspelling": ""
@@ -891,36 +730,8 @@
         "misspelling": ""
     },
     {
-        "title": "Herbal medicines",
-        "link": "/conditions/herbal-medicines/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
         "title": "Herceptin (trastuzumab)",
         "link": "/conditions/herceptin/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
-        "title": "Hereditary haemorrhagic telangiectasia (HHT)",
-        "link": "/conditions/hereditary-haemorrahagic-telangiectasia/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
-        "title": "Hereditary neuropathy with pressure palsies (HNPP)",
-        "link": "/conditions/hereditary-neuropathy/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
-        "title": "Hereditary spastic paraplegia",
-        "link": "/conditions/hereditary-spastic-paraplegia/",
         "tag": "",
         "synonyms": "",
         "misspelling": ""
@@ -970,13 +781,6 @@
     {
         "title": "Herpes in babies",
         "link": "/conditions/neonatal-herpes/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
-        "title": "Herpes simplex eye infections",
-        "link": "/conditions/herpes-simplex-eye-infections/",
         "tag": "",
         "synonyms": "",
         "misspelling": ""
@@ -1059,13 +863,6 @@
         "misspelling": ""
     },
     {
-        "title": "Hirschsprung's disease",
-        "link": "/conditions/hirschsprungs-disease/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
         "title": "HIV and AIDS",
         "link": "/conditions/hiv-and-aids/",
         "tag": "",
@@ -1075,20 +872,6 @@
     {
         "title": "Hives",
         "link": "/conditions/hives/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
-        "title": "Hoarding disorder",
-        "link": "/conditions/hoarding-disorder/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
-        "title": "Home oxygen therapy",
-        "link": "/conditions/home-oxygen-treatment/",
         "tag": "",
         "synonyms": "",
         "misspelling": ""
@@ -1115,13 +898,6 @@
         "misspelling": ""
     },
     {
-        "title": "Hormone replacement therapy (HRT)",
-        "link": "/conditions/hormone-replacement-therapy-hrt/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
         "title": "HRT",
         "link": "/conditions/hormone-replacement-therapy-hrt/",
         "tag": "",
@@ -1131,13 +907,6 @@
     {
         "title": "Human papillomavirus (HPV)",
         "link": "/conditions/human-papilloma-virus-hpv/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
-        "title": "Huntington's disease",
-        "link": "/conditions/huntingtons-disease/",
         "tag": "",
         "synonyms": "",
         "misspelling": ""
@@ -1159,13 +928,6 @@
     {
         "title": "Hyperhidrosis",
         "link": "/conditions/excessive-sweating-hyperhidrosis/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
-        "title": "Hyperparathyroidism",
-        "link": "/conditions/hyperparathyroidism/",
         "tag": "",
         "synonyms": "",
         "misspelling": ""
@@ -1206,13 +968,6 @@
         "misspelling": ""
     },
     {
-        "title": "Hypoparathyroidism",
-        "link": "/conditions/hypoparathyroidism/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
         "title": "Hypotension",
         "link": "/conditions/low-blood-pressure-hypotension/",
         "tag": "",
@@ -1227,22 +982,8 @@
         "misspelling": ""
     },
     {
-        "title": "Hypothyroidism",
-        "link": "/conditions/underactive-thyroid-hypothyroidism/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
         "title": "Hypotonia",
         "link": "/conditions/hypotonia/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
-        "title": "Hysterectomy",
-        "link": "/conditions/hysterectomy/",
         "tag": "",
         "synonyms": "",
         "misspelling": ""
@@ -1269,13 +1010,6 @@
         "misspelling": ""
     },
     {
-        "title": "Idiopathic pulmonary fibrosis",
-        "link": "/conditions/idiopathic-pulmonary-fibrosis/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
         "title": "Ileostomy",
         "link": "/conditions/ileostomy/",
         "tag": "",
@@ -1290,13 +1024,6 @@
         "misspelling": ""
     },
     {
-        "title": "Impotence",
-        "link": "/conditions/erection-problems-erectile-dysfunction/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
         "title": "Incontinence (urinary)",
         "link": "/conditions/urinary-incontinence/",
         "tag": "",
@@ -1304,22 +1031,8 @@
         "misspelling": ""
     },
     {
-        "title": "Indigestion",
-        "link": "/conditions/indigestion/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
         "title": "Infertility",
         "link": "/conditions/infertility/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
-        "title": "Inflammatory bowel disease",
-        "link": "/conditions/inflammatory-bowel-disease/",
         "tag": "",
         "synonyms": "",
         "misspelling": ""
@@ -1353,13 +1066,6 @@
         "misspelling": ""
     },
     {
-        "title": "Insect bites and stings",
-        "link": "/conditions/insect-bites-and-stings/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
         "title": "Insomnia",
         "link": "/conditions/insomnia/",
         "tag": "",
@@ -1369,13 +1075,6 @@
     {
         "title": "Intensive care",
         "link": "/conditions/intensive-care/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
-        "title": "Intersex",
-        "link": "/conditions/differences-in-sex-development/",
         "tag": "",
         "synonyms": "",
         "misspelling": ""
@@ -1397,13 +1096,6 @@
     {
         "title": "Intrauterine insemination (IUI)",
         "link": "/conditions/artificial-insemination/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
-        "title": "Iron deficiency anaemia",
-        "link": "/conditions/iron-deficiency-anaemia/",
         "tag": "",
         "synonyms": "",
         "misspelling": ""
@@ -1458,29 +1150,8 @@
         "misspelling": ""
     },
     {
-        "title": "Jaundice",
-        "link": "/conditions/jaundice/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
-        "title": "Jaundice in newborns",
-        "link": "/conditions/jaundice-newborn/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
         "title": "Jaw pain",
         "link": "/conditions/temporomandibular-disorder-tmd/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
-        "title": "Jellyfish and other sea creature stings",
-        "link": "/conditions/jellyfish-and-other-sea-creature-stings/",
         "tag": "",
         "synonyms": "",
         "misspelling": ""
@@ -1514,13 +1185,6 @@
         "misspelling": ""
     },
     {
-        "title": "Kawasaki disease",
-        "link": "/conditions/kawasaki-disease/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
         "title": "Keratosis pilaris",
         "link": "/conditions/keratosis-pilaris/",
         "tag": "",
@@ -1537,13 +1201,6 @@
     {
         "title": "Kidney failure",
         "link": "/conditions/kidney-disease/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
-        "title": "Kidney infection",
-        "link": "/conditions/kidney-infection/",
         "tag": "",
         "synonyms": "",
         "misspelling": ""
@@ -1689,13 +1346,6 @@
         "misspelling": ""
     },
     {
-        "title": "Learning disabilities",
-        "link": "/conditions/learning-disabilities/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
         "title": "Leg cramps",
         "link": "/conditions/leg-cramps/",
         "tag": "",
@@ -1705,20 +1355,6 @@
     {
         "title": "Leg ulcer",
         "link": "/conditions/leg-ulcer/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
-        "title": "Legionnaires' disease",
-        "link": "/conditions/legionnaires-disease/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
-        "title": "Leptospirosis (Weil's disease)",
-        "link": "/conditions/leptospirosis/",
         "tag": "",
         "synonyms": "",
         "misspelling": ""
@@ -1822,13 +1458,6 @@
         "misspelling": ""
     },
     {
-        "title": "Overactive thyroid (hyperthyroidism)",
-        "link": "/conditions/overactive-thyroid-hyperthyroidism/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
         "title": "Ovulation pain",
         "link": "/conditions/ovulation-pain/",
         "tag": "",
@@ -1845,20 +1474,6 @@
     {
         "title": "Pacemaker implantation",
         "link": "/conditions/pacemaker-implantation/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
-        "title": "Paget's disease of bone",
-        "link": "/conditions/pagets-disease-bone/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
-        "title": "Paget's disease of the nipple",
-        "link": "/conditions/pagets-disease-nipple/",
         "tag": "",
         "synonyms": "",
         "misspelling": ""
@@ -1899,22 +1514,8 @@
         "misspelling": ""
     },
     {
-        "title": "Panic disorder",
-        "link": "/conditions/panic-disorder/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
         "title": "Paralysis",
         "link": "/conditions/paralysis/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
-        "title": "Parkinson's disease",
-        "link": "/conditions/parkinsons-disease/",
         "tag": "",
         "synonyms": "",
         "misspelling": ""
@@ -1929,13 +1530,6 @@
     {
         "title": "Peak flow test",
         "link": "/conditions/peak-flow-test/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
-        "title": "Pelvic inflammatory disease",
-        "link": "/conditions/pelvic-inflammatory-disease-pid/",
         "tag": "",
         "synonyms": "",
         "misspelling": ""
@@ -1971,13 +1565,6 @@
     {
         "title": "Perforated eardrum",
         "link": "/conditions/perforated-eardrum/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
-        "title": "Pericarditis",
-        "link": "/conditions/pericarditis/",
         "tag": "",
         "synonyms": "",
         "misspelling": ""
@@ -2042,7 +1629,7 @@
         "title": "Physiotherapy",
         "link": "/physiotherapy",
         "tag": "",
-        "synonyms": "physio, improving movement, physical activity, physical exercise, aerobic exercise, movement techniques, better movement, sport rehab",
+        "synonyms": "physio, improving movement, physical activity, physical, aerobic, movement, better movement, sport rehab, fitness",
         "misspelling": "pyhsiotherapy, phisiotherapy, phisiotherapie, physiotherapie, fysiotherapy, fysiotherapie, pyhsio, fisio, fizio"
     },
     {
@@ -2095,13 +1682,6 @@
         "misspelling": ""
     },
     {
-        "title": "Plagiocephaly and brachycephaly (flat head syndrome)",
-        "link": "/conditions/plagiocephaly-brachycephaly/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
         "title": "Plantar fasciitis",
         "link": "/conditions/plantar-fasciitis/",
         "tag": "",
@@ -2133,7 +1713,7 @@
         "title": "Pneumonia",
         "link": "/conditions/pneumonia/",
         "tag": "",
-        "synonyms": "chest infection, lung infection, infection, chest, infection, lung",
+        "synonyms": "lung",
         "misspelling": "pnumonia, pnewmonia, neumonia, numonia, newmonia"
     },
     {
@@ -2146,20 +1726,6 @@
     {
         "title": "Polio",
         "link": "/conditions/polio/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
-        "title": "Polycystic kidney disease (autosomal dominant)",
-        "link": "/conditions/autosomal-dominant-polycystic-kidney-disease-adpkd/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
-        "title": "Polycystic kidney disease (autosomal recessive)",
-        "link": "/conditions/autosomal-recessive-polycystic-kidney-disease-arpkd/",
         "tag": "",
         "synonyms": "",
         "misspelling": ""
@@ -2186,26 +1752,13 @@
         "misspelling": ""
     },
     {
-        "title": "Polymorphic light eruption",
-        "link": "/conditions/polymorphic-light-eruption/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
         "title": "Polymyalgia rheumatica",
         "link": "/conditions/polymyalgia-rheumatica/",
         "tag": "",
         "synonyms": "",
         "misspelling": ""
     },
-    {
-        "title": "Pompholyx (dyshidrotic eczema)",
-        "link": "/conditions/pompholyx/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
+
     {
         "title": "Popliteal cyst",
         "link": "/conditions/bakers-cyst/",
@@ -2235,20 +1788,6 @@
         "misspelling": ""
     },
     {
-        "title": "Post-traumatic stress disorder (PTSD)",
-        "link": "/conditions/post-traumatic-stress-disorder-ptsd/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
-        "title": "Postmenopausal bleeding",
-        "link": "/conditions/post-menopausal-bleeding/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
         "title": "Postnatal depression",
         "link": "/conditions/post-natal-depression/",
         "tag": "",
@@ -2258,13 +1797,6 @@
     {
         "title": "Postpartum psychosis",
         "link": "/conditions/post-partum-psychosis/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
-        "title": "Postural tachycardia syndrome (PoTS)",
-        "link": "/conditions/postural-tachycardia-syndrome/",
         "tag": "",
         "synonyms": "",
         "misspelling": ""
@@ -2284,13 +1816,6 @@
         "misspelling": ""
     },
     {
-        "title": "Pre-eclampsia",
-        "link": "/conditions/pre-eclampsia/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
         "title": "Premature ejaculation",
         "link": "/conditions/ejaculation-problems/",
         "tag": "",
@@ -2300,13 +1825,6 @@
     {
         "title": "Pressure ulcers (pressure sores)",
         "link": "/conditions/pressure-sores/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
-        "title": "Priapism (painful erections)",
-        "link": "/conditions/priapism-painful-erections/",
         "tag": "",
         "synonyms": "",
         "misspelling": ""
@@ -2480,13 +1998,6 @@
         "misspelling": ""
     },
     {
-        "title": "Radiotherapy",
-        "link": "/conditions/radiotherapy/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
         "title": "Rashes in babies and children",
         "link": "/conditions/rashes-babies-and-children/",
         "tag": "",
@@ -2503,27 +2014,6 @@
     {
         "title": "Reactive arthritis",
         "link": "/conditions/reactive-arthritis/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
-        "title": "Rectal bleeding",
-        "link": "/conditions/bleeding-from-the-bottom-rectal-bleeding/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
-        "title": "Rectal cancer",
-        "link": "/conditions/bowel-cancer/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
-        "title": "Rectal examination",
-        "link": "/conditions/rectal-examination/",
         "tag": "",
         "synonyms": "",
         "misspelling": ""
@@ -2557,22 +2047,8 @@
         "misspelling": ""
     },
     {
-        "title": "Respiratory tract infections (RTIs)",
-        "link": "/conditions/respiratory-tract-infection/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
         "title": "Restless legs syndrome",
         "link": "/conditions/restless-legs-syndrome/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
-        "title": "Restricted growth (dwarfism)",
-        "link": "/conditions/restricted-growth/",
         "tag": "",
         "synonyms": "",
         "misspelling": ""
@@ -2608,13 +2084,6 @@
     {
         "title": "Reye's syndrome",
         "link": "/conditions/reyes-syndrome/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
-        "title": "Rhesus disease",
-        "link": "/conditions/rhesus-disease/",
         "tag": "",
         "synonyms": "",
         "misspelling": ""
@@ -2739,13 +2208,6 @@
         "misspelling": ""
     },
     {
-        "title": "Schizophrenia",
-        "link": "/conditions/schizophrenia/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
         "title": "Sciatica",
         "link": "/conditions/sciatica/",
         "tag": "",
@@ -2774,13 +2236,6 @@
         "misspelling": ""
     },
     {
-        "title": "Seasonal affective disorder (SAD)",
-        "link": "/conditions/seasonal-affective-disorder-sad/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
         "title": "Seizures (children with fever)",
         "link": "/conditions/febrile-seizures/",
         "tag": "",
@@ -2790,20 +2245,6 @@
     {
         "title": "Seizures (fits)",
         "link": "/conditions/what-to-do-if-someone-has-a-seizure-fit/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
-        "title": "Selective mutism",
-        "link": "/conditions/selective-mutism/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
-        "title": "Selective serotonin reuptake inhibitors (SSRIs)",
-        "link": "/conditions/ssri-antidepressants/",
         "tag": "",
         "synonyms": "",
         "misspelling": ""
@@ -2846,13 +2287,6 @@
     {
         "title": "Severe head injury",
         "link": "/conditions/severe-head-injury/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
-        "title": "Sexually transmitted infections (STIs)",
-        "link": "/conditions/sexually-transmitted-infections-stis/",
         "tag": "",
         "synonyms": "",
         "misspelling": ""
@@ -2914,20 +2348,6 @@
         "misspelling": ""
     },
     {
-        "title": "Sick building syndrome",
-        "link": "/conditions/sick-building-syndrome/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
-        "title": "Sickle cell disease",
-        "link": "/conditions/sickle-cell-disease/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
         "title": "Silicosis",
         "link": "/conditions/silicosis/",
         "tag": "",
@@ -2984,13 +2404,6 @@
         "misspelling": ""
     },
     {
-        "title": "Skin picking disorder",
-        "link": "/conditions/skin-picking-disorder/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
         "title": "Skin tags",
         "link": "/conditions/skin-tags/",
         "tag": "",
@@ -3026,13 +2439,6 @@
         "misspelling": ""
     },
     {
-        "title": "Slipped disc",
-        "link": "/conditions/slipped-disc/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
         "title": "Small bowel transplant",
         "link": "/conditions/small-bowel-transplant/",
         "tag": "",
@@ -3042,13 +2448,6 @@
     {
         "title": "Smear test",
         "link": "/conditions/cervical-screening/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
-        "title": "Smelling things that aren't there (phantosmia)",
-        "link": "/conditions/phantosmia/",
         "tag": "",
         "synonyms": "",
         "misspelling": ""
@@ -3145,20 +2544,6 @@
         "misspelling": ""
     },
     {
-        "title": "Spina bifida",
-        "link": "/conditions/spina-bifida/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
-        "title": "Spinal muscular atrophy",
-        "link": "/conditions/spinal-muscular-atrophy-sma/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
         "title": "Spirometry",
         "link": "/conditions/spirometry/",
         "tag": "",
@@ -3210,13 +2595,6 @@
     {
         "title": "Stammering",
         "link": "/conditions/stammering/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
-        "title": "Staph infection",
-        "link": "/conditions/staphylococcal-infections/",
         "tag": "",
         "synonyms": "",
         "misspelling": ""
@@ -3425,20 +2803,6 @@
         "misspelling": ""
     },
     {
-        "title": "Superficial thrombophlebitis",
-        "link": "/conditions/phlebitis/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
-        "title": "Supraventricular tachycardia (SVT)",
-        "link": "/conditions/supraventricular-tachycardia-svt/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
         "title": "Surgery (having an operation)",
         "link": "/conditions/having-surgery/",
         "tag": "",
@@ -3502,13 +2866,6 @@
         "misspelling": ""
     },
     {
-        "title": "Syphilis",
-        "link": "/conditions/syphilis/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
         "title": "Tapeworms",
         "link": "/conditions/tapeworms/",
         "tag": "",
@@ -3516,29 +2873,8 @@
         "misspelling": ""
     },
     {
-        "title": "Tay-Sachs disease",
-        "link": "/conditions/tay-sachs-disease/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
-        "title": "Teeth grinding (bruxism)",
-        "link": "/conditions/teeth-grinding/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
         "title": "Temporal arteritis",
         "link": "/conditions/temporal-arteritis/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
-        "title": "Temporomandibular disorder (TMD)",
-        "link": "/conditions/temporomandibular-disorder-tmd/",
         "tag": "",
         "synonyms": "",
         "misspelling": ""
@@ -3621,13 +2957,6 @@
         "misspelling": ""
     },
     {
-        "title": "Thrombophilia",
-        "link": "/conditions/thrombophilia/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
         "title": "Thrush in men and women",
         "link": "/conditions/thrush-in-men-and-women/",
         "tag": "",
@@ -3642,13 +2971,6 @@
         "misspelling": ""
     },
     {
-        "title": "Thyroiditis",
-        "link": "/conditions/thyroiditis/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
         "title": "TIA",
         "link": "/conditions/transient-ischaemic-attack-tia/",
         "tag": "",
@@ -3656,22 +2978,8 @@
         "misspelling": ""
     },
     {
-        "title": "Tick-borne encephalitis (TBE)",
-        "link": "/conditions/tick-borne-encephalitis/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
         "title": "Tics",
         "link": "/conditions/tics/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
-        "title": "Tight foreskin (phimosis and paraphimosis)",
-        "link": "/conditions/phimosis/",
         "tag": "",
         "synonyms": "",
         "misspelling": ""
@@ -3740,13 +3048,6 @@
         "misspelling": ""
     },
     {
-        "title": "Total iron-binding capacity (TIBC) and transferrin test",
-        "link": "/conditions/tibc-test/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
         "title": "Total protein test",
         "link": "/conditions/total-protein-test/",
         "tag": "",
@@ -3796,13 +3097,6 @@
         "misspelling": ""
     },
     {
-        "title": "Transurethral resection of the prostate (TURP)",
-        "link": "/conditions/transurethral-resection-of-the-prostate-turp/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
         "title": "Travel vaccinations",
         "link": "/conditions/travel-vaccinations/",
         "tag": "",
@@ -3826,13 +3120,6 @@
     {
         "title": "Trichomoniasis",
         "link": "/conditions/trichomoniasis/",
-        "tag": "",
-        "synonyms": "",
-        "misspelling": ""
-    },
-    {
-        "title": "Trichotillomania (hair pulling disorder)",
-        "link": "/conditions/trichotillomania/",
         "tag": "",
         "synonyms": "",
         "misspelling": ""
