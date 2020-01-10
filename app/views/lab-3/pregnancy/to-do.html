@@ -1,0 +1,56 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-lab-3.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Pregnancy - NHS.UK
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+<!-- More info and code for the breadcrumb can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/breadcrumbs -->
+{% block beforeContent %}
+
+    <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+      <div class="nhsuk-width-container">
+        <ol class="nhsuk-breadcrumb__list">
+              <li class="nhsuk-breadcrumb__item">
+                <a href="/lab-3/home" class="nhsuk-breadcrumb__link">Home</a>
+              </li>
+      
+              <li class="nhsuk-breadcrumb__item">
+                <a href="/lab-3/a-to-z" class="nhsuk-breadcrumb__link">Health A to Z</a>
+              </li>
+        </ol>
+        <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/lab-3/a-to-z">Back to Health A to Z</a></p>
+      </div>
+      </nav>
+
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <!-- Change the page title here -->
+      <h1>
+        Pregnancy to do list
+      </h1>
+
+      <section>
+
+      
+      
+      </section>
+      
+    </div>      
+</div>
+{% endblock %}
