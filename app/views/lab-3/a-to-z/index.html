@@ -1,5 +1,5 @@
 <!-- Extends the layout from /views/layout.html -->
-{% extends 'layout-lab-2.html' %}
+{% extends 'layout-lab-3.html' %}
 <!-- 
   In /views/layout.html you can:
     - change the header and footer 
@@ -15,7 +15,7 @@
 <!-- More info and code for the breadcrumb can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/breadcrumbs -->
 {% block beforeContent %}
   {{ breadcrumb({
-    href: "/lab-2/home",
+    href: "/lab-3/home",
     text: "Home"
   }) }}
 {% endblock %}
@@ -1651,7 +1651,7 @@
                         </li>
                         
                         <li class="nhsuk-list-panel__item">
-                          <a class="nhsuk-list-panel__link" href="#diabetes/">Diabetes</a>
+                          <a class="nhsuk-list-panel__link" href="/lab-3/a-to-z/diabetes/">Diabetes</a>
                         </li>
                         
                         <li class="nhsuk-list-panel__item">
