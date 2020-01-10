@@ -35,22 +35,68 @@
 <!-- Your page content goes inside the content block -->
 <!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
 {% block content %}
-
+<section>
   <div class="nhsuk-grid-row">
-
-    <div class="nhsuk-grid-column-two-thirds">
-
-      <!-- Change the page title here -->
+    <div class="nhsuk-grid-column-full">
       <h1>
-        With child
+        Pregnancy
       </h1>
+      <p class="nhsuk-lede-text">
+        <strong>This page provides links to all the pages and topics relating to pregnancy</strong>. Whatever you want to know about getting pregnant, being pregnant and giving birth you should find it here. You'll find detailed week-by-week guides and lots of expert videos, parents' tips and interactive tools to explore.
+      </p> 
+      <hr class="nhsuk-hr">
+    </div>
+  </div>
+</section>
+<section>
 
-      <section>
+<div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-full">
+      
+      <div class="nhsuk-grid-row nhsuk-promo-group">
+        
+        <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+          {{ promo({
+            "href": "javascript:void(0);",
+            "heading": "Getting pregnant",
+            "headingLevel": 1,
+            "description": "Whatever you want to know about getting pregnant, you should find here."
+          }) }}
+        </div>
 
-      
-      
-      </section>
-      
-    </div>      
-</div>
+        <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+          {{ promo({
+            "href": "/im-pregnant",
+            "heading": "I'm pregnant",
+            "headingLevel": 1,
+            "description": "All the information that you need regarding your pregnancy."
+          }) }}
+        </div>
+
+        <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+          {{ promo({
+            "href": "javascript:void(0);",
+            "heading": "Labour and birth",
+            "headingLevel": 1,
+            "description": "What you need to know in order to prepare for the birth of your child."
+          }) }}
+        </div>
+      </div>
+      <hr class="nhsuk-hr">
+      <div class="nhsuk-grid-row nhsuk-promo-group">  
+        <div class="nhsuk-grid-column-full nhsuk-promo-group__item">
+          {{ promo({
+            "href": "/early-days",
+            "heading": "Early days",
+            "headingLevel": 1,
+            "description": "Find out everything you will need to know and do once you've confirmed that you're pregnant."
+          }) }}
+        </div>
+      </div>
+      <hr class="nhsuk-hr">
+    </div>
+  </div>
+</section>
+<section>
+
 {% endblock %}
