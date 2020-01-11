@@ -64,10 +64,17 @@
     <div class="nhsuk-navigation__contextual-links">
       <ul>
         <li><a href="javascript:void(0);" title="">Doing a pregnancy test</a></li>
-        <li><a href="javascript:void(0);" title="">Find maternity services near you</a></li> 
+        <!--<li><a href="javascript:void(0);" title="">Find maternity services near you</a></li> -->
         <li><a href="javascript:void(0);" title="">Pregnancy, birth and beyond for dads and partners</a></li>
       </ul>
     </div>
+    {% set html_style = 'background-color: #f0f4f5;' %}
+    {{ actionLink({
+      "text": "Find maternity services near you",
+      "href": ""
+    }) }}
+
+
     <hr class="nhsuk-hr">
 
     <h2>Tests and scans</h2>
