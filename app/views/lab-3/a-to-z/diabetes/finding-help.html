@@ -8,7 +8,7 @@
 
 <!-- Set the page title inside the pageTitle block -->
 {% block pageTitle %}
-  Diabetes - NHS.UK
+  Diabetes -  Finding help and support - NHS.UK
 {% endblock %}
 
 <!-- Breadcrumb goes inside the beforeContent block -->
@@ -36,9 +36,12 @@
 <!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
 {% block content %}
 
-  <div class="nhsuk-grid-row">
 
-    <div class="nhsuk-grid-column-two-thirds">
+<main class="nhsuk-main-wrapper" id="maincontent" style="padding-top: 0px !important;
+">
+        
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-two-thirds">
 
       <!-- Change the page title here -->
       <p class="nhsuk-u-margin-bottom-1" style="text-color:	#4c6272;"><a href="" style="text-decoration: none;color:	#4c6272 !important;"><strong>Type 2 diabetes</strong></a></p>
@@ -325,7 +328,7 @@
               <ul class="nhsuk-list nhsuk-pagination__list">
               
                 <li class="nhsuk-pagination-item--previous">
-                  <a class="nhsuk-pagination__link nhsuk-pagination__link--prev" href="/conditions/type-2-diabetes/health-problems/">
+                  <a class="nhsuk-pagination__link nhsuk-pagination__link--prev" href="/lab-3/a-to-z/diabetes/health-problems">
                     <span class="nhsuk-pagination__title">Previous</span>
                     <span class="nhsuk-u-visually-hidden">:</span>
                     <span class="nhsuk-pagination__page">Health problems</span>
@@ -343,4 +346,6 @@
 
     </div>      
 </div>
+
+</main>
 {% endblock %}
