@@ -1,0 +1,139 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Foods to avoid in pregnancy - NHS.UK 
+{% endblock %}
+
+{% block beforeContent %}
+{{ breadcrumb({
+    items: [
+    {
+      href: "/home",
+      text: "Home"
+    },
+    {
+      href: "/a-to-z",
+      text: "Health A to Z"
+    },
+    {
+      href: "/pregnancy",
+      text: "Pregnancy"
+    }
+  ],
+    href: "/im-pregnant",
+    text: "I'm pregnant"
+  }) }}
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-grid-row">
+    <section>
+      <div class="nhsuk-grid-column-two-thirds">
+        <h1>
+          <span role="text">
+            Foods to avoid in pregnancy
+            <span class="nhsuk-caption-xl nhsuk-caption--bottom">
+              <span class="nhsuk-u-visually-hidden">
+                -
+              </span>
+              I'm pregnant
+            </span>
+          </span>
+        </h1>   
+        
+         {{ contentsList({
+            items: [
+              {
+                href: "foods-to-avoid",
+                text: "Meat and fish"
+              },
+              {
+                href: "foods-to-avoid-2",
+                text: "Dairy"
+              },
+              {
+                href: "foods-to-avoid-3",
+                text: "Eggs, nuts and others",
+                current: "true"
+              },
+              {
+                href: "foods-to-avoid-4",
+                text: "Drinks and alcohol"
+              }
+            ]
+          }) }}
+      </div>
+    </section>
+
+    <section>
+      <div class="nhsuk-grid-column-two-thirds">
+      	<article class="eggs">
+          <h2>Eggs</h2>
+          <h3>Avoid some raw or partially cooked eggs if you're pregnant</h3>
+          <p>Some eggs are produced under a food safety standard called the British Lion Code of Practice. Eggs produced in this way have a logo stamped on their shell, showing a red lion.</p>
+
+          <p>Lion Code eggs are considered very low risk for salmonella, and safe for pregnant women to eat raw or partially cooked. So you can eat raw hen eggs or food containing lightly cooked hen eggs (such as soft boiled eggs, mousses, soufflés and fresh mayonnaise) provided that the eggs are produced under the Lion Code.</p>
+
+          <p>If they are not Lion Code, make sure eggs are thoroughly cooked until the whites and yolks are solid to prevent the risk of salmonella food poisoning. Salmonella food poisoning is unlikely to harm your baby, but it can give you a severe bout of diarrhoea and vomiting.</p>
+
+          <p>If you don't know whether the eggs used are Lion Code or not (for example in a restaurant or cafe), ask the staff or, to be on the safe side, you can follow the advice for non-Lion Code eggs.</p>
+
+          <p>Non-hen eggs such as duck, goose and quail eggs should always be cooked thoroughly.</p>
+
+          <p>Find out more about storing and handling eggs safely.</p>
+        </article>
+       
+        
+        <article class="nuts">
+          <h2>Nuts</h2>
+          <h3>Peanuts are safe in pregnancy</h3>
+
+          <p>You can eat peanuts or food containing peanuts, such as peanut butter, during pregnancy, unless you're allergic to them or a health professional advises you not to.</p>
+
+          <p>You may have heard peanuts should be avoided during pregnancy. This is because the government previously advised women to avoid eating peanuts if there was a history of allergy – such as asthma, eczema, hay fever and food allergy – in their child's immediate family.</p>
+
+          <p>This advice has now changed because the latest research has shown no clear evidence that eating peanuts during pregnancy affects the chances of your baby developing a peanut allergy.</p>
+        </article>
+        <article class="paté">
+          <h2>Paté</h2>
+          <p>Avoid all types of pâté, including vegetable pâtés, as they can contain listeria.</p>
+        </article>
+        <article class="soil">
+
+          <h2>Foods with soil on them</h2>
+          <p>Wash fruit, vegetables and salads to remove all traces of soil and visible dirt.</p>
+        </article>
+        <article class="misc">
+
+          <h2>Liquorice</h2>
+
+          <p>You can have moderate amounts of liquorice sweets or liquorice teas in pregnancy – there's no recommendation to avoid them. However, you should avoid the herbal remedy liquorice root.</p>
+          <h3>Can eating too much black liquorice be bad for you?</h3>
+
+          <p>Yes, particularly if you're over 40 and have a history of heart disease or high blood pressure, or both.</p>
+
+          <p>Eating more than 57g (2 ounces) of black liquorice a day for at least 2 weeks could lead to potentially serious health problems, such as an increase in blood pressure and an irregular heart rhythm (arrhythmia).</p>
+
+          <p>For most people, liquorice found in foods is safe to eat and safe when consumed in large amounts in medicines for short periods of time.</p>
+
+          <h3>General health advice about black liquorice</h3>
+
+          <p>No matter how old you are, you should avoid eating large amounts of black liquorice over a short space of time.</p>
+
+          <p>If you have been eating a lot of black liquorice and have heart palpitations, muscle weakness or other health-related problems, stop eating it immediately and seek medical advice.</p>
+
+          <p>Black liquorice can interact with some medications, herbs and dietary supplements.</p>
+
+          <p>Get advice from a GP or pharmacist if you have questions about possible interactions with a medication or supplement you're taking.</p>
+        </article>
+      	{{ pagination({
+            "previousUrl": "foods-to-avoid-2",
+            "previousPage": "Dairy",
+            "nextUrl": "foods-to-avoid-4",
+            "nextPage": "Drinks and alcohol"
+        }) }}
+      </div>
+    </section>
+
+  </div>
+  {% endblock %}

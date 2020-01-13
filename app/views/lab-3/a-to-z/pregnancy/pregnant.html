@@ -35,22 +35,112 @@
 <!-- Your page content goes inside the content block -->
 <!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
 {% block content %}
-
+<section>
   <div class="nhsuk-grid-row">
-
-    <div class="nhsuk-grid-column-two-thirds">
-
-      <!-- Change the page title here -->
+    <div class="nhsuk-grid-column-full">
       <h1>
-        I'm with child!!!!
+        <span role="text">
+            I'm pregnant
+            <span class="nhsuk-caption-xl nhsuk-caption--bottom">
+              <span class="nhsuk-u-visually-hidden">
+                -
+              </span>
+                Pregnancy
+            </span>
+          </span>
       </h1>
+      <p class="nhsuk-lede-text">This page provides links to all the pages and topics relating to your antenatal care is the care. It's sometimes called pregnancy care or maternity care. You'll be offered appointments with a midwife, or sometimes a doctor who specialises in pregnancy and birth (an obstetrician). </p>
+      <p class="nhsuk-lede-text">You should start your antenatal care as soon as possible once you know you're pregnant. You can do this by contacting a midwife or GP.</p>  
+      <hr class="nhsuk-hr">
+    </div>
+  </div>
+</section>
+<section>
+  <div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+    <div class="block-links_list_group">
+      <h2>All antenatal pages</h2>
+        <div class="nhsuk-o-grid__item nhsuk-o-grid__item--two-thirds nhsuk-grid-column-one-half">
+          <h3>Antenatal care</h3>
+            <ul class="nhsuk-list nhsuk-list-links">
+              <li><a href="/pregnancy-to-do-list">Your pregnancy to-do list</a></li> 
+              <li><a href="javascript:void(0);">What is antenatal care?</a></li>
+              <li><a href="javascript:void(0);">Antenatal checks and tests</a></li>
+              <li><a href="javascript:void(0);">Your antenatal appointments</a></li>
+              <li><a href="javascript:void(0);">Antenatal support: meet the team</a></li>        
+            </ul>
+        </div>
+        <div class="nhsuk-o-grid__item nhsuk-o-grid__item--two-thirds nhsuk-grid-column-one-half">
+          <h3>Tests and scans</h3>
+          <ul class="nhsuk-list nhsuk-list-links">
+            <li><a href="javascript:void(0);">The 12 week pregnancy dating scan</a></li>
+            <li><a href="javascript:void(0);">The mid pregnancy scan</a></li>
+            <li><a href="javascript:void(0);">Screening for Down's, Edwards' and Patau's syndromes</a></li>
+            <li><a href="javascript:void(0);">Ultrasound scans in pregnancy</a></li>
+          </ul>
+        </div>
+      </div>  
+  </div>
+</div> 
+ <hr class="nhsuk-hr">
+ <div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+    <h2>Key topics</h2>
+    <div class="nhsuk-grid-row nhsuk-promo-group">
+      <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+          {{ promo({
+            "href": "javascript:void(0);",
+            "heading": "Free prescriptions and more",
+            "headingLevel": 2,
+            "description": "Pregnant women are entitled to free prescriptions, dental treatment and other benefits."
+          }) }}
+      </div>
+      <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+          {{ promo({
+            "href": "javascript:void(0);",
+            "heading": "Existing health conditions",
+            "headingLevel": 2,
+            "description": "If you have an existing health condition ther may be information that you need to consider. Find out what you need to know."
+          }) }}
+      </div>
+      <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+          {{ promo({
+            "href": "javascript:void(0);",
+            "heading": "Pregnancy-induced conditions",
+            "headingLevel": 2,
+            "description": "Information about gestational diabetes, pre-eclampsia and Hyperemesis gravidarum (severe vomiting)."
+          }) }}
+      </div>
+    </div>
 
-      <section>
-
-      
-      
-      </section>
-      
-    </div>      
+    <div class="nhsuk-grid-row nhsuk-promo-group"> 
+      <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+          {{ promo({
+            "href": "javascript:void(0);",
+            "heading": "Illness during pregnancy",
+            "headingLevel": 2,
+            "description": "From food poisioning to chicken pox, get advice and how this may affect you and your baby."
+          }) }}
+      </div>
+      <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+          {{ promo({
+            "href": "javascript:void(0);",
+            "heading": "Lifestyle and wellbeing",
+            "headingLevel": 2,
+            "description": "There are things you can do, and things you can avoid, to keep you and your baby as healthy as possible in pregnancy."
+          }) }}
+      </div>
+      <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+          {{ promo({
+            "href": "javascript:void(0);",
+            "heading": "Medicines during pregnancy",
+            "headingLevel": 2,
+            "description": "Before taking any medicine when you're pregnant, including painkillers, check with your pharmacist, midwife or GP that it's suitable."
+          }) }}
+      </div>   
+    </div>
+    <hr class="nhsuk-hr">
+  </div>
 </div>
+</section>
 {% endblock %}
