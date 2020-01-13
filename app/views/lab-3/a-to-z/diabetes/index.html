@@ -1,0 +1,103 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-lab-3.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Diabetes - NHS.UK
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+<!-- More info and code for the breadcrumb can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/breadcrumbs -->
+{% block beforeContent %}
+
+    <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+      <div class="nhsuk-width-container">
+        <ol class="nhsuk-breadcrumb__list">
+              <li class="nhsuk-breadcrumb__item">
+                <a href="/lab-3/home" class="nhsuk-breadcrumb__link">Home</a>
+              </li>
+      
+              <li class="nhsuk-breadcrumb__item">
+                <a href="/lab-3/a-to-z" class="nhsuk-breadcrumb__link">Health A to Z</a>
+              </li>
+        </ol>
+        <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/lab-3/a-to-z">Back to Health A to Z</a></p>
+      </div>
+      </nav>
+
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <!-- Change the page title here -->
+      <h1>
+        Diabetes
+      </h1>
+
+      <section id="Introduction">
+          <p><strong>Diabetes is a lifelong condition that causes a person's blood sugar level to become too high.</strong></p>
+          <p>During pregnancy, some women have such high levels of blood glucose that their body is unable to produce
+            enough insulin to absorb it all. This is known as <a href="/conditions/gestational-diabetes/">gestational
+              diabetes</a>.</p> 
+          <p><strong>However, there are two main types of diabetes:</strong></p>
+          <div class="nhsuk-promo">
+            <a class="nhsuk-promo__link-wrapper" href="/lab-3/a-to-z/diabetes/type-1-diabetes">
+              <div class="nhsuk-promo__content">
+                <h3 class="nhsuk-promo__heading">Type 1 diabetes</h3>
+                <p class="nhsuk-promo__description">Type 1 diabetes occurs when the body's immune system attacks and destroys the cells that produce insulin.</p>
+              </div>
+            </a>
+          </div>
+          <div class="nhsuk-promo">
+            <a class="nhsuk-promo__link-wrapper" href="/lab-3/a-to-z/diabetes/type-2-diabetes">
+              <div class="nhsuk-promo__content">
+                <h3 class="nhsuk-promo__heading">Type 2 diabetes</h3>
+                <p class="nhsuk-promo__description">Type 2 diabetes occurs when where the body does not produce enough insulin, or the body's cells do not react to insulin.</p>
+              </div>
+            </a>
+          </div>
+          <hr class="nhsuk-hr">
+      </section>
+      
+      <section id="Find_out_more">
+          <h2>Find out more</h2>
+            <div class="key-topic">
+              <h3><a href= "/lab-3/a-to-z/diabetes/pre-diabetes">Pre-diabetes</a></h3>
+              <p>Many more people have blood sugar levels above the normal range, but not high enough to be diagnosed as having diabetes.</p>
+            </div>
+            <div class="key-topic">
+              <h3><a href= "/lab-3/a-to-z/diabetes/diabetes-causes">Causes of diabetes</a></h3>
+              <p>If you have diabetes, your body is unable to break down glucose into energy. This is because there's either not enough insulin to move the glucose, or the insulin produced does not work properly.</p>
+            </div>
+            <div class="key-topic">
+              <h3><a href= "/lab-3/a-to-z/diabetes/diabetes-doctor">When to see a doctor</a></h3>
+              <p>Visit your GP as soon as possible if you experience the main symptoms of diabetes. Type 1 diabetes can develop quickly, whereas Many people have type 2 diabetes for years without realising.</p>
+            </div>
+            <div class="key-topic">
+              <h3><a href= "/lab-3/a-to-z/diabetes/diabetes-living-with">Living with diabetes</a></h3>
+              <p>This can be a curated hub that includes information from healthy living.</p>
+            </div>
+            <div class="key-topic">
+              <h3><a href= "/lab-3/a-to-z/diabetes/diabetes-emotional-support">Emotional support</a></h3>
+              <p>This can be a curated hub that includes information from mental health. </p>
+            </div>
+      </section>
+          
+       
+      
+      </section>
+      
+    </div>      
+</div>
+{% endblock %}

@@ -9,7 +9,7 @@
 
 <!-- Add your custom CSS or Sass in /app/assets/sass/main.scss -->
 {% block headCSS %}
-  <link href="/css/main.css" rel="stylesheet">
+  <link href="/lab-2/css/main.css" rel="stylesheet">
 {% endblock %}
 
 <!-- Set the page title inside the pageTitle block -->
@@ -19,11 +19,12 @@
 
 <!-- Header goes inside the header block -->
 <!-- More info and code for the header can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/header -->
+
 {% block header %}
   {{ header({
     "service": {
         "name": "Prototype kit",
-        "href": "/"
+        "href": "/lab-2/"
       },
       "showNav": "false",
       "showSearch": "false"

@@ -1,0 +1,346 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-lab-3.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Diabetes - NHS.UK
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+<!-- More info and code for the breadcrumb can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/breadcrumbs -->
+{% block beforeContent %}
+
+    <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+      <div class="nhsuk-width-container">
+        <ol class="nhsuk-breadcrumb__list">
+              <li class="nhsuk-breadcrumb__item">
+                <a href="/lab-3/home" class="nhsuk-breadcrumb__link">Home</a>
+              </li>
+      
+              <li class="nhsuk-breadcrumb__item">
+                <a href="/lab-3/a-to-z" class="nhsuk-breadcrumb__link">Health A to Z</a>
+              </li>
+        </ol>
+        <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/lab-3/a-to-z">Back to Health A to Z</a></p>
+      </div>
+      </nav>
+
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <!-- Change the page title here -->
+      <p class="nhsuk-u-margin-bottom-1" style="text-color:	#4c6272;"><a href="" style="text-decoration: none;color:	#4c6272 !important;"><strong>Type 2 diabetes</strong></a></p>
+      
+      <h1>
+        Finding help and support
+      </h1>
+
+      <p>There is a lot of information and support available for type 2 diabetes. Some of the support depends on the area you live in.</p>
+
+
+      <ol class="nhsuk-contents-list__list nhsuk-u-padding-bottom-4" >
+        
+          
+          <li class="nhsuk-contents-list__item">
+            <a class="nhsuk-contents-list__link" href="#">
+              
+                What is type 2 diabetes?
+              
+            </a>
+          </li>
+        
+      
+        
+          <li class="nhsuk-contents-list__item">
+            <a class="nhsuk-contents-list__link" href="#">
+              
+                Symptoms
+              
+            </a>
+          </li>
+        
+      
+        
+          <li class="nhsuk-contents-list__item">
+            <a class="nhsuk-contents-list__link" href="#">
+              
+                Getting diagnosed
+              
+            </a>
+          </li>
+        
+      
+        
+          <li class="nhsuk-contents-list__item">
+            <a class="nhsuk-contents-list__link" href="#">
+              
+                Understanding medicine
+              
+            </a>
+          </li>
+        
+      
+        
+          <li class="nhsuk-contents-list__item">
+            <a class="nhsuk-contents-list__link" href="#">
+              
+                Food and keeping active
+              
+            </a>
+          </li>
+        
+      
+        
+          <li class="nhsuk-contents-list__item">
+            <a class="nhsuk-contents-list__link" href="#">
+              
+                Going for regular check-ups
+              
+            </a>
+          </li>
+        
+      
+        
+          <li class="nhsuk-contents-list__item">
+            <a class="nhsuk-contents-list__link" href="#">
+              
+                Health problems
+              
+            </a>
+          </li>
+        
+      
+        
+          <li class="nhsuk-contents-list__item" aria-current="page">
+            <span class="nhsuk-contents-list__current">
+              
+                Finding help and support
+              
+            </span>
+          </li>
+        
+      
+    </ol>
+
+    <section class="nhsuk-u-padding-bottom-4">
+    
+      
+        <a id="take-a-course-to-help-you-manage-your-diabetes"></a>
+      
+  
+      
+  
+      
+  
+        
+        
+          <h2>Take a course to help you manage your diabetes</h2>
+  
+  <p>There are free education courses to help you learn more about and manage your type 2 diabetes.</p>
+  
+  <p>Your GP will need to refer you, but you can phone your GP surgery to get a referral letter, so you don't need to make an appointment.</p>
+  
+  <p>Read more information about <a href="http://www.desmond-project.org.uk/" title="External website">education courses for type 2 diabetes</a>.</p>
+  
+        
+      
+    </section>
+
+
+    <section class="nhsuk-u-padding-bottom-4">
+    
+      
+        <a id="telling-dvla-you-have-type-2-diabetes"></a>
+      
+  
+      
+  
+      
+  
+        
+        
+          <h2>Telling DVLA you have type 2 diabetes</h2>
+  
+  <p>If you're taking insulin for your type 2 diabetes, you will need to <a href="https://www.gov.uk/diabetes-driving" title="External website">tell DVLA</a>. This is because of the risk of <a href="/conditions/low-blood-sugar-hypoglycaemia/">low blood sugar (hypoglycaemia)</a>. You can be fined if you don't tell DVLA.</p>
+  
+        
+      
+    </section>
+
+
+    <section class="nhsuk-u-padding-bottom-4">
+    
+      
+        <a id="support-groups-for-type-2-diabetes"></a>
+      
+  
+      
+  
+      
+  
+        
+        
+          <h2>Support groups for type 2 diabetes</h2>
+  
+  <p>The charity Diabetes UK runs <a href="https://www.diabetes.org.uk/How_we_help/Local_support_groups/" title="External website">local support groups</a>. </p>
+  
+  <p>These can help with things like managing your diabetes on a daily basis, diet, exercise or dealing with emotional problems, such as depression. They offer a place to talk and find out how others live with the condition.</p>
+  
+        
+      
+    </section>
+
+    <section class="nhsuk-u-padding-bottom-4">
+    
+      
+        <a id="blogs-forums-and-apps"></a>
+      
+  
+      
+  
+      
+  
+        
+        
+          <h2>Blogs, forums and apps</h2>
+  
+  <ul>
+  <li><a href="http://www.diabetes.co.uk/forum/" title="External website">Diabetes.co.uk forum</a> – discussions about living with and managing diabetes</li>
+  <li><a href="http://blogs.diabetes.org.uk/" title="External website">Diabetes UK blogs</a> – a collection of blogs on work and diabetes, food, eyes and more</li>
+  <li><a href="http://www.diabetes.co.uk/diabetes-chat/" title="External website">Diabetes Chat</a> – scheduled chats with healthcare professionals or just the chance to talk to others</li>
+  <li><a href="https://apps.beta.nhs.uk/category/diabetes/">NHS Apps Library</a> – find apps and tools to help you manage your diabetes, including some&nbsp;that link you to a lifestyle coach</li>
+  </ul>
+  
+        
+      
+    </section>
+
+    <section>
+    
+      
+        <a id="telling-others-can-be-difficult"></a>
+      
+  
+      
+  
+      
+  
+        
+        
+          <h2>Telling others can be difficult</h2>
+  
+  <p>It can be difficult to tell others you have diabetes, but it can help for certain people to know:</p>
+  
+  <ul>
+  <li>family can support you – especially as you will need to make changes to what you eat</li>
+  <li>it's important your colleagues or employer know in case of an emergency</li>
+  <li>being diagnosed with diabetes can affect your mood – telling your partner will help them understand how you feel</li>
+  </ul>
+  
+        
+      
+    </section>
+
+
+<section>
+    
+      
+      <a id="carry-medical-id-in-case-of-an-emergency"></a>
+    
+
+    
+
+    
+
+      
+      
+        <h2>Carry medical ID in case of an emergency</h2>
+
+<p>Some people choose to wear a special wristband or carry something in their wallet that says they have diabetes, in case of an emergency.</p>
+
+<p>If it's known that you have diabetes, this can make a difference to the treatment you'll receive.</p>
+
+<p>Search the internet for "medical ID" to find websites that sell them.</p>
+
+      
+    
+  </section>
+
+  <section>
+    
+
+    
+
+    
+
+      
+      
+        
+
+
+
+      <div class="nhsuk-inset-text">
+        <span class="nhsuk-u-visually-hidden">Information: </span>
+        <h3>Social care and support guide</h3>
+      
+      <p>If you:</p>
+      
+      <ul>
+      <li>need help with day-to-day living because of illness or disability</li>
+      <li>care for someone regularly because they're ill, elderly or disabled – including family members</li>
+      </ul>
+      
+      <p>Our <a href="/conditions/social-care-and-support-guide/">guide to care and support</a> explains your options and where you can get support.</p>
+      
+      </div>
+      
+      
+      
+            
+          
+        </section>
+
+
+        <div class="nhsuk-review-date">
+            <p class="nhsuk-body-s">
+              Page last reviewed: 8 August 2017<br>
+              Next review due: 8 August 2020
+            </p>
+          </div>
+
+
+          <nav class="nhsuk-pagination" role="navigation" aria-label="Pagination">
+              <ul class="nhsuk-list nhsuk-pagination__list">
+              
+                <li class="nhsuk-pagination-item--previous">
+                  <a class="nhsuk-pagination__link nhsuk-pagination__link--prev" href="/conditions/type-2-diabetes/health-problems/">
+                    <span class="nhsuk-pagination__title">Previous</span>
+                    <span class="nhsuk-u-visually-hidden">:</span>
+                    <span class="nhsuk-pagination__page">Health problems</span>
+                    <svg class="nhsuk-icon nhsuk-icon__arrow-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M4.1 12.3l2.7 3c.2.2.5.2.7 0 .1-.1.1-.2.1-.3v-2h11c.6 0 1-.4 1-1s-.4-1-1-1h-11V9c0-.2-.1-.4-.3-.5h-.2c-.1 0-.3.1-.4.2l-2.7 3c0 .2 0 .4.1.6z"></path>
+                    </svg>
+                  </a>
+                </li>
+              
+              
+              </ul>
+            </nav>
+
+
+
+    </div>      
+</div>
+{% endblock %}
