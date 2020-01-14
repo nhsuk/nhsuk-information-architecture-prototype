@@ -15,42 +15,171 @@
 <!-- More info and code for the breadcrumb can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/breadcrumbs -->
 {% block beforeContent %}
 
-    <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
-      <div class="nhsuk-width-container">
-        <ol class="nhsuk-breadcrumb__list">
-              <li class="nhsuk-breadcrumb__item">
-                <a href="/lab-3/home" class="nhsuk-breadcrumb__link">Home</a>
-              </li>
-      
-              <li class="nhsuk-breadcrumb__item">
-                <a href="/lab-3/a-to-z" class="nhsuk-breadcrumb__link">Health A to Z</a>
-              </li>
-        </ol>
-        <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/lab-3/a-to-z">Back to Health A to Z</a></p>
-      </div>
-      </nav>
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+          <li class="nhsuk-breadcrumb__item">
+            <a href="/lab-3/home" class="nhsuk-breadcrumb__link">Home</a>
+          </li>
+  
+          <li class="nhsuk-breadcrumb__item">
+            <a href="/lab-3/a-to-z" class="nhsuk-breadcrumb__link">Health A to Z</a>
+          </li>
+    </ol>
+    <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/lab-3/a-to-z">Back to Health A to Z</a></p>
+  </div>
+</nav>
 
 {% endblock %}
 
 <!-- Your page content goes inside the content block -->
 <!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
 {% block content %}
-
+<section>
   <div class="nhsuk-grid-row">
-
     <div class="nhsuk-grid-column-two-thirds">
-
       <!-- Change the page title here -->
       <h1>
-        Labour
-      </h1>
+        <span role="text">
+          Labour and birth
+          <span class="nhsuk-caption-xl nhsuk-caption--bottom">
+            <span class="nhsuk-u-visually-hidden">
+              -
+            </span>
+            Pregnancy
+          </span>
+        </span>
+      </h1> 
+      <p class="nhsuk-lede-text">This page provides links to all the pages and topics relating to being in labour. It's helpful for you and whoever is going to be with you during your labour to know about preparing, your pain relief options as well as what you need to pack for the birth.</p>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-full">
+      <hr class="nhsuk-hr"> 
+      <div class="nhsuk-grid-row nhsuk-promo-group">
+        <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+          {{ promo({
+            "href": "javascript:void(0);",
+            "heading": "Preparing for birth",
+            "headingLevel": 1,
+            "description": "Whether you're planning to have your baby at home, in hospital or at a midwifery unit, you should get a few things ready."
+          }) }}
+        </div>
+        <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+          {{ promo({
+            "href": "/lab-3/a-to-z/pregnancy/start-of-labour",
+            "heading": "The start of labour",
+            "headingLevel": 1,
+            "description": "The start of labour is called the latent phase. This can take hours or, for some women, days."
+          }) }}
+        </div>
+        <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+          {{ promo({
+            "href": "javascript:void(0);",
+            "heading": "The birth",
+            "headingLevel": 1,
+            "description": "It's helpful for whoever is going to be with you during your labour to know about the different options, as well as how they can support you."
+          }) }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+    <hr class="nhsuk-hr">
+    <div class="block-links_list_group">
+      <h2>Popular pages</h2>
+      <div class="nhsuk-o-grid__item nhsuk-o-grid__item--two-thirds nhsuk-grid-column-one-half">
+        <ul class="nhsuk-list nhsuk-list-links">
+          <li><a href="javascript:void(0);">Signs that labour has begun</a></li>
+          <li><a href="javascript:void(0);">Pain relief</a></li>
+          <li><a href="javascript:void(0);">Birth plan</a></li>
+          <li><a href="javascript:void(0);">At the hospital or birth centre</a></li>
+          <li><a href="javascript:void(0);">What happens during labour and birth</a></li>       
+          <li><a href="javascript:void(0);">Premature labour</a></li>
+          <li><a href="javascript:void(0);">Pack your bags for labour</a></li>   
+        </ul>
+      </div>
+      <div class="nhsuk-o-grid__item nhsuk-o-grid__item--two-thirds nhsuk-grid-column-one-half">
+        <ul class="nhsuk-list nhsuk-list-links">  
+          <li><a href="javascript:void(0);">Partners</a></li>
+          <li><a href="javascript:void(0);">What happens straight after the birth?</a></li>
+          <li><a href="javascript:void(0);">Premature or ill babies</a></li>
+          <li><a href="javascript:void(0);" title="">Pregnancy, birth and beyond for dads and partners</a></li>
+          <li><a href="javascript:void(0);">Your body just after the birth</a></li> 
+          <li><a href="javascript:void(0);" title="">What happens if your baby is breech?</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div> 
+<hr class="nhsuk-hr">
 
-      <section>
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+    <h2>Key topics</h2>
 
-      
-      
-      </section>
-      
-    </div>      
+    <div class="nhsuk-grid-row nhsuk-promo-group"> 
+       <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+      {{ promo({
+            "href": "javascript:void(0);",
+            "heading": "preparing for birth",
+            "headingLevel": 1,
+            "description": "It's helpful for whoever is going to be with you during your labour to know about the different options, as well as how they can support you."
+          }) }}
+        </div>
+         <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+          {{ promo({
+            "href": "javascript:void(0);",
+            "heading": "Newborns",
+            "headingLevel": 1,
+            "description": "It's helpful for whoever is going to be with you during your labour to know about the different options, as well as how they can support you."
+          }) }}
+        </div>
+         <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+          {{ promo({
+            "href": "javascript:void(0);",
+            "heading": "New parents",
+            "headingLevel": 1,
+            "description": "It's helpful for whoever is going to be with you during your labour to know about the different options, as well as how they can support you."
+          }) }}
+        </div>
+    </div>
+
+    <div class="nhsuk-grid-row nhsuk-promo-group">
+       <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+      {{ promo({
+            "href": "javascript:void(0);",
+            "heading": "Benefits",
+            "headingLevel": 1,
+            "description": "It's helpful for whoever is going to be with you during your labour to know about the different options, as well as how they can support you."
+          }) }}
+        </div>
+         <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+          {{ promo({
+            "href": "javascript:void(0);",
+            "heading": "Twins",
+            "headingLevel": 1,
+            "description": "It's helpful for whoever is going to be with you during your labour to know about the different options, as well as how they can support you."
+          }) }}
+        </div>
+         <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+          {{ promo({
+            "href": "javascript:void(0);",
+            "heading": "When pregnancy goes wrong",
+            "headingLevel": 1,
+            "description": "It's helpful for whoever is going to be with you during your labour to know about the different options, as well as how they can support you."
+          }) }}
+        </div>
+  
+    </div>
+    <hr class="nhsuk-hr">
+  </div>
 </div>
+</section>
+
 {% endblock %}
