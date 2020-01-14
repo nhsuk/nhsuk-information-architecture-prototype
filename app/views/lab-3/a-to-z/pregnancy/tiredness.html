@@ -1,0 +1,121 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-lab-3.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Pregnancy - NHS.UK
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+<!-- More info and code for the breadcrumb can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/breadcrumbs -->
+{% block beforeContent %}
+
+    <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+      <div class="nhsuk-width-container">
+        <ol class="nhsuk-breadcrumb__list">
+              <li class="nhsuk-breadcrumb__item">
+                <a href="/lab-3/home" class="nhsuk-breadcrumb__link">Home</a>
+              </li>
+      
+              <li class="nhsuk-breadcrumb__item">
+                <a href="/lab-3/a-to-z" class="nhsuk-breadcrumb__link">Health A to Z</a>
+              </li>
+        </ol>
+        <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/lab-3/a-to-z">Back to Health A to Z</a></p>
+      </div>
+      </nav>
+
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <!-- Change the page title here -->
+      <h1>
+          <span role="text">
+            Tiredness in pregnancy
+            <span class="nhsuk-caption-xl nhsuk-caption--bottom">
+              <span class="nhsuk-u-visually-hidden">
+                -
+              </span>
+              Lifestyle and wellbeing
+            </span>
+          </span>
+        </h1>
+        <p class="nhsuk-lede-text">It's common to feel tired, or even exhausted, during pregnancy, especially in the first 12 weeks.</p>
+      </div>
+    </div>
+
+<section>
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+
+      <p>Hormonal changes at this time can make you feel tired, nauseous and emotional. The only answer is to rest as much as possible.</p>
+
+      <p>Make time to sit with your feet up during the day, and accept any offers of help from colleagues and family.</p>
+
+      <p>Being tired and run-down can make you feel low. Try to look after your physical health – make sure you eat a healthy diet, and get plenty of rest and sleep.</p>
+
+      <p>Later in pregnancy, you may feel tired because of the extra weight you're carrying. Make sure you get plenty of rest.</p>
+
+      <p>As your bump gets bigger, it can be difficult to get a good night's sleep. You might find lying down uncomfortable or that, just when you do get comfortable, you have to get up to go to the loo.</p>
+
+      <p>Feeling tired won't harm you or your baby, but it can make life feel more difficult, especially in the early days before you've told people about your pregnancy.</p>
+
+      <h2>Strange dreams during pregnancy</h2>
+
+      <p>Some women have strange dreams or nightmares about the baby, and about labour and birth. This is normal.</p>
+
+      <p>Talking about them with your partner or midwife can help. Remember, just because you dream something, it doesn't mean it's going to happen. Relaxation and breathing techniques may be helpful in reducing any anxiety you might be feeling.</p>
+
+      <h2>Bump-friendly sleep positions</h2>
+
+      <p>The safest position to go to sleep is on your side, either left or right. Research suggests that, after 28 weeks, falling asleep on your back can double the risk of stillbirth. This may be to do with the flow of blood and oxygen to the baby.</p>
+
+      <p>Don't worry if you wake up on your back – the research looked at the position women fell asleep in, as this is the position we keep for longest. If you wake up on your back, you can just turn over and go to sleep again on your side.</p>
+
+      <p>You can try supporting your bump with pillows and putting a pillow between your knees.</p>
+
+      <p>The baby charity Tommy's has a video about safer sleeping in pregnancy.</p>
+
+      <h2>Insomnia remedies in pregnancy</h2>
+
+      <p>Try not to let it bother you if you can't sleep, and don't worry that it will harm your baby – it won't. If you can, nap during the day and get some early nights during the week.</p>
+
+      <p>Avoid tea, coffee or cola drinks in the evening, as the caffeine can make it harder to go to sleep.</p>
+
+      <p>Try to relax before bedtime so you're not wide awake. Relaxation techniques may also help. Your antenatal classes may teach you some techniques, or you could borrow a relaxation tape, CD or DVD from your library.</p>
+
+      <p>You could join an antenatal yoga or pilates class. Make sure the instructor knows you're pregnant. Exercise can help you feel less tired, so try to do some activity, such as a walk at lunchtime or going swimming, even if you feel tired during the day.</p>
+
+      <p>If lack of sleep is bothering you, talk to your partner, a friend, doctor or midwife.</p>
+
+      <p><a href="/lab-3/healthy-living-sleep">Read about preventing insomnia</a>, including daytime habits, such as exercising, and bedtime habits, such as avoiding caffeine.</p>
+
+      <h2>Medical reasons for insomnia in pregnancy</h2>
+
+      <p>Occasionally, sleeplessness – when accompanied by other symptoms – can be a sign of depression. If you have any of the other symptoms of depression, such as feeling hopeless and losing interest in the things you used to enjoy, speak to your doctor or midwife. There is treatment that can help. </p>
+
+      <p><a href="javascript:void(0);">Read about mental health problems in pregnancy</a>.</a></p>
+
+      <p><a href="javascript:void(0);">Healthtalk.org</a> has videos and written articles of women talking about their symptoms and feelings in the early weeks of pregnancy, including tiredness.</p>
+    </div>
+  </div>
+      
+      
+      </section>
+      
+    </div>      
+</div>
+{% endblock %}
