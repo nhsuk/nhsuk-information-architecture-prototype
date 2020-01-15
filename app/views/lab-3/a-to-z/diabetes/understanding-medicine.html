@@ -11,32 +11,39 @@
   Diabetes - NHS.UK
 {% endblock %}
 
-<!-- Breadcrumb goes inside the beforeContent block -->
-<!-- More info and code for the breadcrumb can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/breadcrumbs -->
 {% block beforeContent %}
+{% from 'details/macro.njk' import details %}
 
-    <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
-      <div class="nhsuk-width-container">
-        <ol class="nhsuk-breadcrumb__list">
-              <li class="nhsuk-breadcrumb__item">
-                <a href="/lab-3/home" class="nhsuk-breadcrumb__link">Home</a>
-              </li>
-      
-              <li class="nhsuk-breadcrumb__item">
-                <a href="/lab-3/a-to-z" class="nhsuk-breadcrumb__link">Health A to Z</a>
-              </li>
-        </ol>
-        <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/lab-3/a-to-z">Back to Health A to Z</a></p>
-      </div>
-      </nav>
-
+{{ details({
+  "classes": "alpha-lab-breadcrumbs",
+  "text": "Diabetes",
+  "HTML": "
+  <ul class=\"bradcrumbs\">
+    <li>
+      <a href=\"\">
+        Pre diabetes
+      </a>
+    </li>
+    <li>
+      <a href=\"/lab-3/a-to-z/diabetes/type-1-diabetes\">
+        Type 1 diabetes
+      </a>
+    </li>
+    <li class=\"bradcrumbs__item--active\">
+      <a href=\"/lab-3/a-to-z/diabetes/type-2-diabetes\">
+        Type 2 diabetes
+      </a>
+    </li>
+  </u\l>
+  "
+}) }}
 {% endblock %}
+
 
 <!-- Your page content goes inside the content block -->
 <!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
 {% block content %}
-<main class="nhsuk-main-wrapper" id="maincontent" style="    padding-top: 0px;
-">
+<main class="nhsuk-main-wrapper" id="maincontent" style="padding-top: 0px;">
         
     <div class="nhsuk-grid-row">
       <div class="nhsuk-grid-column-two-thirds">
