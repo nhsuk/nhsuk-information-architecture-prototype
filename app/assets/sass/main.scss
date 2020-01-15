@@ -307,3 +307,92 @@
 .nhsuk-header__container {
   position: relative;
 }
+
+.ia-new-nav__item {
+  position: relative;
+}
+
+.ia-new-nav__item--active:after {
+  content: " ";
+  display: block;
+  width: calc(100% - 30px);
+  height: 3px;
+  background: #ffb81c;
+  position: absolute;
+  margin-left: 15px;
+  margin-right: 15px;
+  bottom: 0;
+}
+
+.alpha-lab-breadcrumbs {
+  // background: red;
+
+  .nhsuk-details__text {
+    border-left: none;
+  }
+
+  .nhsuk-details__summary {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .nhsuk-details[open] > .nhsuk-details__summary:before,
+  .nhsuk-details__summary:before {
+    display: none!important;
+  }
+  
+  .nhsuk-details__text {
+    background: white;
+    margin-top: 0;
+  }
+
+}
+
+
+.alpha-lab-breadcrumbs {
+  .nhsuk-details__summary:visited {
+    color: #005eb8!important;
+  }
+}
+
+
+.bradcrumbs {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+
+  }
+
+  a {
+    text-decoration: none;
+
+    &:visited {
+      color: #005eb8!important;
+    }
+
+  }
+
+}
+
+.bradcrumbs {
+  .bradcrumbs__item--active a {
+    color: black!important;
+    padding-left: 15px;
+    position: relative;
+
+    &:before {
+      content: " ";
+      display: block;
+      width: 5px;
+      height: 23px;
+      background-color: black; 
+      position: absolute;
+    }
+
+  }
+}
