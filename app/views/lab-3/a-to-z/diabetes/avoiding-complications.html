@@ -12,6 +12,8 @@
 {% endblock %}
 
 <!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %}
+{% from 'details/macro.njk' import details %}
 {{ details({
   "classes": "alpha-lab-breadcrumbs",
   "text": "Diabetes",
