@@ -325,6 +325,9 @@
 }
 
 .alpha-lab-breadcrumbs {
+  max-width: 960px;
+  margin: auto;
+  // padding: 0 5px;
   // background: red;
 
   .nhsuk-details__text {
@@ -332,11 +335,11 @@
   }
 
   .nhsuk-details__summary {
-    width: 100%;
+    display: block;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 15px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #e2e2e2;
   }
   
   .nhsuk-details[open] > .nhsuk-details__summary:before,
