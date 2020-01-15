@@ -312,6 +312,11 @@
   position: relative;
 }
 
+
+.ia-new-nav__item--active {
+  font-weight: bold;
+}
+
 .ia-new-nav__item--active:after {
   content: " ";
   display: block;
@@ -336,10 +341,14 @@
 
   .nhsuk-details__summary {
     display: block;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 15px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 5px;
     border-bottom: 1px solid #e2e2e2;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-right: 15px;
+
   }
   
   .nhsuk-details[open] > .nhsuk-details__summary:before,
@@ -395,6 +404,7 @@
       height: 23px;
       background-color: black; 
       position: absolute;
+      top: 1px;
     }
 
   }
