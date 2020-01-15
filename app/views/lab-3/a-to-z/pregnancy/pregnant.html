@@ -12,26 +12,80 @@
 {% endblock %}
 
 <!-- Breadcrumb goes inside the beforeContent block -->
-<!-- More info and code for the breadcrumb can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/breadcrumbs -->
+
+<!-- Breadcrumb goes inside the beforeContent block -->
 {% block beforeContent %}
+{% from 'details/macro.njk' import details %}
 
-    <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
-      <div class="nhsuk-width-container">
-        <ol class="nhsuk-breadcrumb__list">
-              <li class="nhsuk-breadcrumb__item">
-                <a href="/lab-3/home" class="nhsuk-breadcrumb__link">Home</a>
-              </li>
-      
-              <li class="nhsuk-breadcrumb__item">
-                <a href="/lab-3/a-to-z" class="nhsuk-breadcrumb__link">Health A to Z</a>
-              </li>
-        </ol>
-        <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/lab-3/a-to-z">Back to Health A to Z</a></p>
-      </div>
-      </nav>
-
+{{ details({
+  "classes": "alpha-lab-breadcrumbs",
+  "text": "I'm pregnant",
+  "HTML": "
+  <ul class=\"bradcrumbs\">
+    <li>
+      <a href=\"\">
+        Early days
+      </a>
+    </li>
+    <li>
+      <a href=\"\">
+        Your NHS pregnancy journey
+      </a>
+    </li>
+    <li>
+      <a href=\"\">
+        Test and scans
+      </a>
+    </li>
+    <li>
+      <a href=\"\">
+        Food and drink during pregnancy 
+      </a>
+    </li>
+    <li>
+      <a href=\"\">
+        Medicines during pregnancy
+      </a>
+    </li>
+    <li>
+      <a href=\"\">
+        Existing health conditions
+      </a>
+    </li>
+    <li>
+      <a href=\"\">
+        Illness during pregnancy
+      </a>
+    </li>
+    <li>
+      <a href=\"\">
+        Common pregnancy ailments
+      </a>
+    </li>
+    <li>
+      <a href=\"\">
+        Free prescriptions and more
+      </a>
+    </li>
+    <li>
+      <a href=\"\">
+        Lifestyle and wellbeing
+      </a>
+    </li>
+    <li>
+      <a href=\"\">
+        When pregnancy goes wrong
+      </a>
+    </li>
+    <li>
+      <a href=\"\">
+        Partners
+      </a>
+    </li>
+  </u\l>
+  "
+}) }}
 {% endblock %}
-
 <!-- Your page content goes inside the content block -->
 <!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
 {% block content %}
