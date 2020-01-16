@@ -5,24 +5,76 @@
 {% endblock %}
 
 {% block beforeContent %}
-{{ breadcrumb({
-    items: [
-    {
-      href: "/home",
-      text: "Home"
-    },
-    {
-      href: "/a-to-z",
-      text: "Health A to Z"
-    },
-    {
-      href: "/pregnancy",
-      text: "Pregnancy"
-    }
-  ],
-    href: "/im-pregnant",
-    text: "I'm pregnant"
-  }) }}
+{% from 'details/macro.njk' import details %}
+
+{{ details({
+  "classes": "alpha-lab-breadcrumbs",
+  "text": "Being pregnant",
+  "HTML": "
+  <ul class=\"bradcrumbs\">
+    <li>
+      <a href=\"\">
+        Early days
+      </a>
+    </li>
+    <li>
+      <a href=\"\">
+        Your NHS pregnancy journey
+      </a>
+    </li>
+    <li>
+      <a href=\"\">
+        Test and scans
+      </a>
+    </li>
+    <li>
+      <a href=\"\"  class=\"bradcrumbs__item--active\">
+        Food and drink during pregnancy 
+      </a>
+    </li>
+    <li>
+      <a href=\"\">
+        Medicines during pregnancy
+      </a>
+    </li>
+    <li>
+      <a href=\"\">
+        Existing health conditions
+      </a>
+    </li>
+    <li>
+      <a href=\"\">
+        Illness during pregnancy
+      </a>
+    </li>
+    <li>
+      <a href=\"\">
+        Common pregnancy ailments
+      </a>
+    </li>
+    <li>
+      <a href=\"\">
+        Free prescriptions and more
+      </a>
+    </li>
+    <li>
+      <a href=\"\">
+        Lifestyle and wellbeing
+      </a>
+    </li>
+    <li>
+      <a href=\"\">
+        When pregnancy goes wrong
+      </a>
+    </li>
+    <li>
+      <a href=\"\">
+        Partners
+      </a>
+    </li>
+  </u\l>
+  "
+}) }}
 {% endblock %}
 
 {% block content %}
