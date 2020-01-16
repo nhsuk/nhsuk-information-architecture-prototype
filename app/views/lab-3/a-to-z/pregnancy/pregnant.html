@@ -11,36 +11,7 @@
   Pregnancy - NHS.UK
 {% endblock %}
 
-<!-- Breadcrumb goes inside the beforeContent block -->
 
-<!-- Breadcrumb goes inside the beforeContent block -->
-{% block beforeContent %}
-{% from 'details/macro.njk' import details %}
-
-{{ details({
-  "classes": "alpha-lab-breadcrumbs",
-  "text": "Pregnancy",
-  "HTML": "
-  <ul class=\"bradcrumbs\">
-    <li>
-      <a href=\"\">
-        Getting pregnant
-      </a>
-    </li>
-    <li class=\"bradcrumbs__item--active\">
-      <a href=\"lab-3/a-to-z/pregnancy/pregnant\">
-        Being Pregnant
-      </a>
-    </li>
-    <li>
-      <a href=\"lab-3/a-to-z/pregnancy/labour-and-birth\">
-        Labour and birth
-      </a>
-    </li>
-  </u\l>
-  "
-}) }}
-{% endblock %}
 <!-- Your page content goes inside the content block -->
 <!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
 {% block content %}
