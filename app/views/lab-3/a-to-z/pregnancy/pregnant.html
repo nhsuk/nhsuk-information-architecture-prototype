@@ -8,7 +8,18 @@
 
 <!-- Set the page title inside the pageTitle block -->
 {% block pageTitle %}
-  Pregnancy - NHS.UK
+  Pregnancy - Being pregnant - NHS.UK
+{% endblock %}
+<!-- Breadcrumb goes inside the beforeContent block -->
+<!-- More info and code for the breadcrumb can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/breadcrumbs -->
+{% block beforeContent %}
+
+    <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+      <div class="nhsuk-width-container">
+         Mr. Brad Crumb - immediate parent = pregnancy - siblings = Getting pregnant, this, Labour and birth
+      </div>
+    </nav>
+
 {% endblock %}
 
 
@@ -20,7 +31,6 @@
     <div class="nhsuk-grid-column-full">
       
       <section>
-        <p class="nhsuk-u-margin-bottom-1"><a href="/lab-3/a-to-z/pregnancy" >Pregnancy</a></p>
         <h1>
           <span role="text">
               Being pregnant
@@ -122,7 +132,7 @@
 
           <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
             <div class="nhsuk-promo nhsuk-promo_canon">
-              <a class="nhsuk-promo__link-wrapper" href="/lab-3/a-to-z/pregnancy/foods-to-avoid">
+              <a class="nhsuk-promo__link-wrapper" href="/lab-3/a-to-z/pregnancy/food-and-drink">
                 <div class="nhsuk-promo__content">
                   <h3 class="nhsuk-promo__heading">Food and drink in pregnancy</h3>
                   <p class="nhsuk-promo__description">There are some foods to avoid or take care with when you're pregnant as they might make you ill or harm your baby</p>
@@ -166,7 +176,7 @@
 
           <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
             <div class="nhsuk-promo nhsuk-promo_canon">
-              <a class="nhsuk-promo__link-wrapper" href="/lab-3/a-to-z/pregnancy/prescriptions">
+              <a class="nhsuk-promo__link-wrapper" href="javascript:void(0);">
                 <div class="nhsuk-promo__content">
                   <h3 class="nhsuk-promo__heading">Free prescriptions and more</h3>
                   <p class="nhsuk-promo__description">Pregnant women are entitled to free prescriptions, dental treatment and other benefits</p>
@@ -206,7 +216,7 @@
 
              <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
               <div class="nhsuk-promo nhsuk-promo_canon">
-                <a class="nhsuk-promo__link-wrapper" href="/lab-3/a-to-z/pregnancy/lifestyle-and-wellbeing">
+                <a class="nhsuk-promo__link-wrapper" href="javascript:void(0);">
                   <div class="nhsuk-promo__content">
                     <h3 class="nhsuk-promo__heading">Lifestyle and wellbeing</h3>
                     <p class="nhsuk-promo__description">There are things you can do, and things you can avoid, to keep you and your baby as healthy as possible in pregnancy</p>
