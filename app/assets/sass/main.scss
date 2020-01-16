@@ -429,13 +429,14 @@
     margin-top: -8px;
   }
 }
+
 //// canon key task links
 
 .key-links{
-  padding:1em 0;
+  padding:1.125em 0;
   margin:0;
   li{
-  list-style-type:none;
+    list-style-type:none;
     @extend h4;
   }
 }
