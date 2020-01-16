@@ -409,3 +409,35 @@
 
   }
 }
+
+////////////////////////////////////////////////
+// Canon promos and canon links
+////////////////////////////////////////////////
+
+//// arrowed canon promo boxes
+
+.nhsuk-promo_canon{
+  position:relative;
+  .nhsuk-promo__content{
+    width:84%;
+    display:inline-block;
+    }
+  .arrow{
+    position: absolute; 
+    right: 24px; 
+    top:50%; 
+    margin-top: -8px;
+  }
+}
+
+//// canon key task links
+
+.key-links{
+  padding:1.125em 0;
+  margin:0;
+  li{
+    list-style-type:none;
+    @extend h4;
+  }
+}
+  
