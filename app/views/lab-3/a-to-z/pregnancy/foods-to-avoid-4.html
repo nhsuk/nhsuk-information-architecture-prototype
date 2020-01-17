@@ -4,77 +4,57 @@
  Pregnancy - Being pregnant - Foods to avoid in pregnancy - NHS.UK 
 {% endblock %}
 
+<!-- Breadcrumb goes inside the beforeContent block -->
 {% block beforeContent %}
 {% from 'details/macro.njk' import details %}
-
 {{ details({
   "classes": "alpha-lab-breadcrumbs",
-  "text": "Being pregnant",
+  "text": "Food and drink",
   "HTML": "
   <ul class=\"bradcrumbs\">
-     <li>
-      <a href=\"\">
-        Being pregnant
+    <li>
+      <a href=\"/lab-3/a-to-z/pregnancy\">
+        Food and drink in pregnancy
       </a>
     </li>
     <li>
-      <a href=\"\">
-        Early days
+      <a href=\"#\">
+        Have a healthy diet
+      </a>
+    </li>
+    <li  class=\"bradcrumbs__item--active\">
+      <a href=\"/lab-3/a-to-z/pregnancy/foods-to-avoid\">
+        Food and drink to avoid in pregnancy
       </a>
     </li>
     <li>
-      <a href=\"\">
-        Your NHS pregnancy journey
+      <a href=\"#\">
+        Can I eat soya products during pregnancy?
       </a>
     </li>
     <li>
-      <a href=\"\">
-        Test and scans
+      <a href=\"#\">
+        Should pregnant and breastfeeding women avoid some types of fish?
       </a>
     </li>
     <li>
-      <a href=\"\"  class=\"bradcrumbs__item--active\">
-        Food and drink during pregnancy 
+      <a href=\"#\">
+        How can I avoid food poisoning during pregnancy?
       </a>
     </li>
     <li>
-      <a href=\"\">
-        Medicines during pregnancy
+      <a href=\"#\">
+        Vitamins, supplements and nutrition in pregnancy
       </a>
     </li>
     <li>
-      <a href=\"\">
-        Existing health conditions
+      <a href=\"#\">
+        Why do I need folic acid in pregnancy?
       </a>
     </li>
     <li>
-      <a href=\"\">
-        Illness during pregnancy
-      </a>
-    </li>
-    <li>
-      <a href=\"\">
-        Common pregnancy ailments
-      </a>
-    </li>
-    <li>
-      <a href=\"\">
-        Free prescriptions and more
-      </a>
-    </li>
-    <li>
-      <a href=\"\">
-        Lifestyle and wellbeing
-      </a>
-    </li>
-    <li>
-      <a href=\"\">
-        When pregnancy goes wrong
-      </a>
-    </li>
-    <li>
-      <a href=\"\">
-        Partners
+      <a href=\"#\">
+        Find health start vitamins services
       </a>
     </li>
   </u\l>
@@ -93,27 +73,7 @@
           </span>
         </h1>   
         
-         {{ contentsList({
-            items: [
-              {
-                href: "foods-to-avoid",
-                text: "Meat and fish"
-              },
-              {
-                href: "foods-to-avoid-2",
-                text: "Dairy"
-              },
-              {
-                href: "foods-to-avoid-3",
-                text: "Eggs, nuts and soil"
-              },
-              {
-                href: "foods-to-avoid-4",
-                text: "Drinks and alcohol",
-                current: "true"
-              }
-            ]
-          }) }}
+         
       </div>
     </section>
 
@@ -258,10 +218,32 @@
             Next review due: 23 January 2020
           </p>
         </div>
-        {{ pagination({
-        "previousUrl": "foods-to-avoid-3",
-        "previousPage": "Eggs, nuts and others"
-      }) }}
+        <div> 
+          <nav>
+            {{ contentsList({
+            items: [
+              {
+                href: "foods-to-avoid",
+                text: "Meat and fish"
+              },
+              {
+                href: "foods-to-avoid-2",
+                text: "Dairy"
+              },
+              {
+                href: "foods-to-avoid-3",
+                text: "Eggs, nuts and soil"
+              },
+              {
+                href: "foods-to-avoid-4",
+                text: "Drinks and alcohol",
+                current: "true"
+              }
+            ]
+          }) }}
+          </nav>
+        </div>
+
       </div>
     </section>
   {% endblock %}
