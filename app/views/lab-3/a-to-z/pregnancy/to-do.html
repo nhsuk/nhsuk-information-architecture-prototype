@@ -11,25 +11,75 @@
   Pregnancy - Being pregnant - Early days - Your pregnany to do list - NHS.UK
 {% endblock %}
 
+
+
 <!-- Breadcrumb goes inside the beforeContent block -->
-<!-- More info and code for the breadcrumb can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/breadcrumbs -->
 {% block beforeContent %}
+{% from 'details/macro.njk' import details %}
 
-    <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
-      <div class="nhsuk-width-container">
-        Mr. Brad Crumb - immediate parent = Early days - siblings = This,
-Due date calculator,
-
-Health things you should know,
-Signs and symptoms of pregnancy,
-Not sure you want to be pregnant?,
-What is the umbilical cord?,
-What is the placenta?,
-What is the amniotic sac?,
-Can I find out the sex of my baby?
-      </div>
-      </nav>
-
+{{ details({
+  "classes": "alpha-lab-breadcrumbs",
+  "text": "Early days",
+  "HTML": "
+  <ul class=\"bradcrumbs\">
+    <li>
+      <a href=\"/lab-3/a-to-z/pregnancy/early-days\">
+        Early days
+      </a>
+    </li>
+    <li>
+      <a href=\"#\">
+        Signs and symptoms of pregnancy
+      </a>
+    </li>
+    <li class=\"bradcrumbs__item--active\">
+      <a href=\"/lab-3/a-to-z/pregnancy/to-do\">
+        Your pregnancy to do list
+      </a>
+    </li> 
+    <li>
+      <a href=\"#\">
+        Find maternity services near you
+      </a>
+    </li>
+    <li>
+      <a href=\"#\">
+        Pregnancy due date calculator
+      </a>
+    </li>
+    <li>
+      <a href=\"#\">
+        Health things you should know in pregnancy
+      </a>
+    </li>
+    <li>
+      <a href=\"#\">
+        What is the umbilical cord?
+      </a>
+    </li>
+    <li>
+      <a href=\"#\">
+        What is the placenta?
+      </a>
+    </li>
+    <li>
+      <a href=\"#\">
+        What is the amniotic sac?
+      </a>
+    </li>
+    <li>
+      <a href=\"#\">
+        Can I find out the sex of my baby?
+      </a>
+    </li>
+    <li>
+      <a href=\"#\">
+        Not sure if you want to be pregnant?
+      </a>
+    </li>
+  </u\l>
+  "
+}) }}
 {% endblock %}
 
 <!-- Your page content goes inside the content block -->

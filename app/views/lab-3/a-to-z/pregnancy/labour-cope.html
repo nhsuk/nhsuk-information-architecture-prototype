@@ -12,15 +12,38 @@
 {% endblock %}
 
 <!-- Breadcrumb goes inside the beforeContent block -->
-<!-- More info and code for the breadcrumb can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/breadcrumbs -->
 {% block beforeContent %}
+{% from 'details/macro.njk' import details %}
 
-    <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
-      <div class="nhsuk-width-container">
-          Mr. Brad Crumb - immediate parent = The start of labour, - siblings = this, inducing labour, premature labour and birth, at the hospital or birth centre, pain relief in labour
-      </div>
-    </nav>
-
+{{ details({
+  "classes": "alpha-lab-breadcrumbs",
+  "text": "Signs that labour has begun",
+  "HTML": "
+  <ul class=\"bradcrumbs\">
+    <li>
+      <a href=\"/lab-3/a-to-z/pregnancy/signs-of-labour\">
+        Signs that labour has begun
+      </a>
+    </li>
+    <li>
+      <a href=\"/lab-3/a-to-z/pregnancy/labour-signs\">
+        The early signs of labour
+      </a>
+    </li>
+    <li>
+      <a href=\"/lab-3/a-to-z/pregnancy/labour-symptoms\">
+        The symptoms of labour
+      </a>
+    </li>
+    
+    <li class=\"bradcrumbs__item--active\">
+      <a href=\"/lab-3/a-to-z/pregnancy/labour-cope\">
+        How to cope when labour begins
+      </a>
+    </li>
+  </u\l>
+  "
+}) }}
 {% endblock %}
 
 <!-- Your page content goes inside the content block -->
@@ -30,21 +53,15 @@
   <div class="nhsuk-grid-row">
     <div class="nhsuk-grid-column-two-thirds">
       <section>
-          <h1>
-            <span role="text">
-              How to cope when labour begins
-              <span class="nhsuk-caption-xl nhsuk-caption--bottom">
-                <span class="nhsuk-u-visually-hidden">
-                  -
-                </span>
-                Signs that labour has begun
-              </span>
-            </span>
-          </h1>
-          <p class="nhsuk-lede-text">Symptoms of labour are.... NEED SOME TEXT ABOUT COPING</p>
+        <h1>
+          <span role="text">
+            How to cope when labour begins
+          </span>
+        </h1>
+          <p class="nhsuk-lede-text">Breathing exercises, massage and having a warm bath or shower may help ease pain during this early stage of labour.</p>
       </section>     
       <section>
-        <h2>How to cope when labour begins</h2>
+        <h2></h2>
         <p>At the beginning of labour, you can:
           <ul>
             <li>walk or move about, if you feel like it</li>
@@ -102,7 +119,7 @@
             </div>
             <hr class="nhsuk-hr">
         </section>
-      <section>
+     <!-- <section>
         <div class="nhsuk-navigation__contextual-links">
           <h3>Related pages</h3>
           <ul>
@@ -120,27 +137,35 @@
             <li><a href="javascript:void(0);">Start4Life's weekly emails</a></li>
             <li><a href="javascript:void(0);" title="">NICE - Guidance on the care of women and their babies during labour and childbirth</a></li>
           </ul>
-        </div>       
-      </section>
-      <section>
-        <h2>What's the Heading for this nav</h2>
-        {{ contentsList({
-          items: [
-            {
-              href: "signs-of-labour",
-              text: "Signs of labour"
-            },
-            {
-              href: "signs-of-labour-2",
-              text: "Symptoms of labour"
-            },
-            {
-              href: "signs-of-labour-3",
-              text: "How to cope when labour begins",
-              current: "true"
-            }
-          ]
-        }) }}
+        </div> 
+        <hr class="nhsuk-hr">     
+      </section>--> 
+       <section>
+          <nav class="nhsuk-contents-list" role="navigation" aria-label="Pages in this guide">
+            <h2 class="nhsuk-u-visually-hidden">Contents</h2>
+            <ul class="bradcrumbs">
+              <li>
+                <a href="/lab-3/a-to-z/pregnancy/signs-of-labour">Signs that labour has begun</a>
+              </li>
+              <li class="">
+                <a href="/lab-3/a-to-z/pregnancy/labour-signs">The early signs of labour</a>
+              </li>
+              <li class="">
+                <a href="/lab-3/a-to-z/pregnancy/labour-symptoms">The symptoms of labour</a>
+              </li>
+              <li  class="bradcrumbs__item--active" aria-current="page">
+                <a href="/lab-3/a-to-z/pregnancy/labour-cope">How to cope when labour begins</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="nhsuk-review-date">
+    <p class="nhsuk-body-s">
+        Page last reviewed: 30 April 2017
+        <br>
+        Next review due: 30 April 2020
+    </p>
+  </div>
+ 
       </section>
     </div>
   </div>
