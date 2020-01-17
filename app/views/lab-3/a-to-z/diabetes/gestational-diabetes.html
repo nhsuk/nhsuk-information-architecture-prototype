@@ -12,26 +12,19 @@
 {% endblock %}
 
 <!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %}
+{% from 'details/macro.njk' import details %}
+
 {{ details({
   "classes": "alpha-lab-breadcrumbs",
   "text": "Diabetes",
   "HTML": "
   <ul class=\"bradcrumbs\">
-    <li>
-      <a href=\"\">
-        Pre diabetes
-      </a>
-    </li>
-    <li>
-      <a href=\"/lab-3/a-to-z/diabetes/type-1-diabetes\">
-        Type 1 diabetes
-      </a>
-    </li>
-    <li class=\"bradcrumbs__item--active\">
-      <a href=\"/lab-3/a-to-z/diabetes/type-2-diabetes\">
-        Type 2 diabetes
-      </a>
-    </li>
+    <li><a href=\"/lab-3/a-to-z/diabetes/\">Diabetes</a></li>
+    <li><a href=\"#\">Pre diabetes</a></li>
+    <li><a href=\"/lab-3/a-to-z/diabetes/type-1-diabetes\">Type 1 diabetes</a></li>
+    <li><a href=\"/lab-3/a-to-z/diabetes/type-2-diabetes\">Type 2 diabetes</a></li>
+    <li class=\"bradcrumbs__item--active\"><a href=\"/lab-3/a-to-z/diabetes/gestational-diabetes\">Gestational diabetes</a></li>
   </u\l>
   "
 }) }}
@@ -40,154 +33,124 @@
 <!-- Your page content goes inside the content block -->
 <!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
 {% block content %}
-
-
 <main class="nhsuk-main-wrapper" id="maincontent" style="padding-top: 0px;">
-    <div class="nhsuk-grid-row">
-        <div class="nhsuk-grid-column-two-thirds">
-            <p class="nhsuk-u-margin-bottom-2" style="text-color:#4c6272;"><a href="/lab-3/a-to-z/diabetes" style="text-decoration: none;color:	#4c6272 !important;"><strong>Diabetes</strong></a></p>
-            <h1>Gestational diabetes</h1>
-        </div>
-    </div>
-    
-    <nav class="nhsuk-contents-list" role="navigation" aria-label="Pages in this guide">
-        <h2 class="nhsuk-u-visually-hidden">Contents</h2>
-        <ol class="nhsuk-contents-list__list">
-          <li class="nhsuk-contents-list__item" aria-current="page">
-            <span class="nhsuk-contents-list__current">Overview</span>
-          </li>
-          <li class="nhsuk-contents-list__item">
-                <a class="nhsuk-contents-list__link" href="javascript:void(0);" title="">Treatment</a>
-          </li>
-        </ol>
-    </nav>
-      
-    <section id="introduction">
-        <p><strong>Gestational diabetes is high blood sugar (glucose) that develops during <a href="/lab-3/a-to-z/pregnancy">pregnancy</a> and usually disappears after giving birth.</strong></p>
-        <p>It can happen at any stage of pregnancy, but is more common in the second or third trimester.</p>
-        <p>It happens when your body cannot produce enough insulin – a hormone that helps control blood sugar levels – to meet your extra needs in pregnancy.</p>
-        <p>Gestational diabetes can cause problems for you and your baby during pregnancy and after birth. But the risks can be reduced if the condition is detected early and well managed.</p>
-    </section>  
+    <section>
+        <div class="nhsuk-grid-row">
+            <div class="nhsuk-grid-column-two-thirds">
+                <section>
+                    <!--<p class="nhsuk-u-margin-bottom-2" style="text-color:#4c6272;"><a href="/lab-3/a-to-z/diabetes" style="text-decoration: none;color:	#4c6272 !important;"><strong>Diabetes</strong></a></p>-->
+                    <h1><span role="text">Gestational diabetes</span></h1>
+                    <p class="nhsuk-lede-text">Gestational diabetes is high blood sugar (glucose) that develops during <a href="/lab-3/a-to-z/pregnancy">pregnancy</a> and usually disappears after giving birth.</p>
+                </section>
+                <section>
+                    <p>It can happen at any stage of pregnancy, but is more common in the second or third trimester.</p>
+                    <p>It happens when your body cannot produce enough insulin – a hormone that helps control blood sugar levels – to meet your extra needs in pregnancy.</p>
+                    <p>Gestational diabetes can cause problems for you and your baby during pregnancy and after birth. But the risks can be reduced if the condition is detected early and well managed.</p>
+                </section>  
+                <section>
+                    <h2>Who's at risk of gestational diabetes</h2>
+                    <p>Any woman can develop gestational diabetes during pregnancy, but you're at an increased risk if:</p>
+                    <ul>
+                        <li>your <a href="javascript:void(0);" title="">body mass index (BMI)</a> is above 30 - use the <a href="javascript:void(0);" title="">healthy weight calculator</a> to work out your BMI</li>
+                        <li>you previously had a baby who weighed 4.5kg (10lb) or more at birth</li>
+                        <li>you had gestational diabetes in a previous pregnancy</li>
+                        <li>1 of your parents or siblings has diabetes</li>
+                        <li>you are of south Asian, Black, African-Caribbean or Middle Eastern origin (even if you were born in the UK)</li>
+                    </ul>
+                    <p>If any of these apply to you, you should be offered screening for gestational diabetes during your pregnancy.</p>
+                    <p>Gestational diabetes does not usually cause any symptoms.</p>
+                    <p>Most cases are only discovered when your blood sugar levels are tested during screening for gestational diabetes.</p>
+                    <p>Some women may develop symptoms if their blood sugar levels gets too high <a href="javascript:void(0);" title="">(hyperglycaemia)</a>,such as:</p>
+                    <ul>
+                        <li>increased <a href="javascript:void(0);" title="">thirst</a></li>
+                        <li>needing to pee more often than usual</li>
+                        <li>a dry mouth</li>
+                        <li>tiredness</li>
+                    </ul>
+                    <p>But some of these symptoms are common during pregnancy and are not necessarily a sign of gestational diabetes. Speak to your midwife or doctor if you're worried about any symptoms you're experiencing.</p>
+                </section>
 
-    <section id="who-is-at-risk">
-        <h2>Who's at risk of gestational diabetes</h2>
-        <p>Any woman can develop gestational diabetes during pregnancy, but you're at an increased risk if:</p>
-        <ul>
-            <li>your <a href="javascript:void(0);" title="">body mass index (BMI)</a> is above 30 - use the <a href="javascript:void(0);" title="">healthy weight calculator</a> to work out your BMI</li>
-            <li>you previously had a baby who weighed 4.5kg (10lb) or more at birth</li>
-            <li>you had gestational diabetes in a previous pregnancy</li>
-            <li>1 of your parents or siblings has diabetes</li>
-            <li>you are of south Asian, Black, African-Caribbean or Middle Eastern origin (even if you were born in the UK)</li>
-        </ul>
-        <p>If any of these apply to you, you should be offered screening for gestational diabetes during your pregnancy.</p>
-    </section>
+                <section>
+                    <h2>How gestational diabetes can affect your pregnancy</h2>
+                    <p>Most women with gestational diabetes have otherwise normal pregnancies with healthy babies.</p>
+                    <p>However, gestational diabetes can cause problems such as:</p>
+                    <ul>
+                        <li>your baby growing larger than usual – this may lead to difficulties during the delivery and increases the likelihood of needing <a href="javascript:void(0);" title="">induced labour</a> or a <a href="javascript:void(0);" title="">caesarean section</a></li>
+                        <li><a href="javascript:void(0);" title="">polyhydramnios</a> - too much amniotic fluid (the fluid that surrounds the baby) in the womb, which can cause premature labour or problems at delivery</li>
+                        <li><a href="javascript:void(0);" title="">premature birth</a> – giving birth before the 37th week of pregnancy</li>
+                        <li><a href="javascript:void(0);" title="">pre-eclampsia</a> – a condition that causes high blood pressure during pregnancy and can lead to pregnancy complications if not treated</li>
+                        <li>your baby developing low blood sugar or yellowing of the skin and eyes (<a href="javascript:void(0);" title="">jaundice</a>) after he or she is born, which may require treatment in hospital</li>
+                        <li>the loss of your baby (<a href="javascript:void(0);" title="">stillbirth</a>) - though this is rare</li>
+                    </ul>
+                    <p>Having gestational diabetes also means you're at an increased risk of developing <a href="/lab-3/a-to-z/diabetes/type-2-diabetes">type 2 diabetes</a> in the future</p>
+                </section>
 
-    <section id="symptoms-of-gestational-diabetes">
-        <p>Gestational diabetes does not usually cause any symptoms.</p>
-        <p>Most cases are only discovered when your blood sugar levels are tested during screening for gestational diabetes.</p>
-        <p>Some women may develop symptoms if their blood sugar levels gets too high <a href="javascript:void(0);" title="">(hyperglycaemia)</a>,such as:</p>
-        <ul>
-            <li>increased <a href="javascript:void(0);" title="">thirst</a></li>
-            <li>needing to pee more often than usual</li>
-            <li>a dry mouth</li>
-            <li>tiredness</li>
-        </ul>
-        <p>But some of these symptoms are common during pregnancy and are not necessarily a sign of gestational diabetes. Speak to your midwife or doctor if you're worried about any symptoms you're experiencing.</p>
-    </section>
+                <section>
+                    <h2>Screening for gestational diabetes</h2>
+                    <p>During your <a href="javascript:void(0);" title="">first antenatal appointment</a> (also called a booking appointment) at around week 8 to 12 of your pregnancy, your midwife or doctor will ask you some questions to determine whether you're at an increased risk of gestational diabetes.</p>
+                    <p>If you have 1 or more risk factors for gestational diabetes you should be offered a screening test.</p>
+                    <p>The screening test is called an oral glucose tolerance test (OGTT), which takes about 2 hours.</p>
+                    <p>It involves having a <a href="javascript:void(0);" title="">blood test</a> in the morning, when you have not had any food or drink for 8 to 10 hours (though you can usually drink water, but check with the hospital if you're unsure). You're then given a glucose drink. </p>
+                    <p>After resting for 2 hours, another blood sample is taken to see how your body is dealing with the glucose.</p>
+                    <p>The OGTT is done when you're between 24 and 28 weeks pregnant. If you've had gestational diabetes before, you'll be offered an OGTT earlier in your pregnancy, soon after your booking appointment, then another OGTT at 24 to 28 weeks if the first test is normal.</p>
+                    <p>Find out more about an <a href="javascript:void(0);" title="">OGTT</a></p>
+                </section>
 
-    <section id="impact-on-pregnancy">
-        <h2>How gestational diabetes can affect your pregnancy</h2>
-        <p>Most women with gestational diabetes have otherwise normal pregnancies with healthy babies.</p>
-        <p>However, gestational diabetes can cause problems such as:</p>
-        <ul>
-            <li>your baby growing larger than usual – this may lead to difficulties during the delivery and increases the likelihood of needing <a href="javascript:void(0);" title="">induced labour</a> or a <a href="javascript:void(0);" title="">caesarean section</a></li>
-            <li><a href="javascript:void(0);" title="">polyhydramnios</a> - too much amniotic fluid (the fluid that surrounds the baby) in the womb, which can cause premature labour or problems at delivery</li>
-            <li><a href="javascript:void(0);" title="">premature birth</a> – giving birth before the 37th week of pregnancy</li>
-            <li><a href="javascript:void(0);" title="">pre-eclampsia</a> – a condition that causes high blood pressure during pregnancy and can lead to pregnancy complications if not treated</li>
-            <li>your baby developing low blood sugar or yellowing of the skin and eyes (<a href="javascript:void(0);" title="">jaundice</a>) after he or she is born, which may require treatment in hospital</li>
-            <li>the loss of your baby (<a href="javascript:void(0);" title="">stillbirth</a>) - though this is rare</li>
-        </ul>
-        <p>Having gestational diabetes also means you're at an increased risk of developing <a href="/lab-3/a-to-z/diabetes/type-2-diabetes">type 2 diabetes</a> in the future</p>
-    </section>
+                <section>
+                    <h2>Treatments for gestational diabetes</h2>
+                    <p>If you have gestational diabetes, the chances of having problems with your pregnancy can be reduced by controlling your blood sugar levels.</p>
+                    <p>You'll be given a blood sugar testing kit so you can monitor the effects of treatment.</p>
+                    <p>Blood sugar levels may be reduced by changing your diet and exercise routine. However, if these changes don't lower your blood sugar levels enough, you will need to take medicine as well. This may be tablets or insulin injections.</p>
+                    <p>You'll also be more closely monitored during your pregnancy and birth to check for any potential problems.</p>
+                    <p>If you have gestational diabetes, it's best to give birth before 41 weeks. Induction of labour or a caesarean section may be recommended if labour does not start naturally by this time.</p>
+                    <p>Earlier delivery may be recommended if there are concerns about your or your baby's health or if your blood sugar levels have not been well controlled.</p>
+                    <p>Find out more about <a href="javascript:void(0);" title="">how gestational diabetes is treated</a></p>
+                </section>
 
-    <section id="screening-for-gestational-diabetes">
-        <h2>Screening for gestational diabetes</h2>
-        <p>During your <a href="javascript:void(0);" title="">first antenatal appointment</a> (also called a booking appointment) at around week 8 to 12 of your pregnancy, your midwife or doctor will ask you some questions to determine whether you're at an increased risk of gestational diabetes.</p>
-        <p>If you have 1 or more risk factors for gestational diabetes you should be offered a screening test.</p>
-        <p>The screening test is called an oral glucose tolerance test (OGTT), which takes about 2 hours.</p>
-        <p>It involves having a <a href="javascript:void(0);" title="">blood test</a> in the morning, when you have not had any food or drink for 8 to 10 hours (though you can usually drink water, but check with the hospital if you're unsure). You're then given a glucose drink. </p>
-        <p>After resting for 2 hours, another blood sample is taken to see how your body is dealing with the glucose.</p>
-        <p>The OGTT is done when you're between 24 and 28 weeks pregnant. If you've had gestational diabetes before, you'll be offered an OGTT earlier in your pregnancy, soon after your booking appointment, then another OGTT at 24 to 28 weeks if the first test is normal.</p>
-        <p>Find out more about an <a href="javascript:void(0);" title="">OGTT</a></p>
-    </section>
+                <section>
+                    <p>Gestational diabetes normally goes away after birth. But women who've had it are more likely to develop:</p>
+                    <ul>
+                        <li>gestational diabetes again in future pregnancies</li>
+                        <li><a href="/lab-3/a-to-z/type-2-diabetes">type 2 diabetes</a> – a lifelong type of diabetes</li>
+                    </ul>
+                    <p>You should have a blood test to check for diabetes 6 to 13 weeks after giving birth, and once every year after that if the result is normal.</p>
+                    <p>See your GP if you develop symptoms of high blood sugar, such as increased thirst, needing to pee more often than usual, and a dry mouth – do not wait until your next test. </p>
+                    <p>You should have the tests even if you feel well, as many people with diabetes do not have any symptoms. </p>
+                    <p>You'll also be advised about things you can do to reduce your risk of getting diabetes, such as maintaining a healthy weight, eating a balanced diet and exercising regularly.</p>
+                    <p>Some research has suggested that babies of mothers who had gestational diabetes may be more likely to develop diabetes or become <a href="javascript:void(0);" title="">obese</a> later in life.</p>
+                </section>
 
-    <section id="treatments-for-gestational-diabetes">
-        <h2>Treatments for gestational diabetes</h2>
-        <p>If you have gestational diabetes, the chances of having problems with your pregnancy can be reduced by controlling your blood sugar levels.</p>
-        <p>You'll be given a blood sugar testing kit so you can monitor the effects of treatment.</p>
-        <p>Blood sugar levels may be reduced by changing your diet and exercise routine. However, if these changes don't lower your blood sugar levels enough, you will need to take medicine as well. This may be tablets or insulin injections.</p>
-        <p>You'll also be more closely monitored during your pregnancy and birth to check for any potential problems.</p>
-        <p>If you have gestational diabetes, it's best to give birth before 41 weeks. Induction of labour or a caesarean section may be recommended if labour does not start naturally by this time.</p>
-        <p>Earlier delivery may be recommended if there are concerns about your or your baby's health or if your blood sugar levels have not been well controlled.</p>
-        <p>Find out more about <a href="javascript:void(0);" title="">how gestational diabetes is treated</a></p>
-    </section>
-
-    <section id="long-term-effects-of-gestational-diabetes">
-        <p>Gestational diabetes normally goes away after birth. But women who've had it are more likely to develop:</p>
-        <ul>
-            <li>gestational diabetes again in future pregnancies</li>
-            <li><a href="/lab-3/a-to-z/type-2-diabetes">type 2 diabetes</a> – a lifelong type of diabetes</li>
-        </ul>
-        <p>You should have a blood test to check for diabetes 6 to 13 weeks after giving birth, and once every year after that if the result is normal.</p>
-        <p>See your GP if you develop symptoms of high blood sugar, such as increased thirst, needing to pee more often than usual, and a dry mouth – do not wait until your next test. </p>
-        <p>You should have the tests even if you feel well, as many people with diabetes do not have any symptoms. </p>
-        <p>You'll also be advised about things you can do to reduce your risk of getting diabetes, such as maintaining a healthy weight, eating a balanced diet and exercising regularly.</p>
-        <p>Some research has suggested that babies of mothers who had gestational diabetes may be more likely to develop diabetes or become <a href="javascript:void(0);" title="">obese</a> later in life.</p>
-    </section>
-
-    <section id="future-pregnancy">
-        <h2>Planning future pregnancies</h2>
-        <p>If you've had gestational diabetes before and you're planning to get pregnant, make sure you get checked for diabetes. Your GP can arrange this.</p>
-        <p>If you do have diabetes, you should be referred to a diabetes pre-conception clinic for support to ensure your condition is well controlled before you get pregnant.</p>
-        <p>Read more about <a href="javascript:void(0);" title="">diabetes in pregnancy</a>.</p>
-        <p>If you have an unplanned pregnancy, talk to your GP and tell them you had gestational diabetes in your previous pregnancy.</p>
-        <p>If tests show you do not have diabetes, you'll be offered screening earlier in pregnancy (soon after your first midwife appointment) and another test at 24 to 28 weeks if the first test is normal.</p>
-        <p>Alternatively, your midwife or doctor may suggest you test your blood sugar levels yourself using a finger-pricking device in the same way as you did during your previous gestational diabetes.</p>
-    </section>
-
-    <section id="review">
-        <div class="nhsuk-review-date">
-            <p class="nhsuk-body-s">
-              Page last reviewed: 6 August 2019<br>
-              Next review due: 6 August 2022
-            </p>
+                <section>
+                    <h2>Planning future pregnancies</h2>
+                    <p>If you've had gestational diabetes before and you're planning to get pregnant, make sure you get checked for diabetes. Your GP can arrange this.</p>
+                    <p>If you do have diabetes, you should be referred to a diabetes pre-conception clinic for support to ensure your condition is well controlled before you get pregnant.</p>
+                    <p>Read more about <a href="javascript:void(0);" title="">diabetes in pregnancy</a>.</p>
+                    <p>If you have an unplanned pregnancy, talk to your GP and tell them you had gestational diabetes in your previous pregnancy.</p>
+                    <p>If tests show you do not have diabetes, you'll be offered screening earlier in pregnancy (soon after your first midwife appointment) and another test at 24 to 28 weeks if the first test is normal.</p>
+                    <p>Alternatively, your midwife or doctor may suggest you test your blood sugar levels yourself using a finger-pricking device in the same way as you did during your previous gestational diabetes.</p>
+                </section>
+                <section id="review">
+                    <nav class="nhsuk-contents-list" role="navigation" aria-label="Pages in this guide">
+                        <h2 class="nhsuk-u-visually-hidden">Contents</h2>
+                        <ol class="nhsuk-contents-list__list">
+                          <li class="nhsuk-contents-list__item" aria-current="page">
+                            <span class="nhsuk-contents-list__current">Overview</span>
+                          </li>
+                          <li class="nhsuk-contents-list__item">
+                                <a class="nhsuk-contents-list__link" href="javascript:void(0);" title="">Treatment</a>
+                          </li>
+                        </ol>
+                    </nav>
+                    <div class="nhsuk-review-date">
+                        <p class="nhsuk-body-s">
+                          Page last reviewed: 6 August 2019<br>
+                          Next review due: 6 August 2022
+                        </p>
+                    </div>
+                </section>
+            </div>
         </div>
     </section>
-
-    <section id="sibling-nav">
-        <nav class="nhsuk-pagination" role="navigation" aria-label="Pagination">
-            <ul class="nhsuk-list nhsuk-pagination__list">
-              <li class="nhsuk-pagination-item--next">
-                <a class="nhsuk-pagination__link nhsuk-pagination__link--next" href="/conditions/gestational-diabetes/treatment/">
-                  <span class="nhsuk-pagination__title">Next</span>
-                  <span class="nhsuk-u-visually-hidden">:</span>
-                  <span class="nhsuk-pagination__page">Treatment</span>
-                  <svg class="nhsuk-icon nhsuk-icon__arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
-                    <path d="M19.6 11.66l-2.73-3A.51.51 0 0 0 16 9v2H5a1 1 0 0 0 0 2h11v2a.5.5 0 0 0 .32.46.39.39 0 0 0 .18 0 .52.52 0 0 0 .37-.16l2.73-3a.5.5 0 0 0 0-.64z"></path>
-                  </svg>
-                </a>
-               </li>
-            </ul>
-        </nav>
-    </section>
-      
-          </div>
-        </article>
-      
-        
-      
-      
 </main>
-
 
 {% endblock %}

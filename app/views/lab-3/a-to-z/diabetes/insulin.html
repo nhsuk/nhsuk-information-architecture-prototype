@@ -16,24 +16,22 @@
 {% from 'details/macro.njk' import details %}
 {{ details({
   "classes": "alpha-lab-breadcrumbs",
-  "text": "Diabetes",
+  "text": "Type 1 diabetes",
   "HTML": "
   <ul class=\"bradcrumbs\">
-    <li>
-      <a href=\"\">
-        Pre diabetes
-      </a>
-    </li>
-    <li>
-      <a href=\"/lab-3/a-to-z/diabetes/type-1-diabetes\">
-        Type 1 diabetes
-      </a>
-    </li>
-    <li class=\"bradcrumbs__item--active\">
-      <a href=\"/lab-3/a-to-z/diabetes/type-2-diabetes\">
-        Type 2 diabetes
-      </a>
-    </li>
+    <li><a href=\"/lab-3/a-to-z/diabetes/type-1-diabetes\">Type 1 diabetes</a></li>
+    <li><a href=\"#\">About type 1 diabetes</a></li>
+    <li><a href=\"#\">About type 1 diabetes in children</a></li>
+    <li><a href=\"#\">Symptoms and getting diagnosed</a></li>
+    <li class=\"bradcrumbs__item--active\"><a href=\"/lab-3/a-to-z/diabetes/insulin\">About insulin</a></li>
+    <li><a href=\"#\">When your treatment might change</a></li>
+    <li><a href=\"#\">Hypoglycaemia (hypos)</a></li>
+    <li><a href=\"#\">Hyperglycaemia</a></li>
+    <li><a href=\"#\">What to do when you're ill</a></li>
+    <li><a href=\"/lab-3/a-to-z/diabetes/avoiding-complications\">Avoiding complications</a></li>
+    <li><a href=\"#\">Insulin pumps</a></li>
+    <li><a href=\"#\">Flash monitoring</a></li>
+    <li><a href=\"#\">Counting calories</a></li>
   </u\l>
   "
 }) }}
@@ -44,335 +42,203 @@
 <!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
 {% block content %}
 
-
-<main class="nhsuk-main-wrapper" id="maincontent" style="    padding-top: 0px;
-">
-        
-        <div class="nhsuk-grid-row">
-          <div class="nhsuk-grid-column-two-thirds">
-      
-              <p class="nhsuk-u-margin-bottom-2" ><a href="/lab-3/a-to-z/diabetes/type-1-diabetes" >Type 1 diabetes</a></p>
-        <h1>About insulin</h1>
-        
-      
-      
-          </div>
-        </div>
-      
-        <article>
-          <div class="nhsuk-grid-row">
-            <div class="nhsuk-grid-column-two-thirds">
-      
-              
-        <section class="nhsuk-page-content__section-one">
-          <div class="nhsuk-page-content">
-            <div class="block-markdown"><p>Insulin is a hormone made in your pancreas. It helps your body use glucose (sugar) for energy. </p>
-      
-      <p>In type 1 diabetes your pancreas no longer makes insulin, so you have to inject it to control your blood glucose levels. </p>
-      
-      <p>There are different types of insulin, taken at different times. </p>
-      
-      <h2>Insulin taken once or twice a day</h2>
-      
-      <p>This is called long-acting, background or basal insulin.</p>
-      
-      <p>It gives your body the insulin it needs whether you eat or not. </p>
-      
-      <p>Basal insulin should keep your blood glucose stable overnight and between meals. </p>
-      
-      <h2>Insulin taken with food or drink</h2>
-      
-      <p>This is called fast-acting, mealtime or bolus insulin.</p>
-      
-      <p>It helps reduce the rise in blood glucose caused by eating or drinking. </p>
-      
-      <p>You usually take it before a meal, snack or drink with carbohydrates in it. </p>
-      
-      <p>Diabetes UK has more information on <a href="https://www.diabetes.org.uk/guide-to-diabetes/managing-your-diabetes/treating-your-diabetes/insulin" title="External website">treating diabetes with insulin</a>.</p>
-      </div>
-          </div>
-      
-          <div class="nhsuk-review-date">
-            <p class="nhsuk-body-s">
-              Page last reviewed: 14 May 2018<br>
-              Next review due: 14 May 2021
-            </p>
-          </div>
-      
-          <div class="nhsuk-back-link">
-            
-            <a class="nhsuk-back-link__link" href="/conditions/type-1-diabetes/">
-              <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
-              </svg>
-              Back to Type 1 diabetes
-            </a>
-            
-          </div>
+<main class="nhsuk-main-wrapper" id="maincontent" style="padding-top: 0px;">
+  <section>  
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-two-thirds">
+        <section>
+          <!--<p class="nhsuk-u-margin-bottom-2" ><a href="/lab-3/a-to-z/diabetes/type-1-diabetes" >Type 1 diabetes</a></p>-->
+          <h1><span role="text">About insulin</span></h1>
+          <p class="nhsuk-lede-text">Insulin is a hormone made in your pancreas. It helps your body use glucose (sugar) for energy.</p>
         </section>
-      
-      
+        <article class="nhsuk-page-content">
+          <section>
+            <p>In type 1 diabetes your pancreas no longer makes insulin, so you have to inject it to control your blood glucose levels. </p>
+            <p>There are different types of insulin, taken at different times. </p>
+          </section>
+          <section>
+            <h2>Insulin taken once or twice a day</h2>           
+            <p>This is called long-acting, background or basal insulin.</p>             
+            <p>It gives your body the insulin it needs whether you eat or not. </p>              
+            <p>Basal insulin should keep your blood glucose stable overnight and between meals. </p>
+          </section>
+          <section>              
+            <h2>Insulin taken with food or drink</h2>             
+            <p>This is called fast-acting, mealtime or bolus insulin.</p>              
+            <p>It helps reduce the rise in blood glucose caused by eating or drinking. </p>              
+            <p>You usually take it before a meal, snack or drink with carbohydrates in it. </p>              
+            <p>Diabetes UK has more information on <a href="https://www.diabetes.org.uk/guide-to-diabetes/managing-your-diabetes/treating-your-diabetes/insulin" title="External website">treating diabetes with insulin</a>.</p>
+          </section>
+          <section>
+            <div class="nhsuk-review-date">
+              <p class="nhsuk-body-s">
+                Page last reviewed: 14 May 2018<br>
+                Next review due: 14 May 2021
+              </p>
+            </div>     
+            <div class="nhsuk-back-link">       
+              <a class="nhsuk-back-link__link" href="/lab-3/a-to-z/diabetes/type-1-diabetes">
+                <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
+                </svg>
+                Back to Type 1 diabetes
+              </a>           
             </div>
-      
-            
-        
-        <aside class="nhsuk-grid-column-one-third">
-          <div class="nhsuk-related-nav">
-            <h2 class="nhsuk-related-nav__heading">
-              Type 1 diabetes
-            </h2>
-            <nav role="navigation" class="nhsuk-related-nav__nav-section">
-              
-                
-              
-                
-                  
-                    <h3 class="nhsuk-related-nav__sub-heading">What it is</h3>
-                    <ul class="nhsuk-related-nav__list nhsuk-related-nav__list--sub">
-                      
-                        
-                          <li class="nhsuk-related-nav__item">
-                            <a class="nhsuk-related-nav__link" href="/conditions/type-1-diabetes/about-type-1-diabetes/">
-                              About type 1 diabetes
-                            </a>
-                          </li>
-                        
-                      
-                        
-                          <li class="nhsuk-related-nav__item">
-                            <a class="nhsuk-related-nav__link" href="/conditions/type-1-diabetes/symptoms-and-getting-diagnosed/">
-                              Symptoms and getting diagnosed
-                            </a>
-                          </li>
-                        
-                      
-                        
-                          <li class="nhsuk-related-nav__item">
-                            <a class="nhsuk-related-nav__link" href="/conditions/type-1-diabetes/newly-diagnosed-things-to-help/">
-                              Newly diagnosed: things to help
-                            </a>
-                          </li>
-                        
-                      
-                    </ul>
-                  
-                    <h3 class="nhsuk-related-nav__sub-heading">Under 18</h3>
-                    <ul class="nhsuk-related-nav__list nhsuk-related-nav__list--sub">
-                      
-                        
-                          <li class="nhsuk-related-nav__item">
-                            <a class="nhsuk-related-nav__link" href="/conditions/type-1-diabetes/type-1-diabetes-in-children/">
-                              Type 1 diabetes in children
-                            </a>
-                          </li>
-                        
-                      
-                    </ul>
-                  
-                
-              
-                
-                  
-                    <h3 class="nhsuk-related-nav__sub-heading">Insulin</h3>
-                    <ul class="nhsuk-related-nav__list nhsuk-related-nav__list--sub">
-                      
-                        
-                      
-                        
-                          <li class="nhsuk-related-nav__item">
-                            <a class="nhsuk-related-nav__link" href="/conditions/type-1-diabetes/when-your-treatment-might-change/">
-                              When your treatment might change
-                            </a>
-                          </li>
-                        
-                      
-                    </ul>
-                  
-                    <h3 class="nhsuk-related-nav__sub-heading">Blood glucose levels</h3>
-                    <ul class="nhsuk-related-nav__list nhsuk-related-nav__list--sub">
-                      
-                        
-                          <li class="nhsuk-related-nav__item">
-                            <a class="nhsuk-related-nav__link" href="/conditions/type-1-diabetes/hypoglycaemia-hypos/">
-                              Hypoglycaemia (hypos)
-                            </a>
-                          </li>
-                        
-                      
-                        
-                          <li class="nhsuk-related-nav__item">
-                            <a class="nhsuk-related-nav__link" href="/conditions/type-1-diabetes/hyperglycaemia/">
-                              Hyperglycaemia
-                            </a>
-                          </li>
-                        
-                      
-                        
-                          <li class="nhsuk-related-nav__item">
-                            <a class="nhsuk-related-nav__link" href="/conditions/type-1-diabetes/what-to-do-when-youre-ill/">
-                              What to do when you're ill
-                            </a>
-                          </li>
-                        
-                      
-                        
-                          <li class="nhsuk-related-nav__item">
-                            <a class="nhsuk-related-nav__link" href="/conditions/type-1-diabetes/avoiding-complications/">
-                              Avoiding complications
-                            </a>
-                          </li>
-                        
-                      
-                    </ul>
-                  
-                    <h3 class="nhsuk-related-nav__sub-heading">Technology</h3>
-                    <ul class="nhsuk-related-nav__list nhsuk-related-nav__list--sub">
-                      
-                        
-                          <li class="nhsuk-related-nav__item">
-                            <a class="nhsuk-related-nav__link" href="/conditions/type-1-diabetes/insulin-pumps/">
-                              Insulin pumps
-                            </a>
-                          </li>
-                        
-                      
-                        
-                          <li class="nhsuk-related-nav__item">
-                            <a class="nhsuk-related-nav__link" href="/conditions/type-1-diabetes/sharing-blood-glucose-data-with-your-team/">
-                              Sharing blood glucose data with your team
-                            </a>
-                          </li>
-                        
-                      
-                        
-                          <li class="nhsuk-related-nav__item">
-                            <a class="nhsuk-related-nav__link" href="/conditions/type-1-diabetes/continuous-glucose-monitoring-cgms/">
-                              Continuous glucose monitoring (CGMs)
-                            </a>
-                          </li>
-                        
-                      
-                        
-                          <li class="nhsuk-related-nav__item">
-                            <a class="nhsuk-related-nav__link" href="/conditions/type-1-diabetes/flash-monitoring-freestyle-libre/">
-                              Flash monitoring (Freestyle Libre)
-                            </a>
-                          </li>
-                        
-                      
-                    </ul>
-                  
-                    <h3 class="nhsuk-related-nav__sub-heading">Learning to count carbohydrates</h3>
-                    <ul class="nhsuk-related-nav__list nhsuk-related-nav__list--sub">
-                      
-                        
-                          <li class="nhsuk-related-nav__item">
-                            <a class="nhsuk-related-nav__link" href="/conditions/type-1-diabetes/counting-carbohydrates/">
-                              Counting carbohydrates
-                            </a>
-                          </li>
-                        
-                      
-                        
-                          <li class="nhsuk-related-nav__item">
-                            <a class="nhsuk-related-nav__link" href="/conditions/type-1-diabetes/doing-a-type-1-diabetes-course/">
-                              Doing a type 1 diabetes course
-                            </a>
-                          </li>
-                        
-                      
-                    </ul>
-                  
-                
-              
-                
-                  
-                    <h3 class="nhsuk-related-nav__sub-heading">Everyday life</h3>
-                    <ul class="nhsuk-related-nav__list nhsuk-related-nav__list--sub">
-                      
-                        
-                          <li class="nhsuk-related-nav__item">
-                            <a class="nhsuk-related-nav__link" href="/conditions/type-1-diabetes/alcohol-and-drugs/">
-                              Alcohol and drugs
-                            </a>
-                          </li>
-                        
-                      
-                        
-                          <li class="nhsuk-related-nav__item">
-                            <a class="nhsuk-related-nav__link" href="/conditions/type-1-diabetes/diabetes-and-travel/">
-                              Diabetes and travel
-                            </a>
-                          </li>
-                        
-                      
-                        
-                          <li class="nhsuk-related-nav__item">
-                            <a class="nhsuk-related-nav__link" href="/conditions/type-1-diabetes/check-youre-safe-to-drive/">
-                              Check you're safe to drive
-                            </a>
-                          </li>
-                        
-                      
-                        
-                          <li class="nhsuk-related-nav__item">
-                            <a class="nhsuk-related-nav__link" href="/conditions/type-1-diabetes/exercise-and-sport/">
-                              Exercise and sport
-                            </a>
-                          </li>
-                        
-                      
-                    </ul>
-                  
-                    <h3 class="nhsuk-related-nav__sub-heading">Life events</h3>
-                    <ul class="nhsuk-related-nav__list nhsuk-related-nav__list--sub">
-                      
-                        
-                          <li class="nhsuk-related-nav__item">
-                            <a class="nhsuk-related-nav__link" href="/conditions/type-1-diabetes/pregnancy-and-giving-birth/">
-                              Pregnancy and giving birth
-                            </a>
-                          </li>
-                        
-                      
-                        
-                          <li class="nhsuk-related-nav__item">
-                            <a class="nhsuk-related-nav__link" href="/conditions/type-1-diabetes/going-to-university/">
-                              Going to university
-                            </a>
-                          </li>
-                        
-                      
-                    </ul>
-                  
-                    <h3 class="nhsuk-related-nav__sub-heading">Support</h3>
-                    <ul class="nhsuk-related-nav__list nhsuk-related-nav__list--sub">
-                      
-                        
-                          <li class="nhsuk-related-nav__item">
-                            <a class="nhsuk-related-nav__link" href="/conditions/type-1-diabetes/get-support/">
-                              Get support
-                            </a>
-                          </li>
-                        
-                      
-                    </ul>
-                  
-                
-              
-            </nav>
-          </div>
-        </aside>
-      
-      
-      
-          </div>
-        </article>
-      
-        
-      
-      
-            </main>
+          </section>
+        </div>
+ 
+          <aside class="nhsuk-grid-column-one-third">
+            <div class="nhsuk-related-nav">
+              <h2 class="nhsuk-related-nav__heading">
+                Type 1 diabetes
+              </h2>
+              <nav role="navigation" class="nhsuk-related-nav__nav-section">
+                 <h3 class="nhsuk-related-nav__sub-heading">What it is</h3>
+                 <ul class="nhsuk-related-nav__list nhsuk-related-nav__list--sub">                      
+                  <li class="nhsuk-related-nav__item">
+                    <a class="nhsuk-related-nav__link" href="javascript:void(0);">
+                      About type 1 diabetes
+                    </a>
+                  </li>
+                  <li class="nhsuk-related-nav__item">
+                    <a class="nhsuk-related-nav__link" href="javascript:void(0);">
+                      Symptoms and getting diagnosed
+                    </a>
+                  </li>               
+                  <li class="nhsuk-related-nav__item">
+                    <a class="nhsuk-related-nav__link" href="javascript:void(0);">
+                      Newly diagnosed: things to help
+                    </a>
+                  </li>
+                </ul>           
+                <h3 class="nhsuk-related-nav__sub-heading">Under 18</h3>
+                <ul class="nhsuk-related-nav__list nhsuk-related-nav__list--sub">
+                  <li class="nhsuk-related-nav__item">
+                    <a class="nhsuk-related-nav__link" href="javascript:void(0);">
+                      Type 1 diabetes in children
+                    </a>
+                  </li>
+                </ul>
+                <h3 class="nhsuk-related-nav__sub-heading">Insulin</h3>
+                <ul class="nhsuk-related-nav__list nhsuk-related-nav__list--sub">
+                  <li class="nhsuk-related-nav__item">
+                    <a class="nhsuk-related-nav__link" href="javascript:void(0);">
+                      When your treatment might change
+                    </a>
+                  </li>
+                </ul>           
+                <h3 class="nhsuk-related-nav__sub-heading">Blood glucose levels</h3>
+                <ul class="nhsuk-related-nav__list nhsuk-related-nav__list--sub"> 
+                  <li class="nhsuk-related-nav__item">
+                    <a class="nhsuk-related-nav__link" href="javascript:void(0);">
+                      Hypoglycaemia (hypos)
+                    </a>
+                  </li>
+                  <li class="nhsuk-related-nav__item">
+                    <a class="nhsuk-related-nav__link" href="javascript:void(0);">
+                      Hyperglycaemia
+                    </a>
+                  </li>
+                  <li class="nhsuk-related-nav__item">
+                    <a class="nhsuk-related-nav__link" href="javascript:void(0);">
+                      What to do when you're ill
+                    </a>
+                  </li>
+                  <li class="nhsuk-related-nav__item">
+                    <a class="nhsuk-related-nav__link" href="/lab-3/a-to-z/diabetes/avoiding-complications">
+                      Avoiding complications
+                    </a>
+                  </li
+                </ul>  
+                <h3 class="nhsuk-related-nav__sub-heading">Technology</h3>
+                <ul class="nhsuk-related-nav__list nhsuk-related-nav__list--sub">
+                  <li class="nhsuk-related-nav__item">
+                    <a class="nhsuk-related-nav__link" href="javascript:void(0);">
+                      Insulin pumps
+                    </a>
+                  </li>
+                  <li class="nhsuk-related-nav__item">
+                    <a class="nhsuk-related-nav__link" href="javascript:void(0);">
+                      Sharing blood glucose data with your team
+                    </a>
+                  </li>
+                  <li class="nhsuk-related-nav__item">
+                    <a class="nhsuk-related-nav__link" href="javascript:void(0);">
+                      Continuous glucose monitoring (CGMs)
+                    </a>
+                  </li>
+                  <li class="nhsuk-related-nav__item">
+                    <a class="nhsuk-related-nav__link" href="javascript:void(0);">
+                      Flash monitoring (Freestyle Libre)
+                    </a>
+                  </li> 
+                </ul>    
+                <h3 class="nhsuk-related-nav__sub-heading">Learning to count carbohydrates</h3>
+                <ul class="nhsuk-related-nav__list nhsuk-related-nav__list--sub">
+                  <li class="nhsuk-related-nav__item">
+                    <a class="nhsuk-related-nav__link" href="javascript:void(0);">
+                      Counting carbohydrates
+                    </a>
+                  </li>
+                  <li class="nhsuk-related-nav__item">
+                    <a class="nhsuk-related-nav__link" href="javascript:void(0);">
+                      Doing a type 1 diabetes course
+                    </a>
+                  </li> 
+                </ul>
+                <h3 class="nhsuk-related-nav__sub-heading">Everyday life</h3>
+                <ul class="nhsuk-related-nav__list nhsuk-related-nav__list--sub">
+                  <li class="nhsuk-related-nav__item">
+                    <a class="nhsuk-related-nav__link" href="javascript:void(0);">
+                      Alcohol and drugs
+                    </a>
+                  </li>
+                  <li class="nhsuk-related-nav__item">
+                    <a class="nhsuk-related-nav__link" href="javascript:void(0);">
+                      Diabetes and travel
+                    </a>
+                  </li>
+                  <li class="nhsuk-related-nav__item">
+                    <a class="nhsuk-related-nav__link" href="javascript:void(0);">
+                      Check you're safe to drive
+                    </a>
+                  </li>
+                  <li class="nhsuk-related-nav__item">
+                    <a class="nhsuk-related-nav__link" href="javascript:void(0);">
+                      Exercise and sport
+                    </a>
+                  </li> 
+                </ul> 
+                <h3 class="nhsuk-related-nav__sub-heading">Life events</h3>
+                <ul class="nhsuk-related-nav__list nhsuk-related-nav__list--sub">
+                  <li class="nhsuk-related-nav__item">
+                    <a class="nhsuk-related-nav__link" href="javascript:void(0);">
+                      Pregnancy and giving birth
+                    </a>
+                  </li>
+                  <li class="nhsuk-related-nav__item">
+                    <a class="nhsuk-related-nav__link" href="javascript:void(0);">
+                      Going to university
+                    </a>
+                  </li>
+                </ul>
+                <h3 class="nhsuk-related-nav__sub-heading">Support</h3>
+                <ul class="nhsuk-related-nav__list nhsuk-related-nav__list--sub"> 
+                  <li class="nhsuk-related-nav__item">
+                    <a class="nhsuk-related-nav__link" href="javascript:void(0);">
+                      Get support
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </aside>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>             
+</main>
 
 
-{% endblock %}
+  {% endblock %}
