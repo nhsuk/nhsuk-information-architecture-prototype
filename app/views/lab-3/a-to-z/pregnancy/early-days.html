@@ -12,7 +12,7 @@
 {% endblock %}
 <!-- Breadcrumb goes inside the beforeContent block -->
 <!-- More info and code for the breadcrumb can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/breadcrumbs -->
-{% block beforeContent %}
+<!--  { # % block beforeContent %}
 
     <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
       <div class="nhsuk-width-container">
@@ -20,7 +20,93 @@
       </div>
       </nav>
 
+//{ #% endblock %} -->
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %}
+{% from 'details/macro.njk' import details %}
+
+{{ details({
+  "classes": "alpha-lab-breadcrumbs",
+  "text": "Being pregnant",
+  "HTML": "
+  <ul class=\"bradcrumbs\">
+    <li>
+      <a href=\"/lab-3/a-to-z/pregnancy/pregnant\">
+        Being pregnant
+      </a>
+    </li>
+    <li class=\"bradcrumbs__item--active\">
+      <a href=\"/lab-3/a-to-z/pregnancy/early-days\">
+        Early days
+      </a>
+    </li>
+    <li>
+      <a href=\"/lab-3/a-to-z/pregnancy/antenatal\">
+        Antenatal care
+      </a>
+    </li>
+    <li>
+      <a href=\"/lab-3/a-to-z/pregnancy/tests-and-scans\">
+        Test and scans
+      </a>
+    </li>
+    <li>
+      <a href=\"#\">
+        Pregnancy-induced conditions
+      </a>
+    </li>
+    <li>
+      <a href=\"/lab-3/a-to-z/pregnancy/food-and-drink\">
+        Food and drink during pregnancy 
+      </a>
+    </li>
+    <li>
+      <a href=\"#\">
+        Existing health conditions
+      </a>
+    </li>    
+    
+    <li>
+      <a href=\"#\">
+        Free prescriptions and more
+      </a>
+    </li>
+    <li>
+      <a href=\"#\">
+        Illness during pregnancy
+      </a>
+    </li>
+    <li>
+      <a href=\"#\">
+        Lifestyle and wellbeing
+      </a>
+    </li>
+    <li>
+      <a href=\"#\">
+        Medicines during pregnancy
+      </a>
+    </li>
+    <li>
+      <a href=\"#\">
+       Multiple pregnancies
+      </a>
+    </li>
+    <li>
+      <a href=\"#\">
+        Partners
+      </a>
+    </li>
+    <li>
+      <a href=\"#\">
+        When pregnancy goes wrong
+      </a>
+    </li>
+  </u\l>
+  "
+}) }}
 {% endblock %}
+
 
 
 <!-- Your page content goes inside the content block -->

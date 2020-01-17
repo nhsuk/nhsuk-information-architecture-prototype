@@ -12,15 +12,42 @@
 {% endblock %}
 
 <!-- Breadcrumb goes inside the beforeContent block -->
-<!-- More info and code for the breadcrumb can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/breadcrumbs -->
 {% block beforeContent %}
+{% from 'details/macro.njk' import details %}
 
-     <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
-      <div class="nhsuk-width-container">
-        Mr. Brad Crumb - immediate parent = Tests and scans, - siblings = The 12 week pregnancy dating scan, The mid pregnancy scan, Screening for Down's, Edwards' and Patau's syndromes, Ultrasound scans in pregnancy
-      </div>
-      </nav>
-
+{{ details({
+  "classes": "alpha-lab-breadcrumbs",
+  "text": "Tests and scans",
+  "HTML": "
+  <ul class=\"bradcrumbs\">
+    <li>
+      <a href=\"/lab-3/a-to-z/pregnancy/tests-and-scans\">
+        Tests and scans
+      </a>
+    </li>
+    <li class=\"bradcrumbs__item--active\">
+      <a href=\"/lab-3/a-to-z/pregnancy/scan\">
+        The 12 week pregnancy dating scan
+      </a>
+    </li>
+    <li>
+      <a href=\"#\">
+        The mid pregnancy scan
+      </a>
+    </li>
+    <li>
+      <a href=\"#\">
+        Screening for Down's, Edwards' and Patau's syndromes
+      </a>
+    </li>
+    <li>
+      <a href=\"#\">
+        Ultrasound scans in pregnancy
+      </a>
+    </li>
+  </u\l>
+  "
+}) }}
 {% endblock %}
 
 <!-- Your page content goes inside the content block -->
@@ -45,7 +72,7 @@
 <section>
   <div class="nhsuk-grid-row">
     <div class="nhsuk-grid-column-two-thirds">
-    <h2>Heading?</h2>   
+    <h2>How it works</h2>   
       <p>Your midwife or doctor will book you a dating scan appointment. It will usually take place at your local hospital ultrasound department. The person performing the scan is called a sonographer.</p>
       <p>You may need to have a full bladder for this scan, as this makes the ultrasound image clearer. You can ask your midwife or doctor before the scan if this is the case. The dating scan usually takes about 20 minutes.</p>
     </div>
@@ -72,6 +99,7 @@
       <p>The nuchal translucency measurement can be taken during the dating scan. If you have agreed to have screening for Down's syndrome, the dating scan and the screening will usually happen at the same time.</p>
       <p>You won't be offered the combined screening test if your dating scan happens after <strong>14 weeks</strong>. Instead, you will be offered another blood test between <strong>14 and 20 weeks</strong> of pregnancy to screen for the risk of Down's syndrome. This test is not quite as accurate as the combined test.</p>
       
+      <!-- ===========replace this with the sibling nav============== -->
       <div class="nhsuk-navigation__contextual-links">
         <h3>Related pages</h3>
         <ul>   
