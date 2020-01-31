@@ -1,0 +1,46 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-lab-3-services.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Diabetic eye screening - NHS.UK
+{% endblock %}
+
+
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+
+<main class="nhsuk-main-wrapper" id="maincontent" style="padding-top: 0px;">  
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+      <section>
+        <p class="nhsuk-u-margin-bottom-2" ><a href="javascript:void(0);">Find a service</a></p>
+        <h1><span role="text">Find Diabetic eye screening services</span></h1>             
+        <p class="nhsuk-lede-text">Diabetic eye screening is a test to check for eye problems caused by <a href="/lab-3/a-to-z/diabetes">diabetes</a>.</p>
+      </section>
+      <section>
+        <p>Nearly there. Enter a location below to continue or <a href="">browse all locations</a>. You can also <a href="">narrow your search</a>. </p>
+      </section>
+      <section>
+        <div class="nhsuk-form-group">
+          <h1 class="nhsuk-label-wrapper"><label class="nhsuk-label nhsuk-label--l" for="example-heading">Location</label></h1>
+          <input class="nhsuk-input" id="example-heading" name="example-heading" type="text">
+        </div>
+        {{ button({
+            "text": "Search"
+          }) }}           
+      <section>
+    </div>
+  </div>
+</main>
+
+
+
+{% endblock %}

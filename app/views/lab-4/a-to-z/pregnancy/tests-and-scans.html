@@ -1,0 +1,129 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-lab-3-pregnant.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Pregnancy - Being pregnant - Tests and scans - NHS.UK
+{% endblock %}
+
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %}
+{% from 'details/macro.njk' import details %}
+
+{{ details({
+  "classes": "alpha-lab-breadcrumbs",
+  "text": "Being pregnant",
+  "HTML": "
+  <ul class=\"bradcrumbs\">
+    <li>
+      <a href=\"/lab-3/a-to-z/pregnancy/pregnant\">
+        Being pregnant
+      </a>
+    </li>
+    <li>
+      <a href=\"/lab-3/a-to-z/pregnancy/early-days\">
+        Early days
+      </a>
+    </li>
+    <li>
+      <a href=\"/lab-3/a-to-z/pregnancy/antenatal\">
+        Antenatal care
+      </a>
+    </li>
+    <li class=\"bradcrumbs__item--active\">
+      <a href=\"/lab-3/a-to-z/pregnancy/tests-and-scans\">
+        Test and scans
+      </a>
+    </li>
+    <li>
+      <a href=\"#\">
+        Pregnancy-induced conditions
+      </a>
+    </li>
+    <li>
+      <a href=\"/lab-3/a-to-z/pregnancy/food-and-drink\">
+        Food and drink during pregnancy 
+      </a>
+    </li>
+    <li>
+      <a href=\"#\">
+        Existing health conditions
+      </a>
+    </li>    
+    
+    <li>
+      <a href=\"#\">
+        Free prescriptions and more
+      </a>
+    </li>
+    <li>
+      <a href=\"#\">
+        Illness during pregnancy
+      </a>
+    </li>
+    <li>
+      <a href=\"#\">
+        Lifestyle and wellbeing
+      </a>
+    </li>
+    <li>
+      <a href=\"#\">
+        Medicines during pregnancy
+      </a>
+    </li>
+    <li>
+      <a href=\"#\">
+       Multiple pregnancies
+      </a>
+    </li>
+    <li>
+      <a href=\"#\">
+        Partners
+      </a>
+    </li>
+    <li>
+      <a href=\"#\">
+        When pregnancy goes wrong
+      </a>
+    </li>
+  </u\l>
+  "
+}) }}
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+<section>
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+      <section>
+        <h1>
+          <span role="text">
+            Tests and scans
+          </span>
+        </h1>
+        <p class="nhsuk-lede-text">
+            You’ll be offered a range of tests during your pregnancy, including blood tests and ultrasound baby scans.
+        </p> 
+      </section>
+      <section>
+          <h2 class="nhsuk-u-visually-hidden">All tests and scans</h2>
+          <ul class="key-links">
+            <li><a href="/lab-3/a-to-z/pregnancy/scan">The 12 week pregnancy dating scan</a></li>
+              <li><a href="javascript:void(0);">The mid pregnancy scan</a></li>
+              <li><a href="javascript:void(0);">Screening for Down's, Edwards' and Patau's syndromes</a></li>
+              <li><a href="javascript:void(0);">Ultrasound scans in pregnancy</a></li>
+          </ul>
+      </section>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

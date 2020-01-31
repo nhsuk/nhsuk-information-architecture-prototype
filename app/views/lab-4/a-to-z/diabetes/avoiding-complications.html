@@ -1,0 +1,290 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-lab-3.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Diabetes -  Avoiding complications - NHS.UK
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %}
+{% from 'details/macro.njk' import details %}
+{{ details({
+  "classes": "alpha-lab-breadcrumbs",
+  "text": "Type 1 diabetes",
+  "HTML": "
+  <ul class=\"bradcrumbs\">
+    <li><a href=\"/lab-3/a-to-z/diabetes/type-1-diabetes\">Type 1 diabetes</a></li>
+    <li><a href=\"#\">About type 1 diabetes</a></li>
+    <li><a href=\"#\">About type 1 diabetes in children</a></li>
+    <li><a href=\"#\">Symptoms and getting diagnosed</a></li>
+    <li><a href=\"/lab-3/a-to-z/diabetes/insulin\">About insulin</a></li>
+    <li><a href=\"#\">When your treatment might change</a></li>
+    <li><a href=\"#\">Hypoglycaemia (hypos)</a></li>
+    <li><a href=\"#\">Hyperglycaemia</a></li>
+    <li><a href=\"#\">What to do when you're ill</a></li>
+    <li class=\"bradcrumbs__item--active\"><a href=\"/lab-3/a-to-z/diabetes/avoiding-complications\">Avoiding complications</a></li>
+    <li><a href=\"#\">Insulin pumps</a></li>
+    <li><a href=\"#\">Flash monitoring</a></li>
+    <li><a href=\"#\">Counting calories</a></li>
+  </u\l>
+  "
+}) }}
+{% endblock %}
+
+
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+
+
+<main class="nhsuk-main-wrapper" id="maincontent" style="padding-top: 0px;">
+  <section>      
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-two-thirds">
+        <section>
+          <!--<p class="nhsuk-u-margin-bottom-2" ><a href="/lab-3/a-to-z/diabetes/type-1-diabetes" >Type 1 diabetes</a></p>-->
+          <h1><span role="text">Avoiding complications</span></h1>
+          <p class="nhsuk-lede-text">Diabetes can increase your risk of getting other health problems.</p>
+        </section>     
+        <article class="nhsuk-page-content">
+          <section>
+            <p>Problems won't start immediately, but constant high blood glucose levels can lead to:</p>         
+            <ul>
+              <li>heart disease and stroke</li>
+              <li>foot and circulation problems</li>
+              <li>sight problems and blindness</li>
+              <li>pain and loss of feeling (nerve damage)</li>
+              <li>kidney problems</li>
+            </ul>
+            <div class="block-callout">
+              <div class="nhsuk-warning-callout">
+              <h3 class="nhsuk-warning-callout__label">Important</h3>
+              <p>Keeping stable blood sugar levels, going to your diabetes appointments and <a href="/conditions/type-1-diabetes/doing-a-type-1-diabetes-course/">doing a diabetes course</a> is the best way to lower your risk of getting health problems.</p>   
+            </div> 
+            <div class="block-markdown"><h2>Getting your heart checked</h2>
+              <p>You should have your blood cholesterol (fats) and blood pressure checked at least once a year. </p>    
+              <p>If you smoke, you should stop. Diabetes makes the effects of smoking on your heart worse. </p>
+              <p><a href="javascript:void(0);" title="">Get help to quit smoking</a></p>
+            </div>
+          </section>
+          <section>
+            <h2>Loss of feeling</h2>
+            <p>Diabetes can damage your nerves (neuropathy), causing:</p>
+            <ul>
+              <li>numbness</li>
+              <li>pain or tingling</li>
+              <li>problems with sex</li>
+              <li>constipation or diarrhoea</li>
+            </ul>
+            <p>Let your GP or diabetes nurse know if you notice any changes like these. Early treatment can prevent nerve damage getting worse.</p>
+          </section>
+          <section>
+            <h2>Looking after your feet</h2>         
+            <p>Diabetes can reduce the blood supply to your feet and cause a loss of feeling.</p>           
+            <p>This means foot injuries don't heal well and you may not notice if your foot is sore or injured. This can lead to ulcers and infections.</p>          
+            <p>Simple things are important, like:</p>          
+            <ul>
+              <li>keeping your feet clean and dry to avoid infection</li>
+              <li>trying not to go barefoot outside to avoid cuts and grazes</li>
+              <li>wearing shoes that fit well</li>
+            </ul>
+            <p>Check your feet every day and speak to your GP or diabetes nurse if you notice any changes like:</p>
+            <ul>
+              <li>cuts, cracks or blisters</li>
+              <li>pain or tingling</li>
+              <li>numb feet</li>
+            </ul>       
+            <p>Diabetes UK has advice on <a href="https://www.diabetes.org.uk/guide-to-diabetes/complications/feet/taking-care-of-your-feet" title="External website">how to check your feet</a>.</p>  
+            <p>Your feet should also be checked every year by your diabetes nurse or a foot specialist.</p>
+          </section>
+          <section>
+            <h2>Checking your eyes</h2>
+            <p>Diabetes can damage the blood vessels in your eyes, which can cause sight problems <a href="/conditions/diabetic-retinopathy/">(diabetic retinopathy)</a> and blindness.</p>
+            <p>Your eyes should be checked every year. It's called <a href="/conditions/diabetic-eye-screening/">diabetic eye screening</a>. This is different from an eye test that checks your eyesight. </p>
+            <p>Eye screening finds damage before it affects your sight. Diabetic eye disease can be treated and prevented, so it's important to go to eye screening appointments. </p>
+            <p>Speak to your GP immediately if you notice changes to your sight, including:</p>
+            <ul>
+              <li>blurred vision, especially at night</li>
+              <li>shapes floating in your vision (floaters)</li>
+              <li>sensitivity to light</li>
+            </ul>
+            </section>
+            <section>
+              <div class="nhsuk-review-date">
+                <p class="nhsuk-body-s">
+                  Page last reviewed: 14 May 2018<br>
+                  Next review due: 14 May 2021
+                </p>
+              </div>
+              <div class="nhsuk-back-link">    
+                <a class="nhsuk-back-link__link" href="/lab-3/a-to-z/diabetes/type-1-diabetes">
+                  <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
+                  </svg>
+                  Back to Type 1 diabetes
+                </a> 
+              </div>
+            </section>
+          </div>
+          <aside class="nhsuk-grid-column-one-third">
+            <div class="nhsuk-related-nav">
+              <h2 class="nhsuk-related-nav__heading">Type 1 diabetes</h2>
+              <nav role="navigation" class="nhsuk-related-nav__nav-section">
+                 <h3 class="nhsuk-related-nav__sub-heading">What it is</h3>
+                 <ul class="nhsuk-related-nav__list nhsuk-related-nav__list--sub">                      
+                  <li class="nhsuk-related-nav__item">
+                    <a class="nhsuk-related-nav__link" href="javascript:void(0);">
+                      About type 1 diabetes
+                    </a>
+                  </li>
+                  <li class="nhsuk-related-nav__item">
+                    <a class="nhsuk-related-nav__link" href="javascript:void(0);">
+                      Symptoms and getting diagnosed
+                    </a>
+                  </li>               
+                  <li class="nhsuk-related-nav__item">
+                    <a class="nhsuk-related-nav__link" href="javascript:void(0);">
+                      Newly diagnosed: things to help
+                    </a>
+                  </li>
+                </ul>           
+                <h3 class="nhsuk-related-nav__sub-heading">Under 18</h3>
+                <ul class="nhsuk-related-nav__list nhsuk-related-nav__list--sub">
+                  <li class="nhsuk-related-nav__item">
+                    <a class="nhsuk-related-nav__link" href="javascript:void(0);">
+                      Type 1 diabetes in children
+                    </a>
+                  </li>
+                </ul>
+                <h3 class="nhsuk-related-nav__sub-heading">Insulin</h3>
+                <ul class="nhsuk-related-nav__list nhsuk-related-nav__list--sub">
+                  <li class="nhsuk-related-nav__item"><a class="nhsuk-related-nav__link" href="/lab-3/a-to-z/diabetes/insulin">About insulin</a></li>
+                  <li class="nhsuk-related-nav__item"><a class="nhsuk-related-nav__link" href="javascript:void(0);">When your treatment might change</a></li>
+                </ul>           
+                <h3 class="nhsuk-related-nav__sub-heading">Blood glucose levels</h3>
+                <ul class="nhsuk-related-nav__list nhsuk-related-nav__list--sub"> 
+                  <li class="nhsuk-related-nav__item">
+                    <a class="nhsuk-related-nav__link" href="javascript:void(0);">
+                      Hypoglycaemia (hypos)
+                    </a>
+                  </li>
+                  <li class="nhsuk-related-nav__item">
+                    <a class="nhsuk-related-nav__link" href="javascript:void(0);">
+                      Hyperglycaemia
+                    </a>
+                  </li>
+                  <li class="nhsuk-related-nav__item">
+                    <a class="nhsuk-related-nav__link" href="javascript:void(0);">
+                      What to do when you're ill
+                    </a>
+                  </li>
+                  <!--<li class="nhsuk-related-nav__item">
+                    <a class="nhsuk-related-nav__link" href="/lab-3/a-to-z/diabetes/avoiding-complications">
+                      Avoiding complications
+                    </a>
+                  </li>-->
+                </ul>  
+                <h3 class="nhsuk-related-nav__sub-heading">Technology</h3>
+                <ul class="nhsuk-related-nav__list nhsuk-related-nav__list--sub">
+                  <li class="nhsuk-related-nav__item">
+                    <a class="nhsuk-related-nav__link" href="javascript:void(0);">
+                      Insulin pumps
+                    </a>
+                  </li>
+                  <li class="nhsuk-related-nav__item">
+                    <a class="nhsuk-related-nav__link" href="javascript:void(0);">
+                      Sharing blood glucose data with your team
+                    </a>
+                  </li>
+                  <li class="nhsuk-related-nav__item">
+                    <a class="nhsuk-related-nav__link" href="javascript:void(0);">
+                      Continuous glucose monitoring (CGMs)
+                    </a>
+                  </li>
+                  <li class="nhsuk-related-nav__item">
+                    <a class="nhsuk-related-nav__link" href="javascript:void(0);">
+                      Flash monitoring (Freestyle Libre)
+                    </a>
+                  </li> 
+                </ul>    
+                <h3 class="nhsuk-related-nav__sub-heading">Learning to count carbohydrates</h3>
+                <ul class="nhsuk-related-nav__list nhsuk-related-nav__list--sub">
+                  <li class="nhsuk-related-nav__item">
+                    <a class="nhsuk-related-nav__link" href="javascript:void(0);">
+                      Counting carbohydrates
+                    </a>
+                  </li>
+                  <li class="nhsuk-related-nav__item">
+                    <a class="nhsuk-related-nav__link" href="javascript:void(0);">
+                      Doing a type 1 diabetes course
+                    </a>
+                  </li> 
+                </ul>
+                <h3 class="nhsuk-related-nav__sub-heading">Everyday life</h3>
+                <ul class="nhsuk-related-nav__list nhsuk-related-nav__list--sub">
+                  <li class="nhsuk-related-nav__item">
+                    <a class="nhsuk-related-nav__link" href="javascript:void(0);">
+                      Alcohol and drugs
+                    </a>
+                  </li>
+                  <li class="nhsuk-related-nav__item">
+                    <a class="nhsuk-related-nav__link" href="javascript:void(0);">
+                      Diabetes and travel
+                    </a>
+                  </li>
+                  <li class="nhsuk-related-nav__item">
+                    <a class="nhsuk-related-nav__link" href="javascript:void(0);">
+                      Check you're safe to drive
+                    </a>
+                  </li>
+                  <li class="nhsuk-related-nav__item">
+                    <a class="nhsuk-related-nav__link" href="javascript:void(0);">
+                      Exercise and sport
+                    </a>
+                  </li> 
+                </ul> 
+                <h3 class="nhsuk-related-nav__sub-heading">Life events</h3>
+                <ul class="nhsuk-related-nav__list nhsuk-related-nav__list--sub">
+                  <li class="nhsuk-related-nav__item">
+                    <a class="nhsuk-related-nav__link" href="javascript:void(0);">
+                      Pregnancy and giving birth
+                    </a>
+                  </li>
+                  <li class="nhsuk-related-nav__item">
+                    <a class="nhsuk-related-nav__link" href="javascript:void(0);">
+                      Going to university
+                    </a>
+                  </li>
+                </ul>
+                <h3 class="nhsuk-related-nav__sub-heading">Support</h3>
+                <ul class="nhsuk-related-nav__list nhsuk-related-nav__list--sub"> 
+                  <li class="nhsuk-related-nav__item">
+                    <a class="nhsuk-related-nav__link" href="javascript:void(0);">
+                      Get support
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </aside>
+      
+      
+      
+          </div>
+        </article>
+      
+        
+      
+      
+            </main>
+
+
+
+{% endblock %}
