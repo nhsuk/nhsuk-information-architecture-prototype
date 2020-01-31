@@ -11,46 +11,49 @@
   Pregnancy - Being pregnant - Early days - Your pregnany to do list - NHS.UK
 {% endblock %}
 
+
+
 <!-- Breadcrumb goes inside the beforeContent block -->
-<!-- More info and code for the breadcrumb can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/breadcrumbs -->
 {% block beforeContent %}
+{% from 'details/macro.njk' import details %}
 
-    <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
-      <div class="nhsuk-width-container">
-        Mr. Brad Crumb - immediate parent = Early days - siblings = This,
-Due date calculator,
-
-Health things you should know,
-Signs and symptoms of pregnancy,
-Not sure you want to be pregnant?,
-What is the umbilical cord?,
-What is the placenta?,
-What is the amniotic sac?,
-Can I find out the sex of my baby?
-      </div>
-      </nav>
-
+{{ details({
+  "classes": "alpha-lab-breadcrumbs",
+  "text": "Early days",
+  "HTML": "
+  <ul class=\"bradcrumbs\">
+    <li><a href=\"/lab-3/a-to-z/pregnancy/early-days\">Early days</a></li>
+    <li><a href=\"#\">Signs and symptoms of pregnancy</a></li>
+    <li class=\"bradcrumbs__item--active\"><a href=\"/lab-3/a-to-z/pregnancy/to-do\">Your pregnancy to do list</a></li> 
+    <li><a href=\"#\">Find maternity services near you</a></li>
+    <li><a href=\"#\">Pregnancy due date calculator</a></li>
+    <li><a href=\"#\">Health things you should know in pregnancy</a></li>
+    <li><a href=\"#\">What is the umbilical cord?</a></li>
+    <li><a href=\"#\">What is the placenta?</a></li>
+    <li><a href=\"#\">What is the amniotic sac?</a></li>
+    <li><a href=\"#\">Can I find out the sex of my baby?</a></li>
+    <li><a href=\"#\"> Not sure if you want to be pregnant?</a></li>
+  </u\l>
+  "
+}) }}
 {% endblock %}
 
 <!-- Your page content goes inside the content block -->
 <!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
 {% block content %}
-<div class="nhsuk-grid-row">
-    <section>
-      <div class="nhsuk-grid-column-two-thirds">
-        <section>
-            <h1>
-              <span role="text">
-                Your pregnancy to do list
-              </span>
-            </h1>   
-            <p class="nhsuk-lede-text">Stay organised throughout your pregnancy. You can  keep track of things you need to do and when you need to do them during your pregnancy, such as book antenatal classes, tell your work you're pregnant and think about where you'd like to have your baby.</p>
-          </div>
-        </section>
-        <hr class="nhsuk-hr">
-        <section>
-          <div class="nhsuk-grid-column-two-thirds">
-            <h2>Early days</h2>
+<section>
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds"> 
+      <section>
+        <h1>
+          <span role="text">
+            Your pregnancy to-do list
+          </span>
+        </h1>   
+        <p class="nhsuk-lede-text">Stay organised during your pregnancy. Keep track of things you need to do and when you need to do them.</p>
+      </section>
+      <section>
+        <h2>Early days</h2>
         <ul>
           <li>Take a pregnancy test: finding out if you're pregnant</li>
           <li>Make an appointment to see your midwife or GP: starting your antenatal care</li>
@@ -67,12 +70,10 @@ Can I find out the sex of my baby?
         {% set html_style = 'background-color: #f0f4f5;' %}
         {{ actionLink({
           "text": "Find maternity services near you",
-          "href": ""
+          "href": "#"
         }) }}
-
-
-        <hr class="nhsuk-hr">
-
+      </section>
+      <section>
         <h2>Tests and scans</h2>
         <ul>
           <li>Make sure you've been offered all your screening tests: antenatal tests and screening</li>
@@ -84,8 +85,8 @@ Can I find out the sex of my baby?
             <li><a href="javascript:void(0);">Antenatal checks and tests</a></li>
           </ul>
         </div>
-        <hr class="nhsuk-hr">
-
+      </section>
+      <section>
         <h2>Staying well during your pregnancy</h2>
         <ul>
           <li>Book antenatal classes: all about antenatal classes</li>
@@ -105,8 +106,8 @@ Can I find out the sex of my baby?
             
           </ul>
         </div>
-        <hr class="nhsuk-hr">
-
+      </section>
+      <section>
         <h2>Benefits and beyond</h2>  
         <ul>
           <li>Learn about the benefits you are entitled to: your rights and benefits</li>
@@ -122,9 +123,8 @@ Can I find out the sex of my baby?
             <li><a href="javascript:void(0);" title="">Maternity and paternity benefits and leave</a></li>
           </ul>
         </div>
-        <hr class="nhsuk-hr">
-
-
+      </section>
+      <section>
         <h2>Preparing for the birth</h2>
         <ul>
           <li>Visit the maternity unit you plan to give birth in: questions to ask your maternity service</li>
@@ -140,10 +140,9 @@ Can I find out the sex of my baby?
             <li><a href="javascript:void(0);">Pack your bag for labour</a></li>
           </ul>
         </div>
-        <hr class="nhsuk-hr">
-
-
-        <h2>The labour</h2>
+      </section>
+      <section>
+      <h2>The labour</h2>
         <ul>
           <li>Make sure you know the signs of labour: about the signs of labour</li>
           <li>When in labour, phone the maternity unit before leaving home: when to go to the maternity unit or call the midwife</li>
@@ -154,20 +153,35 @@ Can I find out the sex of my baby?
             <li><a href="javascript:void(0);" title="">At the hospital or birth centre</a></li>
           </ul>
         </div>
-        <hr class="nhsuk-hr">
-        <h2>External links</h2>
-        <ul>
-          <li><a href="javascript:void(0);" title="">Healthy Start - free vitamins and vouchers</a></li>
-          <li><a href="javascript:void(0);" title="">Gov.uk - Maternity pay and leave</a></li>
-          <li><a href="javascript:void(0);" title="">Gov.uk - Sure Start Maternity Grant</a></li>
-          <li><a href="javascript:void(0);" title="">Gov.uk - Maternity pay and leave</a></li>
-          <li><a href="javascript:void(0);" title="">Gov.uk - Maternity Allowance</a></li>
-        </ul>
-        <hr class="nhsuk-hr">
-      
-          </div>
-        </section>
 
-       <!-- End of content -->
+      </section>
+      <section>
+        <br>
+        <nav class="nhsuk-contents-list" role="navigation" aria-label="Pages in this guide">
+          <h2>More in early days</h2>
+          <ul class="bradcrumbs">
+            <li><a href="javascript:void(0);">Signs and symptoms of pregnancy</a></li>
+            <li  class="bradcrumbs__item--active" aria-current="page"><a href="javascript:void(0);" title="">Your pregnancy to-do list</a></li> 
+            <li><a href="javascript:void(0);">Find maternity services near you</a></li>
+            <li><a href="javascript:void(0);">Pregnancy due date calculator</a></li>
+            <li><a href="javascript:void(0);">Health things you should know in pregnancy</a></li>
+            <li><a href="javascript:void(0);">What is the umbilical cord?</a></li>
+            <li><a href="javascript:void(0);">What is the placenta?</a></li>
+            <li><a href="javascript:void(0);">What is the amniotic sac?</a></li>
+            <li><a href="javascript:void(0);">Can I find out the sex of my baby?</a></li>
+            <li><a href="javascript:void(0);"> Not sure if you want to be pregnant?</a></li>
+          </ul>
+        </nav>
+        <div class="nhsuk-review-date">
+          <p class="nhsuk-body-s">
+              Page last reviewed: 7 June 2018 <br>
+              Next review due: 7 June 2021
+          </p>
+        </div>
+      </section>
+    </div>
   </div>
+</section>
+       <!-- End of content -->
+
 {% endblock %}

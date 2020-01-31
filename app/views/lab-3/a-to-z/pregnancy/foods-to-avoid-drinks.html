@@ -4,77 +4,37 @@
  Pregnancy - Being pregnant - Foods to avoid in pregnancy - NHS.UK 
 {% endblock %}
 
+<!-- Breadcrumb goes inside the beforeContent block -->
 {% block beforeContent %}
 {% from 'details/macro.njk' import details %}
-
 {{ details({
   "classes": "alpha-lab-breadcrumbs",
-  "text": "Being pregnant",
+  "text": "Food and drink to avoid in pregnancy",
   "HTML": "
   <ul class=\"bradcrumbs\">
-     <li>
-      <a href=\"\">
-        Being pregnant
+    <li>
+      <a href=\"/lab-3/a-to-z/pregnancy/food-and-drink\">
+        Food and drink to avoid in pregnancy
       </a>
     </li>
     <li>
-      <a href=\"\">
-        Early days
+      <a href=\"/lab-3/a-to-z/pregnancy/foods-to-avoid-meat\">
+        Meat and fish
       </a>
     </li>
     <li>
-      <a href=\"\">
-        Your NHS pregnancy journey
+      <a href=\"/lab-3/a-to-z/pregnancy/foods-to-avoid-dairy\">
+        Dairy
       </a>
     </li>
     <li>
-      <a href=\"\">
-        Test and scans
+      <a href=\"/lab-3/a-to-z/pregnancy/foods-to-avoid-eggs-nuts\">
+        Eggs, nuts and others
       </a>
     </li>
-    <li>
-      <a href=\"\"  class=\"bradcrumbs__item--active\">
-        Food and drink during pregnancy 
-      </a>
-    </li>
-    <li>
-      <a href=\"\">
-        Medicines during pregnancy
-      </a>
-    </li>
-    <li>
-      <a href=\"\">
-        Existing health conditions
-      </a>
-    </li>
-    <li>
-      <a href=\"\">
-        Illness during pregnancy
-      </a>
-    </li>
-    <li>
-      <a href=\"\">
-        Common pregnancy ailments
-      </a>
-    </li>
-    <li>
-      <a href=\"\">
-        Free prescriptions and more
-      </a>
-    </li>
-    <li>
-      <a href=\"\">
-        Lifestyle and wellbeing
-      </a>
-    </li>
-    <li>
-      <a href=\"\">
-        When pregnancy goes wrong
-      </a>
-    </li>
-    <li>
-      <a href=\"\">
-        Partners
+    <li class=\"bradcrumbs__item--active\">
+      <a href=\"/lab-3/a-to-z/pregnancy/foods-to-avoid-drinks\">
+        Drinks
       </a>
     </li>
   </u\l>
@@ -83,42 +43,20 @@
 {% endblock %}
 
 {% block content %}
-<div class="nhsuk-grid-row">
-    <section>
-      <div class="nhsuk-grid-column-two-thirds">
-        <h1>
-          <span role="text">
-            Food and drink to avoid in pregnancy
-    
-          </span>
-        </h1>   
-        
-         {{ contentsList({
-            items: [
-              {
-                href: "foods-to-avoid",
-                text: "Meat and fish"
-              },
-              {
-                href: "foods-to-avoid-2",
-                text: "Dairy"
-              },
-              {
-                href: "foods-to-avoid-3",
-                text: "Eggs, nuts and soil"
-              },
-              {
-                href: "foods-to-avoid-4",
-                text: "Drinks and alcohol",
-                current: "true"
-              }
-            ]
-          }) }}
+<section>
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+     <section>
+      <h1>
+        <span role="text">
+          Drinks
+        </span>
+      </h1> 
+      <p class="nhsuk-lede-text">Some drinks are risky in pregnancy. Find out what you can and can't drink.</p>
       </div>
     </section>
 
     <section>
-      <div class="nhsuk-grid-column-two-thirds">
         <article class="drinks">
           <h2>Drinks</h2>
 
@@ -240,28 +178,26 @@
 
           <p>If you have an Android smartphone, iPhone, iPad or iPod touch, you can download the free One You Drinks Tracker from Google Play or the iTunes App Store. It allows you to keep a drinks diary and get feedback on your drinking.</p>
         </article>
-        <article class="external-links">
-
-          <h2>Have a healthy diet in pregnancy</h2>
-
-          <ul>
-            <li><a href="javascript:void(0);">Find out about healthy eating in pregnancy, including healthy snacks.</a></li>
-            <li><a href="javascript:void(0);">Read more about how to avoid food poisoning in pregnancy.</a></li>
-            <li><a href="javascript:void(0);">You can find pregnancy and baby apps and tools in the NHS apps library.</a></li>
-            <li><a href="javascript:void(0);">Get Start4Life pregnancy and baby emails</a></li>
-            <li><a href="javascript:void(0);">Sign up for Start4Life's weekly emails for expert advice, videos and tips on pregnancy, birth and beyond.</a></li>
+        </section>
+       <section>
+        <nav class="nhsuk-contents-list" role="navigation" aria-label="Pages in this guide">
+          <h2 class="">More in food and drink to avoid in pregnancy</h2>
+          <ul class="bradcrumbs">
+            <li><a href="/lab-3/a-to-z/pregnancy/foods-to-avoid-meat">Meat and fish</a></li>
+            <li class=""><a href="/lab-3/a-to-z/pregnancy/foods-to-avoid-dairy">Dairy</a></li>
+            <li class=""><a href="/lab-3/a-to-z/pregnancy/foods-to-avoid-eggs-nuts">Eggs, nuts and others</a></li>
+            <li class="bradcrumbs__item--active" aria-current="page"><a href="/lab-3/a-to-z/pregnancy/foods-to-avoid-drinks">Drinks</a></li>
           </ul>
-        </article>
+        </nav>
         <div class="nhsuk-review-date">
           <p class="nhsuk-body-s">
-            Page last reviewed: 23 January 2017 <br />
-            Next review due: 23 January 2020
+              Page last reviewed: 23 January 2017 
+              <br>
+              Next review due: 23 January 2020
           </p>
         </div>
-        {{ pagination({
-        "previousUrl": "foods-to-avoid-3",
-        "previousPage": "Eggs, nuts and others"
-      }) }}
-      </div>
     </section>
+    </div>  
+  </div>
+</section>
   {% endblock %}

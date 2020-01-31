@@ -392,17 +392,6 @@
   padding: 0;
   list-style: none;
 
-
-
-  li {
-    margin-left: 20px;    
-    &:first-child {
-      margin-left: 0!important;
-    }
-  }
-
-
-
   a {
     text-decoration: none;
 
@@ -410,6 +399,17 @@
       color: #005eb8!important;
     }
 
+  }
+
+}
+
+.alpha-lab-breadcrumbs .bradcrumbs { 
+
+  li {
+    margin-left: 20px;    
+    &:first-child {
+      margin-left: 0!important;
+    }
   }
 
 }

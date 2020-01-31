@@ -11,16 +11,49 @@
   Pregnancy - Labour and birth - Signs that labour has begun - NHS.UK
 {% endblock %}
 
+
 <!-- Breadcrumb goes inside the beforeContent block -->
-<!-- More info and code for the breadcrumb can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/breadcrumbs -->
 {% block beforeContent %}
+{% from 'details/macro.njk' import details %}
 
-    <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
-      <div class="nhsuk-width-container">
-         Mr. Brad Crumb - immediate parent = The start of labour, - siblings = this, inducing labour, premature labour and birth, at the hospital or birth centre, pain relief in labour
-      </div>
-    </nav>
-
+{{ details({
+  "classes": "alpha-lab-breadcrumbs",
+  "text": "The start of labour",
+  "HTML": "
+  <ul class=\"bradcrumbs\">
+    <li>
+      <a href=\"/lab-3/a-to-z/pregnancy/start-of-labour\">
+        The start of labour
+      </a>
+    </li>
+    <li class=\"bradcrumbs__item--active\">
+      <a href=\"/lab-3/a-to-z/pregnancy/signs-of-labour\">
+        Signs that labour has begun
+      </a>
+    </li>
+    <li>
+      <a href=\"#\">
+        Inducing labour
+      </a>
+    </li>
+    <li>
+      <a href=\"#\">
+        Premature labour and birth
+      </a>
+    </li>
+    <li>
+      <a href=\"#\">
+        At the hospital or birth centre
+      </a>
+    </li>
+    <li>
+      <a href=\"#\">
+        Pain relief in labour
+      </a>
+    </li>
+  </u\l>
+  "
+}) }}
 {% endblock %}
 
 <!-- Your page content goes inside the content block -->
@@ -29,7 +62,6 @@
 <section>
   <div class="nhsuk-grid-row">
     <div class="nhsuk-grid-column-two-thirds">
-        <!--<p class="nhsuk-u-margin-bottom-1" ><a href="#" >Signs that labour has begun</a></p>-->
       <section>
       <h1>
         <span role="text">
@@ -39,61 +71,12 @@
       <p class="nhsuk-lede-text">The start of labour is called the latent phase. This is when your cervix becomes soft and thin, and starts opening for your baby to be born. This can take hours or, for some women, days.</p>   
       </section>     
       <section>
-          <h2>Know the signs</h2>
-          <p>There are several signs that labour might be starting, including:
-            <ul>
-              <li>contractions or tightenings</li>
-              <li>a "show", when the plug of mucus from your cervix (entrance to your womb, or uterus) comes away</li>
-              <li>backache</li>
-              <li>an urge to go to the toilet, which is caused by your baby's head pressing on your bowel</li>
-              <li>your waters breaking (rupture of membranes)</li>
-            </ul>
-          </p>
-          <p>The early (latent) stage of labour can take some time.</p>
-          <div class="nhsuk-care-card nhsuk-care-card--non-urgent">
-            <div class="nhsuk-care-card__heading-container">
-              <h3 class="nhsuk-care-card__heading">
-                <span role="text"><span class="nhsuk-u-visually-hidden">Non-urgent advice: </span>Call your midwife or maternity unit if:</span></h3>
-              <span class="nhsuk-care-card__arrow" aria-hidden="true"></span>
-            </div>
-            <div class="nhsuk-care-card__content">
-              <ul>
-                <li>your waters break, or</li>
-                <li>you're bleeding, or</li>
-                <li>your baby is moving less than usual, or</li>
-                <li>you're less than 37 weeks pregnant and think you might be in labour</li>
-              </ul>
-              <p>These signs mean you need to see a midwife or doctor.</p>
-            </div>
-            <hr class="nhsuk-hr">
-
-            <h2>Latent phase of labour</h2>
-            <p>The start of labour is called the latent phase. This is when your cervix becomes soft and thin, and starts opening for your baby to be born. This can take hours or, for some women, days.</p>
-            <p>You'll probably be advised to stay at home during this time. If you go to the hospital or maternity unit, they may suggest you go back home.</p>
-            <p>Find out more about the stages of labour and what you can do at home during the latent phase.</p>
-            <p>Call your midwife if you're unsure or worried about anything.</p>
-
-      </section>
-      <section>
-            <h2>Heading for this nav</h2>
-            {{ contentsList({
-              items: [
-                {
-                  href: "signs-of-labour",
-                  text: "Signs of labour",
-                  current: "true"
-                },
-                {
-                  href: "signs-of-labour-2",
-                  text: "Symptoms of labour"
-                },
-                {
-                  href: "signs-of-labour-3",
-                  text: "How to cope when labour begins"
-                }
-              ]
-            }) }}
-       
+          <h2 class="nhsuk-u-visually-hidden">All in signs that labour has begun</h2>
+          <ul class="key-links">
+            <li><a href="/lab-3/a-to-z/pregnancy/labour-signs">The early signs of labour</a></li>
+            <li><a href="/lab-3/a-to-z/pregnancy/labour-symptoms">The symptoms of labour</a></li>
+            <li><a href="/lab-3/a-to-z/pregnancy/labour-cope">How to cope when labour begins</a></li>
+          </ul>
       </section>
     </div>
   </div> 

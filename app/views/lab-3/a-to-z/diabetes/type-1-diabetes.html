@@ -21,29 +21,11 @@
   "text": "Diabetes",
   "HTML": "
   <ul class=\"bradcrumbs\">
-    
-
-      <li>
-          <a href=\"\">
-            Diabetes
-          </a>
-        </li>
-
-    <li>
-      <a href=\"\">
-        Pre diabetes
-      </a>
-    </li>
-    <li class=\"bradcrumbs__item--active\">
-      <a href=\"/lab-3/a-to-z/diabetes/type-1-diabetes\">
-        Type 1 diabetes
-      </a>
-    </li>
-    <li>
-      <a href=\"/lab-3/a-to-z/diabetes/type-2-diabetes\">
-        Type 2 diabetes
-      </a>
-    </li>
+    <li><a href=\"/lab-3/a-to-z/diabetes/\">Diabetes</a></li>
+    <li><a href=\"#\">Pre diabetes</a></li>
+    <li class=\"bradcrumbs__item--active\"><a href=\"/lab-3/a-to-z/diabetes/type-1-diabetes\">Type 1 diabetes</a></li>
+    <li><a href=\"/lab-3/a-to-z/diabetes/type-2-diabetes\">Type 2 diabetes</a></li>
+    <li><a href=\"/lab-3/a-to-z/diabetes/gestational-diabetes\">Gestational diabetes</a></li>
   </u\l>
   "
 }) }}
@@ -52,19 +34,18 @@
 <!-- Your page content goes inside the content block -->
 <!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
 {% block content %}
-
+<section>
   <div class="nhsuk-grid-row">
-
     <div class="nhsuk-grid-column-two-thirds">
-      <!--<p class="nhsuk-u-margin-bottom-1" ><a href="/lab-3/a-to-z/diabetes" >Diabetes</a></p>-->
-      <!-- Change the page title here -->
-
-      
+      <section>
+      <!-- Change the page title here --> 
       <h1>
-        Type 1 diabetes
-      </h1>
-        <p class="nhsuk-u-margin-bottom-7">This guide is for adults with type 1 diabetes. There's separate information about <a href= "/lab-3/a-to-z/diabetes/type-2-diabetes">type 2 diabetes</a>.</p>
-
+          <span role="text">
+              Type 1 diabetes
+            </span>
+        </h1>
+      <p class="nhsuk-lede-text">This guide is for adults with type 1 diabetes. There's separate information about <a href= "/lab-3/a-to-z/diabetes/type-2-diabetes">type 2 diabetes</a>.</p>
+      </section>
       <section id="key-links">
         <div class="key-link">
           <h3><a href="javascript:void(0);" title="">Newly diagnosed: things to help</a></h3>
@@ -79,8 +60,6 @@
 
       <section id="about-type-1">
         <h2>About type 1 diabetes</h2>
-        <div class="nhsuk-grid-row">
-          <div class="nhsuk-grid-column-one-third">
             <h3 class="nhsuk-heading-s nhsuk-list-links-heading">What it is</h3>
             <ul class="nhsuk-list nhsuk-list-links">
               <li><a href="javascript:void(0);" title="">About type 1 diabetes</a></li>
@@ -92,14 +71,10 @@
              <li><a href="javascript:void(0);" title="">Type 1 diabetes in children</a></li>
             </ul>
             <hr class="nhsuk-hr">
-        </div>
-        </div>
       </section>
       
       <section id="managing-insulin">
         <h2>Managing insulin and blood glucose levels</h2>
-        <div class="nhsuk-grid-row">
-          <div class="nhsuk-grid-column-one-third">
             <h3 class="nhsuk-heading-s nhsuk-list-links-heading">Insulin</h3>
             <ul class="nhsuk-list nhsuk-list-links">
               <li><a href="/lab-3/a-to-z/diabetes/insulin">About insulin</a></li>
@@ -110,7 +85,7 @@
              <li><a href="javascript:void(0);" title="">Hypoglycaemia (hypos)</a></li>
              <li><a href="javascript:void(0);" title="">Hyperglycaemia</a></li>
              <li><a href="javascript:void(0);" title="">What to do when you're ill</a></li>
-             <li><a href="javascript:void(0);" title="">Avoiding complications</a></li>
+             <li><a href="/lab-3/a-to-z/diabetes/avoiding-complications" title="">Avoiding complications</a></li>
             </ul>
             <h3 class="nhsuk-heading-s nhsuk-list-links-heading">Technology</h3>
             <ul class="nhsuk-list nhsuk-list-links">
@@ -125,14 +100,10 @@
              <li><a href="javascript:void(0);" title="">Doing a type 1 diabetes course</a></li>
             </ul>
             <hr class="nhsuk-hr">
-        </div>
-        </div>
       </section>
 
       <section id="living-with-type-1">
         <h2>Living with type 1 diabetes</h2>
-        <div class="nhsuk-grid-row">
-          <div class="nhsuk-grid-column-one-third">
             <h3 class="nhsuk-heading-s nhsuk-list-links-heading">Everyday life</h3>
             <ul class="nhsuk-list nhsuk-list-links">
               <li><a href="javascript:void(0);" title="">Alcohol and drugs</a></li>
@@ -146,11 +117,11 @@
               <li><a href="javascript:void(0);" title="">Going to university</a></li>
             </ul>
             <ul class="nhsuk-list nhsuk-list-links">
-              <li><a href="/lab-3/a-to-z/diabetes/type-1-diabetes/support">Get support</a></li>  
-        </div>
-        </div>
+              <li><a href="/lab-3/a-to-z/diabetes/type-1-diabetes/support">Get support</a></li>
+            </ul>  
       </section>
 
     </div>      
 </div>
+</section>
 {% endblock %}
