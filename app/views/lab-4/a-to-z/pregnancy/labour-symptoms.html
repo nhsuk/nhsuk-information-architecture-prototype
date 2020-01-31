@@ -1,0 +1,156 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-lab-3-pregnant.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Signs that labour has begun - Symptoms of labour -NHS.UK
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %}
+{% from 'details/macro.njk' import details %}
+
+{{ details({
+  "classes": "alpha-lab-breadcrumbs",
+  "text": "Signs that labour has begun",
+  "HTML": "
+  <ul class=\"bradcrumbs\">
+    <li>
+      <a href=\"/lab-3/a-to-z/pregnancy/signs-of-labour\">
+        Signs that labour has begun
+      </a>
+    </li>
+    <li>
+      <a href=\"/lab-3/a-to-z/pregnancy/labour-signs\">
+        The early signs of labour
+      </a>
+    </li>
+    <li class=\"bradcrumbs__item--active\">
+      <a href=\"/lab-3/a-to-z/pregnancy/labour-symptoms\">
+        The symptoms of labour
+      </a>
+    </li>
+    <li>
+      <a href=\"/lab-3/a-to-z/pregnancy/labour-cope\">
+        How to cope when labour begins
+      </a>
+    </li>
+  </u\l>
+  "
+}) }}
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+<section>
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+      <section>
+        <h1>
+          <span role="text">
+            The symptoms of labour
+          </span>
+        </h1>
+        <p class="nhsuk-lede-text">There are several signs that labour might be starting, including:</p>
+        <p class="nhsuk-lede-text">
+          <ul>
+            <li>contractions or tightenings</li>
+            <li>a "show", when the plug of mucus from your cervix (entrance to your womb, or uterus) comes away
+        backache</li>
+            <li>an urge to go to the toilet, which is caused by your baby's head pressing on your bowel</li>
+            <li>your waters breaking (rupture of membranes)</li>
+          </ul>
+        </p>
+        
+
+        <p class="nhsuk-lede-text">The early (latent) stage of labour can take some time.</p>
+      </section> 
+
+      <section>
+        <h2>What do contractions feel like</h2>
+        <p>When you have a contraction, your womb tightens and then relaxes. For some people, contractions may feel like extreme period pains.</p>
+        <p>You may have had contractions during your pregnancy, particularly towards the end. These tightenings are called Braxton Hicks contractions and are usually painless.</p>
+        <p>As labour gets going, your contractions tend to become longer, stronger and more frequent. During a contraction, the muscles tighten and the pain increases. If you put your hand on your abdomen, you'll feel it getting harder; when the muscles relax, the pain fades and you will feel the hardness ease.</p>
+        <p>The contractions are pushing your baby down and opening the entrance to your womb (the cervix), ready for your baby to go through.</p>
+        <p>Your midwife will probably advise you to stay at home until your contractions become frequent. </p>
+        <p>Call your midwife for guidance when your contractions are in a regular pattern and:
+          <ul>
+            <li>last at least 60 seconds</li>
+            <li>come every 5 minutes</li>
+          </ul>
+        </p>
+        <p>If you're planning to have your baby in a maternity ward, phone the hospital.</p>
+        <hr class="nhsuk-hr">
+
+        <h2>Backache often comes on in labour</h2>
+        <p>You may get backache or the heavy, aching feeling that some women experience during their period.</p>
+        <hr class="nhsuk-hr">
+
+        <h2>A "show" can signal the start of labour</h2>
+        <p>During pregnancy, there's a plug of mucus in your cervix. This plug comes away just before labour starts, or when in early labour, and you may pass it out of your vagina. This small amount of sticky, jelly-like pink mucus is called a show.</p>
+        <p>It may come away in one blob or in several pieces. It's pink in colour because it's bloodstained. It's normal to lose a small amount of blood mixed with the mucus. </p>
+        <p>If you're losing more blood, it may be a sign something is wrong, so phone your hospital or midwife straight away.</p>
+        <p>A show indicates that the cervix is starting to open. Labour may quickly follow or may take a few days. Some women don't have a show.</p>
+        <hr class="nhsuk-hr">
+
+        <h2>What happens when my waters break</h2>
+        <p>Most women's waters break during labour, but it can also happen before labour starts.</p>
+        <p>Your unborn baby develops and grows inside a bag of fluid called the amniotic sac. When it's time for your baby to be born, the sac usually breaks and the amniotic fluid drains out through your vagina. This is your waters breaking. Sometimes when you're in labour, a midwife or doctor may offer to break your waters.</p>
+        <p>If your waters break naturally, you may feel a slow trickle or a sudden gush of water you can't control. To prepare for this, you could keep a sanitary towel (but not a tampon) handy if you're going out, and put a protective sheet on your bed.</p>
+        <p>Amniotic fluid is clear and a pale straw colour. Sometimes it's difficult to tell amniotic fluid from urine. When your waters break, the water may be a little bloodstained to begin with.</p>
+
+        <p>Tell your midwife immediately if:
+          <ul>
+            <li>the waters are smelly or coloured</li>
+            <li>you're losing blood</li>
+          </ul>
+        </p>
+        <p>This could mean you and your baby need urgent attention.</p>
+        <p>If your waters break before labour starts, call your midwife. Use a sanitary pad (not a tampon) so your midwife can check the colour of the waters.</p>
+
+        <h3>If labour doesn't start after your waters break</h3>
+        <p>Most women go into labour within 24 hours of their waters breaking. You'll be offered an induction if you don't because, without amniotic fluid, there's an increased risk of infection for your baby.</p>
+        <p>Until your induction, or if you choose to wait for labour to start naturally, tell your midwife immediately if:
+          <ul>
+            <li>your baby moves less than usual</li>
+            <li>there's any change in the colour or smell of any fluid coming from your vagina</li>
+          </ul>
+        </p>
+        <p>You should take your temperature every <strong>4 hours</strong> when you're awake, and tell your midwife if it's raised. A raised temperature is usually above 37.5C, but you may need to call before this – check with your midwife.</p>
+        <p>There's no evidence that having a bath or shower after your waters have broken increases your risk of infection, but having sex might.</p>
+      </section>
+      <section>
+        <nav class="nhsuk-contents-list" role="navigation" aria-label="Pages in this guide">
+          <h2 class="">More in the signs that labour has begun</h2>
+          <ul class="bradcrumbs">
+            <li class="">
+              <a href="/lab-3/a-to-z/pregnancy/labour-signs">The early signs of labour</a>
+            </li>
+            <li  class="bradcrumbs__item--active" aria-current="page">
+              <a href="javascript:void(0);">The symptoms of labour</a>
+            </li>
+            <li class="">
+              <a href="/lab-3/a-to-z/pregnancy/labour-cope">How to cope when labour begins</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="nhsuk-review-date">
+          <p class="nhsuk-body-s">
+              Page last reviewed: 30 April 2017
+              <br>
+              Next review due: 30 April 2020
+          </p>
+        </div>
+      </section>
+    </div>
+  </div>
+</section>
+      
+
+{% endblock %}

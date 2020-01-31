@@ -1,0 +1,127 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-lab-3-diabetes.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Type 1 Diabetes - NHS.UK
+{% endblock %}
+
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %}
+{% from 'details/macro.njk' import details %}
+
+{{ details({
+  "classes": "alpha-lab-breadcrumbs",
+  "text": "Diabetes",
+  "HTML": "
+  <ul class=\"bradcrumbs\">
+    <li><a href=\"/lab-3/a-to-z/diabetes/\">Diabetes</a></li>
+    <li><a href=\"#\">Pre diabetes</a></li>
+    <li class=\"bradcrumbs__item--active\"><a href=\"/lab-3/a-to-z/diabetes/type-1-diabetes\">Type 1 diabetes</a></li>
+    <li><a href=\"/lab-3/a-to-z/diabetes/type-2-diabetes\">Type 2 diabetes</a></li>
+    <li><a href=\"/lab-3/a-to-z/diabetes/gestational-diabetes\">Gestational diabetes</a></li>
+  </u\l>
+  "
+}) }}
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+<section>
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+      <section>
+      <!-- Change the page title here --> 
+      <h1>
+          <span role="text">
+              Type 1 diabetes
+            </span>
+        </h1>
+      <p class="nhsuk-lede-text">This guide is for adults with type 1 diabetes. There's separate information about <a href= "/lab-3/a-to-z/diabetes/type-2-diabetes">type 2 diabetes</a>.</p>
+      </section>
+      <section id="key-links">
+        <div class="key-link">
+          <h3><a href="javascript:void(0);" title="">Newly diagnosed: things to help</a></h3>
+          <p>Includes how to inject insulin, how to check your blood glucose levels and your check ups and appointments.</p>
+        </div>
+        <div class="key-link">
+          <h3><a href="javascript:void(0);" title="">Get support</a></h3>
+          <p>Includes support groups, social media, helplines and how to get psychological therapy services.</p>
+        </div>
+        <hr class="nhsuk-hr">
+      </section>
+
+      <section id="about-type-1">
+        <h2>About type 1 diabetes</h2>
+            <h3 class="nhsuk-heading-s nhsuk-list-links-heading">What it is</h3>
+            <ul class="nhsuk-list nhsuk-list-links">
+              <li><a href="javascript:void(0);" title="">About type 1 diabetes</a></li>
+              <li><a href="javascript:void(0);" title="">Symptoms and getting diagnosed</a></li>
+              <li><a href="javascript:void(0);" title="">Newly diagnosed: things to help</a></li>
+            </ul>
+            <h3 class="nhsuk-heading-s nhsuk-list-links-heading">Under 18</h3>
+            <ul class="nhsuk-list nhsuk-list-links">
+             <li><a href="javascript:void(0);" title="">Type 1 diabetes in children</a></li>
+            </ul>
+            <hr class="nhsuk-hr">
+      </section>
+      
+      <section id="managing-insulin">
+        <h2>Managing insulin and blood glucose levels</h2>
+            <h3 class="nhsuk-heading-s nhsuk-list-links-heading">Insulin</h3>
+            <ul class="nhsuk-list nhsuk-list-links">
+              <li><a href="/lab-3/a-to-z/diabetes/insulin">About insulin</a></li>
+              <li><a href="javascript:void(0);" title="">When your treatment might change</a></li>
+            </ul>
+            <h3 class="nhsuk-heading-s nhsuk-list-links-heading">Blood glucose levels</h3>
+            <ul class="nhsuk-list nhsuk-list-links">
+             <li><a href="javascript:void(0);" title="">Hypoglycaemia (hypos)</a></li>
+             <li><a href="javascript:void(0);" title="">Hyperglycaemia</a></li>
+             <li><a href="javascript:void(0);" title="">What to do when you're ill</a></li>
+             <li><a href="/lab-3/a-to-z/diabetes/avoiding-complications" title="">Avoiding complications</a></li>
+            </ul>
+            <h3 class="nhsuk-heading-s nhsuk-list-links-heading">Technology</h3>
+            <ul class="nhsuk-list nhsuk-list-links">
+             <li><a href="javascript:void(0);" title="">Insulin pumps</a></li>
+             <li><a href="javascript:void(0);" title="">Sharing blood glucose data with your team</a></li>
+             <li><a href="javascript:void(0);" title="">Continuous glucose monitoring (CGMs)</a></li>
+             <li><a href="javascript:void(0);" title="">Flash monitoring</a></li>
+            </ul>
+            <h3 class="nhsuk-heading-s nhsuk-list-links-heading">Learning to count carbohydrates</h3>
+            <ul class="nhsuk-list nhsuk-list-links">
+             <li><a href="javascript:void(0);" title="">Counting carbohydrates</a></li>
+             <li><a href="javascript:void(0);" title="">Doing a type 1 diabetes course</a></li>
+            </ul>
+            <hr class="nhsuk-hr">
+      </section>
+
+      <section id="living-with-type-1">
+        <h2>Living with type 1 diabetes</h2>
+            <h3 class="nhsuk-heading-s nhsuk-list-links-heading">Everyday life</h3>
+            <ul class="nhsuk-list nhsuk-list-links">
+              <li><a href="javascript:void(0);" title="">Alcohol and drugs</a></li>
+              <li><a href="javascript:void(0);" title="">Diabetes and travel</a></li>
+              <li><a href="javascript:void(0);" title="">Check you're safe to drive</a></li>
+              <li><a href="javascript:void(0);" title="">Exercise and sport</a></li>
+            </ul>
+            <h3 class="nhsuk-heading-s nhsuk-list-links-heading">Life events</h3>
+            <ul class="nhsuk-list nhsuk-list-links">
+              <li><a href="javascript:void(0);" title="">Pregnancy and birth</a></li>
+              <li><a href="javascript:void(0);" title="">Going to university</a></li>
+            </ul>
+            <ul class="nhsuk-list nhsuk-list-links">
+              <li><a href="/lab-3/a-to-z/diabetes/type-1-diabetes/support">Get support</a></li>
+            </ul>  
+      </section>
+
+    </div>      
+</div>
+</section>
+{% endblock %}
