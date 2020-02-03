@@ -467,3 +467,22 @@
 .sub-head-link{
   margin-bottom:8px;
 }
+
+
+.app-side-nav__item--current {
+  border-left: 4px solid #000;
+  margin-left: -12px;
+  padding-left: 8px;
+  color:#000 !important;
+}
+
+
+.app-side-nav__item {
+  padding-bottom: 4px;
+  padding-top: 4px;
+}
+
+
+.app-side-nav__link {
+  text-decoration: none;
+}
