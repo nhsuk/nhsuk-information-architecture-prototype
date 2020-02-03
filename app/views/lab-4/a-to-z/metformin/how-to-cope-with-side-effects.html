@@ -1,0 +1,51 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-lab-3.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Metformin - NHS.UK
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+<!-- More info and code for the breadcrumb can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/breadcrumbs -->
+{% block beforeContent %}
+
+
+
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <!-- Change the page title here -->
+      <p class="nhsuk-u-margin-bottom-2" ><a href="/lab-3/a-to-z" >Health A to Z</a></p>
+
+      <h1>
+        Who can and can't take metformin
+      </h1>
+
+      <section id="How-to-cope-with-side-effects">
+        <p><strong>What to do about:</strong></p>
+        <ul>
+          <li><strong>feeling sick</strong> - take metformin with food to reduce the chances of feeling sick. It may also help to slowly increase your dose over several weeks. Ask a pharmacist or your doctor for advice.</li>
+          <li><strong>being sick (vomiting) or diarrhoea</strong> - drink lots of fluids, such as water or squash, to avoid <a href="javascript:void(0);" title="">dehydration.</a> Take small, frequent sips if you're being sick. Speak to a pharmacist if you have signs of dehydration, such as peeing less than usual or having dark, strong-smelling pee. Do not take any other medicines to treat <a href="javascript:void(0);" title="">diarrhoea or vomiting</a> without speaking to a pharmacist or doctor.</li>
+          <li><strong>stomach pain</strong> - try to rest and relax. It can help to eat and drink slowly and have smaller and more frequent meals. Putting a heat pad or covered hot water bottle on your stomach may also help. If you're in a lot of pain, speak to your pharmacist or doctor.</li>
+          <li><strong>loss of appetite</strong> - eat when you'd usually expect to be hungry. If it helps, eat smaller meals more often than usual.</li>
+          <li><strong>a metallic taste in the mouth</strong> - if you find that metformin is giving you a metallic taste in the mouth, try chewing sugar-free gum.</li>
+        </ul>
+      </section>
+
+
+    </div>      
+</div>
+{% endblock %}

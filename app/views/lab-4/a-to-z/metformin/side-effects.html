@@ -1,0 +1,127 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-lab-3.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Metformin - NHS.UK
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+<!-- More info and code for the breadcrumb can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/breadcrumbs -->
+{% block beforeContent %}
+
+
+
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <!-- Change the page title here -->
+      <p class="nhsuk-u-margin-bottom-2" ><a href="/lab-3/a-to-z" >Health A to Z</a></p>
+
+      <h1>
+        Who can and can't take metformin
+      </h1>
+
+      <section id="side-effects">
+        <p>Like all medicines, metformin can cause side effects, although not everyone gets them.</p>
+
+        <h3>Common side effects</h3>
+        <p>Common side effects happen in more than 1 in 100 people.</p>
+        <p>Talk to your doctor or pharmacist if these side effects bother you or do not go away after 1 week:</p>
+        <ul>
+          <li>feeling sick (nausea)</li>
+          <li>being sick (vomiting) or diarrhoea</li>
+          <li>stomach ache</li>
+          <li>loss of appetite</li>
+          <li>a metallic taste in the mouth</li>
+        </ul>
+
+        <h4>Serious side effects</h4>
+        <p>Serious side effects are rare and happen in less than 1 in 10,000 people.</p>
+        <p>Call your doctor straight away if you get warning signs of:</p>
+        <ul>
+          <li>a general feeling of discomfort with severe tiredness, fast or shallow breathing, being cold and a slow heartbeat</li>
+          <li>yellow skin or the whites of your eyes turn yellow - these can be signs of liver problems</li>
+          <li>extreme tiredness, lack of energy, pins and needles, a sore and red tongue, mouth ulcers, muscle weakness and disturbed vision - these could be signs of <a href="lab-3/a-to-z/vitamin-b12/">vitamin B12 deficiency anaemia</a></li>
+          <li>a skin rash, redness or itching - this could be a sign of a skin disorder</li>
+        </ul>
+      </section>
+
+      <section id="low-blood-sugar">
+        <h3>Low blood sugar</h3>
+        <p>Metformin does not usually cause <a href="javascript:void(0);" title="">low blood sugar</a> (known as hypoglycaemia, or "hypos") when taken on its own.</p>
+        <p>But hypos can happen when you take metformin with other diabetes medicines, such as insulin or gliclazide.</p>
+        <p>Early warning signs of low blood sugar include:</p>
+        <ul>
+          <li>feeling hungry</li>
+          <li>trembling or shaking</li>
+          <li>sweating</li>
+          <li>confusion</li>
+          <li>difficulty concentrating</li>
+        </ul>
+        <p>It's also possible for your blood sugar to go too low while you're asleep.</p>
+        <p>If this happens, it can make you feel sweaty, tired and confused when you wake up.</p>
+        <p>Low blood sugar may happen if you:<p>
+        <ul>
+          <li>take too much of some types of diabetes medicines</li>
+          <li>eat meals irregularly or skip meals</li>
+          <li>are fasting</li>
+          <li>do not eat a healthy diet and are not getting enough nutrients</li>
+          <li>change what you eat</li>
+          <li>increase your physical activity without eating more to compensate</li>
+          <li>drink alcohol, especially after skipping a meal</li>
+          <li>take some other medicines or herbal medicines at the same time</li>
+          <li>have a hormone disorder, such as hypothyroidism</li>
+          <li>have kidney or liver problems</li>
+        </ul>
+        <p>To prevent hypoglycaemia, it's important to have regular meals, including breakfast. Never miss or delay a meal.</p>
+        <p>If you're planning to exercise more than usual, make sure you eat carbohydrates like bread, pasta or cereals before, during or after exercise.</p>
+        <p>Always carry a fast-acting carbohydrate with you, like sugar cubes, fruit juice or some sweets, in case your blood sugar level gets low. Artificial sweeteners will not help.</p>
+        <p>You may also need to eat a starchy carbohydrate, like a sandwich or a biscuit, to maintain your blood sugar for longer.</p>
+        <p>If taking in sugar does not help or the hypo symptoms come back, contact your doctor or the nearest hospital.</p>
+        <p>Make sure your friends and family know about your diabetes and the symptoms of low blood sugar levels so they can recognise a hypo if it happens.</p>
+      
+        <h4>Serious allergic reaction</h4>
+        <p>It's possible to have a serious allergic reaction <a href="javascript:void(0);" title="">(anaphylaxis)</a> to metformin.
+      </section>
+
+      <section id="call-999-if">
+        <div class="nhsuk-care-card nhsuk-care-card--immediate">
+          <div class="nhsuk-care-card__heading-container">
+            <h3 class="nhsuk-care-card__heading"><span role="text"><span class="nhsuk-u-visually-hidden">Call 999 or go to A&E if</span>Call 999 or go to A&E if:</span></h3>
+            <span class="nhsuk-care-card__arrow" aria-hidden="true"></span>
+          </div>
+          <div class="nhsuk-care-card__content">
+            <ul>
+              <li>you get a skin rash that may include itchy, red, swollen, blistered or peeling skin</li>
+              <li>you're wheezing</li>
+              <li>you get tightness in the chest or throat</li>
+              <li>you have trouble breathing or talking</li>
+              <li>your mouth, face, lips, tongue or throat start swelling</li>
+            </ul>
+            <p>You could be having a serious allergic reaction and may need immediate treatment in hospital.</p>
+          </div>
+          <p>These are not all the side effects of metformin.</p>
+          <p>For a full list, see the leaflet inside your medicines packet.</p>
+          <div class="nhsuk-inset-text">
+            <span class="nhsuk-u-visually-hidden">Information: </span>
+            <p>You can report any suspected side effect to the <a href="https://yellowcard.mhra.gov.uk/" title="External website">UK safety scheme</a>.</p>
+          </div>
+      </section>
+
+
+    </div>      
+</div>
+{% endblock %}

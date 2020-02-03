@@ -1,0 +1,60 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-lab-3.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Metformin - NHS.UK
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+<!-- More info and code for the breadcrumb can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/breadcrumbs -->
+{% block beforeContent %}
+
+
+
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <!-- Change the page title here -->
+      <p class="nhsuk-u-margin-bottom-2" ><a href="/lab-3/a-to-z" >Health A to Z</a></p>
+
+      <h1>
+        Who can and can't take metformin
+      </h1>
+
+      <section id="cautions-with-other-medicines">
+        <p>There are some medicines that interfere with the way metformin works.</p>
+        <p>If you're taking any of the following medicines, your blood sugar levels may need to be checked more often and your dose adjusted:</p>
+        <ul>
+          <li>steriod tablets, such as <a href="javascript:void(0);" title="">prednisolone</a></li>
+          <li>tablets that make you pee more (diuretics), such as <a href="javascript:void(0);" title="">furosemide</a></li>
+          <li>medicines to treat heart problems and <a href="javascript:void(0);" title="">high blood pressure</a></li>
+          <li>male and female hormones, such as testosterone, oestrogen and progesterone</li>
+          <li>other diabetes medicines</li>
+        </ul>
+        <p>Some women might need a small adjustment in their metformin dose after starting contraceptive pills. That's because contraceptive pills change how your body handles sugar.</p>
+
+        <h3>Mixing metformin with herbal remedies and supplements</h3>
+        <p>There's very little information about taking herbal remedies and supplements with metformin.</p>
+        <div class="nhsuk-warning-callout">
+          <h3 class="nhsuk-warning-callout__label">Important</h3>
+          <p>For safety, tell your doctor and pharmacist if you're taking any other medicines, including herbal remedies, vitamins or supplements.</p>
+        </div>
+      </section>
+
+
+    </div>      
+</div>
+{% endblock %}
