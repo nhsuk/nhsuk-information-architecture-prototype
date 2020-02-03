@@ -21,9 +21,7 @@ Diabetes - Health problems - NHS.UK
 <!-- Your page content goes inside the content block -->
 <!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
 {% block content %}
-
-<main class="nhsuk-main-wrapper" id="maincontent" style=" padding-top: 0px;
-">    
+<main class="nhsuk-main-wrapper" id="maincontent" style="padding-top: 0px !important;padding-bottom:0px;">   
     <div class="nhsuk-grid-row">
       <div class="nhsuk-grid-column-two-thirds">
 
@@ -120,64 +118,36 @@ Diabetes - Health problems - NHS.UK
                 </a>
               </div>
             </section>
-            <section>
+            <section class="nhsuk-u-padding-bottom-8">
               <h2 class="nhsuk-u-padding-top-5">Pregnancy and diabetes</h2>
               <p>Speak to your GP or care team if you're thinking of having a baby.</p>
               <p>You can have a safe pregnancy and birth if you have type 2 diabetes. But you will need to take extra precautions and have more appointments before and during pregnancy.</p> 
-              <hr class="nhsuk-hr">
+              
             </section>
             <section>
-              <nav class="nhsuk-contents-list" role="navigation" aria-label="Pages in this guide">
-                <h2 class="">More in type 2 diabetes</h2>
-                <ul class="bradcrumbs">
-                  <li class="">
-                    <a class="" href="javascript:void(0);">
-                      Type 2 diabetes
-                    </a>
-                  </li>
-                  <li class="">
-                    <a class="" href="javascript:void(0);">
-                      What is type 2 diabetes?
-                    </a>
-                  </li>
-                  <li class="">
-                    <a class="" href="javascript:void(0);">
-                      Symptoms
-                    </a>
-                  </li>
-                  <li class="">
-                    <a class="" href="javascript:void(0);">
-                      Getting diagnosed
-                    </a>
-                  </li>
-                  <li class="">
-                    <a class="" href="/lab-4/a-to-z/diabetes/understanding-medicine">
-                      Understanding medicine
-                    </a>
-                  </li>
-                  <li class="">
-                    <a class="" href="javascript:void(0);">
-                      Food and keeping active
-                    </a>
-                  </li>
-                  <li class="">
-                    <a class="" href="/lab-4/a-to-z/diabetes/going-for-check-up">
-                      Going for regular check-ups
-                    </a>
-                  </li>
-                  <li class="bradcrumbs__item--active" aria-current="page">
-                    <a href="/lab-4/a-to-z/diabetes/health-problems">
-                      Health problems
-                    </a>
-                  </li>
-                  <li class="">
-                    <a class="" href="/lab-4/a-to-z/diabetes/finding-help">
-                      Finding help and support
-                    </a>
-                  </li>
-                </ul>
-              </nav>
-              <div class="nhsuk-review-date">
+                <nav class="nhsuk-contents-list" role="navigation" aria-label="Pages in this guide">
+                    <h2 class="">More in <a href="/lab-4/a-to-z/diabetes/type-2-diabetes">type 2 diabetes</a></a></h2>
+                    <ul class="nhsuk-list app-side-nav__list">
+          
+                        <li class="app-side-nav__item "><a class="app-side-nav__link" href="javascript:void(0);">What is type 2 diabetes?</a></li>
+                
+                        <li class="app-side-nav__item"><a class="app-side-nav__link" href="javascript:void(0);">Symptoms</a></li>
+                      
+                        <li class="app-side-nav__item"><a class="app-side-nav__link" href="javascript:void(0);">Getting diagnosed</a></li>
+                      
+                        <li class="app-side-nav__item "><a class="app-side-nav__link" href="/lab-4/a-to-z/diabetes/understanding-medicine">Understanding medicine</a></li>
+                      
+                        <li class="app-side-nav__item"><a class="app-side-nav__link" href="javascript:void(0);">Food and keeping active</a></li>
+                      
+                        <li class="app-side-nav__item "><a class="app-side-nav__link" href="/lab-4/a-to-z/diabetes/going-for-check-up">Going for regular check-ups</a></li>
+                        
+                        <li class="app-side-nav__item app-side-nav__item--current">Health problems</li>
+                
+                        <li class="app-side-nav__item"><a class="app-side-nav__link" href="/lab-4/a-to-z/diabetes/finding-help">Finding help and support</a></li>
+                
+                      </ul>
+                  </nav>
+              <div class="nhsuk-review-date nhsuk-u-padding-top-5">
                 <p class="nhsuk-body-s">
                   Page last reviewed: 8 August 2017<br>
                   Next review due: 8 August 2020
