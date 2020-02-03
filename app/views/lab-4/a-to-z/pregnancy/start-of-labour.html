@@ -15,40 +15,7 @@
 {% block beforeContent %}
 {% from 'details/macro.njk' import details %}
 
-{{ details({
-  "classes": "alpha-lab-breadcrumbs",
-  "text": "Labour and birth",
-  "HTML": "
-  <ul class=\"bradcrumbs\">
-    <li>
-      <a href=\"/lab-4/a-to-z/pregnancy/labour-and-birth\">
-        Labour and birth
-      </a>
-    </li>
-    <li>
-      <a href=\"#\">
-        Preparing for birth
-      </a>
-    </li>
-    
-    <li class=\"bradcrumbs__item--active\">
-      <a href=\"/lab-4/a-to-z/pregnancy/start-of-labour\">
-        The start of labour
-      </a>
-    </li>  
-    <li>
-      <a href=\"#\">
-        The birth
-      </a>
-    </li>
-    <li>
-      <a href=\"#\">
-        Premature babies
-      </a>
-    </li>
-  </u\l>
-  "
-}) }}
+
 {% endblock %}
 
 <!-- Your page content goes inside the content block -->
@@ -58,6 +25,22 @@
   <div class="nhsuk-grid-row">
     	<div class="nhsuk-grid-column-two-thirds">
 	    	<section>
+            <nav class="nhsuk-u-margin-bottom-3" aria-label="Breadcrumb">
+                <div >
+                  <ol class="nhsuk-breadcrumb__list ">
+                      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-4/">Home</a></li>
+                    <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-4/a-to-z">Health A to Z</a></li>
+                    <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-4/a-to-z/pregnancy">Pregnancy</a></li>          
+                    <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-4/a-to-z/pregnancy/labour-and-birth">Labour and birth</a></li>                      
+            
+    
+    
+                  </ol>
+                  <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/lab-4/a-to-z/pregnancy/labour-and-birth">Labour and birth</a></p>
+                </div>
+              </nav> 
+
+
 		      <h1>
 		        <span role="text">
 		          The start of labour
