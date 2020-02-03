@@ -1,0 +1,104 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-lab-3.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Metformin - NHS.UK
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+<!-- More info and code for the breadcrumb can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/breadcrumbs -->
+{% block beforeContent %}
+
+
+
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <!-- Change the page title here -->
+      <nav class="nhsuk-u-margin-bottom-3" aria-label="Breadcrumb">
+          <div >
+            <ol class="nhsuk-breadcrumb__list ">
+                <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-4/">Home</a></li>
+              <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-4/a-to-z">Health A to Z</a></li>
+
+            </ol>
+            <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/lab-4/a-to-z">Health A to Z</a></p>
+          </div>
+        </nav>
+
+      <h1>
+        Metformin
+      </h1>
+
+      <p class="nhsuk-lede-text">Metformin is a medicine used to treat <a href="/lab-4/diabetes/type-2-diabetes">type 2 diabetes</a>, and to help prevent type 2 diabetes if you're at high risk of developing it.</p>
+      <section id="key-links" class="nhsuk-u-padding-bottom-8">
+        <!--<h3 class="nhsuk-u-margin-bottom-0">Pages in this guide</h3>-->
+        <ul class="key-links" class="nhsuk-u-padding-top-0 ">
+          <li><a href="/lab-4/a-to-z/metformin/about" title="">About metformin</a></li>
+          <li><a href="/lab-4/a-to-z/metformin/key-facts">Key facts</a></li>
+          <li><a href= "/lab-4/a-to-z/metformin/who-can-take">Who can and can't take metformin</a></li>
+          <li><a href="/lab-4/a-to-z/metformin/how-and-when-to-take">How and when to take it</a></li>
+          <li><a href="/lab-4/a-to-z/metformin/side-effects">Side effects</a></li>
+          <li><a href="/lab-4/a-to-z/metformin/how-to-cope-with-side-effects">How to cope with side effects</a></li>
+          <li><a href="/lab-4/a-to-z/metformin/pregnancy-and-breastfeeding">Pregnancy and breastfeeding whilst taking metformin</a></li>
+          <li><a href="/lab-4/a-to-z/metformin/cautions-with-other-medicines">Cautions with other medicines</a></li>
+          <li><a href="/lab-4/a-to-z/metformin/common-questions">Common questions</a></li>
+        </ul>
+    </section>
+
+
+    <aside>
+        <div class="nhsuk-panel-with-label">
+          <h3 class="nhsuk-panel-with-label__label">Related conditions</h3>
+          <ul>
+            
+              <li><a href="javascript:void(0);">Chronic kidney disease</a></li>
+            
+              <li><a href="javascript:void(0);">Gestational diabetes</a></li>
+            
+              <li><a href="javascript:void(0);">Polycystic ovary syndrome</a></li>
+            
+              <li><a href="/lab-4/diabetes/type-2-diabetes">Type 2 diabetes</a></li>
+            
+          </ul>
+        </div>
+      </aside>
+
+
+
+      <aside>
+          <div class="nhsuk-panel-with-label">
+            <h3 class="nhsuk-panel-with-label__label">Useful resources</h3>
+            <ul>
+              
+                <li><a href="http://www.drwf.org.uk">Diabetes Research and Wellness Foundation: charity</a></li>
+              
+                <li><a href="http://www.diabetes.org.uk/">Diabetes UK: charity</a></li>
+              
+                <li><a href="https://healthunlocked.com/healthyeating">Healthy eating: forum</a></li>
+              
+                <li><a href="https://healthunlocked.com/metformin">Metformin: forums</a></li>
+              
+                <li><a href="http://www.healthtalk.org/peoples-experiences/long-term-conditions/diabetes-type-2/topics">Type 2 diabetes: videos of real stories</a></li>
+              
+            </ul>
+          </div>
+        </aside>
+
+
+    </div>      
+</div>
+{% endblock %}
