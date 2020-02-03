@@ -14,75 +14,37 @@
 <!-- Breadcrumb goes inside the beforeContent block -->
 {% block beforeContent %}
 {% from 'details/macro.njk' import details %}
-{{ details({
-  "classes": "alpha-lab-breadcrumbs",
-  "text": "Type 2 diabetes",
-  "HTML": "
-  <ul class=\"bradcrumbs\">
-    <li>
-      <a href=\"lab-3/a-to-z/diabetes/type-2-diabetes\">
-        Type 2 diabetes
-      </a>
-    </li>
-    <li>
-      <a href=\"#\">
-        What is type 2 diabetes?
-      </a>
-    </li>
-    <li>
-      <a href=\"#\">
-        Symptoms
-      </a>
-    </li>
-    <li>
-      <a href=\"#\">
-        Getting diagnosed
-      </a>
-    </li>
-    <li class=\"\">
-      <a href=\"/lab-3/a-to-z/diabetes/understanding-medicine\">
-        Understanding medicine
-      </a>
-    </li>
-    <li>
-      <a href=\"#\">
-        Food and keeping active
-      </a>
-    </li>
-    <li class=\"bradcrumbs__item--active\">
-      <a href=\"/lab-3/a-to-z/diabetes/going-for-check-up\">
-        Going for regular check-ups
-      </a>
-    </li>
-    <li>
-      <a href=\"/lab-3/a-to-z/diabetes/health-problems\">
-        Health problems
-      </a>
-    </li>
-    <li>
-      <a href=\"/lab-3/a-to-z/diabetes/finding-help\">
-        Finding help and support
-      </a>
-    </li>  
-  </u\l>
-  "
-}) }}
+
 {% endblock %}
 
 <!-- Your page content goes inside the content block -->
 <!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
 {% block content %}
 
-<main class="nhsuk-main-wrapper" id="maincontent" style="padding-top: 0px;"> 
+<main class="nhsuk-main-wrapper" id="maincontent" style="padding-top: 0px !important;padding-bottom:0px;">
   <section>
     <div class="nhsuk-grid-row">
       <div class="nhsuk-grid-column-two-thirds">
         <section>
+            <nav class="nhsuk-u-margin-bottom-3" aria-label="Breadcrumb">
+                <div >
+                  <ol class="nhsuk-breadcrumb__list ">
+                      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-4/">Home</a></li>
+                    <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-4/a-to-z">Health A to Z</a></li>
+      
+                    <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-4/a-to-z/diabetes">Diabetes</a></li>    
+                    <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-4/a-to-z/diabetes/type-2-diabetes">Type 2 Diabetes</a></li>             
+                  </ol>
+                  <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/lab-4/a-to-z/diabetes/type-2-diabetes">Type 2 Diabetes</a></p>
+                </div>
+              </nav> 
+
+
           <h1>
             <span role="text">Going for regular check-ups
             </span>
           </h1>
-          <p class="nhsuk-lede-text">Type 2 diabetes check-ups help to make sure your condition doesn't lead to <a href="/lab-3/a-to-z/diabetes/health-problems">other health problems</a>.</p>
+          <p class="nhsuk-lede-text">Type 2 diabetes check-ups help to make sure your condition doesn't lead to <a href="/lab-4/a-to-z/diabetes/health-problems">other health problems</a>.</p>
         </section>
         <article>
           <section>
@@ -92,71 +54,48 @@
             <p>You have these checks every 3 months when newly diagnosed, then every 6 months once you're stable.</p>          
             <p>This can be done by your GP or diabetes nurse.</p> 
            </section>
-          <section>
+          <section class="nhsuk-u-padding-bottom-8">
             <h2 class="nhsuk-u-padding-top-5">Once a year</h2>   
             <h3>Feet</h3>    
             <p>Checks if you've lost any feeling in your feet, and for ulcers and infections.</p>    
             <p>This can be done by your GP, diabetes nurse or podiatrist.</p>    
             <p>Speak to your GP immediately if you have cuts, bruises or numbness in your feet.</p> 
             <h3>Eyes</h3>
-            <p><a href="/lab-3/a-to-z/diabetic-eye-screening">Diabetic eye screening</a> checks for damage to blood vessels in your eyes.</p>            
+            <p><a href="/lab-4/a-to-z/diabetic-eye-screening">Diabetic eye screening</a> checks for damage to blood vessels in your eyes.</p>            
             <p>Speak to your GP immediately if you have blurred vision.</p>
             <div class="nhsuk-inset-text">
               <span class="nhsuk-u-visually-hidden">Information: </span>
-              <p><a href="/lab-3/a-to-z/diabetes/health-problems">Why it's important to have these check-ups</a>.</p>
+              <p><a href="/lab-4/a-to-z/diabetes/health-problems">Why it's important to have these check-ups</a>.</p>
             </div>           
             <h3>Blood pressure, cholesterol and kidneys</h3>            
             <p>Checks for high blood pressure, heart and kidney disease.</p>            
             <p>This can be done by your GP or diabetes nurse.</p>
-            <hr class="nhsuk-hr">
+            
           </section>
           <section>
-            <nav class="nhsuk-contents-list" role="navigation" aria-label="Pages in this guide">
-              <h2 class="">More in type 2 diabetes</h2>
-              <ul class="bradcrumbs">
-                <li class="">
-                  <a href="javascript:void(0);" title="">
-                    What is type 2 diabetes?
-                  </a>
-                </li>
-                <li class="">
-                  <a class="" href="javascript:void(0);">
-                    Symptoms
-                  </a>
-                </li>
-                <li class="">
-                  <a class="" href="javascript:void(0);">
-                    Getting diagnosed
-                  </a>
-                </li>
-                <li class="">
-                  <a class="" href="/lab-3/a-to-z/diabetes/understanding-medicine">
-                    Understanding medicine
-                  </a>
-                </li>
-                <li class="">
-                  <a class="" href="javascript:void(0);">
-                    Food and keeping active
-                  </a>
-                </li>
-                <li class="bradcrumbs__item--active">
-                  <a class="" href="/lab-3/a-to-z/diabetes/going-for-check-up">
-                    Going for regular check-ups
-                  </a>
-                </li>
-                <li aria-current="page">
-                  <a href="/lab-3/a-to-z/diabetes/health-problems">
-                    Health problems
-                  </a>
-                </li>
-                <li class="">
-                  <a class="" href="/lab-3/a-to-z/diabetes/finding-help">
-                    Finding help and support
-                  </a>
-                </li>
-              </ul>
-            </nav>
-            <div class="nhsuk-review-date">
+              <nav class="nhsuk-contents-list" role="navigation" aria-label="Pages in this guide">
+                  <h2 class="">More in <a href="/lab-4/a-to-z/diabetes/type-2-diabetes">type 2 diabetes</a></a></h2>
+                  <ul class="nhsuk-list app-side-nav__list">
+        
+                      <li class="app-side-nav__item "><a class="app-side-nav__link" href="javascript:void(0);">What is type 2 diabetes?</a></li>
+              
+                      <li class="app-side-nav__item"><a class="app-side-nav__link" href="javascript:void(0);">Symptoms</a></li>
+                    
+                      <li class="app-side-nav__item"><a class="app-side-nav__link" href="javascript:void(0);">Getting diagnosed</a></li>
+                    
+                      <li class="app-side-nav__item "><a class="app-side-nav__link" href="/lab-4/a-to-z/diabetes/understanding-medicine">Understanding medicine</a></li>
+                    
+                      <li class="app-side-nav__item"><a class="app-side-nav__link" href="javascript:void(0);">Food and keeping active</a></li>
+                    
+                      <li class="app-side-nav__item app-side-nav__item--current">Going for regular check-ups</li>
+                      
+                      <li class="app-side-nav__item"><a class="app-side-nav__link" href="/lab-4/a-to-z/diabetes/health-problems">Health problems</a></li>
+              
+                      <li class="app-side-nav__item"><a class="app-side-nav__link" href="/lab-4/a-to-z/diabetes/finding-help">Finding help and support</a></li>
+              
+                    </ul>
+                </nav>
+            <div class="nhsuk-review-date nhsuk-u-padding-top-5">
               <p class="nhsuk-body-s">
                 Page last reviewed: 8 August 2017<br>
                 Next review due: 8 August 2020

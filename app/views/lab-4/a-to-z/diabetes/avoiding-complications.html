@@ -14,27 +14,7 @@
 <!-- Breadcrumb goes inside the beforeContent block -->
 {% block beforeContent %}
 {% from 'details/macro.njk' import details %}
-{{ details({
-  "classes": "alpha-lab-breadcrumbs",
-  "text": "Type 1 diabetes",
-  "HTML": "
-  <ul class=\"bradcrumbs\">
-    <li><a href=\"/lab-3/a-to-z/diabetes/type-1-diabetes\">Type 1 diabetes</a></li>
-    <li><a href=\"#\">About type 1 diabetes</a></li>
-    <li><a href=\"#\">About type 1 diabetes in children</a></li>
-    <li><a href=\"#\">Symptoms and getting diagnosed</a></li>
-    <li><a href=\"/lab-3/a-to-z/diabetes/insulin\">About insulin</a></li>
-    <li><a href=\"#\">When your treatment might change</a></li>
-    <li><a href=\"#\">Hypoglycaemia (hypos)</a></li>
-    <li><a href=\"#\">Hyperglycaemia</a></li>
-    <li><a href=\"#\">What to do when you're ill</a></li>
-    <li class=\"bradcrumbs__item--active\"><a href=\"/lab-3/a-to-z/diabetes/avoiding-complications\">Avoiding complications</a></li>
-    <li><a href=\"#\">Insulin pumps</a></li>
-    <li><a href=\"#\">Flash monitoring</a></li>
-    <li><a href=\"#\">Counting calories</a></li>
-  </u\l>
-  "
-}) }}
+
 {% endblock %}
 
 
@@ -49,7 +29,21 @@
     <div class="nhsuk-grid-row">
       <div class="nhsuk-grid-column-two-thirds">
         <section>
-          <!--<p class="nhsuk-u-margin-bottom-2" ><a href="/lab-3/a-to-z/diabetes/type-1-diabetes" >Type 1 diabetes</a></p>-->
+          <!--<p class="nhsuk-u-margin-bottom-2" ><a href="/lab-4/a-to-z/diabetes/type-1-diabetes" >Type 1 diabetes</a></p>-->
+
+          <nav class="nhsuk-u-margin-bottom-3" aria-label="Breadcrumb">
+              <div >
+                <ol class="nhsuk-breadcrumb__list ">
+                    <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-4/">Home</a></li>
+                  <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-4/a-to-z">Health A to Z</a></li>
+    
+                  <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-4/a-to-z/diabetes">Diabetes</a></li>    
+                  <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-4/a-to-z/diabetes/type-1-diabetes">Type 1 Diabetes</a></li>             
+                </ol>
+                <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/lab-4/a-to-z/diabetes/type-1-diabetes">Type 1 Diabetes</a></p>
+              </div>
+            </nav> 
+
           <h1><span role="text">Avoiding complications</span></h1>
           <p class="nhsuk-lede-text">Diabetes can increase your risk of getting other health problems.</p>
         </section>     
@@ -124,7 +118,7 @@
                 </p>
               </div>
               <div class="nhsuk-back-link">    
-                <a class="nhsuk-back-link__link" href="/lab-3/a-to-z/diabetes/type-1-diabetes">
+                <a class="nhsuk-back-link__link" href="/lab-4/a-to-z/diabetes/type-1-diabetes">
                   <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
                     <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
                   </svg>
@@ -165,7 +159,7 @@
                 </ul>
                 <h3 class="nhsuk-related-nav__sub-heading">Insulin</h3>
                 <ul class="nhsuk-related-nav__list nhsuk-related-nav__list--sub">
-                  <li class="nhsuk-related-nav__item"><a class="nhsuk-related-nav__link" href="/lab-3/a-to-z/diabetes/insulin">About insulin</a></li>
+                  <li class="nhsuk-related-nav__item"><a class="nhsuk-related-nav__link" href="/lab-4/a-to-z/diabetes/insulin">About insulin</a></li>
                   <li class="nhsuk-related-nav__item"><a class="nhsuk-related-nav__link" href="javascript:void(0);">When your treatment might change</a></li>
                 </ul>           
                 <h3 class="nhsuk-related-nav__sub-heading">Blood glucose levels</h3>
@@ -186,7 +180,7 @@
                     </a>
                   </li>
                   <!--<li class="nhsuk-related-nav__item">
-                    <a class="nhsuk-related-nav__link" href="/lab-3/a-to-z/diabetes/avoiding-complications">
+                    <a class="nhsuk-related-nav__link" href="/lab-4/a-to-z/diabetes/avoiding-complications">
                       Avoiding complications
                     </a>
                   </li>-->

@@ -16,19 +16,7 @@
 {% block beforeContent %}
 {% from 'details/macro.njk' import details %}
 
-{{ details({
-  "classes": "alpha-lab-breadcrumbs",
-  "text": "Diabetes",
-  "HTML": "
-  <ul class=\"bradcrumbs\">
-    <li><a href=\"/lab-3/a-to-z/diabetes/\">Diabetes</a></li>
-    <li><a href=\"#\">Pre diabetes</a></li>
-    <li><a href=\"/lab-3/a-to-z/diabetes/type-1-diabetes\">Type 1 diabetes</a></li>
-    <li class=\"bradcrumbs__item--active\"><a href=\"/lab-3/a-to-z/diabetes/type-2-diabetes\">Type 2 diabetes</a></li>
-    <li><a href=\"/lab-3/a-to-z/diabetes/gestational-diabetes\">Gestational diabetes</a></li>
-  </u\l>
-  "
-}) }}
+
 {% endblock %}
 <!-- Your page content goes inside the content block -->
 <!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
@@ -38,18 +26,32 @@
 
     <div class="nhsuk-grid-column-two-thirds">
       <!-- Change the page title here -->
+
+      <nav class="nhsuk-u-margin-bottom-3" aria-label="Breadcrumb">
+          <div >
+            <ol class="nhsuk-breadcrumb__list ">
+                <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-4/">Home</a></li>
+              <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-4/a-to-z">Health A to Z</a></li>
+
+              <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-4/a-to-z/diabetes">Diabetes</a></li>              
+            </ol>
+            <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/lab-4/a-to-z/diabetes">Diabetes</a></p>
+          </div>
+        </nav>
+
+
       <h1>Type 2 diabetes</h1>
-      <p class="nhsuk-lede-text">This for adults with type 2 diabetes. There's separate information about <a href= "/lab-3/a-to-z/diabetes/type-1-diabetes">type 1 diabetes.</a></p>
+      <p class="nhsuk-lede-text">This for adults with type 2 diabetes. There's separate information about <a href= "/lab-4/a-to-z/diabetes/type-1-diabetes">type 1 diabetes.</a></p>
       <section id="key-links" >
         <!--<h3 class="nhsuk-u-margin-bottom-0">Pages in this guide</h3>-->
         <ul class="key-links" class="nhsuk-u-padding-top-0">
           <li><a href="javascript:void(0);" title="">What is type 2 diabetes?</a></li>
           <li><a href="javascript:void(0);" title="">Symptoms</a></li>
-          <li><a href= "/lab-3/a-to-z/diabetes/understanding-medicine">Understanding medicine</a></li>
+          <li><a href= "/lab-4/a-to-z/diabetes/understanding-medicine">Understanding medicine</a></li>
           <li><a href="javascript:void(0);" title="">Food and activity</a></li>
-          <li><a href="/lab-3/a-to-z/diabetes/going-for-check-up">Going for regular check-ups</a></li>
-          <li><a href="/lab-3/a-to-z/diabetes/health-problems">Health problems</a></li>
-          <li><a href="/lab-3/a-to-z/diabetes/finding-help">Finding help and support</a></li>
+          <li><a href="/lab-4/a-to-z/diabetes/going-for-check-up">Going for regular check-ups</a></li>
+          <li><a href="/lab-4/a-to-z/diabetes/health-problems">Health problems</a></li>
+          <li><a href="/lab-4/a-to-z/diabetes/finding-help">Finding help and support</a></li>
         </ul>
     </section>
 
