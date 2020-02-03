@@ -1,0 +1,50 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-lab-3.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Metformin - NHS.UK
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+<!-- More info and code for the breadcrumb can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/breadcrumbs -->
+{% block beforeContent %}
+
+
+
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <!-- Change the page title here -->
+      <p class="nhsuk-u-margin-bottom-2" ><a href="/lab-4/a-to-z" >Health A to Z</a></p>
+
+      <h1>
+        About metformin
+      </h1>
+
+      <section id="About-metformin">
+        <p>Metformin is a medicine used to treat <a href="/lab-4/a-to-z/diabetes/type-2-diabetes">type 2 diabetes</a> and to help prevent type 2 diabetes if you're at high risk of developing it.</p>
+        <p>Metformin is used when treating <a href="javascript:void(0);" title="">polycystic ovary syndrome (PCOS)</a>, although it's not officially approved for PCOS.</p>
+        <p>Type 2 diabetes is an illness where the body does not make enough insulin, or the insulin that it makes does not work properly. This can cause high blood sugar levels <a href="javascript:void(0);" title="">(hyperglycaemia).</a></p>
+        <p>PCOS is a condition that affects how the ovaries work.</p>
+        <p>Metformin lowers your blood sugar levels by improving the way your body handles insulin.</p>
+        <p>It's usually prescribed for diabetes when diet and exercise alone have not been enough to control your blood sugar levels.</p>
+        <p>For women with PCOS, metformin lowers insulin and blood sugar levels, and can also stimulate ovulation.</p>
+        <p>Metformin is available on prescription as tablets and as a liquid that you drink.</p>
+      </section>
+
+    </div>      
+</div>
+{% endblock %}
