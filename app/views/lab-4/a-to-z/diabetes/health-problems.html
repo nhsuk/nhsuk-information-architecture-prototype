@@ -14,23 +14,7 @@ Diabetes - Health problems - NHS.UK
 <!-- Breadcrumb goes inside the beforeContent block -->
 {% block beforeContent %}
 {% from 'details/macro.njk' import details %}
-{{ details({
-  "classes": "alpha-lab-breadcrumbs",
-  "text": "Type 2 diabetes",
-  "HTML": "
-  <ul class=\"bradcrumbs\">
-    <li><a href=\"/lab-3/a-to-z/diabetes/type-2-diabetes\">Type 2 diabetes</a></li>
-    <li><a href=\"#\">What is type 2 diabetes?</a></li>
-    <li><a href=\"#\">Symptoms</a></li>
-    <li><a href=\"#\">Getting diagnosed</a></li>
-    <li class=\"\"><a href=\"/lab-3/a-to-z/diabetes/understanding-medicine\">Understanding medicine</a></li>
-    <li><a href=\"#\">Food and keeping active</a></li>
-    <li><a href=\"/lab-3/a-to-z/diabetes/going-for-check-up\">Going for regular check-ups</a></li>
-    <li class=\"bradcrumbs__item--active\"><a href=\"/lab-3/a-to-z/diabetes/health-problems\">Health problems</a></li>
-    <li><a href=\"/lab-3/a-to-z/diabetes/finding-help\">Finding help and support</a></li>  
-  </u\l>
-  "
-}) }}
+
 {% endblock %}
 
 
@@ -42,6 +26,20 @@ Diabetes - Health problems - NHS.UK
 ">    
     <div class="nhsuk-grid-row">
       <div class="nhsuk-grid-column-two-thirds">
+
+          <nav class="nhsuk-u-margin-bottom-3" aria-label="Breadcrumb">
+              <div >
+                <ol class="nhsuk-breadcrumb__list ">
+                    <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-4/">Home</a></li>
+                  <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-4/a-to-z">Health A to Z</a></li>
+    
+                  <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-4/a-to-z/diabetes">Diabetes</a></li>    
+                  <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-4/a-to-z/diabetes/type-2-diabetes">Type 2 Diabetes</a></li>             
+                </ol>
+                <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/lab-4/a-to-z/diabetes/type-2-diabetes">Type 2 Diabetes</a></p>
+              </div>
+            </nav> 
+
         <h1>
           <span role="text">Health problems
           </span>
@@ -104,7 +102,7 @@ Diabetes - Health problems - NHS.UK
           </section>
           <section>
             <h2 class="nhsuk-u-padding-top-5">Checking your eyes</h2>
-            <p><a href="/lab-3/a-to-z/diabetic-eye-screening">Your eyes should be checked every year</a> for damaged blood vessels, which can cause <a href="/lab-3/a-to-z/diabetic-retinopathy">sight problems (diabetic retinopathy)</a> and blindness.</p>
+            <p><a href="/lab-4/a-to-z/diabetic-eye-screening">Your eyes should be checked every year</a> for damaged blood vessels, which can cause <a href="/lab-4/a-to-z/diabetic-retinopathy">sight problems (diabetic retinopathy)</a> and blindness.</p>
             <p>Eye checks can detect damage before it affects your sight. Treating damaged blood vessels early can prevent sight problems.</p>
             <p>Speak to your GP immediately if you notice changes to your sight, including:</p>
             <ul>
@@ -113,7 +111,7 @@ Diabetes - Health problems - NHS.UK
               <li>sensitivity to light</li>
             </ul>       
             <div class="nhsuk-action-link">
-                <a class="nhsuk-action-link__link" href="/lab-3/a-to-z/diabetic-eye-screening-find-a-service">
+                <a class="nhsuk-action-link__link" href="/lab-4/a-to-z/diabetic-eye-screening-find-a-service">
                   <svg class="nhsuk-icon nhsuk-icon__arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
                     <path d="M0 0h24v24H0z" fill="none"></path>
                     <path d="M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z"></path>
@@ -153,7 +151,7 @@ Diabetes - Health problems - NHS.UK
                     </a>
                   </li>
                   <li class="">
-                    <a class="" href="/lab-3/a-to-z/diabetes/understanding-medicine">
+                    <a class="" href="/lab-4/a-to-z/diabetes/understanding-medicine">
                       Understanding medicine
                     </a>
                   </li>
@@ -163,17 +161,17 @@ Diabetes - Health problems - NHS.UK
                     </a>
                   </li>
                   <li class="">
-                    <a class="" href="/lab-3/a-to-z/diabetes/going-for-check-up">
+                    <a class="" href="/lab-4/a-to-z/diabetes/going-for-check-up">
                       Going for regular check-ups
                     </a>
                   </li>
                   <li class="bradcrumbs__item--active" aria-current="page">
-                    <a href="/lab-3/a-to-z/diabetes/health-problems">
+                    <a href="/lab-4/a-to-z/diabetes/health-problems">
                       Health problems
                     </a>
                   </li>
                   <li class="">
-                    <a class="" href="/lab-3/a-to-z/diabetes/finding-help">
+                    <a class="" href="/lab-4/a-to-z/diabetes/finding-help">
                       Finding help and support
                     </a>
                   </li>

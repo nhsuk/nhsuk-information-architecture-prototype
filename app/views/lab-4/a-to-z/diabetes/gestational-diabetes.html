@@ -15,19 +15,7 @@
 {% block beforeContent %}
 {% from 'details/macro.njk' import details %}
 
-{{ details({
-  "classes": "alpha-lab-breadcrumbs",
-  "text": "Diabetes",
-  "HTML": "
-  <ul class=\"bradcrumbs\">
-    <li><a href=\"/lab-3/a-to-z/diabetes/\">Diabetes</a></li>
-    <li><a href=\"#\">Pre diabetes</a></li>
-    <li><a href=\"/lab-3/a-to-z/diabetes/type-1-diabetes\">Type 1 diabetes</a></li>
-    <li><a href=\"/lab-3/a-to-z/diabetes/type-2-diabetes\">Type 2 diabetes</a></li>
-    <li class=\"bradcrumbs__item--active\"><a href=\"/lab-3/a-to-z/diabetes/gestational-diabetes\">Gestational diabetes</a></li>
-  </u\l>
-  "
-}) }}
+
 {% endblock %}
 
 <!-- Your page content goes inside the content block -->
@@ -39,8 +27,21 @@
             <div class="nhsuk-grid-column-two-thirds">
                 <section>
                     <!--<p class="nhsuk-u-margin-bottom-2" style="text-color:#4c6272;"><a href="/lab-3/a-to-z/diabetes" style="text-decoration: none;color:	#4c6272 !important;"><strong>Diabetes</strong></a></p>-->
+                    <nav class="nhsuk-u-margin-bottom-3" aria-label="Breadcrumb">
+                            <div >
+                              <ol class="nhsuk-breadcrumb__list ">
+                                  <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-4/">Home</a></li>
+                                <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-4/a-to-z">Health A to Z</a></li>
+                  
+                                <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-4/a-to-z/diabetes">Diabetes</a></li>              
+                              </ol>
+                              <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/lab-4/a-to-z/diabetes">Diabetes</a></p>
+                            </div>
+                          </nav> 
+
+
                     <h1><span role="text">Gestational diabetes</span></h1>
-                    <p class="nhsuk-lede-text">Gestational diabetes is high blood sugar (glucose) that develops during <a href="/lab-3/a-to-z/pregnancy">pregnancy</a> and usually disappears after giving birth.</p>
+                    <p class="nhsuk-lede-text">Gestational diabetes is high blood sugar (glucose) that develops during <a href="/lab-4/a-to-z/pregnancy">pregnancy</a> and usually disappears after giving birth.</p>
                 </section>
                 <section>
                     <p>It can happen at any stage of pregnancy, but is more common in the second or third trimester.</p>
@@ -82,7 +83,7 @@
                         <li>your baby developing low blood sugar or yellowing of the skin and eyes (<a href="javascript:void(0);" title="">jaundice</a>) after he or she is born, which may require treatment in hospital</li>
                         <li>the loss of your baby (<a href="javascript:void(0);" title="">stillbirth</a>) - though this is rare</li>
                     </ul>
-                    <p>Having gestational diabetes also means you're at an increased risk of developing <a href="/lab-3/a-to-z/diabetes/type-2-diabetes">type 2 diabetes</a> in the future</p>
+                    <p>Having gestational diabetes also means you're at an increased risk of developing <a href="/lab-4/a-to-z/diabetes/type-2-diabetes">type 2 diabetes</a> in the future</p>
                 </section>
 
                 <section>
@@ -111,7 +112,7 @@
                     <p>Gestational diabetes normally goes away after birth. But women who've had it are more likely to develop:</p>
                     <ul>
                         <li>gestational diabetes again in future pregnancies</li>
-                        <li><a href="/lab-3/a-to-z/type-2-diabetes">type 2 diabetes</a> – a lifelong type of diabetes</li>
+                        <li><a href="/lab-4/a-to-z/type-2-diabetes">type 2 diabetes</a> – a lifelong type of diabetes</li>
                     </ul>
                     <p>You should have a blood test to check for diabetes 6 to 13 weeks after giving birth, and once every year after that if the result is normal.</p>
                     <p>See your GP if you develop symptoms of high blood sugar, such as increased thirst, needing to pee more often than usual, and a dry mouth – do not wait until your next test. </p>
