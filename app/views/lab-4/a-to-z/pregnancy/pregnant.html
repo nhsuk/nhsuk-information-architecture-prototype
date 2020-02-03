@@ -17,35 +17,7 @@
 {% block beforeContent %}
 {% from 'details/macro.njk' import details %}
 
-{{ details({
-  "classes": "alpha-lab-breadcrumbs",
-  "text": "Pregnancy",
-  "HTML": "
-  <ul class=\"bradcrumbs\">
-    <li>
-      <a href=\"/lab-4/a-to-z/pregnancy\">
-        Pregnancy
-      </a>
-    </li>
-    <li>
-      <a href=\"#\">
-        Getting pregnant
-      </a>
-    </li>
-    <li class=\"bradcrumbs__item--active\">
-      <a href=\"/lab-4/a-to-z/pregnancy/pregnant\">
-        Being pregnant
-      </a>
-    </li>
-  
-    <li>
-      <a href=\"/lab-4/a-to-z/pregnancy/labour-and-birth\">
-        Labour and birth
-      </a>
-    </li>
-  </u\l>
-  "
-}) }}
+
 {% endblock %}
 
 
@@ -57,6 +29,19 @@
     <div class="nhsuk-grid-column-full">
       
       <section>
+
+
+          <nav class="nhsuk-u-margin-bottom-3" aria-label="Breadcrumb">
+              <div >
+                <ol class="nhsuk-breadcrumb__list ">
+                    <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-4/">Home</a></li>
+                  <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-4/a-to-z">Health A to Z</a></li>
+                  <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-4/a-to-z/pregnancy">Pregnancy</a></li>             
+                </ol>
+                <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/lab-4/a-to-z/pregnancy">Pregnancy</a></p>
+              </div>
+            </nav> 
+
         <h1>
           <span role="text">
               Being pregnant

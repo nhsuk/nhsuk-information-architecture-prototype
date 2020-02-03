@@ -16,44 +16,6 @@
 {% block beforeContent %}
 {% from 'details/macro.njk' import details %}
 
-{{ details({
-  "classes": "alpha-lab-breadcrumbs",
-  "text": "The start of labour",
-  "HTML": "
-  <ul class=\"bradcrumbs\">
-    <li>
-      <a href=\"/lab-4/a-to-z/pregnancy/start-of-labour\">
-        The start of labour
-      </a>
-    </li>
-    <li class=\"bradcrumbs__item--active\">
-      <a href=\"/lab-4/a-to-z/pregnancy/signs-of-labour\">
-        Signs that labour has begun
-      </a>
-    </li>
-    <li>
-      <a href=\"#\">
-        Inducing labour
-      </a>
-    </li>
-    <li>
-      <a href=\"#\">
-        Premature labour and birth
-      </a>
-    </li>
-    <li>
-      <a href=\"#\">
-        At the hospital or birth centre
-      </a>
-    </li>
-    <li>
-      <a href=\"#\">
-        Pain relief in labour
-      </a>
-    </li>
-  </u\l>
-  "
-}) }}
 {% endblock %}
 
 <!-- Your page content goes inside the content block -->
@@ -63,6 +25,22 @@
   <div class="nhsuk-grid-row">
     <div class="nhsuk-grid-column-two-thirds">
       <section>
+
+          <nav class="nhsuk-u-margin-bottom-3" aria-label="Breadcrumb">
+              <div >
+                <ol class="nhsuk-breadcrumb__list ">
+                    <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-4/">Home</a></li>
+                  <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-4/a-to-z">Health A to Z</a></li>
+                  <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-4/a-to-z/pregnancy">Pregnancy</a></li>          
+                  <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-4/a-to-z/pregnancy/labour-and-birth">Labour and birth</a></li>         
+                  <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-4/a-to-z/pregnancy/start-of-labour">The start of labour</a></li>                     
+          
+  
+  
+                </ol>
+                <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/lab-4/a-to-z/pregnancy/start-of-labour">The start of labour</a></p>
+              </div>
+            </nav>  
       <h1>
         <span role="text">
           Signs that labour has begun

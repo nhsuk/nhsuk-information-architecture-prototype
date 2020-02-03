@@ -15,85 +15,7 @@
 {% block beforeContent %}
 {% from 'details/macro.njk' import details %}
 
-{{ details({
-  "classes": "alpha-lab-breadcrumbs",
-  "text": "Being pregnant",
-  "HTML": "
-  <ul class=\"bradcrumbs\">
-    <li>
-      <a href=\"/lab-4/a-to-z/pregnancy/pregnant\">
-        Being pregnant
-      </a>
-    </li>
-    <li>
-      <a href=\"/lab-4/a-to-z/pregnancy/early-days\">
-        Early days
-      </a>
-    </li>
-    <li class=\"bradcrumbs__item--active\">
-      <a href=\"/lab-4/a-to-z/pregnancy/antenatal\">
-        Antenatal care
-      </a>
-    </li>
-    <li>
-      <a href=\"/lab-4/a-to-z/pregnancy/tests-and-scans\">
-        Test and scans
-      </a>
-    </li>
-    <li>
-      <a href=\"#\">
-        Pregnancy-induced conditions
-      </a>
-    </li>
-    <li>
-      <a href=\"/lab-4/a-to-z/pregnancy/food-and-drink\">
-        Food and drink during pregnancy 
-      </a>
-    </li>
-    <li>
-      <a href=\"#\">
-        Existing health conditions
-      </a>
-    </li>    
-    
-    <li>
-      <a href=\"#\">
-        Free prescriptions and more
-      </a>
-    </li>
-    <li>
-      <a href=\"#\">
-        Illness during pregnancy
-      </a>
-    </li>
-    <li>
-      <a href=\"#\">
-        Lifestyle and wellbeing
-      </a>
-    </li>
-    <li>
-      <a href=\"#\">
-        Medicines during pregnancy
-      </a>
-    </li>
-    <li>
-      <a href=\"#\">
-       Multiple pregnancies
-      </a>
-    </li>
-    <li>
-      <a href=\"#\">
-        Partners
-      </a>
-    </li>
-    <li>
-      <a href=\"#\">
-        When pregnancy goes wrong
-      </a>
-    </li>
-  </u\l>
-  "
-}) }}
+
 {% endblock %}
 
 
@@ -104,13 +26,26 @@
     <div class="nhsuk-grid-row">
       <div class="nhsuk-grid-column-full">
         <section>
+            <nav class="nhsuk-u-margin-bottom-3" aria-label="Breadcrumb">
+                <div >
+                  <ol class="nhsuk-breadcrumb__list ">
+                      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-4/">Home</a></li>
+                    <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-4/a-to-z">Health A to Z</a></li>
+                    <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-4/a-to-z/pregnancy">Pregnancy</a></li>             
+                    <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-4/a-to-z/pregnancy/pregnant">Being pregnant</a></li>             
+  
+                  </ol>
+                  <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/lab-4/a-to-z/pregnancy/pregnant">Being pregnant</a></p>
+                </div>
+              </nav> 
+
+
           <h1>
             <span role="text">
                 Antenatal care
               </span>
           </h1>
           <p class="nhsuk-lede-text">Antenatal care is the care you get from health professionals during your pregnancy. It's sometimes called pregnancy care or maternity care.</p>  
-          <hr class="nhsuk-hr">
         </section>
 
       <section>
