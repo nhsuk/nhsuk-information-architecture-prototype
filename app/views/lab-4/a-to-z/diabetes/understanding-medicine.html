@@ -21,7 +21,7 @@
 <!-- Your page content goes inside the content block -->
 <!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
 {% block content %}
-<main class="nhsuk-main-wrapper" id="maincontent" style="padding-top: 0px;">
+<main class="nhsuk-main-wrapper" id="maincontent" style="padding-top: 0px !important;padding-bottom:0px;">
   <section>     
     <div class="nhsuk-grid-row">
       <div class="nhsuk-grid-column-two-thirds">
@@ -142,7 +142,10 @@
           
                 </ul>
             </nav>
-            <div class="nhsuk-review-date">
+
+
+
+            <div class="nhsuk-review-date nhsuk-u-padding-top-5">
               <p class="nhsuk-body-s">
                 Page last reviewed: 8 August 2017<br>
                 Next review due: 8 August 2020
