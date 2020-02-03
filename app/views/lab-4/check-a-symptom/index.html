@@ -14,16 +14,7 @@
 <!-- Breadcrumb goes inside the beforeContent block -->
 <!-- More info and code for the breadcrumb can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/breadcrumbs -->
 {% block beforeContent %}
-  {{ breadcrumb({
-    items: [
-    {
-      href: "/lab-4/home",
-      text: "Home"
-    }
-  ],
-    href: "/lab-4/a-to-z",
-    text: "Health A to Z"
-  }) }}
+
 {% endblock %}
 
 <!-- Your page content goes inside the content block -->
@@ -34,6 +25,8 @@
   <section>
     <div class="nhsuk-grid-column-full nhsuk-u-margin-bottom-8">
       <!-- Change the page title here -->
+
+
       <h1>
         Check a symptom
       </h1>
