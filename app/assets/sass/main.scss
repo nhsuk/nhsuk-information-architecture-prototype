@@ -489,6 +489,7 @@
 .border-top {
   border-top: 4px solid rgba(#ccc, 0.5);
   margin-top: 25px;
+  
   padding-top: 45px;
 }
 
@@ -496,12 +497,12 @@
 
 }
 
-.nhsuk-list-signage li {
-  display: inline-block;
-  margin: 2px 4px;
-  width: calc(100% - 30px);
-  margin-left: 16px;
-}
+// .nhsuk-list-signage li {
+//   display: inline-block;
+//   margin: 2px 4px;
+//   width: calc(100% - 30px);
+//   margin-left: 16px;
+// }
 
 .app-side-nav__item--current {
   border-left: 4px solid #000;
@@ -517,5 +518,11 @@
 }
 
 .app-side-nav__link {
-  text-decoration: none;
+  
+}
+
+
+.app-side-nav__list {
+
+  padding-left:12px;
 }
