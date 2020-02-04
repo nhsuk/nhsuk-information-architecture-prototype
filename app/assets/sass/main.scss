@@ -439,6 +439,13 @@
 
 //// arrowed canon promo boxes
 
+@mixin arrow {
+  position: absolute; 
+  right: 24px; 
+  top:50%; 
+  margin-top: -8px;
+}
+
 .nhsuk-promo_canon{
   position:relative;
   .nhsuk-promo__content{
@@ -446,12 +453,20 @@
     display:inline-block;
     }
   .arrow{
-    position: absolute; 
-    right: 24px; 
-    top:50%; 
-    margin-top: -8px;
+    @include arrow;
   }
 }
+
+.nhsuk-inset-text__arrow {
+  position: relative;
+  border-left-color: #AE2573;
+
+  .arrow {
+    @include arrow;
+  }
+}
+
+
 
 //// canon key task links
 
