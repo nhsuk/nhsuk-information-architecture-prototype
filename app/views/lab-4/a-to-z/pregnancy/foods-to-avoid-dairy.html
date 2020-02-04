@@ -7,39 +7,7 @@
 <!-- Breadcrumb goes inside the beforeContent block -->
 {% block beforeContent %}
 {% from 'details/macro.njk' import details %}
-{{ details({
-  "classes": "alpha-lab-breadcrumbs",
-  "text": "Food and drink to avoid in pregnancy",
-  "HTML": "
-  <ul class=\"bradcrumbs\">
-    <li>
-      <a href=\"/lab-4/a-to-z/pregnancy/food-and-drink\">
-        Food and drink to avoid in pregnancy
-      </a>
-    </li>
-    <li>
-      <a href=\"/lab-4/a-to-z/pregnancy/foods-to-avoid-meat\">
-        Meat and fish
-      </a>
-    </li>
-    <li class=\"bradcrumbs__item--active\">
-      <a href=\"/lab-4/a-to-z/pregnancy/foods-to-avoid-dairy\">
-        Dairy
-      </a>
-    </li>
-    <li>
-      <a href=\"/lab-4/a-to-z/pregnancy/foods-to-avoid-eggs-nuts\">
-        Eggs, nuts and others
-      </a>
-    </li>
-    <li>
-      <a href=\"/lab-4/a-to-z/pregnancy/foods-to-avoid-drinks\">
-        Drinks
-      </a>
-    </li>
-  </u\l>
-  "
-}) }}
+
 {% endblock %}
 
 
@@ -48,12 +16,28 @@
   <div class="nhsuk-grid-row">
     <div class="nhsuk-grid-column-two-thirds">
     <section>
+
+        <nav class="nhsuk-u-margin-bottom-3" aria-label="Breadcrumb">
+            <div >
+              <ol class="nhsuk-breadcrumb__list ">
+                  <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-4/">Home</a></li>
+                <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-4/a-to-z">Health A to Z</a></li>
+                <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-4/a-to-z/pregnancy">Pregnancy</a></li>             
+                <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-4/a-to-z/pregnancy/pregnant">Being pregnant</a></li>  
+                <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-4/a-to-z/pregnancy/food-and-drink">Food and drink in pregnancy</a></li>      
+                <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-4/a-to-z/pregnancy/foods-to-avoid">Food and drink to avoid in pregnancy </a></li>           
+
+              </ol>
+              <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/lab-4/a-to-z/pregnancy/foods-to-avoid">Food and drink to avoid in pregnancy </a></p>
+            </div>
+          </nav>  
+
       <h1>
         <span role="text">
           Dairy
         </span>
       </h1> 
-      <p class="nhsuk-lede-text">Some dairy products are risky in pregnancy. Find out what you can and can't eat.</p>
+      <p>Some dairy products are risky in pregnancy. Find out what you can and can't eat.</p>
       </div>
     </section>
     <section>
@@ -111,26 +95,31 @@
               <li>Are cooked brie and blue cheeses safe to eat in pregnancy?</li>
               <li>Is it safe to eat goats' cheese in pregnancy?</li>
             </ul>
-          <hr class="nhsuk-hr"> 
        </section>
      </article>
         <section>
-          <nav class="nhsuk-contents-list" role="navigation" aria-label="Pages in this guide">
-            <h2 class="">More in food and drink to avoid in pregnancy</h2>
-            <ul class="bradcrumbs">
-              <li><a href="/lab-4/a-to-z/pregnancy/foods-to-avoid-meat">Meat and fish</a></li>
-              <li class="bradcrumbs__item--active" aria-current="page"><a href="/lab-4/a-to-z/pregnancy/foods-to-avoid-dairy">Dairy</a></li>
-              <li class=""><a href="/lab-4/a-to-z/pregnancy/foods-to-avoid-eggs-nuts">Eggs, nuts and others</a></li>
-              <li class=""><a href="/lab-4/a-to-z/pregnancy/foods-to-avoid-drinks">Drinks</a></li>
-            </ul>
-          </nav>
-          <div class="nhsuk-review-date">
-            <p class="nhsuk-body-s">
-                Page last reviewed: 23 January 2017 
-                <br>
-                Next review due: 23 January 2020
-            </p>
-          </div>
+            <nav class="nhsuk-contents-list nhsuk-u-padding-top-8" role="navigation" aria-label="Pages in this guide">
+                <h2 class="">More in <a href="/lab-4/a-to-z/pregnancy/foods-to-avoid">Food and drink to avoid in pregnancy</a></a></h2>
+                <ul class="nhsuk-list app-side-nav__list">
+        
+                    <li class="app-side-nav__item "><a class="app-side-nav__link" href="/lab-4/a-to-z/pregnancy/foods-to-avoid-meat">Meat and fish</a></li>
+            
+                    <li class="app-side-nav__item app-side-nav__item--current">Dairy</li>
+                  
+                    <li class="app-side-nav__item"><a class="app-side-nav__link" href="/lab-4/a-to-z/pregnancy/foods-to-avoid-eggs-nuts">Eggs, nuts and others</a></li>
+                              
+                    <li class="app-side-nav__item"><a class="app-side-nav__link" href="/lab-4/a-to-z/pregnancy/foods-to-avoid-drinks">Drinks</a></li>
+        
+                  </ul>
+              </nav>
+        
+        
+              <div class="nhsuk-review-date nhsuk-u-padding-top-5">
+                  <p class="nhsuk-body-s">
+                    Page last reviewed: 8 August 2017<br>
+                    Next review due: 8 August 2020
+                  </p>
+                </div>
         </section>
       </div>
     </div>
