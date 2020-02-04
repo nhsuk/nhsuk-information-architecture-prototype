@@ -104,22 +104,32 @@
 <!-- Footer goes inside the footer block -->
 <!-- More info and code for the footer can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/footer -->
 {% block footer %}
-  {{ footer({
-    "links": [
-      {
-        "URL": "/lab-4/a-to-z/diabetes/type-1-diabetes",
-        "label": "Start"
-      },
-      {
-        "URL": "/",
-        "label": "Home"
-      },
-      {
-        "URL": "https://www.nhsinform.scot/",
-        "label": "NHS Scotland"
-      }
-    ]
-  })}}
+<div class="nhsuk-footer" id="nhsuk-footer">
+    <div class="nhsuk-width-container">
+        <h2 class="nhsuk-u-visually-hidden">Support links</h2>
+        <ul class="nhsuk-footer__list">
+          <li class="nhsuk-footer__list-item "><a class="nhsuk-footer__list-item-link nhsuk-body-m nhsuk-u-font-weight-bold" href="javascript:void(0);">Contact the NHS</a></li>
+          <li class="nhsuk-footer__list-item"><a class="nhsuk-footer__list-item-link nhsuk-body-m nhsuk-u-font-weight-bold" href="javascript:void(0);">About the NHS</a></li>
+          <li class="nhsuk-footer__list-item"><a class="nhsuk-footer__list-item-link nhsuk-body-m nhsuk-u-font-weight-bold" href="javascript:void(0);">NHS websites</a></li>
+          <li class="nhsuk-footer__list-item"><a class="nhsuk-footer__list-item-link nhsuk-body-m nhsuk-u-font-weight-bold" href="javascript:void(0);">NHS Jobs</a></li>
+        </ul>
+  
+      </div>
+
+  <div class="nhsuk-width-container">
+      <h2 class="nhsuk-u-visually-hidden">Support links</h2>
+      <ul class="nhsuk-footer__list">
+        <li class="nhsuk-footer__list-item"><a class="nhsuk-footer__list-item-link" href="javascript:void(0);">Sitemap</a></li>
+        <li class="nhsuk-footer__list-item"><a class="nhsuk-footer__list-item-link" href="javascript:void(0);">Accessibility</a></li>
+        <li class="nhsuk-footer__list-item"><a class="nhsuk-footer__list-item-link" href="javascript:void(0);">Cookies</a></li>
+        <li class="nhsuk-footer__list-item"><a class="nhsuk-footer__list-item-link" href="javascript:void(0);">Our policies</a></li>
+      </ul>
+
+      <p class="nhsuk-footer__copyright">&copy; Crown copyright</p>
+    </div>
+</div>
+</footer>
+
 {% endblock %}
 
 {% block bodyEnd %}
