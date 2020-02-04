@@ -460,7 +460,9 @@
 .nhsuk-inset-text__arrow {
   position: relative;
   border-left-color: #AE2573;
-
+  p{
+    margin-bottom: 0;
+  }
   .arrow {
     @include arrow;
   }
