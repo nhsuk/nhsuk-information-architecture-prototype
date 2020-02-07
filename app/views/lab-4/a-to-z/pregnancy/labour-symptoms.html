@@ -13,36 +13,7 @@
 
 <!-- Breadcrumb goes inside the beforeContent block -->
 {% block beforeContent %}
-{% from 'details/macro.njk' import details %}
 
-{{ details({
-  "classes": "alpha-lab-breadcrumbs",
-  "text": "Signs that labour has begun",
-  "HTML": "
-  <ul class=\"bradcrumbs\">
-    <li>
-      <a href=\"/lab-4/a-to-z/pregnancy/signs-of-labour\">
-        Signs that labour has begun
-      </a>
-    </li>
-    <li>
-      <a href=\"/lab-4/a-to-z/pregnancy/labour-signs\">
-        The early signs of labour
-      </a>
-    </li>
-    <li class=\"bradcrumbs__item--active\">
-      <a href=\"/lab-4/a-to-z/pregnancy/labour-symptoms\">
-        The symptoms of labour
-      </a>
-    </li>
-    <li>
-      <a href=\"/lab-4/a-to-z/pregnancy/labour-cope\">
-        How to cope when labour begins
-      </a>
-    </li>
-  </u\l>
-  "
-}) }}
 {% endblock %}
 
 <!-- Your page content goes inside the content block -->
@@ -52,13 +23,29 @@
   <div class="nhsuk-grid-row">
     <div class="nhsuk-grid-column-two-thirds">
       <section>
+          <nav class="nhsuk-u-margin-bottom-3" aria-label="Breadcrumb">
+              <div >
+                <ol class="nhsuk-breadcrumb__list ">
+                    <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-4/">Home</a></li>
+                  <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-4/a-to-z">Health A to Z</a></li>
+                  <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-4/a-to-z/pregnancy">Pregnancy</a></li>          
+                  <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-4/a-to-z/pregnancy/labour-and-birth">Labour and birth</a></li>         
+                  <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-4/a-to-z/pregnancy/start-of-labour">The start of labour</a></li>     
+                  <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-4/a-to-z/pregnancy/signs-of-labour">Signs that labour has begun</a></li>                    
+          
+  
+  
+                </ol>
+                <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/lab-4/a-to-z/pregnancy/signs-of-labour">Signs that labour has begun</a></p>
+              </div>
+            </nav>  
         <h1>
           <span role="text">
             The symptoms of labour
           </span>
         </h1>
-        <p class="nhsuk-lede-text">There are several signs that labour might be starting, including:</p>
-        <p class="nhsuk-lede-text">
+        <p >There are several signs that labour might be starting, including:</p>
+        <p>
           <ul>
             <li>contractions or tightenings</li>
             <li>a "show", when the plug of mucus from your cervix (entrance to your womb, or uterus) comes away
@@ -69,7 +56,7 @@
         </p>
         
 
-        <p class="nhsuk-lede-text">The early (latent) stage of labour can take some time.</p>
+        <p >The early (latent) stage of labour can take some time.</p>
       </section> 
 
       <section>
@@ -86,18 +73,18 @@
           </ul>
         </p>
         <p>If you're planning to have your baby in a maternity ward, phone the hospital.</p>
-        <hr class="nhsuk-hr">
+        
 
         <h2>Backache often comes on in labour</h2>
         <p>You may get backache or the heavy, aching feeling that some women experience during their period.</p>
-        <hr class="nhsuk-hr">
+        
 
         <h2>A "show" can signal the start of labour</h2>
         <p>During pregnancy, there's a plug of mucus in your cervix. This plug comes away just before labour starts, or when in early labour, and you may pass it out of your vagina. This small amount of sticky, jelly-like pink mucus is called a show.</p>
         <p>It may come away in one blob or in several pieces. It's pink in colour because it's bloodstained. It's normal to lose a small amount of blood mixed with the mucus. </p>
         <p>If you're losing more blood, it may be a sign something is wrong, so phone your hospital or midwife straight away.</p>
         <p>A show indicates that the cervix is starting to open. Labour may quickly follow or may take a few days. Some women don't have a show.</p>
-        <hr class="nhsuk-hr">
+        
 
         <h2>What happens when my waters break</h2>
         <p>Most women's waters break during labour, but it can also happen before labour starts.</p>
