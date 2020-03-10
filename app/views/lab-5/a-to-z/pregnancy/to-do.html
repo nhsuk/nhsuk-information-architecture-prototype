@@ -1,0 +1,210 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-lab-5-pregnant.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Pregnancy - Being pregnant - Early days - Your pregnany to do list - NHS.UK
+{% endblock %}
+
+
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %}
+{% from 'details/macro.njk' import details %}
+
+
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+<section>
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds"> 
+      <section>
+
+          <nav class="nhsuk-u-margin-bottom-3" aria-label="Breadcrumb">
+              <div >
+                <ol class="nhsuk-breadcrumb__list ">
+                    <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-4/">Home</a></li>
+                  <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-4/a-to-z">Health A to Z</a></li>
+                  <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-4/a-to-z/pregnancy">Pregnancy</a></li>             
+                  <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-4/a-to-z/pregnancy/pregnant">Being pregnant</a></li>             
+                  <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-4/a-to-z/pregnancy/early-days">Early days</a></li>             
+
+
+
+                </ol>
+                <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/lab-4/a-to-z/pregnancy/early-days">Early days</a></p>
+              </div>
+            </nav> 
+            
+            
+        <h1>
+          <span role="text">
+            Your pregnancy to-do list
+          </span>
+        </h1>   
+        <p class="nhsuk-lede-text">Stay organised during your pregnancy. Keep track of things you need to do and when you need to do them.</p>
+      </section>
+      <section class="nhsuk-u-margin-bottom-8">
+        <h2>Early days</h2>
+        <ul>
+          <li>Take a <a href="javascript:void(0);" title="">pregnancy test</a>: finding out if you're pregnant</li>
+          <li>Make an appointment to see your midwife or GP: starting your antenatal care</li>
+          <li>For partners, <a href="javascript:void(0);" title="">prepare for the birth</a> and beyond: about the birth and becoming a parent</li>
+        </ul>
+        <div class="nhsuk-inset-text">
+          <span class="nhsuk-u-visually-hidden">Information: </span>
+          <h4>Early days links</h4>
+            <p><a href="javascript:void(0);" title="">Doing a pregnancy test</a></p>
+            <p><a href="javascript:void(0);" title="">Pregnancy, birth and beyond for dads and partners</a></p>
+        </div>
+        
+        {% set html_style = 'background-color: #f0f4f5;' %}
+        {{ actionLink({
+          "text": "Find maternity services near you",
+          "href": "#"
+        }) }}
+      </section>
+      <section class="nhsuk-u-margin-bottom-8">
+        <h2>Tests and scans</h2>
+        <ul>
+          <li>Make sure you've been offered all your screening tests: <a href="javascript:void(0);">antenatal tests</a> and screening</li>
+          <li>Ask to hear your baby's heartbeat: about antenatal care</li>
+        </ul>
+        <div class="nhsuk-inset-text">
+          <span class="nhsuk-u-visually-hidden">Information: </span>
+          <h4>Tests and scans links</h4>
+            <p><a href="javascript:void(0);">What is antenatal care?</a></p>
+            <p><a href="javascript:void(0);">Antenatal checks and tests</a></p>
+        </div>
+      </section>
+      <section class="nhsuk-u-margin-bottom-8">
+        <h2>Staying well during your pregnancy</h2>
+        <ul>
+          <li>Book <a href="javascript:void(0);">antenatal classes</a>: all about antenatal classes</li>
+          <li>Stay active, start exercising: <a href="javascript:void(0);">exercises and keeping active</a></li>
+          <li>Take <a href="javascript:void(0);">folic acid</a>: vitamins, minerals and special diets</li>
+          <li>If you smoke, <a href="javascript:void(0);">get help to quit</a>: smoking in pregnancy</li>
+          <li>Feeling hungry? Stick to a sensible diet: <a href="javascript:void(0);">healthy eating in pregnancy</a> and <a href="javascript:void(0);">foods to avoid</a></li>
+        </ul>
+        <div class="nhsuk-inset-text">
+          <span class="nhsuk-u-visually-hidden">Information: </span>
+          <h4>Staying well links</h4>
+            <p><a href="javascript:void(0);">What is antenatal care?</a></p>
+            <p><a href="javascript:void(0);" title="">Antenatal classes</a></p>
+            <p><a href="javascript:void(0);" title="">Exercise in pregnancy</a></p>
+            <p><a href="javascript:void(0);" title="">Vitamins, supplements and nutrition in pregnancy</a></p>
+            <p><a href="javascript:void(0);" title="">Stop smoking in pregnancy</a></p>
+            <p><a href="/lab-4/a-to-z/pregnancy/foods-to-avoid" title="">Foods to avoid in pregnancy</a></p>
+            <p><a href="javascript:void(0);" title="">Have a healthy diet in pregnancy</a></p>
+        </div>
+      </section>
+      <section class="nhsuk-u-margin-bottom-8">
+        <h2>Benefits and beyond</h2>  
+        <ul>
+          <li>Learn about the <a href="javascript:void(0);" title="">benefits you are entitled to</a></li>
+          <li>Claim free milk, fruit and vegetables through <a href="javascript:void(0);" title="">Healthy Start</a></li>
+          <li>Make an appointment to <a href="javascript:void(0);" title="">see a dentist</a></li>
+          <li>Find out about your <a href="javascript:void(0);" title="">rights at work</a></li>
+          <li>See if you're eligible for a <a href="javascript:void(0);" title="">Sure Start Maternity Grant</a></li>
+          <li><a href="javascript:void(0);" title="">Write to your employer</a> 15 weeks before you plan to stop work</li>
+          <li><a href="javascript:void(0);" title="">Claim Maternity Allowance</a> after week 26</li>
+        </ul>
+        <div class="nhsuk-inset-text nhsuk-u-margin-bottom-4">
+          <span class="nhsuk-u-visually-hidden">Information: </span>
+          <h4>Benefits and beyond links</h4>
+            <p><a href="javascript:void(0);">Your rights and benefits</a></p>
+            <p><a href="javascript:void(0);" title="">Free vitamins and vouchers</a></p>
+            <p><a href="javascript:void(0);" title="">Free dental care and other benefits</a></p>
+            <p><a href="javascript:void(0);" title="">Maternity leave and employment rights</a></p>
+            <p><a href="javascript:void(0);" title="">Sure Start Maternity Grant</a></p>
+            <p><a href="javascript:void(0);" title="">Maternity leave and how to give notice to your employer</a></p>
+            <p><a href="javascript:void(0);" title="">Claim Maternity Allowance</a></p>
+        </div>
+        <div class="nhsuk-inset-text nhsuk-inset_external nhsuk-inset-text__arrow nhsuk-u-margin-top-0">
+          <div class="nhsuk-inset-text__content">
+            <p><a href="/foods-to-avoid" title="">Sure Start Maternity Grant</a></p>
+            <p>gov.uk</p>
+          </div>
+        </div> 
+      </section>
+      <section class="nhsuk-u-margin-bottom-8">
+        <h2>Preparing for the birth</h2>
+        <ul>
+          <li>Visit the <a href="javascript:void(0);">maternity unit you plan to give birth in</a></li>
+          <li>Start buying the <a href="javascript:void(0);">things you'll need for your baby</a></li>
+          <li>Start your <a href="javascript:void(0);">birth plan</a>. You can even print a birth plan template.</li>
+          <li><a href="javascript:void(0);">Pack a bag</a> ready for the birth</li>
+        </ul>
+        <div class="nhsuk-inset-text nhsuk-u-margin-bottom-4">
+          <span class="nhsuk-u-visually-hidden">Information: </span>
+          <h4>Preparing for the birth links</h4>
+            <p><a href="javascript:void(0);">Where to give birth: the options</a></p>
+            <p><a href="javascript:void(0);" title="">Questions to ask your maternity service</a></p>
+            <p><a href="javascript:void(0);" title="">What you need for your baby</a></p>
+            <p><a href="javascript:void(0);" title="">Print a birth plan template</a></p>
+            <p><a href="javascript:void(0);" title="">What you'll need for the birth</a></p>
+        </div>
+      </section>
+      <section>
+      <h2>The labour</h2>
+        <ul>
+          <li>Make sure you know the <a href="/lab-4/a-to-z/pregnancy/labour-signs" title="">signs of labour</a></li>
+          <li>When in labour, <a href="javascript:void(0);" title="">phone the maternity unit</a> before leaving home.</li>
+        </ul>
+        <div class="nhsuk-inset-text nhsuk-u-margin-bottom-4">
+          <span class="nhsuk-u-visually-hidden">Information: </span>
+          <h4>Labour links</h4>
+            <p><a href="/lab-4/a-to-z/pregnancy/labour-signs">Signs that labour has begun</a></p>
+            <p><a href="javascript:void(0);" title="">When to go to the maternity unit or call the midwife</a></p>
+        </div>
+      </section>
+      <section>
+          <nav class="nhsuk-contents-list nhsuk-u-padding-top-8" role="navigation" aria-label="Pages in this guide">
+              <h2 class="">More in <a href="/lab-4/a-to-z/pregnancy/early-days">early days</a></a></h2>
+              <ul class="nhsuk-list app-side-nav__list">
+      
+                  <li class="app-side-nav__item "><a class="app-side-nav__link" href="javascript:void(0);">Signs and symptoms of pregnancy</a></li>
+          
+                  <li class="app-side-nav__item app-side-nav__item--current">Your pregnancy to-do list</li>
+                
+                  <li class="app-side-nav__item"><a class="app-side-nav__link" href="javascript:void(0);">Find maternity services near you</a></li>
+                            
+                  <li class="app-side-nav__item"><a class="app-side-nav__link" href="javascript:void(0);">Pregnancy due date calculator</a></li>
+                
+                  <li class="app-side-nav__item "><a class="app-side-nav__link" href="javascript:void(0);">Health things you should know in pregnancy</a></li>
+                  
+                  <li class="app-side-nav__item "><a class="app-side-nav__link" href="javascript:void(0);">What is the umbilical cord?</a></li>
+          
+                  <li class="app-side-nav__item"><a class="app-side-nav__link" href="javascript:void(0);">What is the placenta?</a></li>
+      
+                  <li class="app-side-nav__item "><a class="app-side-nav__link" href="javascript:void(0);">What is the amniotic sac?</a></li>
+      
+                  <li class="app-side-nav__item"><a class="app-side-nav__link" href="javascript:void(0);">Can I find out the sex of my baby?</a></li>
+      
+                  <li class="app-side-nav__item"><a class="app-side-nav__link" href="javascript:void(0);">Not sure if you want to be pregnant?</a></li>
+      
+                </ul>
+            </nav>
+      
+      
+            <div class="nhsuk-review-date nhsuk-u-padding-top-5">
+                <p class="nhsuk-body-s">
+                  Page last reviewed: 8 August 2017<br>
+                  Next review due: 8 August 2020
+                </p>
+              </div>
+      </section>
+    </div>
+  </div>
+</section>
+       <!-- End of content -->
+
+{% endblock %}

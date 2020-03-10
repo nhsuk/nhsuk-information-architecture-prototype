@@ -1,0 +1,129 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-lab-5-pregnant.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Pregnancy - Signs that labour has begun - Signs of labour - NHS.UK
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %}
+{% from 'details/macro.njk' import details %}
+
+{{ details({
+  "classes": "alpha-lab-breadcrumbs",
+  "text": "Signs that labour has begun",
+  "HTML": "
+  <ul class=\"bradcrumbs\">
+    <li>
+      <a href=\"/lab-4/a-to-z/pregnancy/signs-of-labour\">
+        Signs that labour has begun
+      </a>
+    </li>
+    <li class=\"bradcrumbs__item--active\">
+      <a href=\"/lab-4/a-to-z/pregnancy/labour-signs\">
+        The early signs of labour
+      </a>
+    </li>
+    <li>
+      <a href=\"/lab-4/a-to-z/pregnancy/labour-symptoms\">
+        The symptoms of labour
+      </a>
+    </li>
+    <li>
+      <a href=\"/lab-4/a-to-z/pregnancy/labour-cope\">
+        How to cope when labour begins
+      </a>
+    </li>
+  </u\l>
+  "
+}) }}
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+<section>
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+      <section>
+        <h1>
+          <span role="text">
+            The early signs of labour
+          </span>
+        </h1>
+        <p class="nhsuk-lede-text">The start of labour is called the latent phase. This is when your cervix becomes soft and thin, and starts opening for your baby to be born. This can take hours or, for some women, days.</p>   
+      </section>     
+      <section>
+        <h2>Know the signs</h2>
+        <p>There are several signs that labour might be starting, including:
+          <ul>
+            <li>contractions or tightenings</li>
+            <li>a "show", when the plug of mucus from your cervix (entrance to your womb, or uterus) comes away</li>
+            <li>backache</li>
+            <li>an urge to go to the toilet, which is caused by your baby's head pressing on your bowel</li>
+            <li>your waters breaking (rupture of membranes)</li>
+          </ul>
+        </p>
+        <p>The early (latent) stage of labour can take some time.</p>
+        <div class="nhsuk-care-card nhsuk-care-card--non-urgent">
+          <div class="nhsuk-care-card__heading-container">
+            <h3 class="nhsuk-care-card__heading">
+              <span role="text"><span class="nhsuk-u-visually-hidden">Non-urgent advice: </span>Call your midwife or maternity unit if:</span></h3>
+            <span class="nhsuk-care-card__arrow" aria-hidden="true"></span>
+          </div>
+          <div class="nhsuk-care-card__content">
+            <ul>
+              <li>your waters break, or</li>
+              <li>you're bleeding, or</li>
+              <li>your baby is moving less than usual, or</li>
+              <li>you're less than 37 weeks pregnant and think you might be in labour</li>
+            </ul>
+            <p>These signs mean you need to see a midwife or doctor.</p>
+          </div>
+          <hr class="nhsuk-hr">
+
+          <h2>Latent phase of labour</h2>
+          <p>The start of labour is called the latent phase. This is when your cervix becomes soft and thin, and starts opening for your baby to be born. This can take hours or, for some women, days.</p>
+          <p>You'll probably be advised to stay at home during this time. If you go to the hospital or maternity unit, they may suggest you go back home.</p>
+          <p>Find out more about the <a href="javascript:void(0);">stages of labour</a> and what you can do at home during the latent phase.</p>
+          <p>Call your midwife if you're unsure or worried about anything.</p>
+          <h4>Labour links</h4>
+          <div class="nhsuk-inset-text nhsuk-u-margin-top-4">
+            <span class="nhsuk-u-visually-hidden">Information: </span>
+            <p><a href="javascript:void(0);" title="">Stages of labour</a></p>
+          </div>
+        </section>
+        <section>
+          <nav class="nhsuk-contents-list" role="navigation" aria-label="Pages in this guide">
+            <h2 class="">More in signs that labour has begun</h2>
+            <ul class="bradcrumbs">
+              <li  class="bradcrumbs__item--active" aria-current="page">
+                <a href="javascript:void(0);">The early signs of labour</a>
+              </li>
+              <li class="">
+                <a href="/lab-4/a-to-z/pregnancy/labour-symptoms">The symptoms of labour</a>
+              </li>
+              <li class="">
+                <a href="/lab-4/a-to-z/pregnancy/labour-cope">How to cope when labour begins</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="nhsuk-review-date">
+            <p class="nhsuk-body-s">
+                Page last reviewed: 30 April 2017
+                <br>
+                Next review due: 30 April 2020
+            </p>
+          </div>
+      </section>
+    </div>
+  </div> 
+</section>
+
+{% endblock %}

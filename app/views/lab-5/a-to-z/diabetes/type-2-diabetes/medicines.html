@@ -1,0 +1,179 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-lab-5-diabetes.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Diabetes - NHS.UK
+{% endblock %}
+
+{% block beforeContent %}
+{% from 'details/macro.njk' import details %}
+
+
+{% endblock %}
+
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+<main class="nhsuk-main-wrapper" id="maincontent" style="padding-top: 0px !important;padding-bottom:0px;">
+  <section>     
+    <div class="nhsuk-grid-row">
+      <div
+       class="nhsuk-grid-column-two-thirds">
+        <section>
+
+            <nav class="nhsuk-u-margin-bottom-3" aria-label="Breadcrumb">
+                <div >
+                  <ol class="nhsuk-breadcrumb__list ">
+                      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-4/">Home</a></li>
+                    <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-4/a-to-z">Health A to Z</a></li>
+      
+                    <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-4/a-to-z/diabetes">Diabetes</a></li>    
+                    <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-4/a-to-z/diabetes/type-2-diabetes">Type 2 diabetes</a></li>             
+                  </ol>
+                  <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/lab-4/a-to-z/diabetes/type-2-diabetes">Type 2 diabetes</a></p>
+                </div>
+              </nav>  
+          <h1>
+            <span role="text">Medicines for type 2 diabetes 
+            </span>
+          </h1>
+        </section>
+        <article>
+          <section>
+            <p>Most people need medicine to control their type 2 diabetes.</p>
+            <p>Medicine helps keep your blood sugar level as normal as possible to prevent health problems. You may have to take it for the rest of your life.</p>
+            <p>Diabetes usually gets worse over time, so your medicine or dose may need to change.</p>
+            <p><a href="javascript:void(0);" title="">Adjusting your diet and being active</a> is also necessary to keep your blood sugar level down.</p>
+            <h4>Key links</h4>
+            <div class="nhsuk-inset-text nhsuk-u-margin-top-4">
+              <span class="nhsuk-u-visually-hidden">Information: </span>
+              <p><a href="javascript:void(0);" title="">Food and keeping active</a></p>
+            </div>  
+          </section>
+          <section>
+            <h2 class="nhsuk-u-padding-top-5">Getting the right medicine for you</h2>
+            <p>Diabetes medicines help lower the amount of sugar in your blood.</p>
+            <div class="nhsuk-warning-callout">
+              <h3 class="nhsuk-warning-callout__label">Important</h3>
+              <p>There are many types of medicine for type 2 diabetes. It can take time to find a medicine and dose that's right for you.</p>    
+            </div>
+            <p>You'll usually be offered a medicine called <a href="/lab-4/a-to-z/metformin" title="">metformin </a>first. </p>
+            <p>If your blood sugar levels are not lower within 3 months, you may need another medicine.</p>
+            <p>Over time, you may need a combination of medicines. Your GP or diabetes nurse will recommend the medicines most suitable for you.</p>
+            <p><a href="/lab-4/a-to-z/metformin" title="">Insulin</a> is not often used for type 2 diabetes in the early years. It's only needed when other medicines no longer work.</p>
+            <p>Diabetes UK has more information about taking medicines for type 2 diabetes.</p>
+            <div class="nhs-uk-margin-top-0">
+              <h4>Medicines key links</h4>
+            </div>
+              <div class="nhsuk-inset-text nhsuk-u-margin-bottom-4">
+                <span class="nhsuk-u-visually-hidden">Information: </span>
+                <p><a href="/lab-4/a-to-z/metformin" title="">Metformin</a></p>
+                <p><a href="/lab-4/a-to-z/metformin" title="">Insulin</a></p>
+              </div>
+            <div class="nhsuk-inset-text nhsuk-inset_external nhsuk-inset-text__arrow nhsuk-u-margin-top-0">
+              <div class="nhsuk-inset-text__content">
+                <p><a href="javascript:void(0);" title="">Taking medicine for type 2 diabetes</a></p> 
+                <p>diabetes.org.uk</p>
+              </div>
+            </div> 
+          </section>
+          <section>
+            <h2 class="nhsuk-u-padding-top-5">Taking your medicine</h2>
+            <p>Your GP or diabetes nurse will explain how to take your medicine and how to store it. </p>
+            <p>If you need to inject insulin, they'll show you how.</p>
+          </section>
+          <section>
+            <h2 class="nhsuk-u-padding-top-5">Side effects</h2>
+            <p>Your diabetes medicine may cause side effects. </p>       
+            <p>These can include:</p>       
+            <ul>
+              <li>bloating and diarrhoea</li>
+              <li>weight loss or weight gain</li>
+              <li>feeling sick</li>
+              <li>swollen ankles</li>
+            </ul>
+            <p>Not everyone has side effects.</p>     
+            <p>If you feel unwell after taking medicine or notice any side effects, speak to your GP or diabetes nurse. </p>     
+            <p>Do not stop taking medication without getting advice.</p>
+          </section>
+          <section>
+            <h2 class="nhsuk-u-padding-top-5">How to get free prescriptions for diabetes medicine</h2>
+            <p>You're entitled to free prescriptions for your diabetes medicine</a>.</p>      
+            <p>To claim your free prescriptions, you'll need to apply for an exemption certificate. </p>       
+            <p>To do this:</p>        
+            <ul>
+              <li>fill in a form at your GP surgery</li>
+              <li>you should get the certificate in the post about a week later – it'll last for 5 years</li>
+              <li>take it to your pharmacy with your prescriptions</li>
+            </ul>
+            <p>Save your receipts if you have to pay for diabetes medicine before you receive your exemption certificate. You can claim the money back.</p>
+            <div class="nhsuk-action-link">
+              <a class="nhsuk-action-link__link" href="javascript:void(0);" title="">
+                <svg class="nhsuk-icon nhsuk-icon__arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z"></path>
+                </svg>
+                <span class="nhsuk-action-link__text">Find a pharmacy</span>
+              </a>
+            </div>
+          </section>
+          <section class="nhsuk-u-padding-bottom-8">
+            <h2 class="nhsuk-u-padding-top-5">Travelling with diabetes medicines</h2>
+            <p>If you're going on holiday:</p>        
+            <ul>
+              <li>pack extra medicine – speak to your diabetes nurse about how much to take</li>
+              <li>carry your medicine in your hand luggage just in case checked-in bags go missing or get damaged</li>
+              <li>if you're flying with a medicine you inject, get a letter from your GP that says you need it to treat diabetes .</li>
+            </ul>
+          </section>
+
+
+
+
+
+          <section>
+            <nav class="nhsuk-contents-list" role="navigation" aria-label="Pages in this guide">
+              <h2 class="">More in <a href="/lab-4/a-to-z/diabetes/type-2-diabetes">type 2 diabetes</a></a></h2>
+              <ul class="nhsuk-list app-side-nav__list">
+                  
+                  <li class="app-side-nav__item "><a class="app-side-nav__link" href="javascript:void(0);">What is type 2 diabetes?</a></li>
+          
+                  <li class="app-side-nav__item"><a class="app-side-nav__link" href="javascript:void(0);">Symptoms</a></li>
+                
+                  <li class="app-side-nav__item"><a class="app-side-nav__link" href="javascript:void(0);">Getting diagnosed</a></li>
+                
+                  <li class="app-side-nav__item app-side-nav__item--current">Medicines</li>
+                
+                  <li class="app-side-nav__item"><a class="app-side-nav__link" href="javascript:void(0);">Food and activity</a></li>
+                
+                  <li class="app-side-nav__item "><a class="app-side-nav__link" href="/lab-4/a-to-z/diabetes/type-2-diabetes/regular-check-ups">Regular check-ups</a></li>
+                  
+                  <li class="app-side-nav__item"><a class="app-side-nav__link" href="/lab-4/a-to-z/diabetes/type-2-diabetes/health-problems">Health problems</a></li>
+          
+                  <li class="app-side-nav__item "><a class="app-side-nav__link" href="/lab-4/a-to-z/diabetes/type-2-diabetes/help-and-support">Help and support</a></li>
+          
+                </ul>
+            </nav>
+
+
+
+            <div class="nhsuk-review-date nhsuk-u-padding-top-5">
+              <p class="nhsuk-body-s">
+                Page last reviewed: 8 August 2017<br>
+                Next review due: 8 August 2020
+              </p>
+            </div>
+          </section>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+{% endblock %}

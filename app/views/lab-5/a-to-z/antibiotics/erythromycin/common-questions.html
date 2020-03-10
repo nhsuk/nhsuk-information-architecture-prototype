@@ -1,0 +1,215 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-lab-5-diabetes.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Metformin - NHS.UK
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+<!-- More info and code for the breadcrumb can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/breadcrumbs -->
+{% block beforeContent %}
+
+
+
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <!-- Change the page title here -->
+      <nav class="nhsuk-u-margin-bottom-3" aria-label="Breadcrumb">
+          <div >
+            <ol class="nhsuk-breadcrumb__list ">
+                <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-4/">Home</a></li>
+              <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-4/a-to-z">Health A to Z</a></li>
+              <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-4/a-to-z/antibiotics">Antibiotics</a></li>
+              <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-4/a-to-z/antibiotics/erythromycin">Erythromycin</a></li>
+
+            </ol>
+            <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/lab-4/a-to-z/antibiotics/erythromycin">Erythromycin</a></p>
+          </div>
+        </nav>
+
+      <h1>
+          Common questions with erythromycin
+      </h1>
+
+      <section id="common-questions">
+          <div class="block-question">
+    <details class="nhsuk-details">
+      <summary class="nhsuk-details__summary" role="button" aria-controls="details-content-0" aria-expanded="false">
+        <span class="nhsuk-details__summary-text">
+        How does erythromycin work?
+        </span>
+      </summary>
+      <div class="nhsuk-details__text" id="details-content-0" aria-hidden="true">
+        
+          <p>Erythromycin is from a group of medicines called macrolide antibiotics. Macrolide antibiotics work by killing the bacteria causing the infection.</p>
+    
+        
+      </div>
+    </details>
+    </div>
+    <div class="block-question">
+    <details class="nhsuk-details">
+      <summary class="nhsuk-details__summary" role="button" aria-controls="details-content-1" aria-expanded="false">
+        <span class="nhsuk-details__summary-text">
+        When will I feel better?
+        </span>
+      </summary>
+      <div class="nhsuk-details__text" id="details-content-1" aria-hidden="true">
+        
+          <p>For most infections, you should feel better within a few days.</p>
+    <p>For skin problems such as <a href="/conditions/acne/">acne</a> and <a href="/conditions/rosacea/">rosacea</a>, expect to take the medicine for at least 2 months before you see much improvement.</p>
+    <p>It's very important that you keep taking erythromycin until your course is finished. Do this even if you feel better. It will help to stop the infection coming back.</p>
+    
+        
+      </div>
+    </details>
+    </div>
+    <div class="block-question">
+    <details class="nhsuk-details">
+      <summary class="nhsuk-details__summary" role="button" aria-controls="details-content-2" aria-expanded="false">
+        <span class="nhsuk-details__summary-text">
+        Can I drink alcohol with it?
+        </span>
+      </summary>
+      <div class="nhsuk-details__text" id="details-content-2" aria-hidden="true">
+        
+          <p>There's no specific warning to stop drinking alcohol while taking erythromycin, but there's some evidence that alcohol may slow down or delay the medicine working. You might want to stop drinking alcohol or limit how much you drink while you're taking erythromycin.</p>
+    
+        
+      </div>
+    </details>
+    </div>
+    <div class="block-question">
+    <details class="nhsuk-details">
+      <summary class="nhsuk-details__summary" role="button" aria-controls="details-content-3" aria-expanded="false">
+        <span class="nhsuk-details__summary-text">
+        Will it give me thrush?
+        </span>
+      </summary>
+      <div class="nhsuk-details__text" id="details-content-3" aria-hidden="true">
+        
+          <p>Some people get a fungal infection called <a href="/conditions/thrush-in-men-and-women/">thrush</a> after taking a course of antibiotics like erythromycin. It happens because antibiotics kill the normal harmless bacteria that help to protect you against thrush.</p>
+    <p>Ask your pharmacist or doctor for advice if this happens to you.</p>
+    
+        
+      </div>
+    </details>
+    </div>
+    <div class="block-question">
+    <details class="nhsuk-details">
+      <summary class="nhsuk-details__summary" role="button" aria-controls="details-content-4" aria-expanded="false">
+        <span class="nhsuk-details__summary-text">
+        Will it stop my contraception working?
+        </span>
+      </summary>
+      <div class="nhsuk-details__text" id="details-content-4" aria-hidden="true">
+        
+          <p>Erythromycin doesn't stop contraceptive pills working, including the combined pill and emergency contraception.</p>
+    <p>However, if erythromycin makes you sick or have severe diarrhoea (6 to 8 watery poos in 24 hours) for more than 24 hours, your contraceptive pill may not protect you from pregnancy. Look on the pill packet to find out what to do.</p>
+    <p>Read more about <a href="/conditions/contraception/pill-sick-vomit-diarrhoea/">what to do if you're on the pill and you're sick or have diarrhoea</a>.</p>
+    
+        
+      </div>
+    </details>
+    </div>
+    <div class="block-question">
+    <details class="nhsuk-details">
+      <summary class="nhsuk-details__summary" role="button" aria-controls="details-content-5" aria-expanded="false">
+        <span class="nhsuk-details__summary-text">
+        Will it reduce my fertility?
+        </span>
+      </summary>
+      <div class="nhsuk-details__text" id="details-content-5" aria-hidden="true">
+        
+          <p>There's no firm evidence to suggest that taking erythromycin will reduce fertility in women.</p>
+    <p>However, there's been research suggesting that erythromycin may reduce male fertility by reducing and slowing down sperm. The evidence is weak, though, and this link isn't proven. Talk to your doctor if you're concerned.</p>
+    
+        
+      </div>
+    </details>
+    </div>
+    <div class="block-question">
+    <details class="nhsuk-details">
+      <summary class="nhsuk-details__summary" role="button" aria-controls="details-content-6" aria-expanded="false">
+        <span class="nhsuk-details__summary-text">
+        What if I don't get better?
+        </span>
+      </summary>
+      <div class="nhsuk-details__text" id="details-content-6" aria-hidden="true">
+        
+          <p>Tell your doctor if you don't start feeling better after taking erythromycin for 3 days. Also tell them if, at any time, you start to feel worse.</p>
+    <p>If you're taking erythromycin for a skin infection, it may take several weeks to see an improvement.</p>
+    
+        
+      </div>
+    </details>
+    </div>
+    <div class="block-question">
+    <details class="nhsuk-details">
+      <summary class="nhsuk-details__summary" role="button" aria-controls="details-content-7" aria-expanded="false">
+        <span class="nhsuk-details__summary-text">
+        Is there any food or drink I need to avoid?
+        </span>
+      </summary>
+      <div class="nhsuk-details__text" id="details-content-7" aria-hidden="true">
+        
+          <p>Do not eat grapefruit or drink grapefruit juice while you're taking erythromycin.</p>
+    <p>Grapefruit can increase the amount of erythromycin in your body and mean you're more likely to have side effects.</p>
+    
+        
+      </div>
+    </details>
+    </div>
+        </section>
+
+
+      <nav class="nhsuk-contents-list nhsuk-u-padding-top-8" role="navigation" aria-label="Pages in this guide">
+          <h2 class="">More in <a href="/lab-4/a-to-z/antibiotics/erythromycin">erythromycin</a></a></h2>
+          <ul class="nhsuk-list app-side-nav__list">
+
+              <li class="app-side-nav__item "><a class="app-side-nav__link" href="/lab-4/a-to-z/antibiotics/erythromycin/common-questions">About erythromycin</a></li>
+      
+              <li class="app-side-nav__item"><a class="app-side-nav__link" href="/lab-4/a-to-z/antibiotics/erythromycin/key-facts">Key facts</a></li>
+            
+              <li class="app-side-nav__item"><a class="app-side-nav__link" href="/lab-4/a-to-z/antibiotics/erythromycin/who-can-take">Who can and can't take erythromycin</a></li>
+                        
+              <li class="app-side-nav__item"><a class="app-side-nav__link" href="/lab-4/a-to-z/antibiotics/erythromycin/how-and-when-to-take">How and when to take it</a></li>
+            
+              <li class="app-side-nav__item "><a class="app-side-nav__link" href="/lab-4/a-to-z/antibiotics/erythromycin/side-effects">Side effects</a></li>
+              
+              <li class="app-side-nav__item "><a class="app-side-nav__link" href="/lab-4/a-to-z/antibiotics/erythromycin/how-to-cope-with-side-effects">How to cope with side effects</a></li>
+      
+              <li class="app-side-nav__item"><a class="app-side-nav__link" href="/lab-4/a-to-z/antibiotics/erythromycin/pregnancy-and-breastfeeding">Pregnancy and breastfeeding</a></li>
+
+              <li class="app-side-nav__item"><a class="app-side-nav__link" href="/lab-4/a-to-z/antibiotics/erythromycin/cautions-with-other-medicines">Cautions with other medicines</a></li>
+
+              <li class="app-side-nav__item app-side-nav__item--current">Common questions</li>
+      
+            </ul>
+        </nav>
+
+
+        <div class="nhsuk-review-date nhsuk-u-padding-top-5">
+            <p class="nhsuk-body-s">
+              Page last reviewed: 8 August 2017<br>
+              Next review due: 8 August 2020
+            </p>
+          </div>
+
+    </div>      
+</div>
+{% endblock %}

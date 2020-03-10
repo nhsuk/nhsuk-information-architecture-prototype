@@ -1,0 +1,110 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-lab-5-diabetes.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Metformin - NHS.UK
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+<!-- More info and code for the breadcrumb can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/breadcrumbs -->
+{% block beforeContent %}
+
+
+
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <!-- Change the page title here -->
+      <nav class="nhsuk-u-margin-bottom-3" aria-label="Breadcrumb">
+          <div >
+            <ol class="nhsuk-breadcrumb__list ">
+                <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-4/">Home</a></li>
+              <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-4/a-to-z">Health A to Z</a></li>
+              <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-4/a-to-z/antibiotics">Antibiotics</a></li>
+              <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-4/a-to-z/antibiotics/erythromycin">Erythromycin</a></li>
+
+            </ol>
+            <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/lab-4/a-to-z/antibiotics/erythromycin">Erythromycin</a></p>
+          </div>
+        </nav>
+
+      <h1>
+          How and when to take erythromycin
+      </h1>
+
+      <section id="how-and-when-to-take-it">
+          <div class="block-richtext"><p>The usual dose of erythromycin is 250mg to 1,000mg taken 4 times a day. Sometimes it's taken twice a day. The dose may be lower for children.</p>
+    <p>Try to space the doses evenly throughout the day - for example, first thing in the morning, at about midday, late in the afternoon and at bedtime.</p>
+    <p>Generally, it's better to take erythromycin with food so it doesn't upset your stomach.</p>
+    </div>
+    <div class="block-warning_callout"><div class="nhsuk-warning-callout">
+      <h3 class="nhsuk-warning-callout__label">Important</h3>
+      <p>Carry on taking this medicine until the course is completed, even if you feel better. If you stop your treatment early, your infection could come back.</p>
+    
+    </div>
+    </div>
+    <div class="block-richtext"><h3>How to take it</h3>
+    <p>Swallow erythromycin tablets or capsules whole with a drink of water. Do not chew or break them.</p>
+    <p>There's a liquid erythromycin for children and people who find it difficult to swallow tablets.</p>
+    <p>If you or your child are taking erythromycin as a liquid, it'll usually be made up for you by your pharmacist. The medicine will come with a syringe or spoon to help you take the right amount. If you don't have a syringe or spoon, ask your pharmacist for one. Do not use a kitchen teaspoon as it will not give the right amount.</p>
+    <h3>What if I forget to take it?</h3>
+    <p>If you forget to take a dose, take it as soon as you remember, unless it's nearly time for your next dose. In this case, just leave out the missed dose and take your next dose as normal.</p>
+    <p>Never take 2 doses at the same time. Never take an extra dose to make up for a forgotten one.</p>
+    <p>If you forget doses often, it may help to set an alarm to remind you. You could also ask your pharmacist for advice on other ways to help you remember to take your medicine.</p>
+    <h3>What if I take too much?</h3>
+    <p>Try to take the correct number of doses each day, leaving at least 4 hours between doses.</p>
+    <p>Taking an extra dose of erythromycin by accident is unlikely to harm you or your child. It may, however, increase the chance of temporary side effects, such as hearing loss, feeling or being sick and diarrhoea.</p>
+    <p>Talk to your pharmacist or doctor if you're worried, or if you or your child accidentally take more than 1 extra dose.</p>
+    </div>
+        </section>
+
+      <nav class="nhsuk-contents-list nhsuk-u-padding-top-8" role="navigation" aria-label="Pages in this guide">
+          <h2 class="">More in <a href="/lab-4/a-to-z/antibiotics/erythromycin">erythromycin</a></a></h2>
+          <ul class="nhsuk-list app-side-nav__list">
+
+              <li class="app-side-nav__item"><a class="app-side-nav__link" href="/lab-4/a-to-z/antibiotics/erythromycin/about">About erythromycin</a></li>
+      
+              <li class="app-side-nav__item"><a class="app-side-nav__link" href="/lab-4/a-to-z/antibiotics/erythromycin/key-facts">Key facts</a></li>
+            
+              <li class="app-side-nav__item"><a class="app-side-nav__link" href="/lab-4/a-to-z/antibiotics/erythromycin/who-can-take">Who can and can't take erythromycin</a></li>
+                        
+              <li class="app-side-nav__item  app-side-nav__item--current">How and when to take it</li>
+            
+              <li class="app-side-nav__item "><a class="app-side-nav__link" href="/lab-4/a-to-z/antibiotics/erythromycin/side-effects">Side effects</a></li>
+              
+              <li class="app-side-nav__item "><a class="app-side-nav__link" href="/lab-4/a-to-z/antibiotics/erythromycin/how-to-cope-with-side-effects">How to cope with side effects</a></li>
+      
+              <li class="app-side-nav__item"><a class="app-side-nav__link" href="/lab-4/a-to-z/antibiotics/erythromycin/pregnancy-and-breastfeeding">Pregnancy and breastfeeding</a></li>
+
+              <li class="app-side-nav__item"><a class="app-side-nav__link" href="/lab-4/a-to-z/antibiotics/erythromycin/cautions-with-other-medicines">Cautions with other medicines</a></li>
+
+              <li class="app-side-nav__item"><a class="app-side-nav__link" href="/lab-4/a-to-z/antibiotics/erythromycin/common-questions">Common questions</a></li>
+      
+            </ul>
+        </nav>
+
+
+        <div class="nhsuk-review-date nhsuk-u-padding-top-5">
+            <p class="nhsuk-body-s">
+              Page last reviewed: 8 August 2017<br>
+              Next review due: 8 August 2020
+            </p>
+          </div>
+
+
+    </div>      
+</div>
+{% endblock %}

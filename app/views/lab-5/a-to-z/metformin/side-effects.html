@@ -1,0 +1,189 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-lab-5-diabetes.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Metformin - NHS.UK
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+<!-- More info and code for the breadcrumb can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/breadcrumbs -->
+{% block beforeContent %}
+
+
+
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <!-- Change the page title here -->
+      <nav class="nhsuk-u-margin-bottom-3" aria-label="Breadcrumb">
+          <div >
+            <ol class="nhsuk-breadcrumb__list ">
+                <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-4/">Home</a></li>
+              <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-4/a-to-z">Health A to Z</a></li>
+              <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-4/metformin">Metformin</a></li>
+
+            </ol>
+            <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/lab-4/a-to-z/metformin">Metformin</a></p>
+          </div>
+        </nav>
+
+      <h1>
+        Side effects of metformin
+      </h1>
+
+      <section id="side-effects">
+        <p>Like all medicines, metformin can cause side effects, although not everyone gets them.</p>
+
+        <h3>Common side effects</h3>
+        <p>Common side effects happen in more than 1 in 100 people.</p>
+        <p>Talk to your doctor or pharmacist if these side effects bother you or do not go away after 1 week:</p>
+        <ul>
+          <li>feeling sick (nausea)</li>
+          <li>being sick (vomiting) or diarrhoea</li>
+          <li>stomach ache</li>
+          <li>loss of appetite</li>
+          <li>a metallic taste in the mouth</li>
+        </ul>
+
+        <h4>Serious side effects</h4>
+        <p>Serious side effects are rare and happen in less than 1 in 10,000 people.</p>
+        <p>Call your doctor straight away if you get warning signs of:</p>
+        <ul>
+          <li>a general feeling of discomfort with severe tiredness, fast or shallow breathing, being cold and a slow heartbeat</li>
+          <li>yellow skin or the whites of your eyes turn yellow - these can be signs of liver problems</li>
+          <li>extreme tiredness, lack of energy, pins and needles, a sore and red tongue, mouth ulcers, muscle weakness and disturbed vision - these could be signs of <a href="lab-3/a-to-z/vitamin-b12/">vitamin B12 deficiency anaemia</a></li>
+          <li>a skin rash, redness or itching - this could be a sign of a skin disorder</li>
+        </ul>
+        <div class="nhsuk-inset-text">
+          <span class="nhsuk-u-visually-hidden">Information: </span>
+          <h4>Side effects links</h4>
+          <p><a href="javascript:void(0);" title="">Vitamin B12 deficiency anaemia</a></p>
+        </div>
+      </section>
+
+      <section id="low-blood-sugar">
+        <h3>Low blood sugar</h3>
+        <p>Metformin does not usually cause low blood sugar (known as hypoglycaemia, or "hypos") when taken on its own.</p>
+        <p>But hypos can happen when you take metformin with other diabetes medicines, such as insulin or gliclazide.</p>
+        <p>Early warning signs of low blood sugar include:</p>
+        <ul>
+          <li>feeling hungry</li>
+          <li>trembling or shaking</li>
+          <li>sweating</li>
+          <li>confusion</li>
+          <li>difficulty concentrating</li>
+        </ul>
+        <p>It's also possible for your blood sugar to go too low while you're asleep.</p>
+        <p>If this happens, it can make you feel sweaty, tired and confused when you wake up.</p>
+        <p>Low blood sugar may happen if you:<p>
+        <ul>
+          <li>take too much of some types of diabetes medicines</li>
+          <li>eat meals irregularly or skip meals</li>
+          <li>are fasting</li>
+          <li>do not eat a healthy diet and are not getting enough nutrients</li>
+          <li>change what you eat</li>
+          <li>increase your physical activity without eating more to compensate</li>
+          <li>drink alcohol, especially after skipping a meal</li>
+          <li>take some other medicines or herbal medicines at the same time</li>
+          <li>have a hormone disorder, such as hypothyroidism</li>
+          <li>have kidney or liver problems</li>
+        </ul>
+        <p>To prevent hypoglycaemia, it's important to have regular meals, including breakfast. Never miss or delay a meal.</p>
+        <p>If you're planning to exercise more than usual, make sure you eat carbohydrates like bread, pasta or cereals before, during or after exercise.</p>
+        <p>Always carry a fast-acting carbohydrate with you, like sugar cubes, fruit juice or some sweets, in case your blood sugar level gets low. Artificial sweeteners will not help.</p>
+        <p>You may also need to eat a starchy carbohydrate, like a sandwich or a biscuit, to maintain your blood sugar for longer.</p>
+        <p>If taking in sugar does not help or the hypo symptoms come back, contact your doctor or the nearest hospital.</p>
+        <p>Make sure your friends and family know about your diabetes and the symptoms of low blood sugar levels so they can recognise a hypo if it happens.</p>
+        <div class="nhsuk-inset-text">
+          <span class="nhsuk-u-visually-hidden">Information: </span>
+          <h4>Low blood sugars links</h4>
+          <p><a href="javascript:void(0);" title="">Low blood sugar (hypoglycaemia)</a></p>
+        </div>
+      
+        <h4>Serious allergic reaction</h4>
+        <p>It's possible to have a serious allergic reaction (anaphylaxis) to metformin.</p>
+      </section>
+
+      <section id="call-999-if">
+        <div class="nhsuk-care-card nhsuk-care-card--immediate">
+          <div class="nhsuk-care-card__heading-container">
+            <h3 class="nhsuk-care-card__heading"><span role="text"><span class="nhsuk-u-visually-hidden">Call 999 or go to A&E if</span>Call 999 or go to A&E if:</span></h3>
+            <span class="nhsuk-care-card__arrow" aria-hidden="true"></span>
+          </div>
+          <div class="nhsuk-care-card__content">
+            <ul>
+              <li>you get a skin rash that may include itchy, red, swollen, blistered or peeling skin</li>
+              <li>you're wheezing</li>
+              <li>you get tightness in the chest or throat</li>
+              <li>you have trouble breathing or talking</li>
+              <li>your mouth, face, lips, tongue or throat start swelling</li>
+            </ul>
+            <p>You could be having a serious allergic reaction and may need immediate treatment in hospital.</p>
+          </div>
+
+          <p style="padding-top: 40px">These are not all the side effects of metformin.</p>
+          <p>For a full list, see the leaflet inside your medicines packet.</p>
+          <div class="nhsuk-inset-text nhsuk-u-margin-bottom-4">
+            <span class="nhsuk-u-visually-hidden">Information: </span>
+            <h4>Allergic reactions links</h4>
+            <p><a href="javascript:void(0);" title="">Anaphylaxis</a></p>
+          </div>
+          <div class="nhsuk-inset-text nhsuk-inset_external nhsuk-inset-text__arrow nhsuk-u-margin-top-0">
+            <div class="nhsuk-inset-text__content">
+              <p>mhra.gov.uk</p>
+              <p><a href="https://yellowcard.mhra.gov.uk/" title="External website">Report a suspected side effect to the UK safety scheme</a></p> 
+            </div>
+          </div> 
+      </section>
+
+      <nav class="nhsuk-contents-list nhsuk-u-padding-top-8" role="navigation" aria-label="Pages in this guide">
+          <h2 class="">More in <a href="/lab-4/a-to-z/metformin">Metformin</a></a></h2>
+          <ul class="nhsuk-list app-side-nav__list">
+  
+              <li class="app-side-nav__item "><a class="app-side-nav__link" href="/lab-4/a-to-z/metformin/about">About metformin</a></li>
+      
+              <li class="app-side-nav__item"><a class="app-side-nav__link" href="/lab-4/a-to-z/metformin/key-facts">Key facts</a></li>
+            
+              <li class="app-side-nav__item"><a class="app-side-nav__link" href="/lab-4/a-to-z/metformin/who-can-take">Who can and can't take metformin</a></li>
+                        
+              <li class="app-side-nav__item"><a class="app-side-nav__link" href="/lab-4/a-to-z/metformin/how-and-when-to-take">How and when to take it</a></li>
+            
+              <li class="app-side-nav__item app-side-nav__item--current">Side effects</li>
+              
+              <li class="app-side-nav__item "><a class="app-side-nav__link" href="/lab-4/a-to-z/metformin/how-to-cope-with-side-effects">How to cope with side effects</a></li>
+      
+              <li class="app-side-nav__item"><a class="app-side-nav__link" href="/lab-4/a-to-z/metformin/pregnancy-and-breastfeeding">Pregnancy and breastfeeding</a></li>
+  
+              <li class="app-side-nav__item "><a class="app-side-nav__link" href="/lab-4/a-to-z/metformin/cautions-with-other-medicines">Cautions with other medicines</a></li>
+  
+              <li class="app-side-nav__item"><a class="app-side-nav__link" href="/lab-4/a-to-z/metformin/common-questions">Common questions</a></li>
+  
+            </ul>
+        </nav>
+  
+  
+        <div class="nhsuk-review-date nhsuk-u-padding-top-5">
+            <p class="nhsuk-body-s">
+              Page last reviewed: 8 August 2017<br>
+              Next review due: 8 August 2020
+            </p>
+          </div>
+
+
+
+    </div>      
+</div>
+{% endblock %}
