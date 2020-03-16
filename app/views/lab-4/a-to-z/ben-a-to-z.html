@@ -1,0 +1,230 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-ben-1.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Diabetes - NHS.UK
+{% endblock %}
+
+
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+
+
+
+
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-full" style="background-color:#f0f4f5;padding-left: 0px;padding-right: 0px;">
+
+      <!--<nav class="nhsuk-u-margin-bottom-3" aria-label="Breadcrumb">
+        <div >
+          <ol class="nhsuk-breadcrumb__list ">
+              <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-4/">Home</a></li>
+            <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-4/a-to-z">Health A to Z</a></li>
+            
+          </ol>
+          <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/lab-4/a-to-z">Health A to Z</a></p>
+        </div>
+      </nav>-->
+
+      <!-- Change the page title here -->
+      <section class="nhsuk-section">
+        <div class="nhsuk-width-container">
+          <div class="nhsuk-grid-row nhsuk-promo-group">
+            <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+              
+    <div class="nhsuk-promo">
+      <a class="nhsuk-promo__link-wrapper" href="/service-standard">
+        <div class="nhsuk-promo__content">
+          <h2 class="nhsuk-promo__heading">Conditions</h2>
+          <p class="nhsuk-promo__description">Includes symptoms, diagnosis and treatments.</p>
+        </div>
+      </a>
+    </div>
+    
+            </div>
+            <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+              
+    <div class="nhsuk-promo">
+      <a class="nhsuk-promo__link-wrapper" href="/design-system">
+        <div class="nhsuk-promo__content">
+          <h2 class="nhsuk-promo__heading">Medicines</h2>
+          <p class="nhsuk-promo__description">Includes why they're used, side effects and more for over-the-counter and prescription medicines.</p>
+        </div>
+      </a>
+    </div>
+    
+            </div>
+            <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+              
+    <div class="nhsuk-promo">
+      <a class="nhsuk-promo__link-wrapper" href="/content">
+        <div class="nhsuk-promo__content">
+          <h2 class="nhsuk-promo__heading">Symptoms</h2>
+          <p class="nhsuk-promo__description">What symptoms to look out for and what to do next.</p>
+        </div>
+      </a>
+    </div>
+    
+            </div>
+          </div>
+          <div class="nhsuk-grid-row nhsuk-promo-group nhsuk-u-margin-bottom-0">
+            <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+              
+    <div class="nhsuk-promo">
+      <a class="nhsuk-promo__link-wrapper" href="/accessibility">
+        <div class="nhsuk-promo__content">
+          <h2 class="nhsuk-promo__heading">Tests and treatments</h2>
+          <p class="nhsuk-promo__description">From major surgery to outpatient procedures, learn what to expect and how to prepare.</p>
+        </div>
+      </a>
+    </div>
+    
+            </div>
+            <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+              
+    <div class="nhsuk-promo">
+      <a class="nhsuk-promo__link-wrapper" href="/design-system/design-principles">
+        <div class="nhsuk-promo__content">
+          <h2 class="nhsuk-promo__heading">Spring health </h2>
+          <p class="nhsuk-promo__description">Conditions, symptoms treatments for spring. </p>
+        </div>
+      </a>
+    </div>
+    
+            </div>
+            <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+              
+    <div class="nhsuk-promo">
+      <a class="nhsuk-promo__link-wrapper" href="/community">
+        <div class="nhsuk-promo__content">
+          <h2 class="nhsuk-promo__heading">Diabetes</h2>
+          <p class="nhsuk-promo__description">Diabetes is a lifelong condition that causes a person's blood sugar level to become too high. There are different types of diabetes.</p>
+        </div>
+      </a>
+    </div>
+    
+            </div>
+          </div>
+        </div>
+      </section>
+        
+
+  
+
+
+              
+
+            <!--<div class="nhsuk-grid-column-one-half nhsuk-promo-group__item">
+              <div class="nhsuk-promo nhsuk-promo_canon">
+                <a class="nhsuk-promo__link-wrapper" href="/lab-4/a-to-z/diabetes/gestational-diabetes">
+                  <div class="nhsuk-promo__content">
+                    <h3 class="nhsuk-promo__heading">Treatments</h3>
+                    <p class="nhsuk-promo__description">Includes symptoms, conditions and treatments.</p>
+                  </div>
+                  <div class="arrow" style="">
+                    <svg id="icon-plus" xmlns="http://www.w3.org/2000/svg" width="26.667" height="26.667" viewBox="0 0 26.667 26.667">
+                      <circle id="Oval" cx="13.333" cy="13.333" r="13.333" fill="#005EB8"/>
+                      <g id="Group_1" data-name="Group 1" transform="translate(11.667 9.229) rotate(45)">
+                        <path id="Path" d="M0,0V5.333" transform="translate(5.333 0)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"/>
+                        <path id="Path-2" data-name="Path" d="M0,0H5.333" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"/>
+                      </g>
+                    </svg>
+                  </div>
+                </a>
+              </div>
+            </div>-->
+
+            <section class="nhsuk-section">
+                <div class="nhsuk-width-container">
+                  <div class="nhsuk-grid-row nhsuk-promo-group">
+
+            <div class="nhsuk-grid-column-one-half nhsuk-u-padding-top-8">
+                <p><a href="">All Health A to Z </a></p>
+              </div>
+
+            </div>    
+            </div>
+                </section>
+
+            <div class="nhsuk-grid-column-one-half nhsuk-promo-group__item nhsuk-u-padding-top-4">
+              <ul class="key-links">
+                  <h2>Quick links</h2>
+                  <li><a href="javascript:void(0);" title="">Get help</a></li>
+                <li><a href="javascript:void(0);" title="">Check a symptom</a></li>
+                <li><a href="javascript:void(0);" title="">Sexual health</a></li>
+                <li><a href="javascript:void(0);" title="">Find a service</a></li>
+
+
+              </ul>
+            </div>
+
+            <!--<div class="nhsuk-grid-column-one-half nhsuk-promo-group__item">
+                {% from 'care-card/macro.njk' import careCard %}
+  
+                  {{ careCard({
+                    "type": "non-urgent",
+                    "heading": "Speak to a GP if:",
+                    "HTML": "
+                    <ul>
+                      <li>you're not sure it's chickenpox</li>
+                      <li>the skin around the blisters is red, hot or painful (signs of infection)</li>
+                      <li>your child is <a href=\"https://www.nhs.uk/conditions/dehydration\">dehydrated</a></li>
+                      <li>you're concerned about your child or they get worse</li>
+                    </ul>
+                    <p>Tell the receptionist you think it's chickenpox before going in. They may recommend a special appointment time if other patients are at risk.</p>
+                    "
+                  }) }}
+              </div>-->
+
+      </section>
+
+      <!--<div class="">
+        <h2>Help and support for diabetes</h2>
+        <div class="nhsuk-inset-text nhsuk-inset_external nhsuk-inset-text__arrow" style="margin-top: 20px;">
+          <div class="nhsuk-inset-text__content">
+            <p><a href="javascript:void(0);" title="">Diabetes UK: Local support groups</a></p>
+            <p class="nhsuk-body-s nhsuk-u-margin-bottom-0">www.diabetes.org.uk</p>
+          </div>
+          <div class="arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12.638" height="21.033" viewBox="0 0 12.638 21.033">
+              <g id="icon-plus" transform="translate(-14.169 -7.107)">
+                <g id="Group_1" data-name="Group 1" transform="translate(16.291 9.229) rotate(45)">
+                  <path id="Path" d="M0,0V11.873" transform="translate(11.873 0)" fill="none" stroke="#ae2573"
+                    stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" />
+                  <path id="Path-2" data-name="Path" d="M0,0H11.873" fill="none" stroke="#ae2573" stroke-linecap="round"
+                    stroke-miterlimit="10" stroke-width="3" />
+                </g>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>-->
+
+
+      
+
+    <!-- <div class="">
+      <div>
+       <p>Help and support for diabetes</p>
+       
+        <p>Diabetes.uk</p>
+
+      </div>
+    </div> -->
+
+
+    </div>      
+</div>
+
+
+
+{% endblock %}
