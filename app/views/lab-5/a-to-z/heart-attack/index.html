@@ -1,0 +1,198 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-lab-5.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Heart attack - NHS.UK
+{% endblock %}
+
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+
+<div class="nhsuk-grid-row">
+
+  <div class="nhsuk-grid-column-full">
+
+    <nav class="nhsuk-u-margin-bottom-3" aria-label="Breadcrumb">
+      <div>
+        <ol class="nhsuk-breadcrumb__list ">
+          <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-/">Home</a></li>
+          <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-5/a-to-z">Health A to Z</a>
+          </li>
+
+        </ol>
+        <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/lab-5/a-to-z">Health A to Z</a>
+        </p>
+      </div>
+    </nav>
+
+    <!-- Change the page title here -->
+    <h1>
+      Heart Attack
+    </h1>
+
+    <section id="Introduction">
+      <p class="lede-text">Intro text</p>
+
+      <div>
+        <ul class="nhsuk-list-signage nhsuk-list-signage--two-columns nhsuk-u-padding-bottom-0 nhsuk-u-margin-bottom-0"
+          style="margin-top: 0;">
+          <li>
+            <a href="/lab-4/a-to-z/diabetes/type-2-diabetes/symptoms">
+              <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                aria-hidden="true" focusable="false">
+                <path
+                  d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z">
+                </path>
+                <image class="nhsuk-icon__chevron-right nhsuk-icon__chevron-right--fallback" xlink:href=""></image>
+              </svg>
+              Chest pain
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <ul class="nhsuk-list-signage nhsuk-list-signage--two-columns nhsuk-u-padding-bottom-0 nhsuk-u-margin-bottom-0"
+          style="margin-top: 0;">
+          <li>
+            <a href="/lab-4/a-to-z/diabetes/type-2-diabetes/symptoms">
+              <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                aria-hidden="true" focusable="false">
+                <path
+                  d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z">
+                </path>
+                <image class="nhsuk-icon__chevron-right nhsuk-icon__chevron-right--fallback" xlink:href=""></image>
+              </svg>
+              Shortness of breath
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <br>
+
+      <div class="nhsuk-grid-row nhsuk-promo-group">
+
+        <div class="nhsuk-grid-column-one-half nhsuk-promo-group__item">
+          <div class="nhsuk-promo nhsuk-promo_canon">
+            <a class="nhsuk-promo__link-wrapper" href="#">
+              <div class="nhsuk-promo__content">
+                <h3 class="nhsuk-promo__heading">Complications of a heart attack</h3>
+                <p class="nhsuk-promo__description">Complications of a heart attack can be serious and possibly life
+                  threatening.</p>
+              </div>
+              <div class="arrow" style="">
+                <svg id="icon-plus" xmlns="http://www.w3.org/2000/svg" width="26.667" height="26.667"
+                  viewBox="0 0 26.667 26.667">
+                  <circle id="Oval" cx="13.333" cy="13.333" r="13.333" fill="#005EB8" />
+                  <g id="Group_1" data-name="Group 1" transform="translate(11.667 9.229) rotate(45)">
+                    <path id="Path" d="M0,0V5.333" transform="translate(5.333 0)" fill="none" stroke="#fff"
+                      stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667" />
+                    <path id="Path-2" data-name="Path" d="M0,0H5.333" fill="none" stroke="#fff" stroke-linecap="round"
+                      stroke-miterlimit="10" stroke-width="2.667" />
+                  </g>
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="nhsuk-grid-column-one-half nhsuk-promo-group__item">
+          <div class="nhsuk-promo nhsuk-promo_canon">
+            <a class="nhsuk-promo__link-wrapper" href="/lab-5/a-to-z/cancer/reducing-the-risk-of-cancer">
+              <div class="nhsuk-promo__content">
+                <h3 class="nhsuk-promo__heading">Recovering from a heart attack</h3>
+                <p class="nhsuk-promo__description">The time it takes to recover from a heart attack will depend on the
+                  amount of damage to your heart muscle.</p>
+              </div>
+              <div class="arrow" style="">
+                <svg id="icon-plus" xmlns="http://www.w3.org/2000/svg" width="26.667" height="26.667"
+                  viewBox="0 0 26.667 26.667">
+                  <circle id="Oval" cx="13.333" cy="13.333" r="13.333" fill="#005EB8" />
+                  <g id="Group_1" data-name="Group 1" transform="translate(11.667 9.229) rotate(45)">
+                    <path id="Path" d="M0,0V5.333" transform="translate(5.333 0)" fill="none" stroke="#fff"
+                      stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667" />
+                    <path id="Path-2" data-name="Path" d="M0,0H5.333" fill="none" stroke="#fff" stroke-linecap="round"
+                      stroke-miterlimit="10" stroke-width="2.667" />
+                  </g>
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+
+      </div>
+      <div class="nhsuk-grid-row nhsuk-promo-group">
+
+        <div class="nhsuk-grid-column-one-half nhsuk-promo-group__item">
+          <div class="nhsuk-promo nhsuk-promo_canon">
+            <a class="nhsuk-promo__link-wrapper" href="/lab-5/a-to-z/cancer/cancer-screening">
+              <div class="nhsuk-promo__content">
+                <h3 class="nhsuk-promo__heading">Preventing a heart attack </h3>
+                <p class="nhsuk-promo__description">Screening is a way of finding out if people are at higher risk of a
+                  health problem</p>
+              </div>
+              <div class="arrow" style="">
+                <svg id="icon-plus" xmlns="http://www.w3.org/2000/svg" width="26.667" height="26.667"
+                  viewBox="0 0 26.667 26.667">
+                  <circle id="Oval" cx="13.333" cy="13.333" r="13.333" fill="#005EB8" />
+                  <g id="Group_1" data-name="Group 1" transform="translate(11.667 9.229) rotate(45)">
+                    <path id="Path" d="M0,0V5.333" transform="translate(5.333 0)" fill="none" stroke="#fff"
+                      stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667" />
+                    <path id="Path-2" data-name="Path" d="M0,0H5.333" fill="none" stroke="#fff" stroke-linecap="round"
+                      stroke-miterlimit="10" stroke-width="2.667" />
+                  </g>
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="nhsuk-grid-column-one-half nhsuk-promo-group__item">
+          <div class="nhsuk-promo nhsuk-promo_canon">
+            <a class="nhsuk-promo__link-wrapper" href="/lab-5/a-to-z/cancer/cancer-treatments">
+              <div class="nhsuk-promo__content">
+                <h3 class="nhsuk-promo__heading">Treating heart attacks</h3>
+                <p class="nhsuk-promo__description">
+                  While waiting for an ambulance, it may help to chew and then swallow a tablet of aspirin (ideally
+                  300mg), as long as the person having a heart attack is not allergic to aspirin.
+                </p>
+              </div>
+              <div class="arrow" style="">
+                <svg id="icon-plus" xmlns="http://www.w3.org/2000/svg" width="26.667" height="26.667"
+                  viewBox="0 0 26.667 26.667">
+                  <circle id="Oval" cx="13.333" cy="13.333" r="13.333" fill="#005EB8" />
+                  <g id="Group_1" data-name="Group 1" transform="translate(11.667 9.229) rotate(45)">
+                    <path id="Path" d="M0,0V5.333" transform="translate(5.333 0)" fill="none" stroke="#fff"
+                      stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667" />
+                    <path id="Path-2" data-name="Path" d="M0,0H5.333" fill="none" stroke="#fff" stroke-linecap="round"
+                      stroke-miterlimit="10" stroke-width="2.667" />
+                  </g>
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="nhsuk-grid-column-one-half nhsuk-promo-group__item">
+          <ul class="key-links">
+            <h2>Related information</h2>
+            <li><a href="javascript:void(0);" title="">Statins</a></li>
+            <li><a href="javascript:void(0);" title="">Coronary heart disease</a></li>
+            <li><a href="javascript:void(0);" title="">Blood clots</a></li>
+          </ul>
+        </div>
+
+    </section>
+
+  </div>
+</div>
+{% endblock %}
