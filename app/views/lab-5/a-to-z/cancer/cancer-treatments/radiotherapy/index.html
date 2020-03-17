@@ -8,16 +8,17 @@
 
 <!-- Set the page title inside the pageTitle block -->
 {% block pageTitle %}
-  Cancer - NHS.UK
+  Radiotherapy - NHS.UK
 {% endblock %}
-
 
 <!-- Breadcrumb goes inside the beforeContent block -->
+<!-- More info and code for the breadcrumb can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/breadcrumbs -->
 {% block beforeContent %}
-{% from 'details/macro.njk' import details %}
+
 
 
 {% endblock %}
+
 <!-- Your page content goes inside the content block -->
 <!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
 {% block content %}
@@ -25,46 +26,52 @@
   <div class="nhsuk-grid-row">
 
     <div class="nhsuk-grid-column-two-thirds">
-      <!-- Change the page title here -->
 
+      <!-- Change the page title here -->
       <nav class="nhsuk-u-margin-bottom-3" aria-label="Breadcrumb">
           <div >
             <ol class="nhsuk-breadcrumb__list ">
                 <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-5/">Home</a></li>
               <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-5/a-to-z">Health A to Z</a></li>
+              <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-5/a-to-z/cancer">Cancer</a></li>
+              <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-5/a-to-z/cancer/cancer-treatments">Cancer treatments</a></li>
 
-              <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-5/a-to-z/cancer">Cancer</a></li>              
             </ol>
-            <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/lab-5/a-to-z/diabetes">Cancer</a></p>
+            <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/lab-5/a-to-z/cancer/cancer-treatments">Cancer treatments</a></p>
           </div>
         </nav>
 
+      <h1>
+        Radiotherapy
+      </h1>
 
-      <h1>Cancer treatment</h1>
-      <p class="nhsuk-lede-text">Surgery is the first treatment to try for most types of cancer, as solid tumours can usually be surgically removed.</a></p>
-      <p>2 other commonly used treatment methods are:</p>
-      <section id="key-links" >
+      <p class="nhsuk-lede-text">Radiotherapy is a treatment where radiation is used to kill cancer cells.</p>
+      <section id="key-links" class="nhsuk-u-padding-bottom-8">
         <!--<h3 class="nhsuk-u-margin-bottom-0">Pages in this guide</h3>-->
-        <ul class="key-links" class="nhsuk-u-padding-top-0">
-          <li><a href="javascript:void(0);" title="">Chemotherapy </a></li>
-          <li><a href="javascript:void(0);" title="">Radiotherapy</a></li>
+        <ul class="key-links" class="nhsuk-u-padding-top-0 ">
+          <li><a href="#" title="">Overview</a></li>
+          <li><a href="/lab-5/a-to-z/cancer/cancer-treatments/radiotherapy/what-happens" title="">What happens</a></li>
+          <li><a href="#" title="">Side effects</a></li>
+        </ul>
+    </section>
+
+
+    <section id="key-links" class="border-top" >
+        <h3 class="nhsuk-u-margin-bottom-0">Related information</h3>
+        <ul class="related-links" class="nhsuk-u-padding-top-0">
+          <li><a href="javascript:void(0);" title="" >Types of cancer</a></li>
+          <li><a href="javascript:void(0);" title="" >Breast cancer</a></li>
+          <li><a href="javascript:void(0);" title="">Lung cancer</a></li>
+          <li><a href="javascript:void(0);" title="">Prostate cancer</a></li>
+          <li><a href="/lab-4/diabetes/a-to-z/type-2-diabetes" title="">Bowel cancer</a></li>
         </ul>
     </section>
 
 
 
 
-    <section id="key-links" class="border-top" >
-            <h3 class="nhsuk-u-margin-bottom-0">Related information</h3>
-            <ul class="related-links" class="nhsuk-u-padding-top-0">
-              <li><a href="javascript:void(0);" title="">What is screening?</a></li>
-              <li><a href="javascript:void(0);" title="">What types of screening are offered by the NHS in England?</a></li>
-              <li><a href="javascript:void(0);" title="">Benefits, risks and limitations of screening</a></li>
-              <li><a href="javascript:void(0);" title="">Confidentiality and use of data</a></li>
-            </ul>
-        </section>
-
-          
+    
+      
 
     </div>      
 </div>
