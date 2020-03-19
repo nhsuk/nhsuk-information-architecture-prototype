@@ -1,0 +1,149 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-lab-5.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Propranolol - NHS.UK
+{% endblock %}
+
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %}
+{% from 'details/macro.njk' import details %}
+
+
+{% endblock %}
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-two-thirds">
+      <!-- Change the page title here -->
+
+      <nav class="nhsuk-u-margin-bottom-3" aria-label="Breadcrumb">
+          <div >
+            <ol class="nhsuk-breadcrumb__list ">
+                <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-5/">Home</a></li>
+              <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-5/a-to-z">Health A to Z</a></li>
+        
+            </ol>
+            <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/lab-5/a-to-z">Health A to Z</a></p>
+          </div>
+        </nav>
+
+
+      <h1>Propranolol</h1>
+      <p class="nhsuk-lede-text">Propranolol belongs to a group of medicines called beta blockers. It's used to treat heart problems, help with <a href="/conditions/stress-anxiety-depression/understanding-panic/">anxiety</a> and prevent <a href="/conditions/migraine/">migraines</a>. </p>
+      <section id="key-links" >
+        <!--<h3 class="nhsuk-u-margin-bottom-0">Pages in this guide</h3>-->
+        <ul class="key-links" class="nhsuk-u-padding-top-0">
+          <li> 
+            <a href=""> 
+              About propranolol
+            </a>
+          </li>
+          <li> 
+            <a href=""> 
+              Key facts
+            </a>
+          </li>
+          <li> 
+            <a href=""> 
+              Who can and can't take propranolol
+            </a>
+          </li>
+          <li> 
+            <a href=""> 
+              How and when to take it
+            </a>
+          </li>
+          <li> 
+            <a href=""> 
+              Side effects
+            </a>
+          </li>
+          <li> 
+            <a href=""> 
+              How to cope with side effects
+            </a>
+          </li>
+          <li> 
+            <a href=""> 
+              Pregnancy and breastfeeding
+            </a>
+          </li>
+          <li> 
+            <a href=""> 
+              Cautions with other medicines
+            </a>
+          </li>
+          <li> 
+            <a href=""> 
+              Common questions
+            </a>
+          </li>
+
+
+          <li><a href="javascript:void(0);" title="">Aspirin for pain relief</a></li>
+          <li><a href="/lab-5/a-to-z/aspirin/aspirin-low-dose" title="">Low-dose aspirin</a></li>
+        </ul>
+    </section>
+
+
+
+
+    <section id="key-links" class="border-top" >
+            <h3 class="nhsuk-u-margin-bottom-0">Related information</h3>
+            <ul class="related-links" class="nhsuk-u-padding-top-0">
+              <li>
+                <a href=""> 
+                  Angina
+                </a>
+              </li>
+              <li>
+                <a href=""> 
+                  Arrhythmia
+                </a>
+              </li>
+              <li>
+                <a href=""> 
+                  Heart attack
+                </a>
+              </li>
+              <li>
+                <a href=""> 
+                  Heart failure
+                </a>
+              </li>
+              <li>
+                <a href=""> 
+                  High blood pressure (hypertension)
+                </a>
+              </li>
+              <li>
+                <a href=""> 
+                  Migraine
+                </a>
+              </li>
+              <li>
+                <a href=""> 
+                  Why do I feel anxious and panicky?
+                </a>
+              </li>
+
+
+            </ul>
+        </section>
+
+          
+
+    </div>      
+</div>
+{% endblock %}
