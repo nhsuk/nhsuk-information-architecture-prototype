@@ -556,3 +556,26 @@ h4 + .nhsuk-inset-text {
   padding-bottom: 24px;
   padding-top: 24px;
 }
+
+
+#nhsuk-cookie-banner ul, #nhsuk-cookie-banner li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-width: 48.0625em) {
+  #nhsuk-cookie-banner li {
+      display: inline;
+      margin-right: 20px;
+  }
+}
+
+#nhsuk-cookie-banner .nhsuk-cookie-banner {
+  background: white;
+  position: relative;
+  box-shadow: 0 0 4px 0 #212b32;
+  padding: 24px 0 19px;
+  width: 100%;
+  z-index: 1;
+}
