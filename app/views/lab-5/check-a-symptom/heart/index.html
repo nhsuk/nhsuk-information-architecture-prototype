@@ -14,16 +14,7 @@
 <!-- Breadcrumb goes inside the beforeContent block -->
 <!-- More info and code for the breadcrumb can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/breadcrumbs -->
 {% block beforeContent %}
-  {{ breadcrumb({
-    items: [
-    {
-      href: "/lab-5/home",
-      text: "Home"
-    }
-  ],
-    href: "/lab-5/a-to-z",
-    text: "Health A to Z"
-  }) }}
+
 {% endblock %}
 
 <!-- Your page content goes inside the content block -->
@@ -32,6 +23,20 @@
 <div class="nhsuk-grid-row">
   <div class="nhsuk-grid-column-full">
   <!-- Change the page title here -->
+
+
+  <nav class="nhsuk-u-margin-bottom-3 nhsuk-u-padding-top-0" aria-label="Breadcrumb">
+      <div >
+        <ol class="nhsuk-breadcrumb__list ">
+            <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-5/">Home</a></li>
+
+          <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-5/check-a-symptom">Check a Symptom</a></li>              
+        </ol>
+        <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/lab-5/check-a-symptom">Check a Symptom</a></p>
+      </div>
+    </nav>
+
+    
     <h1>Heart</h1>
     <p class="nhsuk-lede-text">Find information on this page about chest conditions, symptoms, treatments and self-help.</p>
     
