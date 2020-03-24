@@ -164,14 +164,18 @@
 <script>
   const cookieButton = document.querySelectorAll('.nhsuk-cookie-banner button');
   const cookieBanner = document.getElementById('nhsuk-cookie-banner');
-    console.log(cookieBanner);
+  // const cookieName = document.cookie = "name=banner";
 
   cookieButton.forEach((button)  => {
     button.addEventListener('click', function(){
       cookieBanner.style.display = 'none';
-      console.log(cookieButton);      
+      // document.cookie = "name=banner";
+
+      console.log(document.cookie);
     })
   });
+
+
 
 
 </script>
