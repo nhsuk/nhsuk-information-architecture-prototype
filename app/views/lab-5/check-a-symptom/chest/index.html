@@ -13,42 +13,46 @@
 
 <!-- Breadcrumb goes inside the beforeContent block -->
 <!-- More info and code for the breadcrumb can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/breadcrumbs -->
-{% block beforeContent %}
-  {{ breadcrumb({
-    items: [
-    {
-      href: "/lab-5/home",
-      text: "Home"
-    }
-  ],
-    href: "/lab-5/check-a-symptom",
-    text: "Check a Symptom"
-  }) }}
-{% endblock %}
+
 
 <!-- Your page content goes inside the content block -->
 <!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
 {% block content %}
 <div class="nhsuk-grid-row">
   <div class="nhsuk-grid-column-full">
+
+
+      <nav class="nhsuk-u-margin-bottom-3 nhsuk-u-padding-top-0" aria-label="Breadcrumb">
+          <div >
+            <ol class="nhsuk-breadcrumb__list ">
+                <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-5/">Home</a></li>
+
+              <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-5/check-a-symptom">Check a Symptom</a></li>              
+            </ol>
+            <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/lab-5/check-a-symptom">Check a Symptom</a></p>
+          </div>
+        </nav>
   <!-- Change the page title here -->
     <h1>Chest and upper back symptoms</h1>
     <!-- <p class="nhsuk-lede-text">Find information on this page about chest and upper back symptoms.</p> -->
     
 
 
-    <article>
-      
-    </article>
-<hr class="nhsuk-hr">
     <section>
       <div class="nhsuk-grid-row">
       <div class="nhsuk-grid-column-full">
         <div class="block-links_list_group">
           <h2 class="nhsuk-u-visually-hidden">Related pages symptoms</h2>
-              <div class="nhsuk-o-grid__item nhsuk-o-grid__item--two-thirds nhsuk-grid-column-one-half">
+
+
+
+
+   
                 <!-- <h3>Symptoms</h3> -->
-                <ul class="nhsuk-list nhsuk-list-links">                  
+
+
+
+                <ul class="key-links">                  
                   <li> 
                     <a href="javascript:void(0)">
                       Breast lumps
@@ -102,7 +106,7 @@
                 </ul>             
             </div>
 
-          </div>
+
          
       </div>
     </div> 
