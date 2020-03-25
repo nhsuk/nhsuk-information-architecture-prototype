@@ -30,7 +30,29 @@
       <h1>
         Check a symptom
       </h1>
-      <div class="nhsuk-inset-text">
+
+      <h2>Symptoms that put life at risk</h2>
+      <div class="nhsuk-action-link nhsuk-u-margin-bottom-6">
+        <a class="nhsuk-action-link__link" href="javascript:void(0);">
+          <svg class="nhsuk-icon nhsuk-icon__arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z"></path>
+          </svg>
+          <span class="nhsuk-action-link__text">When to call 999</span>
+        </a>
+      </div>
+      <div class="nhsuk-action-link nhsuk-u-margin-bottom-9">
+        <a class="nhsuk-action-link__link" href="javascript:void(0);">
+          <svg class="nhsuk-icon nhsuk-icon__arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z"></path>
+          </svg>
+          <span class="nhsuk-action-link__text">When to contact 111</span>
+        </a>
+      </div>
+
+
+      <!-- <div class="nhsuk-inset-text">
         <span class="nhsuk-u-visually-hidden">Information: </span>
       <h2 class="nhsuk-heading-m">
         If you think it's an emergency:
@@ -55,7 +77,7 @@
         </li>
       </ul>
 
-      </div>
+      </div> -->
 
       <!-- Add your content here -->
       <!-- <h2>If you think there's an emergency</h2>
@@ -64,127 +86,52 @@
         "href": "#/stuff"
       }) }} -->
 
+      <!-- <div>
+        <ul class="key-links">
+          <h2>Symptoms common in winter </h2>
+          <li><a href="/lab-5/a-to-z/diarrhoea-and-vomiting/" title="">Diarrhoea and vomiting</a></li>
+          <li><a href="javascript:void(0);" title="">Temprature</a></li>
+          <li><a href="javascript:void(0);" title="">Coughs and sneezes</a></li>
+        </ul>
+      </div> -->
 
+      <div class="nhsuk-grid-row">
+        
+        <div class="nhsuk-grid-column-one-half">
+          <h2>Symptoms common in winter </h2>
+
+         {{ promo({
+           "href": "#/stuff",
+           "heading": "Seasonal symptoms",
+           "headingLevel": 3,
+           "description": "Includes diarrhoea and vomiting, temprature and coughs and sneezes."
+         }) }}
+       </div>
+      </div>
       
     </div>
+
+  
+
+
   </section>
+
+
+
 
   <section>
     <div class="nhsuk-grid-column-full nhsuk-u-margin-bottom-8">
     
-      <h2>Body parts</h2>
+      <h2>Symptoms that affect the whole body</h2>
       <!--<p>Gen text...</p>-->
       <div class="nhsuk-grid-row">
-
-
-        <div class="nhsuk-grid-column-one-half">
-          {{ promo({
-            "href": "#/stuff",
-            "heading": "Head, hair and face",
-            "headingLevel": 3
-          }) }}
-        </div>
-
-        <div class="nhsuk-grid-column-one-half">
-          {{ promo({
-            "href": "#",
-            "heading": "Ears",
-            "headingLevel": 3
-          }) }}
-        </div>
-
-        <div class="nhsuk-grid-column-one-half">
-          {{ promo({
-            "href": "#",
-            "heading": "Eyes",
-            "headingLevel": 3
-          }) }}
-        </div>
-
-        <div class="nhsuk-grid-column-one-half">
-          {{ promo({
-            "href": "#/stuff",
-            "heading": "Nose",
-            "headingLevel": 3
-          }) }}
-        </div>
-
-        <div class="nhsuk-grid-column-one-half">
-          {{ promo({
-            "href": "#",
-            "heading": "Jaw, mouth and teeth",
-            "headingLevel": 3
-          }) }}
-        </div> 
-
-         <div class="nhsuk-grid-column-one-half">
-          {{ promo({
-            "href": "#/stuff",
-            "heading": "Neck and throat",
-            "headingLevel": 3
-          }) }}
-        </div>
-
-         <div class="nhsuk-grid-column-one-half">
-          {{ promo({
-            "href": "#/stuff",
-            "heading": "Shoulders and arms",
-            "headingLevel": 3
-          }) }}
-        </div>
-          <div class="nhsuk-grid-column-one-half">
-          {{ promo({
-            "href": "#/stuff",
-            "heading": "Wrists, hands and fingers",
-            "headingLevel": 3
-          }) }}
-        </div>
-
-        <div class="nhsuk-grid-column-one-half">
-          {{ promo({
-            "href": "/lab-5/check-a-symptom/chest",
-            "heading": "Chest and upper back",
-            "headingLevel": 3
-          }) }}
-        </div>
-
-        <div class="nhsuk-grid-column-one-half">
-          {{ promo({
-            "href": "/lab-5/check-a-symptom/chest",
-            "heading": "Stomach and sides",
-            "headingLevel": 3
-          }) }}
-        </div>
-
-        <div class="nhsuk-grid-column-one-half">
-          {{ promo({
-            "href": "/lab-2/feet-and-legs",
-            "heading": "Groin and genitals",
-            "headingLevel": 3
-          }) }}
-        </div>
-
-        <div class="nhsuk-grid-column-one-half">
-          {{ promo({
-            "href": "#/stuff",
-            "heading": "Bottom",
-            "headingLevel": 3
-          }) }}
-        </div>
-
-        <div class="nhsuk-grid-column-one-half">
-          {{ promo({
-            "href": "/lab-5/check-a-symptom/heart",
-            "heading": "Hips, legs and feet",
-            "headingLevel": 3
-          }) }}
-        </div> 
 
          <div class="nhsuk-grid-column-one-half">
           {{ promo({
             "href": "#/stuff",
             "heading": "Skin",
-            "headingLevel": 3
+            "headingLevel": 3,
+            "description": "Includes dryness, itchy skin and rashes."
           }) }}
         </div>
 
@@ -192,14 +139,16 @@
           {{ promo({
             "href": "#/stuff",
             "heading": "Bones",
-            "headingLevel": 3
+            "headingLevel": 3,
+            "description": "Includes breaks, pains and swellings."
           }) }}
         </div>
           <div class="nhsuk-grid-column-one-half">
           {{ promo({
             "href": "#/stuff",
             "heading": "Whole body",
-            "headingLevel": 3
+            "headingLevel": 3,
+            "description": "Includes aches, high temperature and tiredness."
           }) }}
         </div>
 
@@ -209,17 +158,104 @@
   </section> 
 
 
+  <section>
+    <div class="nhsuk-grid-column-full nhsuk-u-margin-bottom-8">
+    
+      <h2>Symptoms that affect body parts</h2>
+      <!--<p>Gen text...</p>-->
+      <div class="nhsuk-grid-row">
+
+
+        <div class="nhsuk-grid-column-one-half">
+          {{ promo({
+            "href": "#/stuff",
+            "heading": "Head, hair and face",
+            "headingLevel": 3,
+            "description": "Includes ears, eyes, mouth and nose."
+          }) }}
+        </div>
+
+         <div class="nhsuk-grid-column-one-half">
+          {{ promo({
+            "href": "#/stuff",
+            "heading": "Neck and throat",
+            "headingLevel": 3,
+            "description": "Includes aches, lumps and soreness."
+          }) }}
+        </div>
+
+         <div class="nhsuk-grid-column-one-half">
+          {{ promo({
+            "href": "#/stuff",
+            "heading": "Shoulders and arms",
+            "headingLevel": 3,
+            "description": "Includes aches, joints and muscle pains."
+          }) }}
+        </div>
+          <div class="nhsuk-grid-column-one-half">
+          {{ promo({
+            "href": "#/stuff",
+            "heading": "Wrists, hands and fingers",
+            "headingLevel": 3,
+            "description": "Includes joints, problems and tendons."
+          }) }}
+        </div>
+
+        <div class="nhsuk-grid-column-one-half">
+          {{ promo({
+            "href": "/lab-5/check-a-symptom/chest",
+            "heading": "Chest and upper back",
+            "headingLevel": 3,
+            "description": "Includes aches, emergencies and other pains."
+          }) }}
+        </div>
+
+        <div class="nhsuk-grid-column-one-half">
+          {{ promo({
+            "href": "/lab-5/check-a-symptom/chest",
+            "heading": "Stomach and sides",
+            "headingLevel": 3,
+            "description": "Includes aches, strains and upsets."
+          }) }}
+        </div>
+
+        <div class="nhsuk-grid-column-one-half">
+          {{ promo({
+            "href": "/lab-2/feet-and-legs",
+            "heading": "Groin and genitals",
+            "headingLevel": 3,
+            "description": "Includes lumps, pains and worries."
+          }) }}
+        </div>
+
+        <div class="nhsuk-grid-column-one-half">
+          {{ promo({
+            "href": "#/stuff",
+            "heading": "Bottom",
+            "headingLevel": 3,
+            "description": "Includes itchiness, pains and soreness."
+          }) }}
+        </div>
+
+        <div class="nhsuk-grid-column-one-half">
+          {{ promo({
+            "href": "/lab-5/check-a-symptom/heart",
+            "heading": "Hips, legs and feet",
+            "headingLevel": 3,
+            "description": "Includes aches, pains and strains."
+          }) }}
+        </div> 
+
+
+      </div>
+    </div>  
+
+  </section> 
+
 
 <!-- End of content -->
 </div>
 
-<div >
-  <ul class="key-links">
-    <h2>Common winter symptoms</h2>
-    <li><a href="/lab-5/a-to-z/norovirus/" title="">Sickness and diarrhoea</a></li>
-    <li><a href="javascript:void(0);" title="">Temprature</a></li>
-    <li><a href="javascript:void(0);" title="">Coughs and sneezes</a></li>
-  </ul>
-</div>
+
 
 {% endblock %}

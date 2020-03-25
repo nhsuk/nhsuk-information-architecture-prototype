@@ -575,3 +575,22 @@ h4 + .nhsuk-inset-text {
   width: 100%;
   z-index: 1;
 }
+
+.no-link {
+  color: #212b32;
+  text-decoration: none;
+
+  &:hover {
+    color: #212b32;
+    text-decoration: none!important;
+  }
+
+}
+
+.no-link-parent:hover {
+  text-decoration: none!important;
+
+  .link {
+    text-decoration: underline;
+  }
+}
