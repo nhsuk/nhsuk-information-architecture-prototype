@@ -1,5 +1,5 @@
 <!-- Extends the layout from /views/layout.html -->
-{% extends 'layout-lab-5.html' %}
+{% extends 'layout-lab-5-cookies.html' %}
 <!-- 
   In /views/layout.html you can:
     - change the header and footer 
@@ -8,7 +8,7 @@
 
 <!-- Set the page title inside the pageTitle block -->
 {% block pageTitle %}
-  Beta blockers - NHS.UK
+  Cancer - NHS.UK
 {% endblock %}
 
 
@@ -33,12 +33,12 @@
 
       <!-- Change the page title here -->
       <h1>
-        Beta blockers
+        Cancer
       </h1>
 
       <div class="nhsuk-grid-row">
           <div class="nhsuk-grid-column-two-thirds">
-              <p class="nhsuk-lede-text">Beta blockers work mainly by slowing down the heart. They can be used to treat various conditions, including <a href="">angina</a>, <a href="">high blood pressure</a> and <a href="">overactive thyroid (hyperthyroidism)</a>.</p>
+              <p class="nhsuk-lede-text">Cancer is where cells grow and reproduce uncontrollably in a specific part of the body. These cells can invade and destroy surrounding healthy tissue, including organs.</p>
           </div>
         </div>
 
@@ -52,16 +52,48 @@
 
       <section id="Introduction">
 
+          <div class="nhsuk-grid-row nhsuk-promo-group nhsuk-u-padding-bottom-4 nhsuk-u-padding-top-4">
+              <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+                <div class="nhsuk-promo nhsuk-promo--small">
+                  <a class="nhsuk-promo__link-wrapper" href="/lab-5/a-to-z/cancer/types-of-cancer/cervical-cancer/symptoms">
+                    <div class="nhsuk-promo__content">
+                      <h3 class="nhsuk-promo__heading">Symptoms of cervical cancer</h3>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+                  <div class="nhsuk-promo nhsuk-promo--small">
+                    <a class="nhsuk-promo__link-wrapper" href="javascript:void(0);">
+                      <div class="nhsuk-promo__content">
+                        <h3 class="nhsuk-promo__heading">Breast lumps</h3>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+                    <div class="nhsuk-promo nhsuk-promo--small">
+                      <a class="nhsuk-promo__link-wrapper" href="javascript:void(0);">
+                        <div class="nhsuk-promo__content">
+                          <h3 class="nhsuk-promo__heading">Breast cancer in men</h3>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+
+          </div>
 
 
         <div class="nhsuk-grid-row nhsuk-promo-group ">
 
           <div class="nhsuk-grid-column-one-half nhsuk-promo-group__item">
               <div class="nhsuk-promo nhsuk-promo_canon">
-                <a class="nhsuk-promo__link-wrapper" href="#">
+                <a class="nhsuk-promo__link-wrapper" href="javascript:void(0);">
                   <div class="nhsuk-promo__content">
-                    <h3 class="nhsuk-promo__heading">Overview</h3>
-                    <p class="nhsuk-promo__description">Beta blockers are medicines available by prescription only. They can only be prescribed by a GP or another suitably-qualified healthcare professional.</p>
+                    <h3 class="nhsuk-promo__heading">Spotting signs of cancer</h3>
+                    <p class="nhsuk-promo__description">Early signs of cancer can include changes to how the body normally works, or unusual unexplained symptoms.</p>
                   </div>
                   <div class="arrow" style="">
                     <svg id="icon-plus" xmlns="http://www.w3.org/2000/svg" width="26.667" height="26.667" viewBox="0 0 26.667 26.667">
@@ -78,10 +110,10 @@
 
             <div class="nhsuk-grid-column-one-half nhsuk-promo-group__item">
               <div class="nhsuk-promo nhsuk-promo_canon">
-                <a class="nhsuk-promo__link-wrapper" href="/lab-5/a-to-z/cancer/reducing-the-risk-of-cancer">
+                <a class="nhsuk-promo__link-wrapper" href="/lab-5/a-to-z/cancer/types-of-cancer">
                   <div class="nhsuk-promo__content">
-                    <h3 class="nhsuk-promo__heading">Atenolol</h3>
-                    <p class="nhsuk-promo__description">Atenolol is also called Tenormin. It's used to treat high blood pressure and irregular heartbeats (arrhythmia). It can also be used to prevent chest pain caused by angina.</p>
+                    <h3 class="nhsuk-promo__heading">Types of cancer</h3>
+                    <p class="nhsuk-promo__description">1 in 2 people will develop some form of cancer during their lifetime. There are many different types.</p>
                   </div>
                   <div class="arrow" style="">
                     <svg id="icon-plus" xmlns="http://www.w3.org/2000/svg" width="26.667" height="26.667" viewBox="0 0 26.667 26.667">
@@ -101,10 +133,10 @@
 
             <div class="nhsuk-grid-column-one-half nhsuk-promo-group__item">
                 <div class="nhsuk-promo nhsuk-promo_canon">
-                  <a class="nhsuk-promo__link-wrapper" href="/lab-5/a-to-z/cancer/cancer-screening">
+                  <a class="nhsuk-promo__link-wrapper" href="/lab-5/a-to-z/cancer/cancer-treatments">
                     <div class="nhsuk-promo__content">
-                      <h3 class="nhsuk-promo__heading">Bisoprolol</h3>
-                      <p class="nhsuk-promo__description">Bisoprolol is also called Cardicor or Emcor. Taking it helps to prevent future heart disease, heart attacks and strokes.</p>
+                      <h3 class="nhsuk-promo__heading">Cancer treatments</h3>
+                      <p class="nhsuk-promo__description">Solid tumours can usually be removed by surgery. Chemotherapy and radiotherapy are two other common treatments.</p>
                     </div>
                     <div class="arrow" style="">
                       <svg id="icon-plus" xmlns="http://www.w3.org/2000/svg" width="26.667" height="26.667" viewBox="0 0 26.667 26.667">
@@ -121,12 +153,13 @@
 
             <div class="nhsuk-grid-column-one-half nhsuk-promo-group__item">
               <div class="nhsuk-promo nhsuk-promo_canon">
-                <a class="nhsuk-promo__link-wrapper" href="/lab-5/a-to-z/cancer/cancer-treatments">
+                <a class="nhsuk-promo__link-wrapper" href="/lab-5/a-to-z/cancer/reducing-the-risk-of-cancer">
                   <div class="nhsuk-promo__content">
-                    <h3 class="nhsuk-promo__heading">Metoprolol</h3>
+                    <h3 class="nhsuk-promo__heading">Reducing the risk of cancer</h3>
                     <p class="nhsuk-promo__description">
-                      Metoprolol is also called Betaloc or Lopresor. It can help to reduce your symptoms if you have too much thyroid hormone in your body (thyrotoxicosis).
 
+
+                        Simple lifestyle changes can greatly reduce the risk of developing cancer.
 
 
                     </p>
@@ -150,10 +183,10 @@
 
               <div class="nhsuk-grid-column-one-half nhsuk-promo-group__item">
                   <div class="nhsuk-promo nhsuk-promo_canon">
-                    <a class="nhsuk-promo__link-wrapper" href="/lab-5/a-to-z/beta-blockers/propranolol">
+                    <a class="nhsuk-promo__link-wrapper" href="/lab-5/a-to-z/cancer/cancer-screening">
                       <div class="nhsuk-promo__content">
-                        <h3 class="nhsuk-promo__heading">Propranolol</h3>
-                        <p class="nhsuk-promo__description">Propranolol is also called Inderal or Angilol. It's used to treat heart problems, help with anxiety and prevent migraines. </p>
+                        <h3 class="nhsuk-promo__heading">Cancer screening</h3>
+                        <p class="nhsuk-promo__description">Cancer screening involves having tests to check if a person has cancer, or is at risk.</p>
                       </div>
                       <div class="arrow" style="">
                         <svg id="icon-plus" xmlns="http://www.w3.org/2000/svg" width="26.667" height="26.667" viewBox="0 0 26.667 26.667">
@@ -168,7 +201,26 @@
                   </div>
                 </div>
   
-             
+                <div class="nhsuk-grid-column-one-half nhsuk-promo-group__item">
+                    <div class="nhsuk-promo nhsuk-promo_canon">
+                      <a class="nhsuk-promo__link-wrapper" href="javascript:void(0);">
+                        <div class="nhsuk-promo__content">
+                          <h3 class="nhsuk-promo__heading">Cancer services</h3>
+                          <p class="nhsuk-promo__description">Find the local cancer service you need.</p>
+                        </div>
+                        <div class="arrow" style="">
+                          <svg id="icon-plus" xmlns="http://www.w3.org/2000/svg" width="26.667" height="26.667" viewBox="0 0 26.667 26.667">
+                            <circle id="Oval" cx="13.333" cy="13.333" r="13.333" fill="#005EB8"/>
+                            <g id="Group_1" data-name="Group 1" transform="translate(11.667 9.229) rotate(45)">
+                              <path id="Path" d="M0,0V5.333" transform="translate(5.333 0)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"/>
+                              <path id="Path-2" data-name="Path" d="M0,0H5.333" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"/>
+                            </g>
+                          </svg>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+
 
     
 
