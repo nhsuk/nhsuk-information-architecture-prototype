@@ -49,7 +49,7 @@ Heart Attack - Overview - NHS.UK
               Overiew – heart attack
             </h1>
 
-            <p class="nhsuk-lede-text">
+            <p >
               A heart attack (myocardial infarction or MI) is a serious medical emergency in which the supply
               of blood to the heart is suddenly blocked, usually by a blood clot.
             </p>
@@ -58,10 +58,15 @@ Heart Attack - Overview - NHS.UK
 
               <a id="overview"></a>
 
-              <p>A heart attack is a medical emergency. <a href="Tel: 999">Call 999</a> and ask for an ambulance if
-                you&nbsp;suspect&nbsp;a heart attack.</p>
-              <p>A lack of blood to the heart&nbsp;may seriously damage the heart muscle and can be life threatening.
-              </p>
+              {{ warningCallout({
+                "heading": "Important",
+                "HTML": "<p>A heart attack is a medical emergency. <a href='Tel: 999'>Call 999</a> and ask for an ambulance if
+                  you suspect a heart attack.</p>
+                <p>A lack of blood to the heart may seriously damage the heart muscle and can be life threatening.
+                </p>"
+              }) }}
+
+              
 
 
             </section>
