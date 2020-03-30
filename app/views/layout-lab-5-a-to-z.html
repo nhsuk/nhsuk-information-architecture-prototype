@@ -20,29 +20,6 @@
 <!-- Header goes inside the header block -->
 <!-- More info and code for the header can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/header -->
 {% block header %}
-<div id="nhsuk-cookie-banner">
-  <div class="nhsuk-cookie-banner" id="cookiebanner">
-    <div class="nhsuk-width-container">
-        <h2>Cookies on the NHS website</h2>
-        <p>We've put some small files called cookies on your device to make our site work.</p>
-        <p>We'd also like to use analytics cookies. These send information about how our site is used to services called Adobe Analytics, Hotjar and Google Analytics. We use this information to improve our site.</p>
-        <p>Let us know if this is OK. We'll use a cookie to save your choice. You can <a id="nhsuk-cookie-banner__link" href="/our-policies/cookies-policy/" tabindex="1">read more about our cookies</a> before you choose.</p>
-        <ul>
-            <li><button class="nhsuk-button" id="nhsuk-cookie-banner__link_accept_analytics" href="#" tabindex="2">I'm OK with analytics cookies</button></li>
-            <li><button class="nhsuk-button" id="nhsuk-cookie-banner__link_accept" href="#" tabindex="3">Do not use analytics cookies</button></li>
-        </ul>
-    </div>
-  </div>
-
-  <div class="nhsuk-success-banner" id="nhsuk-cookie-confirmation-banner" style="display:none;">
-    <div class="nhsuk-width-container">
-      <p id="nhsuk-success-banner__message">You can change your cookie settings at any time using our <a href="/our-policies/cookies-policy/">cookies page</a>.</p>
-    </div>
-  </div>
-</div>
-
-
-
 <header class="nhsuk-header" role="banner">
   <div class="nhsuk-width-container nhsuk-header__container">
     <div class="new-search-results-wrapper">
@@ -82,8 +59,8 @@
   <nav>
     <div class="nhsuk-width-container" style="margin: 0 auto;">
       <ul class="ia-new-nav">
-        <li class="ia-new-nav__item">
-          <a class="ia-new-nav__link ia-new-nav__item--active" href="/lab-5/a-to-z">
+        <li class="ia-new-nav__item ia-new-nav__item--active">
+          <a class="ia-new-nav__link" href="/lab-5/a-to-z">
             Health
             <span class="ia-new-nav__link--break">A to Z</span>
           </a>
@@ -126,9 +103,9 @@
   <div class="nhsuk-grid-row">
   <div class="nhsuk-grid-column-full">
   <div class="nhsuk-global-alert__content">
-  <div class="nhsuk-global-alert__message"><h2>Coronavirus: do not leave your home</h2>
+  <div class="nhsuk-global-alert__message"><h2 class="nhsuk-heading-m nhsuk-u-margin-bottom-2">Coronavirus: do not leave your home</h2>
   <p style="margin-bottom: 0;">
-    <p>Everyone must stay at home to help stop the spread of <a href="https://www.nhs.uk/conditions/coronavirus-covid-19/">coronavirus</a>.</p>
+    <p class="nhsuk-u-margin-bottom-0">Everyone must stay at home to help stop the spread of <a href="https://www.nhs.uk/conditions/coronavirus-covid-19/">coronavirus</a>.</p>
   </div>
   </div></div></div></div></div>
 
@@ -163,25 +140,6 @@
     </div>
 </div>
 </footer>
-<script>
-  const cookieButton = document.querySelectorAll('.nhsuk-cookie-banner button');
-  const cookieBanner = document.getElementById('nhsuk-cookie-banner');
-  // const cookieName = document.cookie = "name=banner";
-
-  cookieButton.forEach((button)  => {
-    button.addEventListener('click', function(){
-      cookieBanner.style.display = 'none';
-      // document.cookie = "name=banner";
-
-      console.log(document.cookie);
-    })
-  });
-
-
-
-
-</script>
-
 
 {% endblock %}
 
