@@ -1,0 +1,118 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-lab-6-a-to-z.html' %}
+<!--
+  In /views/layout.html you can:
+    - change the header and footer
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Symptoms of coronavirus - NHS.UK
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+<!-- More info and code for the breadcrumb can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/breadcrumbs -->
+{% block beforeContent %}
+
+
+
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <!-- Change the page title here -->
+      <nav class="nhsuk-u-margin-bottom-3" aria-label="Breadcrumb">
+          <div >
+            <ol class="nhsuk-breadcrumb__list ">
+                <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-6/">Home</a></li>
+              <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-6/a-to-z">Health A to Z</a></li>
+              <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-6/a-to-z/coronavirus">Coronavirus</a></li>
+
+              <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-6/a-to-z/coronavirus">Coronavirus symptoms</a></li>
+
+            </ol>
+            <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/lab-6/a-to-z/coronavirus">Coronavirus</a></p>
+          </div>
+        </nav>
+
+      <h1>
+        Coronavirus in children
+      </h1>
+
+      
+
+
+      <section id="">
+  
+        <p>Children can get coronavirus (COVID-19), but they seem to get it less often than adults and it's usually less serious.</p><h2><b>What to do if your child has symptoms of coronavirus</b></h2><p>The symptoms of coronavirus are:</p><ul><li>a high temperature</li><li>a new, continuous cough – this means coughing a lot, for more than an hour, or 3 or more coughing episodes in 24 hours</li></ul><p>Call 111 If your child has these symptoms.</p><h2><b>What to do if your child seems very unwell</b></h2><p>Children and babies will still get illnesses that can make them very unwell quickly. It's important to get medical help if you need it.</p>
+      
+        
+    
+    <div class="nhsuk-care-card nhsuk-care-card--urgent">
+      <div class="nhsuk-care-card__heading-container">
+        <h3 class="nhsuk-care-card__heading">
+          <span role="text">
+            <span class="nhsuk-u-visually-hidden">Urgent advice: </span>Call 111 or your GP surgery if your child:
+          </span>
+        </h3>
+        <span class="nhsuk-care-card__arrow" aria-hidden="true"></span>
+      </div>
+      <div class="nhsuk-care-card__content">
+        
+          <ul><li>is under 3 months old and has a temperature of 38C or higher, or you think they have a fever</li><li>is 3 to 6 months old and has a temperature of 39C or higher, or you think they have a fever</li><li>has other signs of illness, such as a rash, as well as a high temperature (fever)</li><li>has a high temperature that's lasted for 5 days or more</li><li>does not want to eat, or is not their usual self and you're worried</li><li>has a high temperature that does not come down with paracetamol</li><li>is dehydrated – for example, nappies are not very wet, sunken eyes, and no tears when they're crying</li></ul>
+        
+        
+      </div>
+    </div>
+    
+      
+        
+    
+    <div class="nhsuk-care-card nhsuk-care-card--immediate">
+      <div class="nhsuk-care-card__heading-container">
+        <h3 class="nhsuk-care-card__heading">
+          <span role="text">
+            <span class="nhsuk-u-visually-hidden">Immediate action required: </span>Call 999 if your child:
+          </span>
+        </h3>
+        <span class="nhsuk-care-card__arrow" aria-hidden="true"></span>
+      </div>
+      <div class="nhsuk-care-card__content">
+        
+          <ul><li>has a stiff neck</li><li>has a rash that does not fade when you press a glass against it <a href="https://www.meningitisnow.org/meningitis-explained/signs-and-symptoms/glass-test/?gclid=CJWh-aLL8s0CFcE_GwodT4ALcg">(use the "glass test" from Meningitis Now)</a></li><li>is bothered by light</li><li>has a seizure or fit for the first time (they cannot stop shaking)</li><li>has unusually cold hands and feet</li><li>has pale, blotchy, blue or grey skin</li><li>has a weak, high-pitched cry that's not like their usual cry</li><li>is drowsy and hard to wake</li><li>is extremely agitated (does not stop crying) or is confused</li><li>finds it hard to breathe and sucks their stomach in under their ribs</li><li>has a soft spot on their head that curves outwards</li><li>is not responding like they usually do, or not interested in feeding or usual activities</li></ul>
+        
+        
+      </div>
+    </div>
+    
+      
+    </section>
+
+
+    <!--<section id="key-links" class="border-top" >
+        <h3 class="nhsuk-u-margin-bottom-0">Related information</h3>
+        <ul class="related-links" class="nhsuk-u-padding-top-0">
+          <li><a href="/lab-6/a-to-z/cancer/types-of-cancer">Types of cancer</a>
+          <li><a href="javascript:void(0);" title="" >Breast cancer</a></li>
+          <li><a href="javascript:void(0);" title="">Lung cancer</a></li>
+          <li><a href="javascript:void(0);" title="">Prostate cancer</a></li>
+          <li><a href="javascript:void(0);" title="">Bowel cancer</a></li>
+        </ul>
+    </section>-->
+
+
+
+
+
+
+
+    </div>
+</div>
+{% endblock %}

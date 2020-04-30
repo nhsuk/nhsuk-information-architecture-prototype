@@ -1,5 +1,5 @@
 <!-- Extends the layout from /views/layout.html -->
-{% extends 'layout-lab-5-a-to-z.html' %}
+{% extends 'layout-lab-6-a-to-z.html' %}
 <!--
   In /views/layout.html you can:
     - change the header and footer
@@ -24,10 +24,10 @@ Coronavirus (COVID-19) - NHS.UK
         <div >
           <ol class="nhsuk-breadcrumb__list ">
               <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-/">Home</a></li>
-            <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-5/a-to-z">Health A to Z</a></li>
+            <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-6/a-to-z">Health A to Z</a></li>
 
           </ol>
-          <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/lab-5/a-to-z">Health A to Z</a></p>
+          <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/lab-6/a-to-z">Health A to Z</a></p>
         </div>
       </nav>
 
@@ -36,9 +36,9 @@ Coronavirus (COVID-19) - NHS.UK
         Coronavirus (COVID-19)
       </h1>
 
-      <div class="nhsuk-grid-row">
-          <div class="nhsuk-grid-column-two-thirds">
-              <p class="nhsuk-lede-text">Get the latest NHS information and advice about coronavirus (COVID-19), a new illness that affects your lungs and airways.</p>
+      <div class="nhsuk-grid-row nhsuk-u-margin-bottom-0">
+          <div class="nhsuk-grid-column-two-thirds nhsuk-u-padding-bottom-0">
+              <p class="nhsuk-lede-text">Get the latest NHS information and advice about coronavirus (COVID-19). </p>
           </div>
         </div>
 
@@ -47,17 +47,47 @@ Coronavirus (COVID-19) - NHS.UK
 
 
       <section id="Introduction">
+        <div class="nhsuk-grid-row nhsuk-promo-group nhsuk-u-padding-bottom-0 nhsuk-u-margin-bottom-0  nhsuk-u-margin-top-0">
+          <!--<div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+            <div class="nhsuk-promo nhsuk-promo--small">
+              <a class="nhsuk-promo__link-wrapper" href="javascript:void(0);">
+                <div class="nhsuk-promo__content">
+                  <h3 class="nhsuk-promo__heading">111 link</h3>
+                </div>
+              </a>
+            </div>
+          </div>-->
 
+          <!--<div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+              <div class="nhsuk-promo nhsuk-promo--small">
+                <a class="nhsuk-promo__link-wrapper" href="javascript:void(0);">
+                  <div class="nhsuk-promo__content">
+                    <h3 class="nhsuk-promo__heading">Who is higher risk from coronavirus</h3>
+                  </div>
+                </a>
+              </div>
+            </div>-->
 
+            <!--<div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+                <div class="nhsuk-promo nhsuk-promo--small">
+                  <a class="nhsuk-promo__link-wrapper" href="javascript:void(0);">
+                    <div class="nhsuk-promo__content">
+                      <h3 class="nhsuk-promo__heading">Breast cancer in men</h3>
+                    </div>
+                  </a>
+                </div>
+              </div>-->
+
+      </div>
 
         <div class="nhsuk-grid-row nhsuk-promo-group ">
 
-          <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+          <div class="nhsuk-grid-column-one-half nhsuk-promo-group__item">
               <div class="nhsuk-promo nhsuk-promo_canon">
-                <a class="nhsuk-promo__link-wrapper" href="/lab-5/a-to-z/coronavirus/symptoms-of-coronavirus">
+                <a class="nhsuk-promo__link-wrapper" href="/lab-6/a-to-z/coronavirus/symptoms">
                   <div class="nhsuk-promo__content">
-                    <h3 class="nhsuk-promo__heading">What to do if you or someone you live with has symptoms of coronavirus</h3>
-                    <p class="nhsuk-promo__description">Advice about not leaving your home (self-isolation) and looking after yourself if you or someone you live with has symptoms.</p>
+                    <h3 class="nhsuk-promo__heading">Symptoms</h3>
+                    <p class="nhsuk-promo__description">Check if you or your child have symptoms of coronavirus and find out what to do.  </p>
                   </div>
                   <div class="arrow" style="">
                     <svg id="icon-plus" xmlns="http://www.w3.org/2000/svg" width="26.667" height="26.667" viewBox="0 0 26.667 26.667">
@@ -72,12 +102,12 @@ Coronavirus (COVID-19) - NHS.UK
               </div>
             </div>
 
-            <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+            <div class="nhsuk-grid-column-one-half nhsuk-promo-group__item">
               <div class="nhsuk-promo nhsuk-promo_canon">
-                <a class="nhsuk-promo__link-wrapper" href="/lab-5/a-to-z/coronavirus/if-you-have-symptoms">
+                <a class="nhsuk-promo__link-wrapper" href="/lab-6/a-to-z/coronavirus/isolation">
                   <div class="nhsuk-promo__content">
-                    <h3 class="nhsuk-promo__heading">People at higher risk from coronavirus</h3>
-                    <p class="nhsuk-promo__description">Advice for people at higher risk from coronavirus, including older people, people with health conditions and pregnant women.</p>
+                    <h3 class="nhsuk-promo__heading">Self-isolation and treatment if you or someone you live with has symptoms</h3>
+                    <p class="nhsuk-promo__description">Advice about staying at home (self-isolation), treatment and recovery.</p>
                   </div>
                   <div class="arrow" style="">
                     <svg id="icon-plus" xmlns="http://www.w3.org/2000/svg" width="26.667" height="26.667" viewBox="0 0 26.667 26.667">
@@ -92,81 +122,17 @@ Coronavirus (COVID-19) - NHS.UK
               </div>
             </div>
 
-            <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
-              <div class="nhsuk-promo nhsuk-promo_canon">
-                <a class="nhsuk-promo__link-wrapper" href="/lab-5/a-to-z/coronavirus/higher-risk">
-                  <div class="nhsuk-promo__content">
-                    <h3 class="nhsuk-promo__heading">Coronavirus in children</h3>
-                    <p class="nhsuk-promo__description">Advice about symptoms of coronavirus in children, including when to get medical help if your child seems unwell. </p>
-                  </div>
-                  <div class="arrow" style="">
-                    <svg id="icon-plus" xmlns="http://www.w3.org/2000/svg" width="26.667" height="26.667" viewBox="0 0 26.667 26.667">
-                      <circle id="Oval" cx="13.333" cy="13.333" r="13.333" fill="#005EB8"/>
-                      <g id="Group_1" data-name="Group 1" transform="translate(11.667 9.229) rotate(45)">
-                        <path id="Path" d="M0,0V5.333" transform="translate(5.333 0)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"/>
-                        <path id="Path-2" data-name="Path" d="M0,0H5.333" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"/>
-                      </g>
-                    </svg>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-          </div>
-
+          </div> <!--END 1-->
 
           <div class="nhsuk-grid-row nhsuk-promo-group ">
 
 
-  
-              <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
-                <div class="nhsuk-promo nhsuk-promo_canon">
-                  <a class="nhsuk-promo__link-wrapper" href="/lab-5/a-to-z/coronavirus/staying-at-home">
-                    <div class="nhsuk-promo__content">
-                      <h3 class="nhsuk-promo__heading">Staying at home to avoid getting coronavirus</h3>
-                      <p class="nhsuk-promo__description">Advice about staying at home to avoid getting coronavirus, including when you can leave your home and how to get medical help.</p>
-                    </div>
-                    <div class="arrow" style="">
-                      <svg id="icon-plus" xmlns="http://www.w3.org/2000/svg" width="26.667" height="26.667" viewBox="0 0 26.667 26.667">
-                        <circle id="Oval" cx="13.333" cy="13.333" r="13.333" fill="#005EB8"/>
-                        <g id="Group_1" data-name="Group 1" transform="translate(11.667 9.229) rotate(45)">
-                          <path id="Path" d="M0,0V5.333" transform="translate(5.333 0)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"/>
-                          <path id="Path-2" data-name="Path" d="M0,0H5.333" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"/>
-                        </g>
-                      </svg>
-                    </div>
-                  </a>
-                </div>
-              </div>
-
-
-              <div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
-                <div class="nhsuk-promo nhsuk-promo_canon">
-                  <a class="nhsuk-promo__link-wrapper" href="/lab-5/a-to-z/coronavirus/how-you-can-help">
-                    <div class="nhsuk-promo__content">
-                      <h3 class="nhsuk-promo__heading">Help the NHS respond to coronavirus</h3>
-                      <p class="nhsuk-promo__description">Find out what you can do to help the NHS respond to the spread of coronavirus.</p>
-                    </div>
-                    <div class="arrow" style="">
-                      <svg id="icon-plus" xmlns="http://www.w3.org/2000/svg" width="26.667" height="26.667" viewBox="0 0 26.667 26.667">
-                        <circle id="Oval" cx="13.333" cy="13.333" r="13.333" fill="#005EB8"/>
-                        <g id="Group_1" data-name="Group 1" transform="translate(11.667 9.229) rotate(45)">
-                          <path id="Path" d="M0,0V5.333" transform="translate(5.333 0)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"/>
-                          <path id="Path-2" data-name="Path" d="M0,0H5.333" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"/>
-                        </g>
-                      </svg>
-                    </div>
-                  </a>
-                </div>
-              </div>
-
-
-              <!--<div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+              <div class="nhsuk-grid-column-one-half nhsuk-promo-group__item">
                   <div class="nhsuk-promo nhsuk-promo_canon">
-                    <a class="nhsuk-promo__link-wrapper" href="/lab-5/a-to-z/coronavirus/how-you-can-help-the-nhs">
+                    <a class="nhsuk-promo__link-wrapper" href="/lab-6/a-to-z/coronavirus/testing">
                       <div class="nhsuk-promo__content">
-                        <h3 class="nhsuk-promo__heading">Coronavirus testing</h3>
-                        <p class="nhsuk-promo__description">What is it, who can be tested, how your tested and understanding the results.</p>
+                        <h3 class="nhsuk-promo__heading">Testing and contact tracing</h3>
+                        <p class="nhsuk-promo__description">Who can get tested, how to get a test, what your test result means and how to use the NHS contact tracing app. </p>
                       </div>
                       <div class="arrow" style="">
                         <svg id="icon-plus" xmlns="http://www.w3.org/2000/svg" width="26.667" height="26.667" viewBox="0 0 26.667 26.667">
@@ -179,27 +145,45 @@ Coronavirus (COVID-19) - NHS.UK
                       </div>
                     </a>
                   </div>
-                </div>-->
+                </div>
+
+
+            
+
+
+                    <div class="nhsuk-grid-column-one-half nhsuk-promo-group__item">
+                      <div class="nhsuk-promo nhsuk-promo_canon">
+                        <a class="nhsuk-promo__link-wrapper" href="/lab-6/a-to-z/coronavirus/social-distancing">
+                          <div class="nhsuk-promo__content">
+                            <h3 class="nhsuk-promo__heading">Social distancing to avoid getting and spreading coronavirus</h3>
+                            <p class="nhsuk-promo__description">Advice about staying at home and away from other people, looking after your wellbeing and using the NHS. </p>
+                          </div>
+                          <div class="arrow" style="">
+                            <svg id="icon-plus" xmlns="http://www.w3.org/2000/svg" width="26.667" height="26.667" viewBox="0 0 26.667 26.667">
+                              <circle id="Oval" cx="13.333" cy="13.333" r="13.333" fill="#005EB8"/>
+                              <g id="Group_1" data-name="Group 1" transform="translate(11.667 9.229) rotate(45)">
+                                <path id="Path" d="M0,0V5.333" transform="translate(5.333 0)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"/>
+                                <path id="Path-2" data-name="Path" d="M0,0H5.333" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"/>
+                              </g>
+                            </svg>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+
+          </div> <!--End 2-->
+
+
+          <div class="nhsuk-grid-row nhsuk-promo-group ">
+
 
   
-            </div>
-
-
-
-
-            <div class="nhsuk-grid-row nhsuk-promo-group nhsuk-u-margin-bottom-0 ">
-
-
-  
-
-
-
-              <!--<div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
+              <div class="nhsuk-grid-column-one-half nhsuk-promo-group__item">
                 <div class="nhsuk-promo nhsuk-promo_canon">
-                  <a class="nhsuk-promo__link-wrapper" href="/lab-5/a-to-z/coronavirus/how-you-can-help-the-nhs">
+                  <a class="nhsuk-promo__link-wrapper" href="/lab-6/a-to-z/coronavirus/high-risk">
                     <div class="nhsuk-promo__content">
-                      <h3 class="nhsuk-promo__heading">What to do if you do NOT have symptoms</h3>
-                      <p class="nhsuk-promo__description">When you can leave home, healthy living, and looking after your mental health. </p>
+                      <h3 class="nhsuk-promo__heading">People at higher risk </h3>
+                      <p class="nhsuk-promo__description">Advice for people at higher risk from coronavirus, including older people, people with health conditions and pregnant women. </p>
                     </div>
                     <div class="arrow" style="">
                       <svg id="icon-plus" xmlns="http://www.w3.org/2000/svg" width="26.667" height="26.667" viewBox="0 0 26.667 26.667">
@@ -212,15 +196,73 @@ Coronavirus (COVID-19) - NHS.UK
                     </div>
                   </a>
                 </div>
-              </div>-->
+              </div>
+  
+  
+  
+  
+  
+  
+                <div class="nhsuk-grid-column-one-half nhsuk-promo-group__item">
+                    <div class="nhsuk-promo nhsuk-promo_canon">
+                      <a class="nhsuk-promo__link-wrapper" href="/lab-6/a-to-z/coronavirus/end-of-life">
+                        <div class="nhsuk-promo__content">
+                          <h3 class="nhsuk-promo__heading">End of life care and bereavement</h3>
+                          <p class="nhsuk-promo__description">How coronavirus can affect end of life care, palliative care and funeral arrangements. </p>
+                        </div>
+                        <div class="arrow" style="">
+                          <svg id="icon-plus" xmlns="http://www.w3.org/2000/svg" width="26.667" height="26.667" viewBox="0 0 26.667 26.667">
+                            <circle id="Oval" cx="13.333" cy="13.333" r="13.333" fill="#005EB8"/>
+                            <g id="Group_1" data-name="Group 1" transform="translate(11.667 9.229) rotate(45)">
+                              <path id="Path" d="M0,0V5.333" transform="translate(5.333 0)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"/>
+                              <path id="Path-2" data-name="Path" d="M0,0H5.333" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"/>
+                            </g>
+                          </svg>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+  
+    
+              </div>
+  
+  
+  
+  
+              <div class="nhsuk-grid-row nhsuk-promo-group nhsuk-u-margin-bottom-0 ">
+  
+  
+    
+  
+  
+  
+                <div class="nhsuk-grid-column-one-half nhsuk-promo-group__item">
+                  <div class="nhsuk-promo nhsuk-promo_canon">
+                    <a class="nhsuk-promo__link-wrapper" href="/lab-6/a-to-z/coronavirus/vaccination">
+                      <div class="nhsuk-promo__content">
+                        <h3 class="nhsuk-promo__heading">Vaccination </h3>
+                        <p class="nhsuk-promo__description">Information about the coronavirus vaccine, including who can get it and how to get it.</p>
+                      </div>
+                      <div class="arrow" style="">
+                        <svg id="icon-plus" xmlns="http://www.w3.org/2000/svg" width="26.667" height="26.667" viewBox="0 0 26.667 26.667">
+                          <circle id="Oval" cx="13.333" cy="13.333" r="13.333" fill="#005EB8"/>
+                          <g id="Group_1" data-name="Group 1" transform="translate(11.667 9.229) rotate(45)">
+                            <path id="Path" d="M0,0V5.333" transform="translate(5.333 0)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"/>
+                            <path id="Path-2" data-name="Path" d="M0,0H5.333" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"/>
+                          </g>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                </div>
 
 
               <!--<div class="nhsuk-grid-column-one-third nhsuk-promo-group__item">
                 <div class="nhsuk-promo nhsuk-promo_canon">
-                  <a class="nhsuk-promo__link-wrapper" href="/lab-5/a-to-z/coronavirus/how-you-can-help-the-nhs">
+                  <a class="nhsuk-promo__link-wrapper" href="/lab-6/a-to-z/coronavirus/more">
                     <div class="nhsuk-promo__content">
-                      <h3 class="nhsuk-promo__heading">How you can help the NHS</h3>
-                      <p class="nhsuk-promo__description">Become a volunteer, help track COVID-19, stay at home.  </p>
+                      <h3 class="nhsuk-promo__heading">Links to more information on coronavirus</h3>
+                      <p class="nhsuk-promo__description">Links from GOV.UK, easy read PDF's, myths and fake news and  info for health professionals   </p>
                     </div>
                     <div class="arrow" style="">
                       <svg id="icon-plus" xmlns="http://www.w3.org/2000/svg" width="26.667" height="26.667" viewBox="0 0 26.667 26.667">
@@ -266,16 +308,16 @@ Coronavirus (COVID-19) - NHS.UK
 
       </section>
 
-      <section id="key-links" class="nhsuk-u-padding-bottom-8">
+     <!-- <section id="key-links" class="nhsuk-u-padding-bottom-8">
          <h3 class="nhsuk-u-margin-bottom-0">Coronavirus easy read guides</h3>
           <ul class="key-links" class="nhsuk-u-padding-top-0 ">
             <li><a href="javascript:void(0);" title="">Easy read guide 1</a></li>
             <li><a href="javascript:void(0);" title="">Easy read guide 2</a></li>
             <li><a href="javascript:void(0);" title="">Easy read guide 3</a></li>
           </ul>
-      </section>
+      </section>-->
 
-  <div class="nhsuk-grid-row nhsuk-u-margin-top-0">
+ <div class="nhsuk-grid-row nhsuk-u-margin-top-0">
       <div class="nhsuk-grid-column-one-half nhsuk-promo-group__item">
           <ul class="related-links">
             <h3>Government information and advice  </h3>
@@ -284,11 +326,12 @@ Coronavirus (COVID-19) - NHS.UK
               <li><a href="javascript:void(0);" title="">GOV.UK: coronavirus advice for travellers</a><br />www.gov.uk</li>
           </ul>
 
+
           
         </div>
       </div>
 
-      <div class="nhsuk-grid-row nhsuk-u-margin-top-4">
+     <div class="nhsuk-grid-row nhsuk-u-margin-top-4">
           <div class="nhsuk-grid-column-one-half nhsuk-promo-group__item">
               <ul class="related-links">
                 <h3>Information for health professionals  </h3>
@@ -300,7 +343,7 @@ Coronavirus (COVID-19) - NHS.UK
           </div>
 
       <section id="key-links" class="border-top" >
-          <h3 class="nhsuk-u-margin-bottom-0">Advice in other parts of the UK</h3>
+          <h2 class="nhsuk-u-margin-bottom-0">Advice in other parts of the UK</h2>
           <ul class="related-links" class="nhsuk-u-padding-top-0">
             <li><a href="javascript:void(0);">Scotland – NHS Inform: coronavirus</a><br />www.nhsinform.scot</li>
             <li><a href="javascript:void(0);">Wales – NHS Direct Wales: coronavirus</a><br />www.nhsdirect.wales.nhs.uk</li>  
