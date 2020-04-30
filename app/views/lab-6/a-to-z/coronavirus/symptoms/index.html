@@ -1,0 +1,140 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-lab-6-a-to-z.html' %}
+<!--
+  In /views/layout.html you can:
+    - change the header and footer
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Symptoms of coronavirus - NHS.UK
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+<!-- More info and code for the breadcrumb can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/breadcrumbs -->
+{% block beforeContent %}
+
+
+
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <!-- Change the page title here -->
+      <nav class="nhsuk-u-margin-bottom-3" aria-label="Breadcrumb">
+          <div >
+            <ol class="nhsuk-breadcrumb__list ">
+                <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-6/">Home</a></li>
+              <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-6/a-to-z">Health A to Z</a></li>
+              <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-6/a-to-z/coronavirus">Coronavirus</a></li>
+
+
+            </ol>
+            <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/lab-6/a-to-z/coronavirus">Coronavirus</a></p>
+          </div>
+        </nav>
+
+      <h1>
+        Symptoms of coronavirus
+      </h1>
+
+      <article>
+
+    
+            
+      
+        <section>
+          
+    
+    <section id="">
+      
+        <p>Do not go to places like a GP surgery, pharmacy or hospital if you think you might have coronavirus. Stay at home.</p>
+      
+        <p>Get more advice about <a href="/lab-6/a-to-z/coronavirus/coronavirus-in-children">coronavirus in children.</a></p>
+        
+    
+    <div class="nhsuk-care-card nhsuk-care-card--urgent">
+      <div class="nhsuk-care-card__heading-container">
+        <h2 class="nhsuk-care-card__heading">
+          <span role="text">
+            <span class="nhsuk-u-visually-hidden">Urgent advice: </span>Use the 111 online coronavirus service if you have either:
+          </span>
+        </h2>
+        <span class="nhsuk-care-card__arrow" aria-hidden="true"></span>
+      </div>
+      <div class="nhsuk-care-card__content">
+        
+          <ul><li><b>a high temperature</b> – this means you feel hot to touch on your chest or back (you do not need to measure your temperature)</li><li><b>a new, continuous cough</b> – this means coughing a lot for more than an hour, or 3 or more coughing episodes in 24 hours (if you usually have a cough, it may be worse than usual)</li></ul><p>These are the main symptoms of coronavirus.</p><p>The 111 online coronavirus service will ask about your symptoms and tell you what to do.</p>
+        
+          <div class="nhsuk-action-link">
+      <a class="nhsuk-action-link__link" href="https://111.nhs.uk/covid-19/">
+        <svg class="nhsuk-icon nhsuk-icon__arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M0 0h24v24H0z" fill="none"></path>
+          <path d="M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z"></path>
+        </svg>
+        <span class="nhsuk-action-link__text">Use the 111 online coronavirus service</span>
+      </a>
+    </div>
+    
+        
+          <p><b>Only call 111 if you cannot get help online.</b></p>
+        
+        
+      </div>
+    </div>
+    
+      
+        <div class="nhsuk-warning-callout">
+      <h3 class="nhsuk-warning-callout__label">Babies and children</h3>
+      <p>Call 111 if you're worried about a baby or child.</p><p>If they seem very unwell, are getting worse, or you think there's something seriously wrong, call 999.</p><p>Do not delay getting help if you're worried. Trust your instincts.</p><p>Get more advice about <a href="/conditions/coronavirus-covid-19/coronavirus-in-children/">coronavirus in children</a>.</p>
+    </div>
+    
+      
+    </section>
+    
+        </section>
+      
+        <section>
+          
+    
+    <section id="">
+      
+        <h2>Staying at home if you have symptoms (self-isolation)</h2><p>If your symptoms are mild, you'll usually be advised to not leave your home for at least 7 days.</p><p>Anyone you live with should not leave your home for 14 days.</p><p>This is called self-isolation.</p><p>Find out more about <a href="/conditions/coronavirus-covid-19/what-to-do-if-you-or-someone-you-live-with-has-coronavirus-symptoms/staying-at-home-if-you-or-someone-you-live-with-has-coronavirus-symptoms/">self-isolation if you or someone you live with has coronavirus symptoms</a>.</p>
+      
+    </section>
+    
+        </section>
+      
+    
+    
+
+      </article>
+
+
+    <!--<section id="key-links" class="border-top" >
+        <h3 class="nhsuk-u-margin-bottom-0">Related information</h3>
+        <ul class="related-links" class="nhsuk-u-padding-top-0">
+          <li><a href="/lab-6/a-to-z/cancer/types-of-cancer">Types of cancer</a>
+          <li><a href="javascript:void(0);" title="" >Breast cancer</a></li>
+          <li><a href="javascript:void(0);" title="">Lung cancer</a></li>
+          <li><a href="javascript:void(0);" title="">Prostate cancer</a></li>
+          <li><a href="javascript:void(0);" title="">Bowel cancer</a></li>
+        </ul>
+    </section>-->
+
+
+
+
+
+
+
+    </div>
+</div>
+{% endblock %}
