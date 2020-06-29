@@ -1,5 +1,5 @@
 <!-- Extends the layout from /views/layout.html -->
-{% extends 'layout-lab-5-check.html' %}
+{% extends 'layout-lab-7-check.html' %}
 <!--
   In /views/layout.html you can:
     - change the header and footer
@@ -31,24 +31,19 @@
         Check a symptom
       </h1>
 
-      <div class="nhsuk-action-link nhsuk-u-margin-bottom-6">
-        <a class="nhsuk-action-link__link" href="javascript:void(0);">
-          <svg class="nhsuk-icon nhsuk-icon__arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M0 0h24v24H0z" fill="none"></path>
-            <path d="M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z"></path>
-          </svg>
-          <span class="nhsuk-action-link__text">When to call 999</span>
-        </a>
+      <div class="nhsuk-inset-text">
+        <span class="nhsuk-u-visually-hidden">Information: </span>
+        <h3>If you need help now, and you're not sure what to do</h3>
+        <p>Go to <a href="https://111.nhs.uk" title="External website">111.nhs.uk</a> or call 111.</p>
       </div>
-      <div class="nhsuk-action-link nhsuk-u-margin-bottom-2">
-        <a class="nhsuk-action-link__link" href="javascript:void(0);">
-          <svg class="nhsuk-icon nhsuk-icon__arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M0 0h24v24H0z" fill="none"></path>
-            <path d="M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z"></path>
-          </svg>
-          <span class="nhsuk-action-link__text">When to contact 111</span>
-        </a>
-      </div>
+
+      <div class="nhsuk-inset-text">
+          <span class="nhsuk-u-visually-hidden">Information: </span>
+          <h3>If you think it's an emergency</h3>
+          <p>Go to <a href="javascript:void(0);" title="External website">Find your nearest A&E</a></p>
+          <p>Call 999</p>
+        </div>
+
 
 
       <!-- <div class="nhsuk-inset-text">
@@ -88,7 +83,7 @@
       <!-- <div>
         <ul class="key-links">
           <h2>Symptoms common in winter </h2>
-          <li><a href="/lab-5/a-to-z/diarrhoea-and-vomiting/" title="">Diarrhoea and vomiting</a></li>
+          <li><a href="/lab-7/a-to-z/diarrhoea-and-vomiting/" title="">Diarrhoea and vomiting</a></li>
           <li><a href="javascript:void(0);" title="">Temprature</a></li>
           <li><a href="javascript:void(0);" title="">Coughs and sneezes</a></li>
         </ul>
@@ -201,7 +196,7 @@
 
         <div class="nhsuk-grid-column-one-half">
           {{ promo({
-            "href": "/lab-5/check-a-symptom/chest",
+            "href": "/lab-7/check-a-symptom/chest",
             "heading": "Chest and upper back",
             "headingLevel": 3,
             "description": "Includes chest pain, shortness of breath and stiffness."
@@ -210,7 +205,7 @@
 
         <div class="nhsuk-grid-column-one-half">
           {{ promo({
-            "href": "/lab-5/check-a-symptom/stomach-and-side",
+            "href": "/lab-7/check-a-symptom/stomach-and-side",
             "heading": "Stomach and sides",
             "headingLevel": 3,
             "description": "Includes feeling sick, strains and tummy upsets."
@@ -219,7 +214,7 @@
 
         <div class="nhsuk-grid-column-one-half">
           {{ promo({
-            "href": "/lab-2/feet-and-legs",
+            "href": "/lab-7/check-a-symptom/groin",
             "heading": "Groin and genitals",
             "headingLevel": 3,
             "description": "Includes erection problems, lumps and burning sensations."
@@ -228,7 +223,7 @@
 
         <div class="nhsuk-grid-column-one-half">
           {{ promo({
-            "href": "/lab-5/check-a-symptom/bottom",
+            "href": "/lab-7/check-a-symptom/bottom",
             "heading": "Bottom",
             "headingLevel": 3,
             "description": "Includes bleeding, itchiness and soreness.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
@@ -237,7 +232,7 @@
 
         <div class="nhsuk-grid-column-one-half">
           {{ promo({
-            "href": "/lab-5/check-a-symptom/heart",
+            "href": "/lab-7/check-a-symptom/heart",
             "heading": "Hips, legs and feet",
             "headingLevel": 3,
             "description": "Includes aching muscles, pain under the foot and stiff joints."
@@ -250,7 +245,7 @@
              <ul class="key-links">
                <h2>Symptoms common in winter </h2>
                <li><a href="javascript:void(0);" title="">Cold sores</a></li>
-               <li><a href="/lab-5/a-to-z/diarrhoea-and-vomiting/" title="">Diarrhoea and vomiting</a></li>
+               <li><a href="/lab-7/a-to-z/diarrhoea-and-vomiting/" title="">Diarrhoea and vomiting</a></li>
                <li>Painful joints (see: <a href="javascript:void(0);" title="">arthritis</a>)</li>
              </ul>
            </div>
