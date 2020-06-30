@@ -746,3 +746,23 @@ h4 + .nhsuk-inset-text {
 .facets__footer {
   display: none;
 }
+
+
+
+.nhsuk-grid-row--flex {
+  @include mq($from: desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+
+    .nhsuk-grid-column-one-third {
+      float: none;
+    }
+
+    .nhsuk-promo {
+      height: 100%;
+      // background: red;
+      margin-bottom: 0;
+    }
+  }
+}
