@@ -35,7 +35,7 @@ Search - NHS.UK
 
     <!-- Change the page title here -->
     <main class="nhsuk-main-wrapper app-main-wrapper nhsuk-u-padding-top-0" id="maincontent">
-        
+
       <div class="nhsuk-grid-row nhsuk-u-margin-top-0">
         <div class="nhsuk-grid-column-two-thirds">
           <h1 class="nhsuk-heading-xl nhsuk-u-margin-bottom-4 ">Search results for meningitis</h1>
@@ -61,79 +61,79 @@ Search - NHS.UK
 
 
 
-        
+
         <div class="nhsuk-grid-row">
           <div class="nhsuk-grid-column-two-thirds">
-            
+
 
               <ul class="nhsuk-list nhsuk-list--border">
-                
+
                   <li>
 
                     <a href="javascript:void(0);" class="app-search-results-item">Meningitis</a>
                     <p class="nhsuk-body-s nhsuk-u-margin-top-1">Read about <strong>meningitis</strong>, an infection of the protective membranes that surround the brain and spinal cord. Find out about the symptoms, vaccines and treatments.</p>
                   </li>
-                
+
                   <li>
 
                     <a href="javascript:void(0);" class="app-search-results-item">Meningitis - Symptoms</a>
                     <p class="nhsuk-body-s nhsuk-u-margin-top-1">Read about the main symptoms of <strong>meningitis</strong>, including the <strong>meningitis</strong> rash, and find out when and where to get medical advice if you have any concerns.</p>
                   </li>
-                
+
                   <li>
 
                     <a href="javascript:void(0);" class="app-search-results-item">Meningitis - Causes</a>
                     <p class="nhsuk-body-s nhsuk-u-margin-top-1">Read about the main causes of <strong>meningitis</strong> and how the infection is spread.</p>
                   </li>
-                
+
                   <li>
 
                     <a href="javascript:void(0);" class="app-search-results-item">Meningitis - Complications</a>
                     <p class="nhsuk-body-s nhsuk-u-margin-top-1">Read about the main risks associated with <strong>meningitis</strong>, including hearing loss, loss of limbs, and problems with memory or concentration.</p>
                   </li>
-                
+
                   <li>
-  
+
                     <a href="javascript:void(0);" class="app-search-results-item">Meningitis - Vaccination </a>
                     <p class="nhsuk-body-s nhsuk-u-margin-top-1">Read about the different vaccines that can help prevent <strong>meningitis</strong> and when they're usually given.</p>
                   </li>
-                
+
                   <li>
 
                     <a href="javascript:void(0);" class="app-search-results-item">Meningitis - Treatment</a>
                     <p class="nhsuk-body-s nhsuk-u-margin-top-1">Read about how <strong>meningitis</strong> is treated, including what tests may be needed and whether treatment is hospital will be necessary.</p>
                   </li>
-                
+
                   <li>
 
                     <a href="javascript:void(0);" class="app-search-results-item">MenB vaccine overview</a>
                     <p class="nhsuk-body-s nhsuk-u-margin-top-1">A new vaccine to prevent <strong>meningitis</strong> B is offered to all babies aged 8 weeks, 16 weeks and 1 year as part of the routine NHS childhood vaccination programme.</p>
                   </li>
-                
+
                   <li>
-     
+
                     <a href="javascript:void(0);" class="app-search-results-item">Hib/MenC vaccine FAQs</a>
                     <p class="nhsuk-body-s nhsuk-u-margin-top-1">Common questions about the Hib/Men C vaccine, which is routinely offered to babies at 1 year old. The Hib/Men C vaccine protects against <strong>meningitis</strong> C and haemophilus influenzae type b infections.</p>
                   </li>
-                
+
                   <li>
-       
+
                     <a href="javascript:void(0);" class="app-search-results-item">MenACWY vaccine </a>
                     <p class="nhsuk-body-s nhsuk-u-margin-top-1">The MenACWY vaccine protects against 4 different strains of the meningococcal bacteria that cause <strong>meningitis</strong> and blood poisoning (septicaemia).</p>
                   </li>
-                
+
                   <li>
-      
+
                     <a href="javascript:void(0);" class="app-search-results-item">Travel vaccinations - Available vaccines</a>
                     <p class="nhsuk-body-s nhsuk-u-margin-top-1">Find out about the vaccinations available for people travelling abroad.</p>
                   </li>
-                
+
               </ul>
               <nav class="nhsuk-pagination" role="navigation" aria-label="Pagination">
             <ul class="nhsuk-list nhsuk-pagination__list">
-              
-    
-              
+
+
+
               <li class="nhsuk-pagination-item--next">
                 <a class="nhsuk-pagination__link nhsuk-pagination__link--next" href="/search/?search-field=pattern&amp;page=2">
                   <span class="nhsuk-pagination__title">Next</span>
@@ -145,18 +145,18 @@ Search - NHS.UK
                   </svg>
                 </a>
               </li>
-              
+
             </ul>
           </nav>
-            
+
             </div>
         </div>
       </article>
-    
+
           </main>
 
 
- 
+
 
 
 
@@ -165,4 +165,21 @@ Search - NHS.UK
 
 </div>
 </div>
+{% endblock %}
+{% block pageScripts %}
+<head>
+  <script>
+
+    document.getElementById("search-bar").onclick = function() {
+      if (document.getElementById("hidethis").style.display == 'none') {
+        document.getElementById("hidethis").style.display =
+          'block'; // set to table-row instead of an empty string
+      } else {
+        document.getElementById("hidethis").style.display = 'none';
+      }
+    }
+  </script>
+
+
+</head>
 {% endblock %}
