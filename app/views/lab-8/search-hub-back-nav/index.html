@@ -1,5 +1,5 @@
 <!-- Extends the layout from /views/layout.html -->
-{% extends 'layout-lab-6.html' %}
+{% extends 'layout-lab-8-bar.html' %}
 <!--
   In /views/layout.html you can:
     - change the header and footer
@@ -16,10 +16,15 @@
 {% block beforeContent %}
 <main class="nhsuk-main-wrapper nhsuk-main-wrapper--no-padding nhsuk-homepage nhsuk-u-padding-top-0" id="maincontent" role="main">
 
+  <section class="nhsuk-section nhsuk-u-padding-top-4" id="hidethis">
+      <div class="nhsuk-width-container">
+        <div class="nhsuk-grid-row">
 
 
 
-    <section class="nhsuk-hero nhsuk-hero--image nhsuk-hero--image-description " style="background-image: url(&quot;https://assets.nhs.uk/prod/images/S_0818_homepage_hero_1_F0147446.width-1000.jpg&quot;);">
+
+
+    <section class="nhsuk-hero nhsuk-hero--image nhsuk-hero--image-description " style="background-image: url(&quot;https://assets.nhs.uk/prod/images/S_0818_homepage_hero_1_F0147446.width-1000.jpg&quot;)" >
         <script>
           function randomImage() {
               var images =[
@@ -92,7 +97,7 @@
 
 
       <div class="nhsuk-action-link">
-        <a class="nhsuk-action-link__link" href="/lab-6/a-to-z">
+        <a class="nhsuk-action-link__link" href="/lab-7/a-to-z">
           <svg class="nhsuk-icon nhsuk-icon__arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
             <path d="M0 0h24v24H0z" fill="none"></path>
             <path d="M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z"></path>
@@ -107,7 +112,7 @@
 
 
               </div>
-              <div class="nhsuk-grid-column-one-half nhsuk-section__content"><h2>Check a symptom</h2><p>Check by emergency, A to Z, or body part.</p><div class="nhsuk-action-link"><a class="nhsuk-action-link__link" href="javascript:void(0);"><svg class="nhsuk-icon nhsuk-icon__arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M0 0h24v24H0z" fill="none"></path><path d="M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z"></path></svg><span class="nhsuk-action-link__text">Check a symptom</span></a></div></div>
+              <div class="nhsuk-grid-column-one-half nhsuk-section__content"><h2>Check a symptom</h2><p>Check by emergency, A to Z, or body part.</p><div class="nhsuk-action-link"><a class="nhsuk-action-link__link" href="/lab-7/check-a-symptom"><svg class="nhsuk-icon nhsuk-icon__arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M0 0h24v24H0z" fill="none"></path><path d="M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z"></path></svg><span class="nhsuk-action-link__text">Check a symptom</span></a></div></div>
 
           </div>
         </div>
@@ -124,7 +129,7 @@
                     <h2>NHS services</h2>
 
 
-                    <p class="nhsuk-section__description">Find the service you need and book appointments online.</p>
+                    <p class="nhsuk-section__description">Find services near you, manage your prescriptions and use online NHS services.</p>
 
                   </div>
 
@@ -136,83 +141,114 @@
 
 
             <li>
-              <a href="">
+              <a href="/lab-7/nhs-services/find-services">
                 <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
                   <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
                   <image class="nhsuk-icon__chevron-right nhsuk-icon__chevron-right--fallback" xlink:href=""></image>
                 </svg>
-              Find a pharmacy
+              Find services near you
               </a>
             </li>
 
 
 
             <li>
-              <a href="">
+              <a href="/lab-7/nhs-services/gps">
                 <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
                   <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
                   <image class="nhsuk-icon__chevron-right nhsuk-icon__chevron-right--fallback" xlink:href=""></image>
                 </svg>
-              Find a dentist
+              GPs
               </a>
             </li>
 
 
 
             <li>
-              <a href="">
+              <a href="/lab-7/nhs-services/prescriptions">
                 <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
                   <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
                   <image class="nhsuk-icon__chevron-right nhsuk-icon__chevron-right--fallback" xlink:href=""></image>
                 </svg>
-              Find a GP
+                Prescriptions and Pharmacies
               </a>
             </li>
 
 
 
             <li>
-              <a href="">
+              <a href="/lab-7/nhs-services/hospitals">
                 <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
                   <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
                   <image class="nhsuk-icon__chevron-right nhsuk-icon__chevron-right--fallback" xlink:href=""></image>
                 </svg>
-              Find your nearest A&amp;E
+                Hospitals
               </a>
             </li>
 
 
 
             <li>
-              <a href="">
+              <a href="/lab-7/nhs-services/health-records">
                 <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
                   <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
                   <image class="nhsuk-icon__chevron-right nhsuk-icon__chevron-right--fallback" xlink:href=""></image>
                 </svg>
-              Find other urgent care services
+                Health records
+              </a>
+            </li>
+
+
+            <li>
+              <a href="/lab-7/nhs-services/testing-and-screening">
+                <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+                  <image class="nhsuk-icon__chevron-right nhsuk-icon__chevron-right--fallback" xlink:href=""></image>
+                </svg>
+                Testing and screening
+              </a>
+            </li>
+
+
+            <li>
+              <a href="/lab-7/nhs-services/visiting-england">
+                <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+                  <image class="nhsuk-icon__chevron-right nhsuk-icon__chevron-right--fallback" xlink:href=""></image>
+                </svg>
+                Visiting or moving to England
+              </a>
+            </li>
+
+            <li>
+              <a href="javascript:void(0)">
+                <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+                  <image class="nhsuk-icon__chevron-right nhsuk-icon__chevron-right--fallback" xlink:href=""></image>
+                </svg>
+              Help with health costs
               </a>
             </li>
 
 
       </ul>
-
-
-
-
-
-
-
-
-
-      <div class="nhsuk-action-link">
-        <a class="nhsuk-action-link__link" href="">
+      <div class="nhsuk-action-link nhsuk-u-padding-top-4">
+        <a class="nhsuk-action-link__link" href="/lab-7/nhs-services">
           <svg class="nhsuk-icon nhsuk-icon__arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
             <path d="M0 0h24v24H0z" fill="none"></path>
             <path d="M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z"></path>
           </svg>
-          <span class="nhsuk-action-link__text">Find other NHS services</span>
+          <span class="nhsuk-action-link__text">See all NHS services</span>
         </a>
       </div>
+
+
+
+
+
+
+
+
 
 
 
@@ -318,7 +354,7 @@
 
 
                 <li>
-                  <a href="/lab-6/a-to-z/cancer">
+                  <a href="/lab-7/a-to-z/cancer">
                     <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
                       <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
                       <image class="nhsuk-icon__chevron-right nhsuk-icon__chevron-right--fallback" xlink:href=""></image>
@@ -643,4 +679,31 @@
     </div>
 
   </div>
+{% endblock %}
+{% block pageScripts %}
+<head>
+  <script>
+
+    document.getElementById("search-bar").onclick = function() {
+      if (document.getElementById("hidethis").style.display == 'none') {
+        document.getElementById("hidethis").style.display =
+          'block'; // set to table-row instead of an empty string
+      } else {
+        document.getElementById("hidethis").style.display = 'none';
+      }
+    }
+  </script>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("hide");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+</script>
+
+
+</head>
 {% endblock %}
