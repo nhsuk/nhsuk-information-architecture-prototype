@@ -1,6 +1,156 @@
 
 function newSearch(){
 
+  // fetch()
+  //   .then(response => response.json())
+  //   .then(data => healthAz.push(...data));
+  //   console.log("dkhjskh" + healthAz);
+
+
+  // fetch('https://nhsuk-apim-stag-uks.azure-api.net/site-search/Autocomplete?q=poo&api-version=1')
+  // .then(function(response) {
+  //     console.log(response.text());
+  // })
+  // console.log("kdj")
+
+  const myRequest = "https://nhsuk-apim-stag-uks.azure-api.net/site-search/Autocomplete?q=poo&api-version=1";
+
+//   fetch(myRequest)
+//   .then(response => console.log(response.headers.get('content-type')))
+//   .then(handleResponse)
+//   .then(data => console.log(data))
+//   .catch(error => console.log(error))
+
+// function handleResponse (response) {
+//   let contentType = response.headers.get('content-type');
+//   if (contentType.includes('application/json')) {
+//     console.log("kasj")
+
+//     // return handleJSONResponse(response)
+//   } else if (contentType.includes('text/html')) {
+//     return handleTextResponse(response)
+//   } else {
+//     // Other response types as necessary. I haven't found a need for them yet though.
+//     throw new Error(`Sorry, content-type ${contentType} not supported`)
+//   }
+// }
+
+// function handleJSONResponse (response) {
+//   return response.json()
+//     .then(json => {
+//       if (response.ok) {
+//         return json
+//       } else {
+//         return Promise.reject(Object.assign({}, json, {
+//           status: response.status,
+//           statusText: response.statusText
+//         }))
+//       }
+//     })
+// }
+// function handleTextResponse (response) {
+//   return response.text()
+//     .then(text => {
+//       if (response.ok) {
+//         return text
+//       } else {
+//         return Promise.reject({
+//           status: response.status,
+//           statusText: response.statusText,
+//           err: text
+//         })
+//       }
+//     })
+// }
+
+
+
+// const test = 'https://nhsuk-apim-stag-uks.azure-api.net/site-search/Autocomplete?q=poo&api-version=1'
+// async function fetchSuggestions(query) {
+//   const res = await fetch(test);
+//   const data = await res.json();
+//   console.log(data);
+// }
+
+// fetchSuggestions();
+
+  // fetch(myRequest)
+  // .then(response => console.log(response.headers))
+  // .then(data => {
+  //   console.log(data)
+  // });
+
+  // fetch(myRequest)
+
+  // .then(response => console.log(response))
+  // .then(data => console.log('data is', data))
+  // .catch(error => console.log('error is', error));
+
+
+  // fetch(myRequest)
+  // .then(response => {
+  //    const contentType = response.headers.get('content-type');
+  //    if (!contentType || !contentType.includes('application/json')) {
+  //      throw new TypeError("Oops, we haven't got JSON!");
+  //    }
+  //    return response.json();
+  // })
+  // .then(data => {
+  //     /* process your data further */
+  // })
+  // .catch(error => console.error(error));
+
+
+
+    fetch("https://nhsuk-apim-stag-uks.azure-api.net/site-search/Autocomplete?q=poo&api-version=1")
+    .then(function(response) {
+      console.log(response.type);
+      console.log(response.url);
+      console.log(response.useFinalURL);
+      console.log(response.status);
+      console.log(response.ok);
+      console.log(response.statusText);
+      console.log(response.headers);
+      console.log(response.json());
+      if (!response.ok) {
+        throw new Error("HTTP error, status = " + response.status);
+      }
+      // return response.blob();
+    })
+
+    let url = 'https://nhsuk-apim-stag-uks.azure-api.net/site-search/Autocomplete?q=poo&api-version=1';
+    // // obj = await (await fetch(url)).json();
+    // console.log(url);
+
+    fetch(url)
+    .then(response => response.json())
+    .then(data => {
+      console.log(data)
+    });
+
+
+
+    // fetch(url)
+    // .then(res => res.json())
+    // .then((out) => {
+    //   console.log('Checkout this JSON! ', out);
+    // })
+    // .catch(err => { throw err });
+
+
+// fetch('https://nhsuk-apim-stag-uks.azure-api.net/site-search/Autocomplete?q=poo&api-version=1')
+//   .then(response => {
+//     if (!response.ok) {
+//       throw new Error('Network response was not ok');
+//     }
+//     console.log(response.blob());
+//     return response.blob();
+//   })
+//   .catch(error => {
+//     console.error('There has been a problem with your fetch operation:', error);
+//   });
+
+
   const searchConditions = document.querySelector('.new-search__input');
 
   if(!searchConditions) {
@@ -13,9 +163,15 @@ function newSearch(){
   let results = document.querySelector('.new-search-results');
   reusltsWrapper.style.display = "none";
 
+
+
   fetch("/javascript/conditions.json")
     .then(response => response.json())
     .then(data => healthAz.push(...data));
+
+
+
+
 
   function findMatches(searchTerm, healthAz) {
     return healthAz.filter(condition => {
@@ -37,7 +193,7 @@ function newSearch(){
             return `
                 <li class='nhsuk-list-panel__item'>
                     <a class="nhsuk-list-panel__link" href="${condition.link}">
-                      ${conditionTitle} 
+                      ${conditionTitle}
                       - <span class="search_highlight">${this.value}</span>
                     </a>
                 </li>
@@ -52,12 +208,12 @@ function newSearch(){
             return `
                 <li class='nhsuk-list-panel__item'>
                   <a class="nhsuk-list-panel__link" href="${condition.link}">
-                      ${conditionTitle} 
+                      ${conditionTitle}
                     </a>
                 </li>
               `
           }
-        })()}        
+        })()}
       `;
 
     }).join("");
