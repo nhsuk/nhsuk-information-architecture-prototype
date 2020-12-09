@@ -40,7 +40,7 @@ function compileScripts() {
     'app/assets/javascript/**/*.js',
     'docs/assets/javascript/**/*.js'
   ])
-  .pipe(babel())
+  // .pipe(babel())
   .pipe(gulp.dest('public/js'));
 }
 

@@ -148,32 +148,40 @@ NHS.UK prototype kit
                 </form>
             </div>
 
-            <h4 class="nhsuk-heading-m nhsuk-u-padding-top-3">Trending topics</h4>
-            <ul class="nhsuk-list">
-                <li>
-                    <a href="javascript:void(0);" class="app-search-results-item">Pregnancy</a>
-                </li>
-            </ul>
+            <div class="ia-results">
+                <ul class="nhsuk-list nhsuk-list--border">
 
-            <h4 class="nhsuk-heading-m">Health A-Z</h4>
-            <ul class="nhsuk-list nhsuk-list--border">
-                <li>
-                    <a href="javascript:void(0);" class="app-search-results-item">Asthma</a>
-                </li>
-                <li>
-                    <a href="javascript:void(0);" class="app-search-results-item">Flu</a>
-                </li>
-            </ul>
-            
-            <h4 class="nhsuk-heading-m">Live Well</h4>
-            <ul class="nhsuk-list nhsuk-list--border">
-                <li>
-                    <a href="javascript:void(0);" class="app-search-results-item">Healthy weight</a>
-                </li>
-                <li>
-                    <a href="javascript:void(0);" class="app-search-results-item">5 steps to mental wellbeing</a>
-                </li>
-            </ul>
+                </ul>
+            </div>
+
+            <div class="ia-suggestions">
+                <h4 class="nhsuk-heading-m nhsuk-u-padding-top-3">Trending topics</h4>
+                <ul class="nhsuk-list">
+                    <li>
+                        <a href="javascript:void(0);" class="app-search-results-item">Pregnancy</a>
+                    </li>
+                </ul>
+
+                <h4 class="nhsuk-heading-m">Health A-Z</h4>
+                <ul class="nhsuk-list nhsuk-list--border">
+                    <li>
+                        <a href="javascript:void(0);" class="app-search-results-item">Asthma</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="app-search-results-item">Flu</a>
+                    </li>
+                </ul>
+                
+                <h4 class="nhsuk-heading-m">Live Well</h4>
+                <ul class="nhsuk-list nhsuk-list--border">
+                    <li>
+                        <a href="javascript:void(0);" class="app-search-results-item">Healthy weight</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="app-search-results-item">5 steps to mental wellbeing</a>
+                    </li>
+                </ul>
+            </div>
 
         </div>
     </div>
@@ -220,30 +228,7 @@ NHS.UK prototype kit
 <!-- For adding page specific JavsScript -->
 {% block pageScripts %}
 
-<!-- <head>
-  <script>
-    document.getElementById("search-bar").onclick = function() {
-      if (document.getElementById("hidethis").style.display == 'none') {
-        document.getElementById("hidethis").style.display =
-          'block'; // set to table-row instead of an empty string
 
-      } else {
-        document.getElementById("hidethis").style.display = 'none';
-      }
-    }
-  </script>
-  <script>
-    function myFunction() {
-      var x = document.getElementById("hide");
-      if (x.style.display === "none") {
-        x.style.display = "block";
-      } else {
-        x.style.display = "none";
-      }
-    }
-</script>
-
-</head> --> -->
 {% endblock %}
 {% endblock %}
 {% endblock %}
