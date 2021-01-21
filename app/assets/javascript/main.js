@@ -29,7 +29,7 @@ function newSearch() {
           </a> 
         </li>`
     }).join('');
-    console.log(html.length);
+    // console.log(html.length);
     if(html.length === 0) {
       resultsWrapper.innerHTML = `
         <h2>No pulse! 🩺</h2>
@@ -76,7 +76,7 @@ function newSearch() {
   searchConditions.addEventListener("focus", openModal);
 
   document.addEventListener("keydown", e => {
-    console.log(e.key);
+    // console.log(e.key);
     if (e.key === "Escape") {
       closeModal(e);
     }
