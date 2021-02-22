@@ -1,93 +1,87 @@
+function newSearch() {
+  const searchConditions = document.querySelector(".ia-nhsuk-search__input");
+  const searchConditionsInput = document.querySelector(".ia-search-results__input");
 
-function newSearch(){
-
-  const searchConditions = document.querySelector('.new-search__input');
-
-  if(!searchConditions) {
+  if (!searchConditions) {
     return;
   }
 
-  const healthAz = [];
-  const searchWrapper = document.querySelector('.nhsuk-header__search');
-  const reusltsWrapper = document.querySelector('.new-search-results-wrapper');
-  let results = document.querySelector('.new-search-results');
+  const searchClose = document.querySelector(".nhsuk-close");
+  const reusltsWrapper = document.querySelector(".ia-search-results-wrapper");
+  const endpoint = `https://nhsuk-apim-stag-uks.azure-api.net/site-search/Autocomplete`
+  const resultsWrapper = document.querySelector('.ia-results ul');
+  const suggestionsWrapper = document.querySelector('.ia-suggestions');
   reusltsWrapper.style.display = "none";
+  let isModalOpen = false;
 
-  fetch("/javascript/conditions.json")
-    .then(response => response.json())
-    .then(data => healthAz.push(...data));
-
-  function findMatches(searchTerm, healthAz) {
-    return healthAz.filter(condition => {
-      const regex = new RegExp(searchTerm, 'gi');
-      return condition.title.match(regex) || condition.synonyms.match(regex) || condition.misspelling.match(regex) || condition.tag.match(regex);
-    })
+  async function fetchSuggestions(query) {
+    const res = await fetch(`${endpoint}?q=${query}&api-version=1`);
+    const data = await res.json();
+    return data;
   }
 
-  function showMatches() {
-    const matchArray = findMatches(this.value, healthAz);
-    const checkLength = searchConditions.value;
-    const html = matchArray.map(condition => {
-    const regex = new RegExp(this.value, 'gi');
-    const conditionTitle = condition.title.replace(regex, `<span class="search_highlight">${this.value}</span>`);
-
-      return `
-          ${(() => {
-          if (regex.test(condition.synonyms)) {
-            return `
-                <li class='nhsuk-list-panel__item'>
-                    <a class="nhsuk-list-panel__link" href="${condition.link}">
-                      ${conditionTitle} 
-                      - <span class="search_highlight">${this.value}</span>
-                    </a>
-                </li>
-              `
-          } else {
-
-            // console.log(condition.synonyms);
-            // let toArray = condition.synonyms.split(", ");
-            // const match = toArray.find(value => regex.test(value));
-            // console.log(match);
-
-            return `
-                <li class='nhsuk-list-panel__item'>
-                  <a class="nhsuk-list-panel__link" href="${condition.link}">
-                      ${conditionTitle} 
-                    </a>
-                </li>
-              `
-          }
-        })()}        
-      `;
-
-    }).join("");
-
-
-    if (checkLength.length >= 2) {
-      results.innerHTML = html;
-      reusltsWrapper.style.display = "block";
-      results.style.display = "block";
+  function displayResults(matchResults) {
+    suggestionsWrapper.style.display = 'none';
+    const html = matchResults.map(result => {
+        return `<li>
+          <a class="app-search-results-item" href="">
+            ${result.query}
+          </a> 
+        </li>`
+    }).join('');
+    console.log(html.length);
+    if(html.length === 0) {
+      resultsWrapper.innerHTML = `
+        <h2>No pulse! 🩺</h2>
+        <p>
+          Sorry, nothing matches your query – try again or look on <a href="">health a-z</a>
+        </p>
+      `
     } else {
-      reusltsWrapper.style.display = "none";
+      resultsWrapper.innerHTML = html;
     }
+  }
 
-    if ((checkLength.length >= 1) && (matchArray.length === 0)) {
-      results.innerHTML = `
-          <li class='nhsuk-list-panel__item'>
-              <a class="nhsuk-list-panel__link">
-                  No matches. Please check the spelling or try the A-Z.
-              </a>
-          </li>
-      `;
+  async function showMatches() {
+    searchConditionsInput.focus();
+    const matchArray = await fetchSuggestions(this.value);
+    displayResults(matchArray);
+    
+    if(searchConditionsInput.value.length === 0){
+      suggestionsWrapper.style.display = 'block';
+      resultsWrapper.style.display = 'none';
+    } else {
+      suggestionsWrapper.style.display = 'none';
+      resultsWrapper.style.display = 'block';
     }
+  }
+
+  function openModal() {
+    reusltsWrapper.style.display = "block";
+    searchConditionsInput.focus();
+    isModalOpen = true;
+  }
+
+  function closeModal(e) {
+    e.preventDefault();
+    isModalOpen = false;
+    reusltsWrapper.style.display = "none";
+    suggestionsWrapper.style.display = 'block';
+    resultsWrapper.style.display = 'none';
 
   }
 
-  searchConditions.addEventListener('change', showMatches);
-  searchConditions.addEventListener('keyup', showMatches);
-  searchConditions.addEventListener('search', function () {
-    reusltsWrapper.style.display = "none";
+  searchConditionsInput.addEventListener("keyup", showMatches);
+  searchClose.addEventListener("click", closeModal);
+  searchConditions.addEventListener("focus", openModal);
+
+  document.addEventListener("keydown", e => {
+    console.log(e.key);
+    if (e.key === "Escape") {
+      closeModal(e);
+    }
   });
+
 
 }
 
