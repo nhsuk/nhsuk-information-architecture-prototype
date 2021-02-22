@@ -1,5 +1,5 @@
 <!-- Extends the layout from /views/layout.html -->
-{% extends 'layout-lab-8.html' %}
+{% extends 'layout-lab-8-api.html' %}
 <!--
   In /views/layout.html you can:
     - change the header and footer
@@ -17,9 +17,9 @@ NHS.UK home
 <main class="nhsuk-main-wrapper nhsuk-main-wrapper--no-padding nhsuk-homepage nhsuk-u-padding-top-0" id="maincontent"
   role="main">
 
-  <section class="nhsuk-section nhsuk-u-padding-top-4" id="hidethis">
-    <div class="nhsuk-width-container">
-      <div class="nhsuk-grid-row">
+  
+
+  <section class="nhsuk-section">
 
         <section class="nhsuk-hero nhsuk-hero--image nhsuk-hero--image-description "
           style="background-image: url(&quot;https://assets.nhs.uk/prod/images/S_0818_homepage_hero_1_F0147446.width-1000.jpg&quot;)">
@@ -85,14 +85,6 @@ NHS.UK home
                 <h2>Health A to Z</h2>
 
                 <p>Includes conditions, medicines, symptoms, tests and treatments.</p>
-
-
-
-
-
-
-
-
 
 
                 <div class="nhsuk-action-link">
@@ -731,29 +723,5 @@ NHS.UK home
 {% endblock %}
 {% block pageScripts %}
 
-<head>
-  <script>
 
-    document.getElementById("search-bar").onclick = function () {
-      if (document.getElementById("hidethis").style.display == 'none') {
-        document.getElementById("hidethis").style.display =
-          'block'; // set to table-row instead of an empty string
-      } else {
-        document.getElementById("hidethis").style.display = 'none';
-      }
-    }
-  </script>
-  <script>
-    function myFunction() {
-      var x = document.getElementById("hide");
-      if (x.style.display === "none") {
-        x.style.display = "block";
-      } else {
-        x.style.display = "none";
-      }
-    }
-  </script>
-
-
-</head>
 {% endblock %}

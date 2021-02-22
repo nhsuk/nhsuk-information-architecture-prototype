@@ -1065,3 +1065,30 @@ h4 + .nhsuk-inset-text {
    .nhsuk-card--no-border {
      border: 0;
    }
+
+
+
+/* Modal
+========================================================================== */   
+.ia-search-results-wrapper {
+  position: fixed;
+  background: #f0f4f5;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+.ia-btn {
+  border: 0;
+  background: none;
+  white-space: nowrap;
+  text-decoration: none;
+  cursor: pointer;
+}
