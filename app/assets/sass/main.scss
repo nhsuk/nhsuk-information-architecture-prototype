@@ -214,6 +214,8 @@
   background-color: #fff;
   z-index: 99;
   right: 0;
+  display: none;
+
   @include mq($until: desktop) {
     top: 47px;
     right: 10px;
@@ -450,9 +452,9 @@
   margin-top: -8px;
 }
 
-.nhsuk-promo_canon{
+.nhsuk-card_canon{
   position:relative;
-  .nhsuk-promo__content{
+  .nhsuk-card__content{
     width:84%;
     display:inline-block;
     }
@@ -785,6 +787,10 @@ h4 + .nhsuk-inset-text {
    .nhsuk-card__metadata,
    .nhsuk-card__description {
      @include nhsuk-responsive-margin(4, 'bottom');
+   }
+
+   .nhsuk-card__description {
+    color: #212b32;
    }
 
    /* Clickable card
