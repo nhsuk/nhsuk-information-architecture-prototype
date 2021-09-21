@@ -1,5 +1,57 @@
 # NHS.UK prototype kit Changelog
 
+## 4.6.4 - 25 August 2021
+
+- Add script to fix bug with unchecked checkboxes and separate bug when only one checkbox is selected.
+- Update package dependencies to latest versions
+
+## 4.6.3 - 24 August 2021
+
+:wrench: **Fixes**
+
+- Use the correct name for the NHS digital service manual Slack instance
+- Fix GitHub actions/Azure DevOps release pipelines [Issue 180](https://github.com/nhsuk/nhsuk-prototype-kit/issues/180)
+## 4.6.2 - 24 August 2021
+
+:wrench: **Fixes**
+
+- Correct slack channel links on the `About` page.
+
+## 4.6.1 - 18 August 2021
+
+:wrench: **Fixes**
+
+- Swap outdated `panel` for `card` on `clear-data.html` page.
+
+## 4.6.0 - 16 August 2021
+
+:new: **New features**
+
+- Allow adding of custom styles on a per template basis with `customStyles` template block.
+
+## 4.5.1 - 29 July 2021
+
+:new: **New features**
+
+- Add missing coronavirus hub page example from the NHS website which should have been in the previous release
+
+:wrench: **Fixes**
+
+- Update CSS link colours for the NHS website page examples
+
+## 4.5.0 - 26 July 2021
+
+:new: **New features**
+
+- Add NHS website (www.nhs.uk) page examples (homepage, health a-z, live well, mental health, care and support, pregnancy, NHS services, coronavirus hub) and Google homepage template ([Issue #183](https://github.com/nhsuk/nhsuk-prototype-kit/issues/183))
+
+## 4.4.1 - 26 May 2021
+
+:wrench: **Fixes**
+
+- Add missing steps to 'Updating the kit' how to guide
+- Update package dependencies to latest versions
+
 ## 4.4.0 - 17 May 2021
 
 :new: **New features**
@@ -23,9 +75,9 @@
 :new: **New features**
 
 - Add `outerContent` block to page template.
-  
+
   Add content that needs to appear outside `<main>` element but inside the `<nhsuk-width-container>`.
-  
+
   For example: The back link component.
 
 - Update page template examples
