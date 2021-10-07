@@ -1,0 +1,250 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-lab-7-services.html' %}
+<!--
+  In /views/layout.html you can:
+    - change the header and footer
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  NHS.UK home
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+<!-- More info and code for the breadcrumb can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/breadcrumbs -->
+{% block beforeContent %}
+<main class="nhsuk-main-wrapper nhsuk-main-wrapper--no-padding nhsuk-homepage nhsuk-u-padding-top-0" id="maincontent" role="main">
+
+<section class="nhsuk-section nhsuk-u-padding-top-4">
+  <div class="nhsuk-width-container">
+    <div class="nhsuk-grid-row">
+
+  <nav class="nhsuk-u-margin-bottom-3" aria-label="Breadcrumb">
+    <div>
+      <ol class="nhsuk-breadcrumb__list ">
+          <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-9/">Home</a></li>
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-9/a-to-z">Health A to Z</a></li>
+      </ol>
+      <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/lab-9/a-to-z">Health A to Z</a></a></p>
+    </div>
+  </nav>
+    
+  
+<h1>Live Well</h1>
+
+<p class="nhsuk-lede-text">Advice, tips and tools to help you make the best choices about your health and wellbeing.</p>
+
+
+<ul class="nhsuk-grid-row nhsuk-card-group">
+  
+    
+      <li class="nhsuk-grid-column-one-third nhsuk-card-group__item">
+        <div class="nhsuk-card nhsuk-card--clickable">
+          
+            
+            <img class="nhsuk-card__img" src="https://assets.nhs.uk/nhsuk-cms/images/T_0917_moodzone_527900916.width-690.jpg" alt="Practical advice to help you feel mentally and emotionally better">
+          
+          <div class="nhsuk-card__content">
+            <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                <a class="nhsuk-card__link" href="/conditions/stress-anxiety-depression/improve-mental-wellbeing/">
+                5 steps to mental wellbeing
+              </a>
+            </h2>
+            
+              <p class="nhsuk-card__description">Practical advice to help you feel mentally and emotionally better</p>
+            
+          </div>
+        </div>
+      </li>
+    
+  
+    
+      <li class="nhsuk-grid-column-one-third nhsuk-card-group__item">
+        <div class="nhsuk-card nhsuk-card--clickable">
+          
+            
+            <img class="nhsuk-card__img" src="https://assets.nhs.uk/nhsuk-cms/images/A_0218_healthy-weight-main_M24ENF.width-690.jpg" alt="feet on scales">
+          
+          <div class="nhsuk-card__content">
+            <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                <a class="nhsuk-card__link" href="lab-9/live-well/healthy-weight/">
+                Healthy weight
+              </a>
+            </h2>
+            
+              <p class="nhsuk-card__description">Check your BMI using our healthy weight calculator and find out if you're a healthy weight</p>
+            
+          </div>
+        </div>
+      </li>
+    
+  
+    
+      <li class="nhsuk-grid-column-one-third nhsuk-card-group__item">
+        <div class="nhsuk-card nhsuk-card--clickable">
+          
+            
+            <img class="nhsuk-card__img" src="https://assets.nhs.uk/nhsuk-cms/images/A_0218_exercise-main_FKW1X7.width-690.jpg" alt="A woman wearing exercise clothing with headphones in">
+          
+          <div class="nhsuk-card__content">
+            <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                <a class="nhsuk-card__link" href="/live-well/exercise/">
+                Exercise
+              </a>
+            </h2>
+            
+              <p class="nhsuk-card__description">Programmes, workouts and tips to get you moving and improve your fitness and wellbeing</p>
+            
+          </div>
+        </div>
+      </li>
+    
+  
+  </ul>
+
+<ul class="nhsuk-grid-row nhsuk-card-group">
+  
+    
+      <li class="nhsuk-grid-column-one-third nhsuk-card-group__item">
+        <div class="nhsuk-card nhsuk-card--clickable">
+          
+            
+            <img class="nhsuk-card__img" src="https://assets.nhs.uk/nhsuk-cms/images/A_0218_sleep-main_FWWNPR.width-690.width-690.png" alt="White alarm clock with black hands and numbers to right foreground, blurred woman sleeping behind on blow-up bed">
+          
+          <div class="nhsuk-card__content">
+            <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                <a class="nhsuk-card__link" href="/live-well/sleep-and-tiredness/">
+                Sleep and tiredness
+              </a>
+            </h2>
+            
+              <p class="nhsuk-card__description">Find out how to sleep well and the common lifestyle factors that are making you tired</p>
+            
+          </div>
+        </div>
+      </li>
+    
+  
+    
+      <li class="nhsuk-grid-column-one-third nhsuk-card-group__item">
+        <div class="nhsuk-card nhsuk-card--clickable">
+          
+            
+            <img class="nhsuk-card__img" src="https://assets.nhs.uk/nhsuk-cms/images/A_0218_healthy-eating-main_BATM01_copy.width-690.jpg" alt="A bowl of fruit">
+          
+          <div class="nhsuk-card__content">
+            <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                <a class="nhsuk-card__link" href="/live-well/eat-well/">
+                Eat well
+              </a>
+            </h2>
+            
+              <p class="nhsuk-card__description">All you need to know about the major food groups and a healthy, balanced diet</p>
+            
+          </div>
+        </div>
+      </li>
+    
+  
+    
+      <li class="nhsuk-grid-column-one-third nhsuk-card-group__item">
+        <div class="nhsuk-card nhsuk-card--clickable">
+          
+            
+            <img class="nhsuk-card__img" src="https://assets.nhs.uk/nhsuk-cms/images/A_0218_alcohol-support-main__D88JWB.width-690.jpg" alt="empty wine bottles">
+          
+          <div class="nhsuk-card__content">
+            <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                <a class="nhsuk-card__link" href="/live-well/alcohol-support/">
+                Alcohol support
+              </a>
+            </h2>
+            
+              <p class="nhsuk-card__description">Find out the health benefits of reducing your alcohol intake and get tips on cutting down</p>
+            
+          </div>
+        </div>
+      </li>
+    
+  
+  </ul>
+
+<ul class="nhsuk-grid-row nhsuk-card-group">
+  
+    
+      <li class="nhsuk-grid-column-one-third nhsuk-card-group__item">
+        <div class="nhsuk-card nhsuk-card--clickable">
+          
+            
+            <img class="nhsuk-card__img" src="https://assets.nhs.uk/nhsuk-cms/images/A_0218_quit-smoking_FR0Y98.width-690.jpg" alt="Picture of an empty ashtray">
+          
+          <div class="nhsuk-card__content">
+            <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                <a class="nhsuk-card__link" href="/live-well/quit-smoking/">
+                Quit smoking
+              </a>
+            </h2>
+            
+              <p class="nhsuk-card__description">Learn about the benefits of quitting smoking, including better health and increased fertility</p>
+            
+          </div>
+        </div>
+      </li>
+    
+  
+    
+      <li class="nhsuk-grid-column-one-third nhsuk-card-group__item">
+        <div class="nhsuk-card nhsuk-card--clickable">
+          
+            
+            <img class="nhsuk-card__img" src="https://assets.nhs.uk/nhsuk-cms/images/A_0719_Health_KGEXK.width-690.jpg" alt="None">
+          
+          <div class="nhsuk-card__content">
+            <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                <a class="nhsuk-card__link" href="/live-well/healthy-body/">
+                Healthy body
+              </a>
+            </h2>
+            
+              <p class="nhsuk-card__description">Get some practical information and advice for keeping your body in tip-top health</p>
+            
+          </div>
+        </div>
+      </li>
+    
+  
+    
+      <li class="nhsuk-grid-column-one-third nhsuk-card-group__item">
+        <div class="nhsuk-card nhsuk-card--clickable">
+          
+            
+            <img class="nhsuk-card__img" src="https://assets.nhs.uk/nhsuk-cms/images/A_0218_sexual-health-main_HG8H7H.width-690.jpg" alt="Some colourful condoms">
+          
+          <div class="nhsuk-card__content">
+            <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                <a class="nhsuk-card__link" href="/live-well/sexual-health/">
+                Sexual health
+              </a>
+            </h2>
+            
+              <p class="nhsuk-card__description">Everything you need to know about sexual health, including contraception, STIs and good sex</p>
+            
+          </div>
+        </div>
+      </li>
+    
+  
+  </ul>
+
+
+</section>
+</article>
+
+</div>
+</div>
+
+    
+  </main>
+</div>
+{% endblock %}
