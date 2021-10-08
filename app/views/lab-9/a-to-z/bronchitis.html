@@ -4,7 +4,8 @@
   In /views/layout.html you can:
     - change the header and footer
     - add custom CSS and JavaScript
--->
+  -->
+{% set mainClasses = 'nhsuk-main-wrapper--s' %}
 
 <!-- Set the page title inside the pageTitle block -->
 {% block pageTitle %}
@@ -14,10 +15,8 @@
 
 <!-- Your page content goes inside the content block -->
 <!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
-{% block beforeContent %}
+{% block content %}
 
-<main class="nhsuk-main-wrapper" id="maincontent" style="padding-top: 0px;padding-bottom: 0px;">
-  <article>
     <section>
       <div class="nhsuk-grid-row">
         <div class="nhsuk-grid-column-two-thirds">
@@ -206,8 +205,6 @@
       </div>
     </div>
   </section>
-  </article>
-</main>
 
 
 
