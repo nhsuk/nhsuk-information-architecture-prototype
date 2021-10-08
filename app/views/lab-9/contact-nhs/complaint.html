@@ -1,0 +1,113 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-lab-7-services.html' %}
+<!--
+  In /views/layout.html you can:
+    - change the header and footer
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  NHS.UK home
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+<!-- More info and code for the breadcrumb can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/breadcrumbs -->
+{% block beforeContent %}
+<main class="nhsuk-main-wrapper nhsuk-main-wrapper--no-padding nhsuk-homepage nhsuk-u-padding-top-0" id="maincontent" role="main">
+  <div class="nhsuk-width-container">
+    <main class="nhsuk-main-wrapper " id="maincontent" lang="en-GB">
+    
+<div class="nhsuk-grid-row">
+<div class="nhsuk-grid-column-two-thirds">
+
+  
+<h1>Give feedback or make a complaint</h1>
+
+
+
+</div>
+</div>
+
+<article>
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-two-thirds">
+
+    
+
+<section>
+  <div class="block-richtext"><h2>Give feedback about the NHS website</h2><p>You can contact the NHS website team with questions and feedback about the website.</p><p><a href="/contact-us/nhs-website-contact-us">Get in touch using our online form</a></p><h2>Contact the NHS App and NHS login team</h2><p>You can contact the NHS App team with questions and feedback about the app or NHS login.</p><p><a href="https://www.nhs.uk/contact-us/nhs-app-contact-us">Contact the NHS App team</a></p><h2>Give feedback about an NHS service</h2><p>You can give feedback by speaking to a member of staff at the NHS hospital, GP surgery, dentist, opticians or pharmacy you went to.</p><p>Or you can leave a rating or review on their profile page on nhs.uk.</p><p><a href="/service-search">Find an NHS service</a></p><h2>Make a complaint about an NHS service</h2><p>You can complain to a member of staff at the NHS service you went to, such as a GP surgery or hospital.</p><p>Or you can complain to the organisation in charge.</p><p><a href="https://www.england.nhs.uk/contact-us/complaint/complaining-to-nhse/">Contact NHS England</a> if your complaint is about:</p><ul><li>a GP surgery</li><li>an NHS dentist</li><li>an NHS optician</li><li>a pharmacy</li><li>NHS 111</li></ul><p><a href="/Service-Search/Clinical%20Commissioning%20Group/LocationSearch/1">Contact your local commissioning group (CCG)</a> if your complaint is about:</p><ul><li>hospital care</li><li>mental health services</li><li>out of hours services</li><li>community services, such as district nursing</li></ul></div>
+</section>
+
+
+
+<div class="nhsuk-review-date">
+  <p class="nhsuk-body-s">
+    Page last reviewed: 25 July 2019<br>
+    Next review due: 25 July 2022
+  </p>
+</div>
+
+
+
+
+  </div>
+
+  
+
+
+<div class="nhsuk-grid-column-one-third">
+  <div class="app-related-nav">
+    <nav class="app-related-nav__nav-section" aria-labelledby="parent-title">
+      <h2 class="app-related-nav__heading" id="parent-title">Contact the NHS</h2>
+      <ul class="app-related-nav__list">
+        
+          
+            <li class="app-related-nav__item"><a class="app-related-nav__link" href="/contact-us/get-medical-help/">Get medical help</a></li>
+          
+        
+          
+            <li class="app-related-nav__item"><a class="app-related-nav__link" href="/contact-us/book-cancel-or-change-an-appointment/">Book, cancel or change an appointment</a></li>
+          
+        
+          
+            <li class="app-related-nav__item"><a class="app-related-nav__link" href="/contact-us/find-contact-details-gps-hospitals-and-other-services/">Find contact details for GPs, hospitals and other services</a></li>
+          
+        
+          
+            <li class="app-related-nav__item app-related-nav__item--selected">Give feedback or make a complaint</li>
+          
+        
+          
+            <li class="app-related-nav__item"><a class="app-related-nav__link" href="/contact-us/report-accessibility-problem/">Report an accessibility problem</a></li>
+          
+        
+          
+            <li class="app-related-nav__item"><a class="app-related-nav__link" href="/contact-us/isolation-note-help/">Get help with the isolation note</a></li>
+          
+        
+          
+            <li class="app-related-nav__item"><a class="app-related-nav__link" href="/contact-us/get-help-with-something-else/">Get help with something else</a></li>
+          
+        
+      </ul>
+    </nav>
+  </div>
+</div>
+
+
+
+
+</div>
+</article>
+
+
+
+
+    
+  </main>
+</div>
+
+
+          
+{% endblock %}
