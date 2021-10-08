@@ -26,7 +26,7 @@
 <header class="nhsuk-header" role="banner">
   <div class="nhsuk-width-container nhsuk-header__container">
     <div class="nhsuk-header__logo">
-      <a class="nhsuk-header__link" href="/" aria-label="NHS homepage">
+      <a class="nhsuk-header__link" href="/lab-9/" aria-label="NHS homepage">
         <svg class="nhsuk-logo nhsuk-logo--white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 16">
           <path fill="#fff" d="M0 0h40v16H0z"></path>
           <path fill="#005eb8" d="M3.9 1.5h4.4l2.6 9h.1l1.8-9h3.3l-2.8 13H9l-2.7-9h-.1l-1.8 9H1.1M17.3 1.5h3.6l-1 4.9h4L25 1.5h3.5l-2.7 13h-3.5l1.1-5.6h-4.1l-1.2 5.6h-3.4M37.7 4.4c-.7-.3-1.6-.6-2.9-.6-1.4 0-2.5.2-2.5 1.3 0 1.8 5.1 1.2 5.1 5.1 0 3.6-3.3 4.5-6.4 4.5-1.3 0-2.9-.3-4-.7l.8-2.7c.7.4 2.1.7 3.2.7s2.8-.2 2.8-1.5c0-2.1-5.1-1.3-5.1-5 0-3.4 2.9-4.4 5.8-4.4 1.6 0 3.1.2 4 .6"></path>
@@ -54,12 +54,12 @@
   <div class="nhsuk-width-container nhsuk-header__container" style="padding: 0;">
     <ul class="beta-nav " style="padding: 0 16px;">
       <li class="">
-        <a class="" href="">
+        <a class="" href="/lab-9/a-to-z">
           Health A-Z
         </a>
       </li>
       <li class="">
-        <a class="" href="">
+        <a class="" href="/lab-9/nhs-services">
           NHS Services
         </a>
       </li>
@@ -81,7 +81,7 @@
         </p>
         <ul class="nhsuk-header__navigation-list">
           <li class="nhsuk-header__navigation-item nhsuk-header__navigation-item--for-mobile">
-            <a class="nhsuk-header__navigation-link" href="">
+            <a class="nhsuk-header__navigation-link" href="/lab-9/">
               Home
               <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
@@ -105,7 +105,7 @@
             </a>
           </li>
           <li class="nhsuk-header__navigation-item">
-            <a class="nhsuk-header__navigation-link" href="">
+            <a class="nhsuk-header__navigation-link" href="javascript:void(0);">
               Pregnancy
               <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
@@ -113,7 +113,7 @@
             </a>
           </li>
           <li class="nhsuk-header__navigation-item">
-            <a class="nhsuk-header__navigation-link" href="">
+            <a class="nhsuk-header__navigation-link" href="/lab-9/nhs-services">
               NHS services
               <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
@@ -134,7 +134,7 @@
 <!-- NHS.UK footer -->
 {% block footer %}
 <footer role="contentinfo">
-  <div class="nhsuk-footer" id="nhsuk-footer">
+  <div class="nhsuk-footer beta-footer" id="nhsuk-footer">
     <div class="nhsuk-width-container">
       <h2 class="nhsuk-u-visually-hidden">Support links</h2>
       <ul class="nhsuk-footer__list nhsuk-footer__list--three-columns">
@@ -156,19 +156,27 @@
         <li class="nhsuk-footer__list-item"><a href="" class="nhsuk-footer__list-item-link">NHS Websites</a></li>
         <li class="nhsuk-footer__list-item"><a href="" class="nhsuk-footer__list-item-link">Contact us</a></li>
       </ul>
-      <hr>
-      <h4>NHS apps</h4>
-      <img class="nhsuk-image__img" src="app/assets/images/nhs-app-icon.png" alt="NHS App logo icon">
-      <a href="">Find out more about the NHS App</a>
-      <p>NHS services</p>
+      <div class="beta-app">
+        <h4>NHS apps</h4>
+        <div class="beta-block">
+          <img class="nhsuk-image__img beta-app-icon" src="/images/nhs-app-icon.png" alt="NHS App logo icon">
+          <div>
+            <a href="">Find out more about the NHS App</a>
+            <p>NHS services</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-      <div class="nhsuk-u-padding-bottom-5"></div>
-      <ul class="nhsuk-footer__list nhsuk-footer__list--three-columns">
-        <li class="nhsuk-footer__list-item"><a href="" class="nhsuk-footer__list-item-link">Accessibility statement</a></li>
-        <li class="nhsuk-footer__list-item"><a href="" class="nhsuk-footer__list-item-link">Our policices</a></li>
-        <li class="nhsuk-footer__list-item"><a href="" class="nhsuk-footer__list-item-link">Cookies</a></li>
-      </ul>
-      <p class="nhsuk-footer__copyright">&copy; Crown copyright</p>
+    <div class="beta-terms">
+      <div class="nhsuk-width-container nhsuk-u-padding-bottom-5 nhsuk-u-padding-top-5">
+        <ul class="nhsuk-footer__list nhsuk-footer__list--three-columns">
+          <li class="nhsuk-footer__list-item"><a href="" class="nhsuk-footer__list-item-link">Accessibility statement</a></li>
+          <li class="nhsuk-footer__list-item"><a href="" class="nhsuk-footer__list-item-link">Our policices</a></li>
+          <li class="nhsuk-footer__list-item"><a href="" class="nhsuk-footer__list-item-link">Cookies</a></li>
+        </ul>
+        <p class="nhsuk-footer__copyright">&copy; Crown copyright</p>
+      </div>
     </div>
   </div>
 </footer>

@@ -993,7 +993,6 @@ h4 + .nhsuk-inset-text {
   display: inline-block;
   margin: 0;
   margin-right: 32px;
-  text-decoration: none;
   padding: 16px 0;
 
   @include mq($until: tablet) {
@@ -1004,4 +1003,58 @@ h4 + .nhsuk-inset-text {
   &:hover {
     text-decoration: underline;
   }
+}
+
+
+.beta-footer {
+  padding-bottom: 0;
+  padding-top: 34px;
+
+  .nhsuk-footer__list-item-link {
+    color: #005eb8;
+  }
+
+}
+
+.beta-terms {
+  background-color: #5a6c7c;
+
+  .nhsuk-footer__copyright {
+    color: white;
+  }
+
+  .nhsuk-footer__list-item-link {
+    color: white;
+  }
+
+}
+
+
+.beta-app {
+  border-top: 1px solid #bec0c1;
+  padding-top: 25px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+
+  h4 {
+    color: $nhsuk-secondary-text-color;
+  }
+
+}
+
+.beta-app-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.beta-block {
+  display: flex;
+  align-items: flex-start;
+  margin: 0 0 1rem 0;
+}
+.beta-block > img {
+  margin: 0 1rem 0 0;
+}
+.beta-block > div {
+  flex: 1;
 }
