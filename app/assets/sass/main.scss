@@ -985,6 +985,7 @@ h4 + .nhsuk-inset-text {
   flex: none;
   list-style: none;
   margin: 0;
+  position: relative;
 }
 
 .beta-nav li a {
@@ -1057,4 +1058,18 @@ h4 + .nhsuk-inset-text {
 }
 .beta-block > div {
   flex: 1;
+}
+
+.beta-nav--active {
+  text-decoration: none;
+
+  &:after {
+    content: " ";
+    background: white;
+    height: 5px;
+    width: calc(100% - 24px);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
 }
