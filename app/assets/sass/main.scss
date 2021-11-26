@@ -1073,3 +1073,268 @@ h4 + .nhsuk-inset-text {
     left: 0;
   }
 }
+
+
+
+/* ==========================================================================
+    Updated nav
+   ========================================================================== */
+
+   .beta-header {
+    @include mq($until: tablet) {
+      padding-bottom: 0;
+    }
+  }
+  
+  // toggle button
+  // only shows when screen can't fit all nav items
+  .beta-nhsuk-header__menu-toggle {
+    @include toggle-button();
+    align-self: center;
+    padding: 11px 14px;
+    text-decoration: none;
+    visibility: hidden;
+    z-index: 1;
+  
+    @include mq($from: desktop) {
+      display: none;
+    }
+  
+    &.js-show {
+      display: block;
+      visibility: visible;
+    }
+  
+    &:focus {
+      @include nhsuk-focused-button;
+      box-shadow: 0 0 0 2px $nhsuk-focus-color, 0 $nhsuk-focus-width 0 2px $nhsuk-focus-text-color;
+    }
+  }
+  
+  // container
+  // append hidden nav to this, don't remove
+  .beta-nhsuk-navigation {
+    display: flex;
+  
+    @include mq($until: tablet) {
+      position: relative;
+      z-index: 10;
+    }
+  
+    @include mq($from: tablet) {
+      border-top: 1px solid rgba(255, 255, 255, .2);
+    }
+  }
+  
+  // ul of visible nav
+  .beta-nhsuk-header__navigation-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  
+    @include mq($from: desktop) {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .js-enabled & {
+      display: flex;
+    }
+  }
+  
+  .beta-nhsuk-header__navigation-item {
+    margin-bottom: 0;
+  }
+  
+  // a tag
+  .beta-nhsuk-header__navigation-link {
+    color: $color_nhsuk-white;
+    padding: 10px 12px;
+    text-decoration: underline;
+    white-space: nowrap;
+  
+    @include mq($from: tablet) {
+      padding: 12px 16px;
+    }
+  
+    &:hover {
+      color: $color_nhsuk-white;
+      text-decoration: none;
+    }
+  
+    &:visited {
+      color: $color_nhsuk-white;
+    }
+  
+    .nhsuk-icon__chevron-right {
+      display: none;
+    }
+  }
+  
+  // ul of hidden nav
+  .beta-nhsuk-header__drop-down {
+    @include print-hide();
+    background-color: $color_nhsuk-white;
+    clear: both;
+    left: -16px;
+    list-style: none;
+    margin: 0;
+    overflow: hidden;
+    padding-left: 0;
+    position: absolute;
+    right: -16px;
+    top: 100%;
+  
+    @include mq($from: tablet) {
+      left: 0;
+      right: 0;
+    }
+  
+    &.js-hidden {
+      display: none;
+    }
+  
+    // &.js-show {}
+  
+    // .nhsuk-icon__chevron-right {
+    //   display: block;
+    // }
+  
+    .beta-nhsuk-header__navigation-link {
+      color: $color_nhsuk-blue;
+      padding: 12px nhsuk-spacing(3);
+    }
+  
+    .beta-nhsuk-header__navigation-item {
+      border-top: 1px solid $color_nhsuk-grey-5;
+      margin-bottom: 0;
+  
+      @include mq($from: large-desktop) {
+        border-top: 0;
+        margin: 0;
+        text-align: center;
+      }
+    }
+  }
+  
+  // needed for the nhs services item?
+  // .beta-nhsuk-header__navigation-item--hide-mobile {}
+  
+  .nhsuk-header__search-wrap.js-show {
+    margin-bottom: 0;
+  }
+  
+  .beta-nhsuk-footer {
+    margin-bottom: 15px;
+  
+    @include mq($from: desktop) {
+      display: flex;
+    }
+  }
+  
+  .beta-nhsuk-footer__list {
+    margin-bottom: 25px;
+  
+    &:last-child {
+      margin-bottom: 15px;
+    }
+  
+    @include mq($from: desktop) {
+      padding-right: 40px;
+  
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+  }
+  
+  .beta-nhsuk-footer__list-policies {
+    @include mq($until: desktop) {
+      border-top: 1px solid $color_nhsuk-grey-5;
+      padding-top: 35px;
+    }
+  }
+  
+  .beta-nhsuk-footer__list-item {
+    @include mq($from: desktop) {
+      float: none;
+      margin-right: 0;
+    }
+  }
+  
+  .beta-nhsuk-footer__list
+  .beta-nhsuk-footer__list-item-link {
+    color: $color_nhsuk-blue;
+  
+    &:hover {
+      color: $nhsuk-link-hover-color;
+      text-decoration: none;
+    }
+  }
+  
+  .beta-nhsuk-footer__copyright {
+    @include nhsuk-font(16);
+    color: $nhsuk-secondary-text-color;
+    margin-bottom: 0;
+  }
+  
+  .nhsuk-footer {
+    border-bottom: 10px solid $color_nhsuk-grey-1;
+  }
+  
+  .beta-nhsuk-header__navigation-item--home {
+    @include mq($from: desktop) {
+      display: none;
+    }
+  }
+  
+  .beta-nhsuk-header__navigation-item--services-mobile {
+    @include mq($from: desktop) {
+      display: none;
+    }
+  }
+  
+  .beta-nhsuk-header__navigation-item--services {
+    display: none;
+  
+    @include mq($from: desktop) {
+      display: list-item;
+    }
+  }
+  
+  .beta-menu-item {
+    // padding: 12px 16px;
+  
+    @include mq($from: large-desktop) {
+      display: none;
+    }
+  }
+  
+  .beta-nhsuk-header__navigation-close {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg class='nhsuk-icon nhsuk-icon__close' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' aria-hidden='true' focusable='false' height='40' width='40'%3e%3cpath fill='%23005eb8' d='M13.41 12l5.3-5.29a1 1 0 1 0-1.42-1.42L12 10.59l-5.29-5.3a1 1 0 0 0-1.42 1.42l5.3 5.29-5.3 5.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l5.29-5.3 5.29 5.3a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42z'%3e%3c/path%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 40px;
+  
+    &:hover,
+    &:focus {
+      background-image: url("data:image/svg+xml,%3Csvg class='nhsuk-icon nhsuk-icon__close' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' aria-hidden='true' focusable='false' height='40' width='40'%3E%3Cpath d='M13.41 12l5.3-5.29a1 1 0 1 0-1.42-1.42L12 10.59l-5.29-5.3a1 1 0 0 0-1.42 1.42l5.3 5.29-5.3 5.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l5.29-5.3 5.29 5.3a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42z'%3E%3C/path%3E%3C/svg%3E");
+    }
+  }
+  
+  .beta-mobile-menu-container {
+    align-self: center;
+    margin-left: auto;
+    display: none;
+  
+    &.js-show {
+      display: block;
+    }
+  }
+  
+  .beta-nhsuk-navigation-container {
+    position: relative;
+  }
+  
+  
