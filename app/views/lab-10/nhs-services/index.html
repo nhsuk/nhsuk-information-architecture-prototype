@@ -1,0 +1,412 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-lab-9-services.html' %}
+<!--
+  In /views/layout.html you can:
+    - change the header and footer
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+NHS.UK home
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+<!-- More info and code for the breadcrumb can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/breadcrumbs -->
+{% block beforeContent %}
+<main class="nhsuk-main-wrapper nhsuk-main-wrapper--no-padding nhsuk-homepage nhsuk-u-padding-top-0" id="maincontent"
+      role="main">
+
+  <section class="nhsuk-section nhsuk-u-padding-top-4">
+    <div class="nhsuk-width-container">
+      <div class="nhsuk-grid-row">
+
+        <div class="nhsuk-grid-column-full nhsuk-section__content">
+          <div class="">
+            <h1>
+              NHS services
+            </h1>
+
+            <div class="nhsuk-grid-row nhsuk-card-group nhsuk-u-padding-bottom-4 nhsuk-u-padding-top-0">
+              <div class="nhsuk-grid-column-one-third nhsuk-card-group__item">
+                <div class="nhsuk-card nhsuk-card--small">
+                  <a class="nhsuk-card__link-wrapper" href="/lab-9/a-to-z/coronavirus/testing-and-tracing">
+                    <div class="nhsuk-card__content">
+                      <h3 class="nhsuk-card__heading">Testing and tracing for coronavirus</h3>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="nhsuk-grid-column-one-third nhsuk-card-group__item">
+                <div class="nhsuk-card nhsuk-card--small">
+                  <a class="nhsuk-card__link-wrapper"
+                     href="/lab-9/nhs-services/gps/book-cancel-or-change-an-appointment">
+                    <div class="nhsuk-card__content">
+                      <h3 class="nhsuk-card__heading">GP appointments and bookings</h3>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="nhsuk-grid-column-one-third nhsuk-card-group__item">
+                <div class="nhsuk-card nhsuk-card--small">
+                  <a class="nhsuk-card__link-wrapper"
+                     href="/lab-9/nhs-services/prescriptions/order-repeat-prescriptions-online">
+                    <div class="nhsuk-card__content">
+                      <h3 class="nhsuk-card__heading">Order a repeat prescription online</h3>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+
+            <ul class="nhsuk-grid-row nhsuk-card-group">
+
+              <li class="beta-hub-main-topic nhsuk-grid-column-one-half nhsuk-card-group__item">
+                <div class="nhsuk-card nhsuk-card--clickable ">
+                  <div class="nhsuk-card__content beta-card__content">
+                    <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                      <a class="nhsuk-card__link" href="/lab-9/nhs-services/find-services">
+                        Find services near you
+                      </a>
+                    </h2>
+                    <div class="nhsuk-card__description"><p>Find your nearest NHS services, including GPs, pharmacies,
+                      urgent care and A&E</p></div>
+                    <div class="beta-hub-arrow">
+                      <svg class="nhsuk-icon beta-icon__chevron-right-circle" xmlns="http://www.w3.org/2000/svg"
+                           width="27" height="27" aria-hidden="true">
+                        <circle cx="13.333" cy="13.333" r="13.333" fill=""></circle>
+                        <g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10"
+                           stroke-width="2.667">
+                          <path d="M15.438 13l-3.771 3.771"></path>
+                          <path data-name="Path" d="M11.667 9.229L15.438 13"></path>
+                        </g>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="beta-hub-main-topic nhsuk-grid-column-one-half nhsuk-card-group__item">
+                <div class="nhsuk-card nhsuk-card--clickable ">
+                  <div class="nhsuk-card__content beta-card__content">
+                    <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                      <a class="nhsuk-card__link" href="/lab-9/nhs-services/gps">
+                        GPs
+                      </a>
+                    </h2>
+                    <div class="nhsuk-card__description"><p>
+                      Find a GP surgery, registering with a GP surgery, booking an appointment and using online services
+                    </p></div>
+                    <div class="beta-hub-arrow">
+                      <svg class="nhsuk-icon beta-icon__chevron-right-circle" xmlns="http://www.w3.org/2000/svg"
+                           width="27" height="27" aria-hidden="true">
+                        <circle cx="13.333" cy="13.333" r="13.333" fill=""></circle>
+                        <g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10"
+                           stroke-width="2.667">
+                          <path d="M15.438 13l-3.771 3.771"></path>
+                          <path data-name="Path" d="M11.667 9.229L15.438 13"></path>
+                        </g>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="beta-hub-main-topic nhsuk-grid-column-one-half nhsuk-card-group__item">
+                <div class="nhsuk-card nhsuk-card--clickable ">
+                  <div class="nhsuk-card__content beta-card__content">
+                    <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                      <a class="nhsuk-card__link" href="javascript:void(0);">
+                        Prescriptions and pharmacies
+                      </a>
+                    </h2>
+                    <div class="nhsuk-card__description"><p>
+                      Order repeat prescriptions, prescription charges, how pharmacists can help you with medical advice
+                      and medicines
+                    </p></div>
+                    <div class="beta-hub-arrow">
+                      <svg class="nhsuk-icon beta-icon__chevron-right-circle" xmlns="http://www.w3.org/2000/svg"
+                           width="27" height="27" aria-hidden="true">
+                        <circle cx="13.333" cy="13.333" r="13.333" fill=""></circle>
+                        <g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10"
+                           stroke-width="2.667">
+                          <path d="M15.438 13l-3.771 3.771"></path>
+                          <path data-name="Path" d="M11.667 9.229L15.438 13"></path>
+                        </g>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="beta-hub-main-topic nhsuk-grid-column-one-half nhsuk-card-group__item">
+                <div class="nhsuk-card nhsuk-card--clickable ">
+                  <div class="nhsuk-card__content beta-card__content">
+                    <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                      <a class="nhsuk-card__link" href="javascript:void(0);">
+                        Hospitals
+                      </a>
+                    </h2>
+                    <div class="nhsuk-card__description"><p>
+                      About NHS hospitals, booking and changing appointments with NHS e-Referral service and going into
+                      hospital
+                    </p></div>
+                    <div class="beta-hub-arrow">
+                      <svg class="nhsuk-icon beta-icon__chevron-right-circle" xmlns="http://www.w3.org/2000/svg"
+                           width="27" height="27" aria-hidden="true">
+                        <circle cx="13.333" cy="13.333" r="13.333" fill=""></circle>
+                        <g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10"
+                           stroke-width="2.667">
+                          <path d="M15.438 13l-3.771 3.771"></path>
+                          <path data-name="Path" d="M11.667 9.229L15.438 13"></path>
+                        </g>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="beta-hub-main-topic nhsuk-grid-column-one-half nhsuk-card-group__item">
+                <div class="nhsuk-card nhsuk-card--clickable ">
+                  <div class="nhsuk-card__content beta-card__content">
+                    <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                      <a class="nhsuk-card__link" href="/lab-9/nhs-services/gps">
+                        Help with health costs
+                      </a>
+                    </h2>
+                    <div class="nhsuk-card__description">
+                      <p>
+                        When you need to pay, help when on universal credit, travel costs and personal health budgets
+                      </p>
+                    </div>
+                    <div class="beta-hub-arrow">
+                      <svg class="nhsuk-icon beta-icon__chevron-right-circle" xmlns="http://www.w3.org/2000/svg"
+                           width="27" height="27" aria-hidden="true">
+                        <circle cx="13.333" cy="13.333" r="13.333" fill=""></circle>
+                        <g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10"
+                           stroke-width="2.667">
+                          <path d="M15.438 13l-3.771 3.771"></path>
+                          <path data-name="Path" d="M11.667 9.229L15.438 13"></path>
+                        </g>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+
+              <li class="beta-hub-main-topic nhsuk-grid-column-one-half nhsuk-card-group__item">
+                <div class="nhsuk-card nhsuk-card--clickable ">
+                  <div class="nhsuk-card__content beta-card__content">
+                    <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                      <a class="nhsuk-card__link" href="/lab-9/nhs-services/gps">
+                        Testing and screening
+                      </a>
+                    </h2>
+                    <div class="nhsuk-card__description">
+                      <p>
+                        Testing and screening offered by the NHS in England
+                      </p>
+                    </div>
+                    <div class="beta-hub-arrow">
+                      <svg class="nhsuk-icon beta-icon__chevron-right-circle" xmlns="http://www.w3.org/2000/svg"
+                           width="27" height="27" aria-hidden="true">
+                        <circle cx="13.333" cy="13.333" r="13.333" fill=""></circle>
+                        <g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10"
+                           stroke-width="2.667">
+                          <path d="M15.438 13l-3.771 3.771"></path>
+                          <path data-name="Path" d="M11.667 9.229L15.438 13"></path>
+                        </g>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="beta-hub-main-topic nhsuk-grid-column-one-half nhsuk-card-group__item">
+                <div class="nhsuk-card nhsuk-card--clickable ">
+                  <div class="nhsuk-card__content beta-card__content">
+                    <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                      <a class="nhsuk-card__link" href="/lab-9/nhs-services/gps">
+                        Visiting or moving to England
+                      </a>
+                    </h2>
+                    <div class="nhsuk-card__description">
+                      <p>
+                        Advice about using the NHS if you’re planning to visit or move to England
+                      </p>
+                    </div>
+                    <div class="beta-hub-arrow">
+                      <svg class="nhsuk-icon beta-icon__chevron-right-circle" xmlns="http://www.w3.org/2000/svg"
+                           width="27" height="27" aria-hidden="true">
+                        <circle cx="13.333" cy="13.333" r="13.333" fill=""></circle>
+                        <g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10"
+                           stroke-width="2.667">
+                          <path d="M15.438 13l-3.771 3.771"></path>
+                          <path data-name="Path" d="M11.667 9.229L15.438 13"></path>
+                        </g>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="nhsuk-section nhsuk-u-padding-top-2 nhsuk-u-padding-bottom-5">
+    <div class="nhsuk-width-container">
+      <div class="nhsuk-grid-row">
+
+        <div class="nhsuk-grid-column-full nhsuk-section__content">
+
+
+          <div class="nhsuk-grid-row nhsuk-grid-row--flex">
+
+
+            <div class="nhsuk-grid-column-one-third ">
+              <div class="nhsuk-card" style="border: none;">
+                <a class="nhsuk-card__link-wrapper" href="/lab-9/nhs-services/emergency-services"
+                   style="background-color:#f0f4f5; border: none;">
+                  <div class="nhsuk-card__content" style="background-color:#f0f4f5; border: none; padding:0px;">
+                    <h3 class="nhsuk-card__heading">Emergency services</h3>
+                    <p class="nhsuk-card__description nhsuk-u-padding-bottom-5">Services the NHS provides if you need
+                      urgent or emergency medical help</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="nhsuk-grid-column-one-third ">
+              <div class="nhsuk-card " style="background-color:#f0f4f5; border: none;">
+                <a class="nhsuk-card__link-wrapper" href="/lab-9/nhs-services/sexual-health"
+                   style="background-color:#f0f4f5; border: none;">
+                  <div class="nhsuk-card__content" style="background-color:#f0f4f5; border: none;padding:0px;">
+
+                    <h3 class="nhsuk-card__heading">Sexual health services </h3>
+                    <p class="nhsuk-card__description nhsuk-u-padding-bottom-5">Information about NHS sexual health
+                      services</p>
+
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="nhsuk-grid-column-one-third ">
+              <div class="nhsuk-card " style="background-color:#f0f4f5; border: none;">
+                <a class="nhsuk-card__link-wrapper" href="/lab-9/nhs-services/dentists"
+                   style="background-color:#f0f4f5; border: none;">
+                  <div class="nhsuk-card__content" style="background-color:#f0f4f5; border: none;padding:0px;">
+                    <h3 class="nhsuk-card__heading">Dentists </h3>
+                    <p class="nhsuk-card__description nhsuk-u-padding-bottom-5">About NHS dental services, how to find
+                      an NHS dentist and how much treatment costs</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+
+          </div>
+
+
+          <div class="nhsuk-grid-row nhsuk-card-group  nhsuk-grid-row--flex">
+
+
+            <div class="nhsuk-grid-column-one-third ">
+              <div class="nhsuk-card " style="border: none;">
+                <a class="nhsuk-card__link-wrapper" href="/lab-9/nhs-services/opticians"
+                   style="background-color:#f0f4f5; border: none;">
+                  <div class="nhsuk-card__content" style="background-color:#f0f4f5; border: none;padding:0px;">
+                    <h3 class="nhsuk-card__heading">Opticians </h3>
+                    <p class="nhsuk-card__description nhsuk-u-padding-bottom-5">Where to find an optician and what
+                      happens when you see them</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="nhsuk-grid-column-one-third ">
+              <div class="nhsuk-card  " style="background-color:#f0f4f5; border: none;">
+                <a class="nhsuk-card__link-wrapper" href="/lab-9/nhs-services/online-services"
+                   style="background-color:#f0f4f5; border: none;">
+                  <div class="nhsuk-card__content" style="background-color:#f0f4f5; border: none;padding:0px;">
+                    <h3 class="nhsuk-card__heading">Online services</h3>
+                    <p class="nhsuk-card__description nhsuk-u-padding-bottom-5">Includes how to book GP appointments and
+                      register as an organ donor</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+
+            <div class="nhsuk-grid-column-one-third ">
+              <div class="nhsuk-card  " style="background-color:#f0f4f5; border: none;">
+                <a class="nhsuk-card__link-wrapper" href="/lab-9/nhs-services/blood-and-organ"
+                   style="background-color:#f0f4f5; border: none;">
+                  <div class="nhsuk-card__content" style="background-color:#f0f4f5; border: none;padding:0px;">
+
+
+                    <h3 class="nhsuk-card__heading">Blood and organ donation </h3>
+                    <p class="nhsuk-card__description nhsuk-u-padding-bottom-5">How and where to donate</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+
+          </div>
+
+
+          <div class="nhsuk-grid-row nhsuk-card-group nhsuk-u-margin-top-0">
+
+
+            <div class="nhsuk-grid-column-one-third ">
+              <div class="nhsuk-card " style="border: none;">
+                <a class="nhsuk-card__link-wrapper" href="javascript:void(0)"
+                   style="background-color:#f0f4f5; border: none;">
+                  <div class="nhsuk-card__content" style="background-color:#f0f4f5; border: none;padding:0px;">
+                    <h3 class="nhsuk-card__heading">Armed forces and veterans </h3>
+                    <p class="nhsuk-card__description nhsuk-u-padding-bottom-5">How the NHS can help if you're in
+                      military service or a veteran</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+
+          </div>
+
+
+          <h2 class="nhsuk-heading-s nhsuk-u-margin-top-6">If you need help now, and you're not sure what to do</h2>
+          <ul class="nhsuk-list">
+            <li>Go to <a href="https://111.nhs.uk/">111.nhs.uk</a> or call 111</li>
+          </ul>
+
+          <h2 class="nhsuk-heading-s nhsuk-u-margin-top-6">If you think it's an emergency</h2>
+          <ul class="nhsuk-list">
+            <li><a href="/service-search/other-services/Accident-and-emergency-services/LocationSearch/428">Find your
+              nearest A&amp;E</a></li>
+            <li>Call 999</li>
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+
+
+  </section>
+
+</main>
+
+{% endblock %}

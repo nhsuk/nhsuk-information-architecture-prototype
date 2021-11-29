@@ -1,0 +1,393 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-lab-9-services.html' %}
+<!--
+  In /views/layout.html you can:
+    - change the header and footer
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+NHS.UK home
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+<!-- More info and code for the breadcrumb can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/breadcrumbs -->
+{% block beforeContent %}
+<main class="nhsuk-main-wrapper nhsuk-u-padding-top-0" id="maincontent"
+      role="main">
+
+  <section class="nhsuk-section nhsuk-u-padding-top-4">
+    <div class="nhsuk-width-container">
+      <div class="">
+
+        <nav class="nhsuk-u-margin-bottom-3" aria-label="Breadcrumb">
+          <div>
+            <ol class="nhsuk-breadcrumb__list ">
+              <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-9/">Home</a>
+              </li>
+              <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-9/a-to-z">Health
+                A to Z</a></li>
+
+            </ol>
+            <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/lab-9/a-to-z">Health
+              A to Z</a></a></p>
+          </div>
+        </nav>
+
+        <h1>Mental health</h1>
+        <p class="nhsuk-lede-text">
+          Find information and support for your mental health.
+        </p>
+        <article>
+
+
+          <h2 class="nhsuk-u-visually-hidden">Top tasks in Mental health</h2>
+          <ul class="nhsuk-grid-row nhsuk-card-group nhsuk-u-padding-top-0">
+
+            <li class="nhsuk-grid-column-one-third nhsuk-card-group__item">
+              <div class="nhsuk-card nhsuk-card--clickable ">
+                <div class="nhsuk-card__content">
+                  <a class="nhsuk-card__link nhsuk-heading-xs"
+                     href="javascript:void(0);">
+                    Get urgent help now for mental health
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <li class="nhsuk-grid-column-one-third nhsuk-card-group__item">
+              <div class="nhsuk-card nhsuk-card--clickable ">
+                <div class="nhsuk-card__content">
+                  <a class="nhsuk-card__link nhsuk-heading-xs"
+                     href="javascript:void(0);">
+                    Access an NHS psychological therapies service (IAPT)
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <li class="nhsuk-grid-column-one-third nhsuk-card-group__item">
+              <div class="nhsuk-card nhsuk-card--clickable ">
+                <div class="nhsuk-card__content">
+                  <a class="nhsuk-card__link nhsuk-heading-xs"
+                     href="javascript:void(0);">
+                    Depression and anxiety self-assessment quiz
+                  </a>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+
+
+          <ul class="nhsuk-grid-row nhsuk-card-group">
+
+            <li class="beta-hub-main-topic nhsuk-grid-column-one-half nhsuk-card-group__item">
+              <div class="nhsuk-card nhsuk-card--clickable ">
+                <div class="nhsuk-card__content beta-card__content">
+                  <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                    <a class="nhsuk-card__link" href="javascript:void(0);">
+                      Feelings, symptoms and behaviours
+                    </a>
+                  </h2>
+                  <div class="nhsuk-card__description"><p>Read about common feelings and symptoms such
+                    as stress, anxiety or a low mood</p></div>
+                  <div class="beta-hub-arrow">
+                    <svg class="nhsuk-icon beta-icon__chevron-right-circle"
+                         xmlns="http://www.w3.org/2000/svg" width="27" height="27"
+                         aria-hidden="true">
+                      <circle cx="13.333" cy="13.333" r="13.333" fill=""></circle>
+                      <g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round"
+                         stroke-miterlimit="10" stroke-width="2.667">
+                        <path d="M15.438 13l-3.771 3.771"></path>
+                        <path data-name="Path" d="M11.667 9.229L15.438 13"></path>
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="beta-hub-main-topic nhsuk-grid-column-one-half nhsuk-card-group__item">
+              <div class="nhsuk-card nhsuk-card--clickable ">
+                <div class="nhsuk-card__content beta-card__content">
+                  <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                    <a class="nhsuk-card__link" href="/lab-9/mental-health/conditions/">
+                      Mental health conditions
+                    </a>
+                  </h2>
+                  <div class="nhsuk-card__description"><p>Read about specific mental health
+                    conditions, such as clinical depression, bipolar disorder or OCD</p></div>
+
+                  <div class="beta-hub-arrow">
+                    <svg class="nhsuk-icon beta-icon__chevron-right-circle"
+                         xmlns="http://www.w3.org/2000/svg" width="27" height="27"
+                         aria-hidden="true">
+                      <circle cx="13.333" cy="13.333" r="13.333" fill=""></circle>
+                      <g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round"
+                         stroke-miterlimit="10" stroke-width="2.667">
+                        <path d="M15.438 13l-3.771 3.771"></path>
+                        <path data-name="Path" d="M11.667 9.229L15.438 13"></path>
+                      </g>
+                    </svg>
+                  </div>
+
+                </div>
+              </div>
+
+            </li>
+
+            <li class="beta-hub-main-topic nhsuk-grid-column-one-half nhsuk-card-group__item">
+
+
+              <div class="nhsuk-card nhsuk-card--clickable ">
+                <div class="nhsuk-card__content beta-card__content">
+                  <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                    <a class="nhsuk-card__link"
+                       href="javascript:void(0);">
+                      Advice for life situations and events
+                    </a>
+                  </h2>
+                  <div class="nhsuk-card__description"><p>Advice for you and people you support about
+                    mental health in life situations and events, such as pregnancy and bullying at
+                    work</p></div>
+
+                  <div class="beta-hub-arrow">
+                    <svg class="nhsuk-icon beta-icon__chevron-right-circle"
+                         xmlns="http://www.w3.org/2000/svg" width="27" height="27"
+                         aria-hidden="true">
+                      <circle cx="13.333" cy="13.333" r="13.333" fill=""></circle>
+                      <g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round"
+                         stroke-miterlimit="10" stroke-width="2.667">
+                        <path d="M15.438 13l-3.771 3.771"></path>
+                        <path data-name="Path" d="M11.667 9.229L15.438 13"></path>
+                      </g>
+                    </svg>
+                  </div>
+
+                </div>
+              </div>
+
+            </li>
+
+            <li class="beta-hub-main-topic nhsuk-grid-column-one-half nhsuk-card-group__item">
+
+
+              <div class="nhsuk-card nhsuk-card--clickable ">
+                <div class="nhsuk-card__content beta-card__content">
+                  <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                    <a class="nhsuk-card__link" href="javascript:void(0);">
+                      Self-help
+                    </a>
+                  </h2>
+                  <div class="nhsuk-card__description"><p>Read about different types of self-help,
+                    such as 5 steps to mental wellbeing and breathing exercises</p></div>
+
+                  <div class="beta-hub-arrow">
+                    <svg class="nhsuk-icon beta-icon__chevron-right-circle"
+                         xmlns="http://www.w3.org/2000/svg" width="27" height="27"
+                         aria-hidden="true">
+                      <circle cx="13.333" cy="13.333" r="13.333" fill=""></circle>
+                      <g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round"
+                         stroke-miterlimit="10" stroke-width="2.667">
+                        <path d="M15.438 13l-3.771 3.771"></path>
+                        <path data-name="Path" d="M11.667 9.229L15.438 13"></path>
+                      </g>
+                    </svg>
+                  </div>
+
+                </div>
+              </div>
+
+            </li>
+
+            <li class="beta-hub-main-topic nhsuk-grid-column-one-half nhsuk-card-group__item">
+
+
+              <div class="nhsuk-card nhsuk-card--clickable ">
+                <div class="nhsuk-card__content beta-card__content">
+                  <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                    <a class="nhsuk-card__link"
+                       href="javascript:void(0);">
+                      NHS, voluntary and charity services
+                    </a>
+                  </h2>
+                  <div class="nhsuk-card__description"><p>Read information and support about NHS,
+                    charity and voluntary mental health services and how to access them</p></div>
+
+                  <div class="beta-hub-arrow">
+                    <svg class="nhsuk-icon beta-icon__chevron-right-circle"
+                         xmlns="http://www.w3.org/2000/svg" width="27" height="27"
+                         aria-hidden="true">
+                      <circle cx="13.333" cy="13.333" r="13.333" fill=""></circle>
+                      <g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round"
+                         stroke-miterlimit="10" stroke-width="2.667">
+                        <path d="M15.438 13l-3.771 3.771"></path>
+                        <path data-name="Path" d="M11.667 9.229L15.438 13"></path>
+                      </g>
+                    </svg>
+                  </div>
+
+                </div>
+              </div>
+
+            </li>
+
+            <li class="beta-hub-main-topic nhsuk-grid-column-one-half nhsuk-card-group__item">
+
+
+              <div class="nhsuk-card nhsuk-card--clickable ">
+                <div class="nhsuk-card__content beta-card__content">
+                  <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                    <a class="nhsuk-card__link" href="javascript:void(0);">
+                      Mental health for children, teenagers and young adults
+                    </a>
+                  </h2>
+                  <div class="nhsuk-card__description"><p>Read advice and support about mental health
+                    for children, teenagers, students and parents</p></div>
+
+                  <div class="beta-hub-arrow">
+                    <svg class="nhsuk-icon beta-icon__chevron-right-circle"
+                         xmlns="http://www.w3.org/2000/svg" width="27" height="27"
+                         aria-hidden="true">
+                      <circle cx="13.333" cy="13.333" r="13.333" fill=""></circle>
+                      <g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round"
+                         stroke-miterlimit="10" stroke-width="2.667">
+                        <path d="M15.438 13l-3.771 3.771"></path>
+                        <path data-name="Path" d="M11.667 9.229L15.438 13"></path>
+                      </g>
+                    </svg>
+                  </div>
+
+                </div>
+              </div>
+
+            </li>
+
+            <li class="beta-hub-main-topic nhsuk-grid-column-one-half nhsuk-card-group__item">
+
+
+              <div class="nhsuk-card nhsuk-card--clickable ">
+                <div class="nhsuk-card__content beta-card__content">
+                  <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                    <a class="nhsuk-card__link"
+                       href="javascript:void(0);">
+                      Talking therapies, medicine and psychiatry
+                    </a>
+                  </h2>
+                  <div class="nhsuk-card__description"><p>Read about the different types of talking
+                    therapy and other treatments, such as medicine for mental health problems</p>
+                  </div>
+
+                  <div class="beta-hub-arrow">
+                    <svg class="nhsuk-icon beta-icon__chevron-right-circle"
+                         xmlns="http://www.w3.org/2000/svg" width="27" height="27"
+                         aria-hidden="true">
+                      <circle cx="13.333" cy="13.333" r="13.333" fill=""></circle>
+                      <g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round"
+                         stroke-miterlimit="10" stroke-width="2.667">
+                        <path d="M15.438 13l-3.771 3.771"></path>
+                        <path data-name="Path" d="M11.667 9.229L15.438 13"></path>
+                      </g>
+                    </svg>
+                  </div>
+
+                </div>
+              </div>
+
+            </li>
+
+            <li class="beta-hub-main-topic nhsuk-grid-column-one-half nhsuk-card-group__item">
+
+
+              <div class="nhsuk-card nhsuk-card--clickable ">
+                <div class="nhsuk-card__content beta-card__content">
+                  <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                    <a class="nhsuk-card__link" href="javascript:void(0);">
+                      Social care and your rights
+                    </a>
+                  </h2>
+                  <div class="nhsuk-card__description"><p>Read advice and support about being a carer,
+                    receiving social care help and your mental health rights</p></div>
+
+                  <div class="beta-hub-arrow">
+                    <svg class="nhsuk-icon beta-icon__chevron-right-circle"
+                         xmlns="http://www.w3.org/2000/svg" width="27" height="27"
+                         aria-hidden="true">
+                      <circle cx="13.333" cy="13.333" r="13.333" fill=""></circle>
+                      <g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round"
+                         stroke-miterlimit="10" stroke-width="2.667">
+                        <path d="M15.438 13l-3.771 3.771"></path>
+                        <path data-name="Path" d="M11.667 9.229L15.438 13"></path>
+                      </g>
+                    </svg>
+                  </div>
+
+                </div>
+              </div>
+
+            </li>
+
+          </ul>
+
+
+          <div class="nhsuk-u-margin-top-6 ">
+            <div class="beta-hub-related-links-title">
+              <h2 class="nhsuk-heading-s ">Related information</h2>
+            </div>
+            <nav role="navigation">
+              <ul class="beta-hub-related-links">
+
+                <li class="beta-hub-related-links__list-item">
+                  <a href="https://www.nhs.uk/oneyou/every-mind-matters/">
+                    Every Mind Matters
+                  </a>
+
+                </li>
+
+                <li class="beta-hub-related-links__list-item">
+                  <a href="/conditions/autism/">
+                    Autism
+                  </a>
+
+                </li>
+
+                <li class="beta-hub-related-links__list-item">
+                  <a href="/conditions/insomnia/">
+                    Insomnia
+                  </a>
+
+                </li>
+
+                <li class="beta-hub-related-links__list-item">
+                  <a href="/conditions/dementia/">
+                    Dementia guide
+                  </a>
+
+                </li>
+
+                <li class="beta-hub-related-links__list-item">
+                  <a href="/live-well/healthy-body/addiction-what-is-it/">
+                    Addiction
+                  </a>
+
+                </li>
+
+              </ul>
+            </nav>
+          </div>
+
+
+          <div class="nhsuk-u-reading-width beta-hub-bottom-content">
+
+          </div>
+
+      </div>
+    </div>
+
+    </article>
+
+  </main>
+
+    {% endblock %}
