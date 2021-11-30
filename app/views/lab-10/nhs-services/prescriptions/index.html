@@ -14,7 +14,17 @@ Prescriptions and pharmacies - NHS.UK
 
 <!-- Breadcrumb goes inside the beforeContent block -->
 {% block beforeContent %}
-{% from 'details/macro.njk' import details %}
+<nav class="nhsuk-breadcrumb beta-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list ">
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-10/">Home</a></li>
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-10/nhs-services">NHS services</a></li>
+
+    </ol>
+    <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/lab-10/nhs-services">NHS services</a></p>
+  </div>
+</nav>
+
 
 
 {% endblock %}
@@ -27,16 +37,6 @@ Prescriptions and pharmacies - NHS.UK
     <div class="nhsuk-grid-column-two-thirds">
       <!-- Change the page title here -->
 
-      <nav class="nhsuk-u-margin-bottom-3" aria-label="Breadcrumb">
-          <div >
-            <ol class="nhsuk-breadcrumb__list ">
-                <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-10/">Home</a></li>
-              <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-10/nhs-services">NHS services</a></li>
-
-            </ol>
-            <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/lab-10/nhs-services">NHS services</a></p>
-          </div>
-        </nav>
 
 
       <h1>Prescriptions and pharmacies</h1>

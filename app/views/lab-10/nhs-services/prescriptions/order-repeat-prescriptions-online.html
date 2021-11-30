@@ -12,31 +12,28 @@ Order a repeat prescription online - NHS
 {% endblock %}
 
 <!-- Breadcrumb goes inside the beforeContent block -->
+<!-- Your page content goes inside the content block -->
 {% block beforeContent %}
-{% from 'details/macro.njk' import details %}
 
+  <nav class="nhsuk-breadcrumb beta-breadcrumb" aria-label="Breadcrumb">
+    <div class="nhsuk-width-container">
+      <ol class="nhsuk-breadcrumb__list ">
+          <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-10/">Home</a></li>
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-10/nhs-services">NHS services</a></li>
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-10/nhs-services/prescriptions">Prescriptions and Pharmacies</a></li>
+
+      </ol>
+      <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/lab-10/nhs-services/prescriptions">Prescriptions and Pharmacies</a></p>
+    </div>
+  </nav>
 {% endblock %}
 
-<!-- Your page content goes inside the content block -->
-<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+
+
+
+
+
 {% block content %}
-
-<main class="nhsuk-main-wrapper" id="maincontent" style="padding-top: 0px !important;padding-bottom:0px;">
-  <section>
-
-    <section>
-      <nav class="nhsuk-u-margin-bottom-3" aria-label="Breadcrumb">
-        <div >
-          <ol class="nhsuk-breadcrumb__list ">
-              <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-10/">Home</a></li>
-            <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-10/nhs-services">NHS services</a></li>
-            <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-10/nhs-services/prescriptions">Prescriptions and Pharmacies</a></li>
-
-          </ol>
-          <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/lab-10/nhs-services/prescriptions">Prescriptions and Pharmacies</a></p>
-        </div>
-      </nav>
-
 
       <article>
         <div class="nhsuk-grid-row">
@@ -111,7 +108,7 @@ Order a repeat prescription online - NHS
           
               <nav class="nhsuk-contents-list nhsuk-u-padding-top-8" role="navigation"
               aria-label="Pages in this guide">
-              <h2 class="">More in <a href="/lab-9/nhs-services/prescriptions">Prescriptions and Pharmacies</a></a></h2>
+              <h2 class="">More in <a href="/lab-10/nhs-services/prescriptions">Prescriptions and Pharmacies</a></a></h2>
               <ul class="nhsuk-list app-side-nav__list">
 
                 <li class="app-side-nav__item app-side-nav__item--current">
@@ -166,9 +163,5 @@ Order a repeat prescription online - NHS
         </div>
       </article>
 
-      </div>
-    </section>
-
-</main>
 
 {% endblock %}
