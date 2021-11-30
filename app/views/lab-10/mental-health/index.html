@@ -13,6 +13,23 @@
 
 <!-- Breadcrumb goes inside the beforeContent block -->
 <!-- More info and code for the breadcrumb can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/breadcrumbs -->
+
+{% block beforeContent %}
+<!-- Breadcrumbs -->
+<nav class="nhsuk-breadcrumb beta-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a href="/lab-10/" class="nhsuk-breadcrumb__link">Home</a></li>
+    </ol>
+    <p class="nhsuk-breadcrumb__back">
+      <a href="/lab-10/" class="nhsuk-breadcrumb__backlink">
+        <span class="nhsuk-u-visually-hidden">Back to </span>Home
+      </a>
+    </p>
+  </div>
+</nav>
+{% endblock %}
+
 {% block content %}
 
         <h1>Mental health</h1>
@@ -92,7 +109,7 @@
               <div class="nhsuk-card nhsuk-card--clickable ">
                 <div class="nhsuk-card__content beta-card__content">
                   <h2 class="nhsuk-card__heading nhsuk-heading-m">
-                    <a class="nhsuk-card__link" href="/lab-9/mental-health/conditions/">
+                    <a class="nhsuk-card__link" href="javascript:void(0);">
                       Mental health conditions
                     </a>
                   </h2>

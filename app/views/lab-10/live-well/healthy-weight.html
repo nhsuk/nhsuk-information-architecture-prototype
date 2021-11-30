@@ -1,5 +1,5 @@
 <!-- Extends the layout from /views/layout.html -->
-{% extends 'layout-lab-9.html' %}
+{% extends 'layout-lab-10.html' %}
 <!--
   In /views/layout.html you can:
     - change the header and footer
@@ -12,65 +12,58 @@
 {% endblock %}
 
 <!-- Breadcrumb goes inside the beforeContent block -->
-<!-- More info and code for the breadcrumb can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/breadcrumbs -->
+
 {% block beforeContent %}
-<main class="nhsuk-main-wrapper nhsuk-main-wrapper--no-padding nhsuk-homepage nhsuk-u-padding-top-0" id="maincontent" role="main">
-
-<section class="nhsuk-section nhsuk-u-padding-top-4">
+<nav class="nhsuk-breadcrumb beta-breadcrumb" aria-label="Breadcrumb">
   <div class="nhsuk-width-container">
-    <div class="nhsuk-grid-row">
+    <ol class="nhsuk-breadcrumb__list ">
+        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-10/">Home</a></li>
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-10/live-well">Live well</a></li>
+    </ol>
+    <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/lab-10/live-well">Live well</a></a></p>
+  </div>
+</nav>
+{% endblock %}
 
-  <nav class="nhsuk-u-margin-bottom-3" aria-label="Breadcrumb">
-    <div>
-      <ol class="nhsuk-breadcrumb__list ">
-          <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-9/">Home</a></li>
-        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/lab-9/a-to-z">Live well</a></li>
-      </ol>
-      <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/lab-9/a-to-z">Live well</a></a></p>
-    </div>
-  </nav>
-    
-  <section>
-    <div class="nhsuk-u-padding-bottom-5"></div>
+
+
+{% block content %}
+
     <h1>Healthy weight</h1>
     <figure class="nhsuk-image nhsuk-u-margin-top-0">
       <img class="nhsuk-image__img" alt="A_0218_healthy-weight-main_M24ENF.jpg" src="https://assets.nhs.uk/nhsuk-cms/images/A_0218_healthy-weight-main_M24ENF.width-690.jpg" sizes="(min-width: 1020px) 690px, 100vw" srcset="https://assets.nhs.uk/nhsuk-cms/images/A_0218_healthy-weight-main_M24ENF.width-345.jpg 345w, https://assets.nhs.uk/nhsuk-cms/images/A_0218_healthy-weight-main_M24ENF.width-690.jpg 690w">
     </figure>
     <p><b>To find out if you're a healthy weight for your height, work out your body mass index (BMI).</b></p>
-    <p>You can easily check your BMI by using this <a href="/live-well/healthy-weight/bmi-calculator/">BMI calculator</a>. A BMI between 18.5 and 24.9 is considered healthy.</p>
+    <p>You can easily check your BMI by using this <a href="javascript:void(0);">BMI calculator</a>. A BMI between 18.5 and 24.9 is considered healthy.</p>
     <p>The BMI calculator can also be used to check if your child is a healthy weight.</p>
     <h2>If you or your child are overweight</h2>
     <p>Weight gain occurs when you regularly eat and drink more calories than you burn through normal bodily functions and physical activity. Read about the <a href="/live-well/healthy-weight/hidden-causes-of-weight-gain/">hidden causes of weight gain</a>.</p>
-    <p>To lose weight, you should try to <a href="/live-well/healthy-weight/12-tips-to-help-you-lose-weight/">cut down on how much you eat and drink</a> and <a href="/live-well/exercise/">be more active</a>.</p>
-    <p>Find out more about <a href="/live-well/healthy-weight/understanding-calories/">calories and your weight</a>.</p>
+    <p>To lose weight, you should try to <a href="javascript:void(0);">cut down on how much you eat and drink</a> and <a href="javascript:void(0);">be more active</a>.</p>
+    <p>Find out more about <a href="javascript:void(0);">calories and your weight</a>.</p>
     <h3>Next steps</h3>
-    <p>Take action now and <a href="/live-well/healthy-weight/start-losing-weight/">start losing weight</a>.</p>
+    <p>Take action now and <a href="javascript:void(0);">start losing weight</a>.</p>
     <p>You can:</p>
     <ul>
-      <li>start the <a href="/live-well/healthy-weight/start-the-nhs-weight-loss-plan/">NHS weight loss plan</a></li>
-      <li>sign up for <a href="/live-well/healthy-weight/sign-up-for-weight-loss-email-support/">weight loss email support</a></li>
-      <li>start running with <a href="/live-well/exercise/get-running-with-couch-to-5k/">Couch to 5K</a></li>
-      <li>try our <a href="/live-well/exercise/12-week-fitness-plan/">12-week fitness plan</a></li>
-      <li>get fit with <a href="/live-well/exercise/get-fit-with-strength-and-flex/">Strength and Flex</a></li>
-      <li>try our <a href="/live-well/healthy-weight/12-tips-to-help-you-lose-weight/">tips to help you lose weight</a></li>
-      <li>learn how to achieve a <a href="/live-well/eat-well/">healthy, balanced diet</a></li>
-      <li>read about <a href="/live-well/exercise/walking-for-health/">walking for health</a></li>
+      <li>start the <a href="javascript:void(0);">NHS weight loss plan</a></li>
+      <li>sign up for <a href="javascript:void(0);">weight loss email support</a></li>
+      <li>start running with <a href="javascript:void(0);">Couch to 5K</a></li>
+      <li>try our <a href="javascript:void(0);">12-week fitness plan</a></li>
+      <li>get fit with <a href="javascript:void(0);">Strength and Flex</a></li>
+      <li>try our <a href="javascript:void(0);">tips to help you lose weight</a></li>
+      <li>learn how to achieve a <a href="javascript:void(0);">healthy, balanced diet</a></li>
+      <li>read about <a href="javascript:void(0);">walking for health</a></li>
     </ul>
     <h2>If you or your child are underweight</h2>
     <p>Being underweight isn't good for your health either. If you're concerned about yourself or someone else, read our pages on:</p>
     <ul>
-      <li><a href="/live-well/healthy-weight/advice-for-underweight-adults/">underweight adults</a></li>
-      <li><a href="/live-well/healthy-weight/underweight-teen-boys/">underweight teen boys</a></li>
-      <li><a href="/live-well/healthy-weight/underweight-teen-girls/">underweight teen girls</a></li>
-      <li><a href="/live-well/healthy-weight/underweight-children-6-12-advice-for-parents/">underweight children aged 6 to 12</a></li>
-      <li><a href="/live-well/healthy-weight/underweight-children-2-5-advice-for-parents/">underweight children aged 2 to 5</a></li>
+      <li><a href="javascript:void(0);">underweight adults</a></li>
+      <li><a href="javascript:void(0);">underweight teen boys</a></li>
+      <li><a href="javascript:void(0);">underweight teen girls</a></li>
+      <li><a href="javascript:void(0);">underweight children aged 6 to 12</a></li>
+      <li><a href="javascript:void(0);">underweight children aged 2 to 5</a></li>
     </ul>
     
-  </section>
+
   
-</div>
-</div>
-  
-</main>
 
 {% endblock %}
