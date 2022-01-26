@@ -4,268 +4,83 @@
 
 <!-- Extends the layout from /views/layout.html -->
 {% extends 'layout.html' %}
-<!--
+<!-- 
   In /views/layout.html you can:
-    - change the header and footer
+    - change the header and footer 
     - add custom CSS and JavaScript
 -->
 
-<!-- Set the page title inside the pageTitle block -->
+<!-- Set the page title -->
 {% block pageTitle %}
-  NHS.UK information architecture prototype kit
+  NHS.UK prototype kit
 {% endblock %}
 
-<!-- Breadcrumb goes inside the beforeContent block -->
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
 {% block beforeContent %}
 {% endblock %}
 
-<!-- Your page content goes inside the content block -->
-<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
 {% block content %}
   <div class="nhsuk-grid-row">
     <div class="nhsuk-grid-column-two-thirds">
 
       <!-- Change the page title here -->
       <h1>
-        NHS.UK information architecture prototype kit
+        NHS.UK prototype kit
+        <span class="nhsuk-caption-xl nhsuk-caption--bottom">Version {{version}}</span>
       </h1>
 
       <!-- Add your content here -->
-      <!-- Styles and components can be found at https://beta.nhs.uk/service-manual/styles-components-patterns -->
+      <!-- Styles and components can be found at https://service-manual.nhs.uk/design-system -->
 
-      <h3 class="nhsuk-do-dont-list__label" style="margin-left:0;">Priority navigation </h3>
-
-      <ul>
-          <li><a href="/lab-10/">Homepage</a></li>
-      </ul>
+      <p class="nhsuk-lede-text">
+        This kit lets you rapidly create HTML prototypes of NHS services.
+      </p>
 
       <hr>
-
-
-
-      <h3 class="nhsuk-do-dont-list__label" style="margin-left:0;">Exposed search </h3>
-
-      <ul>
-          <li><a href="/lab-9/">Homepage</a></li>
-      </ul>
-
-      <hr>
-
-      <h3 class="nhsuk-do-dont-list__label" style="margin-left:0;">Health A to Z</h3>
-
-      <ul>
-          <li><a href="/lab-8/a-to-z-2">Health A to Z</a></li>
-          <li><a href="/lab-8/a-to-z/confirmation">Health A to Z: survey confirmation</a></li>
-          <li><a href="/lab-8/a-to-z/cannot-find">Health A to Z: survey confirmation, can't find</a></li>
-
-
-            </ul>
-
-            <hr>
-      <h3 class="nhsuk-do-dont-list__label" style="margin-left:0;">Search</h3>
-
-      <ul>
-          <li><a href="/lab-7/search">Search results MVP</a></li>
-          <li><a href="/lab-7/search/plus-categories">Search results MVP plus categories</a></li>
-
-
-            </ul>
-
-      <hr>
-      <h3 class="nhsuk-do-dont-list__label" style="margin-left:0;">Lab 7</h3>
-
-
-      <ul>
-        <li><a href="/lab-7/google">Google</a></li>
-        <li><a href="/lab-7/google-results">Google results</a></li>
-        <li><a href="/lab-7/nhs-services">NHS services</a></li>
-
-
-          </ul>
-
-
-
-
-      <ul>
-        <li><a href="/lab-7/search">Search results v1</a></li>
-        <li><a href="/lab-7/search/index-v2">Search results v2</a></li>
-
-
-        </ul>
-
-
-
-      <hr />
-
-      <div class="nhsuk-do-dont-list">
-        <h3 class="nhsuk-do-dont-list__label">Lab 6</h3>
-
-        <h2>
-          Coronavirus
-        </h2>
-        <ul>
-          <li>
-              <a href="/lab-6">Homepage (with banner)</a>
-          </li>
-        <li>
-          <a href="/lab-6/a-to-z/coronavirus">Coronavirus</a>
-        </li>
-      </ul>
-      </div>
-<hr />
 
       <h2>
-        Lab 5
+        About this page
       </h2>
 
       <p>
-        All the below is just while we build, it can be deleted after
+        Use this page as the index for your project.
+      </p>
+      
+      <p>
+        You'll find the code for this page at <strong>/app/views/index.html</strong>.
       </p>
 
-      <br><br>
-      <h3>Google</h3>
-      <ul>
-      <li>
-        <a href="/lab-5/google">Start Google</a>
-      </li>
-      <li>
-        <a href="/lab-5/results">Results page</a>
-      </li>
-      </ul>
-      <br><br>
-      <h3>Homepage</h3>
-      <a href="/lab-5/">Homepage</a>
-      <br><br>
-      <h3>Cancer</h3>
-      <ul>
-        <li><a href="/lab-5/a-to-z/">A-Z</a></li>
-        <li><a href="/lab-5/a-to-z/cancer">Cancer</a></li>
-          <ul>
-        <li><a href="/lab-5/a-to-z/cancer/cancer-screening">Cancer screening</a></li>
-            <ul>
-                <li><a href="/lab-5/a-to-z/cancer/cancer-screening/cervical-screening">Cervical screening</a></li>
-            </ul>
-        <li><a href="/lab-5/a-to-z/cancer/cancer-treatments">Cancer treatments</a></li>
-            <ul>
-                <li><a href="/lab-5/a-to-z/cancer/cancer-treatments/radiotherapy">Radiotherapy</a></li>
-                  <ul>
-                      <li><a href="/lab-5/a-to-z/cancer/cancer-treatments/radiotherapy/what-happens">What happens - Radiotherapy</a></li>
-                  </ul>
-            </ul>
-        <li><a href="/lab-5/a-to-z/cancer/reducing-the-risk-of-cancer">Reducing the risk of cancer</a></li>
-            <ul>
-                <li><a href="/lab-5/a-to-z/cancer/healthy-eating">Healthy eating</a></li>
-            </ul>
+      <p>
+        There is also an <a href="/page-example">example page</a>, which contains a selection of NHS.UK frontend styles and components.
+      </p>
 
-        <li><a href="/lab-5/a-to-z/cancer/types-of-cancer">Types of cancer</a></li>
-            <ul>
-                <li><a href="/lab-5/a-to-z/cancer/types-of-cancer/cervical-cancer">Cervical cancer</a></li>
-            </ul>
-      </ul>
-      </ul>
-
-      <h3>Heart Attack</h3>
-      <ul>
-        <li><a href="/lab-5/a-to-z/">A-Z</a></li>
-        <li><a href="/lab-5/a-to-z/heart-attack/">Heart Attack</a></li>
-        <li>
-          <a href="/lab-5/a-to-z/heart-attack/overview/">
-            Heart attack overview
-          </a>
-        </li>
-        <li>
-          <a href="/lab-5/a-to-z/heart-attack/symptoms/">
-            Symptoms
-          </a>
-        </li>
-        <li>
-          <a href="/lab-5/a-to-z/heart-attack/causes/">
-            Causes
-          </a>
-        </li>
-        <li>
-          <a href="/lab-5/a-to-z/shortness-of-breath/">Shortness of breath</a>
-        </li>
-      </ul>
-
-      <!-- <h3>Propranolol</h3>
-      <ul>
-        <li>
-          <a href="/lab-5/a-to-z/propranolol">Propranolol</a>
-        </li>
-      </ul> -->
-
-      <h3>Check a symptom</h3>
-      <ul>
-        <li><a href="/lab-5//check-a-symptom/">Check a symptom</a></li>
-        <li><a href="/lab-5//check-a-symptom/heart/">Heart</a></li>
-        <li>
-          <a href="/lab-5/check-a-symptom/chest">
-            Chest
-          </a>
-        </li>
-      </ul>
-
-
-
-
-      <h3>Aspirin</h3>
-      <ul>
-        <li><a href="/lab-5/a-to-z/">A-Z</a></li>
-        <li><a href="/lab-5/a-to-z/aspirin">Aspirin</a></li>
-          <ul>
-              <li><a href="/lab-5/a-to-z/aspirin/aspirin-low-dose">low dose Aspirin</a></li>
-              <li><a href="/lab-5/a-to-z/aspirin/aspirin-low-dose/about">About</a></li>
-              <li><a href="/lab-5/a-to-z/aspirin/aspirin-low-dose/key-facts">Key facts</a></li>
-          </ul>
-      </ul>
-
-
-
-      <h3>Beta blockers</h3>
-      <ul>
-        <li><a href="/lab-5/a-to-z/">A-Z</a></li>
-        <li><a href="/lab-5/a-to-z/beta-blockers">Beta blockers</a></li>
-          <ul>
-            <li><a href="/lab-5/a-to-z/beta-blockers/propranolol">Propranolol</a></li>
-              <ul>
-                <li><a href="/lab-5/a-to-z/beta-blockers/propranolol/about">About</a></li>
-                <li><a href="/lab-5/a-to-z/beta-blockers/propranolol/key-facts">Key facts</a></li>
-              </ul>
-          </ul>
-        </li>
-      </ul>
-
-
-      <h3>NHS services</h3>
-      <ul>
-        <li><a href="/lab-5/nhs-services/">NHS Services</a></li>
-      </ul>
-
-
-      <!-- <h3>Propranolol</h3>
-      <ul>
-        <li><a href="/lab-5/a-to-z/">A-Z</a></li>
-        <li><a href="/lab-5/a-to-z/propranolol">Propranolol</a></li>
-      </ul> -->
-
-      <br><br><br>
-
+      <hr>
 
       <h2>
-        Previous labs
+        Get started
       </h2>
-      <h3>
-        Lab 4 start page
-      </h3>
-      <a href="/lab-4/tasks">List of tasks</a>
 
-      <br><br><br>
+      <p>Get started by using the:</p>
 
-      <h3>
-        Lab 2 start page
-      </h3>
-      <a href="/lab-2/">List of tasks</a>
+      <ul>
+        <li>
+          <a href="/docs/how-tos">how to guides</a>
+        </li>
+        <li>
+          <a href="/docs/page-templates">page templates</a>
+        </li>
+        <li>
+          code snippets for styles and components from the <a href="https://service-manual.nhs.uk/design-system">NHS digital service manual</a>
+        </li>
+      </ul>
 
       <!-- End of content -->
 

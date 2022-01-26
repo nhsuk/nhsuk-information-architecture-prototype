@@ -2,10 +2,8 @@
 {%- from 'footer/macro.njk' import footer %}
 {%- from 'skip-link/macro.njk' import skipLink %}
 {%- from 'action-link/macro.njk' import actionLink %}
-{%- from 'nav-a-z/macro.njk' import azNav %}
 {%- from 'breadcrumb/macro.njk' import breadcrumb %}
 {%- from 'card/macro.njk' import card %}
-{%- from 'care-card/macro.njk' import careCard %}
 {%- from 'contents-list/macro.njk' import contentsList %}
 {%- from 'details/macro.njk' import details %}
 {%- from 'header/macro.njk' import header %}
@@ -14,7 +12,6 @@
 {%- from 'do-dont-list/macro.njk' import list %}
 {%- from 'images/macro.njk' import image %}
 {%- from 'inset-text/macro.njk' import insetText %}
-{%- from 'list-panel/macro.njk' import listPanel %}
 {%- from 'pagination/macro.njk' import pagination %}
 {%- from 'skip-link/macro.njk' import skipLink %}
 {%- from 'tables/macro.njk' import table %}
@@ -92,22 +89,6 @@
       {% block header %}
         {{ header({}) }}
       {% endblock %}
-
-      <!-- Coronavirus (COVID-19) banner -->
-      <div class="app-global-alert" id="app-global-alert" role="complementary">
-        <div class="nhsuk-width-container">
-          <div class="nhsuk-grid-row">
-            <div class="nhsuk-grid-column-full">
-              <div class="app-global-alert__content">
-                <div class="app-global-alert__message">
-                  <h2>Coronavirus (COVID-19)</h2>
-                  <p><a href="">Get the latest advice about COVID-19</a></p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
       {% block beforeContent %}{% endblock %}
 
