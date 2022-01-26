@@ -1,0 +1,486 @@
+/**
+ * Modified of nhsuk-card, these are used an page links
+ * to follow the style fo the new proposed IA changes
+ */
+
+ .beta-hub-main-topic {
+  .beta-card__content {
+    padding-right: 75px;
+  }
+
+  .beta-hub-arrow {
+    display: block;
+    margin-top: -8px;
+    position: absolute;
+    right: 24px;
+    top: 50%;
+  }
+}
+
+.beta-hub-after-key-links,
+.beta-hub-bottom-content {
+  > h2 {
+    // h2 headings should look like h3s on hubs. This is to give the top tasks visual preference without changing the I.A.
+    @extend %nhsuk-heading-s;
+  }
+}
+
+// Updating the frontend library to cards
+.beta-card--plain {
+  background: transparent;
+  border-bottom: 4px solid $color_nhsuk-grey-4;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+
+  .beta-card__content {
+    padding: 0 0 32px;
+  }
+}
+
+
+/**
+ * Cards are not supposed to support multiple elements inside the "description" paragraph.
+ * We want to support richtext inside our cards so we need this custom CSS.
+ *
+ */
+.nhsuk-card {
+  // If we use a div for the __description element, remove margin-bottom of it's last child.
+  div.nhsuk-card__description > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+
+/**
+ * Sub Topic Hub level navigation pattern
+ * to follow the style fo the new proposed IA changes
+ */
+.beta-hub-key-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 1.125em 0;
+}
+
+.beta-hub-key-links__list-item {
+  @extend %nhsuk-heading-s;
+}
+
+
+
+/**
+ * Related links used on hub pages – see corona content
+ * to follow the style fo the new proposed IA changes
+ */
+.beta-hub-related-links {
+  @include nhsuk-responsive-padding(3, 'top');
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.beta-hub-related-links-title > * {
+  margin-bottom: 0;
+}
+
+.beta-hub-related-links__list-item {
+  @include nhsuk-responsive-padding(3, 'bottom');
+}
+
+$beta-hub-border-top: rgba(204, 204, 204, .5);
+
+.beta-hub-border-top {
+  border-top: 4px solid $beta-hub-border-top;
+  @include nhsuk-responsive-padding(7, 'top');
+}
+
+/**
+ * Links at the bottom of a content page
+ * to follow the style fo the new proposed IA changes
+ */
+
+.beta-hub-sibling-nav {
+  border-top: 0;
+
+  .beta-hub-sibling-nav--current {
+    border-left: 4px solid $color_nhsuk-black;
+    color: $color_nhsuk-black;
+    margin-left: -12px;
+    padding-left: 8px;
+  }
+
+  .beta-hub-sibling-nav__item {
+    padding-bottom: nhsuk-spacing(1);
+    padding-top: nhsuk-spacing(1);
+  }
+
+  .beta-hub-sibling-nav__list {
+    padding-left: 12px;
+  }
+}
+
+/**
+ * Modified the breadcrumbs for the corona section
+ * to follow the style fo the new proposed IA changes
+ */
+
+.beta-breadcrumb {
+  background-color: transparent;
+  padding-bottom: nhsuk-spacing(3);
+  padding-top: 20px;
+}
+
+.beta-icon__chevron-right-circle {
+  fill: $color_nhsuk-blue;
+}
+
+
+/**
+ * Iterative work on the header
+ * Phase 1 exposing search on mobile
+ */
+@include mq($until: tablet) {
+  .autocomplete-container {
+    display: none;
+    z-index: 2;
+
+    .js-enabled & {
+      display: block;
+    }
+  }
+
+  .beta-header__search-form {
+    background-color: $color_nhsuk-blue;
+    padding: 0 16px!important;
+    position: relative;
+
+    .js-enabled & {
+      background-color: $color_nhsuk-white;
+    }
+  }
+
+  .js-enabled {
+    .beta-header__search-wrap {
+      &::after {
+        background: $color_nhsuk-blue;
+        content: ' ';
+        height: 50px;
+        left: -16px;
+        position: absolute;
+        width: calc(100% + 32px);
+        z-index: 0;
+      }
+    }
+  }
+
+  .beta-search__submit {
+    background-color: $color_nhsuk-grey-5;
+    border: 0;
+    height: 52px;
+    z-index: 1;
+
+    .js-enabled & {
+      height: 40px;
+    }
+
+    .beta-icon__search {
+      fill: $color_nhsuk-blue;
+      height: 27px;
+      width: 27px;
+    }
+
+    &:hover {
+      background-color: $color_shade_nhsuk-blue-35;
+      border: 1px solid $color_nhsuk-white;
+
+      .nhsuk-icon {
+        fill: $color_nhsuk-white;
+      }
+    }
+  }
+
+  .nhsuk-header__menu-toggle {
+    right: 0;
+  }
+
+  .autocomplete__menu {
+    background-color: transparent;
+    top: 13px;
+  }
+
+  .autocomplete__input {
+    border: 1px solid $color_nhsuk-white;
+    height: 40px;
+  }
+}
+
+
+/* ==========================================================================
+    Updated nav
+   ========================================================================== */
+
+.beta-header {
+  @include mq($until: tablet) {
+    padding-bottom: 0;
+  }
+}
+
+// toggle button
+// only shows when screen can't fit all nav items
+.beta-nhsuk-header__menu-toggle {
+  @include toggle-button();
+  align-self: center;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 11px 14px;
+  text-decoration: none;
+  visibility: hidden;
+  z-index: 1;
+
+  @include mq($from: desktop) {
+    display: none;
+  }
+
+  &.js-show {
+    display: block;
+    visibility: visible;
+  }
+
+  &:focus {
+    @include nhsuk-focused-button;
+    box-shadow: 0 0 0 2px $nhsuk-focus-color, 0 $nhsuk-focus-width 0 2px $nhsuk-focus-text-color;
+  }
+}
+
+// container
+// append hidden nav to this, don't remove
+.beta-nhsuk-navigation {
+  display: flex;
+
+  @include mq($until: tablet) {
+    position: relative;
+    z-index: 10;
+  }
+
+  @include mq($from: tablet) {
+    border-top: 1px solid rgba(255, 255, 255, .2);
+  }
+}
+
+// ul of visible nav
+.beta-nhsuk-header__navigation-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
+  @include mq($from: desktop) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .js-enabled & {
+    display: flex;
+  }
+}
+
+.beta-nhsuk-header__navigation-item {
+  margin-bottom: 0;
+}
+
+// a tag
+.beta-nhsuk-header__navigation-link {
+  color: $color_nhsuk-white;
+  padding: 10px 12px;
+  text-decoration: underline;
+  white-space: nowrap;
+
+  @include mq($from: tablet) {
+    padding: 12px 16px;
+  }
+
+  &:hover {
+    color: $color_nhsuk-white;
+    text-decoration: none;
+  }
+
+  &:visited {
+    color: $color_nhsuk-white;
+  }
+
+  .nhsuk-icon__chevron-right {
+    display: none;
+  }
+}
+
+// ul of hidden nav
+.beta-nhsuk-header__drop-down {
+  @include print-hide();
+  background-color: $color_nhsuk-white;
+  clear: both;
+  left: -16px;
+  list-style: none;
+  margin: 0;
+  overflow: hidden;
+  padding-left: 0;
+  position: absolute;
+  right: -16px;
+  top: 100%;
+
+  @include mq($from: tablet) {
+    left: 0;
+    right: 0;
+  }
+
+  &.js-hidden {
+    display: none;
+  }
+
+  .beta-nhsuk-header__navigation-link {
+    color: $color_nhsuk-blue;
+    padding: 12px nhsuk-spacing(3);
+  }
+
+  .beta-nhsuk-header__navigation-item {
+    border-top: 1px solid $color_nhsuk-grey-5;
+    margin-bottom: 0;
+
+    @include mq($from: large-desktop) {
+      border-top: 0;
+      margin: 0;
+      text-align: center;
+    }
+  }
+}
+
+.nhsuk-header__search-wrap.js-show {
+  margin-bottom: 0;
+}
+
+.beta-nhsuk-footer {
+  margin-bottom: 15px;
+
+  @include mq($from: desktop) {
+    display: flex;
+  }
+}
+
+.beta-nhsuk-footer__list {
+  margin-bottom: 25px;
+
+  &:last-child {
+    margin-bottom: 15px;
+  }
+
+  @include mq($from: desktop) {
+    padding-right: 40px;
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+}
+
+.beta-nhsuk-footer__list-policies {
+  @include mq($until: desktop) {
+    border-top: 1px solid $color_nhsuk-grey-5;
+    padding-top: 35px;
+  }
+}
+
+.beta-nhsuk-footer__list-item {
+  @include mq($from: desktop) {
+    float: none;
+    margin-right: 0;
+  }
+}
+
+.beta-nhsuk-footer__list
+.beta-nhsuk-footer__list-item-link {
+  color: $color_nhsuk-blue;
+
+  &:hover {
+    color: $nhsuk-link-hover-color;
+    text-decoration: none;
+  }
+}
+
+.beta-nhsuk-footer__copyright {
+  @include nhsuk-font(16);
+  color: $nhsuk-secondary-text-color;
+  margin-bottom: 0;
+}
+
+.nhsuk-footer {
+  border-bottom: 10px solid $color_nhsuk-grey-1;
+}
+
+.beta-nhsuk-header__navigation-item--home {
+  @include mq($from: desktop) {
+    display: none;
+  }
+}
+
+.beta-nhsuk-header__navigation-item--services-mobile {
+  @include mq($from: desktop) {
+    display: none;
+  }
+}
+
+.beta-nhsuk-header__navigation-item--services {
+  display: none;
+
+  @include mq($from: desktop) {
+    display: list-item;
+  }
+}
+
+.beta-menu-item {
+  @include mq($from: large-desktop) {
+    display: none;
+  }
+}
+
+.beta-nhsuk-header__navigation-close {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg class='nhsuk-icon nhsuk-icon__close' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' aria-hidden='true' focusable='false' height='40' width='40'%3e%3cpath fill='%23005eb8' d='M13.41 12l5.3-5.29a1 1 0 1 0-1.42-1.42L12 10.59l-5.29-5.3a1 1 0 0 0-1.42 1.42l5.3 5.29-5.3 5.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l5.29-5.3 5.29 5.3a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42z'%3e%3c/path%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  height: 40px;
+  width: 40px;
+
+  &:hover,
+  &:focus {
+    background-image: url("data:image/svg+xml,%3Csvg class='nhsuk-icon nhsuk-icon__close' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' aria-hidden='true' focusable='false' height='40' width='40'%3E%3Cpath d='M13.41 12l5.3-5.29a1 1 0 1 0-1.42-1.42L12 10.59l-5.29-5.3a1 1 0 0 0-1.42 1.42l5.3 5.29-5.3 5.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l5.29-5.3 5.29 5.3a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42z'%3E%3C/path%3E%3C/svg%3E");
+  }
+}
+
+.beta-mobile-menu-container {
+  align-self: center;
+  display: none;
+  margin-left: auto;
+
+  &.js-show {
+    display: block;
+  }
+}
+
+.beta-nhsuk-navigation-container {
+  position: relative;
+}
+
+/**
+ * Inset text component
+ * Add cta buttons
+ */
+.nhsuk-button--beta-login {
+  background-color: $color_nhsuk-blue;
+  box-shadow: 0 4px 0 $color_shade_nhsuk-blue-50;
+  margin-bottom: 0;
+  margin-right: 10px;
+
+  &:hover {
+    background-color: darken($color_nhsuk-blue, 12%);
+  }
+}
+
+.nhsuk-u-float-left {
+  float: left;
+}
