@@ -1,0 +1,146 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'template-lab-1.html' %}
+<!--
+  In /views/layout.html you can:
+    - change the header and footer
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+Symptom checker - NHS
+{% endblock %}
+
+
+{% block beforeContent %}
+<!-- Coronavirus (COVID-19) banner -->
+<div class="app-global-alert" id="app-global-alert" role="complementary">
+  <div class="nhsuk-width-container">
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-full">
+        <div class="app-global-alert__content">
+          <div class="app-global-alert__message">
+            <h2>Coronavirus (COVID-19)</h2>
+            <p><a href="">Get the latest advice about COVID-19</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Breadcrumbs -->
+<nav class="nhsuk-breadcrumb beta-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a href="" class="nhsuk-breadcrumb__link">Home</a></li>
+      <li class="nhsuk-breadcrumb__item"><a href="/lab-1/symptoms/" class="nhsuk-breadcrumb__link">Symptoms</a></li>
+    </ol>
+    <p class="nhsuk-breadcrumb__back">
+      <a href="/lab-1/symptoms/" class="nhsuk-breadcrumb__backlink">
+        <span class="nhsuk-u-visually-hidden">Back to </span>Symptoms
+      </a>
+    </p>
+  </div>
+</nav>
+{% endblock %}
+
+
+<!-- NHS symptoms content -->
+{% block content %}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+
+    <!-- Heading -->
+    <div class="nhsuk-u-reading-width">
+      <h1 class="nhsuk-u-margin-bottom-2">Symptom checker</h1>
+    </div>
+
+    <section class="nhsuk-u-margin-bottom-6">
+      <ul class="nhsuk-hub-key-links beta-hub-key-links">
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="https://www.nhs.uk/service-search/find-a-gp">
+              GP
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="https://www.nhs.uk/service-search/find-a-dentist">
+              Dentist
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="https://www.nhs.uk/service-search/find-an-optician">
+              Optician
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="https://www.nhs.uk/service-search/hospital">
+              Hospital
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="https://www.nhs.uk/service-search/pharmacy">
+              Pharmacy
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="https://www.nhs.uk/service-search/other-services/Urgent-Care/LocationSearch/1824">
+              Urgent care services
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="https://www.nhs.uk/service-search/sexual-health">
+              Sexual health services
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="https://www.nhs.uk/service-search/pregnancy">
+              Pregnancy services
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="https://www.nhs.uk/service-search/mental-health">
+              Mental health services
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="https://www.nhs.uk/service-search/other-services">
+              Find other NHS services
+            </a>
+          </li>
+        
+      </ul>
+    </section>
+
+
+      <!-- If you need help now, if you think it's an emergency -->
+      <div class="nhsuk-u-reading-width beta-hub-bottom-content">
+        <h2>If you need help now, and you&#x27;re not sure what to do</h2>
+        <ul>
+          <li>Go to <a href="">111.nhs.uk</a> or call 111</li>
+        </ul>
+        <h2>If you think it&#x27;s an emergency</h2>
+        <ul>
+          <li><a href="">Find your nearest A&amp;E</a></li>
+          <li>Call 999</li>
+        </ul>
+      </div>
+
+    </article>
+
+  </div>
+</div>
+
+{% endblock %}
+
+
