@@ -1,0 +1,155 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'template-lab-1b.html' %}
+{% set mainClasses = 'nhsuk-u-padding-top-0' %}
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+Symptoms - NHS
+{% endblock %}
+
+{% block beforeContent %}
+<!-- Coronavirus (COVID-19) banner -->
+<div class="app-global-alert" id="app-global-alert" role="complementary">
+  <div class="nhsuk-width-container">
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-full">
+        <div class="app-global-alert__content">
+          <div class="app-global-alert__message">
+            <h2>Coronavirus (COVID-19)</h2>
+            <p><a href="">Get the latest advice about COVID-19</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Breadcrumbs -->
+<nav class="nhsuk-breadcrumb beta-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a href="" class="nhsuk-breadcrumb__link">Home</a></li>
+    </ol>
+    <p class="nhsuk-breadcrumb__back">
+      <a href="" class="nhsuk-breadcrumb__backlink">
+        <span class="nhsuk-u-visually-hidden">Back to </span>Home
+      </a>
+    </p>
+  </div>
+</nav>
+{% endblock %}
+
+
+<!-- Homepage content -->
+{% block content %}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+
+    <div class="nhsuk-u-reading-width">
+      <h1>Blood in urine</h1>
+    </div>
+
+    
+    <p><strong>Blood in urine (pee) is not usually caused by anything serious but you must get it checked out by a GP.</strong></p>
+
+    <div class="nhsuk-card nhsuk-card--care nhsuk-card--care--urgent">
+      <div class="nhsuk-card--care__heading-container">
+        <h2 class="nhsuk-card--care__heading">
+          <span role="text"><span class="nhsuk-u-visually-hidden">Urgent advice: </span>Ask for an urgent GP appointment or call 111 if:</span>
+        </h2>
+        <span class="nhsuk-card--care__arrow" aria-hidden="true"></span>
+      </div>
+    
+      <div class="nhsuk-card__content">
+        <p>you have blood in your urine and:</p>
+        <ul>
+          <li>you do not have any other symptoms</li>
+          <li>it's the first time it's happened</li>
+          <li>there's only a small amount of blood</li>
+        </ul>
+        <p>Blood in your pee may be bright pink, red or dark brown.</p>
+    
+      </div>
+    </div>
+
+    <div class="nhsuk-warning-callout">
+      <h3 class="nhsuk-warning-callout__label">
+        
+          Cancer risk
+        
+      </h3>
+      
+        <p>Blood in pee must be checked out because it can be a sign of cancer. This is easier to treat if it's found early.</p>
+      
+    </div>
+
+    <h3>What happens at your appointment</h3>
+    <p>The GP will ask about your symptoms and may need to <a href="javascript:void(0);"> examine your bottom (rectum)</a>, or vagina if you're a woman.</p>
+    <p>They might also:</p>
+    <ul>
+      <li>ask for a pee sample or arrange a blood test</li>
+      <li>prescribe antibiotics if they think you have an infection</li>
+      <li>refer you to a specialist for tests</li>
+    </ul>
+    
+    <h2>Causes of blood in urine</h2>
+    <p>Blood in your pee could come from anywhere in the urinary tract – the bladder, kidneys or urethra (the tube that carries pee out of the body).</p>
+    <p>If you have other symptoms, this might give you an idea of the cause. Do not self-diagnose – see a GP if you think it's blood in your pee.</p>
+    <div class="nhsuk-table-container">
+      <table><caption class="nhsuk-u-visually-hidden">Possible causes of blood in urine</caption>
+<thead>
+<tr>
+  <th scope="col">Other symptoms</th>
+  <th scope="col">Possible cause</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Burning pain when peeing, need to pee often, smelly or cloudy pee, high temperature, pain in sides or lower back</td>
+  <td><a href="javascript:void(0);">urinary tract infections (UTIs)</a></td>
+</tr>
+<tr>
+  <td>Bad pain in sides, lower back or groin that comes and goes, unable to lie still, feeling sick</td>
+  <td><a href="javascript:void(0);">kidney stones</a></td>
+</tr>
+<tr>
+  <td>Older men (common in over-50s) finding it difficult to pee, needing to pee suddenly and often, waking up to pee in middle of the night</td>
+  <td><a href="javascript:void(0);">enlarged prostate</a></td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+    
+    <h3>When it might be something else</h3>
+    <p>It may not be blood in your pee if:</p>
+    <ul>
+      <li>you've recently eaten beetroot – this can turn your pee pink</li>
+      <li>you're taking a new medicine – some medicines can turn pee red or brown</li>
+      <li>you're <a href="javascript:void(0);">bleeding from your bottom</a> instead</li>
+      <li>it's happening during your <a href="javascript:void(0);">period</a></li>
+    </ul>
+
+    <div class="nhsuk-inset-text">
+      <span class="nhsuk-u-visually-hidden">Information: </span>
+      <h2>More information about blood in urine</h2>
+      <p>The British Association of Urological Surgeons (BAUS) has more information about <a href="javascript:void(0);">blood in urine (haematuria)</a>.</p>
+    </div>
+
+
+    <p class="nhsuk-body-s nhsuk-u-margin-top-7 nhsuk-u-secondary-text-color">
+    Page last reviewed: 02 August 2019<br>
+    Next review due: 02 August 2022
+    </p>
+
+
+
+
+
+    
+
+  </div>
+</div>
+{% endblock %}
+
+
