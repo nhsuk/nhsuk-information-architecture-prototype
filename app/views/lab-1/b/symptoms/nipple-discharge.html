@@ -1,0 +1,127 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'template-lab-1b.html' %}
+{% set mainClasses = 'nhsuk-u-padding-top-0' %}
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+Symptoms - NHS
+{% endblock %}
+
+{% block beforeContent %}
+<!-- Coronavirus (COVID-19) banner -->
+<div class="app-global-alert" id="app-global-alert" role="complementary">
+  <div class="nhsuk-width-container">
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-full">
+        <div class="app-global-alert__content">
+          <div class="app-global-alert__message">
+            <h2>Coronavirus (COVID-19)</h2>
+            <p><a href="">Get the latest advice about COVID-19</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Breadcrumbs -->
+<nav class="nhsuk-breadcrumb beta-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a href="" class="nhsuk-breadcrumb__link">Home</a></li>
+    </ol>
+    <p class="nhsuk-breadcrumb__back">
+      <a href="" class="nhsuk-breadcrumb__backlink">
+        <span class="nhsuk-u-visually-hidden">Back to </span>Home
+      </a>
+    </p>
+  </div>
+</nav>
+{% endblock %}
+
+
+<!-- Homepage content -->
+{% block content %}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+
+    <div class="nhsuk-u-reading-width">
+      <h1>Nipple discharge</h1>
+    </div>
+    <p><strong>Nipple discharge is not usually a sign of anything serious, but sometimes it's a good idea to get it checked just in case.</strong></p>
+    <h2>Nipple discharge is often normal</h2>
+    <p>Lots of women have nipple discharge from time to time. It may just be normal for you.</p>
+    <p>It's also not unusual for babies (boys and girls) to have milky nipple discharge soon after they're born. This should stop in a few weeks.</p>
+    <p>Nipple discharge in men is not normal.</p>
+    <p>The colour of your discharge is not a good way of telling if it's anything serious. Normal discharge can be lots of colours.</p>
+
+    <div class="nhsuk-card nhsuk-card--care nhsuk-card--care--non-urgent">
+      <div class="nhsuk-card--care__heading-container">
+        <h2 class="nhsuk-card--care__heading">
+          <span role="text"><span class="nhsuk-u-visually-hidden">Non-urgent advice: </span>See a GP if:</span>
+        </h2>
+        <span class="nhsuk-card--care__arrow" aria-hidden="true"></span>
+      </div>
+    
+      <div class="nhsuk-card__content">
+        <p>you have nipple discharge and any of these:</p>
+        <ul>
+          <li>it happens regularly and is not just a one-off</li>
+          <li>it only comes from 1 breast</li>
+          <li>it's bloodstained or smelly</li>
+          <li>you're not breastfeeding and it leaks out without any pressure on your breast</li>
+          <li>you're over 50</li>
+          <li>you have other symptoms – such as a lump, pain, redness or swelling in your breast</li>
+          <li>you're a man</li>
+        </ul>
+        <p>It's probably nothing serious. But there's a small chance it could be cancer, so it's best to get checked.</p>
+    
+      </div>
+    </div>
+    <h3>What happens at your GP appointment</h3>
+    <p>The GP will look at and examine your breasts.</p>
+    <p>They may refer you to a hospital or breast clinic for further tests. These will usually show that you do not have cancer.</p>
+    <h3>What happens at the breast clinic</h3>
+    <p>At the hospital or breast clinic, you may have a:</p>
+    <ul>
+      <li>breast examination</li>
+      <li>scan – usually a breast X-ray (mammogram) or ultrasound</li>
+      <li>biopsy – where a needle is inserted into your breast to remove some cells for testing</li>
+    </ul>
+    <p>The tests are often done during the same visit.</p>
+    <p>You'll usually be told the results on the same day, although biopsy results can take longer – you should get them in a week or two.</p>
+    <p><a href="javascript:void(0);">Read more about what to expect at a breast clinic appointment from Breast Cancer Now</a></p>
+    <h2>Causes of nipple discharge</h2>
+    <p>Nipple discharge has many possible causes.</p>
+    <p>Common causes include:</p>
+    <ul>
+      <li>breastfeeding or pregnancy – see <a href="javascript:void(0);">leaking from your nipples</a></li>
+      <li>a blocked or enlarged milk duct</li>
+      <li>a small, non-cancerous lump in the breast</li>
+      <li>a <a href="javascript:void(0);">breast infection (mastitis)</a></li>
+      <li>a side effect of a medicine – including the contraceptive pill</li>
+    </ul>
+    <p><a href="javascript:void(0);">Read more about common breast conditions that can cause nipple discharge from Breast Cancer Now</a></p>
+    <div class="nhsuk-inset-text">
+      <span class="nhsuk-u-visually-hidden">Information: </span>
+      <p>Nipple discharge by itself is not usually a sign of <a href="javascript:void(0);">breast cancer</a>.</p>
+    </div>
+
+    
+
+    <p class="nhsuk-body-s nhsuk-u-margin-top-7 nhsuk-u-secondary-text-color">
+    Page last reviewed: 02 August 2019<br>
+    Next review due: 02 August 2022
+    </p>
+
+
+
+
+
+    
+
+  </div>
+</div>
+{% endblock %}
+
+
