@@ -1,0 +1,142 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'template-lab-1b.html' %} {% set mainClasses = 'nhsuk-u-padding-top-0' %}
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %} Symptoms - NHS {% endblock %}
+
+<!-- Coronavirus (COVID-19) banner -->
+{% block beforeContent %}
+<div class="app-global-alert" id="app-global-alert" role="complementary">
+    <div class="nhsuk-width-container">
+        <div class="nhsuk-grid-row">
+            <div class="nhsuk-grid-column-full">
+                <div class="app-global-alert__content">
+                    <div class="app-global-alert__message">
+                        <h2>Coronavirus (COVID-19)</h2>
+                        <p><a href="">Get the latest advice about COVID-19</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Breadcrumbs -->
+<nav class="nhsuk-breadcrumb beta-breadcrumb" aria-label="Breadcrumb">
+    <div class="nhsuk-width-container">
+        <ol class="nhsuk-breadcrumb__list">
+            <li class="nhsuk-breadcrumb__item"><a href="" class="nhsuk-breadcrumb__link">Home</a></li>
+        </ol>
+        <p class="nhsuk-breadcrumb__back">
+            <a href="" class="nhsuk-breadcrumb__backlink">
+                <span class="nhsuk-u-visually-hidden">Back to </span>Home
+            </a>
+        </p>
+    </div>
+</nav>
+{% endblock %}
+
+<!-- Symptom content -->
+{% block content %}
+<div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+        <h1>Excessive thirst</h1>
+    </div>
+</div>
+<article>
+    <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-two-thirds">
+            <section>
+                <p><b>It's normal to sometimes feel thirsty, but it's not normal to constantly feel thirsty even when you're drinking a lot. See a GP to find out what's causing your excessive thirst.</b></p>
+            </section>
+            <section>
+                <h2>Why am I always thirsty?</h2>
+                <p>Most of the time if you're feeling thirsty it's because you need to drink more fluids.</p>
+                <p>This can happen if you:</p>
+                <ul>
+                    <li>sweat a lot after doing exercise</li>
+                    <li>are unwell with sickness and diarrhoea</li>
+                    <li>do not drink enough fluids</li>
+                    <li>drink too much alcohol or caffeine</li>
+                    <li>eat salty or spicy food</li>
+                    <li>have a high temperature</li>
+                    <li>are pregnant</li>
+                </ul>
+                <div class="nhsuk-warning-callout">
+                    <h3 class="nhsuk-warning-callout__label">
+                        Important
+                    </h3>
+                    <p>Drink more fluids and avoid alcohol or caffeine to see if it helps.</p>
+                    <p>If you do not, you may be at risk of becoming dehydrated.</p>
+                </div>
+                <details class="nhsuk-details">
+                    <summary class="nhsuk-details__summary">
+                        <span class="nhsuk-details__summary-text">
+      Check if you're dehydrated
+      </span>
+                    </summary>
+                    <div class="nhsuk-details__text">
+                        <p>Symptoms of dehydration in adults and children include:</p>
+                        <ul>
+                            <li>feeling thirsty</li>
+                            <li>dark yellow and strong-smelling pee</li>
+                            <li>peeing little and less than 4 times a day</li>
+                            <li>feeling dizzy or lightheaded</li>
+                            <li>feeling tired</li>
+                            <li>dry mouth, lips and eyes</li>
+                        </ul>
+                        <p><a href="/conditions/dehydration/">Find out more about dehydration</a></p>
+                    </div>
+                </details>
+            </section>
+            <section>
+                <div class="nhsuk-care-card nhsuk-care-card--primary">
+                    <div class="nhsuk-care-card__heading-container">
+                        <h2 class="nhsuk-care-card__heading">
+                            <span role="text">
+          <span class="nhsuk-u-visually-hidden">Non-urgent advice:  </span>See a GP if you have excessive thirst and:
+                            </span>
+                        </h2>
+                        <span class="nhsuk-care-card__arrow" aria-hidden="true"></span>
+                    </div>
+                    <div class="nhsuk-care-card__content">
+                        <ul>
+                            <li>drinking more fluids for several days has not helped</li>
+                            <li>you frequently need to pee</li>
+                            <li>you're pregnant</li>
+                        </ul>
+                        <p>The GP will check if your excessive thirst is being caused by something – for example, <a href="/conditions/diabetes/">diabetes</a>, <a href="/conditions/iron-deficiency-anaemia/">anaemia</a> or medicines you're taking.</p>
+                        <p>The treatment you have will depend on what's causing your excessive thirst.</p>
+                        <div class="nhsuk-inset-text">
+                            <span class="nhsuk-u-visually-hidden">Information: </span>
+                            <h3>Coronavirus (COVID-19) update: how to contact a GP</h3>
+                            <p>It's still important to get help from a GP if you need it. To contact your GP surgery:</p>
+                            <ul>
+                                <li>visit their website</li>
+                                <li>use the <a href="/using-the-nhs/nhs-services/the-nhs-app/">NHS App</a></li>
+                                <li>call them</li>
+                            </ul>
+                            <p><a href="/conditions/coronavirus-covid-19/using-the-nhs-and-other-health-services/">Find out about using the NHS during COVID-19</a></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2>Dry mouth or excessive thirst?</h2>
+                <p>You may think you're thirsty when you actually have a dry mouth.</p>
+                <p>If it's a dry mouth, you may have:</p>
+                <ul>
+                    <li>a burning sensation or soreness in your mouth</li>
+                    <li>changes in your sense of taste</li>
+                    <li>difficulty speaking, eating or swallowing</li>
+                </ul>
+                <p><a href="/conditions/dry-mouth/">Find out more about dry mouth</a></p>
+            </section>
+            <div>
+                <p class="nhsuk-body-s nhsuk-u-margin-top-7 nhsuk-u-secondary-text-color">
+                    Page last reviewed: 21 April 2021<br> Next review due: 21 April 2024
+                </p>
+            </div>
+        </div>
+    </div>
+</article>
+{% endblock %}
