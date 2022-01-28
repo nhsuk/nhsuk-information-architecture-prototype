@@ -1,0 +1,372 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'template-lab-1b.html' %}
+{% set mainClasses = 'nhsuk-u-padding-top-0' %}
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+Symptoms - NHS
+{% endblock %}
+
+{% block beforeContent %}
+<!-- Coronavirus (COVID-19) banner -->
+<div class="app-global-alert" id="app-global-alert" role="complementary">
+  <div class="nhsuk-width-container">
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-full">
+        <div class="app-global-alert__content">
+          <div class="app-global-alert__message">
+            <h2>Coronavirus (COVID-19)</h2>
+            <p><a href="">Get the latest advice about COVID-19</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Breadcrumbs -->
+<nav class="nhsuk-breadcrumb beta-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a href="" class="nhsuk-breadcrumb__link">Home</a></li>
+    </ol>
+    <p class="nhsuk-breadcrumb__back">
+      <a href="" class="nhsuk-breadcrumb__backlink">
+        <span class="nhsuk-u-visually-hidden">Back to </span>Home
+      </a>
+    </p>
+  </div>
+</nav>
+{% endblock %}
+
+
+<!-- Homepage content -->
+{% block content %}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+
+    <div class="nhsuk-u-reading-width">
+      <h1>Bleeding from the bottom (rectal bleeding)</h1>
+    </div>
+
+    
+    <p><strong>A small amount of one-off bleeding from the bottom is not usually a serious problem. But a GP can check.</strong></p>
+    
+    <h2>Check if you're bleeding from the bottom</h2>
+    <p>You might be bleeding from the bottom if you have:</p>
+    <ul>
+      <li>blood on your toilet paper</li>
+      <li>red streaks on the outside of your poo</li>
+      <li>pink water in the toilet bowl</li>
+      <li>blood in your poo or bloody diarrhoea</li>
+      <li>very dark, smelly poo (this can be blood mixed in poo)</li>
+    </ul>
+    <p>A small amount of one-off bleeding can often go away on its own without needing treatment.</p>
+
+    <div class="nhsuk-card nhsuk-card--care nhsuk-card--care--non-urgent">
+      <div class="nhsuk-card--care__heading-container">
+        <h2 class="nhsuk-card--care__heading">
+          <span role="text"><span class="nhsuk-u-visually-hidden">Non-urgent advice: </span>See a GP if:</span>
+        </h2>
+        <span class="nhsuk-card--care__arrow" aria-hidden="true"></span>
+      </div>
+    
+      <div class="nhsuk-card__content">
+    
+        <ul>
+          <li>your child has blood in their poo</li>
+          <li>you've had blood in your poo for 3 weeks</li>
+          <li>your poo has been softer, thinner or longer than normal for 3 weeks</a></li>
+          <li>you're in a lot of pain around the bottom</li>
+          <li>you have a pain or lump in your tummy</li>
+          <li>you've been more tired than usual</li>
+          <li>you've lost weight for no reason</li>
+        </ul>    
+      </div>
+    </div>
+
+    <div class="nhsuk-card nhsuk-card--care nhsuk-card--care--urgent">
+      <div class="nhsuk-card--care__heading-container">
+        <h2 class="nhsuk-card--care__heading">
+          <span role="text"><span class="nhsuk-u-visually-hidden">Urgent advice: </span>Get advice from 111 now if:</span>
+        </h2>
+        <span class="nhsuk-card--care__arrow" aria-hidden="true"></span>
+      </div>
+    
+      <div class="nhsuk-card__content">
+    
+        <ul>
+          <li>your poo is black or dark red</li>
+          <li>you have bloody diarrhoea for no obvious reason</li>
+        </ul>
+        <p>111 will tell you what to do. They can arrange a phone call from a nurse or doctor if you need one.</p>
+        <p>Go to <a href="javascript:void(0);">111.nhs.uk</a> or call 111.</p>
+        <details class="nhsuk-details">
+          <summary class="nhsuk-details__summary">
+            <span class="nhsuk-details__summary-text">
+            Other ways to get help
+            </span>
+          </summary>
+          <div class="nhsuk-details__text">
+            
+              
+                
+                  
+        
+        
+        
+            <p><b>Get an urgent GP appointment</b></p><p>A GP may be able to treat you.</p><p>Ask your GP practice for an urgent appointment.</p>
+        
+                
+              
+            
+          </div>
+        </details>
+    
+      </div>
+    </div>
+
+    <div class="nhsuk-card nhsuk-card--care nhsuk-card--care--emergency">
+      <div class="nhsuk-card--care__heading-container">
+        <h2 class="nhsuk-card--care__heading">
+          <span role="text"><span class="nhsuk-u-visually-hidden">Immediate action required: </span>Go to A&E or call 999 if:</span>
+        </h2>
+        <span class="nhsuk-card--care__arrow" aria-hidden="true"></span>
+      </div>
+    
+      <div class="nhsuk-card__content">
+    
+        <ul>
+          <li>you're bleeding non-stop</li>
+          <li>there's a lot of blood - for example, you see large blood clots in the toilet</li>
+        </ul>
+    
+      </div>
+    </div>
+
+    <h3>What happens at the GP appointment</h3>
+    <p>The GP will check what's causing your symptoms.</p>
+    <p>They might:</p>
+    <ul>
+      <li><a href="javascript:void(0);">check your bottom (rectum)</a> with a gloved finger</li>
+      <li>ask for a <a href="javascript:void(0);">sample of poo</a> for testing</li>
+      <li>refer you to a specialist for tests</li>
+    </ul>
+
+    <div class="nhsuk-warning-callout">
+      <h3 class="nhsuk-warning-callout__label">
+        
+          Bowel cancer risk
+        
+      </h3>
+      
+        <p>Bleeding from the bottom is sometimes a sign of bowel cancer.</p><p>This is easier to treat if it's found early, so it's important to get it checked.</p>
+      
+    </div>
+
+    <h2>Common causes of bleeding from the bottom</h2>
+    <p>If you have other symptoms, this might give you an idea of the cause.</p>
+    <p>Do not self-diagnose – see a GP if you're worried. </p>
+
+    <details class="nhsuk-details">
+      <summary class="nhsuk-details__summary">
+        <span class="nhsuk-details__summary-text">
+        Bright red blood on toilet paper, streaks on poo, pink toilet water
+        </span>
+      </summary>
+      <div class="nhsuk-details__text">
+        
+          
+            
+              
+    
+    
+    
+    
+    
+      
+        <div class="nhsuk-table-container">
+          <table><caption class="nhsuk-u-visually-hidden">Bright red causes</caption>
+    <thead>
+    <tr>
+      <th scope="col">Symptoms</th>
+      <th scope="col">Possible causes</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>Bright red blood and pain when pooing, itchy bottom, lumps</td>
+      <td><a href="javascript:void(0);">piles</a> (haemorrhoids)</td>
+    </tr>
+    <tr>
+      <td>Bright red blood and pain when pooing – often after <a href="javascript:void(0);">constipation</a></td>
+      <td>a small tear in your anus <a href="javascript:void(0);">(anal fissure)</a></td>
+    </tr>
+    <tr>
+      <td>Bleeding with or without lumps, itching or pain</td>
+      <td><a href="javascript:void(0);">sexually transmitted infections (STIs)</a> like genital warts, damage from anal sex</td>
+    </tr>
+    <tr>
+      <td>Bright red blood without pain</td>
+      <td>side effect of <a href="javascript:void(0);">blood-thinning medicine</a> like warfarin or aspirin, broken blood vessels in the gut (angiodysplasia)</td>
+    </tr>
+    </tbody>
+    </table>
+    
+        </div>
+      
+    
+    
+            
+          
+        
+      </div>
+    </details>
+
+    <details class="nhsuk-details">
+      <summary class="nhsuk-details__summary">
+        <span class="nhsuk-details__summary-text">
+        Blood in poo or blood with slime
+        </span>
+      </summary>
+      <div class="nhsuk-details__text">
+        
+          
+            
+              
+    
+    
+    
+        <p>Poo can look like it's mixed with blood if you've eaten a lot of red or purple foods like tomatoes and beetroot.</p><p>But it's sometimes a sign of something else. A GP can check if you're worried.</p>
+    
+            
+          
+        
+          
+            
+              
+    
+    
+    
+    
+    
+      
+        <div class="nhsuk-table-container">
+          <table><caption class="nhsuk-u-visually-hidden">Dark causes</caption>
+    <thead>
+    <tr>
+      <th scope="col">Symptoms</th>
+      <th scope="col">Possible causes</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>Blood and yellow slime when pooing, irritated anus, non stop bottom pain</td>
+      <td><a href="javascript:void(0);">anal fistula</a></td>
+    </tr>
+    <tr>
+      <td>Bloody diarrhoea with clear slime, feeling and being sick</td>
+      <td>tummy bug <a href="javascript:void(0);">(gastroenteritis)</a></td>
+    </tr>
+    <tr>
+      <td>Bloody <a href="javascript:void(0);">diarrhoea</a>, tummy cramps and pain, feeling bloated</td>
+      <td>an <a href="javascript:void(0);">inflammatory bowel disease (IBD)</a> like ulcerative colitis or Crohn's disease</td>
+    </tr>
+    <tr>
+      <td>Blood in poo</td>
+      <td>bleeding in the anus, bowel or lower gut from injury or another problem</td>
+    </tr>
+    <tr>
+      <td>Blood in poo, change in pooing habits (like looser poo, diarrhoea or <a href="javascript:void(0);">constipation</a>), slime with poo</td>
+      <td><a href="javascript:void(0);">bowel polyps</a>, early signs of <a href="javascript:void(0);"></a>bowel cancer</a></td>
+    </tr>
+    </tbody>
+    </table>
+    
+        </div>
+      
+    
+    
+            
+          
+        
+      </div>
+    </details>
+
+    <details class="nhsuk-details">
+      <summary class="nhsuk-details__summary">
+        <span class="nhsuk-details__summary-text">
+        Very dark or black blood or poo
+        </span>
+      </summary>
+      <div class="nhsuk-details__text">
+        
+          
+            
+              
+    
+    
+    
+        <p>Poo can look very dark or black if you:</p><ul><li>take iron tablets</li><li>eat a lot of dark foods like liquorice and blueberries</li></ul><p>But it's sometimes a sign of something else. A GP can do a test to check this if you're worried.</p>
+    
+            
+          
+        
+          
+            
+              
+    
+    
+    
+    
+    
+      
+        <div class="nhsuk-table-container">
+          <table><caption class="nhsuk-u-visually-hidden">Black causes</caption>
+    <thead>
+    <tr>
+      <th scope="col">Symptoms</th>
+      <th scope="col">Possible causes</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>Dark or black poo</td>
+      <td>bleeding in the stomach or gut – can be from injury or a side effect of <a href="javascript:void(0);">blood-thinning medicine</a> like warfarin or aspirin</td>
+    </tr>
+    <tr>
+      <td>Dark blood or poo with tummy pain or cramps</td>
+      <td><a href="javascript:void(0);">stomach ulcer</a>, <a href="javascript:void(0);">diverticular disease and diverticulitis</a></td>
+    </tr>
+    <tr>
+      <td>Dark blood without pain</td>
+      <td>blood-thinning medicine like warfarin or aspirin, angiodysplasia (broken blood vessels in the gut)</td>
+    </tr>
+    </tbody>
+    </table>
+    
+        </div>
+      
+    
+    
+            
+          
+        
+      </div>
+    </details>
+
+    <p class="nhsuk-body-s nhsuk-u-margin-top-7 nhsuk-u-secondary-text-color">
+    Page last reviewed: 02 August 2019<br>
+    Next review due: 02 August 2022
+    </p>
+
+
+
+
+    
+
+  </div>
+</div>
+{% endblock %}
+
+

@@ -1,0 +1,171 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'template-lab-1b.html' %}
+{% set mainClasses = 'nhsuk-u-padding-top-0' %}
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+Symptoms - NHS
+{% endblock %}
+
+{% block beforeContent %}
+<!-- Coronavirus (COVID-19) banner -->
+<div class="app-global-alert" id="app-global-alert" role="complementary">
+  <div class="nhsuk-width-container">
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-full">
+        <div class="app-global-alert__content">
+          <div class="app-global-alert__message">
+            <h2>Coronavirus (COVID-19)</h2>
+            <p><a href="">Get the latest advice about COVID-19</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Breadcrumbs -->
+<nav class="nhsuk-breadcrumb beta-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a href="" class="nhsuk-breadcrumb__link">Home</a></li>
+    </ol>
+    <p class="nhsuk-breadcrumb__back">
+      <a href="" class="nhsuk-breadcrumb__backlink">
+        <span class="nhsuk-u-visually-hidden">Back to </span>Home
+      </a>
+    </p>
+  </div>
+</nav>
+{% endblock %}
+
+
+<!-- Homepage content -->
+{% block content %}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+
+    <div class="nhsuk-u-reading-width">
+      <h1>Elbow and arm pain</h1>
+    </div>
+
+    
+    <p><strong>Elbow and arm pain is not usually a sign of anything serious. If it does not go away after a few weeks, see a GP.</strong></p>
+    <h2>How you can ease elbow and arm pain yourself</h2>
+    <p>Try these things for a couple of days:</p>
+    <ul>
+      <li>put a pack of frozen peas wrapped in a tea towel on your arm – do this for 5 minutes, 3 times a day</li>
+      <li>take painkillers like <a href="javascript:void(0);">paracetamol</a> or <a href="javascript:void(0);">ibuprofen</a></li>
+      <li>raise your arm if it's swollen</li>
+    </ul>
+
+    <div class="nhsuk-card nhsuk-card--care nhsuk-card--care--non-urgent">
+      <div class="nhsuk-card--care__heading-container">
+        <h2 class="nhsuk-card--care__heading">
+          <span role="text"><span class="nhsuk-u-visually-hidden">Non-urgent advice: </span>Speak to a GP if:</span>
+        </h2>
+        <span class="nhsuk-card--care__arrow" aria-hidden="true"></span>
+      </div>
+    
+      <div class="nhsuk-card__content">
+    
+        <ul>
+          <li>the pain does not go away after a few weeks</li>
+        </ul>    
+      </div>
+    </div>
+
+    <div class="nhsuk-card nhsuk-card--care nhsuk-card--care--urgent">
+      <div class="nhsuk-card--care__heading-container">
+        <h2 class="nhsuk-card--care__heading">
+          <span role="text"><span class="nhsuk-u-visually-hidden">Urgent advice: </span>Get advice from 111 now if your arm:</span>
+        </h2>
+        <span class="nhsuk-card--care__arrow" aria-hidden="true"></span>
+      </div>
+    
+      <div class="nhsuk-card__content">
+    
+        <ul>
+          <li>hurts when you exercise but the pain goes away when you rest</li>
+          <li>is swollen and you have a very high temperature or feel hot and shivery</li>
+          <li>is extremely painful and difficult to move</li>
+          <li>tingles or feels numb</li>
+          <li>has been injured and you heard a snapping noise or your arm has changed shape</li>
+        </ul>
+        <p>These can be signs of a heart problem <a href="javascript:void(0);">(angina)</a>, an infection or a <a href="javascript:void(0);">broken arm</a></p>
+        <p>111 will tell you what to do. They can tell you the right place to get help if you need to see someone.</p>
+        <p>Go to <a href="javascript:void(0);">111.nhs.uk</a> or <a href="javascript:void(0);">call 111</a>.</p>
+    
+      </div>
+    </div>
+
+    <div class="nhsuk-card nhsuk-card--care nhsuk-card--care--emergency">
+      <div class="nhsuk-card--care__heading-container">
+        <h2 class="nhsuk-card--care__heading">
+          <span role="text"><span class="nhsuk-u-visually-hidden">Immediate action required: </span>Call 999 if:</span>
+        </h2>
+        <span class="nhsuk-card--care__arrow" aria-hidden="true"></span>
+      </div>
+    
+      <div class="nhsuk-card__content">
+    
+        <ul>
+          <li>the pain has come on suddenly and your chest feels like it's being squeezed</li>
+        </ul>
+        <p>This could be a sign of a <a href="javascript:void(0);">heart attack</a>.</p>
+    
+      </div>
+    </div>
+
+    <h2>Causes of elbow and arm pain</h2>
+    <p>Apart from an injury, these things can cause arm pain. </p>
+    <p>Do not self-diagnose. See a GP if you're worried.</p>
+
+    <table><caption class="nhsuk-u-visually-hidden">Possible causes of elbow and arm pain</caption>
+      <thead>
+      <tr>
+        <th scope="col">Main symptoms</th>
+        <th scope="col">Possible cause</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>Pain, stiffness, difficulty moving, swelling</td>
+        <td><a href="javascript:void(0);">Tendonitis</a> (for example, tennis elbow)</td>
+      </tr>
+      <tr>
+        <td>Pain, tenderness, bruising, swelling</td>
+        <td><a href="javascript:void(0);">Sprains and strains</a></td>
+      </tr>
+      <tr>
+        <td>Pain, stiffness coming down from the shoulder</td>
+        <td><a href="javascript:void(0);">Frozen shoulder</a></td>
+      </tr>
+      <tr>
+        <td>Pain and stiffness in the joints</td>
+        <td><a href="javascript:void(0);">Arthritis</a></td>
+      </tr>
+      <tr>
+        <td>Temperature of 38C or above, feeling shivery, skin broken around the shoulder</td>
+        <td><a href="javascript:void(0);">Inflamed shoulder (bursitis)</a></td>
+      </tr>
+      </tbody>
+      </table>
+    
+    
+    <p class="nhsuk-body-s nhsuk-u-margin-top-7 nhsuk-u-secondary-text-color">
+    Page last reviewed: 02 August 2019<br>
+    Next review due: 02 August 2022
+    </p>
+
+
+
+
+
+    
+
+  </div>
+</div>
+{% endblock %}
+
+
