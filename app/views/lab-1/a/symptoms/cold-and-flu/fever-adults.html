@@ -1,0 +1,121 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'template-lab-1b.html' %}
+{% set mainClasses = 'nhsuk-u-padding-top-0' %}
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+Symptoms - NHS
+{% endblock %}
+
+{% block beforeContent %}
+<!-- Coronavirus (COVID-19) banner -->
+<div class="app-global-alert" id="app-global-alert" role="complementary">
+  <div class="nhsuk-width-container">
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-full">
+        <div class="app-global-alert__content">
+          <div class="app-global-alert__message">
+            <h2>Coronavirus (COVID-19)</h2>
+            <p><a href="">Get the latest advice about COVID-19</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Breadcrumbs -->
+<nav class="nhsuk-breadcrumb beta-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a href="" class="nhsuk-breadcrumb__link">Home</a></li>
+    </ol>
+    <p class="nhsuk-breadcrumb__back">
+      <a href="" class="nhsuk-breadcrumb__backlink">
+        <span class="nhsuk-u-visually-hidden">Back to </span>Home
+      </a>
+    </p>
+  </div>
+</nav>
+{% endblock %}
+
+
+<!-- Homepage content -->
+{% block content %}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+
+    <div class="nhsuk-u-reading-width">
+      <h1>High temperature (fever) in adults</h1>
+    </div>
+
+    <h2>What is a high temperature?</h2>
+    <p>Normal body temperature is different for everyone and changes during the day.</p>
+    <p>A high temperature is usually considered to be 38C or above. This is sometimes called a fever.</p>
+    <p>Many things can cause a high temperature, but it's usually caused by your body fighting an infection.</p>
+    <h2>Check if you have a high temperature</h2>
+    <p>You may have a high temperature if:</p>
+    <ul>
+      <li>your chest or back feel hotter than usual</li>
+      <li>you have other symptoms, such as shivering (chills), sweating or warm, red skin</li>
+      <li>a thermometer says your temperature is 38C or above</li>
+    </ul>
+
+    <div class="nhsuk-warning-callout">
+      <h2 class="nhsuk-warning-callout__label">
+        
+          <span role="text">
+            <span class="nhsuk-u-visually-hidden">Important: </span>
+            Could it be coronavirus (COVID-19)?
+          </span>
+        
+      </h2>
+      
+        <p>A high temperature could be COVID-19.</p>
+        <p><a href="javascript:void(0);">Get advice about symptoms of COVID-19 and what to do</a></p>
+      
+    </div>
+
+    <h3>Do I need to take my temperature?</h3>
+    <p>You do not need to take your temperature using a thermometer, but you can if you have one.</p>
+    <p>Make sure you use it correctly to help get an accurate result. See <a href="javascript:void(0);">how to take a temperature</a>.</p>
+    <div class="nhsuk-warning-callout">
+      <h4 class="nhsuk-warning-callout__label">
+        
+          Important
+        
+      </h4>
+      
+        <p>If you feel hot or shivery, you may have a high temperature even if a thermometer says your temperature is below 38C.</p>
+      
+    </div>
+
+    <h2>Treating a high temperature</h2>
+    <p>It can help to:</p>
+    <ul>
+      <li>get lots of rest</li>
+      <li>drink plenty of fluids (water is best) to avoid dehydration – drink enough so your pee is light yellow and clear</li>
+      <li>take <a href="javascript:void(0);">paracetamol</a> or <a href="javascript:void(0);">ibuprofen</a> if you feel uncomfortable</li>
+    </ul>
+
+    <h2>Advice for children</h2>
+    <p>This page is for adults. For advice about children, see <a href="/lab-1/b/symptoms/fever-children">fever in children</a></p>
+    
+    
+
+    <p class="nhsuk-body-s nhsuk-u-margin-top-7 nhsuk-u-secondary-text-color">
+    Page last reviewed: 02 August 2019<br>
+    Next review due: 02 August 2022
+    </p>
+
+
+
+
+
+    
+
+  </div>
+</div>
+{% endblock %}
+
+
