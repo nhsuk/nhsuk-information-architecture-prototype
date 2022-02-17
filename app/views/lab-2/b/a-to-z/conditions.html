@@ -1,12 +1,11 @@
 <!-- Extends the layout from /views/layout.html -->
-{% extends 'template-lab-2a.html' %}
+{% extends 'template-lab-2b.html' %}
 {% set mainClasses = 'nhsuk-u-padding-top-0' %}
 
 <!-- Set the page title inside the pageTitle block -->
 {% block pageTitle %}
-Symptom checker - NHS
+NHS Health A to Z - NHS
 {% endblock %}
-
 
 {% block beforeContent %}
 <!-- Coronavirus (COVID-19) banner -->
@@ -28,10 +27,10 @@ Symptom checker - NHS
 <nav class="nhsuk-breadcrumb beta-breadcrumb" aria-label="Breadcrumb">
   <div class="nhsuk-width-container">
     <ol class="nhsuk-breadcrumb__list">
-      <li class="nhsuk-breadcrumb__item"><a href="/lab-1/a/" class="nhsuk-breadcrumb__link">Home</a></li>
+      <li class="nhsuk-breadcrumb__item"><a href="" class="nhsuk-breadcrumb__link">Home</a></li>
     </ol>
     <p class="nhsuk-breadcrumb__back">
-      <a href="/lab-1/a/" class="nhsuk-breadcrumb__backlink">
+      <a href="/lab-2/b" class="nhsuk-breadcrumb__backlink">
         <span class="nhsuk-u-visually-hidden">Back to </span>Home
       </a>
     </p>
@@ -39,45 +38,17 @@ Symptom checker - NHS
 </nav>
 {% endblock %}
 
-
-<!-- NHS symptoms content -->
+<!-- Health a-z content -->
 {% block content %}
 
 <div class="nhsuk-grid-row">
   <div class="nhsuk-grid-column-full">
 
-    <!-- Heading -->
     <div class="nhsuk-u-reading-width">
-      <h1>Symptoms</h1>
+      <h1>Conditions</h1>
     </div>
 
     <article>
-      <h2 class="nhsuk-u-visually-hidden">Top tasks in symptoms</h2>
-
-      <ul class="nhsuk-grid-row nhsuk-card-group nhsuk-u-padding-top-0">
-
-        <li class="nhsuk-grid-column-one-third nhsuk-card-group__item">
-          <div class="nhsuk-card nhsuk-card--clickable ">
-            <div class="nhsuk-card__content">
-              <a class="nhsuk-card__link nhsuk-heading-xs" href="javascript:void(0);">
-                Find your nearest pharmacy
-              </a>
-            </div>
-          </div>
-        </li>
-
-
-        <li class="nhsuk-grid-column-one-third nhsuk-card-group__item">
-          <div class="nhsuk-card nhsuk-card--clickable ">
-            <div class="nhsuk-card__content">
-              <a class="nhsuk-card__link nhsuk-heading-xs" href="javascript:void(0);">
-                Get help from NHS 111 Online
-              </a>
-            </div>
-          </div>
-        </li>
-
-      </ul>
 
       <ul class="nhsuk-grid-row nhsuk-card-group">
 
@@ -85,11 +56,11 @@ Symptom checker - NHS
           <div class="nhsuk-card nhsuk-card--clickable ">
             <div class="nhsuk-card__content beta-card__content">
               <h2 class="nhsuk-card__heading nhsuk-heading-m">
-                <a class="nhsuk-card__link" href="/lab-1/a/symptoms/breathing">
-                  Breathing problems
+                <a class="nhsuk-card__link" href="javascript:void(0);">
+                  Allergies
                 </a>
               </h2>
-              <div class="nhsuk-card__description"><p>Difficulty breathing, including wheezing or feeling short of breath</p></div>
+              <div class="nhsuk-card__description"><p>Conditions that cause allergic reactions, such as hay-fever</p></div>
               <div class="beta-hub-arrow">
                 <svg class="nhsuk-icon beta-icon__chevron-right-circle" xmlns="http://www.w3.org/2000/svg" width="27" height="27" aria-hidden="true"><circle cx="13.333" cy="13.333" r="13.333" fill=""/><g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"><path d="M15.438 13l-3.771 3.771"/><path data-name="Path" d="M11.667 9.229L15.438 13"/></g></svg>
               </div>
@@ -102,11 +73,11 @@ Symptom checker - NHS
           <div class="nhsuk-card nhsuk-card--clickable ">
             <div class="nhsuk-card__content beta-card__content">
               <h2 class="nhsuk-card__heading nhsuk-heading-m">
-                <a class="nhsuk-card__link" href="/lab-1/a/symptoms/pain">
-                  Pain
+                <a class="nhsuk-card__link" href="javascript:void(0);">
+                  Arthritis
                 </a>
               </h2>
-              <div class="nhsuk-card__description"><p>Pain in any part of the body, including headache, chest pain, arm pain, hand pain, knee pain and foot pain</p></div>
+              <div class="nhsuk-card__description"><p>Joint conditions that can cause swelling, stiffness, pain</p></div>
               <div class="beta-hub-arrow">
                 <svg class="nhsuk-icon beta-icon__chevron-right-circle" xmlns="http://www.w3.org/2000/svg" width="27" height="27" aria-hidden="true"><circle cx="13.333" cy="13.333" r="13.333" fill=""/><g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"><path d="M15.438 13l-3.771 3.771"/><path data-name="Path" d="M11.667 9.229L15.438 13"/></g></svg>
               </div>
@@ -119,28 +90,11 @@ Symptom checker - NHS
           <div class="nhsuk-card nhsuk-card--clickable ">
             <div class="nhsuk-card__content beta-card__content">
               <h2 class="nhsuk-card__heading nhsuk-heading-m">
-                <a class="nhsuk-card__link" href="/lab-1/a/symptoms/bites-and-stings">
-                  Bites and stings
+                <a class="nhsuk-card__link" href="javascript:void(0);">
+                  Autoimmune conditions
                 </a>
               </h2>
-              <div class="nhsuk-card__description"><p>A bite or sting from an animal or person, including insect stings and dog bites</p></div>
-              <div class="beta-hub-arrow">
-                <svg class="nhsuk-icon beta-icon__chevron-right-circle" xmlns="http://www.w3.org/2000/svg" width="27" height="27" aria-hidden="true"><circle cx="13.333" cy="13.333" r="13.333" fill=""/><g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"><path d="M15.438 13l-3.771 3.771"/><path data-name="Path" d="M11.667 9.229L15.438 13"/></g></svg>
-              </div>
-            </div>
-          </div>
-        </li>
-
-
-        <li class="beta-hub-main-topic nhsuk-grid-column-one-half nhsuk-card-group__item">
-          <div class="nhsuk-card nhsuk-card--clickable ">
-            <div class="nhsuk-card__content beta-card__content">
-              <h2 class="nhsuk-card__heading nhsuk-heading-m">
-                <a class="nhsuk-card__link" href="/lab-1/a/symptoms/cold-and-flu">
-                  Cold and flu symptoms
-                </a>
-              </h2>
-              <div class="nhsuk-card__description"><p>Symptoms similar to cold or flu, including high temperature, cough and sore throat</p></div>
+              <div class="nhsuk-card__description"><p>When the body mistakenly attacks normal cells, including conditions such as lupus and inflammatory bowel disease (IBS)</p></div>
               <div class="beta-hub-arrow">
                 <svg class="nhsuk-icon beta-icon__chevron-right-circle" xmlns="http://www.w3.org/2000/svg" width="27" height="27" aria-hidden="true"><circle cx="13.333" cy="13.333" r="13.333" fill=""/><g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"><path d="M15.438 13l-3.771 3.771"/><path data-name="Path" d="M11.667 9.229L15.438 13"/></g></svg>
               </div>
@@ -153,10 +107,10 @@ Symptom checker - NHS
             <div class="nhsuk-card__content beta-card__content">
               <h2 class="nhsuk-card__heading nhsuk-heading-m">
                 <a class="nhsuk-card__link" href="/lab-1/a/symptoms/eating-and-digestion">
-                  Eating and digestion problems
+                  Breathing and respiratory conditions
                 </a>
               </h2>
-              <div class="nhsuk-card__description"><p>Symptoms that affect eating and digestion, including teeth grinding, bloating and diarrhoea and vomiting</p></div>
+              <div class="nhsuk-card__description"><p>Illnesses that cause problems with your lungs, such as asthma and pneumonia</p></div>
               <div class="beta-hub-arrow">
                 <svg class="nhsuk-icon beta-icon__chevron-right-circle" xmlns="http://www.w3.org/2000/svg" width="27" height="27" aria-hidden="true"><circle cx="13.333" cy="13.333" r="13.333" fill=""/><g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"><path d="M15.438 13l-3.771 3.771"/><path data-name="Path" d="M11.667 9.229L15.438 13"/></g></svg>
               </div>
@@ -169,10 +123,10 @@ Symptom checker - NHS
             <div class="nhsuk-card__content beta-card__content">
               <h2 class="nhsuk-card__heading nhsuk-heading-m">
                 <a class="nhsuk-card__link" href="/lab-1/a/symptoms/childhood-symptoms">
-                  Symptoms in babies and children
+                  Cancer
                 </a>
               </h2>
-              <div class="nhsuk-card__description"><p>Symptoms that are more common in children, including reflux in babies and irritable hip</p></div>
+              <div class="nhsuk-card__description"><p>When abnormal cells in the body grow uncontrollably such as lung cancer, brain cancer and bone cancer</p></div>
               <div class="beta-hub-arrow">
                 <svg class="nhsuk-icon beta-icon__chevron-right-circle" xmlns="http://www.w3.org/2000/svg" width="27" height="27" aria-hidden="true"><circle cx="13.333" cy="13.333" r="13.333" fill=""/><g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"><path d="M15.438 13l-3.771 3.771"/><path data-name="Path" d="M11.667 9.229L15.438 13"/></g></svg>
               </div>
@@ -185,10 +139,10 @@ Symptom checker - NHS
             <div class="nhsuk-card__content beta-card__content">
               <h2 class="nhsuk-card__heading nhsuk-heading-m">
                 <a class="nhsuk-card__link" href="/lab-1/a/symptoms/skin">
-                  Skin symptoms
+                  Dementia
                 </a>
               </h2>
-              <div class="nhsuk-card__description"><p>Any changes to the skin, including rashes, itching and swelling</p></div>
+              <div class="nhsuk-card__description"><p>Conditions that cause problems with the way a person thinks and remembers</p></div>
               <div class="beta-hub-arrow">
                 <svg class="nhsuk-icon beta-icon__chevron-right-circle" xmlns="http://www.w3.org/2000/svg" width="27" height="27" aria-hidden="true"><circle cx="13.333" cy="13.333" r="13.333" fill=""/><g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"><path d="M15.438 13l-3.771 3.771"/><path data-name="Path" d="M11.667 9.229L15.438 13"/></g></svg>
               </div>
@@ -201,10 +155,10 @@ Symptom checker - NHS
             <div class="nhsuk-card__content beta-card__content">
               <h2 class="nhsuk-card__heading nhsuk-heading-m">
                 <a class="nhsuk-card__link" href="/lab-1/a/symptoms/sight-and-eye">
-                  Sight and eye problems
+                  Digestive health conditions
                 </a>
               </h2>
-              <div class="nhsuk-card__description"><p>Problems with your vision, eyes or eyelids</p></div>
+              <div class="nhsuk-card__description"><p>Problems that impact the way your body digests food and creates waste, such as Crohn's disease</p></div>
               <div class="beta-hub-arrow">
                 <svg class="nhsuk-icon beta-icon__chevron-right-circle" xmlns="http://www.w3.org/2000/svg" width="27" height="27" aria-hidden="true"><circle cx="13.333" cy="13.333" r="13.333" fill=""/><g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"><path d="M15.438 13l-3.771 3.771"/><path data-name="Path" d="M11.667 9.229L15.438 13"/></g></svg>
               </div>
@@ -217,10 +171,10 @@ Symptom checker - NHS
             <div class="nhsuk-card__content beta-card__content">
               <h2 class="nhsuk-card__heading nhsuk-heading-m">
                 <a class="nhsuk-card__link" href="/lab-1/a/symptoms/periods">
-                  Period symptoms
+                  Infections
                 </a>
               </h2>
-              <div class="nhsuk-card__description"><p>Symptoms linked to the menstrual cycle, including different periods, post-menopausal bleeding and vaginal dryness</p></div>
+              <div class="nhsuk-card__description"><p>When germs in your body can cause illness, such as septicaemia</p></div>
               <div class="beta-hub-arrow">
                 <svg class="nhsuk-icon beta-icon__chevron-right-circle" xmlns="http://www.w3.org/2000/svg" width="27" height="27" aria-hidden="true"><circle cx="13.333" cy="13.333" r="13.333" fill=""/><g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"><path d="M15.438 13l-3.771 3.771"/><path data-name="Path" d="M11.667 9.229L15.438 13"/></g></svg>
               </div>
@@ -234,10 +188,10 @@ Symptom checker - NHS
             <div class="nhsuk-card__content beta-card__content">
               <h2 class="nhsuk-card__heading nhsuk-heading-m">
                 <a class="nhsuk-card__link" href="/lab-1/a/symptoms/mental-health">
-                  Mental health symptoms
+                  Neurological conditions
                 </a>
               </h2>
-              <div class="nhsuk-card__description"><p>Symptoms linked to mental health, including stress, anxiety, low mood, hallucinations and hearing voices</p></div>
+              <div class="nhsuk-card__description"><p>Problems with the brain, nerves and spinal cord such as motor neurone disease and epilepsy</p></div>
               <div class="beta-hub-arrow">
                 <svg class="nhsuk-icon beta-icon__chevron-right-circle" xmlns="http://www.w3.org/2000/svg" width="27" height="27" aria-hidden="true"><circle cx="13.333" cy="13.333" r="13.333" fill=""/><g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"><path d="M15.438 13l-3.771 3.771"/><path data-name="Path" d="M11.667 9.229L15.438 13"/></g></svg>
               </div>
@@ -251,7 +205,7 @@ Symptom checker - NHS
             <div class="nhsuk-card__content beta-card__content">
               <h2 class="nhsuk-card__heading nhsuk-heading-m">
                 <a class="nhsuk-card__link" href="/lab-1/a/symptoms/injuries">
-                  Injuries
+                  Sexual health conditions
                 </a>
               </h2>
               <div class="nhsuk-card__description"><p>An injury to any part of the body, such as a head injury, sprain, strain or broken bone</p></div>
@@ -263,26 +217,10 @@ Symptom checker - NHS
         </li>
 
       </ul>
-
-
-
-
-      <!-- If you need help now, if you think it's an emergency -->
-      <div class="nhsuk-u-reading-width beta-hub-bottom-content">
-        <h2>If you need help now, and you&#x27;re not sure what to do</h2>
-        <ul>
-          <li>Go to <a href="">111.nhs.uk</a> or call 111</li>
-        </ul>
-        <h2>If you think it&#x27;s an emergency</h2>
-        <ul>
-          <li><a href="">Find your nearest A&amp;E</a></li>
-          <li>Call 999</li>
-        </ul>
-      </div>
-
-    </article>
+  
 
   </div>
 </div>
-
 {% endblock %}
+
+
