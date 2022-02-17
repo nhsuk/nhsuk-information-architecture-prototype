@@ -1,0 +1,184 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'template-lab-1b.html' %}
+{% set mainClasses = 'nhsuk-u-padding-top-0' %}
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+Symptoms - NHS
+{% endblock %}
+
+{% block beforeContent %}
+<!-- Coronavirus (COVID-19) banner -->
+<div class="app-global-alert" id="app-global-alert" role="complementary">
+  <div class="nhsuk-width-container">
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-full">
+        <div class="app-global-alert__content">
+          <div class="app-global-alert__message">
+            <h2>Coronavirus (COVID-19)</h2>
+            <p><a href="">Get the latest advice about COVID-19</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Breadcrumbs -->
+<nav class="nhsuk-breadcrumb beta-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a href="" class="nhsuk-breadcrumb__link">Home</a></li>
+    </ol>
+    <p class="nhsuk-breadcrumb__back">
+      <a href="" class="nhsuk-breadcrumb__backlink">
+        <span class="nhsuk-u-visually-hidden">Back to </span>Home
+      </a>
+    </p>
+  </div>
+</nav>
+{% endblock %}
+
+
+<!-- Homepage content -->
+{% block content %}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+
+    <div class="nhsuk-u-reading-width">
+      <h1>Lost or changed sense of smell</h1>
+    </div>
+    <p><strong>A change in your sense of smell can be unpleasant and affect how things taste. But it is not usually serious and may get better in a few weeks or months.</strong></p>
+    <div class="nhsuk-warning-callout">
+      <h2 class="nhsuk-warning-callout__label">
+        
+          <span role="text">
+            <span class="nhsuk-u-visually-hidden">Important: </span>
+            Could it be coronavirus (COVID-19)?
+          </span>
+        
+      </h2>
+      
+        <p>A loss or change to your sense of smell or taste could be COVID-19.</p>
+        <p><a href="javascript:void(0);">Get advice about symptoms of COVID-19 and what to do</a></p>
+      
+    </div>
+
+    <h2>Causes of lost or changed sense of smell</h2>
+    <p>Changes in sense of smell are most often caused by:</p>
+    <ul>
+      <li>a <a href="javascript:void(0);">cold</a> or <a href="javascript:void(0);">flu</a></li>
+      <li><a href="javascript:void(0);">sinusitis (sinus infection)</a></li>
+      <li>an allergy, like <a href="javascript:void(0);">hay fever</a></li>
+      <li>growths in your nose <a href="javascript:void(0);">(nasal polyps)</a></li>
+    </ul>
+    <p>These can cause:</p>
+    <ul>
+      <li>loss of smell (anosmia)</li>
+      <li>smelling things that are not there (phantosmia), like smoke or burnt toast</li>
+      <li>reduced sense of smell (hyposmia)</li>
+      <li>the smell of things to change (parosmia)</li>
+    </ul>
+
+    <div class="nhsuk-inset-text">
+      <span class="nhsuk-u-visually-hidden">Information: </span>
+      <p>It's also common to lose some of your sense of smell as you get older.</p>
+    </div>
+
+    <h2>Cleaning inside your nose can help</h2>
+    <p>Rinsing the inside of your nose with a saltwater solution may help if your sense of smell is affected by an infection or allergy.</p>
+    <p>You can make a saltwater solution at home.</p>
+    <details class="nhsuk-details">
+      <summary class="nhsuk-details__summary">
+        <span class="nhsuk-details__summary-text">
+        How to clean your nose with a saltwater solution
+        </span>
+      </summary>
+      <div class="nhsuk-details__text">
+        <ol>
+          <li>Boil a pint of water, then leave it to cool.</li>
+          <li>Mix a teaspoon of salt and a teaspoon of baking soda (bicarbonate of soda) into the water.</li>
+          <li>Wash your hands.</li>
+          <li>Stand over a sink, cup the palm of 1 hand and pour a small amount of the solution into it.</li>
+          <li>Sniff some of the solution up 1 nostril at a time and let it run out of your nose. It might help to hold your other nostril closed with your finger as you sniff.</li>
+          <li>Repeat these steps a few times to see if it helps.</li>
+        </ol>
+        <p>You do not need to use all of the solution, but make a fresh batch each day – do not reuse any left over from the day before.</p>  
+      </div>
+    </details>
+
+    <p>Some pharmacies sell sachets you can use to make a saltwater solution and devices to help you rinse your nose.</p>
+    <div class="nhsuk-inset-text">
+      <span class="nhsuk-u-visually-hidden">Information: </span>
+      <p>Call a pharmacy or contact them online before going in person. You can get medicines delivered or ask someone to collect them.</p>
+    </div>
+
+    <div class="nhsuk-action-link">
+  
+      <a class="nhsuk-action-link__link" href="javascript:void(0);">
+      
+        <svg class="nhsuk-icon nhsuk-icon__arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="36" width="36">
+          <path d="M0 0h24v24H0z" fill="none"></path>
+          <path d="M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z"></path>
+        </svg>
+        <span class="nhsuk-action-link__text">Find a pharmacy</span>
+      </a>
+    </div>
+
+
+    <div class="nhsuk-card nhsuk-card--care nhsuk-card--care--non-urgent">
+      <div class="nhsuk-card--care__heading-container">
+        <h2 class="nhsuk-card--care__heading">
+          <span role="text"><span class="nhsuk-u-visually-hidden">Non-urgent advice: </span>See a GP if your sense of smell does not go back to normal in a few weeks</span>
+        </h2>
+        <span class="nhsuk-card--care__arrow" aria-hidden="true"></span>
+      </div>
+    
+      <div class="nhsuk-card__content">
+
+        <p>They'll check for any obvious causes, such as sinusitis or nasal polyps.</p>
+        <p>They may refer you to a specialist for tests if they're not sure what the problem is.</p>
+    
+      </div>
+    </div>
+
+    <h2>Treatment for lost or changed sense of smell</h2>
+    <p>Your sense of smell may go back to normal in a few weeks or months.</p>
+    <p>Treating the cause might help. For example, steroid nasal sprays or drops might help if you have sinusitis or nasal polyps.</p>
+    <p>A treatment called smell training can also help some people. To find out more about smell training, see:</p>
+    <ul>
+      <li><a href="javascript:void(0);">AbScent: smell training</a></li>
+      <li><a href="javascript:void(0);">Fifth Sense: smell testing and training</a></li>
+    </ul>
+    <p>Sometimes changes in sense of smell cannot be treated and may be permanent.</p>
+
+    <div class="nhsuk-warning-callout">
+      <h3 class="nhsuk-warning-callout__label">
+        
+          Important
+        
+      </h3>
+      
+        <p>If you have lost your sense of smell, you may not be able to smell things like gas leaks, fires and food that's gone off.</p>
+        <p><a href="http://www.fifthsense.org.uk/safety-advice/">Fifth Sense has some safety advice if you have anosmia</a></p>
+      
+    </div>
+
+
+
+    <p class="nhsuk-body-s nhsuk-u-margin-top-7 nhsuk-u-secondary-text-color">
+    Page last reviewed: 02 August 2019<br>
+    Next review due: 02 August 2022
+    </p>
+
+
+
+
+
+    
+
+  </div>
+</div>
+{% endblock %}
+
+

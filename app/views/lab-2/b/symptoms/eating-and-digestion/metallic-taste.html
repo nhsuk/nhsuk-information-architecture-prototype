@@ -1,0 +1,124 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'template-lab-1b.html' %}
+{% set mainClasses = 'nhsuk-u-padding-top-0' %}
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+Symptoms - NHS
+{% endblock %}
+
+{% block beforeContent %}
+<!-- Coronavirus (COVID-19) banner -->
+<div class="app-global-alert" id="app-global-alert" role="complementary">
+  <div class="nhsuk-width-container">
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-full">
+        <div class="app-global-alert__content">
+          <div class="app-global-alert__message">
+            <h2>Coronavirus (COVID-19)</h2>
+            <p><a href="">Get the latest advice about COVID-19</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Breadcrumbs -->
+<nav class="nhsuk-breadcrumb beta-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a href="" class="nhsuk-breadcrumb__link">Home</a></li>
+    </ol>
+    <p class="nhsuk-breadcrumb__back">
+      <a href="" class="nhsuk-breadcrumb__backlink">
+        <span class="nhsuk-u-visually-hidden">Back to </span>Home
+      </a>
+    </p>
+  </div>
+</nav>
+{% endblock %}
+
+
+<!-- Homepage content -->
+{% block content %}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+
+    <div class="nhsuk-u-reading-width">
+      <h1>Metallic tasts</h1>
+    </div>
+    <p><strong>A metallic taste is not usually serious and can be a symptom of many different things. Treatment will depend on the cause.</strong></p>
+    <div class="nhsuk-table-container">
+      <table><caption class="nhsuk-u-visually-hidden">Possible causes of a metallic taste in the mouth</caption>
+<thead>
+<tr>
+  <th scope="col">Cause</th>
+  <th scope="col">What you can do</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><a href="javascript:void(0);">Gum disease</a></td>
+  <td>regularly brush your teeth, use dental floss, have a dental check-up every 6 months</td>
+</tr>
+<tr>
+  <td>Taking medicine, like <a href="javascript:void(0);">metronidazole</a></td>
+  <td>speak to a pharmacist for advice – do not stop taking prescribed medicine without medical advice</td>
+</tr>
+<tr>
+  <td>Cancer treatment, like chemotherapy or radiation therapy</td>
+  <td>eat stronger tasting food like ginger, spices and boiled sweets</td>
+</tr>
+<tr>
+  <td>Colds, sinus infections and other airway problems</td>
+  <td>the taste should go away once the problem has cleared up</td>
+</tr>
+<tr>
+  <td><a href="/lab-1/b/symptoms/indigestion">Indigestion</a></td>
+  <td>the taste should go away after treating indigestion</td>
+</tr>
+<tr>
+  <td>Being pregnant</td>
+  <td>the taste is usually temporary and clears up by itself</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+    <p>Sometimes a metallic taste can be linked to a <a href="javascript:void(0);">problem with your sense of smell</a>.</p>
+
+    <div class="nhsuk-card nhsuk-card--care nhsuk-card--care--non-urgent">
+      <div class="nhsuk-card--care__heading-container">
+        <h2 class="nhsuk-card--care__heading">
+          <span role="text"><span class="nhsuk-u-visually-hidden">Non-urgent advice: </span>See a GP if:</span>
+        </h2>
+        <span class="nhsuk-card--care__arrow" aria-hidden="true"></span>
+      </div>
+    
+      <div class="nhsuk-card__content">
+    
+        <ul>
+          <li>the metallic taste does not go away</li>
+          <li>the metallic taste has no obvious cause</li>
+        </ul>
+    
+      </div>
+    </div>
+
+    <p class="nhsuk-body-s nhsuk-u-margin-top-7 nhsuk-u-secondary-text-color">
+    Page last reviewed: 02 August 2019<br>
+    Next review due: 02 August 2022
+    </p>
+
+
+
+
+
+    
+
+  </div>
+</div>
+{% endblock %}
+
+

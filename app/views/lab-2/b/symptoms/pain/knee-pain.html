@@ -1,0 +1,187 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'template-lab-1b.html' %}
+{% set mainClasses = 'nhsuk-u-padding-top-0' %}
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+Symptoms - NHS
+{% endblock %}
+
+{% block beforeContent %}
+<!-- Coronavirus (COVID-19) banner -->
+<div class="app-global-alert" id="app-global-alert" role="complementary">
+  <div class="nhsuk-width-container">
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-full">
+        <div class="app-global-alert__content">
+          <div class="app-global-alert__message">
+            <h2>Coronavirus (COVID-19)</h2>
+            <p><a href="">Get the latest advice about COVID-19</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Breadcrumbs -->
+<nav class="nhsuk-breadcrumb beta-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a href="" class="nhsuk-breadcrumb__link">Home</a></li>
+    </ol>
+    <p class="nhsuk-breadcrumb__back">
+      <a href="" class="nhsuk-breadcrumb__backlink">
+        <span class="nhsuk-u-visually-hidden">Back to </span>Home
+      </a>
+    </p>
+  </div>
+</nav>
+{% endblock %}
+
+
+<!-- Homepage content -->
+{% block content %}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+
+    <div class="nhsuk-u-reading-width">
+      <h1>Knee pain</h1>
+    </div>
+    <p><strong>Knee pain can often be treated at home. You should start to feel better in a few days. Call 111 if the pain is very bad.</strong></p>
+    <h2>How to ease knee pain and swelling</h2>
+    <p>Try these things at first:</p>
+    <ul>
+      <li>put as little weight as possible on your knee – for example, avoid standing for a long time</li>
+      <li>use an ice pack (or bag of frozen peas wrapped in a tea towel) on your knee for up to 20 minutes every 2 to 3 hours</li>
+      <li>take <a href="javascript:void(0);">paracetamol</a></li>
+    </ul>
+  
+    <div class="nhsuk-card nhsuk-card--care nhsuk-card--care--non-urgent">
+      <div class="nhsuk-card--care__heading-container">
+        <h2 class="nhsuk-card--care__heading">
+          <span role="text"><span class="nhsuk-u-visually-hidden">Non-urgent advice: </span>See a GP if:</span>
+        </h2>
+        <span class="nhsuk-card--care__arrow" aria-hidden="true"></span>
+      </div>
+    
+      <div class="nhsuk-card__content">
+    
+        <ul>
+          <li>knee pain does not improve within a few weeks</li>
+          <li>your knee locks, painfully clicks or gives way – painless clicking is normal</li>
+        </ul>    
+      </div>
+    </div>
+
+    <div class="nhsuk-card nhsuk-card--care nhsuk-card--care--urgent">
+      <div class="nhsuk-card--care__heading-container">
+        <h2 class="nhsuk-card--care__heading">
+          <span role="text"><span class="nhsuk-u-visually-hidden">Urgent advice: </span>Get advice from 111 now if:</span>
+        </h2>
+        <span class="nhsuk-card--care__arrow" aria-hidden="true"></span>
+      </div>
+    
+      <div class="nhsuk-card__content">
+    
+        <ul>
+          <li>your knee is very painful</li>
+          <li>you cannot move your knee or put any weight on it</li>
+          <li>your knee is badly swollen or has changed shape</li>
+          <li>you have a very high temperature, feel hot and shivery, and have redness or heat around your knee – this can be a sign of infection</li>
+        </ul>
+        <p>111 will tell you what to do. They can tell you the right place to get help if you need to see someone.</p>
+        <p>Go to <a href="javascript:void(0);">111.nhs.uk</a> or <a href="javascript:void(0);">call 111</a>.</p>
+    
+      </div>
+    </div>
+    <h2>Treatment from a GP</h2>
+    <p>A doctor can suggest treatment based on what's causing your knee pain.</p>
+    <p>They might:</p>
+    <ul>
+      <li>prescribe medicine or physiotherapy</li>
+      <li>refer you to hospital for a scan or specialist treatment (for example, surgery)</li>
+    </ul>
+
+    <h2>Common causes of knee pain</h2>
+    <p>Knee pain can be a symptom of many different conditions.</p>
+    <p>This information might give you an idea of what the cause might be. But do not self-diagnose – see a GP if you're worried.</p>
+    <h3>Knee pain after an injury</h3>
+    <table><caption class="nhsuk-u-visually-hidden">Possible causes</caption>
+      <thead>
+      <tr>
+        <th scope="col">Knee symptoms</th>
+        <th scope="col">Possible cause</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>Pain after overstretching, overusing or twisting, often during exercise</td>
+        <td><a href="javascript:void(0);">Sprains and strains</a></td>
+      </tr>
+      <tr>
+        <td>Pain between your kneecap and shin, often caused by repetitive running or jumping</td>
+        <td><a href="javascript:void(0);">Tendonitis</a></td>
+      </tr>
+      <tr>
+        <td>Unstable, gives way when you try to stand, unable to straighten, may hear a popping sound during injury</td>
+        <td>Torn ligament, tendon or meniscus, <a href="javascript:void(0);">cartilage damage</a></td>
+      </tr>
+      <tr>
+        <td>Teenagers and young adults with pain and swelling below kneecap</td>
+        <td>Osgood-Schlatter's disease</td>
+      </tr>
+      <tr>
+        <td>Kneecap changes shape after a collision or sudden change in direction</td>
+        <td><a href="javascript:void(0);">Dislocated kneecap</a></td>
+      </tr>
+      </tbody>
+      </table>
+
+      <h3>Knee pain with no obvious injury</h3>
+      <div class="nhsuk-table-container">
+        <table><caption class="nhsuk-u-visually-hidden">Causes of knee pain without injury</caption>
+  <thead>
+  <tr>
+    <th scope="col">Knee symptoms</th>
+    <th scope="col">Possible cause</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>Pain and stiffness in both knees, mild swelling, more common in older people</td>
+    <td><a href="javascript:void(0);">Osteoarthritis</a></td>
+  </tr>
+  <tr>
+    <td>Warm and red, kneeling or bending makes pain and swelling worse</td>
+    <td><a href="javascript:void(0);">Bursitis</a></td>
+  </tr>
+  <tr>
+    <td>Swelling, warmth, bruising, more likely while taking anticoagulants</td>
+    <td>Bleeding in the joint</td>
+  </tr>
+  <tr>
+    <td>Hot and red, sudden attacks of very bad pain</td>
+    <td><a href="javascript:void(0);">Gout</a> or <a href="javascript:void(0);">septic arthritis</a></td>
+  </tr>
+  </tbody>
+  </table>
+  
+      </div>
+
+    <p class="nhsuk-body-s nhsuk-u-margin-top-7 nhsuk-u-secondary-text-color">
+    Page last reviewed: 02 August 2019<br>
+    Next review due: 02 August 2022
+    </p>
+
+
+
+
+
+    
+
+  </div>
+</div>
+{% endblock %}
+
+
