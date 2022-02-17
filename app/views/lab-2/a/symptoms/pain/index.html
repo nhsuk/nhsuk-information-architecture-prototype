@@ -1,0 +1,254 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'template-lab-1a.html' %}
+{% set mainClasses = 'nhsuk-u-padding-top-0' %}
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+Symptom checker - NHS
+{% endblock %}
+
+
+{% block beforeContent %}
+<!-- Coronavirus (COVID-19) banner -->
+<div class="app-global-alert" id="app-global-alert" role="complementary">
+  <div class="nhsuk-width-container">
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-full">
+        <div class="app-global-alert__content">
+          <div class="app-global-alert__message">
+            <h2>Coronavirus (COVID-19)</h2>
+            <p><a href="">Get the latest advice about COVID-19</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Breadcrumbs -->
+<nav class="nhsuk-breadcrumb beta-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a href="" class="nhsuk-breadcrumb__link">Home</a></li>
+      <li class="nhsuk-breadcrumb__item"><a href="/lab-1/a/symptoms/" class="nhsuk-breadcrumb__link">Symptoms</a></li>
+    </ol>
+    <p class="nhsuk-breadcrumb__back">
+      <a href="/lab-1/a/symptoms/" class="nhsuk-breadcrumb__backlink">
+        <span class="nhsuk-u-visually-hidden">Back to </span>Symptoms
+      </a>
+    </p>
+  </div>
+</nav>
+{% endblock %}
+
+
+<!-- NHS symptoms content -->
+{% block content %}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+
+    <!-- Heading -->
+    <div class="nhsuk-u-reading-width">
+      <h1 class="nhsuk-u-margin-bottom-2">Pain</h1>
+    </div>
+
+    <section class="nhsuk-u-margin-bottom-6">
+      <ul class="nhsuk-hub-key-links beta-hub-key-links">
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-1/a/symptoms/pain/anal-pain">
+              Anal pain
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-1/a/symptoms/pain/ankle-pain">
+              Ankle pain
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-1/a/symptoms/pain/back-pain">
+              Back pain
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-1/a/symptoms/pain/breast-pain">
+              Breast pain
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-1/a/symptoms/pain/chest-pain">
+              Chest pain
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-1/a/symptoms/pain/earache">
+              Earache
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-1/a/symptoms/pain/elbow-pain">
+              Elbow and arm pain
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-1/a/symptoms/pain/finger-pain">
+              Finger pain
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-1/a/symptoms/pain/headaches">
+              Headaches
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-1/a/symptoms/pain/heel-pain">
+              Heel pain
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-1/a/symptoms/pain/hip-pain">
+              Hip pain
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-1/a/symptoms/pain/hip-pain-children">
+              Hip pain in children (irritable hip)
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-1/a/symptoms/pain/joint-pain">
+              Joint pain
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-1/a/symptoms/pain/knee-pain">
+              Knee pain
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-1/a/symptoms/pain/leg-cramps">
+              Leg cramps
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-1/a/symptoms/pain/neck-pain">
+              Neck pain and stiff neck
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-1/a/symptoms/pain/ovulation-pain">
+              Ovulation pain
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-1/a/symptoms/pain/pain-back-hand">
+              Pain in the back of the hand
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-1/a/symptoms/pain/pain-ball-foot">
+              Pain in the ball of the foot
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-1/a/symptoms/pain/pain-bottom-foot">
+              Pain in the bottom of the foot
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-1/a/symptoms/pain/pain-palm-hand">
+              Pain in the palm of the hand
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-1/a/symptoms/pain/pain-top-foot">
+              Pain in the top of the foot
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-1/a/symptoms/pain/pelvic-pain">
+              Pelvic pain
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-1/a/symptoms/pain/period-pain">
+              Period pain
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-1/a/symptoms/pain/shoulder-pain">
+              Shoulder pain
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-1/a/symptoms/pain/stomach-ache">
+              Stomach ache
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-1/a/symptoms/pain/tailbone-pain">
+              Tailbone pain (coccydynia)
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-1/a/symptoms/pain/thumb-pain">
+              Thumb pain
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-1/a/symptoms/pain/toe-pain">
+              Toe pain
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-1/a/symptoms/pain/toothache">
+              Toothache
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-1/a/symptoms/pain/wrist-pain">
+              Wrist pain
+            </a>
+          </li>    
+    
+      </ul>
+    </section>
+
+    </article>
+
+  </div>
+</div>
+
+{% endblock %}
+
+

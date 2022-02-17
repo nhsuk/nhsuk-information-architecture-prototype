@@ -1,0 +1,142 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'template-lab-1b.html' %}
+{% set mainClasses = 'nhsuk-u-padding-top-0' %}
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+Symptoms - NHS
+{% endblock %}
+
+{% block beforeContent %}
+<!-- Coronavirus (COVID-19) banner -->
+<div class="app-global-alert" id="app-global-alert" role="complementary">
+  <div class="nhsuk-width-container">
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-full">
+        <div class="app-global-alert__content">
+          <div class="app-global-alert__message">
+            <h2>Coronavirus (COVID-19)</h2>
+            <p><a href="">Get the latest advice about COVID-19</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Breadcrumbs -->
+<nav class="nhsuk-breadcrumb beta-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a href="" class="nhsuk-breadcrumb__link">Home</a></li>
+    </ol>
+    <p class="nhsuk-breadcrumb__back">
+      <a href="" class="nhsuk-breadcrumb__backlink">
+        <span class="nhsuk-u-visually-hidden">Back to </span>Home
+      </a>
+    </p>
+  </div>
+</nav>
+{% endblock %}
+
+
+<!-- Homepage content -->
+{% block content %}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+
+    <div class="nhsuk-u-reading-width">
+      <h1>Hip pain</h1>
+    </div>
+    <p><strong>Most cases of hip pain in adults that are treated with surgery are caused by osteoarthritis, the most common type of arthritis in the UK.</strong></p>
+    <p>This page aims to give you a better idea of whether <a href="javascript:void(0);">osteoarthritis</a> or something more unusual is causing your hip pain, and what you can do about it.</p>
+    <p>But do not try to diagnose the cause of your hip pain yourself. This should always be a matter for your doctor.</p>
+    <p><a href="/lab-1/b/symptoms/hip-pain-children">Find out more about hip pain in children</a></p>
+    <h2>Osteoarthritis</h2>
+    <p>The <a href="javascript:void(0);">symptoms of osteoarthritis</a> can vary greatly from person to person, but if it affects the hip, it'll typically cause:</p>
+    <ul>
+      <li>mild inflammation of the tissues in and around the hip joint</li>
+      <li> damage to cartilage, the strong, flexible tissue that lines the bones</li>
+      <li> bony growths (<a href="javascript:void(0);">osteophytes</a>) that develop around the edge of the hip joint</li>
+    </ul>
+    <p>This can lead to pain, stiffness and difficulty doing certain activities.</p>
+    <p>There's no cure for osteoarthritis, but the symptoms can be eased using a number of different treatments. Surgery is not usually needed.</p>
+    <p><a href="javascript:void(0);">Find out more about treating osteoarthritis</a></p>
+    <h2>Less common causes</h2>
+    <p>Less commonly, hip pain may be caused by:</p>
+    <ul>
+      <li>the bones of the hip rubbing together because they're abnormally shaped (femoroacetabular impingement)</li>
+      <li>a tear in the ring of cartilage surrounding the socket of the hip joint (a hip labral tear)</li>
+      <li>the hip joint is the wrong shape or the hip socket is not in the correct position to completely cover and support the top of the leg bone (hip dysplasia)</li>
+      <li>a <a href="javascript:void(0);">hip fracture</a> – this will cause sudden hip pain and is more common in older people with weaker bones</li>
+      <li>an infection in the bone or joint, such as <a href="javascript:void(0);">septic arthritis</a> or <a href="javascript:void(0);">osteomyelitis</a> – see a GP immediately if you have hip pain and fever</li>
+      <li>reduced blood flow to the hip joint, causing the bone to break down (osteonecrosis)</li>
+      <li>inflammation and swelling of the fluid-filled sac (bursa) over your hip joint (<a href="javascript:void(0);">bursitis</a>)</li>
+      <li>a <a href="javascript:void(0);">hamstring injury</a></li>
+      <li>an inflamed ligament in the thigh, often caused by too much running – this is known as iliotibial band syndrome and is treated with rest (<a href="javascript:void(0);">read more about sprains and strains</a>)</li>
+    </ul>
+    <h2>When to get medical advice</h2>
+    <p>Hip pain often gets better on its own and can be managed with rest and painkillers you can buy from a pharmacy, such as <a href="javascript:void(0);">paracetamol</a> and <a href="javascript:void(0);">ibuprofen</a>.</p>
+    <p>But see a GP if:</p>
+    <ul>
+      <li>your hip is still painful after 1 week of resting it at home</li>
+      <li>you also have a fever or rash</li>
+      <li>your hip pain came on suddenly and you have <a href="javascript:void(0);">sickle cell anaemia</a></li>
+      <li>the pain is in both hips and other joints as well</li>
+    </ul>
+    <p>Your GP may ask you the following questions:</p>
+    <ul>
+      <li>Where do you feel the pain?</li>
+      <li>When and how did the pain start?</li>
+      <li>Does anything make the pain worse?</li>
+      <li>Does anything make the pain better?</li>
+      <li>Can you walk and bear weight on it?</li>
+      <li>Do you have any other medical problems?</li>
+      <li>Do you take any medicines?</li>
+    </ul>
+    <p>Go straight to hospital if:</p>
+    <ul>
+      <li>the hip pain was caused by a serious fall or accident</li>
+      <li>your leg is deformed, badly bruised or bleeding</li>
+      <li>you're unable to move your hip or bear any weight on your leg</li>
+      <li>you have hip pain with a temperature and feel unwell</li>
+    </ul>
+    <h2>Managing hip pain at home</h2>
+    <p>If you do not need to see a doctor straight away, consider managing and monitoring the problem at home.</p>
+    <p>You may find it helpful to:</p>
+    <ul>
+      <li>lose weight if you're overweight to relieve some of the strain on your hip</li>
+      <li>avoid activities that make the pain worse, such as downhill running</li>
+      <li>wear flat shoes and avoid standing for long periods</li>
+      <li>see a physiotherapist for some muscle-strengthening exercises</li>
+      <li>take painkillers, such as <a href="javascript:void(0);">paracetamol</a> and <a href="javascript:void(0);">ibuprofen</a></li>
+    </ul>
+    <h2>Overactivity</h2>
+    <p>If your hip pain is related to exercising or other types of regular activity:</p>
+    <ul>
+      <li>cut down on the amount of exercise you do if it's too much</li>
+      <li>always <a href="javascript:void(0);">warm up before exercising</a> and <a href="javascript:void(0);">stretch after exercising</a></li>
+      <li>try <a href="javascript:void(0);">low-impact exercises</a>, such as <a href="javascript:void(0);">swimming</a> or <a href="javascript:void(0);">cycling</a>, instead of running</li>
+      <li>run on a smooth, soft surface, such as grass, rather than on concrete</li>
+      <li>make sure your running shoes fit well and support your feet properly</li>
+    </ul>
+
+    
+
+   
+    <p class="nhsuk-body-s nhsuk-u-margin-top-7 nhsuk-u-secondary-text-color">
+    Page last reviewed: 02 August 2019<br>
+    Next review due: 02 August 2022
+    </p>
+
+
+
+
+
+    
+
+  </div>
+</div>
+{% endblock %}
+
+

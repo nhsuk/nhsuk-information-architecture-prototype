@@ -1,0 +1,169 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'template-lab-1b.html' %}
+{% set mainClasses = 'nhsuk-u-padding-top-0' %}
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+Symptoms - NHS
+{% endblock %}
+
+{% block beforeContent %}
+<!-- Coronavirus (COVID-19) banner -->
+<div class="app-global-alert" id="app-global-alert" role="complementary">
+  <div class="nhsuk-width-container">
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-full">
+        <div class="app-global-alert__content">
+          <div class="app-global-alert__message">
+            <h2>Coronavirus (COVID-19)</h2>
+            <p><a href="">Get the latest advice about COVID-19</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Breadcrumbs -->
+<nav class="nhsuk-breadcrumb beta-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a href="" class="nhsuk-breadcrumb__link">Home</a></li>
+    </ol>
+    <p class="nhsuk-breadcrumb__back">
+      <a href="" class="nhsuk-breadcrumb__backlink">
+        <span class="nhsuk-u-visually-hidden">Back to </span>Home
+      </a>
+    </p>
+  </div>
+</nav>
+{% endblock %}
+
+
+<!-- Homepage content -->
+{% block content %}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+
+    <div class="nhsuk-u-reading-width">
+      <h1>Limping in children</h1>
+    </div>
+    <p><strong>Limping in children is not usually serious and could be caused by something minor like a sprain or strain. But you should see a GP if it's not obvious what's causing it.</strong></p>
+    <h2>Causes of limping in children</h2>
+    <p>Limping in children is often caused by an obvious injury to the leg or foot, such as:</p>
+    <ul>
+      <li>a <a href="javascript:void(0);">sprain or strain</a></li>
+      <li>a<a href="javascript:void(0);">blister</a>, cut or bruise</li>
+      <li>a <a href="javascript:void(0);">broken bone</a></li>
+    </ul>
+    <p>Sometimes it may not be clear what's causing your child to limp. The symptoms might give you an idea of what the cause might be.</p>
+    <p>But do not self-diagnose – a limp with no obvious cause should always be checked by a GP as it could be a sign of something serious.</p>
+    <div class="nhsuk-table-container">
+      <table><caption class="nhsuk-u-visually-hidden">Other causes of limping in children</caption>
+<thead>
+<tr>
+  <th scope="col">Other symptoms</th>
+  <th scope="col">Possible cause</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Sudden pain in the hip, knee or thigh, sometimes after a viral infection</td>
+  <td><a href="javascript:void(0);">Irritable hip</a></td>
+</tr>
+<tr>
+  <td>Pain in the groin, hip or knee, stiff hip, foot or leg turns inward</td>
+  <td>Slipped upper femoral epiphysis</td>
+</tr>
+<tr>
+  <td>Painful, swollen joints that lasts for longer than 6 weeks</td>
+  <td>Different types of juvenile arthritis</td>
+</tr>
+<tr>
+  <td>Pain in the groin, thigh or knee after exercise, stiff hip</td>
+  <td>Perthes' disease</td>
+</tr>
+<tr>
+  <td>A lump on your child's leg, weight loss, pain at night</td>
+  <td>A cancer, such as leukaemia, <a href="javascript:void(0);">sarcoma</a> or lymphoma</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+
+    <div class="nhsuk-card nhsuk-card--care nhsuk-card--care--non-urgent">
+      <div class="nhsuk-card--care__heading-container">
+        <h2 class="nhsuk-card--care__heading">
+          <span role="text"><span class="nhsuk-u-visually-hidden">Non-urgent advice: </span>See a GP if:</span>
+        </h2>
+        <span class="nhsuk-card--care__arrow" aria-hidden="true"></span>
+      </div>
+    
+      <div class="nhsuk-card__content">
+    
+        <ul>
+          <li>your child has a limp and you're not sure what's causing it</li>
+        </ul>    
+      </div>
+    </div>
+   
+    <div class="nhsuk-card nhsuk-card--care nhsuk-card--care--emergency">
+      <div class="nhsuk-card--care__heading-container">
+        <h2 class="nhsuk-card--care__heading">
+          <span role="text"><span class="nhsuk-u-visually-hidden">Immediate action required: </span>Call 999 or go to A&E if:</span>
+        </h2>
+        <span class="nhsuk-card--care__arrow" aria-hidden="true"></span>
+      </div>
+    
+      <div class="nhsuk-card__content">
+    
+        <ul>
+          <li>your child gets sudden pain in their hip, knee or thigh (hip problems can sometimes be felt in the thigh or knee)</li>
+          <li>your child cannot put any weight on their leg</li>
+          <li>the leg has changed shape or is pointing at an odd angle</li>
+          <li>your child feels generally unwell and has a high temperature or feels hot and shivery</li>
+          <li>your child also has severe pain in the lower part of their tummy</li>
+          <li>your child's symptoms get worse</li>
+        </ul>
+        <div class="nhsuk-action-link">
+  
+          <a class="nhsuk-action-link__link" href="javascript:void(0);">
+          
+            <svg class="nhsuk-icon nhsuk-icon__arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="36" width="36">
+              <path d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z"></path>
+            </svg>
+            <span class="nhsuk-action-link__text">Find your nearest A&E</span>
+          </a>
+        </div>
+    
+    
+      </div>
+    </div>
+
+    <h2>Treatment from a GP</h2>
+    <p>Treatment will depend on what's causing your child to limp. Sometimes it may get better on its own.</p>
+    <p>A GP will examine your child and may arrange for more tests to find out what's causing your child to limp.</p>
+    <p>They might:</p>
+    <ul>
+      <li>give you advice on <a href="javascript:void(0);">how to treat a sprain or strain</a> at home, such as rest and taking paracetamol or ibuprofen</li>
+      <li>refer you to hospital for an <a href="javascript:void(0);">X-ray</a> or to a specialist (for example, a paediatric orthopaedic surgeon) to help find the cause</li>
+    </ul>
+
+    <p class="nhsuk-body-s nhsuk-u-margin-top-7 nhsuk-u-secondary-text-color">
+    Page last reviewed: 02 August 2019<br>
+    Next review due: 02 August 2022
+    </p>
+
+
+
+
+
+    
+
+  </div>
+</div>
+{% endblock %}
+
+

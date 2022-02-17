@@ -1,0 +1,156 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'template-lab-1b.html' %} {% set mainClasses = 'nhsuk-u-padding-top-0' %}
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %} Symptoms - NHS {% endblock %}
+
+<!-- Coronavirus (COVID-19) banner -->
+{% block beforeContent %}
+<div class="app-global-alert" id="app-global-alert" role="complementary">
+    <div class="nhsuk-width-container">
+        <div class="nhsuk-grid-row">
+            <div class="nhsuk-grid-column-full">
+                <div class="app-global-alert__content">
+                    <div class="app-global-alert__message">
+                        <h2>Coronavirus (COVID-19)</h2>
+                        <p><a href="">Get the latest advice about COVID-19</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Breadcrumbs -->
+<nav class="nhsuk-breadcrumb beta-breadcrumb" aria-label="Breadcrumb">
+    <div class="nhsuk-width-container">
+        <ol class="nhsuk-breadcrumb__list">
+            <li class="nhsuk-breadcrumb__item"><a href="" class="nhsuk-breadcrumb__link">Home</a></li>
+        </ol>
+        <p class="nhsuk-breadcrumb__back">
+            <a href="" class="nhsuk-breadcrumb__backlink">
+                <span class="nhsuk-u-visually-hidden">Back to </span>Home
+            </a>
+        </p>
+    </div>
+</nav>
+{% endblock %}
+
+<!-- Symptom content -->
+{% block content %}
+<div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+        <h1>Swollen glands</h1>
+    </div>
+</div>
+<article>
+    <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-two-thirds">
+            <section>
+                <p><b>Swollen glands are a sign the body is fighting an infection. They usually get better by themselves within 2 weeks.</b></p>
+            </section>
+            <section>
+                <h2>Check if your glands are swollen</h2>
+                <p>Swollen glands feel like tender, painful lumps:</p>
+                <ul>
+                    <li>on each side of the neck</li>
+                    <li>under the chin</li>
+                    <li>in the armpits</li>
+                    <li>around the groin</li>
+                </ul>
+                <p>Glands (known as lymph glands or lymph nodes) swell near an infection to help your body fight it.</p>
+                <p>Sometimes a gland on just one side of the body swells.</p>
+                <p>You might also have other symptoms, such as a sore throat, cough or high temperature.</p>
+            </section>
+            <section>
+                <h2>Things you can do yourself</h2>
+                <p>Swollen glands should go down within 2 weeks.</p>
+                <p>You can help to ease the symptoms by:</p>
+                <ul>
+                    <li>resting</li>
+                    <li>drinking plenty of fluids (to <a href="/conditions/dehydration/">avoid dehydration</a>)</li>
+                    <li>taking painkillers like <a href="/medicines/paracetamol-for-adults/">paracetamol</a> or <a href="/medicines/ibuprofen-for-adults-old/">ibuprofen</a> (do not give aspirin to children under 16)</li>
+                </ul>
+            </section>
+            <section>
+                <div class="nhsuk-care-card nhsuk-care-card--primary">
+                    <div class="nhsuk-care-card__heading-container">
+                        <h3 class="nhsuk-care-card__heading">
+                            <span role="text">
+          <span class="nhsuk-u-visually-hidden">Non-urgent advice:  </span>See a GP if:
+                            </span>
+                        </h3>
+                        <span class="nhsuk-care-card__arrow" aria-hidden="true"></span>
+                    </div>
+                    <div class="nhsuk-care-card__content">
+                        <ul>
+                            <li>your swollen glands are getting bigger or they have not gone down within 2 weeks</li>
+                            <li>they feel hard or do not move when you press them</li>
+                            <li>you're having night sweats or have a very high temperature (you feel hot and shivery) for more than 3 or 4 days</li>
+                            <li>you have swollen glands and no other signs of illness or infection</li>
+                            <li>you have swollen lymph glands just above or below your collar bone (the bone that runs from your breastbone to each of your shoulders)</li>
+                        </ul>
+                        <div class="nhsuk-inset-text">
+                            <span class="nhsuk-u-visually-hidden">Information: </span>
+                            <h3>Coronavirus (COVID-19) update: how to contact a GP</h3>
+                            <p>It's still important to get help from a GP if you need it. To contact your GP surgery:</p>
+                            <ul>
+                                <li>visit their website</li>
+                                <li>use the <a href="/using-the-nhs/nhs-services/the-nhs-app/">NHS App</a></li>
+                                <li>call them</li>
+                            </ul>
+                            <p><a href="/conditions/coronavirus-covid-19/using-the-nhs-and-other-health-services/">Find out about using the NHS during COVID-19</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="nhsuk-care-card nhsuk-care-card--urgent">
+                    <div class="nhsuk-care-card__heading-container">
+                        <h3 class="nhsuk-care-card__heading">
+                            <span role="text">
+          <span class="nhsuk-u-visually-hidden">Urgent advice: </span>Get advice from 111 now if:
+                            </span>
+                        </h3>
+                        <span class="nhsuk-care-card__arrow" aria-hidden="true"></span>
+                    </div>
+                    <div class="nhsuk-care-card__content">
+                        <ul>
+                            <li>you have swollen glands and you're finding it very difficult to swallow</li>
+                        </ul>
+                        <p>111 will tell you what to do. They can arrange a phone call from a nurse or doctor if you need one.</p>
+                        <p>Go to <a href="https://111.nhs.uk/?utm_source=nhsuk&amp;utm_campaign=conditions&amp;utm_content=swollen_glands">111.nhs.uk</a> or <a href="tel:111">call 111</a>.</p>
+                        <details class="nhsuk-details">
+                            <summary class="nhsuk-details__summary">
+                                <span class="nhsuk-details__summary-text">
+      Other ways to get help
+      </span>
+                            </summary>
+                            <div class="nhsuk-details__text">
+                                <p><b>Get an urgent GP appointment</b></p>
+                                <p>A GP may be able to treat you.</p>
+                                <p>Ask your GP surgery for an urgent appointment.</p>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2>Causes of swollen glands</h2>
+                <p>Do not self-diagnose – see a GP if you're worried.</p>
+                <p>Swollen glands are:</p>
+                <ul>
+                    <li>often caused by common illnesses like colds, tonsillitis and ear or throat infections</li>
+                    <li>sometimes caused by viral infections such as <a href="/conditions/glandular-fever/">glandular fever</a></li>
+                    <li>rarely caused by anything more serious, like cancer of the blood system <a href="/conditions/acute-myeloid-leukaemia/">(leukaemia)</a> or lymph system <a href="/conditions/non-hodgkin-lymphoma/">(lymphoma)</a></li>
+                </ul>
+                <p>A GP will be able to recommend treatment depending on the cause, which might include antibiotics (antibiotics do not work on viral infections).</p>
+            </section>
+            <section>
+            </section>
+            <div>
+                <p class="nhsuk-body-s nhsuk-u-margin-top-7 nhsuk-u-secondary-text-color">
+                    Page last reviewed: 25 September 2020<br> Next review due: 25 September 2023
+                </p>
+            </div>
+        </div>
+    </div>
+</article>
+{% endblock %}
