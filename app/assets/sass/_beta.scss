@@ -234,7 +234,7 @@ $beta-hub-border-top: rgba(204, 204, 204, .5);
   text-decoration-line: underline;
   font-size: 14px;
   font-weight: 400;
-  padding-right: 54px;
+  padding-right:30px;
   visibility: hidden;
   z-index: 1;
 
@@ -245,6 +245,9 @@ $beta-hub-border-top: rgba(204, 204, 204, .5);
   &.js-show {
     display: block;
     visibility: visible;
+    display: flex;
+    align-items: center;  
+    justify-content: center;
   }
 
   &:focus {
@@ -252,6 +255,11 @@ $beta-hub-border-top: rgba(204, 204, 204, .5);
     box-shadow: 0 0 0 2px $nhsuk-focus-color, 0 $nhsuk-focus-width 0 2px $nhsuk-focus-text-color;
   }
 }
+
+.beta-nhsuk-header__arrow {
+  margin-left: 10px;
+  }
+
 
 
 // container
