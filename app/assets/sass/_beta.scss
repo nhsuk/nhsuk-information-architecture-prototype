@@ -228,11 +228,13 @@ $beta-hub-border-top: rgba(204, 204, 204, .5);
 // only shows when screen can't fit all nav items
 .beta-nhsuk-header__menu-toggle {
   @include toggle-button();
-  align-self: center;
+  display: flex;
+  border: none;
+  text-decoration-color: $color_nhsuk-white;
+  text-decoration-line: underline;
   font-size: 14px;
   font-weight: 400;
-  padding: 11px 14px;
-  text-decoration: none;
+  padding-right:30px;
   visibility: hidden;
   z-index: 1;
 
@@ -243,6 +245,9 @@ $beta-hub-border-top: rgba(204, 204, 204, .5);
   &.js-show {
     display: block;
     visibility: visible;
+    display: flex;
+    align-items: center;  
+    justify-content: center;
   }
 
   &:focus {
@@ -250,6 +255,12 @@ $beta-hub-border-top: rgba(204, 204, 204, .5);
     box-shadow: 0 0 0 2px $nhsuk-focus-color, 0 $nhsuk-focus-width 0 2px $nhsuk-focus-text-color;
   }
 }
+
+.beta-nhsuk-header__arrow {
+  margin-left: 10px;
+  }
+
+
 
 // container
 // append hidden nav to this, don't remove
@@ -411,7 +422,7 @@ $beta-hub-border-top: rgba(204, 204, 204, .5);
 }
 
 .nhsuk-footer {
-  //border-bottom: 10px solid $color_nhsuk-grey-1;
+  border-bottom: 10px solid $color_nhsuk-grey-1;
 }
 
 .beta-nhsuk-header__navigation-item--home {
@@ -465,6 +476,7 @@ $beta-hub-border-top: rgba(204, 204, 204, .5);
 .beta-nhsuk-navigation-container {
   position: relative;
 }
+
 
 /**
  * Inset text component
