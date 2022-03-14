@@ -227,7 +227,7 @@ $beta-hub-border-top: rgba(204, 204, 204, .5);
 // toggle button
 // only shows when screen can't fit all nav items
 .beta-nhsuk-header__menu-toggle {
-  @include toggle-button();
+  // @include toggle-button();
   display: flex;
   border: none;
   text-decoration-color: $color_nhsuk-white;
@@ -250,17 +250,66 @@ $beta-hub-border-top: rgba(204, 204, 204, .5);
     justify-content: center;
   }
 
-  &:focus {
-    @include nhsuk-focused-button;
-    box-shadow: 0 0 0 2px $nhsuk-focus-color, 0 $nhsuk-focus-width 0 2px $nhsuk-focus-text-color;
-  }
 }
 
 .beta-nhsuk-header__arrow {
   margin-left: 10px;
+}
+
+
+.beta-nhsuk-header__menu-toggle[aria-expanded='true'] {
+  text-decoration: none;
+
+  .beta-nhsuk-header__arrow {
+    transform: rotate(180deg);
   }
 
+}
 
+.beta-nhsuk-header__menu-toggle {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  color: white;
+  font: inherit;
+  line-height: normal;
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  -webkit-appearance: none;
+
+  font-size: 0.875rem;
+  line-height: 1.71429;
+  padding: 10px 12px;
+
+  border-bottom: 4px solid transparent;
+  border-top: 4px solid transparent;
+
+  @include mq($from: tablet) {
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 12px 16px;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+  
+  &:focus {
+    text-decoration: none;
+    background-color: #ffeb3b;
+    border-bottom: 4px solid #212b32;
+    box-shadow: none;
+    color: #212b32;
+    outline: 4px solid transparent;
+    outline-offset: 4px;
+    text-decoration: none;
+  }
+
+}
 
 // container
 // append hidden nav to this, don't remove
