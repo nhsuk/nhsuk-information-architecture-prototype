@@ -41,7 +41,7 @@ function setupMobileMenu() {
 
   // create a label for the dropdown
   const mobileMenuLabel = document.createElement('span');
-  mobileMenuLabel.innerHTML = 'More';
+  mobileMenuLabel.innerHTML = 'More topics';
   mobileMenuLabel.setAttribute('id', 'label-navigation');
 
   // create a close button for the dropdown
