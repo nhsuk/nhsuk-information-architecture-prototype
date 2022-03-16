@@ -114,7 +114,7 @@ function toggleMobileMenu() {
 
 // Check available screen space
 function updateNavigation() {
-  const availableSpace = navigation.offsetWidth;
+  const availableSpace = navigation.offsetWidth - 25;
   let itemsVisible = navigationList.children.length;
 
   if (availableSpace < breakpoints[itemsVisible - 1]) {
