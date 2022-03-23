@@ -1,5 +1,5 @@
 <!-- Extends the layout from /views/layout.html -->
-{% extends 'template-lab-3.html' %}
+{% extends 'template-lab-3a.html' %}
 
 {% set containerClasses = 'app-width-container--full' %}
 {% set mainClasses = 'app-main-wrapper--no-padding app-homepage' %}
@@ -50,34 +50,40 @@ NHS homepage - NHS
 </section>
 
 
-<!-- Health A-Z and Medicines A-Z -->
+<!-- Explainer expanders -->
 <section class="nhsuk-section">
   <div class="nhsuk-width-container">
     <div class="nhsuk-grid-row">
-        <div class="nhsuk-grid-column-one-half app-section__content">
-          <h2>Health A to Z</h2>
-          <p>Your complete guide to conditions, symptoms and treatments, including what to do and when to get help.</p>
-          <div class="nhsuk-action-link">
-            <a class="nhsuk-action-link__link" href="/lab-1/a/conditions">
-              <svg class="nhsuk-icon nhsuk-icon__arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M0 0h24v24H0z" fill="none"></path>
-                <path d="M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z"></path>
-              </svg>
-              <span class="nhsuk-action-link__text">Go to the Health A to Z</span>
-            </a>
-          </div>
-      </div>
-      <div class="nhsuk-grid-column-one-half app-section__content">
-        <h2>Medicines A to Z</h2>
-        <p>Find out how your medicine works, how and when to take it, possible side effects and answers to your common questions.</p>
-        <div class="nhsuk-action-link">
-          <a class="nhsuk-action-link__link" href="">
-            <svg class="nhsuk-icon nhsuk-icon__arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M0 0h24v24H0z" fill="none"></path>
-              <path d="M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z"></path>
-            </svg>
-            <span class="nhsuk-action-link__text">Go to the Medicines A to Z</span>
-          </a>
+      <div class="nhsuk-grid-column-full app-section__content">
+        <div class="nhsuk-u-reading-width">
+          <h2>Getting help from the NHS</h2>
+          <p>The NHS website has a <a href="/lab-3/a/conditions"></a> Health A to Z that has information about common symptoms and conditions, but there are other ways to get help too.</p>
+          <details class="nhsuk-details nhsuk-expander">
+            <summary class="nhsuk-details__summary">
+              <span class="nhsuk-details__summary-text">When to call 111 or use 111 online</span>
+            </summary>
+            <div class="nhsuk-details__text">
+              <p>Call 111 or use <a href="">111 online</a> if:</p>
+              <ul>
+                <li>you are unsure what help you need</li>
+                <li>you think you may need urgent, but emergency, care</li>
+                <li>it is outside of your GP's opening hours</li>
+              </ul>
+            </div>
+          </details>
+          <details class="nhsuk-details nhsuk-expander">
+            <summary class="nhsuk-details__summary">
+              <span class="nhsuk-details__summary-text">When to call 999</span>
+            </summary>
+            <div class="nhsuk-details__text">
+              <p>Call 999 and ask for an ambulance if:</p>
+              <ul>
+                <li>a serious accident has happened</li>
+                <li>there has been a life threatening accident</li>
+                <li>you, or someone you know is experiencing emergency symptoms, such as <a href="">chest pain</a></li>
+              </ul>
+            </div>
+          </details>
         </div>
       </div>
     </div>
@@ -117,37 +123,6 @@ NHS homepage - NHS
   </div>
 </section>
 
-
-<!-- Help us help you get the treatment you need -->
-<section class="nhsuk-section">
-  <div class="nhsuk-width-container">
-    <div class="nhsuk-grid-row">
-      <div class="nhsuk-grid-column-full app-section__content">
-        <div class="nhsuk-u-reading-width">
-          <h2>Help us help you get the treatment you need</h2>
-        </div>
-        <div class="nhsuk-u-reading-width">
-          <p>While everyone is being told to stay at home, it can be hard to know what to do if you&#x27;re unwell.</p>
-          <ul>
-            <li>For help from a GP – use your GP surgery&#x27;s website, use an online service or app, or call the surgery.</li>
-            <li>For urgent medical help – use the NHS 111 online service, or call 111 if you&#x27;re unable to get help online.</li>
-            <li>For life-threatening emergencies – call 999 for an ambulance.</li>
-          </ul>
-          <p>If you&#x27;re advised to go to hospital, it&#x27;s important to go.</p>
-        </div>
-        <div class="nhsuk-action-link">
-          <a class="nhsuk-action-link__link" href="" >
-            <svg class="nhsuk-icon nhsuk-icon__arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M0 0h24v24H0z" fill="none"></path>
-              <path d="M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z"></path>
-            </svg>
-            <span class="nhsuk-action-link__text">Find out how to get medical help</span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
 
 <!-- NHS App -->
