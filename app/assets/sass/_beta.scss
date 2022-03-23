@@ -198,6 +198,14 @@ $beta-hub-border-top: rgba(204, 204, 204, .5);
     }
   }
 
+  .nhsuk-header__search-form--search-results {
+    margin-bottom: 40px;
+    background-color: transparent;
+    display: flex;
+    padding: 0;
+    width: 100%;
+}
+
   .nhsuk-header__menu-toggle {
     right: 0;
   }
@@ -545,3 +553,5 @@ $beta-hub-border-top: rgba(204, 204, 204, .5);
 .nhsuk-u-float-left {
   float: left;
 }
+
+
