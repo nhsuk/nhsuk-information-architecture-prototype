@@ -553,6 +553,11 @@ $beta-hub-border-top: rgba(204, 204, 204, .5);
  */
 
  .nhsuk-header__search-form--search-results {
+  border: 1px solid  #4c6272;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
   margin-bottom: 40px;
   background-color: transparent;
   display: flex;
@@ -561,51 +566,39 @@ $beta-hub-border-top: rgba(204, 204, 204, .5);
 }
 
 .nhsuk-search__input {
-  -ms-flex-positive: 2;
-  -webkit-appearance: listbox;
-  background-color: #fff!important;
-  border-bottom: 1px solid #aeb7bd;
+  background-color: #fff;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 0;
-  border-left: 1px solid #aeb7bd;
-  border-right: 0;
-  border-top: 1px solid #aeb7bd;
   border-top-left-radius: 4px;
   border-top-right-radius: 0;
   flex-grow: 2;
   font-size: inherit;
-  height: 52px;
+  height: 40px;
   margin: 0;
-  outline: 0;
   padding: 0 16px;
   width: 100%;
 }
 
 .nhsuk-search__submit {
   background-color: #007f3b;
-  border: 0;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 4px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 4px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 2px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 2px;
   float: right;
   font-size: inherit;
-  height: 52px;
+  height: 40px;
   line-height: inherit;
   margin: 0;
   outline: 0;
   padding: 8px 8px 0;
-  width: 52px;
+  width: 40px;
 }
 
 .nhsuk-search__submit .nhsuk-icon__search {
   fill: #fff;
-  height: 38px;
-  width: 38px;
-}
-
-button, input, select, textarea {
-  font-family: inherit;
+  height: 26px;
+  width: 26px;
 }
 
 .nhsuk-list-item--border {
@@ -628,4 +621,5 @@ border-bottom: 1px solid #d8dde0;
   margin-top: 0;
   padding-left: 0;
 }
+
 
