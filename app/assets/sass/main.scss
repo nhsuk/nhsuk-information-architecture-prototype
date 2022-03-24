@@ -10,3 +10,14 @@
 ///////////////////////////////////////////
 @import 'beta';
   
+
+.nhsuk-expander .nhsuk-details__summary-text {
+    color: #005eb8;
+    cursor: pointer;
+    display: inline-block;
+    padding: 4px 4px 4px 38px;
+    position: relative;
+}
+.nhsuk-details__summary-text {
+    text-decoration: underline;
+}
