@@ -1,0 +1,146 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'template-lab-3b.html' %}
+{% set mainClasses = 'nhsuk-u-padding-top-0' %}
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+Sepsis - NHS
+{% endblock %}
+
+{% block beforeContent %}
+<!-- Coronavirus (COVID-19) banner -->
+<div class="app-global-alert" id="app-global-alert" role="complementary">
+  <div class="nhsuk-width-container">
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-full">
+        <div class="app-global-alert__content">
+          <div class="app-global-alert__message">
+            <h2>Coronavirus (COVID-19)</h2>
+            <p><a href="">Get the latest advice about COVID-19</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Breadcrumbs -->
+<nav class="nhsuk-breadcrumb beta-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a href="/lab-3/b" class="nhsuk-breadcrumb__link">Home</a></li>
+    </ol>
+    <p class="nhsuk-breadcrumb__back">
+      <a href="" class="nhsuk-breadcrumb__backlink">
+        <span class="nhsuk-u-visually-hidden">Back to </span>Home
+      </a>
+    </p>
+  </div>
+</nav>
+{% endblock %}
+
+
+<!-- Homepage content -->
+{% block content %}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+
+    <div class="nhsuk-u-reading-width">
+      <h1>Meningitis</h1>
+    </div>
+    <p><strong>Meningitis is an infection of the protective membranes that surround the brain and spinal cord (meninges).</strong></p>
+    <p>It can affect anyone, but is most common in babies, young children, teenagers and young adults.</p>
+    <p>It can cause life-threatening blood poisoning (<a href="/lab-3/b/conditions/sepsis">septicaemia</a>) and result in permanent damage to the brain or nerves.</p>
+    <p>A number of vaccinations are available that offer some protection against meningitis.</p>
+
+    <h2>Symptoms of meningitis</h2>
+    <p>Symptoms of meningitis develop suddenly and can include:</p>
+    <ul>
+      <li>a high temperature (fever)</li>
+      <li>being sick</li>
+      <li>a rash that does not fade when a glass is rolled over it (but a rash will not always develop)</li>
+      <li>a stiff neck</li>
+      <li>a dislike of bright lights</li>
+      <li>drowsiness or unresponsiveness</li>
+      <li>seizures (fits)</li>
+    </ul>
+    <p>These symptoms can appear in any order. You do not always get all of the symptoms.</p>
+
+    <div class="nhsuk-warning-callout">
+      <h3 class="nhsuk-warning-callout__label">Coronavirus (COVID-19)</h3>
+      <p>At the moment it can be hard to know what to do if your child is unwell.</p>
+      <p>It's important to trust your instincts and get medical help if you need it.</p>
+    </div>
+
+    <h2>When to get medical help</h2>
+    <p>You should get medical advice as soon as possible if you're concerned that you or your child could have meningitis.</p>
+    <p>Trust your instincts and do not wait until a rash develops.</p>
+    <p>Call 999 for an ambulance or go to <a href="">your nearest A&E</a> immediately if you think you or your child might be seriously ill.</p>
+    <p>Call <a href="">NHS 111</a> or your GP surgery for advice if you're not sure if it's anything serious or you think you may have been exposed to someone with meningitis.</p>
+
+
+    <h2>How meningitis is spread</h2>
+    <p>Meningitis is usually caused by a bacterial or viral infection.</p>
+    <p>Bacterial meningitis is rarer but more serious than viral meningitis.</p>
+    <p>Infections that cause meningitis can be spread through:</p>
+    <ul>
+      <li>sneezing</li>
+      <li>coughing</li>
+      <li>kissing</li>
+    </ul>
+    <p>Meningitis is usually caught from people who carry these viruses or bacteria in their nose or throat but are not ill themselves.</p>
+    <p>It can also be caught from someone with meningitis, but this is less common.</p>
+
+    <h2>Vaccinations against meningitis</h2>
+    <p>Vaccinations offer some protection against certain causes of meningitis.</p>
+    <p>These include the:</p>
+    <ul>
+      <li>meningitis B vaccine – offered to babies aged 8 weeks, followed by a second dose at 16 weeks and a booster at 1 year</li>
+      <li>6-in-1 vaccine – offered to babies at 8, 12 and 16 weeks of age</li>
+      <li>pneumococcal vaccine – offered to babies born before 1 January 2020 at 8 and 16 weeks and 1 year of age; babies born on or after 1 January 2020 have 2 doses at 12 weeks and 1 year</li>
+      <li>Hib/MenC vaccine – offered to babies at 1 year of age</li>
+      <li>MMR vaccine – offered to babies at 1 year and a second dose at 3 years and 4 months</li>
+      <li>meningitis ACWY vaccine – offered to teenagers, sixth formers and "fresher" students going to university for the first time</li>
+    </ul>
+
+    <h2>Treatments for meningitis</h2>
+    <p>People with suspected meningitis will usually have tests in hospital to confirm the diagnosis and check whether the condition is the result of a viral or bacterial infection.</p>
+    <p>Bacterial meningitis usually needs to be treated in hospital for at least a week.</p>
+    <p>Treatments include:</p>
+    <ul>
+      <li>antibiotics given directly into a vein</li>
+      <li>fluids given directly into a vein</li>
+      <li>oxygen through a face mask</li>
+    </ul>
+    <p>Viral meningitis tends to get better on its own within 7 to 10 days and can often be treated at home.</p>
+    <p>Getting plenty of rest and taking painkillers and anti-sickness medication can help relieve the symptoms in the meantime.</p>
+
+    <h2>Outlook for meningitis</h2>
+    <p>Viral meningitis will usually get better on its own and rarely causes any long-term problems.</p>
+    <p>Most people with bacterial meningitis who are treated quickly will also make a full recovery, although some are left with serious long-term problems.</p>
+    <p>These can include:</p>
+    <ul>
+      <li>hearing loss or vision loss, which may be partial or total</li>
+      <li>problems with memory and concentration</li>
+      <li>recurrent seizures (epilepsy)</li>
+      <li>co-ordination, movement and balance problems</li>
+      <li>loss of limbs – amputation of affected limbs is sometimes necessary</li>
+    </ul>
+    <p>Overall, it's estimated up to 1 in every 10 cases of bacterial meningitis is fatal.</p>
+
+    
+    <p class="nhsuk-body-s nhsuk-u-margin-top-7 nhsuk-u-secondary-text-color">
+    Page last reviewed: 02 August 2019<br>
+    Next review due: 02 August 2022
+    </p>
+
+
+
+
+    
+
+  </div>
+</div>
+{% endblock %}
+
+
