@@ -1,0 +1,160 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'template-lab-3b.html' %}
+{% set mainClasses = 'nhsuk-u-padding-top-0' %}
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+Sepsis - NHS
+{% endblock %}
+
+{% block beforeContent %}
+<!-- Coronavirus (COVID-19) banner -->
+<div class="app-global-alert" id="app-global-alert" role="complementary">
+  <div class="nhsuk-width-container">
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-full">
+        <div class="app-global-alert__content">
+          <div class="app-global-alert__message">
+            <h2>Coronavirus (COVID-19)</h2>
+            <p><a href="">Get the latest advice about COVID-19</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Breadcrumbs -->
+<nav class="nhsuk-breadcrumb beta-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a href="/lab-3/b" class="nhsuk-breadcrumb__link">Home</a></li>
+    </ol>
+    <p class="nhsuk-breadcrumb__back">
+      <a href="" class="nhsuk-breadcrumb__backlink">
+        <span class="nhsuk-u-visually-hidden">Back to </span>Home
+      </a>
+    </p>
+  </div>
+</nav>
+{% endblock %}
+
+
+<!-- Homepage content -->
+{% block content %}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+
+    <div class="nhsuk-u-reading-width">
+      <h1>Sepsis</h1>
+    </div>
+
+    <div class="nhsuk-warning-callout">
+      <h3 class="nhsuk-warning-callout__label">Important</h3>
+      <p>Sepsis is life threatening. It can be hard to spot.</p>
+      <p>If you think you or someone you look after has symptoms of sepsis, call 999 or go to A&E. Trust your instincts.</p>
+    </div>
+
+    <div class="nhsuk-card nhsuk-card--care nhsuk-card--care--emergency">
+      <div class="nhsuk-card--care__heading-container">
+        <h2 class="nhsuk-card--care__heading">
+          <span role="text"><span class="nhsuk-u-visually-hidden">Immediate action required: </span>Call 999 or go to A&E if a baby or young child has any of these symptoms of sepsis:</span>
+        </h2>
+        <span class="nhsuk-card--care__arrow" aria-hidden="true"></span>
+      </div>
+    
+      <div class="nhsuk-card__content">
+    
+        <ul>
+          <li>blue, pale or blotchy skin, lips or tongue</li>
+          <li>a rash that does not fade when you roll a glass over it, the same as <a href="">meningitis</a></li>
+          <li>difficulty breathing (you may notice grunting noises or their stomach sucking under their ribcage), breathlessness or breathing very fast</li>
+          <li>a weak, high-pitched cry that's not like their normal cry</li>
+          <li>not responding like they normally do, or not interested in feeding or normal activities</li>
+          <li>being sleepier than normal or difficult to wake</li>
+        </ul>
+        <p>They may not have all of these symptoms.</p>
+        <p><a href="">Find an A&E</a></p>
+    
+      </div>
+    </div>
+
+    <div class="nhsuk-card nhsuk-card--care nhsuk-card--care--emergency">
+      <div class="nhsuk-card--care__heading-container">
+        <h2 class="nhsuk-card--care__heading">
+          <span role="text"><span class="nhsuk-u-visually-hidden">Immediate action required: </span>Call 999 or go to A&E if an adult or older child has any of these symptoms of sepsis:</span>
+        </h2>
+        <span class="nhsuk-card--care__arrow" aria-hidden="true"></span>
+      </div>
+    
+      <div class="nhsuk-card__content">
+    
+        <ul>
+          <li>acting confused, slurred speech or not making sense</li>
+          <li>blue, pale or blotchy skin, lips or tongue</li>
+          <li>a rash that does not fade when you roll a glass over it, the same as <a href="">meningitis</a></li>
+          <li>difficulty breathing, breathlessness or breathing very fast</li>
+        </ul>
+        <p>They may not have all of these symptoms.</p>
+        <p><a href="">Find an A&E</a></p>
+    
+      </div>
+    </div>
+    
+    <h2>Spotting sepsis</h2>
+    <p>Sepsis can be hard to spot. There are lots of possible symptoms.</p>
+    <p>Symptoms can be vague. They can be like symptoms of other conditions, including flu or a chest infection.</p>
+
+    <div class="nhsuk-card nhsuk-card--care nhsuk-card--care--urgent">
+      <div class="nhsuk-card--care__heading-container">
+        <h2 class="nhsuk-card--care__heading">
+          <span role="text"><span class="nhsuk-u-visually-hidden">Urgent advice: </span>Call 111 if:</span>
+        </h2>
+        <span class="nhsuk-card--care__arrow" aria-hidden="true"></span>
+      </div>
+    
+      <div class="nhsuk-card__content">
+        <p>You, your child or someone you look after:</p>
+        <ul>
+          <li>feels very unwell or like there's something seriously wrong</li>
+          <li>has not had a pee all day (for adults and older children) or in the last 12 hours (for babies and young children)</li>
+          <li>keeps vomiting and cannot keep any food or milk down (for babies and young children)</li>
+          <li>has swelling, redness or pain around a cut or wound</li>
+          <li>has a very high or low temperature, feels hot or cold to the touch, or is shivering</li>
+        </ul>
+        <p>Do not worry if you're not sure if it's sepsis – it's still best to call 111.</p>
+        <p>They can tell you what to do, arrange a phone call from a nurse or doctor, or call you an ambulance.</p>
+        <p>Contact <a href="">NHS 111</a></p>
+    
+      </div>
+    </div>
+
+    <h3>Sepsis can be especially hard to spot in:</h3>
+    <ul>
+      <li>babies and young children</li>
+      <li>people with dementia</li>
+      <li>people with a leaerning disability</li>
+      <li>people who have difficulty communicating</li>
+    </ul>
+
+    <h2>What is sepsis?</h2>
+    <p>Sepsis is a life-threatening reaction to an infection.</p>
+    <p>It happens when your immune system overreacts to an infection and starts to damage your body's own tissues and organs.</p>
+    <p>You cannot catch sepsis from another person.</p>
+    <p>Sepsis is sometimes called septicaemia or blood poisoning.</p>
+
+    <p class="nhsuk-body-s nhsuk-u-margin-top-7 nhsuk-u-secondary-text-color">
+    Page last reviewed: 02 August 2019<br>
+    Next review due: 02 August 2022
+    </p>
+
+
+
+
+    
+
+  </div>
+</div>
+{% endblock %}
+
+
