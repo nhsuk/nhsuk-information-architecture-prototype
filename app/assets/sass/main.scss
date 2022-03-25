@@ -21,3 +21,205 @@
 .nhsuk-details__summary-text {
     text-decoration: underline;
 }
+
+
+
+
+
+////////////////////////////////////////////////
+// Search
+////////////////////////////////////////////////
+
+.nhsuk-header__logo {
+  float: none;
+}
+
+.nhsuk-header__search-form {
+    background-color: transparent;
+    padding: 0;
+    width: 100%;
+  }
+  
+  .nhsuk-header__content {
+    clear: both;
+  }
+  
+  .nhsuk-header__search {
+    float: none;
+    margin-top: 20px;
+  }
+  
+  .autocomplete__input {
+    border: 1px solid #fff;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 0;
+    border-right: 0;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 0;
+    font-size: 16px;
+    padding: 0 12px;
+  }
+  
+  .nhsuk-search__submit {
+    background-color: #f0f4f5;
+    border: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 4px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 4px;
+    display: block;
+    float: right;
+    font-size: inherit;
+    height: 40px;
+    line-height: inherit;
+    outline: none;
+    padding-left: 9px;
+    padding-top: 5px;
+    width: 44px;
+
+    &:hover {
+      background-color: #f0f4f5;
+      border: 0;
+      
+      z-index: 1;
+    }
+
+  }
+  
+  .nhsuk-search__submit .nhsuk-icon__search {
+    fill: #005eb8;
+    height: 27px;
+    width: 27px;
+  }
+  
+  .new-search-results {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+    // text-transform: capitalize;
+  }
+  
+  .new-search-results-wrapper {
+    position: relative;
+    background-color: #fff;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: 15px;
+    max-height: 300px;
+    overflow: hidden;
+  }
+  
+  .new-search {
+    background-color: transparent;
+    padding: 0;
+    width: 100%;
+    display: flex;
+  }
+
+  .new-search__input {
+    border-radius: 0;
+    -webkit-appearance: none;
+    border: 1px solid #fff;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 0;
+    border-right: 0;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 0;
+    font-size: 16px;
+    height: 40px;
+    padding: 0 12px;
+    width: 100%;
+    margin: 0;
+    outline: none;
+    flex-grow: 2;
+    min-width: 135px;
+  }
+  
+  .new-search__button {
+    background-color: #f0f4f5;
+    border: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 4px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 4px;
+    display: block;
+    float: right;
+    font-size: inherit;
+    height: 36px;
+    line-height: inherit;
+    outline: none;
+    padding-left: 9px;
+    padding-top: 5px;
+    width: 44px;
+   }
+ 
+   .nhsuk-header__container {
+    @include mq($until: desktop) {
+      padding: 14px 10px 0;
+    }
+   }
+  
+  .new-search-results-wrapper,
+  .nhsuk-breadcrumb__back,
+  .nhsuk-breadcrumb__list,
+  .nhsuk-main-wrapper  {
+    a:visited {
+      color: #005eb8!important;
+    }
+  }
+
+  .search--active {
+    float: none;
+    background: red;
+    width: calc(100% - 40px);
+    position: absolute;
+    left: 20px;
+    right: 20px;
+  }
+  
+  // .search_highlight {
+  //   color: #034583;
+  //   font-weight: bold;
+  //   // background: #ffcd60ad;
+  // }
+  
+  // .nhsuk-list-signage a {
+  //   color: white!important;
+   
+  //   &:visited {
+  //     color: white!important;
+  //   }
+  
+  // }
+  
+  .nhsuk-header__container {
+    position: relative;
+  }
+
+  
+
+  .nhsuk-list-panel__link {
+    color: $color_nhsuk-blue;
+    padding: 12px nhsuk-spacing(3);
+    display: block;
+  }
+
+  .nhsuk-list-panel__item {
+    border-top: 1px solid $color_nhsuk-grey-5;
+    margin-bottom: 0;
+
+    @include mq($from: large-desktop) {
+      border-top: 0;
+      margin: 0;
+      text-align: center;
+    }
+  }
+
+
+.nhsuk-list-panel__item .nhsuk-icon__search {
+  fill: #aeb7bd;
+  float: left;
+  height: 22px;
+  margin: 2px 4px 0 0;
+  width: 22px;
+}
