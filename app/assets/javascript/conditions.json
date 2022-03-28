@@ -32,7 +32,7 @@
         "link": "/lab-3/b/search-results/meningitis",
         "tag": "",
         "synonyms": "rash, rash that doesn't disappear",
-        "misspelling": "mennigitus, meningitos, meningitus"
+        "misspelling": "mennigitus, meningitos, meningitus/miningitis"
     },
     {
         "title": "Chest",
@@ -2119,7 +2119,7 @@
         "title": "Rashes in babies and children",
         "link": "/lab-3/b/search-results/meningitis",
         "tag": "",
-        "synonyms": "",
+        "synonyms": "rash, child rash",
         "misspelling": ""
     },
     {
