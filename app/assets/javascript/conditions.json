@@ -17,22 +17,22 @@
         "title": "fever",
         "link": "/lab-3/b/search-results/fever",
         "tag": "",
-        "synonyms": "",
+        "synonyms": "temperature, high temperature",
         "misspelling": "feever"
     },
     {
         "title": "sepsis",
         "link": "/lab-3/b/search-results/sepsis",
         "tag": "",
-        "synonyms": "",
+        "synonyms": "infection, infected cut, blood poisoning, septiceamia",
         "misspelling": "sepses, sepsos"
     },
     {
         "title": "meningitis",
         "link": "/lab-3/b/search-results/meningitis",
         "tag": "",
-        "synonyms": "",
-        "misspelling": "mennigitus, meningitos"
+        "synonyms": "rash, rash that doesn't disappear",
+        "misspelling": "mennigitus, meningitos, meningitus"
     },
     {
         "title": "Chest",
@@ -2117,7 +2117,7 @@
     },
     {
         "title": "Rashes in babies and children",
-        "link": "#",
+        "link": "/lab-3/b/search-results/meningitis",
         "tag": "",
         "synonyms": "",
         "misspelling": ""
