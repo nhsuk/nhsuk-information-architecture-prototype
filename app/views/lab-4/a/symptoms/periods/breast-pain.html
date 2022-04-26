@@ -1,0 +1,162 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'template-lab-4a.html' %}
+{% set mainClasses = 'nhsuk-u-padding-top-0' %}
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+Symptoms - NHS
+{% endblock %}
+
+{% block beforeContent %}
+<!-- Coronavirus (COVID-19) banner -->
+<div class="app-global-alert" id="app-global-alert" role="complementary">
+  <div class="nhsuk-width-container">
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-full">
+        <div class="app-global-alert__content">
+          <div class="app-global-alert__message">
+            <h2>Coronavirus (COVID-19)</h2>
+            <p><a href="">Get the latest advice about COVID-19</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Breadcrumbs -->
+<nav class="nhsuk-breadcrumb beta-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a href="" class="nhsuk-breadcrumb__link">Home</a></li>
+    </ol>
+    <p class="nhsuk-breadcrumb__back">
+      <a href="" class="nhsuk-breadcrumb__backlink">
+        <span class="nhsuk-u-visually-hidden">Back to </span>Home
+      </a>
+    </p>
+  </div>
+</nav>
+{% endblock %}
+
+
+<!-- Homepage content -->
+{% block content %}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+
+    <div class="nhsuk-u-reading-width">
+      <h1>Breast pain</h1>
+    </div>
+
+    
+    <p><strong>There are many reasons breasts can be painful. Breast pain by itself is unlikely to be a symptom of cancer.</strong></p>
+    <h2>Breast pain is usually linked to periods</h2>
+    <p>Symptoms of breast pain caused by periods:</p>
+    <ul>
+      <li>dull, heavy or aching pain – from mild to very bad</li>
+      <li>pain that begins up to 2 weeks before a period, gets worse and then goes away when the period ends</li>
+      <li>usually (but not always) affects both breasts and sometimes pain spreads to the armpit</li>
+    </ul>
+    <h3>How to ease the pain yourself</h3>
+    <div class="nhsuk-do-dont-list">
+      <h2 class="nhsuk-do-dont-list__label">
+        Do
+      </h2>
+      <ul class="nhsuk-list nhsuk-list--tick">
+        
+        <li>
+          <svg class="nhsuk-icon nhsuk-icon__tick" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" aria-hidden="true" height="34" width="34">
+            <path stroke-width="4" stroke-linecap="round" d="M18.4 7.8l-8.5 8.4L5.6 12" stroke="#007f3b"></path>
+          </svg>
+          <p>take <a href="javascript:void(0);">paracetamol</a> or <a href="javascript:void(0);">ibuprofen</a>, or rub painkilling gel on your breasts</p>
+        </li>
+        
+        <li>
+          <svg class="nhsuk-icon nhsuk-icon__tick" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" aria-hidden="true" height="34" width="34">
+            <path stroke-width="4" stroke-linecap="round" d="M18.4 7.8l-8.5 8.4L5.6 12" stroke="#007f3b"></path>
+          </svg>
+          <p>wear a properly fitted bra during the day and a soft bra to sleep in</p>
+        </li>
+        
+      </ul>
+    </div>
+
+    <p>There's little evidence that vitamin E tablets or evening primrose oil help with breast pain.</p>
+
+    <h2>Breast pain not linked to periods</h2>
+    <p>Sometimes breast pain is caused by:</p>
+    <ul>
+      <li>injuries or<a href="javascript:void(0);">sprains</a>  to the neck, shoulder or back – these can also be felt as breast pain</li>
+      <li>medicines like the contraceptive pill and some antidepressants – check the side effects in the packet's information leaflet</li>
+      <li>conditions like <a href="javascript:void(0);">mastitis</a> or a <a href="javascript:void(0);">breast abscess</a> – these can cause breast pain along with other symptoms</li>
+      <li>pregnancy - breast pain can be an early sign</li>
+    </ul>
+
+    <h2>Breast pain and the menopause</h2>
+    <p>Hormone changes during the <a href="javascript:void(0);">menopause</a> can cause breast pain.</p>
+    <p>Once the menopause is over (you've had 12 months without a period), the pain should not return.</p>
+
+    <div class="nhsuk-card nhsuk-card--care nhsuk-card--care--non-urgent">
+      <div class="nhsuk-card--care__heading-container">
+        <h2 class="nhsuk-card--care__heading">
+          <span role="text"><span class="nhsuk-u-visually-hidden">Non-urgent advice: </span>See a GP about breast pain if:</span>
+        </h2>
+        <span class="nhsuk-card--care__arrow" aria-hidden="true"></span>
+      </div>
+    
+      <div class="nhsuk-card__content">
+    
+        <ul>
+          <li>it's not improving or painkillers are not helping</li>
+          <li>you have a very high temperature or feel hot and shivery</li>
+          <li>any part of your breast is red, hot or swollen</a></li>
+          <li>there's a history of breast cancer in your family</li>
+          <li>you have any <a href="javascript:void(0);">signs of pregnancy</a> - you could do a <a href="javascript:void(0);">pregnancy test</a> first</li>
+        </ul>    
+      </div>
+    </div>
+
+    <div class="nhsuk-card nhsuk-card--care nhsuk-card--care--urgent">
+      <div class="nhsuk-card--care__heading-container">
+        <h2 class="nhsuk-card--care__heading">
+          <span role="text"><span class="nhsuk-u-visually-hidden">Urgent advice: </span>Ask for an urgent GP appointment or call 111 if:</span>
+        </h2>
+        <span class="nhsuk-card--care__arrow" aria-hidden="true"></span>
+      </div>
+    
+      <div class="nhsuk-card__content">
+    
+        <ul>
+          <li>there's a hard lump in your breast that does not move around</li>
+          <li>you get nipple discharge, which may be streaked with blood</li>
+          <li>one or both breasts change shape</li>
+          <li>the skin on your breast is dimpled (like orange peel)</li>
+          <li>you have a rash on or around your nipple, or the nipple has sunk into your breast</li>
+        </ul>
+        <p>These can be signs of something more serious.</p>
+        <p>If you call 111, the trained adviser will tell you what to do. They can arrange a phone call from a nurse or doctor if you need one.</p>
+        <p>Go to <a href="javascript:void(0);">111.nhs.uk</a> or <a href="javascript:void(0);">call 111</a>.</p>
+    
+      </div>
+    </div>
+
+    
+    
+
+    <p class="nhsuk-body-s nhsuk-u-margin-top-7 nhsuk-u-secondary-text-color">
+    Page last reviewed: 02 August 2019<br>
+    Next review due: 02 August 2022
+    </p>
+
+
+
+
+
+    
+
+  </div>
+</div>
+{% endblock %}
+
+
