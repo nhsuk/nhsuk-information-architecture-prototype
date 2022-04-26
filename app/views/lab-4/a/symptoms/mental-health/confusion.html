@@ -1,0 +1,186 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'template-lab-4a.html' %}
+{% set mainClasses = 'nhsuk-u-padding-top-0' %}
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+Symptoms - NHS
+{% endblock %}
+
+{% block beforeContent %}
+<!-- Coronavirus (COVID-19) banner -->
+<div class="app-global-alert" id="app-global-alert" role="complementary">
+  <div class="nhsuk-width-container">
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-full">
+        <div class="app-global-alert__content">
+          <div class="app-global-alert__message">
+            <h2>Coronavirus (COVID-19)</h2>
+            <p><a href="">Get the latest advice about COVID-19</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Breadcrumbs -->
+<nav class="nhsuk-breadcrumb beta-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a href="" class="nhsuk-breadcrumb__link">Home</a></li>
+    </ol>
+    <p class="nhsuk-breadcrumb__back">
+      <a href="" class="nhsuk-breadcrumb__backlink">
+        <span class="nhsuk-u-visually-hidden">Back to </span>Home
+      </a>
+    </p>
+  </div>
+</nav>
+{% endblock %}
+
+
+<!-- Homepage content -->
+{% block content %}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+
+    <div class="nhsuk-u-reading-width">
+      <h1>Sudden confusion (delirium)</h1>
+    </div>
+
+    
+    <p><strong>Sudden confusion (delirium) can have many different causes. Get medical help immediately if someone suddenly becomes confused (delirious).</strong></p>
+   <h2>How to tell if someone is confused</h2>
+   <p>If a person is confused, they may:</p>
+   <ul>
+     <li>not be able to think or speak clearly or quickly</li>
+     <li>not know where they are (feel disorientated)</li>
+     <li>struggle to pay attention or remember things</li>
+     <li>see or hear things that are not there (<a href="javascript:void(0);">hallucinations</a>)</li>
+   </ul>
+   <p>Try asking the person their name, their age and today's date. If they seem unsure or cannot answer you, they probably need medical help.</p>
+
+   <div class="nhsuk-card nhsuk-card--care nhsuk-card--care--non-urgent">
+    <div class="nhsuk-card--care__heading-container">
+      <h2 class="nhsuk-card--care__heading">
+        <span role="text"><span class="nhsuk-u-visually-hidden">Non-urgent advice: </span>See a GP if:</span>
+      </h2>
+      <span class="nhsuk-card--care__arrow" aria-hidden="true"></span>
+    </div>
+  
+    <div class="nhsuk-card__content">
+  
+      <ul>
+        <li>you're worried that you or a relative are becoming increasingly forgetful or confused</li>
+      </ul>
+      <p>It could be a sign of dementia. The <a href="javascript:void(0);">symptoms of dementia</a> often start gradually and get worse over time.</p>
+  
+    </div>
+  </div>
+
+  <div class="nhsuk-card nhsuk-card--care nhsuk-card--care--emergency">
+    <div class="nhsuk-card--care__heading-container">
+      <h2 class="nhsuk-card--care__heading">
+        <span role="text"><span class="nhsuk-u-visually-hidden">Immediate action required: </span>Go to A&E or call 999 for an ambulance if someone suddenly becomes confused</span>
+      </h2>
+      <span class="nhsuk-card--care__arrow" aria-hidden="true"></span>
+    </div>
+  
+    <div class="nhsuk-card__content">
+  
+      <p>Many of the causes of sudden confusion need assessment and treatment as soon as possible. In some cases, it may be life threatening.</p>
+  
+    </div>
+  </div>
+
+  <h2>Things to do while you wait for an ambulance</h2>
+  <div class="nhsuk-do-dont-list">
+    <h3 class="nhsuk-do-dont-list__label">
+      Do
+    </h3>
+    <ul class="nhsuk-list nhsuk-list--tick">
+      
+      <li>
+        <svg class="nhsuk-icon nhsuk-icon__tick" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" aria-hidden="true" height="34" width="34">
+          <path stroke-width="4" stroke-linecap="round" d="M18.4 7.8l-8.5 8.4L5.6 12" stroke="#007f3b"></path>
+        </svg>
+        <p>stay with the person – tell them who you are and where they are, and keep reassuring them</p>
+      </li>
+      
+      <li>
+        <svg class="nhsuk-icon nhsuk-icon__tick" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" aria-hidden="true" height="34" width="34">
+          <path stroke-width="4" stroke-linecap="round" d="M18.4 7.8l-8.5 8.4L5.6 12" stroke="#007f3b"></path>
+        </svg>
+        <p>use simple words and short sentences</p>
+      </li>
+      
+      <li>
+        <svg class="nhsuk-icon nhsuk-icon__tick" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" aria-hidden="true" height="34" width="34">
+          <path stroke-width="4" stroke-linecap="round" d="M18.4 7.8l-8.5 8.4L5.6 12" stroke="#007f3b"></path>
+        </svg>
+        <p>make a note of any medicines they're taking, if possible</p>
+      </li>
+      
+    </ul>
+  </div>
+
+  <div class="nhsuk-do-dont-list">
+    <h3 class="nhsuk-do-dont-list__label">
+      Don’t
+    </h3>
+    <ul class="nhsuk-list nhsuk-list--cross">
+      
+      <li>
+        <svg class="nhsuk-icon nhsuk-icon__cross" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
+          <path d="M17 18.5c-.4 0-.8-.1-1.1-.4l-10-10c-.6-.6-.6-1.6 0-2.1.6-.6 1.5-.6 2.1 0l10 10c.6.6.6 1.5 0 2.1-.3.3-.6.4-1 .4z" fill="#d5281b"></path>
+          <path d="M7 18.5c-.4 0-.8-.1-1.1-.4-.6-.6-.6-1.5 0-2.1l10-10c.6-.6 1.5-.6 2.1 0 .6.6.6 1.5 0 2.1l-10 10c-.3.3-.6.4-1 .4z" fill="#d5281b"></path>
+        </svg>
+        <p>do not ask lots of questions while they're feeling confused</p>
+      </li>
+      
+      <li>
+        <svg class="nhsuk-icon nhsuk-icon__cross" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
+          <path d="M17 18.5c-.4 0-.8-.1-1.1-.4l-10-10c-.6-.6-.6-1.6 0-2.1.6-.6 1.5-.6 2.1 0l10 10c.6.6.6 1.5 0 2.1-.3.3-.6.4-1 .4z" fill="#d5281b"></path>
+          <path d="M7 18.5c-.4 0-.8-.1-1.1-.4-.6-.6-.6-1.5 0-2.1l10-10c.6-.6 1.5-.6 2.1 0 .6.6.6 1.5 0 2.1l-10 10c-.3.3-.6.4-1 .4z" fill="#d5281b"></path>
+        </svg>
+        <p>do not stop the person moving around – unless they're in danger</p>
+      </li>
+      
+    </ul>
+  </div>
+
+  <h2>Causes of sudden confusion</h2>
+  <p>Sudden confusion can be caused by many different things. Do not try to self-diagnose – get medical help if someone suddenly becomes confused or delirious.</p>
+  <p>Some of the most common causes of sudden confusion include:</p>
+  <ul>
+    <li>an infection – <a href="javascript:void(0);">urinary tract infections (UTIs)</a> are a common cause in elderly people or people with dementia</li>
+    <li>a <a href="javascript:void(0);">stroke</a> or <a href="javascript:void(0);">TIA ("mini-stroke")</a></li>
+    <li>a low blood sugar level in people with <a href="javascript:void(0);">diabetes</a> – read about <a href="javascript:void(0);">treating low blood sugar</a></li>
+    <li>a <a href="javascript:void(0);">head injury</a></li>
+    <li>some types of prescription medicine</li>
+    <li><a href="javascript:void(0);">alcohol poisoning</a> or <a href="javascript:void(0);">alcohol withdrawal</a></li>
+    <li>taking illegal drugs</li>
+    <li><a href="javascript:void(0);">carbon monoxide poisoning</a> – especially if other people you live with become unwell</li>
+    <li>a severe <a href="javascript:void(0);">asthma attack</a> – or other problems with the lungs or heart</li>
+    <li>certain types of seizures, caused by <a href="javascript:void(0);">epilepsy</a></li>
+  </ul>
+
+  
+
+    <p class="nhsuk-body-s nhsuk-u-margin-top-7 nhsuk-u-secondary-text-color">
+    Page last reviewed: 02 August 2019<br>
+    Next review due: 02 August 2022
+    </p>
+
+
+
+
+
+    
+
+  </div>
+</div>
+{% endblock %}
+
+

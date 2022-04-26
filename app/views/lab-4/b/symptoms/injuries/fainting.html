@@ -1,0 +1,147 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'template-lab-2a.html' %}
+{% set mainClasses = 'nhsuk-u-padding-top-0' %}
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+Symptoms - NHS
+{% endblock %}
+
+{% block beforeContent %}
+<!-- Coronavirus (COVID-19) banner -->
+<div class="app-global-alert" id="app-global-alert" role="complementary">
+  <div class="nhsuk-width-container">
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-full">
+        <div class="app-global-alert__content">
+          <div class="app-global-alert__message">
+            <h2>Coronavirus (COVID-19)</h2>
+            <p><a href="">Get the latest advice about COVID-19</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Breadcrumbs -->
+<nav class="nhsuk-breadcrumb beta-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a href="" class="nhsuk-breadcrumb__link">Home</a></li>
+    </ol>
+    <p class="nhsuk-breadcrumb__back">
+      <a href="" class="nhsuk-breadcrumb__backlink">
+        <span class="nhsuk-u-visually-hidden">Back to </span>Home
+      </a>
+    </p>
+  </div>
+</nav>
+{% endblock %}
+
+
+<!-- Homepage content -->
+{% block content %}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+
+    <div class="nhsuk-u-reading-width">
+      <h1>Fainting</h1>
+    </div>
+
+    
+    <p><strong>Fainting is when you pass out for a short time. It is not usually a sign of something serious, but if it happens regularly you should see a GP.</strong></p>
+    <h2>Causes of fainting</h2>
+    <p>There are many reasons why someone might faint. Causes include:</p>
+    <ul>
+      <li>standing up too quickly – this could be a sign of low blood pressure</li>
+      <li>not eating or drinking enough</li>
+      <li>being too hot</li>
+      <li>being very upset, angry, or in severe pain</li>
+      <li>heart problems</li>
+      <li>taking drugs or drinking too much alcohol</li>
+    </ul>
+    <h2>Symptoms of fainting</h2>
+    <p>Fainting usually happens suddenly. Symptoms can include:</p>
+    <ul>
+      <li><a href="/lab-1/b/symptoms/dizziness">dizziness</a></li>
+      <li>cold skin and sweating</li>
+      <li>slurred speech</li>
+      <li>feeling sick</li>
+      <li>changes to your vision</li>
+    </ul>
+
+    <div class="nhsuk-card nhsuk-card--care nhsuk-card--care--non-urgent">
+      <div class="nhsuk-card--care__heading-container">
+        <h2 class="nhsuk-card--care__heading">
+          <span role="text"><span class="nhsuk-u-visually-hidden">Non-urgent advice: </span>See a GP if:</span>
+        </h2>
+        <span class="nhsuk-card--care__arrow" aria-hidden="true"></span>
+      </div>
+    
+      <div class="nhsuk-card__content">
+    
+        <ul>
+          <li>you have fainted and do not know the cause</li>
+          <li>you have recently fainted more than once</li>
+        </ul>    
+      </div>
+    </div>
+
+    <div class="nhsuk-inset-text">
+      <span class="nhsuk-u-visually-hidden">Information: </span>
+      <p>You must tell the Driver &amp; Vehicle Licensing Agency (DVLA) if you're fainting regularly as it could affect your ability to drive.</p>
+    <p>Find out how to <a href="https://www.gov.uk/blackouts-and-driving" title="External website">tell the DVLA about fainting</a>.</p>
+    
+    </div>
+
+    <h2>Things you can do to prevent fainting</h2>
+    <p>If you feel like you are about to faint, try to:</p>
+    <ul>
+      <li>lie down with your legs raised – if you cannot do this then sit with your head lowered between your knees</li>
+      <li>drink some water</li>
+      <li>eat something</li>
+      <li>take some deep breaths</li>
+    </ul>
+
+    <h2>If you see someone faint</h2>
+    <p>If you are with someone who has fainted, try to keep calm.</p>
+    <p>If you can, lay them on their back and raise their legs.</p>
+    <p>Usually, the person who has fainted will wake up within 20 seconds.</p>
+
+    <div class="nhsuk-card nhsuk-card--care nhsuk-card--care--emergency">
+      <div class="nhsuk-card--care__heading-container">
+        <h2 class="nhsuk-card--care__heading">
+          <span role="text"><span class="nhsuk-u-visually-hidden">Immediate action required: </span>Call 999 if:</span>
+        </h2>
+        <span class="nhsuk-card--care__arrow" aria-hidden="true"></span>
+      </div>
+    
+      <div class="nhsuk-card__content">
+        <p><strong>Someone faints and they</strong></p>
+        <ul>
+          <li>cannot be woken up after 1 minute</li>
+          <li>have severely hurt themselves from a fall</li>
+          <li>are shaking or jerking because of a seizure or fit</li>
+        </ul>
+    
+      </div>
+    </div>
+    
+
+    <p class="nhsuk-body-s nhsuk-u-margin-top-7 nhsuk-u-secondary-text-color">
+    Page last reviewed: 02 August 2019<br>
+    Next review due: 02 August 2022
+    </p>
+
+
+
+
+
+    
+
+  </div>
+</div>
+{% endblock %}
+
+

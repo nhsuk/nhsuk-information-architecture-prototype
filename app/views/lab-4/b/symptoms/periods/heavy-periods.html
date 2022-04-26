@@ -1,0 +1,123 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'template-lab-2a.html' %}
+{% set mainClasses = 'nhsuk-u-padding-top-0' %}
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+Symptoms - NHS
+{% endblock %}
+
+{% block beforeContent %}
+<!-- Coronavirus (COVID-19) banner -->
+<div class="app-global-alert" id="app-global-alert" role="complementary">
+  <div class="nhsuk-width-container">
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-full">
+        <div class="app-global-alert__content">
+          <div class="app-global-alert__message">
+            <h2>Coronavirus (COVID-19)</h2>
+            <p><a href="">Get the latest advice about COVID-19</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Breadcrumbs -->
+<nav class="nhsuk-breadcrumb beta-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a href="" class="nhsuk-breadcrumb__link">Home</a></li>
+    </ol>
+    <p class="nhsuk-breadcrumb__back">
+      <a href="" class="nhsuk-breadcrumb__backlink">
+        <span class="nhsuk-u-visually-hidden">Back to </span>Home
+      </a>
+    </p>
+  </div>
+</nav>
+{% endblock %}
+
+
+<!-- Homepage content -->
+{% block content %}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+
+    <div class="nhsuk-u-reading-width">
+      <h1>Heavy periods</h1>
+    </div>
+    <p><strong>Heavy periods (also called menorrhagia) are common and may just be normal for you. Treatment can help if they're affecting your daily life.</strong></p>
+    <h2>Check if you have heavy periods</h2>
+    <p>You may have heavy periods if you:</p>
+    <ul>
+      <li>need to change your pad or tampon every 1 to 2 hours, or empty your menstrual cup more often than is recommended</li>
+      <li>need to use 2 types of sanitary product together, such as a pad and a tampon</li>
+      <li>have periods lasting more than 7 days</li>
+      <li>pass blood clots larger than about 2.5cm (the size of a 10p coin)</li>
+      <li>bleed through to your clothes or bedding</li>
+      <li>avoid daily activities, like exercise, or take time off work because of your periods</li>
+      <li>feel tired or short of breath a lot</li>
+    </ul>
+
+    <h2>Causes of heavy periods</h2>
+    <p>It can be normal to have heavy periods.</p>
+    <p>They can be heavy at different times, like when you first start your periods, after pregnancy or during <a href="javascript:void(0);">menopause</a></p>
+    <p>Sometimes, they can be caused by</p>
+    <ul>
+      <li>conditions affecting your womb, ovaries or hormones, such as <a href="javascript:void(0);">polycystic ovary syndrome</a>, <a href="javascript:void(0);">fibroids</a>, <a href="javascript:void(0);">endometriosis</a> and <a href="javascript:void(0);">pelvic inflammatory disease</a></li>
+      <li>some medicines and treatments, including some <a href="javascript:void(0);">anticoagulant medicines</a> and <a href="javascript:void(0);">chemotherapy</a> medicines</li>
+      <li><a href="javascript:void(0);">stress</a> and <a href="javascript:void(0);">depression</a></li>
+    </ul>
+    <p>Rarely, heavy periods can be a sign of <a href="javascript:void(0);">womb cancer</a>.</p>
+
+    <div class="nhsuk-card nhsuk-card--care nhsuk-card--care--non-urgent">
+      <div class="nhsuk-card--care__heading-container">
+        <h2 class="nhsuk-card--care__heading">
+          <span role="text"><span class="nhsuk-u-visually-hidden">Non-urgent advice: </span>See a GP if:</span>
+        </h2>
+        <span class="nhsuk-card--care__arrow" aria-hidden="true"></span>
+      </div>
+    
+      <div class="nhsuk-card__content">
+    
+        <ul>
+          <li>heavy periods are affecting your life</li>
+          <li>you've had heavy periods for some time</li>
+          <li>you have severe pain during your periods</li>
+          <li>you bleed between periods or after sex</li>
+          <li>you have heavy periods and other symptoms such as pain when peeing, pooing or having sex</li>
+        </ul>    
+      </div>
+    </div>
+
+    <h2>Treatment for heavy periods</h2>
+    <p>Heavy periods do not always need to be treated. But there are treatments that can help if they’re affecting your daily life.</p>
+    <p>Treatments from a GP include:</p>
+    <ul>
+      <li>some types of contraception, such as an <a href="javascript:void(0);">intrauterine system (IUS)</a> or the <a href="javascript:void(0);">combined contraceptive pill</a></li>
+      <li>medicine to help reduce the bleeding, such as <a href="javascript:void(0);">tranexamic acid</a></li>
+      <li>prescription-only anti-inflammatory painkillers, such as mefenamic acid or <a href="javascript:void(0);">naproxen</a></li>
+    </ul>
+    <p>You should have a blood test to check if you have <a href="javascript:void(0);">iron deficiency (anaemia)</a></p>
+    <p>If these treatments do not work or a GP thinks a condition may be causing your heavy periods, they’ll usually refer you for tests or to see a specialist.</p>
+  
+
+
+    <p class="nhsuk-body-s nhsuk-u-margin-top-7 nhsuk-u-secondary-text-color">
+    Page last reviewed: 02 August 2019<br>
+    Next review due: 02 August 2022
+    </p>
+
+
+
+
+
+    
+
+  </div>
+</div>
+{% endblock %}
+
+
