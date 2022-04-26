@@ -1,0 +1,233 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'template-lab-2a.html' %} {% set mainClasses = 'nhsuk-u-padding-top-0' %}
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %} Symptoms - NHS {% endblock %}
+
+<!-- Coronavirus (COVID-19) banner -->
+{% block beforeContent %}
+<div class="app-global-alert" id="app-global-alert" role="complementary">
+    <div class="nhsuk-width-container">
+        <div class="nhsuk-grid-row">
+            <div class="nhsuk-grid-column-full">
+                <div class="app-global-alert__content">
+                    <div class="app-global-alert__message">
+                        <h2>Coronavirus (COVID-19)</h2>
+                        <p><a href="">Get the latest advice about COVID-19</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Breadcrumbs -->
+<nav class="nhsuk-breadcrumb beta-breadcrumb" aria-label="Breadcrumb">
+    <div class="nhsuk-width-container">
+        <ol class="nhsuk-breadcrumb__list">
+            <li class="nhsuk-breadcrumb__item"><a href="" class="nhsuk-breadcrumb__link">Home</a></li>
+        </ol>
+        <p class="nhsuk-breadcrumb__back">
+            <a href="" class="nhsuk-breadcrumb__backlink">
+                <span class="nhsuk-u-visually-hidden">Back to </span>Home
+            </a>
+        </p>
+    </div>
+</nav>
+{% endblock %}
+
+<!-- Symptom content -->
+{% block content %}
+<article>
+    <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-full">
+            <h1>
+                <span role="text">
+          10 medical reasons for feeling tired
+          <span class="nhsuk-caption-xl nhsuk-caption--bottom">
+            <span class="nhsuk-u-visually-hidden"> -</span> Sleep and tiredness
+                </span>
+                </span>
+            </h1>
+            <div id="page-nav" class="tab-navigation app-guides-nav">
+                <h2 class="nhsuk-u-visually-hidden" aria-hidden="true">Secondary navigation</h2>
+                <ul role="tablist" aria-label="Secondary navigation">
+                    <li class="app-guides-nav__item">
+                        <a class="app-guides-nav__label" href="?tabname=tiredness-and-fatigue" data-tabname="tiredness-and-fatigue" aria-controls="app-guides-nav__contents-0" id="app-guides-nav__label-0" aria-selected="false">
+            Tiredness and fatigue
+          </a>
+                        <div class="app-guides-nav__contents" id="app-guides-nav__contents-0" aria-hidden="true">
+                            <div class="app-guides-nav__sub-nav">
+                                <a class="app-guides-nav__sub-nav-link app-guides-links" href="/live-well/sleep-and-tiredness/the-energy-diet/">
+                        The energy diet
+                      </a>
+                                <a class="app-guides-nav__sub-nav-link app-guides-links" href="/live-well/sleep-and-tiredness/why-lack-of-sleep-is-bad-for-your-health/">
+                        Why lack of sleep is bad for your health
+                      </a>
+                                <a class="app-guides-nav__sub-nav-link app-guides-links" href="/live-well/sleep-and-tiredness/10-medical-reasons-for-feeling-tired/">
+                        10 medical reasons for feeling tired
+                      </a>
+                                <a class="app-guides-nav__sub-nav-link app-guides-links" href="/live-well/sleep-and-tiredness/self-help-tips-to-fight-fatigue/">
+                        Self-help tips to fight tiredness
+                      </a>
+                                <a class="app-guides-nav__sub-nav-link app-guides-links" href="/live-well/sleep-and-tiredness/5-ways-to-wipe-out-winter-tiredness/">
+                        5 ways to wipe out winter tiredness
+                      </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="app-guides-nav__item">
+                        <a class="app-guides-nav__label" href="?tabname=sleep-tips" data-tabname="sleep-tips" aria-controls="app-guides-nav__contents-1" id="app-guides-nav__label-1" aria-selected="false">
+            Sleep tips
+          </a>
+                        <div class="app-guides-nav__contents" id="app-guides-nav__contents-1" aria-hidden="true">
+                            <div class="app-guides-nav__sub-nav">
+                                <a class="app-guides-nav__sub-nav-link app-guides-links" href="/live-well/sleep-and-tiredness/how-to-get-to-sleep/">
+                        How to get to sleep
+                      </a>
+                                <a class="app-guides-nav__sub-nav-link app-guides-links" href="/live-well/sleep-and-tiredness/10-tips-to-beat-insomnia/">
+                        10 tips to beat insomnia
+                      </a>
+                                <a class="app-guides-nav__sub-nav-link app-guides-links" href="/live-well/sleep-and-tiredness/5-ways-to-stop-snoring/">
+                        How to stop snoring
+                      </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="app-guides-nav__item app-guides-nav__item--selected">
+                        <a class="app-guides-nav__label" href="?tabname=childrens-sleep" data-tabname="childrens-sleep" aria-controls="app-guides-nav__contents-2" id="app-guides-nav__label-2" aria-selected="true">
+            Children's sleep
+          </a>
+                        <div class="app-guides-nav__contents" id="app-guides-nav__contents-2" aria-hidden="false">
+                            <div class="app-guides-nav__sub-nav">
+                                <a class="app-guides-nav__sub-nav-link app-guides-links" href="/live-well/sleep-and-tiredness/healthy-sleep-tips-for-children/">
+                        Healthy sleep tips for children
+                      </a>
+                                <a class="app-guides-nav__sub-nav-link app-guides-links" href="/live-well/sleep-and-tiredness/how-much-sleep-do-kids-need/">
+                        How much sleep do children need?
+                      </a>
+                                <a class="app-guides-nav__sub-nav-link app-guides-links" href="/live-well/sleep-and-tiredness/sleep-tips-for-teenagers/">
+                        Sleep tips for teenagers
+                      </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="app-guides-nav__spacer" style="height: 156px;"></div>
+            </div>
+        </div>
+    </div>
+    <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-two-thirds">
+            <section>
+                <p><b>Any serious illness, such as cancer or stroke, or recovering from medical treatments can make you tired. But other illnesses can also leave you feeling washed out.</b></p>
+            </section>
+            <section>
+                <h2>What's the difference between tiredness and fatigue?</h2>
+                <p>We all experience tiredness at times, which can be relieved by sleep and rest. Fatigue is when the tiredness is often overwhelming and isn't relieved by sleep and rest.</p>
+                <p>Here are 10 health conditions known to cause tiredness or fatigue.</p>
+            </section>
+            <section>
+                <h2>Anaemia</h2>
+                <p>One of the most common medical reasons for feeling constantly run down is iron deficiency anaemia.</p>
+                <p>Women with <a href="/conditions/heavy-periods/">heavy periods</a> and pregnant women are especially prone to anaemia.</p>
+                <p>But it can also affect men and postmenopausal women, when the cause is more likely to be problems with the stomach and intestines, such as an <a href="/conditions/stomach-ulcer/">ulcer</a> or taking <a href="/conditions/nsaids/">non-steroidal anti-inflammatory drugs (NSAIDs)</a>.</p>
+                <p>Typically, you feel you can't be bothered to do anything, your muscles feel heavy, and you get tired very quickly.</p>
+                <p>Read more about <a href="/conditions/iron-deficiency-anaemia/">iron deficiency anaemia</a>.</p>
+                <p><a href="/conditions/vitamin-b12-or-folate-deficiency-anaemia/">Vitamin B12 or folate deficiency anaemia</a> can also cause tiredness.</p>
+                <p>It's possible to have too much iron, which can also cause tiredness, when it's known as iron-overload disorder (haemochromatosis).</p>
+                <p>This is a relatively rare inherited condition that affects men and women between the ages of 30 and 60.</p>
+                <p>Read more about <a href="/conditions/haemochromatosis/">haemochromatosis</a>.</p>
+            </section>
+            <section>
+                <h2>Sleep apnoea</h2>
+                <p>Sleep apnoea is a condition where your throat narrows or closes during sleep and repeatedly interrupts your breathing.</p>
+                <p>This results in&nbsp;loud <a href="/conditions/snoring/">snoring</a> and a drop in your blood's oxygen levels. The difficulty in breathing means you wake up often in the night and feel exhausted the next day.</p>
+                <p>It's most common in overweight middle-aged men. Drinking alcohol and smoking makes it worse.</p>
+                <p>Read more about <a href="/conditions/obstructive-sleep-apnoea/">sleep apnoea</a>.</p>
+            </section>
+            <section>
+                <h2>Underactive thyroid</h2>
+                <p>An underactive thyroid gland means you have too little thyroid hormone (thyroxine) in your body. This makes you feel tired.</p>
+                <p>You're also likely to put on weight and have aching muscles and dry skin. It's most common in women and happens more often as you get older.</p>
+                <p>Your GP can diagnose an underactive thyroid by taking a <a href="/conditions/blood-tests/">blood test</a>.</p>
+                <p>Read more about having an&nbsp;<a href="/conditions/underactive-thyroid-hypothyroidism/">underactive thyroid (hypothyroidism)</a>.</p>
+            </section>
+            <section>
+                <h2>Coeliac disease</h2>
+                <p>This is a lifelong disease caused by the immune system reacting to gluten.</p>
+                <p>Gluten is a protein in wheat, barley and rye, and can be found in foods like pasta, bread, cakes and cereals.</p>
+                <p>One in 100 people in the UK are affected, but research suggests many of them don't know they have the condition, according to charity <a href="https://www.coeliac.org.uk/home">Coeliac UK</a>.</p>
+                <p>Other symptoms of coeliac disease, apart from tiredness, are diarrhoea, bloating, anaemia and weight loss. Your GP can do a blood test to check if you may have coeliac disease.</p>
+                <p>Read more about <a href="/conditions/coeliac-disease/">coeliac disease</a>.</p>
+            </section>
+            <section>
+                <h2>Chronic fatigue syndrome</h2>
+                <p>Chronic fatigue syndrome (also known as myalgic encephalomyelitis, or ME) is a severe and disabling fatigue that goes on for at least 4 months. There may be other symptoms, such as muscle or joint pain.</p>
+                <p>Read more about <a href="/conditions/chronic-fatigue-syndrome-cfs/">chronic fatigue syndrome</a>.</p>
+            </section>
+            <section>
+                <h2>Diabetes</h2>
+                <p>One of the main symptoms of type 1 and type 2 diabetes is feeling very tired.</p>
+                <p>Other key symptoms are feeling very thirsty, peeing a lot (particularly at night) and weight loss. Speak to a GP if you think you might have <a href="/conditions/diabetes/">diabetes symptoms</a>.</p>
+            </section>
+            <section>
+                <h2>Glandular fever</h2>
+                <p>Glandular fever is a common viral infection that causes fatigue, along with fever, <a href="/conditions/sore-throat/">sore throat</a> and <a href="/conditions/swollen-glands/">swollen glands</a>.</p>
+                <p>Most cases happen in teenagers and young adults. Symptoms usually&nbsp;clear up within&nbsp;4 to&nbsp;6 weeks, but the fatigue can linger for several more months.</p>
+                <p>Read more about <a href="/conditions/glandular-fever/">glandular fever</a>.</p>
+            </section>
+            <section>
+                <h2>Depression</h2>
+                <p>As well as making you feel very sad, depression can also make you feel drained of energy.</p>
+                <p>It can stop you&nbsp;falling asleep or cause you to wake up early in the morning, which makes you feel more tired during the day.</p>
+                <p>Read more about <a href="/mental-health/conditions/clinical-depression/overview/">clinical depression</a>.</p>
+            </section>
+            <section>
+                <h2>Restless legs syndrome</h2>
+                <p>This is when you get an overwhelming urge to move your legs, which can keep you awake at night.</p>
+                <p>You might also have an unpleasant crawling sensation or a deep ache in your legs. Or your legs might jerk spontaneously through the night.</p>
+                <p>Whatever your symptoms, your sleep will be disrupted and poor quality, so you'll feel very tired throughout the day.</p>
+                <p>Read more about <a href="/conditions/restless-legs-syndrome/">restless legs syndrome</a>.</p>
+            </section>
+            <section>
+                <h2>Anxiety</h2>
+                <p>Feeling anxious is sometimes perfectly normal.&nbsp;But some people have constant uncontrollable feelings of anxiety that are so strong they affect their daily life.&nbsp;</p>
+                <p>Doctors call this generalised anxiety disorder (GAD). It's a common condition, affecting slightly more women than men. As well as feeling worried and irritable, people with GAD often feel tired.</p>
+                <p>Read more about <a href="/mental-health/conditions/generalised-anxiety-disorder/overview/">generalised anxiety disorder in adults</a>.</p>
+            </section>
+            <section>
+            </section>
+            <div>
+                <p class="nhsuk-body-s nhsuk-u-margin-top-7 nhsuk-u-secondary-text-color">
+                    Page last reviewed: 15 March 2021<br> Next review due: 15 March 2024
+                </p>
+            </div>
+        </div>
+        <div class="nhsuk-grid-column-one-third">
+        </div>
+    </div>
+</article>
+<div id="nhsuk-user-feedback-form">
+    <div class="nhsuk-user-feedback-form">
+        <div class="nhsuk-card nhsuk-u-reading-width">
+            <div class="nhsuk-card__content">
+                <h2 class="nhsuk-card__heading nhsuk-heading-s">
+                    Did this information help you?
+                </h2>
+                <ul class="nhsuk-list nhsuk-user-feedback-form">
+                    <li class="nhsuk-user-feedback-form__list-item nhsuk-u-margin-bottom-0">
+                        <button class="nhsuk-button nhsuk-button--secondary nhsuk-u-margin-right-4 nhsuk-u-margin-bottom-0 nhsuk-user-feedback-form--yes">
+              Yes <span class="nhsuk-u-visually-hidden">this information helped me</span>
+            </button>
+                    </li>
+                    <li class="nhsuk-user-feedback-form__list-item nhsuk-u-margin-bottom-0">
+                        <button class="nhsuk-button nhsuk-button--secondary nhsuk-u-margin-bottom-0 nhsuk-user-feedback-form--no">
+              No <span class="nhsuk-u-visually-hidden">this information did not help me</span>
+            </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

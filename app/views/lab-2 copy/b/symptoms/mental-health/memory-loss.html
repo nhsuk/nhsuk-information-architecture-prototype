@@ -1,0 +1,114 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'template-lab-2a.html' %}
+{% set mainClasses = 'nhsuk-u-padding-top-0' %}
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+Symptoms - NHS
+{% endblock %}
+
+{% block beforeContent %}
+<!-- Coronavirus (COVID-19) banner -->
+<div class="app-global-alert" id="app-global-alert" role="complementary">
+  <div class="nhsuk-width-container">
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-full">
+        <div class="app-global-alert__content">
+          <div class="app-global-alert__message">
+            <h2>Coronavirus (COVID-19)</h2>
+            <p><a href="">Get the latest advice about COVID-19</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Breadcrumbs -->
+<nav class="nhsuk-breadcrumb beta-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a href="" class="nhsuk-breadcrumb__link">Home</a></li>
+    </ol>
+    <p class="nhsuk-breadcrumb__back">
+      <a href="" class="nhsuk-breadcrumb__backlink">
+        <span class="nhsuk-u-visually-hidden">Back to </span>Home
+      </a>
+    </p>
+  </div>
+</nav>
+{% endblock %}
+
+
+<!-- Homepage content -->
+{% block content %}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+
+    <div class="nhsuk-u-reading-width">
+      <h1>Memory loss (amnesia)</h1>
+    </div>
+    <p><strong>Most people forget things from time to time, but see a GP if you keep having problems with your memory. It could be caused by something that can be treated.</strong></p>
+    <div class="nhsuk-card nhsuk-card--care nhsuk-card--care--non-urgent">
+      <div class="nhsuk-card--care__heading-container">
+        <h2 class="nhsuk-card--care__heading">
+          <span role="text"><span class="nhsuk-u-visually-hidden">Non-urgent advice: </span>See a GP if:</span>
+        </h2>
+        <span class="nhsuk-card--care__arrow" aria-hidden="true"></span>
+      </div>
+    
+      <div class="nhsuk-card__content">
+    
+        <ul>
+          <li>memory problems are affecting your day-to-day life</li>
+        </ul>
+        <p>It's probably nothing serious, but it's best to get checked because any treatment you need may work better if it's started early.</p>
+      </div>
+    </div>
+
+    <div class="nhsuk-warning-callout">
+      <h3 class="nhsuk-warning-callout__label">
+        
+          Concern for a relative
+        
+      </h3>
+      
+        <p>If you're worried about an older relative who's becoming increasingly forgetful, speak to a GP about whether it could be a <a href="javascript:void(0);">sign of dementia</a>.</p>
+      
+    </div>
+
+    <h2>What happens at your appointment</h2>
+    <p>The GP will ask you some questions to try to find the cause of your memory problems.</p>
+    <p>It might be useful to bring someone else with you who can help describe the problems you're having.</p>
+    <p>The GP may refer you to a memory specialist for an in-depth assessment. Further tests, such as scans, may also sometimes be needed.</p>
+    <p>Any treatment that's recommended will depend on the cause of your memory problems.</p>
+
+    <h2>Causes of memory loss</h2>
+    <p>Memory loss can just be a natural part of getting older.</p>
+    <p>Sometimes it may be caused by something common and treatable like:</p>
+    <ul>
+      <li><a href="javascript:void(0);">stress</a></li>
+      <li><a href="javascript:void(0);">anxiety</a> or <a href="javascript:void(0);">depression</a></li>
+      <li><a href="javascript:void(0);">sleeping problems (insomnia)</a></li>
+    </ul>
+    <p>Occasionally, memory loss can be a sign of something more serious, such as <a href="javascript:void(0);">dementia</a>.</p>
+    <p>Do not try to self-diagnose the cause of your memory loss – always see a GP.</p>
+
+
+
+    <p class="nhsuk-body-s nhsuk-u-margin-top-7 nhsuk-u-secondary-text-color">
+    Page last reviewed: 02 August 2019<br>
+    Next review due: 02 August 2022
+    </p>
+
+
+
+
+
+    
+
+  </div>
+</div>
+{% endblock %}
+
+

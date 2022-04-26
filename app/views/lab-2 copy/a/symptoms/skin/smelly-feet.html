@@ -1,0 +1,102 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'template-lab-2a.html' %}
+{% set mainClasses = 'nhsuk-u-padding-top-0' %}
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+Symptoms - NHS
+{% endblock %}
+
+{% block beforeContent %}
+<!-- Coronavirus (COVID-19) banner -->
+<div class="app-global-alert" id="app-global-alert" role="complementary">
+  <div class="nhsuk-width-container">
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-full">
+        <div class="app-global-alert__content">
+          <div class="app-global-alert__message">
+            <h2>Coronavirus (COVID-19)</h2>
+            <p><a href="">Get the latest advice about COVID-19</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Breadcrumbs -->
+<nav class="nhsuk-breadcrumb beta-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a href="" class="nhsuk-breadcrumb__link">Home</a></li>
+    </ol>
+    <p class="nhsuk-breadcrumb__back">
+      <a href="" class="nhsuk-breadcrumb__backlink">
+        <span class="nhsuk-u-visually-hidden">Back to </span>Home
+      </a>
+    </p>
+  </div>
+</nav>
+{% endblock %}
+
+
+<!-- Homepage content -->
+{% block content %}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+
+    <div class="nhsuk-u-reading-width">
+      <h1>How to stop smelly feet</h1>
+    </div>
+    <p><strong>Smelly feet aren't fun for anyone, so good personal hygiene and changing your shoes regularly should keep your feet fresh and sweet smelling.</strong></p>
+    <p>Medically known as bromodosis, stinky feet are a common year-round problem.</p>
+    <p>The main cause is sweaty feet combined with wearing the same shoes every day.</p>
+    <h2>Why feet sweat</h2>
+    <p>Anyone can get sweaty feet, at any temperature or time of year.</p>
+    <p>But teenagers and pregnant women are more likely to get them because hormonal changes make them sweat more.</p>
+    <p>You're also more likely to have sweaty feet if you're on your feet all day, wear shoes that are too tight, are under a lot of stress, or have a medical condition called <a href="javascript:void(0);">hyperhidrosis</a>, which makes you sweat more than usual.</p>
+    <p>Feet often become smelly if sweat soaks into your shoes and they don't dry before you wear them again.</p>
+
+    <h2>How to treat and prevent smelly feet</h2>
+    <p>The good news is that smelly feet are usually easy to treat by keeping your feet clean and dry, and changing your shoes regularly.</p>
+    <p>To treat sweaty or smelly feet yourself, try to:</p>
+    <ul>
+      <li>wash your feet with an antibacterial soap once a day (a pharmacist can advise you about different products)</li>
+      <li>dry your feet well after they have been wet, especially between your toes</li>
+      <li>try not to wear the same pair of shoes 2 days in a row so they have at least 24 hours to dry out</li>
+      <li>change your socks (ideally wool or cotton, not nylon) at least once a day</li>
+      <li>keep your toenails short and clean, and remove any hard skin with a foot file (it can become soggy when damp, which provides an ideal home for bacteria)</li>
+    </ul>
+    <p>If you often get sweaty feet, you might want to try:</p>
+    <ul>
+      <li>using a spray deodorant or antiperspirant on your feet – a normal underarm deodorant or antiperspirant works just as well as a specialist foot product and will cost you less</li>
+      <li>putting medicated insoles, which have a deodorising effect, in your shoes</li>
+      <li>using a foot powder to absorb sweat (a pharmacist can advise you about foot powders)</li>
+      <li>trying socks for sweaty feet – some sports socks are designed to keep feet dry, and you can get special antibacterial socks</li>
+      <li>wearing leather or canvas shoes, as they let your feet breathe, unlike plastic ones</li>
+      <li>always wearing socks with closed-toe shoes</li>
+    </ul>
+
+    <h2>When to see a doctor</h2>
+    <p>Smelly feet are a harmless problem that generally clears up. Sometimes, however, it can be a sign of a medical condition.</p>
+    <p>See your GP if simple measures to reduce your foot odour don't help, or if you're worried that your level of sweating is abnormally high.</p>
+    <p>Your doctor can offer you a strong prescription antiperspirant or refer you for a treatment called iontophoresis, which delivers a mild electric current through water to your feet to combat excessive sweating.</p>
+    <a href="javascript:void(0);">Get more tips on how to look after your feet</a>
+    
+
+    <p class="nhsuk-body-s nhsuk-u-margin-top-7 nhsuk-u-secondary-text-color">
+    Page last reviewed: 02 August 2019<br>
+    Next review due: 02 August 2022
+    </p>
+
+
+
+
+
+    
+
+  </div>
+</div>
+{% endblock %}
+
+
