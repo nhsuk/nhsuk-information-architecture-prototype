@@ -1,0 +1,178 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'template-lab-4a.html' %}
+{% set mainClasses = 'nhsuk-u-padding-top-0' %}
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+Symptom checker - NHS
+{% endblock %}
+
+
+{% block beforeContent %}
+<!-- Coronavirus (COVID-19) banner -->
+<div class="app-global-alert" id="app-global-alert" role="complementary">
+  <div class="nhsuk-width-container">
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-full">
+        <div class="app-global-alert__content">
+          <div class="app-global-alert__message">
+            <h2>Coronavirus (COVID-19)</h2>
+            <p><a href="">Get the latest advice about COVID-19</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Breadcrumbs -->
+<nav class="nhsuk-breadcrumb beta-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a href="" class="nhsuk-breadcrumb__link">Home</a></li>
+      <li class="nhsuk-breadcrumb__item"><a href="/lab-4/a/symptoms/" class="nhsuk-breadcrumb__link">Symptoms</a></li>
+    </ol>
+    <p class="nhsuk-breadcrumb__back">
+      <a href="/lab-4/a/symptoms/" class="nhsuk-breadcrumb__backlink">
+        <span class="nhsuk-u-visually-hidden">Back to </span>Symptoms
+      </a>
+    </p>
+  </div>
+</nav>
+{% endblock %}
+
+
+<!-- NHS symptoms content -->
+{% block content %}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+
+    <!-- Heading -->
+    <div class="nhsuk-u-reading-width">
+      <h1 class="nhsuk-u-margin-bottom-2">Skin symptoms</h1>
+    </div>
+
+    <section class="nhsuk-u-margin-bottom-6">
+      <ul class="nhsuk-hub-key-links beta-hub-key-links">
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-4/a/symptoms/body-part/legs-feet-toes/ankle-pain">
+              Ankle pain
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-4/a/symptoms/body-part/legs-feet-toes/foot-drop">
+              Foot drop
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-4/a/symptoms/body-part/legs-feet-toes/heel-pain">
+              Heel pain
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-4/a/symptoms/body-part/legs-feet-toes/hip-pain">
+              Hip pain
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-4/a/symptoms/body-part/legs-feet-toes/hip-pain-children">
+              Hip pain in children
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-4/a/symptoms/body-part/legs-feet-toes/joint-pain">
+              Joint pain
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-4/a/symptoms/body-part/legs-feet-toes/knee-pain">
+              Knee pain
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-4/a/symptoms/body-part/legs-feet-toes/leg-cramps">
+              Leg cramps
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-4/a/symptoms/body-part/legs-feet-toes/limp-children">
+              Limp in children
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-4/a/symptoms/body-part/legs-feet-toes/pain-ball-foot">
+              Pain in the ball of the foot
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-4/a/symptoms/body-part/legs-feet-toes/pain-bottom-foot">
+              Pain in the bottom of the foot
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-4/a/symptoms/body-part/legs-feet-toes/pain-top-foot">
+              Pain in the top of the foot
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-4/a/symptoms/body-part/legs-feet-toes/paralysis">
+              Paralysis
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-4/a/symptoms/body-part/legs-feet-toes/pelvic-pain">
+              Pelvic pain
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-4/a/symptoms/body-part/legs-feet-toes/pins-and-needles">
+              Pins and needles
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-4/a/symptoms/body-part/legs-feet-toes/smelly-feet">
+              Smelly feet
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-4/a/symptoms/body-part/legs-feet-toes/swollen-ankles">
+              Swollen ankles, feet and legs (oedema)
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-4/a/symptoms/body-part/legs-feet-toes/toe-pain">
+              Toe pain
+            </a>
+          </li>
+
+    
+      </ul>
+    </section>
+
+
+    </article>
+
+  </div>
+</div>
+
+{% endblock %}
+
+

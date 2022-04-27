@@ -1,0 +1,291 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'template-lab-4a.html' %}
+{% set mainClasses = 'nhsuk-u-padding-top-0' %}
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+Symptom checker - NHS
+{% endblock %}
+
+
+{% block beforeContent %}
+<!-- Coronavirus (COVID-19) banner -->
+<div class="app-global-alert" id="app-global-alert" role="complementary">
+  <div class="nhsuk-width-container">
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-full">
+        <div class="app-global-alert__content">
+          <div class="app-global-alert__message">
+            <h2>Coronavirus (COVID-19)</h2>
+            <p><a href="">Get the latest advice about COVID-19</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Breadcrumbs -->
+<nav class="nhsuk-breadcrumb beta-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a href="" class="nhsuk-breadcrumb__link">Home</a></li>
+      <li class="nhsuk-breadcrumb__item"><a href="/lab-4/a/symptoms/" class="nhsuk-breadcrumb__link">Symptoms</a></li>
+    </ol>
+    <p class="nhsuk-breadcrumb__back">
+      <a href="/lab-4/a/symptoms/" class="nhsuk-breadcrumb__backlink">
+        <span class="nhsuk-u-visually-hidden">Back to </span>Symptoms
+      </a>
+    </p>
+  </div>
+</nav>
+{% endblock %}
+
+
+<!-- NHS symptoms content -->
+{% block content %}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+
+    <!-- Heading -->
+    <div class="nhsuk-u-reading-width">
+      <h1 class="nhsuk-u-margin-bottom-2">Skin symptoms</h1>
+    </div>
+
+    <section class="nhsuk-u-margin-bottom-6">
+      <ul class="nhsuk-hub-key-links beta-hub-key-links">
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-4/a/symptoms/body-part/head-face-neck/bad-breath">
+              Bad breath
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-4/a/symptoms/body-part/head-face-neck/blue-skin">
+              Blue skin or lips (cyanosis)
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-4/a/symptoms/body-part/head-face-neck/blushing">
+              Blushing
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-4/a/symptoms/body-part/head-face-neck/bulging-eyes">
+              Bulging eyes
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-4/a/symptoms/body-part/head-face-neck/confusion">
+              Confusion
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-4/a/symptoms/body-part/head-face-neck/dizziness">
+              Dizziness
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-4/a/symptoms/body-part/head-face-neck/double-vision">
+              Double vision
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-4/a/symptoms/body-part/head-face-neck/dry-eyes">
+              Dry eyes
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-4/a/symptoms/body-part/head-face-neck/dry-mouth">
+              Dry mouth
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-4/a/symptoms/body-part/head-face-neck/earache">
+              Earache
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-4/a/symptoms/body-part/head-face-neck/excessive-daytime-sleepiness">
+              Excessive daytime sleepiness (hypersomnia)
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-4/a/symptoms/body-part/head-face-neck/eyelid-problems">
+              Eyelid problems
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-4/a/symptoms/body-part/head-face-neck/fainting">
+              Fainting
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-4/a/symptoms/body-part/head-face-neck/floaters-eye">
+              Floaters and flashes in the eye
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-4/a/symptoms/body-part/head-face-neck/hallucinations">
+              Hallucinations and hearing voices
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-4/a/symptoms/body-part/head-face-neck/headaches">
+              Headaches
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-4/a/symptoms/body-part/head-face-neck/hearing-loss">
+              Hearing loss
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-4/a/symptoms/body-part/head-face-neck/loss-smell">
+              Lost or changed sense of smell
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-4/a/symptoms/body-part/head-face-neck/memory-loss">
+              Memory loss (amnesia)
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-4/a/symptoms/body-part/head-face-neck/metallic-taste">
+              Metallic taste
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-4/a/symptoms/body-part/head-face-neck/mouth-ulcers">
+              Mouth ulcers
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-4/a/symptoms/body-part/head-face-neck/neck-pain">
+              Neck pain and stiff neck
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-4/a/symptoms/body-part/head-face-neck/red-eye">
+              Red eye
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-4/a/symptoms/body-part/head-face-neck/sore-or-dry-lips">
+              Sore or dry lips
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-4/a/symptoms/body-part/head-face-neck/sore-or-white-tongue">
+              Sore or white tongue
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-4/a/symptoms/body-part/head-face-neck/sore-throat">
+              Sore throat
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-4/a/symptoms/body-part/head-face-neck/swallowing-problems">
+              Swallowing problems (dysphagia)
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-4/a/symptoms/body-part/head-face-neck/swollen-glands">
+              Swollen glands
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-4/a/symptoms/body-part/head-face-neck/teeth-grinding">
+              Teeth grinding
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-4/a/symptoms/body-part/head-face-neck/teeth-grinding">
+              Teeth grinding
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-4/a/symptoms/body-part/head-face-neck/thirst">
+              Thirst
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-4/a/symptoms/body-part/head-face-neck/tinnitus">
+              Tinnitus
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-4/a/symptoms/body-part/head-face-neck/tiredness">
+              Tiredness and fatigue
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-4/a/symptoms/body-part/head-face-neck/toothache">
+              Toothache
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-4/a/symptoms/body-part/head-face-neck/twitching-eyes">
+              Twitching eyes and muscles
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-4/a/symptoms/body-part/head-face-neck/vertigo">
+              Vertigo
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="/lab-4/a/symptoms/body-part/head-face-neck/watering-eyes">
+              Watering eyes
+            </a>
+          </li>
+
+      </ul>
+    </section>
+
+
+    </article>
+
+  </div>
+</div>
+
+{% endblock %}
+
+

@@ -1,0 +1,184 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'template-lab-4a.html' %}
+{% set mainClasses = 'nhsuk-u-padding-top-0' %}
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+Symptom checker - NHS
+{% endblock %}
+
+
+{% block beforeContent %}
+<!-- Coronavirus (COVID-19) banner -->
+<div class="app-global-alert" id="app-global-alert" role="complementary">
+  <div class="nhsuk-width-container">
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-full">
+        <div class="app-global-alert__content">
+          <div class="app-global-alert__message">
+            <h2>Coronavirus (COVID-19)</h2>
+            <p><a href="">Get the latest advice about COVID-19</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Breadcrumbs -->
+<nav class="nhsuk-breadcrumb beta-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a href="/lab-4/a/" class="nhsuk-breadcrumb__link">Home</a></li>
+    </ol>
+    <p class="nhsuk-breadcrumb__back">
+      <a href="/lab-4/a/" class="nhsuk-breadcrumb__backlink">
+        <span class="nhsuk-u-visually-hidden">Back to </span>Home
+      </a>
+    </p>
+  </div>
+</nav>
+{% endblock %}
+
+
+<!-- NHS symptoms content -->
+{% block content %}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+
+    <!-- Heading -->
+    <div class="nhsuk-u-reading-width">
+      <h1>Symptoms by body part</h1>
+    </div>
+
+    <ul class="nhsuk-grid-row nhsuk-card-group">
+      <li class="nhsuk-grid-column-one-third nhsuk-card-group__item nhsuk-u-margin-bottom-4">
+        <div class="nhsuk-card nhsuk-card--clickable beta-card--plain">
+          <div class="nhsuk-card__content beta-card__content">
+            <h2 class="nhsuk-card__heading nhsuk-heading-m">
+              <a class="nhsuk-card__link" href="/lab-4/a/symptoms/body-part/skin">
+                Skin, hair and nails
+              </a>
+            </h2>
+          <div class="nhsuk-card__description"><p>Any changes to the skin, including rashes, itching and swelling</p></div>
+          </div>
+        </div>
+      </li>
+      <li class="nhsuk-grid-column-one-third nhsuk-card-group__item nhsuk-u-margin-bottom-4">
+        <div class="nhsuk-card nhsuk-card--clickable beta-card--plain">
+          <div class="nhsuk-card__content beta-card__content">
+            <h2 class="nhsuk-card__heading nhsuk-heading-m">
+              <a class="nhsuk-card__link" href="/lab-4/a/symptoms/body-part/airway">
+                Airway
+              </a>
+            </h2>
+          <div class="nhsuk-card__description"><p>Symptoms that affect the airways and breathing, including coughing and snoring</p></div>
+          </div>
+        </div>
+      </li>
+      <li class="nhsuk-grid-column-one-third nhsuk-card-group__item nhsuk-u-margin-bottom-4">
+        <div class="nhsuk-card nhsuk-card--clickable beta-card--plain">
+          <div class="nhsuk-card__content beta-card__content">
+            <h2 class="nhsuk-card__heading nhsuk-heading-m">
+              <a class="nhsuk-card__link" href="/lab-4/a/symptoms/body-part/head-face-neck">
+                Head, face and neck
+              </a>
+            </h2>
+          <div class="nhsuk-card__description"><p>Symptoms you feel in your head, face and neck including dizziness, earache and neck pain</p></div>
+          </div>
+        </div>
+      </li>
+      <li class="nhsuk-grid-column-one-third nhsuk-card-group__item nhsuk-u-margin-bottom-4">
+        <div class="nhsuk-card nhsuk-card--clickable beta-card--plain">
+          <div class="nhsuk-card__content beta-card__content">
+            <h2 class="nhsuk-card__heading nhsuk-heading-m">
+              <a class="nhsuk-card__link" href="/lab-4/a/symptoms/body-part/chest-shoulders">
+                Chest, shoulders and back
+              </a>
+            </h2>
+          <div class="nhsuk-card__description"><p>Symptoms that appear in the upper body, including breast pain, heart palpitations and shoulder pain</p></div>
+          </div>
+        </div>
+      </li>
+      <li class="nhsuk-grid-column-one-third nhsuk-card-group__item nhsuk-u-margin-bottom-4">
+        <div class="nhsuk-card nhsuk-card--clickable beta-card--plain">
+          <div class="nhsuk-card__content beta-card__content">
+            <h2 class="nhsuk-card__heading nhsuk-heading-m">
+              <a class="nhsuk-card__link" href="/lab-4/a/symptoms/body-part/arms-hands-fingers">
+                Arms, hands and fingers
+              </a>
+            </h2>
+          <div class="nhsuk-card__description"><p>Symptoms noticeable in the arms, icnluding swollen arms, finger pain, and shaking hands</p></div>
+          </div>
+        </div>
+      </li>
+      <li class="nhsuk-grid-column-one-third nhsuk-card-group__item nhsuk-u-margin-bottom-4">
+        <div class="nhsuk-card nhsuk-card--clickable beta-card--plain">
+          <div class="nhsuk-card__content beta-card__content">
+            <h2 class="nhsuk-card__heading nhsuk-heading-m">
+              <a class="nhsuk-card__link" href="/lab-4/a/symptoms/body-part/stomach">
+                Stomach and gastrointestinal
+              </a>
+            </h2>
+          <div class="nhsuk-card__description"><p>Symptoms that affect digestion such as bloating, diarrhoea, feeling sick and heartburn</p></div>
+          </div>
+        </div>
+      </li>
+      <li class="nhsuk-grid-column-one-third nhsuk-card-group__item nhsuk-u-margin-bottom-4">
+        <div class="nhsuk-card nhsuk-card--clickable beta-card--plain">
+          <div class="nhsuk-card__content beta-card__content">
+            <h2 class="nhsuk-card__heading nhsuk-heading-m">
+              <a class="nhsuk-card__link" href="/lab-4/a/symptoms/body-part/genitals">
+                Genitals and bottom
+              </a>
+            </h2>
+          <div class="nhsuk-card__description"><p>Symptoms that appear in the genitals or bottom, such as anal pain, blood in urine and testical lumps</p></div>
+          </div>
+        </div>
+      </li>
+      <li class="nhsuk-grid-column-one-third nhsuk-card-group__item nhsuk-u-margin-bottom-4">
+        <div class="nhsuk-card nhsuk-card--clickable beta-card--plain">
+          <div class="nhsuk-card__content beta-card__content">
+            <h2 class="nhsuk-card__heading nhsuk-heading-m">
+              <a class="nhsuk-card__link" href="/lab-4/a/symptoms/body-part/reproductive-organs">
+                Reproductive organs
+              </a>
+            </h2>
+          <div class="nhsuk-card__description"><p>Symptoms including ovulation pain and heavy periods</p></div>
+          </div>
+        </div>
+      </li>
+      <li class="nhsuk-grid-column-one-third nhsuk-card-group__item nhsuk-u-margin-bottom-4">
+        <div class="nhsuk-card nhsuk-card--clickable beta-card--plain">
+          <div class="nhsuk-card__content beta-card__content">
+            <h2 class="nhsuk-card__heading nhsuk-heading-m">
+              <a class="nhsuk-card__link" href="/lab-4/a/symptoms/body-part/legs-feet-toes">
+                Legs, feet and toes
+              </a>
+            </h2>
+          <div class="nhsuk-card__description"><p>Symptoms that appear in the lower body such as toe pain, smelly feet and knee pain</p></div>
+          </div>
+        </div>
+      </li>
+    </ul>
+
+
+
+
+      <!-- If you need help now, if you think it's an emergency -->
+      <div class="nhsuk-u-reading-width beta-hub-bottom-content">
+        <h2>If you need help now, and you&#x27;re not sure what to do</h2>
+        <ul>
+          <li>Go to <a href="">111.nhs.uk</a> or call 111</li>
+        </ul>
+        <h2>If you think it&#x27;s an emergency</h2>
+        <ul>
+          <li><a href="">Find your nearest A&amp;E</a></li>
+          <li>Call 999</li>
+        </ul>
+      </div>
+
+  </div>
+</div>
+
+{% endblock %}
