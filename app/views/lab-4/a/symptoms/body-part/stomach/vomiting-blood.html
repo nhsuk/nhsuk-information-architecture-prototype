@@ -1,0 +1,105 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'template-lab-4a.html' %} {% set mainClasses = 'nhsuk-u-padding-top-0' %}
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %} Symptoms - NHS {% endblock %}
+
+<!-- Coronavirus (COVID-19) banner -->
+{% block beforeContent %}
+<div class="app-global-alert" id="app-global-alert" role="complementary">
+    <div class="nhsuk-width-container">
+        <div class="nhsuk-grid-row">
+            <div class="nhsuk-grid-column-full">
+                <div class="app-global-alert__content">
+                    <div class="app-global-alert__message">
+                        <h2>Coronavirus (COVID-19)</h2>
+                        <p><a href="">Get the latest advice about COVID-19</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Breadcrumbs -->
+<nav class="nhsuk-breadcrumb beta-breadcrumb" aria-label="Breadcrumb">
+    <div class="nhsuk-width-container">
+        <ol class="nhsuk-breadcrumb__list">
+            <li class="nhsuk-breadcrumb__item"><a href="" class="nhsuk-breadcrumb__link">Home</a></li>
+        </ol>
+        <p class="nhsuk-breadcrumb__back">
+            <a href="" class="nhsuk-breadcrumb__backlink">
+                <span class="nhsuk-u-visually-hidden">Back to </span>Home
+            </a>
+        </p>
+    </div>
+</nav>
+{% endblock %}
+
+<!-- Symptom content -->
+{% block content %}
+<div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+        <h1>Vomiting blood (haematemesis)</h1>
+    </div>
+</div>
+<article>
+    <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-two-thirds">
+            <section>
+                <p><strong>Vomiting blood (haematemesis)&nbsp;could be a sign of a serious problem</strong> .</p>
+                <p>You should go to your GP surgery or <a href="/Service-Search/Accident-and-emergency-services/LocationSearch/428">nearest A&amp;E department</a>.</p>
+                <p>The amount and colour of blood can vary. For example:</p>
+                <ul>
+                    <li>you may have vomited large amounts of bright red blood </li>
+                    <li>there may&nbsp;be streaks of blood in your vomit, mixed with food </li>
+                    <li>there may be what look like coffee grounds in your vomit, which means the blood has been in your stomach for a few hours </li>
+                </ul>
+                <p>Keep a small sample of the vomit to show a GP or&nbsp;the doctor treating you. It&nbsp;will give them a better idea of what's wrong.</p>
+            </section>
+            <section>
+                <h2>What to expect when you see a doctor</h2>
+                <p>Unless you're generally well and the cause is obvious to a doctor – for example, you have swallowed blood from a <a href="/conditions/nosebleed/">nosebleed</a>&nbsp;– you should be admitted to hospital straight away for tests.</p>
+                <p>These will include&nbsp;<a href="/conditions/blood-tests/">blood tests</a> and an <a href="/conditions/endoscopy/">endoscopy</a>. An endoscopy is where a long, thin, flexible tube that has a light and camera at one end is used to look
+                    inside your digestive tract.</p>
+                <p>It's important to confirm&nbsp;whether the blood you've vomited has come from your stomach or food pipe (oesophagus) or if you have coughed it up from your airways or lungs.</p>
+                <p>Find out more about <a href="/conditions/coughing-up-blood/">coughing up blood</a>.</p>
+            </section>
+            <section>
+                <h2>Common causes of vomiting blood</h2>
+                <p>If you vomit blood, it means there may be bleeding somewhere in your food pipe, stomach or the first part of your small intestine (duodenum).</p>
+                <p>This is a summary of the most likely causes of blood in vomit. Do not use this list to diagnose yourself – always see a GP or go to A&amp;E. </p>
+                <h3>Stomach ulcer or severe gastritis</h3>
+                <p>If you vomit blood and also have a burning or gnawing pain in your tummy (stomach), the most likely causes are a&nbsp;<a href="/conditions/stomach-ulcer/">stomach ulcer</a> or severe inflammation of the stomach lining&nbsp;<a href="/conditions/gastritis/">(gastritis)</a>.
+                </p>
+                <p>Bleeding happens when the ulcer or inflammation damages an artery.</p>
+                <h3>Oesophageal varices</h3>
+                <p>Oesophageal varices are&nbsp;enlarged veins in the lower part of the food pipe (oesophagus). They bleed, but do not usually cause any pain.</p>
+                <p>They're often caused by <a href="/conditions/alcohol-related-liver-disease-arld/">alcoholic-related liver disease</a>. If a GP or A&amp;E doctor suspects oesophageal varices are the cause of blood in your vomit, you'll need to be admitted
+                    to hospital immediately.</p>
+                <h3>Severe gastro-oesophageal reflux disease</h3>
+                <p><a href="/conditions/heartburn-and-acid-reflux/">Gastro-oesophageal reflux disease (GORD)</a> is where acid leaks out of the stomach and up into your food pipe (oesophagus).</p>
+                <p>If you have severe GORD, the acid can irritate the lining of your oesophagus and cause bleeding.</p>
+                <h3>Tear in the food pipe (oesophagus)</h3>
+                <p>Prolonged retching can tear the lining of your oesophagus, which can also result in bleeding. </p>
+                <h3>Swallowed blood</h3>
+                <p>It's possible to swallow blood in certain circumstances – for example, after a severe nosebleed.</p>
+                <p>These conditions may also cause you to have blood in your poo, which can make it look black and like tar.</p>
+            </section>
+            <section>
+                <h2>Less common causes of vomiting blood</h2>
+                <p>Less commonly, blood in your&nbsp;vomit may be caused by:</p>
+                <ul>
+                    <li>swallowing&nbsp;a <a href="/conditions/poisoning/">poison</a> – such as corrosive acid or arsenic </li>
+                    <li>a&nbsp;blood condition – such as&nbsp;a reduced number of platelets in the blood&nbsp;(thrombocytopenia), leukaemia, <a href="/conditions/haemophilia/">haemophilia</a> or <a href="/conditions/iron-deficiency-anaemia/">anaemia</a></li>
+                    <li><a href="/conditions/oesophageal-cancer/">oesophageal cancer</a> or <a href="/conditions/stomach-cancer/">stomach cancer</a> – these types of cancer are uncommon, but they may be suspected if you're over 55 and you've also <a href="/conditions/unintentional-weight-loss/">lost a lot of weight</a></li>
+                </ul>
+            </section>
+            <div>
+                <p class="nhsuk-body-s nhsuk-u-margin-top-7 nhsuk-u-secondary-text-color">
+                    Page last reviewed: 04 October 2019<br> Next review due: 04 October 2022
+                </p>
+            </div>
+        </div>
+    </div>
+</article>
+{% endblock %}
