@@ -1,5 +1,5 @@
 <!-- Extends the layout from /views/layout.html -->
-{% extends 'template-lab-2a.html' %}
+{% extends 'template-lab-4b.html' %}
 {% set mainClasses = 'nhsuk-u-padding-top-0' %}
 
 <!-- Set the page title inside the pageTitle block -->
@@ -134,6 +134,20 @@ NHS Health a-z - NHS
           </li>
         </ol>
       </nav>
+
+      <div class="tabs">
+        <input type="radio" class="tabs__radio" name="tabs-example" id="tab1" checked>
+        <label for="tab1" class="tabs__label">Tab #1</label>
+        <div class="tabs__content">
+          CONTENT for Tab #1
+        </div>
+        <input type="radio" class="tabs__radio" name="tabs-example" id="tab2">
+        <label for="tab2" class="tabs__label">Tab #2</label>
+        <div class="tabs__content">
+          CONTENT for Tab #2
+        </div>
+      </div>
+
 
       <div class="nhsuk-card nhsuk-card--feature">
         <div class="nhsuk-card__content nhsuk-card__content--feature">
