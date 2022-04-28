@@ -1,0 +1,102 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'template-lab-4a.html' %}
+{% set mainClasses = 'nhsuk-u-padding-top-0' %}
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+Symptoms - NHS
+{% endblock %}
+
+{% block beforeContent %}
+<!-- Coronavirus (COVID-19) banner -->
+
+<!-- Breadcrumbs -->
+<nav class="nhsuk-breadcrumb beta-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a href="" class="nhsuk-breadcrumb__link">Home</a></li>
+      <li class="nhsuk-breadcrumb__item"><a href="" class="nhsuk-breadcrumb__link">Symptoms</a></li>
+    </ol>
+    <p class="nhsuk-breadcrumb__back">
+      <a href="" class="nhsuk-breadcrumb__backlink">
+        <span class="nhsuk-u-visually-hidden">Back to </span>Symptoms
+      </a>
+    </p>
+  </div>
+</nav>
+{% endblock %}
+
+
+<!-- Homepage content -->
+{% block content %}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+
+    <div class="nhsuk-u-reading-width">
+      <h1>Coughing up blood (blood in phlegm)</h1>
+    </div>
+
+
+    <p><strong>Coughing up blood can have lots of possible causes. It could be something serious so it's important to get it checked.</strong></p>
+    <h2>Causes of coughing up blood</h2>
+    <p>Common causes of coughing up blood include:</p>
+    <ul>
+      <li>a long-lasting or severe cough</li>
+      <li>a lung or airway infection like a <a href="javascript:void(0);">chest infection</a>, <a href="javascript:void(0);">pneumonia</a> or <a href="javascript:void(0);">bronchitis</a></li>
+      <li>a problem with your airways that causes them to widen and produce more mucus (<a href="javascript:void(0);">bronchiectasis</a>)</li>
+    </ul>
+    <p>Sometimes coughing up blood can be a sign of something more serious like a <a href="javascript:void(0);">blood clot</a> or <a href="javascript:void(0);">lung cancer</a>.</p>
+    <p>It's important to get it checked out as soon as possible.</p>
+    <div class="nhsuk-card nhsuk-card--care nhsuk-card--care--urgent">
+      <div class="nhsuk-card--care__heading-container">
+        <h2 class="nhsuk-card--care__heading">
+          <span role="text"><span class="nhsuk-u-visually-hidden">Urgent advice: </span>Ask for an urgent GP appointment or get help from NHS 111 if:</span>
+        </h2>
+        <span class="nhsuk-card--care__arrow" aria-hidden="true"></span>
+      </div>
+
+      <div class="nhsuk-card__content">
+
+        <ul>
+          <li>you've coughed up a few small spots, flecks or streaks of blood, or noticed blood in your phlegm or handkerchief</li>
+        </ul>
+        <p>You can call 111 or <a href="javascript:void(0);">get help from 111 online</a>.</p>
+
+      </div>
+    </div>
+
+    <div class="nhsuk-card nhsuk-card--care nhsuk-card--care--emergency">
+      <div class="nhsuk-card--care__heading-container">
+        <h2 class="nhsuk-card--care__heading">
+          <span role="text"><span class="nhsuk-u-visually-hidden">Immediate action required: </span>Call 999 or go to A&E immediately if:</span>
+        </h2>
+        <span class="nhsuk-card--care__arrow" aria-hidden="true"></span>
+      </div>
+
+      <div class="nhsuk-card__content">
+
+        <ul>
+          <li>you're coughing up more than just a few spots or streaks of blood</li>
+          <li>you're coughing up blood and finding it hard to breathe, have a very fast heartbeat or have pain in your chest or upper back</li>
+        </ul>
+        <p>These symptoms could be a sign of a more serious problem like a blood clot in the lungs (<a href="javascript:void(0);">pulmonary embolism</a>).</p>
+        <p><a href="javascript:void(0);">Find your nearest A&E</a></p>
+
+      </div>
+    </div>
+
+    <p class="nhsuk-body-s nhsuk-u-margin-top-7 nhsuk-u-secondary-text-color">
+    Page last reviewed: 02 August 2019<br>
+    Next review due: 02 August 2022
+    </p>
+
+
+
+
+
+
+
+  </div>
+</div>
+{% endblock %}
