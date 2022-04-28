@@ -1,0 +1,206 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'template-lab-4b.html' %}
+{% set mainClasses = 'nhsuk-u-padding-top-0' %}
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+Symptoms - NHS
+{% endblock %}
+
+{% block beforeContent %}
+<!-- Coronavirus (COVID-19) banner -->
+<div class="app-global-alert" id="app-global-alert" role="complementary">
+  <div class="nhsuk-width-container">
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-full">
+        <div class="app-global-alert__content">
+          <div class="app-global-alert__message">
+            <h2>Coronavirus (COVID-19)</h2>
+            <p><a href="">Get the latest advice about COVID-19</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Breadcrumbs -->
+<nav class="nhsuk-breadcrumb beta-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a href="" class="nhsuk-breadcrumb__link">Home</a></li>
+      <li class="nhsuk-breadcrumb__item"><a href="" class="nhsuk-breadcrumb__link">Symptoms</a></li>
+    </ol>
+    <p class="nhsuk-breadcrumb__back">
+      <a href="" class="nhsuk-breadcrumb__backlink">
+        <span class="nhsuk-u-visually-hidden">Back to </span>Symptoms
+      </a>
+    </p>
+  </div>
+</nav>
+{% endblock %}
+
+
+<!-- Homepage content -->
+{% block content %}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+
+    <div class="nhsuk-u-reading-width">
+      <h1>Cough</h1>
+    </div>
+
+
+    <p><strong>A cough will usually clear up on its own within 3 to 4 weeks.</strong></p>
+    <div class="nhsuk-warning-callout">
+      <h2 class="nhsuk-warning-callout__label">
+
+          <span role="text">
+            <span class="nhsuk-u-visually-hidden">Important: </span>
+            Could it be coronavirus (COVID-19)?
+          </span>
+
+      </h2>
+
+        <p>A new, continuous cough could be COVID-19.</p>
+        <p><a href="javascript:void(0);">Get advice about symptoms of COVID-19 and what to do</a></p>
+
+    </div>
+    <h2>How you can treat a cough yourself</h2>
+    <p>There's usually no need to see a GP.</p>
+    <p>You should:</p>
+    <ul>
+      <li>rest</li>
+      <li>drink plenty of fluids</li>
+    </ul>
+    <p>You could also try:</p>
+    <ul>
+      <li>paracetamol or ibuprofen to treat any pain</li>
+      <li>hot lemon and honey (not suitable for babies under 1 year old)</li>
+      <li>a herbal medicine called pelargonium (suitable for people aged 12 or over)</li>
+    </ul>
+    <p>But there's limited evidence to show these work.</p>
+    <details class="nhsuk-details">
+      <summary class="nhsuk-details__summary">
+        <span class="nhsuk-details__summary-text">
+        How to make a hot lemon and honey drink
+        </span>
+      </summary>
+      <div class="nhsuk-details__text">
+
+
+
+
+
+
+
+        <ol>
+          <li>Squeeze half a lemon into a mug of boiled water.</li>
+          <li>Add 1 to 2 teaspoons of honey.</li>
+          <li>Drink while still warm (do not give hot drinks to small children).</li>
+        </ol>
+
+
+
+
+      </div>
+    </details>
+    <p>Hot lemon with honey has a similar effect to cough medicines.</p>
+
+    <h2>A pharmacist can help if you have a cough</h2>
+    <p>If you have a cough, you can ask a pharmacist about:</p>
+    <ul>
+      <li>cough syrup</li>
+      <li>cough medicine (some cough medicines should not be given to children under 12)</li>
+      <li>cough sweets</li>
+    </ul>
+    <p>These will not stop your cough, but may help you cough less.</p>
+    <p>Decongestants and cough medicines containing codeine will not stop your cough.</p>
+
+    <div class="nhsuk-inset-text">
+      <span class="nhsuk-u-visually-hidden">Information: </span>
+      <p>Call a pharmacy or contact them online before going in person. You can get medicines delivered or ask someone to collect them.</p>
+    </div>
+
+    <div class="nhsuk-action-link">
+
+      <a class="nhsuk-action-link__link" href="javascript:void(0);">
+
+        <svg class="nhsuk-icon nhsuk-icon__arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="36" width="36">
+          <path d="M0 0h24v24H0z" fill="none"></path>
+          <path d="M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z"></path>
+        </svg>
+        <span class="nhsuk-action-link__text">Find a pharmacy</span>
+      </a>
+    </div>
+
+    <div class="nhsuk-card nhsuk-card--care nhsuk-card--care--non-urgent">
+      <div class="nhsuk-card--care__heading-container">
+        <h2 class="nhsuk-card--care__heading">
+          <span role="text"><span class="nhsuk-u-visually-hidden">Non-urgent advice: </span>See a GP if:</span>
+        </h2>
+        <span class="nhsuk-card--care__arrow" aria-hidden="true"></span>
+      </div>
+
+      <div class="nhsuk-card__content">
+
+        <ul>
+          <li>you've had a cough for more than 3 weeks (persistent cough)</li>
+          <li>your cough is very bad or quickly gets worse – for example, you have a hacking cough or cannot stop coughing</li>
+          <li>you feel very unwell</li>
+          <li>you have chest pain</li>
+          <li>you're losing weight for no reason</li>
+          <li>the side of your neck feels swollen and painful (swollen glands)</li>
+          <li>you find it hard to breathe</li>
+          <li>you have a weakened immune system – for example, because of chemotherapy or diabetes</li>
+        </ul>
+        <p><strong>See a GP urgently if you're coughing up blood.</strong></p>
+      </div>
+    </div>
+
+    <h2>What happens at your appointment</h2>
+    <p>To find out what's causing your cough, the GP might:</p>
+    <ul>
+      <li>take a sample of any mucus you might be coughing up</li>
+      <li>order an X-ray, allergy test, or a test to see how well your lungs work</li>
+      <li>refer you to hospital to see a specialist, but this is rare</li>
+    </ul>
+
+    <div class="nhsuk-warning-callout">
+      <h3 class="nhsuk-warning-callout__label">
+
+          Important
+
+      </h3>
+
+        <p><a href="javascript:void(0);">Antibiotics</a> are not normally prescribed for coughs. A GP will only prescribe them if you need them – for example, if you have a bacterial infection or you're at risk of complications.</p>
+
+    </div>
+
+    <h2>What causes coughs</h2>
+    <p>Most coughs are caused by a cold or flu.</p>
+    <p>Other causes include:</p>
+    <ul>
+      <li>smoking</li>
+      <li>heatburn (acid reflux)</li>
+      <li>allergies - for example, hay fever</li>
+      <li>infections like bronchitis</li>
+      <li>mucus dripping down the throat from the back of the nose</li>
+    </ul>
+    <p>A cough is rarely a sign of something serious like lung cancer.</p>
+
+
+    <p class="nhsuk-body-s nhsuk-u-margin-top-7 nhsuk-u-secondary-text-color">
+    Page last reviewed: 02 August 2019<br>
+    Next review due: 02 August 2022
+    </p>
+
+
+
+
+
+
+
+  </div>
+</div>
+{% endblock %}

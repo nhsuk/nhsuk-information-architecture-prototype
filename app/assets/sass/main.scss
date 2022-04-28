@@ -235,12 +235,12 @@
 .tabs {
   display: flex;
   flex-wrap: wrap;
-  max-width: 400px;
 }
 
 .tabs__label {
   padding: 10px 16px;
   cursor: pointer;
+  border-bottom: 2px solid #E8EDEE;
 }
 
 .tabs__radio {
@@ -250,7 +250,6 @@
 .tabs__content {
   order: 1;
   width: 100%;
-  border-bottom: 3px solid #dddddd;
   line-height: 1.5;
   font-size: 0.9em;
   display: none;

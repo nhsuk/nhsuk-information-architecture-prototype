@@ -1,0 +1,154 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'template-lab-4b.html' %}
+{% set mainClasses = 'nhsuk-u-padding-top-0' %}
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+Symptoms - NHS
+{% endblock %}
+
+{% block beforeContent %}
+<!-- Coronavirus (COVID-19) banner -->
+<div class="app-global-alert" id="app-global-alert" role="complementary">
+  <div class="nhsuk-width-container">
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-full">
+        <div class="app-global-alert__content">
+          <div class="app-global-alert__message">
+            <h2>Coronavirus (COVID-19)</h2>
+            <p><a href="">Get the latest advice about COVID-19</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Breadcrumbs -->
+<nav class="nhsuk-breadcrumb beta-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a href="" class="nhsuk-breadcrumb__link">Home</a></li>
+      <li class="nhsuk-breadcrumb__item"><a href="" class="nhsuk-breadcrumb__link">Symptoms</a></li>
+    </ol>
+    <p class="nhsuk-breadcrumb__back">
+      <a href="" class="nhsuk-breadcrumb__backlink">
+        <span class="nhsuk-u-visually-hidden">Back to </span>Symptoms
+      </a>
+    </p>
+  </div>
+</nav>
+{% endblock %}
+
+
+<!-- Homepage content -->
+{% block content %}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+
+    <div class="nhsuk-u-reading-width">
+      <h1>Excessive daytime sleepiness (hypersomnia)</h1>
+    </div>
+
+
+    <p><strong>Excessive daytime sleepiness (hypersomnia) is a condition where people fall asleep repeatedly during the day; sometimes in the middle of eating a meal or during a conversation.</strong></p>
+    <h2>Check if it's hypersomnia</h2>
+    <p>Excessive daytime sleepiness is different from <a href="javascript:void(0);">feeling tired all the time</a>.</p>
+    <p>If you have hypersomnia, you may:</p>
+    <ul>
+      <li>regularly nap during the day and not feel refreshed</li>
+      <li>fall asleep during the day, often while eating or talking</li>
+      <li>still sleep for long hours at night</li>
+    </ul>
+
+    <div class="nhsuk-card nhsuk-card--care nhsuk-card--care--non-urgent">
+      <div class="nhsuk-card--care__heading-container">
+        <h2 class="nhsuk-card--care__heading">
+          <span role="text"><span class="nhsuk-u-visually-hidden">Non-urgent advice: </span>See a GP if:</span>
+        </h2>
+        <span class="nhsuk-card--care__arrow" aria-hidden="true"></span>
+      </div>
+
+      <div class="nhsuk-card__content">
+
+        <ul>
+          <li>you often fall asleep during the day</li>
+          <li>the sleepiness is affecting your life</li>
+        </ul>
+      </div>
+    </div>
+    <h3>What happens at your appointment</h3>
+    <p>The GP will want to find out why you're sleeping excessively. They might:</p>
+    <ul>
+      <li>ask you about possible causes of your sleepiness, such mental or physical health problems, or any medicines you may be taking</li>
+      <li>suggest you keep a diary of when you sleep</li>
+      <li>refer you to a doctor who specialises in sleep disorders</li>
+    </ul>
+    <p>Treatment for excessive sleepiness will depend on what's causing it. It may include medicine to help keep you awake.</p>
+    <h2>Causes of hypersomnia</h2>
+    <p>Conditions that may be related to excessive sleepiness include:</p>
+    <div class="nhsuk-table-container">
+      <table><caption class="nhsuk-u-visually-hidden">Possible causes of excessive daytime sleepiness</caption>
+<thead>
+<tr>
+  <th scope="col">Additional symptoms</th>
+  <th scope="col">Possible cause</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Falling into a deep sleep anywhere, without warning</td>
+  <td><a href="javascript:void(0);">narcolepsy</a></td>
+</tr>
+<tr>
+  <td>Loud snorting, breathing and snoring at night</td>
+  <td><a href="javascript:void(0);">sleep apnoea</a></td>
+</tr>
+<tr>
+  <td>An unusual feeling in your legs, particularly at night</td>
+  <td><a href="javascript:void(0);">restless legs syndrome</a></td>
+</tr>
+<tr>
+  <td>Low mood, little interest in things and feeling irritable</td>
+  <td><a href="javascript:void(0);">depression</a></td>
+</tr>
+<tr>
+  <td>Mood swings that range from extreme highs (mania) to extreme lows</td>
+  <td><a href="javascript:void(0);">bipolar disorder</a></td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+
+    <p>Some medicines, drinking too much alcohol and taking drugs can also cause excessive daytime sleepiness.</p>
+    <p>Sometimes there is no known cause. This is called idiopathic hypersomnia.</p>
+
+    <h2>Things you can try to help your sleeping habits</h2>
+    <p>Changing your sleep habits may not cure hypersomnia, but it might help you feel better.</p>
+    <p>Try to:</p>
+    <ul>
+      <li>go to bed at the same time every night</li>
+      <li>avoid drinking alcohol and caffeine</li>
+      <li>avoid drinking alcohol and caffeine</li>
+      <li>create a peaceful sleeping environment</li>
+      <li>if possible, avoid medicines that can cause drowsiness</li>
+      <li>avoid working late into the night</li>
+    </ul>
+    <p>It might also help to talk to your family and friends about your excessive daytime sleepiness so they're aware of it.</p>
+
+
+    <p class="nhsuk-body-s nhsuk-u-margin-top-7 nhsuk-u-secondary-text-color">
+    Page last reviewed: 02 August 2019<br>
+    Next review due: 02 August 2022
+    </p>
+
+
+
+
+
+
+
+  </div>
+</div>
+{% endblock %}

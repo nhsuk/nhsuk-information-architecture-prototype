@@ -1,0 +1,165 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'template-lab-4b.html' %}
+{% set mainClasses = 'nhsuk-u-padding-top-0' %}
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+Symptoms - NHS
+{% endblock %}
+
+{% block beforeContent %}
+<!-- Coronavirus (COVID-19) banner -->
+<div class="app-global-alert" id="app-global-alert" role="complementary">
+  <div class="nhsuk-width-container">
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-full">
+        <div class="app-global-alert__content">
+          <div class="app-global-alert__message">
+            <h2>Coronavirus (COVID-19)</h2>
+            <p><a href="">Get the latest advice about COVID-19</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Breadcrumbs -->
+<nav class="nhsuk-breadcrumb beta-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a href="" class="nhsuk-breadcrumb__link">Home</a></li>
+      <li class="nhsuk-breadcrumb__item"><a href="" class="nhsuk-breadcrumb__link">Symptoms</a></li>
+    </ol>
+    <p class="nhsuk-breadcrumb__back">
+      <a href="" class="nhsuk-breadcrumb__backlink">
+        <span class="nhsuk-u-visually-hidden">Back to </span>Symptoms
+      </a>
+    </p>
+  </div>
+</nav>
+{% endblock %}
+
+
+<!-- Homepage content -->
+{% block content %}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+
+    <div class="nhsuk-u-reading-width">
+      <h1>Foot drop</h1>
+    </div>
+    <p><strong>Foot drop (drop foot) is where it's difficult to lift or move your foot and toes. It usually affects 1 foot and can affect the way you walk.</strong></p>
+
+    <h2>Causes of foot drop</h2>
+    <p>The most common cause of foot drop is an injury to a nerve that runs down your leg and controls the muscles that lift your foot.</p>
+    <p>This can be caused by:</p>
+    <ul>
+      <li>sports injuries</li>
+      <li>a <a href="javascript:void(0);">slipped disc</a> in the spine</li>
+      <li>crossing your legs, kneeling or squatting for long periods of time</li>
+      <li>problems with your nerves (<a href="javascript:void(0);">peripheral neuropathy</a> caused by diabetes</li>
+      <li>hip or knee replacement surgery</li>
+      <li>not moving for a long time (for example, if you're staying in hospital)</li>
+    </ul>
+    <p>Foot drop can get better on its own and with treatment, but sometimes it can be permanent.</p>
+    <p>Less common causes of foot drop include:</p>
+    <ul>
+      <li>inherited conditions like <a href="javascript:void(0);">Charcot-Marie-Tooth disease</a></li>
+      <li>muscle weakness caused by <a href="javascript:void(0);">muscular dystrophy</a>, <a href="javascript:void(0);">spinal muscular atrophy</a> or <a href="javascript:void(0);">motor neurone disease</a></li>
+      <li>damage to the brain or spinal cord caused by a <a href="javascript:void(0);">stroke</a>, <a href="javascript:void(0);">cerebral palsy</a>, <a href="javascript:void(0);">Parkinson's disease</a> or <a href="javascript:void(0);">multiple sclerosis</a></li>
+    </ul>
+
+    <div class="nhsuk-card nhsuk-card--care nhsuk-card--care--non-urgent">
+      <div class="nhsuk-card--care__heading-container">
+        <h2 class="nhsuk-card--care__heading">
+          <span role="text"><span class="nhsuk-u-visually-hidden">Non-urgent advice: </span>See a GP if:</span>
+        </h2>
+        <span class="nhsuk-card--care__arrow" aria-hidden="true"></span>
+      </div>
+
+      <div class="nhsuk-card__content">
+
+        <ul>
+          <li>you find it difficult to lift the front part of your foot and toes</li>
+        </ul>
+      </div>
+    </div>
+    <h2>What happens at your GP appointment</h2>
+    <p>If you have foot drop, a GP will examine your leg and foot, and look at the way you walk.</p>
+    <p>You may be referred to a specialist for more tests, such as an <a href="javascript:void(0);">X-ray</a>, <a href="javascript:void(0);">ultrasound scan</a> or <a href="javascript:void(0);">CT scan</a>, to find out what's causing your dropped foot.</p>
+
+    <h2>Treatment for foot drop</h2>
+    <p>How foot drop is treated depends on what's causing it and how long you have had it for.</p>
+    <p>Sometimes it can get better on its own.</p>
+    <p>Common treatments for foot drop include:</p>
+    <ul>
+      <li>physiotherapy to strengthen or stretch the muscles in your leg and foot</li>
+      <li>braces, splints or shoe inserts to help hold the foot in position</li>
+      <li>a small device that's put in your body and uses electrical signals to help your nerves work (electrical nerve stimulation) – especially if you've had a stroke or have multiple sclerosis</li>
+    </ul>
+    <p>If you have permanent loss of movement from foot drop, you may have surgery to fuse the ankle and foot joints, or repair or graft the nerve.</p>
+    <h2>Things you can do if you have foot drop</h2>
+    <p>There's a higher risk of tripping and falling if you have a foot drop.</p>
+    <p>But there are some simple changes you can make to help avoid this.</p>
+
+    <div class="nhsuk-do-dont-list">
+      <h3 class="nhsuk-do-dont-list__label">
+        Do
+      </h3>
+      <ul class="nhsuk-list nhsuk-list--tick">
+
+        <li>
+          <svg class="nhsuk-icon nhsuk-icon__tick" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" aria-hidden="true" height="34" width="34">
+            <path stroke-width="4" stroke-linecap="round" d="M18.4 7.8l-8.5 8.4L5.6 12" stroke="#007f3b"></path>
+          </svg>
+          <p data-block-key="78zd8">use a walking aid, such as a stick, if you need one</p>
+        </li>
+
+        <li>
+          <svg class="nhsuk-icon nhsuk-icon__tick" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" aria-hidden="true" height="34" width="34">
+            <path stroke-width="4" stroke-linecap="round" d="M18.4 7.8l-8.5 8.4L5.6 12" stroke="#007f3b"></path>
+          </svg>
+          <p data-block-key="2x7js">keep the floors in your home clear</p>
+        </li>
+
+        <li>
+          <svg class="nhsuk-icon nhsuk-icon__tick" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" aria-hidden="true" height="34" width="34">
+            <path stroke-width="4" stroke-linecap="round" d="M18.4 7.8l-8.5 8.4L5.6 12" stroke="#007f3b"></path>
+          </svg>
+          <p data-block-key="2x7js">remove things you could trip on in your home, such as loose rugs and electrical cables</p>
+        </li>
+
+        <li>
+          <svg class="nhsuk-icon nhsuk-icon__tick" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" aria-hidden="true" height="34" width="34">
+            <path stroke-width="4" stroke-linecap="round" d="M18.4 7.8l-8.5 8.4L5.6 12" stroke="#007f3b"></path>
+          </svg>
+          <p data-block-key="2x7js">keep your house well-lit</p>
+        </li>
+
+        <li>
+          <svg class="nhsuk-icon nhsuk-icon__tick" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" aria-hidden="true" height="34" width="34">
+            <path stroke-width="4" stroke-linecap="round" d="M18.4 7.8l-8.5 8.4L5.6 12" stroke="#007f3b"></path>
+          </svg>
+          <p data-block-key="2x7js">install handrails on stairs</p>
+        </li>
+
+      </ul>
+    </div>
+
+    <p><a href="javascript:void(0);">Find out more about how to prevent falls</a></p>
+
+    <p class="nhsuk-body-s nhsuk-u-margin-top-7 nhsuk-u-secondary-text-color">
+    Page last reviewed: 02 August 2019<br>
+    Next review due: 02 August 2022
+    </p>
+
+
+
+
+
+
+
+  </div>
+</div>
+{% endblock %}

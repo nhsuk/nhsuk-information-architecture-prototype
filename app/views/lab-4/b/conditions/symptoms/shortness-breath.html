@@ -1,0 +1,135 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'template-lab-1b.html' %}
+{% set mainClasses = 'nhsuk-u-padding-top-0' %}
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+Symptoms - NHS
+{% endblock %}
+
+{% block beforeContent %}
+<!-- Coronavirus (COVID-19) banner -->
+<div class="app-global-alert" id="app-global-alert" role="complementary">
+  <div class="nhsuk-width-container">
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-full">
+        <div class="app-global-alert__content">
+          <div class="app-global-alert__message">
+            <h2>Coronavirus (COVID-19)</h2>
+            <p><a href="">Get the latest advice about COVID-19</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Breadcrumbs -->
+<nav class="nhsuk-breadcrumb beta-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a href="/lab-1/b" class="nhsuk-breadcrumb__link">Home</a></li>
+      <li class="nhsuk-breadcrumb__item"><a href="/lab-1/b/symptoms" class="nhsuk-breadcrumb__link">Symptoms</a></li>
+    </ol>
+    <p class="nhsuk-breadcrumb__back">
+      <a href="/lab-1/b/symptoms" class="nhsuk-breadcrumb__backlink">
+        <span class="nhsuk-u-visually-hidden">Back to </span>Symptoms
+      </a>
+    </p>
+  </div>
+</nav>
+{% endblock %}
+
+
+<!-- Homepage content -->
+{% block content %}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+
+    <div class="nhsuk-u-reading-width">
+      <h1>Shortness of breath</h1>
+    </div>
+    <p><strong>Shortness of breath might not be anything to worry about, but sometimes it can be serious and you'll need to get medical help.</strong></p>
+
+    <div class="nhsuk-card nhsuk-card--care nhsuk-card--care--emergency">
+      <div class="nhsuk-card--care__heading-container">
+        <h2 class="nhsuk-card--care__heading">
+          <span role="text"><span class="nhsuk-u-visually-hidden">Immediate action required: </span>Call 999 if:</span>
+        </h2>
+        <span class="nhsuk-card--care__arrow" aria-hidden="true"></span>
+      </div>
+
+      <div class="nhsuk-card__content">
+        <p>You're struggling to breathe or you have sudden shortness of breath and:</p>
+        <ul>
+          <li>your chest feels tight or heavy</li>
+          <li>you have pain that spreads to your arms, back, neck and jaw</li>
+          <li>you feel sick or are being sick</li>
+        </ul>
+        <p>You could be having a <a href="javascript:void(0);">heart attack</a> or a problem with your lungs or airway.</p>
+        <p>Call 999 immediately as you need treatment in hospital.</p>
+
+      </div>
+    </div>
+
+    <div class="nhsuk-card nhsuk-card--care nhsuk-card--care--non-urgent">
+      <div class="nhsuk-card--care__heading-container">
+        <h2 class="nhsuk-card--care__heading">
+          <span role="text"><span class="nhsuk-u-visually-hidden">Non-urgent advice: </span>See a GP if:</span>
+        </h2>
+        <span class="nhsuk-card--care__arrow" aria-hidden="true"></span>
+      </div>
+
+      <div class="nhsuk-card__content">
+        <p>You have shortness of breath and:</p>
+        <ul>
+          <li>it's lasted longer than a month</li>
+          <li>it gets worse when you've been active</li>
+          <li>it gets worse when you lie down</li>
+          <li>you've been coughing for 3 weeks or more</li>
+          <li>you have swollen ankles</li>
+        </ul>
+        <p>It's important to get medical advice to make sure it's nothing serious. You're not wasting anyone's time by getting it checked out.</p>
+
+      </div>
+    </div>
+
+    <h2>Causes of shortness of breath</h2>
+    <p>Shortness of breath has lots of different causes.</p>
+    <p>Common causes include:</p>
+    <ul>
+      <li><a href="javascript:void(0);">asthma</a></li>
+      <li>a <a href="javascript:void(0);">chest infection</a></li>
+      <li>being <a href="javascript:void(0);">overweight</a></li>
+      <li>smoking</li>
+      <li>a <a href="javascript:void(0);">panic attack</a></li>
+    </ul>
+    <p>But sometimes shortness of breath could be a sign of something more serious, such as:</p>
+    <ul>
+      <li>a long condition called <a href="javascript:void(0);">chronic obstructive pulmonary disease (COPD)</a></li>
+      <li>scarring of the lungs known as <a href="javascript:void(0);">idopathic pulmonary fibrosis</a></li>
+      <li><a href="javascript:void(0);">heart failire</a></li>
+      <li><a href="javascript:void(0);">lung cancer</a></li>
+    </ul>
+    <p>Any treatment you may need depends on what's causing your symptoms.</p>
+    <p>Do not try to self-diagnose the cause of shortness of breath – always see a GP.</p>
+
+    <div class="nhsuk-inset-text">
+      <span class="nhsuk-u-visually-hidden">Information: </span>
+      <h3>Coping with shortness of breath</h3><p data-block-key="fu7o">If you know what's causing your shortness of breath, you can get advice about things you and other people can do to help.</p><ul><li data-block-key="c55kr"><a href="https://www.blf.org.uk/support-for-you/breathlessness">British Lung Foundation: breathlessness</a></li><li data-block-key="2kmr5"><a href="https://supporting-breathlessness.org.uk/">Supporting someone with breathlessness website: advice for family, friends and carers of people with COPD or cancer</a></li></ul>
+    </div>
+
+    <p class="nhsuk-body-s nhsuk-u-margin-top-7 nhsuk-u-secondary-text-color">
+    Page last reviewed: 02 August 2019<br>
+    Next review due: 02 August 2022
+    </p>
+
+
+
+
+
+
+
+  </div>
+</div>
+{% endblock %}

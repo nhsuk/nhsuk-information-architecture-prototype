@@ -1,0 +1,140 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'template-lab-4b.html' %}
+{% set mainClasses = 'nhsuk-u-padding-top-0' %}
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+Symptoms - NHS
+{% endblock %}
+
+{% block beforeContent %}
+<!-- Coronavirus (COVID-19) banner -->
+<div class="app-global-alert" id="app-global-alert" role="complementary">
+  <div class="nhsuk-width-container">
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-full">
+        <div class="app-global-alert__content">
+          <div class="app-global-alert__message">
+            <h2>Coronavirus (COVID-19)</h2>
+            <p><a href="">Get the latest advice about COVID-19</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Breadcrumbs -->
+<nav class="nhsuk-breadcrumb beta-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a href="" class="nhsuk-breadcrumb__link">Home</a></li>
+      <li class="nhsuk-breadcrumb__item"><a href="" class="nhsuk-breadcrumb__link">Symptoms</a></li>
+    </ol>
+    <p class="nhsuk-breadcrumb__back">
+      <a href="" class="nhsuk-breadcrumb__backlink">
+        <span class="nhsuk-u-visually-hidden">Back to </span>Symptoms
+      </a>
+    </p>
+  </div>
+</nav>
+{% endblock %}
+
+
+<!-- Homepage content -->
+{% block content %}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+
+    <div class="nhsuk-u-reading-width">
+      <h1>Leg cramps</h1>
+    </div>
+    <p><strong>Leg cramps are common, usually harmless and only last a short time. They can happen at any time, but most people have them at night or when resting.</strong></p>
+    <h2>Check if it's leg cramps</h2>
+    <p>Leg cramps happen when a muscle in the leg shortens and causes a sudden pain that can make it hard to move.</p>
+    <p>The cramps can last from a few seconds to 10 minutes.</p>
+    <p>They can affect the:</p>
+    <ul>
+      <li>calf muscle, below the knee at the back of the leg</li>
+      <li>muscles in the feet or the thighs (less often)</li>
+    </ul>
+    <p>After the cramp has stopped, the muscle might feel sore for up to 24 hours.</p>
+    <h2>Things you can do about leg cramps yourself</h2>
+    <h3>During a cramp</h3>
+    <p>Stretching and massaging the muscle may ease the pain during a cramp, although most cramps go away without you doing anything.</p>
+    <p><a href="javascript:void(0);">Paracetamol</a> or <a href="javascript:void(0);">ibuprofen</a> can help to ease muscle soreness after a cramp, but they will not help when it's happening as they take too long to work.</p>
+    <h3>Preventing cramps</h3>
+    <p>Regular calf-stretching exercises may help to reduce cramps but may not completely stop them from happening.</p>
+
+    <details class="nhsuk-details">
+      <summary class="nhsuk-details__summary">
+        <span class="nhsuk-details__summary-text">
+        How to stretch calf muscles
+        </span>
+      </summary>
+      <div class="nhsuk-details__text">
+        <ol>
+          <li>Stand facing a wall and stretch out your arms until your hands can just touch it.</li>
+          <li>Make sure you are able to stand up straight and that your feet are flat on the floor.</li>
+          <li>Lean forward, pressing your hands against the wall until you feel your calf muscles stretch. Hold for 2 or 3 seconds.</li>
+          <li>Stand up straight again.</li>
+          <li>Repeat a few times for 5 minutes, 3 times a day (the last time just before bed).</li>
+        </ol>
+        <p>If the number of cramps reduces, you might only need to do the exercise once or twice a day.</p>
+      </div>
+    </details>
+
+    <div class="nhsuk-card nhsuk-card--care nhsuk-card--care--non-urgent">
+      <div class="nhsuk-card--care__heading-container">
+        <h2 class="nhsuk-card--care__heading">
+          <span role="text"><span class="nhsuk-u-visually-hidden">Non-urgent advice: </span>See a GP if:</span>
+        </h2>
+        <span class="nhsuk-card--care__arrow" aria-hidden="true"></span>
+      </div>
+
+      <div class="nhsuk-card__content">
+
+        <ul>
+          <li>leg cramps are disturbing your sleep</li>
+          <li> you also have numbness or swelling in your legs</li>
+          <li> cramps last longer than 10 minutes</li>
+          <li> you have any other symptoms or concerns</li>
+        </ul>
+      </div>
+    </div>
+    <h2>Treatments for leg cramps from a GP</h2>
+    <p>A GP will examine you to try to find out the reason for your leg cramps.</p>
+    <p>They will suggest a treatment depending on the cause.</p>
+    <p>This might be:</p>
+    <ul>
+      <li>stretching exercises</li>
+      <li>quinine tablets if exercise has not helped</li>
+    </ul>
+    <p>Quinine is not suitable for everyone. The GP will discuss potential risks and side effects with you.</p>
+    <h2>Causes of leg cramps</h2>
+    <p>Leg cramps can sometimes be caused by:</p>
+    <ul>
+      <li>ageing
+      <li>putting too much strain on muscles during exercise, which can be worse in hot or humid weather</li>
+      <li>pregnancy (usually in the later stage)</li>
+      <li>certain medicines, for example medicine for lowering cholesterol (statins) or high blood pressure (diuretics)</li>
+      <li>not drinking enough fluids (dehydration)</li>
+      <li>liver disease because of too much alcohol</li>
+    </ul>
+    <p>The reason for some cramps is unknown.</p>
+
+
+    <p class="nhsuk-body-s nhsuk-u-margin-top-7 nhsuk-u-secondary-text-color">
+    Page last reviewed: 02 August 2019<br>
+    Next review due: 02 August 2022
+    </p>
+
+
+
+
+
+
+
+  </div>
+</div>
+{% endblock %}

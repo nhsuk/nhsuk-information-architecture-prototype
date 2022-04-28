@@ -1,0 +1,115 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'template-lab-4b.html' %}
+{% set mainClasses = 'nhsuk-u-padding-top-0' %}
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+Symptoms - NHS
+{% endblock %}
+
+{% block beforeContent %}
+<!-- Coronavirus (COVID-19) banner -->
+<div class="app-global-alert" id="app-global-alert" role="complementary">
+  <div class="nhsuk-width-container">
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-full">
+        <div class="app-global-alert__content">
+          <div class="app-global-alert__message">
+            <h2>Coronavirus (COVID-19)</h2>
+            <p><a href="">Get the latest advice about COVID-19</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Breadcrumbs -->
+<nav class="nhsuk-breadcrumb beta-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a href="" class="nhsuk-breadcrumb__link">Home</a></li>
+      <li class="nhsuk-breadcrumb__item"><a href="" class="nhsuk-breadcrumb__link">Symptoms</a></li>
+    </ol>
+    <p class="nhsuk-breadcrumb__back">
+      <a href="" class="nhsuk-breadcrumb__backlink">
+        <span class="nhsuk-u-visually-hidden">Back to </span>Symptoms
+      </a>
+    </p>
+  </div>
+</nav>
+{% endblock %}
+
+
+<!-- Homepage content -->
+{% block content %}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+
+    <div class="nhsuk-u-reading-width">
+      <h1>Floaters and flashes in the eyes</h1>
+    </div>
+    <p><strong>Dots and lines (floaters) or flashes of light in your vision are common. They're not usually serious.</strong></p>
+
+    <h2>Floaters and flashes are usually harmless</h2>
+    <p>If you sometimes see:</p>
+    <ul>
+      <li>floaters – such as small dark dots, squiggly lines, rings or cobwebs</li>
+      <li>flashes of light</li>
+    </ul>
+    <p>in your vision, it's not usually a sign of anything serious, especially if:</p>
+    <ul>
+      <li>you've had them for a long time</li>
+      <li>they're not getting worse</li>
+      <li>your vision is not affected</li>
+    </ul>
+    <p>Flashes may eventually stop, and floaters often become less noticeable as you get used to them.</p>
+
+    <div class="nhsuk-card nhsuk-card--care nhsuk-card--care--urgent">
+      <div class="nhsuk-card--care__heading-container">
+        <h2 class="nhsuk-card--care__heading">
+          <span role="text"><span class="nhsuk-u-visually-hidden">Urgent advice: </span>Get advice from 111 now if:</span>
+        </h2>
+        <span class="nhsuk-card--care__arrow" aria-hidden="true"></span>
+      </div>
+
+      <div class="nhsuk-card__content">
+
+        <ul>
+          <li>floaters or flashes appear suddenly</li>
+          <li>the number of floaters or flashes suddenly increases</li>
+          <li>you have a dark "curtain" or shadow moving across your vision</li>
+          <li>you also have blurred vision</li>
+          <li>you also have eye pain</li>
+          <li>floaters start after eye surgery or an eye injury</li>
+        </ul>
+        <p>These could be signs of a serious problem with the back of your eye, which could permanently affect your vision if it's not treated quickly.</p>
+        <p>Go to <a href="javascript:void(0);">111.nhs.uk</a> or <a href="javascript:void(0);">call 111</a>. They can tell you the right place to get help if you need to see someone.</p>
+
+      </div>
+    </div>
+
+    <h3>What happens at your appointment</h3>
+    <p>Your eyes will be checked to see if you might need to be seen by an eye doctor (ophthalmologist) for more tests or treatment.</p>
+    <p>You'll usually only need treatment if you have a problem that could affect your vision.</p>
+    <h2>Causes of floaters and flashes</h2>
+    <p>Lots of people, particularly older people, get floaters and flashes.</p>
+    <p>They're usually caused by a harmless process called posterior vitreous detachment (PVD), where the gel inside your eyes changes.</p>
+    <p>Sometimes they can be caused by <a href="javascript:void(0);">retinal detachment</a>.</p>
+    <p>This is serious and can lead to permanent vision loss if not treated.</p>
+    <p>Floaters and flashes can also happen for no obvious reason.</p>
+
+    <p class="nhsuk-body-s nhsuk-u-margin-top-7 nhsuk-u-secondary-text-color">
+    Page last reviewed: 02 August 2019<br>
+    Next review due: 02 August 2022
+    </p>
+
+
+
+
+
+
+
+  </div>
+</div>
+{% endblock %}
