@@ -1,0 +1,119 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'template-lab-1b.html' %}
+{% set mainClasses = 'nhsuk-u-padding-top-0' %}
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+Symptoms - NHS
+{% endblock %}
+
+{% block beforeContent %}
+<!-- Coronavirus (COVID-19) banner -->
+<div class="app-global-alert" id="app-global-alert" role="complementary">
+  <div class="nhsuk-width-container">
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-full">
+        <div class="app-global-alert__content">
+          <div class="app-global-alert__message">
+            <h2>Coronavirus (COVID-19)</h2>
+            <p><a href="">Get the latest advice about COVID-19</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Breadcrumbs -->
+<nav class="nhsuk-breadcrumb beta-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a href="/lab-1/b" class="nhsuk-breadcrumb__link">Home</a></li>
+      <li class="nhsuk-breadcrumb__item"><a href="/lab-1/b/symptoms" class="nhsuk-breadcrumb__link">Symptoms</a></li>
+    </ol>
+    <p class="nhsuk-breadcrumb__back">
+      <a href="/lab-1/b/symptoms" class="nhsuk-breadcrumb__backlink">
+        <span class="nhsuk-u-visually-hidden">Back to </span>Symptoms
+      </a>
+    </p>
+  </div>
+</nav>
+{% endblock %}
+
+
+<!-- Homepage content -->
+{% block content %}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+
+    <div class="nhsuk-u-reading-width">
+      <h1>Excessive hair growth (hirsutism)</h1>
+    </div>
+    <p><strong>Hirsutism is where women have thick, dark hair on their face, neck, chest, tummy, lower back, buttocks or thighs. See a GP if it's a problem for you. It might be caused by a medical condition that can be treated.</strong></p>
+    <div class="nhsuk-inset-text">
+      <span class="nhsuk-u-visually-hidden">Information: </span>
+      <p>Most women get more hair on their face and body as they get older, particularly after the <a href="javascript:void(0);">menopause</a>. But this is finer hair and it's not the same as hirsutism.</p>
+    </div>
+
+    <div class="nhsuk-card nhsuk-card--care nhsuk-card--care--non-urgent">
+      <div class="nhsuk-card--care__heading-container">
+        <h2 class="nhsuk-card--care__heading">
+          <span role="text"><span class="nhsuk-u-visually-hidden">Non-urgent advice: </span>See a GP if:</span>
+        </h2>
+        <span class="nhsuk-card--care__arrow" aria-hidden="true"></span>
+      </div>
+
+      <div class="nhsuk-card__content">
+
+        <ul>
+          <li>you're a woman and you have thick, dark hair on your face, neck, chest, tummy, lower back, buttocks or thighs</li>
+        </ul>
+        <p>The GP will check what's causing the hair growth.</p>
+        <p>You may have a blood test to measure your hormone levels. A change in your hormone levels is a common cause of hirsutism.</p>
+
+      </div>
+    </div>
+    <h2>Treatments for hirsutism</h2>
+    <p>Your GP may suggest</p>
+    <ul>
+      <li>losing weight if you're overweight – this can help control hormone levels</li>
+      <li>things you can do at home to remove or lighten the hair – such as shaving, waxing, plucking, hair removal creams or bleaching</li>
+      <li>a prescription cream to slow hair growth on your face (eflornithine cream)</li>
+      <li>taking a contraceptive pill – this can help control hormone levels</li>
+    </ul>
+    <p>If these have not helped after 6 months, your GP may refer you to a specialist. They may recommend other medicines to control your hormone levels.</p>
+    <h3>Longer-lasting hair removal methods</h3>
+    <p>There are treatments that can get rid of unwanted hair for longer than the things you can do at home. But they're not usually permanent.</p>
+    <p>They're also not usually available on the NHS and can be expensive.</p>
+    <p>The main 2 treatments are:</p>
+    <ul>
+      <li>electrolysis – where an electric current is used to stop your hair growing</li>
+      <li><a href="javascript:void(0);">laser hair removal</a></li>
+    </ul>
+    <p>Make sure you research these treatments before trying them. They both have risks and the results are not the same for everyone.</p>
+    <h2>Causes of hirsutism</h2>
+    <p>Hirsutism is caused by an increase in hormones called androgens, your body being more sensitive to them, or both.</p>
+    <p>The most common cause is <a href="javascript:void(0);">polycystic ovary syndrome (PCOS)</a>.</p>
+    <p>Sometimes there's no obvious cause.</p>
+    <p>Rarely, hirsutism can be caused by:</p>
+    <ul>
+      <li>certain medicines</li>
+      <li>using <a href="javascript:void(0);">anabolic steroids</a></li>
+      <li>other hormonal conditions like <a href="javascript:void(0);">Cushing's syndrome</a> and <a href="javascript:void(0);">acromegaly</a></li>
+      <li>tumours affecting your hormone levels</li>
+    </ul>
+
+    <p class="nhsuk-body-s nhsuk-u-margin-top-7 nhsuk-u-secondary-text-color">
+    Page last reviewed: 02 August 2019<br>
+    Next review due: 02 August 2022
+    </p>
+
+
+
+
+
+
+
+  </div>
+</div>
+{% endblock %}

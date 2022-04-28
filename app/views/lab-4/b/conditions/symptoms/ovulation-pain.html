@@ -1,0 +1,93 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'template-lab-4b.html' %}
+{% set mainClasses = 'nhsuk-u-padding-top-0' %}
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+Symptoms - NHS
+{% endblock %}
+
+{% block beforeContent %}
+<!-- Coronavirus (COVID-19) banner -->
+<div class="app-global-alert" id="app-global-alert" role="complementary">
+  <div class="nhsuk-width-container">
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-full">
+        <div class="app-global-alert__content">
+          <div class="app-global-alert__message">
+            <h2>Coronavirus (COVID-19)</h2>
+            <p><a href="">Get the latest advice about COVID-19</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Breadcrumbs -->
+<nav class="nhsuk-breadcrumb beta-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a href="" class="nhsuk-breadcrumb__link">Home</a></li>
+      <li class="nhsuk-breadcrumb__item"><a href="" class="nhsuk-breadcrumb__link">Symptoms</a></li>
+    </ol>
+    <p class="nhsuk-breadcrumb__back">
+      <a href="" class="nhsuk-breadcrumb__backlink">
+        <span class="nhsuk-u-visually-hidden">Back to </span>Symptoms
+      </a>
+    </p>
+  </div>
+</nav>
+{% endblock %}
+
+
+<!-- Homepage content -->
+{% block content %}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+
+    <div class="nhsuk-u-reading-width">
+      <h1>Ovulation pain</h1>
+    </div>
+    <p><strong>Some women get a one-sided pain in their lower abdomen when they ovulate.</strong></p>
+    <p>It happens about 14 days before your period, when an ovary releases an egg as part of the menstrual cycle.</p>
+    <p>It's also known as mittelschmerz (German for "middle pain" or "pain in the middle of the month").</p>
+    <p>Ovulation pain is often normal and just another side effect linked with <a href="javascript:void(0);">periods</a>.</p>
+    <h2>Symptoms of ovulation pain</h2>
+    <p>The pain can be a dull cramp or a sharp and sudden twinge.</p>
+    <p>It's usually on either the left- or right-hand side of your tummy depending on which ovary is releasing the egg.</p>
+    <p>It can last just a few minutes or continue for a day or 2. Some women notice a little vaginal bleeding when it happens.</p>
+    <h2>When to see your doctor</h2>
+    <p>See your GP if the pain is severe or you're worried.</p>
+    <p>It's a good idea to keep a diary before your visit. Let the doctor know exactly when during your menstrual cycle the pain comes on and how long it lasts.</p>
+    <h2>Treatments for painful ovulation</h2>
+    <p>Painful ovulation can usually be eased by simple remedies like soaking in a hot bath or taking an over-the-counter painkiller, such as <a href="javascript:void(0);">paracetamol</a>.</p>
+    <p>Non-steroidal anti-inflammatory drugs (NSAIDs) like <a href="javascript:void(0);">ibuprofen</a> may also help, but you should not take them if you're trying to get pregnant as they can interfere with ovulation.</p>
+    <p>If you're in a lot of discomfort, talk to your GP about other treatment options.</p>
+    <p>Birth control methods that stop ovulation, such as the <a href="javascript:void(0);">contraceptive pill</a> or <a href="javascript:void(0);">conctraceptive implant</a>, can completely banish ovulation pain.</p>
+    <h2>Is ovulation pain anything to worry about?</h2>
+    <p>Painful ovulation is fairly common and usually harmless. But it can sometimes be a symptom of an underlying medical condition.</p>
+    <p>Some of the underlying causes can result in fertility problems that can prevent you getting pregnant:</p>
+    <ul>
+      <li><strong><a href="javascript:void(0);">endometriosis</a></strong> – an inflammatory disease that affects the ovaries and fallopian tubes that can also cause pain during ovulation</li>
+      <li><strong>scar tissue</strong> – if you've had surgery (for example, a caesarean section or your appendix out), scar tissue can cause ovulation pain by restricting the ovaries and surrounding structures</li>
+      <li><strong>sexually transmitted infections (STIs)</strong> – STIs like chlamydia can cause inflammation and scarring around the fallopian tubes, leading to ovulation pain</li>
+    </ul>
+    <h2>Why does ovulation pain happen?</h2>
+    <p>Nobody is sure, but one theory is that ovulation pain is the egg breaking through the ovary wall, which releases a small amount of fluid (or sometimes a small amount of blood) that irritates nearby nerves.</p>
+
+
+    <p class="nhsuk-body-s nhsuk-u-margin-top-7 nhsuk-u-secondary-text-color">
+    Page last reviewed: 02 August 2019<br>
+    Next review due: 02 August 2022
+    </p>
+
+
+
+
+
+
+
+  </div>
+</div>
+{% endblock %}

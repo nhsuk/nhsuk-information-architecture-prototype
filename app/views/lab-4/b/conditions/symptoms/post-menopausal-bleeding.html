@@ -1,0 +1,135 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'template-lab-4b.html' %}
+{% set mainClasses = 'nhsuk-u-padding-top-0' %}
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+Symptoms - NHS
+{% endblock %}
+
+{% block beforeContent %}
+<!-- Coronavirus (COVID-19) banner -->
+
+<!-- Breadcrumbs -->
+<nav class="nhsuk-breadcrumb beta-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a href="" class="nhsuk-breadcrumb__link">Home</a></li>
+      <li class="nhsuk-breadcrumb__item"><a href="" class="nhsuk-breadcrumb__link">Symptoms</a></li>
+    </ol>
+    <p class="nhsuk-breadcrumb__back">
+      <a href="" class="nhsuk-breadcrumb__backlink">
+        <span class="nhsuk-u-visually-hidden">Back to </span>Symptoms
+      </a>
+    </p>
+  </div>
+</nav>
+{% endblock %}
+
+
+<!-- Homepage content -->
+{% block content %}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+
+    <div class="nhsuk-u-reading-width">
+      <h1>Pins and needles</h1>
+    </div>
+    <p><strong>Menopause is usually diagnosed in women over 45 who have not had a period for more than a year. Any bleeding from the vagina after this time needs to be checked by a GP..</strong></p>
+    <div class="nhsuk-card nhsuk-card--care nhsuk-card--care--non-urgent">
+      <div class="nhsuk-card--care__heading-container">
+        <h2 class="nhsuk-card--care__heading">
+          <span role="text"><span class="nhsuk-u-visually-hidden">Non-urgent advice: </span>See a GP if you have postmenopausal bleeding, even if:</span>
+        </h2>
+        <span class="nhsuk-card--care__arrow" aria-hidden="true"></span>
+      </div>
+
+      <div class="nhsuk-card__content">
+
+        <ul>
+          <li>it's only happened once</li>
+          <li>there's only a small amount of blood, spotting, or pink or brown discharge</li>
+          <li>you do not have any other symptoms</li>
+          <li>you're not sure if it's blood</li>
+        </ul>
+        <p>Postmenopausal bleeding is not usually serious, but can be a sign of cancer. Cancer is easier to treat if it's found early.</p>
+      </div>
+    </div>
+    <h3>What happens at your GP appointment</h3>
+    <p>The GP should refer you to hospital or a special postmenopausal bleeding clinic. You should not have to wait more than 2 weeks to see a specialist.</p>
+    <h3>What happens at your hospital or clinic appointment</h3>
+    <p>A specialist, who may be a nurse, will offer you tests to help find out what's causing the bleeding and plan any necessary treatment.</p>
+    <p>The test may include:</p>
+    <ul>
+      <li>a small device being placed in your vagina to scan for any problems (vaginal <a href="javascript:void(0);">ultrasound scan</a>)</li>
+      <li>an examination of your pelvis and vagina – a speculum (plastic device) may be inserted into your vagina to hold it open, so the inside of the vagina and the cervix can be seen</li>
+      <li>a thin, telescope-like camera being passed up your vagina, through the cervix and into your womb to look for any problems (a <a href="javascript:void(0);">hysteroscopy</a>) and to take a tissue sample (biopsy) for testing – under local or general anaesthetic</li>
+      <li>the specialist may press on your tummy and inside your vagina to check for lumps, tenderness or other abnormalities</li>
+    </ul>
+
+    <h2>Causes of postmenopausal bleeding</h2>
+    <p>There can be several causes of postmenopausal bleeding.</p>
+    <p>The most common causes are:</p>
+    <ul>
+      <li>inflammation and thinning of the vaginal lining (atrophic <a href="javascript:void(0);">vaginitis</a>) or womb lining (endometrial atrophy) – caused by lower oestrogen levels</li>
+      <li>cervical or womb polyps – growths that are usually non-cancerous</li>
+      <li>a thickened womb lining (endometrial hyperplasia) – this can be caused by <a href="javascript:void(0);">hormone replacement therapy (HRT)</a>, high levels of oestrogen or being overweight, and can lead to womb cancer</li>
+    </ul>
+    <p>Less commonly, postmenopausal bleeding is caused by cancer, such as ovarian and womb cancer.</p>
+
+    <h2>Treatment for postmenopausal bleeding</h2>
+    <p>Treatment depends on what's causing your bleeding.</p>
+    <div class="nhsuk-table-container">
+      <table><caption class="nhsuk-u-visually-hidden">Treatment for postmenopausal bleeding</caption>
+<thead>
+<tr>
+  <th scope="col">Cause</th>
+  <th scope="col">Treatment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Cervical polyps</td>
+  <td>the polyps may need to be removed by a specialist</td>
+</tr>
+<tr>
+  <td>Endometrial atrophy</td>
+  <td>you may not need treatment, but may be offered oestrogen cream or pessaries</td>
+</tr>
+<tr>
+  <td><a href="javascript:void(0);">Endometrial hyperplasia</a></td>
+  <td>depending on the type of hyperplasia, you may be offered no treatment, hormone medicine (tablets or an <a href="javascript:void(0);">intrauterine system, IUS</a>) or a total <a href="/conditions/hysterectomy/">hysterectomy</a> (surgery to remove your uterus, cervix and ovaries)</td>
+</tr>
+<tr>
+  <td>Side effect of HRT</td>
+  <td>changing or stopping HRT treatment</td>
+</tr>
+<tr>
+  <td><a href="javascript:void(0);">Womb cancer</a></td>
+  <td>total hysterectomy will often be recommended</td>
+</tr>
+<tr>
+  <td><a href="javascript:void(0);">Ovarian cancer</a></td>
+  <td>surgery to remove your ovaries and your womb (total hysterectomy)</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+
+
+    <p class="nhsuk-body-s nhsuk-u-margin-top-7 nhsuk-u-secondary-text-color">
+    Page last reviewed: 02 August 2019<br>
+    Next review due: 02 August 2022
+    </p>
+
+
+
+
+
+
+
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,112 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'template-lab-4b.html' %}
+{% set mainClasses = 'nhsuk-u-padding-top-0' %}
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+Symptoms - NHS
+{% endblock %}
+
+{% block beforeContent %}
+<!-- Coronavirus (COVID-19) banner -->
+
+<!-- Breadcrumbs -->
+<nav class="nhsuk-breadcrumb beta-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a href="" class="nhsuk-breadcrumb__link">Home</a></li>
+      <li class="nhsuk-breadcrumb__item"><a href="" class="nhsuk-breadcrumb__link">Symptoms</a></li>
+    </ol>
+    <p class="nhsuk-breadcrumb__back">
+      <a href="" class="nhsuk-breadcrumb__backlink">
+        <span class="nhsuk-u-visually-hidden">Back to </span>Symptoms
+      </a>
+    </p>
+  </div>
+</nav>
+{% endblock %}
+
+
+<!-- Homepage content -->
+{% block content %}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+
+    <div class="nhsuk-u-reading-width">
+      <h1>Pelvic pain</h1>
+    </div>
+    <p><strong>Pelvic pain is felt below your bellybutton. It may come on suddenly and severely, or could be mild and last for months.</strong></p>
+    <p>See your GP as soon as possible if you're experiencing pelvic pain.</p>
+    <p>In some cases, women may be referred to a gynaecologist (a specialist in the female reproductive system). Sometimes the cause of pelvic pain can't be identified.</p>
+    <p>The following information is about pelvic pain in women, as men are rarely affected.</p>
+    <p>It covers the possible causes of:</p>
+    <ul>
+      <li>sudden, unexpected (acute) pelvic pain</li>
+      <li>long-term (chronic) pelvic pain</li>
+    </ul>
+    <p>It aims to give you a better idea of the cause of your pelvic pain, but you shouldn't use it to self-diagnose your condition. Always see your GP to get their medical opinion.</p>
+    <p>For information and advice about pelvic or abdominal pain during pregnancy, see our pages on <a href="javascript:void(0);">pelvic pain in pregnancy</a>, <a href="javascript:void(0);">ectopic pregnancy</a> and <a href="javascript:void(0);">miscarriage</a>.</p>
+
+    <h2>Sudden, unexpected pelvic pain</h2>
+    <p>Pelvic pain that comes on suddenly for the first time is called acute pelvic pain.</p>
+    <p>See your GP immediately if you have acute pelvic pain. They'll be able to investigate the cause and arrange any treatment you may need.</p>
+    <h3>Common causes of acute pelvic pain</h3>
+    <p>The most common causes of acute pelvic pain in women who aren't pregnant are:</p>
+    <ul>
+      <li><b>an <a href="javascript:void(0);">ovarian cyst</a></b> – a fluid-filled sac that develops on an ovary and causes pelvic pain when it bursts or becomes twisted</li>
+      <li><b>acute <a href="javascript:void(0);">pelvic inflammatory disease</a></b> – a bacterial infection of the womb, fallopian tubes or ovaries, which often follows a <a href="javascript:void(0);">chlamydia</a> or <a href="javascript:void(0);">gonorrhoea</a> infection and needs immediate treatment with <a href="javascript:void(0);">antibiotics</a></li>
+      <li><b><a href="javascript:void(0);">appendicitis</a></b> – a painful swelling of the appendix (a finger-like pouch connected to the large intestine) which usually causes pain on the lower right-hand side of your abdomen (tummy)</li>
+      <li><b><a href="javascript:void(0);">peritonitis</a></b> – inflammation of the peritoneum (the thin layer of tissue that lines the inside of the abdomen); it causes sudden abdominal pain that gradually becomes more severe and requires immediate medical treatment</li>
+      <li><b>a <a href="javascript:void(0);">urinary tract infection</a></b> – you'll probably also have pain or a burning sensation when you urinate, and you may need to urinate more often</li>
+      <li><b><a href="javascript:void(0);">constipation</a> or bowel spasm</b> – this may be brought on by changes in diet, medication, <a href="javascript:void(0);">irritable bowel syndrome</a> or, in rare cases, a bowel obstruction</li>
+    </ul>
+    <h3>Less common reasons for acute pelvic pain</h3>
+    <p>Less common causes of acute pelvic pain include:</p>
+    <ul>
+      <li><b>a pelvic <a href="javascript:void(0);">abscess</a></b> – a collection of pus between the womb and vagina that needs urgent treatment in hospital</li>
+      <li><b><a href="javascript:void(0);">endometriosis</a></b> – a long-term condition where small pieces of womb lining are found outside the womb, such as on the ovaries, leading to <a href="javascript:void(0);">painful periods</a></li>
+    </ul>
+
+    <h2>Long-term pelvic pain</h2>
+    <p>If you've had pelvic pain for 6 months or more that either comes and goes or is continuous, it's known as chronic pelvic pain.</p>
+    <p>Chronic pelvic pain is more intense than ordinary period pain and lasts longer. It affects around 1 in 6 women.</p>
+    <p>See your GP if you have chronic pelvic pain. They'll investigate the cause and arrange any necessary treatment.</p>
+    <h3>Common causes of chronic pelvic pain</h3>
+    <p>The most common causes of chronic pelvic pain are:</p>
+    <ul>
+      <li><b><a href="javascript:void(0);">endometriosis</a></b></li>
+      <li><b> chronic<a href="javascript:void(0);">pelvic inflammatory disease</a></b> – a bacterial infection of the womb, fallopian tubes or ovaries, which often follows a chlamydia or gonorrhoea infection and needs immediate treatment with antibiotics</li>
+      <li><b><a href="javascript:void(0);">irritable bowel syndrome</a></b> – a common long-term condition of the digestive system that can cause stomach cramps, bloating, <a href="/lab-1/b/symptoms/diarrhoea-vomiting">diarrhoea</a> and constipation</li>
+    </ul>
+    <h3>Less common causes of chronic pelvic pain</h3>
+    <p>Less common causes of chronic pelvic pain are:</p>
+    <ul>
+      <li><b>constantly returning <a href="javascript:void(0);">ovarian cysts</a></b> – these are fluid or blood-filled sacs that develop on the ovaries</li>
+      <li><b>a <a href="javascript:void(0);">urinary tract infection</a></b> that keeps coming back</li>
+      <li><b>lower <a href="javascript:void(0);">back pain</a></b></li>
+      <li><b><a href="javascript:void(0);">prolapse of the womb</a></b> – where the womb slips down from its normal position and usually causes a "dragging" pain</li>
+      <li><b>adenomyosis</b>  endometriosis that affects the muscle of the womb, causing painful, <a href="javascript:void(0);">heavy periods</a></li>
+      <li><b><a href="javascript:void(0);">fibroids</a></b> – non-cancerous tumours that grow in or around the womb; fibroids can be painful if they twist or deteriorate, but uncomplicated fibroids aren't usually painful</li>
+      <li><b>chronic <a href="javascript:void(0);">interstitial cystitis</a></b> – long-term inflammation of the bladder</li>
+      <li><b>inflammatory bowel disease (IBD)</b> - a term used to describe 2 chronic conditions, <a href="javascript:void(0);">ulcerative colitis</a> and <a href="javascript:void(0);">Crohn's disease</a>, which affect the gut</li>
+      <li><b>a <a href="javascript:void(0);">hernia</a></b> – where an internal part of the body pushes through a weakness in the surrounding muscle or tissue wall</li>
+      <li><b>trapped or damaged nerves in the pelvic area</b> – these may cause sharp, stabbing or aching pain in a specific area, which often gets worse with certain movements</li>
+    </ul>
+
+
+
+    <p class="nhsuk-body-s nhsuk-u-margin-top-7 nhsuk-u-secondary-text-color">
+    Page last reviewed: 02 August 2019<br>
+    Next review due: 02 August 2022
+    </p>
+
+
+
+
+
+
+
+  </div>
+</div>
+{% endblock %}

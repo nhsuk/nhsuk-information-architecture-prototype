@@ -1,0 +1,90 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'template-lab-4b.html' %} {% set mainClasses = 'nhsuk-u-padding-top-0' %}
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %} Symptoms - NHS {% endblock %}
+
+<!-- Coronavirus (COVID-19) banner -->
+{% block beforeContent %}
+
+<!-- Breadcrumbs -->
+<nav class="nhsuk-breadcrumb beta-breadcrumb" aria-label="Breadcrumb">
+    <div class="nhsuk-width-container">
+        <ol class="nhsuk-breadcrumb__list">
+            <li class="nhsuk-breadcrumb__item"><a href="" class="nhsuk-breadcrumb__link">Home</a></li>
+        </ol>
+        <p class="nhsuk-breadcrumb__back">
+            <a href="" class="nhsuk-breadcrumb__backlink">
+                <span class="nhsuk-u-visually-hidden">Back to </span>Home
+            </a>
+        </p>
+    </div>
+</nav>
+{% endblock %}
+
+<!-- Symptom content -->
+{% block content %}
+<div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+        <h1>Unintentional weight loss</h1>
+    </div>
+</div>
+<article>
+    <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-two-thirds">
+            <section>
+                <p><strong>Sudden, noticeable weight loss can&nbsp;happen after a&nbsp;stressful event, although it can also be a sign of a serious illness.</strong></p>
+                <p>It's normal to lose a noticeable amount of weight after the stress of changing jobs, divorce, redundancy or <a href="/conditions/stress-anxiety-depression/coping-with-bereavement/">bereavement</a>. </p>
+                <p>Weight often returns to normal when you start to feel happier, after you've had time to grieve or get used to the change.&nbsp;<a href="/conditions/counselling/">Counselling</a> and support may be needed to help you get to this stage.</p>
+                <p>Significant weight loss can also be the result of an&nbsp;<a href="/conditions/eating-disorders/">eating disorder</a>, such as <a href="/conditions/anorexia/">anorexia</a>&nbsp;or <a href="/conditions/bulimia/">bulimia</a>. If you think
+                    you have an eating disorder, talk to someone you trust and consider speaking to your GP.&nbsp;There are also several organisations that can provide you with information and advice, such as the eating disorders charity <a href="https://www.beateatingdisorders.org.uk/"
+                        title="External website">Beat</a>.</p>
+                <p>If your weight loss wasn't due to one of the causes mentioned, and you didn't lose weight through dieting or exercising, see your GP, as you may have an illness that needs treating. </p>
+                <p>The following information may give you a better idea&nbsp;of the cause of your weight loss, but&nbsp;don't use&nbsp;it to diagnose yourself. Always see a GP for a proper diagnosis.</p>
+            </section>
+            <section>
+                <h2>How much weight loss is a concern?</h2>
+                <p>Your body weight can regularly fluctuate, but the persistent, unintentional loss of more than 5% of your weight over&nbsp;6 to 12 months is usually a cause for concern. Losing this much weight can be a sign of&nbsp;<a href="/conditions/malnutrition/">malnutrition</a>,
+                    where a person's diet doesn't contain the right amount of nutrients.</p>
+                <p>You should pay particular attention if you experience other symptoms, such as: </p>
+                <ul>
+                    <li>tiredness </li>
+                    <li>loss of appetite </li>
+                    <li>a change in your toilet habits </li>
+                    <li>an increase in illnesses or infections</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Other common causes of unexpected weight loss</h2>
+                <p>Unintentional weight loss does not always have an identifiable underlying cause but, in addition to the causes already mentioned,&nbsp;it's often the result of:</p>
+                <ul>
+                    <li><a href="/conditions/clinical-depression/">depression</a>&nbsp; </li>
+                    <li>an&nbsp;<a href="/conditions/overactive-thyroid-hyperthyroidism/">overactive thyroid gland (hyperthyroidism)</a>, or over-treating an <a href="/conditions/underactive-thyroid-hypothyroidism/">underactive thyroid</a></li>
+                    <li><a href="/conditions/cancer/">cancer</a></li>
+                </ul>
+            </section>
+            <section>
+                <h2>Less common causes of unexpected weight loss</h2>
+                <p>Less frequently, unexpected weight loss may be the result of:</p>
+                <ul>
+                    <li>the side effects of certain medications </li>
+                    <li><a href="/conditions/alcohol-misuse/">alcohol misuse</a>&nbsp;or <a href="/live-well/healthy-body/drug-addiction-getting-help/">drug misuse</a>&nbsp; </li>
+                    <li>heart, kidney, lung or liver disease </li>
+                    <li>a problem with the glands that secrete hormones&nbsp;–&nbsp;such as <a href="/conditions/addisons-disease/">Addison's disease</a>&nbsp;or undiagnosed&nbsp;<a href="/conditions/diabetes/">diabetes</a></li>
+                    <li>a long-term inflammatory condition, such as&nbsp;<a href="/conditions/rheumatoid-arthritis/">rheumatoid arthritis</a> or <a href="/conditions/lupus/">lupus</a></li>
+                    <li>dental problems&nbsp;–&nbsp;such as <a href="/conditions/chipped-broken-or-cracked-tooth/">losing teeth</a>, having new <a href="/conditions/orthodontics/">orthodontics</a>,&nbsp;or <a href="/conditions/mouth-ulcers/">mouth ulcers</a></li>
+                    <li>a condition that causes&nbsp;<a href="/conditions/swallowing-problems-dysphagia/">dysphagia (swallowing problems)</a></li>
+                    <li>a problem with the gut, such as&nbsp;a <a href="/conditions/stomach-ulcer/">stomach ulcer</a>, <a href="/conditions/crohns-disease/">Crohn's disease</a>, <a href="/conditions/ulcerative-colitis/">ulcerative colitis</a> or <a href="/conditions/coeliac-disease/">coeliac disease</a></li>
+                    <li>a bacterial, viral or parasitic infection, such as persistent <a href="/conditions/sickness-and-diarrhoea/">gastroenteritis</a>, <a href="/conditions/tuberculosis-tb/">tuberculosis (TB)</a> or <a href="/conditions/hiv-and-aids/">HIV and AIDS</a></li>
+                    <li><a href="/conditions/dementia/about/">dementia</a> – people with dementia may be unable to communicate their eating needs</li>
+                </ul>
+            </section>
+            <div>
+                <p class="nhsuk-body-s nhsuk-u-margin-top-7 nhsuk-u-secondary-text-color">
+                    Page last reviewed: 01 February 2019<br> Next review due: 01 February 2022
+                </p>
+            </div>
+        </div>
+    </div>
+</article>
+{% endblock %}

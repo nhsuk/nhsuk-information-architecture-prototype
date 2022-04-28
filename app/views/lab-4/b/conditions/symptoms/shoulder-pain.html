@@ -1,0 +1,288 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'template-lab-4b.html' %}
+{% set mainClasses = 'nhsuk-u-padding-top-0' %}
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+Symptoms - NHS
+{% endblock %}
+
+{% block beforeContent %}
+<!-- Coronavirus (COVID-19) banner -->
+
+<!-- Breadcrumbs -->
+<nav class="nhsuk-breadcrumb beta-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a href="" class="nhsuk-breadcrumb__link">Home</a></li>
+      <li class="nhsuk-breadcrumb__item"><a href="" class="nhsuk-breadcrumb__link">Symptoms</a></li>
+    </ol>
+    <p class="nhsuk-breadcrumb__back">
+      <a href="" class="nhsuk-breadcrumb__backlink">
+        <span class="nhsuk-u-visually-hidden">Back to </span>Symptoms
+      </a>
+    </p>
+  </div>
+</nav>
+{% endblock %}
+
+
+<!-- Homepage content -->
+{% block content %}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+
+    <div class="nhsuk-u-reading-width">
+      <h1>Shoulder pain</h1>
+    </div>
+    <p><strong>You can usually do things to ease shoulder pain yourself. See a GP if it does not start feeling better after 2 weeks.</strong></p>
+
+    <h2>How to ease shoulder pain yourself</h2>
+    <p>You usually need to do these things for 2 weeks before shoulder pain starts to ease.</p>
+    <p>It can take 6 months or longer to recover from shoulder pain.</p>
+
+    <div class="nhsuk-do-dont-list">
+      <h3 class="nhsuk-do-dont-list__label">
+        Do
+      </h3>
+      <ul class="nhsuk-list nhsuk-list--tick">
+
+        <li>
+          <svg class="nhsuk-icon nhsuk-icon__tick" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" aria-hidden="true" height="34" width="34">
+            <path stroke-width="4" stroke-linecap="round" d="M18.4 7.8l-8.5 8.4L5.6 12" stroke="#007f3b"></path>
+          </svg>
+          <p>stay active and gently move your shoulder</p>
+        </li>
+
+        <li>
+          <svg class="nhsuk-icon nhsuk-icon__tick" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" aria-hidden="true" height="34" width="34">
+            <path stroke-width="4" stroke-linecap="round" d="M18.4 7.8l-8.5 8.4L5.6 12" stroke="#007f3b"></path>
+          </svg>
+          <p>try shoulder exercises for 6 to 8 weeks to stop pain returning – the Chartered Society of Physiotherapy has <a href="https://www.csp.org.uk/public-patient/rehabilitation-exercises/shoulder-pain">exercises for shoulder pain</a></p>
+        </li>
+
+        <li>
+          <svg class="nhsuk-icon nhsuk-icon__tick" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" aria-hidden="true" height="34" width="34">
+            <path stroke-width="4" stroke-linecap="round" d="M18.4 7.8l-8.5 8.4L5.6 12" stroke="#007f3b"></path>
+          </svg>
+          <p>stand up straight with your shoulders down and gently back</p>
+        </li>
+
+        <li>
+          <svg class="nhsuk-icon nhsuk-icon__tick" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" aria-hidden="true" height="34" width="34">
+            <path stroke-width="4" stroke-linecap="round" d="M18.4 7.8l-8.5 8.4L5.6 12" stroke="#007f3b"></path>
+          </svg>
+          <p>sit with a cushion behind your lower back</p>
+        </li>
+
+        <li>
+          <svg class="nhsuk-icon nhsuk-icon__tick" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" aria-hidden="true" height="34" width="34">
+            <path stroke-width="4" stroke-linecap="round" d="M18.4 7.8l-8.5 8.4L5.6 12" stroke="#007f3b"></path>
+          </svg>
+          <p>rest your arm on a cushion in your lap</p>
+        </li>
+
+        <li>
+          <svg class="nhsuk-icon nhsuk-icon__tick" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" aria-hidden="true" height="34" width="34">
+            <path stroke-width="4" stroke-linecap="round" d="M18.4 7.8l-8.5 8.4L5.6 12" stroke="#007f3b"></path>
+          </svg>
+          <p>use pain relief so you can keep moving – try painkillers like <a href="javascript:void(0);">paracetamol</a> and <a href="javascript:void(0);">ibuprofen</a>, and heat or cold packs</p>
+        </li>
+
+      </ul>
+    </div>
+
+    <div class="nhsuk-do-dont-list">
+      <h3 class="nhsuk-do-dont-list__label">
+        Don’t
+      </h3>
+      <ul class="nhsuk-list nhsuk-list--cross">
+
+        <li>
+          <svg class="nhsuk-icon nhsuk-icon__cross" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
+            <path d="M17 18.5c-.4 0-.8-.1-1.1-.4l-10-10c-.6-.6-.6-1.6 0-2.1.6-.6 1.5-.6 2.1 0l10 10c.6.6.6 1.5 0 2.1-.3.3-.6.4-1 .4z" fill="#d5281b"></path>
+            <path d="M7 18.5c-.4 0-.8-.1-1.1-.4-.6-.6-.6-1.5 0-2.1l10-10c.6-.6 1.5-.6 2.1 0 .6.6.6 1.5 0 2.1l-10 10c-.3.3-.6.4-1 .4z" fill="#d5281b"></path>
+          </svg>
+          <p>do not completely stop using your shoulder – this can stop it getting better</p>
+        </li>
+
+        <li>
+          <svg class="nhsuk-icon nhsuk-icon__cross" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
+            <path d="M17 18.5c-.4 0-.8-.1-1.1-.4l-10-10c-.6-.6-.6-1.6 0-2.1.6-.6 1.5-.6 2.1 0l10 10c.6.6.6 1.5 0 2.1-.3.3-.6.4-1 .4z" fill="#d5281b"></path>
+            <path d="M7 18.5c-.4 0-.8-.1-1.1-.4-.6-.6-.6-1.5 0-2.1l10-10c.6-.6 1.5-.6 2.1 0 .6.6.6 1.5 0 2.1l-10 10c-.3.3-.6.4-1 .4z" fill="#d5281b"></path>
+          </svg>
+          <p>do not do things that seem to make it worse</p>
+        </li>
+
+        <li>
+          <svg class="nhsuk-icon nhsuk-icon__cross" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
+            <path d="M17 18.5c-.4 0-.8-.1-1.1-.4l-10-10c-.6-.6-.6-1.6 0-2.1.6-.6 1.5-.6 2.1 0l10 10c.6.6.6 1.5 0 2.1-.3.3-.6.4-1 .4z" fill="#d5281b"></path>
+            <path d="M7 18.5c-.4 0-.8-.1-1.1-.4-.6-.6-.6-1.5 0-2.1l10-10c.6-.6 1.5-.6 2.1 0 .6.6.6 1.5 0 2.1l-10 10c-.3.3-.6.4-1 .4z" fill="#d5281b"></path>
+          </svg>
+          <p>do not make up your own strenuous exercises or use heavy gym equipment</p>
+        </li>
+
+        <li>
+          <svg class="nhsuk-icon nhsuk-icon__cross" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
+            <path d="M17 18.5c-.4 0-.8-.1-1.1-.4l-10-10c-.6-.6-.6-1.6 0-2.1.6-.6 1.5-.6 2.1 0l10 10c.6.6.6 1.5 0 2.1-.3.3-.6.4-1 .4z" fill="#d5281b"></path>
+            <path d="M7 18.5c-.4 0-.8-.1-1.1-.4-.6-.6-.6-1.5 0-2.1l10-10c.6-.6 1.5-.6 2.1 0 .6.6.6 1.5 0 2.1l-10 10c-.3.3-.6.4-1 .4z" fill="#d5281b"></path>
+          </svg>
+          <p>do not slouch when sitting – do not roll your shoulders or bring your neck forward</p>
+        </li>
+
+      </ul>
+    </div>
+
+    <details class="nhsuk-details">
+      <summary class="nhsuk-details__summary">
+        <span class="nhsuk-details__summary-text">
+        Putting heat or cold packs on your shoulder
+        </span>
+      </summary>
+      <div class="nhsuk-details__text">
+        <p>Try either a:</p>
+        <ul>
+          <li>pack of frozen peas wrapped in a tea towel for up to 20 minutes, 3 times a day</li>
+          <li>hot water bottle wrapped in a tea towel for up to 20 minutes, 2 to 3 times a day</li>
+        </ul>
+      </div>
+    </details>
+
+    <h2>A pharmacist can help with shoulder pain</h2>
+    <p>They may suggest:</p>
+    <ul>
+      <li>the best painkiller – this might be tablets, or a cream or gel you rub on the skin</li>
+      <li>other ideas for pain relief and things you can buy to help, like heat and cold packs</li>
+      <li>seeing a GP if you need to</li>
+    </ul>
+
+    <div class="nhsuk-action-link">
+
+      <a class="nhsuk-action-link__link" href="javascript:void(0);">
+
+        <svg class="nhsuk-icon nhsuk-icon__arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="36" width="36">
+          <path d="M0 0h24v24H0z" fill="none"></path>
+          <path d="M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z"></path>
+        </svg>
+        <span class="nhsuk-action-link__text">Find a pharmacy</span>
+      </a>
+    </div>
+
+    <div class="nhsuk-card nhsuk-card--care nhsuk-card--care--non-urgent">
+      <div class="nhsuk-card--care__heading-container">
+        <h2 class="nhsuk-card--care__heading">
+          <span role="text"><span class="nhsuk-u-visually-hidden">Non-urgent advice: </span>See a GP if:</span>
+        </h2>
+        <span class="nhsuk-card--care__arrow" aria-hidden="true"></span>
+      </div>
+      <div class="nhsuk-card__content">
+        <ul>
+          <li>the pain is getting worse or does not improve after 2 weeks</li>
+          <li>it's very difficult to move your arm or shoulder</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="nhsuk-card nhsuk-card--care nhsuk-card--care--urgent">
+      <div class="nhsuk-card--care__heading-container">
+        <h2 class="nhsuk-card--care__heading">
+          <span role="text"><span class="nhsuk-u-visually-hidden">Urgent advice: </span>Get advice from a GP or 111 now if:</span>
+        </h2>
+        <span class="nhsuk-card--care__arrow" aria-hidden="true"></span>
+      </div>
+
+      <div class="nhsuk-card__content">
+
+        <ul>
+          <li>the pain is sudden or very bad</li>
+          <li>you cannot move your arm</li>
+          <li>your arm or shoulder has changed shape or is badly swollen</li>
+          <li>you have pins and needles that do not go away</li>
+          <li>there's no feeling in your arm or shoulder</li>
+          <li>your arm or shoulder is hot or cold to touch</li>
+          <li>the pain started after an injury or accident, like a fall</li>
+          <li>you develop severe pain in both shoulders</li>
+          <li>you feel feverish or unwell</li>
+        </ul>
+        <p>These can be signs of something serious, like a broken or dislocated bone, or a torn (ruptured) ligament or tendon.</p>
+        <p>111 will tell you what to do. They can tell you the right place to get help if you need to see someone.</p>
+        <p>Go to <a href="javascript:void(0);">111.nhs.uk</a> or <a href="javascript:void(0);">call 111</a>.</p>
+
+      </div>
+    </div>
+
+    <h2>Treatment from a GP</h2>
+    <p>A GP will examine you to work out what's causing your shoulder pain.</p>
+    <p>They might send you for tests (such as an X-ray) to check the cause.</p>
+    <p>They'll suggest a treatment based on the cause, for example:</p>
+    <ul>
+      <li>stronger medicine or injections to ease pain and swelling</li>
+      <li>physiotherapy or exercises to do at home</li>
+      <li>things to avoid to stop the pain getting worse or returning</li>
+      <li>seeing a specialist for tests or treatment</li>
+    </ul>
+
+    <div class="nhsuk-inset-text">
+      <span class="nhsuk-u-visually-hidden">Information: </span>
+      <h3>Physiotherapy for shoulder pain</h3>
+      <p>The number of physiotherapy sessions a GP might prescribe depends on the cause of your shoulder pain.</p>
+      <p>If you're still in pain after your sessions end, go back to the GP.</p>
+      <p>They might prescribe more physiotherapy or suggest another treatment.</p>
+      <p>Physiotherapy from the NHS might not be available everywhere. Waiting times can also be long.</p>
+      <p>You can also pay to get physiotherapy privately.</p>
+      <p><a href="javascript:void(0);">Find a registered physiotherapist</a></p>
+    </div>
+
+    <h2>Causes of shoulder pain</h2>
+    <p>Shoulder pain that does not improve after 2 weeks might be caused by something that needs treatment.</p>
+    <p>Do not self-diagnose – see a GP if you're worried.</p>
+
+    <div class="nhsuk-table-container">
+      <table><caption class="nhsuk-u-visually-hidden">Possible causes of shoulder pain</caption>
+<thead>
+<tr>
+  <th scope="col">Shoulder symptoms</th>
+  <th scope="col">Possible causes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Pain and stiffness that does not go away over months or years</td>
+  <td><a href="javascript:void(0);">frozen shoulder</a>, arthritis (<a href="javascript:void(0);">osteoarthritis</a> or <a href="javascript:void(0);">rheumatoid arthritis</a>)</td>
+</tr>
+<tr>
+  <td>Pain that's often worse while using your arm or shoulder</td>
+  <td><a href="javascript:void(0);">tendonitis</a>, <a href="javascript:void(0);">bursitis</a>, <a href="javascript:void(0);">impingement</a></td>
+</tr>
+<tr>
+  <td>Tingling, numb, weak, feels like it's clicking or locking</td>
+  <td>shoulder instability, sometimes because of <a href="javascript:void(0);">hypermobility</a></td>
+</tr>
+<tr>
+  <td>Sudden very bad pain, cannot move your arm (or it's difficult), sometimes changes shape</td>
+  <td><a href="javascript:void(0);">dislocated shoulder</a>, broken bone (such as the <a href="javascript:void(0);">upper arm</a> or <a href="javascript:void(0);">collarbone</a>), torn or <a href="javascript:void(0);">ruptured tendon</a></td>
+</tr>
+<tr>
+  <td>Pain on top of the shoulder (where the collarbone and shoulder joint meet)</td>
+  <td>problems in the acromioclavicular joint, like dislocation or stretched or torn ligaments</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+
+    <p class="nhsuk-body-s nhsuk-u-margin-top-7 nhsuk-u-secondary-text-color">
+    Page last reviewed: 02 August 2019<br>
+    Next review due: 02 August 2022
+    </p>
+
+
+
+
+
+
+
+  </div>
+</div>
+{% endblock %}

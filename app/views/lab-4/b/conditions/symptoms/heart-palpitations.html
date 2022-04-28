@@ -1,0 +1,175 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'template-lab-1b.html' %}
+{% set mainClasses = 'nhsuk-u-padding-top-0' %}
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+Symptoms - NHS
+{% endblock %}
+
+{% block beforeContent %}
+<!-- Coronavirus (COVID-19) banner -->
+<div class="app-global-alert" id="app-global-alert" role="complementary">
+  <div class="nhsuk-width-container">
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-full">
+        <div class="app-global-alert__content">
+          <div class="app-global-alert__message">
+            <h2>Coronavirus (COVID-19)</h2>
+            <p><a href="">Get the latest advice about COVID-19</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Breadcrumbs -->
+<nav class="nhsuk-breadcrumb beta-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a href="/lab-1/b" class="nhsuk-breadcrumb__link">Home</a></li>
+      <li class="nhsuk-breadcrumb__item"><a href="/lab-1/b/symptoms" class="nhsuk-breadcrumb__link">Symptoms</a></li>
+    </ol>
+    <p class="nhsuk-breadcrumb__back">
+      <a href="/lab-1/b/symptoms" class="nhsuk-breadcrumb__backlink">
+        <span class="nhsuk-u-visually-hidden">Back to </span>Symptoms
+      </a>
+    </p>
+  </div>
+</nav>
+{% endblock %}
+
+
+<!-- Homepage content -->
+{% block content %}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+
+    <div class="nhsuk-u-reading-width">
+      <h1>Heart palpitations and ectopic beats</h1>
+    </div>
+    <p><strong>Heart palpitations are heartbeats that suddenly become more noticeable.</strong></p>
+    <p>Your heart may feel like it's pounding, fluttering or beating irregularly, often for just a few seconds or minutes. You may also feel these sensations in your throat or neck.</p>
+    <p>Palpitations may seem alarming, but in most cases they're harmless and are not a sign of a serious problem.</p>
+    <p>Sometimes you may feel an extra or missed beat. These are known as ectopic beats and are also usually nothing to worry about.</p>
+    <h2>Causes of heart palpitations</h2>
+    <p>Causes of heart palpitations include:</p>
+    <ul>
+      <li>lifestyle triggers</li>
+      <li>emotions and psychological triggers</li>
+      <li>medicines</li>
+      <li>hormone changes</li>
+      <li>heart rhythm problems</li>
+      <li>heart conditions</li>
+      <li>other medical conditions</li>
+    </ul>
+    <h3>Lifestyle triggers</h3>
+    <p>Common triggers of heart palpitations include:</p>
+    <ul>
+      <li>strenuous exercise</li>
+      <li><a href="javascript:void(0);">not getting enough sleep</a></li>
+      <li>drinks containing caffeine, such as coffee, tea and energy drinks</li>
+      <li><a href="javascript:void(0);">alcohol</a></li>
+      <li><a href="javascript:void(0);">smoking</a></li>
+      <li><a href="javascript:void(0);">illegal drugs</a>, such as <a href="javascript:void(0);">cocaine</a>, <a href="javascript:void(0);">heroin</a>, amphetamines, ecstasy and <a href="javascript:void(0);">cannabis</a></li>
+      <li>rich or spicy foods</li>
+    </ul>
+    <p>In these cases, the palpitations should go away on their own. Avoiding these triggers may help stop them from coming back.</p>
+    <h3>Emotional or psychological triggers</h3>
+    <p>Heart palpitations are also often caused by emotions or psychological issues, such as:</p>
+    <ul>
+      <li>excitement or nervousness</li>
+      <li><a href="javascript:void(0);">stress</a> or <a href="javascript:void(0);">anxiety</a></li>
+      <li><a href="javascript:void(0);">panic attacks</a> - an overwhelming sense of anxiety or fear, accompanied by feeling sick, sweating, trembling and palpitations</li>
+    </ul>
+    <p>Doing <a href="javascript:void(0);">breathing exercises</a> and learning <a href="javascript:void(0);">how to deal with a panic attack</a> may help if you're feeling stressed, anxious or panicked.</p>
+    <h3>Medicines</h3>
+    <p>Palpitations can occasionally be triggered by some medicines, including:</p>
+    <ul>
+      <li><a href="javascript:void(0);">asthma</a> inhalers, such as <a href="javascript:void(0);">salbutamol</a> and ipratropium bromide</li>
+      <li><a href="javascript:void(0);">high blood pressure (hypertension)</a> medicines, such as hydralazine and minoxidil</li>
+      <li><a href="javascript:void(0);">antihistamines</a>, such as terfenadine</li>
+      <li><a href="javascript:void(0);">antibiotics</a>, such as clarithromycin and <a href="javascript:void(0);">erythromycin</a></li>
+      <li><a href="javascript:void(0);">antidepressants</a>, such as <a href="javascript:void(0);">citalopram</a> and <a href="javascript:void(0);">escitalopram</a></li>
+      <li><a href="javascript:void(0);">antifungal medicines</a>, such as itraconazole</li>
+    </ul>
+    <p>Speak to a GP if you think a medicine may be causing your heart palpitations. But do not stop taking a prescribed treatment without first getting medical advice.</p>
+    <h3>Hormone changes</h3>
+    <p>Heart palpitations in women can sometimes be the result of hormonal changes that happen during:</p>
+    <ul>
+      <li><a href="javascript:void(0);">periods</a></li>
+      <li>pregnancy</li>
+      <li>the <a href="javascript:void(0);">menopause</a></li>
+    </ul>
+    <p>In these cases, the palpitations are usually temporary and not a cause for concern.</p>
+    <h3>Heart rhythm problems</h3>
+    <p>Palpitations are sometimes caused by a problem with the heart rhythm <a href="javascript:void(0);">(arrhythmia)</a>, such as:</p>
+    <ul>
+      <li><a href="javascript:void(0);">atrial fibrillation</a> – this is the most common type, where the heart beats irregularly and faster than normal</li>
+      <li>atrial flutter – a fast and irregular heartbeat</li>
+      <li><a href="javascript:void(0);">supraventricular tachycardia (SVT)</a> – abnormally fast heart rate</li>
+      <li>ventricular tachycardia – a more serious condition where the regular heartbeat is typically fast. It can be associated with dizziness or blackouts</li>
+    </ul>
+    <h3>Heart conditions</h3>
+    <p>Some palpitations may be associated with other types of heart conditions, such as:</p>
+    <ul>
+      <li> a problem with the heart valves, such as <a href="javascript:void(0);">mitral valve prolapse</a></li>
+      <li><a href="javascript:void(0);">hypertrophic cardiomyopathy</a> – where the heart muscle and walls of the heart become enlarged and thickened</li>
+      <li><a href="javascript:void(0);">heart failure</a> – where the heart is unable to pump blood around the body properly</li>
+      <li><a href="javascript:void(0);">congenital heart disease</a> – birth defects that affect the normal workings of the heart</li>
+    </ul>
+    <p>Some of these conditions can be serious and often require treatment.</p>
+    <h3>Other medical conditions</h3>
+    <p>Other conditions that can cause heart palpitations include:</p>
+    <ul>
+      <li>an <a href="javascript:void(0);">overactive thyroid (hyperthyroidism)</a> – where the thyroid gland produces too much of the thyroid hormones</li>
+      <li>a <a href="javascript:void(0);">low blood sugar level (hypoglycaemia)</a> – this is most commonly associated with <a href="javascript:void(0);">diabetes</a></li>
+      <li>types of anaemia, which affects the red blood cells</li>
+      <li>postural or orthostatic hypotension – dizziness and low blood pressure triggered by changing position (such as standing up)</li>
+      <li>a high temperature</li>
+      <li><a href="javascript:void(0);">dehydration</a></li>
+    </ul>
+
+    <h2>When to see a GP</h2>
+    <p>You do not usually need to see a GP if the palpitations pass quickly and only happen occasionally. They're unlikely to be caused by a serious problem and probably will not need treatment.</p>
+    <p>But it's a good idea to see a GP if:</p>
+    <ul>
+      <li>the palpitations last a long time, do not improve or get worse</li>
+      <li>you have a history of heart problems</li>
+      <li>you're concerned about the palpitations</li>
+    </ul>
+    <p>To help find the cause, a GP may:</p>
+    <ul>
+      <li>ask about your symptoms and medical history</li>
+      <li>arrange a <a href="javascript:void(0);">blood test</a></li>
+      <li>carry out an <a href="javascript:void(0);">electrocardiogram (ECG)</a> to check your heart rate (if the GP has the equipment available)</li>
+    </ul>
+    <p>If you cannot have an ECG at the GP surgery or the GP wants to arrange heart monitoring over a longer time period, you may be referred for tests at a local hospital.</p>
+
+    <h2>When to get emergency help</h2>
+    <p>Call 999 for an ambulance or go to <a href="javascript:void(0);">your nearest A&E</a> if you have heart palpitations and any of the following symptoms:</p>
+    <ul>
+      <li>severe shortness of breath
+      <li><a href="/lab-1/b/symptoms/chest-pain">chest pain</a> or tightness</li>
+      <li>dizziness or light-headedness</li>
+      <li><a href="/lab-1/b/symptoms/fainting">fainting</a> or blackouts</li>
+    </ul>
+    <p>These symptoms could indicate a serious or potentially life-threatening heart problem that should be checked by a doctor straight away.</p>
+
+
+
+    <p class="nhsuk-body-s nhsuk-u-margin-top-7 nhsuk-u-secondary-text-color">
+    Page last reviewed: 02 August 2019<br>
+    Next review due: 02 August 2022
+    </p>
+
+
+
+
+
+
+
+  </div>
+</div>
+{% endblock %}
