@@ -1,0 +1,391 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'template-lab-4a.html' %}
+{% set mainClasses = 'nhsuk-u-padding-top-0' %}
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+Symptoms - NHS
+{% endblock %}
+
+{% block beforeContent %}
+
+<!-- Breadcrumbs -->
+<nav class="nhsuk-breadcrumb beta-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a href="" class="nhsuk-breadcrumb__link">Home</a></li>
+    </ol>
+    <p class="nhsuk-breadcrumb__back">
+      <a href="" class="nhsuk-breadcrumb__backlink">
+        <span class="nhsuk-u-visually-hidden">Back to </span>Home
+      </a>
+    </p>
+  </div>
+</nav>
+{% endblock %}
+
+
+<!-- Homepage content -->
+{% block content %}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+
+    <div class="nhsuk-u-reading-width">
+      <h1>Eyelid problems</h1>
+    </div>
+
+    
+    <p><strong>Find out what to do if you have a lump on your eyelid, or an eyelid that's swollen, sticky, itchy, drooping or twitching.</strong></p>
+    <h2>Most eyelid problems are harmless</h2>
+    <p>Many eyelid problems are not serious.</p>
+    <p>It's fairly common to have any of these problems:</p>
+    <ul>
+      <li>a lump that goes away by itself after 3 or 4 weeks</li>
+      <li>mildly itchy, flaky or sticky eyelids that clear up by themselves</li>
+      <li>swelling from a nearby insect bite, injury or operation that goes away after a week or so</li>
+      <li>twitching or blinking from time to time – often when you're tired</li>
+      <li>eyelids that droop (or get more "hooded") as you get older</li>
+    </ul>
+    <h2>Types of eyelid problems</h2>
+    <p>Your symptoms might give you an idea of the cause. Do not self-diagnose – see a GP if you're worried.</p>
+    <details class="nhsuk-details">
+      <summary class="nhsuk-details__summary">
+        <span class="nhsuk-details__summary-text">
+        Lump on eyelid
+        </span>
+      </summary>
+      <div class="nhsuk-details__text">
+        
+          
+            
+              
+    
+    
+    
+    
+    
+      
+        <div class="nhsuk-table-container">
+          <table><caption class="nhsuk-u-visually-hidden">Symptoms and possible causes of lumps on eyelids</caption>
+    <thead>
+    <tr>
+      <th scope="col">Eyelid symptoms</th>
+      <th scope="col">Possible causes</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>Painful lump, filled with pus like a pimple</td>
+      <td><a href="/conditions/stye/">stye</a></td>
+    </tr>
+    <tr>
+      <td>Hard lump, not painful</td>
+      <td><a href="http://www.moorfields.nhs.uk/condition/chalazion-0" title="External website">chalazion (meibomian cyst)</a></td>
+    </tr>
+    <tr>
+      <td>Yellow lumps or patches</td>
+      <td>xanthelasma, sometimes caused by high cholesterol</td>
+    </tr>
+    <tr>
+      <td>Blisters or scabs with a rash on the body</td>
+      <td><a href="/conditions/shingles">shingles</a> or <a href="/conditions/chickenpox/">chickenpox</a></td>
+    </tr>
+    <tr>
+      <td>Mole, freckle or patch changes shape, colour or size</td>
+      <td><a href="/conditions/non-melanoma-skin-cancer/">skin cancer</a></td>
+    </tr>
+    </tbody>
+    </table>
+    
+        </div>
+      
+    
+    
+            
+          
+        
+      </div>
+    </details>
+
+    <details class="nhsuk-details">
+      <summary class="nhsuk-details__summary">
+        <span class="nhsuk-details__summary-text">
+        Swollen eyelid
+        </span>
+      </summary>
+      <div class="nhsuk-details__text">
+        
+          
+            
+              
+    
+    
+    
+    
+    
+      
+        <div class="nhsuk-table-container">
+          <table><caption class="nhsuk-u-visually-hidden">Symptoms and possible causes of swollen eyelids</caption>
+    <thead>
+    <tr>
+      <th scope="col">Eyelid symptoms</th>
+      <th scope="col">Possible causes</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>Swelling after contact with something you're allergic to</td>
+      <td><a href="/conditions/allergies/">allergic reaction</a></td>
+    </tr>
+    <tr>
+      <td>Red, hot, painful, swollen</td>
+      <td><a href="/conditions/cellulitis/">cellulitis</a></td>
+    </tr>
+    </tbody>
+    </table>
+    
+        </div>
+      
+    
+    
+            
+          
+        
+      </div>
+    </details>
+
+    <details class="nhsuk-details">
+      <summary class="nhsuk-details__summary">
+        <span class="nhsuk-details__summary-text">
+        Itchy, flaky or sticky eyelid
+        </span>
+      </summary>
+      <div class="nhsuk-details__text">
+        
+          
+            
+              
+    
+    
+    
+    
+    
+      
+        <div class="nhsuk-table-container">
+          <table><caption class="nhsuk-u-visually-hidden">Symptoms and possible causes of itchy, flaky or sticky eyelids</caption>
+    <thead>
+    <tr>
+      <th scope="col">Eyelid symptoms</th>
+      <th scope="col">Possible causes</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>Itchy, crusty or flaky after contact with something you're allergic to</td>
+      <td><a href="/conditions/contact-dermatitis/">contact dermatitis</a></td>
+    </tr>
+    <tr>
+      <td>Sticky, with red, itchy, watery eyes</td>
+      <td><a href="/conditions/conjunctivitis/">conjunctivitis</a></td>
+    </tr>
+    <tr>
+      <td>Eyelids that stick together, crusty eyelashes, dry, red or irritated eyes</td>
+      <td><a href="/conditions/blepharitis/">blepharitis</a> or <a href="/conditions/dry-eyes/">dry eye syndrome</a></td>
+    </tr>
+    </tbody>
+    </table>
+    
+        </div>
+      
+    
+    
+            
+          
+        
+      </div>
+    </details>
+
+    <details class="nhsuk-details">
+      <summary class="nhsuk-details__summary">
+        <span class="nhsuk-details__summary-text">
+        Drooping or hooded eyelid
+        </span>
+      </summary>
+      <div class="nhsuk-details__text">
+        
+          
+            
+              
+    
+    
+    
+    
+    
+      
+        <div class="nhsuk-table-container">
+          <table><caption class="nhsuk-u-visually-hidden">Symptoms and possible causes of drooping eyelids</caption>
+    <thead>
+    <tr>
+      <th scope="col">Eyelid symptoms</th>
+      <th scope="col">Possible causes</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>Lower eyelid drooping and turning outwards</td>
+      <td><a href="/conditions/ectropion/">ectropion</a></td>
+    </tr>
+    <tr>
+      <td>Lower eyelid drooping and turning inwards</td>
+      <td>entropion</td>
+    </tr>
+    <tr>
+      <td>Skin above upper eyelid drooping down over eye</td>
+      <td>dermatochalasis</td>
+    </tr>
+    <tr>
+      <td>Edge of upper eyelid drooping down over eye</td>
+      <td>ptosis</td>
+    </tr>
+    <tr>
+      <td>Sudden drooping with vision loss and headaches</td>
+      <td>rarely, a serious condition like <a href="/conditions/myasthenia-gravis/">myasthenia gravis</a> or a <a href="/conditions/brain-tumours/">brain tumour</a></td>
+    </tr>
+    </tbody>
+    </table>
+    
+        </div>
+      
+    
+    
+            
+          
+        
+      </div>
+    </details>
+
+    <details class="nhsuk-details">
+      <summary class="nhsuk-details__summary">
+        <span class="nhsuk-details__summary-text">
+        Frequently twitching or blinking eyelid
+        </span>
+      </summary>
+      <div class="nhsuk-details__text">
+        
+          
+            
+              
+    
+    
+    
+    
+    
+      
+        <div class="nhsuk-table-container">
+          <table><caption class="nhsuk-u-visually-hidden">Symptoms and possible causes of twitching eyelids</caption>
+    <thead>
+    <tr>
+      <th scope="col">Eyelid symptoms</th>
+      <th scope="col">Possible causes</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>Frequent blinking or twitching, sometimes with uncontrollable eye closing</td>
+      <td>a type of <a href="/conditions/dystonia/">dystonia</a> (movement disorder) called blepharospasm</td>
+    </tr>
+    </tbody>
+    </table>
+    
+        </div>
+      
+    
+    
+            
+          
+        
+      </div>
+    </details>
+
+    <h2>You can ask a pharmacist about:</h2>
+    <ul>
+      <li>what you can do to treat it yourself</li>
+      <li>if you can buy anything to help – for example, cleaning solutions for sticky eyelids</li>
+      <li> if you need to see an optician or GP</li>
+    </ul>
+    <div class="nhsuk-action-link">
+  
+      <a class="nhsuk-action-link__link" href="javascript:void(0);">
+      
+        <svg class="nhsuk-icon nhsuk-icon__arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="36" width="36">
+          <path d="M0 0h24v24H0z" fill="none"></path>
+          <path d="M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z"></path>
+        </svg>
+        <span class="nhsuk-action-link__text">Find a pharmacy</span>
+      </a>
+    </div>
+
+    <div class="nhsuk-card nhsuk-card--care nhsuk-card--care--non-urgent">
+      <div class="nhsuk-card--care__heading-container">
+        <h2 class="nhsuk-card--care__heading">
+          <span role="text"><span class="nhsuk-u-visually-hidden">Non-urgent advice: </span>See a GP if:</span>
+        </h2>
+        <span class="nhsuk-card--care__arrow" aria-hidden="true"></span>
+      </div>
+    
+      <div class="nhsuk-card__content">
+    
+        <ul>
+          <li>you're worried about an eyelid problem</li>
+          <li>it's getting worse or lasting a long time</li>
+          <li>your eyelid is painful or you're in a lot of discomfort</li>
+          <li>you have yellow lumps or patches around your eyes</li>
+        </ul>    
+      </div>
+    </div>
+
+    <div class="nhsuk-card nhsuk-card--care nhsuk-card--care--urgent">
+      <div class="nhsuk-card--care__heading-container">
+        <h2 class="nhsuk-card--care__heading">
+          <span role="text"><span class="nhsuk-u-visually-hidden">Urgent advice: </span>Ask for an urgent GP appointment or call 111 if:</span>
+        </h2>
+        <span class="nhsuk-card--care__arrow" aria-hidden="true"></span>
+      </div>
+    
+      <div class="nhsuk-card__content">
+    
+        <ul>
+          <li>your swollen eyelid is red, hot, painful, tender or blistered</li>
+          <li>your eyelid droops suddenly</li>
+          <li>the pain is in your eye (not your eyelid)</li>
+          <li>the white of your eye is very red, in part or all over</li>
+          <li>you're sensitive to light (photophobia)</li>
+          <li>your eyesight changes – for example, you see wavy lines or flashing</li>
+          <li>you have a very high temperature, or feel hot and shivery, or you feel generally unwell</li>
+          <li>you think it's an allergic reaction</li>
+        </ul>
+        <p>111 will tell you what to do. They can arrange a phone call from a nurse or doctor if you need one.</p>
+        <p>Go to <a href="javascript:void(0);">NHS 111</a> or <a href="javascript:void(0);">call 111</a>.</p>
+    
+      </div>
+    </div>
+
+
+
+    <p class="nhsuk-body-s nhsuk-u-margin-top-7 nhsuk-u-secondary-text-color">
+    Page last reviewed: 02 August 2019<br>
+    Next review due: 02 August 2022
+    </p>
+
+
+
+
+
+    
+
+  </div>
+</div>
+{% endblock %}
+
+
