@@ -6,20 +6,6 @@
 
 <!-- Coronavirus (COVID-19) banner -->
 {% block beforeContent %}
-<div class="app-global-alert" id="app-global-alert" role="complementary">
-    <div class="nhsuk-width-container">
-        <div class="nhsuk-grid-row">
-            <div class="nhsuk-grid-column-full">
-                <div class="app-global-alert__content">
-                    <div class="app-global-alert__message">
-                        <h2>Coronavirus (COVID-19)</h2>
-                        <p><a href="">Get the latest advice about COVID-19</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 <!-- Breadcrumbs -->
 <nav class="nhsuk-breadcrumb beta-breadcrumb" aria-label="Breadcrumb">
     <div class="nhsuk-width-container">
@@ -203,31 +189,51 @@
                 </p>
             </div>
         </div>
-        <div class="nhsuk-grid-column-one-third">
+        
+
+        <aside class="nhsuk-grid-column">
+            <div id="sibling-nav" class="app-related-nav beta-hub-sibling-nav nhsuk-u-padding-top-5">
+              <h2 class="app-related-nav__heading nhsuk-u-padding-bottom-3">
+                More in
+                
+                  <a href="/lab-4/a/symptoms/type/mental-health">Mental health symptoms</a>
+                
+              </h2>
+              <nav role="navigation" class="app-related-nav__nav-section">
+                <ul class="app-related-nav__list beta-hub-sibling-nav__list">
+      
+                  <li class="beta-hub-sibling-nav__item">
+                    <a class="app-related-nav__link" href="/lab-4/a/symptoms/type/mental-health/confusion">
+                      Confusion
+                    </a>
+                  </li>
+      
+                  <li class="beta-hub-sibling-nav__item">
+                    <a class="app-related-nav__link" href="/lab-4/a/symptoms/type/mental-health/hallucinations">
+                      Hallucinations
+                    </a>
+                  </li>
+
+                  <li class="beta-hub-sibling-nav__item">
+                    <a class="app-related-nav__link" href="/lab-4/a/symptoms/type/mental-health/memory-loss">
+                      Memory loss
+                    </a>
+                  </li>
+      
+                  <li class="beta-hub-sibling-nav__item  beta-hub-sibling-nav--current" aria-current="true">
+                    Tiredness
+                  </li>
+      
+      
+              
+                </ul>
+              </nav>
+            </div>
+          </aside>
+
+
         </div>
     </div>
 </article>
-<div id="nhsuk-user-feedback-form">
-    <div class="nhsuk-user-feedback-form">
-        <div class="nhsuk-card nhsuk-u-reading-width">
-            <div class="nhsuk-card__content">
-                <h2 class="nhsuk-card__heading nhsuk-heading-s">
-                    Did this information help you?
-                </h2>
-                <ul class="nhsuk-list nhsuk-user-feedback-form">
-                    <li class="nhsuk-user-feedback-form__list-item nhsuk-u-margin-bottom-0">
-                        <button class="nhsuk-button nhsuk-button--secondary nhsuk-u-margin-right-4 nhsuk-u-margin-bottom-0 nhsuk-user-feedback-form--yes">
-              Yes <span class="nhsuk-u-visually-hidden">this information helped me</span>
-            </button>
-                    </li>
-                    <li class="nhsuk-user-feedback-form__list-item nhsuk-u-margin-bottom-0">
-                        <button class="nhsuk-button nhsuk-button--secondary nhsuk-u-margin-bottom-0 nhsuk-user-feedback-form--no">
-              No <span class="nhsuk-u-visually-hidden">this information did not help me</span>
-            </button>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
+
 {% endblock %}
